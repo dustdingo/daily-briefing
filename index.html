@@ -12,8 +12,8 @@ body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; b
 .header { padding: 1.25rem 1.25rem 0; }
 .header-date { font-size: 12px; color: #888; letter-spacing: 0.04em; margin-bottom: 2px; }
 .header-title { font-size: 22px; font-weight: 500; margin-bottom: 1rem; }
-.tabs { display: flex; border-bottom: 1px solid #ddd; padding: 0 1.25rem; background: #F2F1EC; position: sticky; top: 0; z-index: 10; gap: 4px; }
-.tab { padding: 8px 16px; font-size: 13px; font-weight: 500; cursor: pointer; border-bottom: 2px solid transparent; color: #888; }
+.tabs { display: flex; border-bottom: 1px solid #ddd; padding: 0 1.25rem; background: #F2F1EC; position: sticky; top: 0; z-index: 10; gap: 4px; overflow-x: auto; }
+.tab { padding: 8px 14px; font-size: 13px; font-weight: 500; cursor: pointer; border-bottom: 2px solid transparent; color: #888; white-space: nowrap; flex-shrink: 0; }
 .tab.active { color: #534AB7; border-bottom-color: #534AB7; }
 .pane { display: none; padding: 1rem 1.25rem 3rem; }
 .pane.active { display: block; }
@@ -24,16 +24,13 @@ body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; b
 .time { font-size: 12px; color: #999; min-width: 70px; padding-top: 2px; flex-shrink: 0; }
 .event { font-size: 14px; color: #1a1a1a; line-height: 1.4; }
 .role { font-size: 11px; color: #999; margin-top: 1px; }
-.now { background: #EEEDFE; border-radius: 8px; }
-.now .event { color: #3C3489; font-weight: 500; }
-.now .time { color: #534AB7; }
 .dir-label { font-size: 12px; color: #999; min-width: 90px; flex-shrink: 0; padding-top: 2px; }
 .dir-val { font-size: 13px; color: #1a1a1a; flex: 1; line-height: 1.5; }
 .flag { color: #854F0B; }
 .pri-row { display: flex; align-items: flex-start; gap: 10px; padding: 7px 0; font-size: 14px; }
 .pri-row + .pri-row { border-top: 1px solid #f0f0f0; }
 .num { width: 22px; height: 22px; border-radius: 50%; background: #EEEDFE; color: #534AB7; font-size: 11px; font-weight: 600; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px; }
-.badge { font-size: 11px; padding: 2px 8px; border-radius: 100px; margin-left: auto; background: #f0f0f0; color: #666; white-space: nowrap; }
+.badge { font-size: 11px; padding: 2px 8px; border-radius: 100px; margin-left: auto; background: #f0f0f0; color: #666; white-space: nowrap; flex-shrink: 0; }
 .badge-warn { background: #FAEEDA; color: #854F0B; }
 .badge-ok { background: #EAF3DE; color: #3B6D11; }
 .weather-main { display: flex; justify-content: space-between; align-items: flex-start; }
@@ -45,6 +42,26 @@ body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; b
 .task:last-child { border-bottom: none; }
 .task-role { font-size: 11px; color: #999; margin-top: 2px; }
 .generated { font-size: 11px; color: #bbb; text-align: center; padding: 1rem 0; }
+/* Fitness tab */
+.fitness-header { font-size: 13px; font-weight: 600; color: #1a1a1a; margin-bottom: 4px; }
+.fitness-sub { font-size: 12px; color: #888; margin-bottom: 12px; }
+.rest-badge { display: inline-block; background: #EAF3DE; color: #3B6D11; font-size: 12px; font-weight: 600; padding: 4px 12px; border-radius: 100px; }
+.tomorrow-badge { display: inline-block; background: #EEEDFE; color: #534AB7; font-size: 12px; font-weight: 600; padding: 4px 12px; border-radius: 100px; margin-bottom: 10px; }
+.ex-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid #f5f5f5; font-size: 13px; }
+.ex-row:last-child { border-bottom: none; }
+.ex-name { color: #1a1a1a; flex: 1; }
+.ex-sets { color: #888; font-size: 12px; flex-shrink: 0; margin-left: 12px; }
+.macro-row { margin-bottom: 10px; }
+.macro-label { font-size: 12px; font-weight: 600; color: #555; margin-bottom: 3px; }
+.macro-bar-wrap { background: #f0f0f0; border-radius: 4px; height: 8px; margin-bottom: 3px; overflow: hidden; }
+.macro-bar { height: 100%; border-radius: 4px; transition: width 0.3s; }
+.macro-nums { font-size: 12px; color: #666; }
+.meal-row { padding: 7px 0; border-bottom: 1px solid #f5f5f5; }
+.meal-row:last-child { border-bottom: none; }
+.meal-name { font-size: 12px; font-weight: 600; color: #534AB7; margin-bottom: 1px; }
+.meal-desc { font-size: 13px; color: #1a1a1a; line-height: 1.4; }
+.meal-macro { font-size: 11px; color: #999; margin-top: 2px; }
+.note-box { background: #FAEEDA; border-radius: 8px; padding: 10px 12px; font-size: 12px; color: #854F0B; margin-bottom: 12px; line-height: 1.5; }
 </style>
 </head>
 <body>
@@ -55,71 +72,41 @@ body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; b
 <div class="tabs">
   <div class="tab active" data-tab="overview">Overview</div>
   <div class="tab" data-tab="brief">Morning Brief</div>
+  <div class="tab" data-tab="fitness">Fitness</div>
 </div>
 
 <div class="pane active" id="pane-overview">
   <div class="card">
     <div class="card-label">Today's Schedule</div>
-    
-    <div class="row">
-      <span class="time">5:30 AM</span>
-      <div><div class="event">Bible study, prayer, planning</div></div>
-    </div>
-
-    <div class="row">
-      <span class="time">6:00 AM</span>
-      <div><div class="event">SST Morning Block</div></div>
-    </div>
-
-    <div class="row">
-      <span class="time">8:00 AM</span>
-      <div><div class="event">Exercise / Gym</div></div>
-    </div>
-
-    <div class="row now">
-      <span class="time">Morning</span>
-      <div><div class="event">Church</div></div>
-    </div>
-
-    <div class="row">
-      <span class="time">Afternoon</span>
-      <div><div class="event">Family time</div></div>
-    </div>
-
-    <div class="row now">
-      <span class="time">6:00 PM</span>
-      <div><div class="event">Small Group Pool Party -- Christie Rainwater's Home, Hanahan</div></div>
-    </div>
-
-    <div class="row">
-      <span class="time">Evening</span>
-      <div><div class="event">Weekly Review</div></div>
-    </div>
+    <div class="row"><span class="time">5:30 AM</span><div class="event">Bible study, prayer, planning</div></div>
+<div class="row"><span class="time">6:00 AM</span><div class="event">SST Morning Block</div></div>
+<div class="row"><span class="time">8:00 AM</span><div class="event">Exercise / Gym</div></div>
+<div class="row"><span class="time">Morning</span><div class="event">Church</div></div>
+<div class="row"><span class="time">Afternoon</span><div class="event">Family time</div></div>
+<div class="row"><span class="time">6:00 PM</span><div class="event">Small Group Pool Party -- Christie Rainwater's Home, Hanahan</div></div>
+<div class="row"><span class="time">Evening</span><div class="event">Weekly Review</div></div>
   </div>
   <div class="card">
     <div class="card-label">Today's Direction</div>
     <div class="row"><span class="dir-label">SST block</span><span class="dir-val">Edit "Unstoppable Growth" Sessions 3 through the end -- deadline Thu May 28. Push through at least one full session this morning.</span></div>
-    <div class="row"><span class="dir-label">Tonight</span><span class="dir-val">Weekly Review (Sunday evening) -- note pool party 6-7 PM compresses the window. Start review after 7 PM.</span></div>
+    <div class="row"><span class="dir-label">Tonight</span><span class="dir-val">Weekly Review (Sunday evening) -- pool party 6-7 PM compresses the window. Start review after 7 PM.</span></div>
     <div class="row"><span class="dir-label">Watch out</span><span class="dir-val flag">Nicole remote through June 6 -- solo parenting all week. Pool party tonight cuts into evening margin. Guard the 5-8 PM block.</span></div>
   </div>
   <div class="card">
     <div class="card-label">Top Priorities</div>
-    
     <div class="pri-row">
       <div class="num">1</div>
-      <div>Budget<div class="role">Due today</div></div>
+      <div style="flex:1"><div>Budget</div><div class="role">Due today</div></div>
       <span class="badge badge-warn">Due Today</span>
     </div>
-
-    <div class="pri-row">
+<div class="pri-row">
       <div class="num">2</div>
-      <div>Pitch livestream gear<div class="role">Due tomorrow -- Memorial Day, last chance today</div></div>
+      <div style="flex:1"><div>Pitch livestream gear</div><div class="role">Due tomorrow -- Memorial Day, last chance today</div></div>
       <span class="badge badge-warn">Due Today</span>
     </div>
-
-    <div class="pri-row">
+<div class="pri-row">
       <div class="num">3</div>
-      <div>Review content for American integrity<div class="role">Overdue since May 20</div></div>
+      <div style="flex:1"><div>Review content for American integrity</div><div class="role">Overdue since May 20</div></div>
       <span class="badge badge-warn">Overdue</span>
     </div>
   </div>
@@ -130,111 +117,130 @@ body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; b
     <div class="card-label">Weather -- North Charleston</div>
     <div class="weather-main">
       <div><div class="temp">76&deg;</div><div class="wx-sub">Mostly cloudy, chance of showers/thunderstorms -- Humidity 87%</div></div>
-      <div class="wx-right">High 85 F / Low 71 F<br>Feels like 82 F (heat index)<br>Humidity stays elevated all day (avg 78%)</div>
+      <div class="wx-right">High 85 F / Low 71 F<br>Feels like 82 F (heat index)<br>Humidity elevated all day (avg 78%)</div>
     </div>
   </div>
   <div class="sec-head">Today's Tasks</div>
-  <div class="card" style="padding: 0.75rem 1.25rem;">
-    <div class="task" style="color:#7F1D1D;font-weight:600;">
-      <div><div>Budget</div><div class="task-role">Due May 24</div></div>
-      <span class="badge badge-warn">Due Today</span>
-    </div>
-
-    <div class="task">
-      <div><div>Pitch livestream gear</div><div class="task-role">Due May 25</div></div>
-      
-    </div>
-
-    <div class="task" style="color:#7F1D1D;font-weight:600;">
-      <div><div>Review content for American integrity</div><div class="task-role">Due May 20</div></div>
-      <span class="badge badge-warn">OVERDUE 4 days</span>
-    </div>
-
-    <div class="task" style="color:#7F1D1D;font-weight:600;">
-      <div><div>POST Exam #1 Heads Up</div><div class="task-role">Due May 22</div></div>
-      <span class="badge badge-warn">OVERDUE 2 days</span>
-    </div>
-
-    <div class="task">
-      <div><div>EDIT: English Video</div><div class="task-role">Due May 29</div></div>
-      
-    </div>
-
-    <div class="task">
-      <div><div>Vacation logistics</div><div class="task-role"></div></div>
-      
-    </div>
-
-    <div class="task">
-      <div><div>Check in on Whirlpool warranty</div><div class="task-role"></div></div>
-      
-    </div>
-
-    <div class="task">
-      <div><div>List roles and common tasks</div><div class="task-role"></div></div>
-      
-    </div></div>
+  <div class="card" style="padding:0.75rem 1.25rem;"><div class="task" style="color:#7F1D1D;font-weight:600;"><div><div>Budget</div><div class="task-role">Due May 24</div></div><span class="badge badge-warn">DUE TODAY</span></div>
+<div class="task"><div><div>Pitch livestream gear</div><div class="task-role">Due May 25</div></div></div>
+<div class="task" style="color:#7F1D1D;font-weight:600;"><div><div>Review content for American integrity</div><div class="task-role">Due May 20</div></div><span class="badge badge-warn">OVERDUE 4 days</span></div>
+<div class="task" style="color:#7F1D1D;font-weight:600;"><div><div>POST Exam #1 Heads Up</div><div class="task-role">Due May 22</div></div><span class="badge badge-warn">OVERDUE 2 days</span></div>
+<div class="task"><div><div>EDIT: English Video</div><div class="task-role">Due May 29</div></div></div>
+<div class="task"><div><div>Vacation logistics</div><div class="task-role"></div></div></div>
+<div class="task"><div><div>Check in on Whirlpool warranty</div><div class="task-role"></div></div></div>
+<div class="task"><div><div>List roles and common tasks</div><div class="task-role"></div></div></div></div>
   <div class="sec-head">Upcoming (7 days)</div>
-  <div class="card" style="padding: 0.75rem 1.25rem;">
-    <div class="task">
-      <div><div>Pitch livestream gear</div><div class="task-role">Due May 25</div></div>
-    </div>
+  <div class="card" style="padding:0.75rem 1.25rem;"><div class="task"><div><div>Pitch livestream gear</div><div class="task-role">Due May 25</div></div></div>
+<div class="task"><div><div>Johns Island Header Video</div><div class="task-role">Due May 28</div></div></div>
+<div class="task"><div><div>Unstoppable Growth -- Sessions 3 through End</div><div class="task-role">Due May 28</div></div></div>
+<div class="task"><div><div>LECTURE NOTES 10-11</div><div class="task-role">Due May 29</div></div></div>
+<div class="task"><div><div>POST Exam #1</div><div class="task-role">Due May 29</div></div></div>
+<div class="task"><div><div>GRADE Safari #3</div><div class="task-role">Due May 30</div></div></div>
+<div class="task"><div><div>GRADE Safari #2</div><div class="task-role">Due May 30</div></div></div>
+<div class="task"><div><div>GRADE Perception Discussion</div><div class="task-role">Due May 30</div></div></div>
+<div class="task"><div><div>GRADE Light Discussion</div><div class="task-role">Due May 30</div></div></div>
+<div class="task"><div><div>GRADE Color Discussion</div><div class="task-role">Due May 30</div></div></div>
+<div class="task"><div><div>RECORD: Week 4 Lecture 10</div><div class="task-role">Due May 31</div></div></div>
+<div class="task"><div><div>RECORD: Week 4 Lecture 11</div><div class="task-role">Due May 31</div></div></div></div>
+  <div class="sec-head" style="color:#7F1D1D;">Overdue</div><div class="card" style="padding:0.75rem 1.25rem;"><div class="task" style="color:#7F1D1D;font-weight:600;"><div><div>Review content for American integrity</div><div class="task-role" style="color:#7F1D1D;">Was due May 20</div></div><span class="badge badge-warn">Overdue</span></div><div class="task" style="color:#7F1D1D;font-weight:600;"><div><div>POST Exam #1 Heads Up</div><div class="task-role" style="color:#7F1D1D;">Was due May 22</div></div><span class="badge badge-warn">Overdue</span></div></div>
+  <div class="generated">Generated May 24, 2026 at 04:21 PM</div>
+</div>
 
-    <div class="task">
-      <div><div>Johns Island Header Video</div><div class="task-role">Due May 28</div></div>
+<div class="pane" id="pane-fitness">
+  <div class="card">
+    <div class="card-label">Today's Workout</div>
+    <span class="rest-badge">Rest Day</span>
+    <p style="font-size:13px;color:#888;margin-top:8px;">No workout scheduled for Sunday. Recovery day.</p>
+  </div>
+  <div class="card">
+    <div class="card-label">Tomorrow's Workout -- Monday Arms</div>
+    <div class="tomorrow-badge">Arms -- ~58 min</div>
+    <div class="ex-row"><span class="ex-name">Dumbbell Palm Up/Down Wrist Curl</span><span class="ex-sets">2 x 10 each</span></div>
+<div class="ex-row"><span class="ex-name">Cable Internal Shoulder Rotation</span><span class="ex-sets">3 x 10</span></div>
+<div class="ex-row"><span class="ex-name">Kettlebell Alternating Halo</span><span class="ex-sets">3 x 10</span></div>
+<div class="ex-row"><span class="ex-name">Dumbbell Incline Bicep Curl</span><span class="ex-sets">3 x 10-12</span></div>
+<div class="ex-row"><span class="ex-name">Barbell Narrow Grip Bicep Curl (SS)</span><span class="ex-sets">3 x 10</span></div>
+<div class="ex-row"><span class="ex-name">Barbell Wide Grip Bicep Curl (SS)</span><span class="ex-sets">3 x 10</span></div>
+<div class="ex-row"><span class="ex-name">Cable V-Bar Overhead Tricep Extension</span><span class="ex-sets">3 x 10-12</span></div>
+<div class="ex-row"><span class="ex-name">Single Arm Tricep Pushdown</span><span class="ex-sets">3 x 8/side</span></div>
+    <p style="font-size:11px;color:#999;margin-top:10px;">Workout window: 8:00-9:00 AM. No calendar conflicts tomorrow (Memorial Day).</p>
+  </div>
+  <div class="card">
+    <div class="card-label">Macro Targets vs. Plan</div>
+    <div class="macro-row">
+      <div class="macro-label">Protein</div>
+      <div class="macro-bar-wrap">
+        <div class="macro-bar" style="width:99%;background:#534AB7;"></div>
+      </div>
+      <div class="macro-nums">198 / 200g <span style="color:#854F0B;font-size:10px;">(2g short)</span></div>
     </div>
-
-    <div class="task">
-      <div><div>Unstoppable Growth -- Sessions 3 through End</div><div class="task-role">Due May 28</div></div>
+    <div class="macro-row">
+      <div class="macro-label">Carbs</div>
+      <div class="macro-bar-wrap">
+        <div class="macro-bar" style="width:68%;background:#3B82F6;"></div>
+      </div>
+      <div class="macro-nums">147 / 215g <span style="color:#854F0B;font-size:10px;">(68g short)</span></div>
     </div>
-
-    <div class="task">
-      <div><div>LECTURE NOTES 10-11</div><div class="task-role">Due May 29</div></div>
+    <div class="macro-row">
+      <div class="macro-label">Fat</div>
+      <div class="macro-bar-wrap">
+        <div class="macro-bar" style="width:62%;background:#F59E0B;"></div>
+      </div>
+      <div class="macro-nums">45 / 72g <span style="color:#854F0B;font-size:10px;">(27g short)</span></div>
     </div>
-
-    <div class="task">
-      <div><div>POST Exam #1</div><div class="task-role">Due May 29</div></div>
+    <div class="macro-row">
+      <div class="macro-label">Calories</div>
+      <div class="macro-bar-wrap">
+        <div class="macro-bar" style="width:83%;background:#10B981;"></div>
+      </div>
+      <div class="macro-nums">1808 / 2190 kcal <span style="color:#854F0B;font-size:10px;">(382 kcal short)</span></div>
     </div>
-
-    <div class="task">
-      <div><div>GRADE Safari #3</div><div class="task-role">Due May 30</div></div>
+    <div class="note-box" style="margin-top:10px;">Template runs ~2g short on protein and ~68g short on carbs. Add 1-2 oz extra chicken at dinner and a banana or rice cakes to close the carb gap.</div>
+  </div>
+  <div class="card">
+    <div class="card-label">Today's Meal Plan</div>
+    <p style="font-size:12px;color:#3B6D11;font-weight:600;margin-bottom:10px;">No calendar conflicts tomorrow (Memorial Day, offices closed). Standard meal plan applies -- no packable swaps needed.</p>
+    <div class="meal-row">
+      <div class="meal-name">Morning Coffee</div>
+      <div class="meal-desc">Collagen protein in coffee</div>
+      <div class="meal-macro">18 cal | 4g P</div>
     </div>
-
-    <div class="task">
-      <div><div>GRADE Safari #2</div><div class="task-role">Due May 30</div></div>
+<div class="meal-row">
+      <div class="meal-name">Breakfast</div>
+      <div class="meal-desc">2 whole eggs + 4 egg whites</div>
+      <div class="meal-macro">210 cal | 28g P</div>
     </div>
-
-    <div class="task">
-      <div><div>GRADE Perception Discussion</div><div class="task-role">Due May 30</div></div>
+<div class="meal-row">
+      <div class="meal-name">Snack 1</div>
+      <div class="meal-desc">Cocoa Crispys protein shake (water)</div>
+      <div class="meal-macro">130 cal | 25g P</div>
     </div>
-
-    <div class="task">
-      <div><div>GRADE Light Discussion</div><div class="task-role">Due May 30</div></div>
+<div class="meal-row">
+      <div class="meal-name">Lunch</div>
+      <div class="meal-desc">Project Lean Nation meal</div>
+      <div class="meal-macro">450 cal | 35g P</div>
     </div>
-
-    <div class="task">
-      <div><div>GRADE Color Discussion</div><div class="task-role">Due May 30</div></div>
+<div class="meal-row">
+      <div class="meal-name">Post-Lunch Shake</div>
+      <div class="meal-desc">Six Star Whey -- Frosted Flakes (1 scoop, water)</div>
+      <div class="meal-macro">190 cal | 30g P</div>
     </div>
-
-    <div class="task">
-      <div><div>RECORD: Week 4 Lecture 10</div><div class="task-role">Due May 31</div></div>
+<div class="meal-row">
+      <div class="meal-name">Snack 2</div>
+      <div class="meal-desc">Clementines or applesauce</div>
+      <div class="meal-macro">90 cal | 1g P</div>
     </div>
-
-    <div class="task">
-      <div><div>RECORD: Week 4 Lecture 11</div><div class="task-role">Due May 31</div></div>
-    </div></div>
-  
-  <div class="sec-head" style="color:#7F1D1D;">Overdue</div>
-  <div class="card" style="padding: 0.75rem 1.25rem;">
-    <div class="task" style="color:#7F1D1D;font-weight:600;">
-      <div><div>Review content for American integrity</div><div class="task-role" style="color:#7F1D1D;">Was due May 20</div></div>
-      <span class="badge badge-warn">Overdue</span>
+<div class="meal-row">
+      <div class="meal-name">Dinner</div>
+      <div class="meal-desc">Baked chicken breast + rice (gap fix: add 1 oz chicken + banana)</div>
+      <div class="meal-macro">430+ cal | 48g+ P</div>
     </div>
-    <div class="task" style="color:#7F1D1D;font-weight:600;">
-      <div><div>POST Exam #1 Heads Up</div><div class="task-role" style="color:#7F1D1D;">Was due May 22</div></div>
-      <span class="badge badge-warn">Overdue</span>
-    </div></div>
-  <div class="generated">Generated May 24, 2026 at 08:20 AM</div>
+<div class="meal-row">
+      <div class="meal-name">Evening Snack</div>
+      <div class="meal-desc">Blue Bunny mini cone + Cinnamon Bun casein shake</div>
+      <div class="meal-macro">290 cal | 27g P</div>
+    </div>
+  </div>
 </div>
 
 <script>
@@ -247,5 +253,6 @@ document.querySelectorAll('.tab').forEach(function(tab) {
   });
 });
 </script>
+<div style="text-align:center;font-size:11px;color:#bbb;padding:0.5rem 0 1.5rem;">Last updated 04:21 PM</div>
 </body>
 </html>
