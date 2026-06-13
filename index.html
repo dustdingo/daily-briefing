@@ -12,43 +12,55 @@ body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; b
 .header { padding: 1.25rem 1.25rem 0; }
 .header-date { font-size: 12px; color: #888; letter-spacing: 0.04em; margin-bottom: 2px; }
 .header-title { font-size: 22px; font-weight: 500; margin-bottom: 1rem; }
-.tabs { display: flex; border-bottom: 1px solid #ddd; padding: 0 1.25rem; background: #F2F1EC; position: sticky; top: 0; z-index: 10; gap: 4px; overflow-x: auto; }
-.tab { padding: 8px 14px; font-size: 12px; font-weight: 500; cursor: pointer; border-bottom: 2px solid transparent; color: #888; white-space: nowrap; flex-shrink: 0; }
+.tabs { display: flex; border-bottom: 1px solid #ddd; padding: 0 0.5rem; background: #F2F1EC; position: sticky; top: 0; z-index: 10; gap: 2px; overflow-x: auto; white-space: nowrap; -webkit-overflow-scrolling: touch; }
+.tab { padding: 8px 12px; font-size: 12px; font-weight: 500; cursor: pointer; border-bottom: 2px solid transparent; color: #888; flex-shrink: 0; }
 .tab.active { color: #534AB7; border-bottom-color: #534AB7; }
 .pane { display: none; padding: 1rem 1.25rem 3rem; }
 .pane.active { display: block; }
 .card { background: #fff; border: 1px solid #e5e5e5; border-radius: 12px; padding: 1rem 1.25rem; margin-bottom: 12px; }
-.card-label { font-size: 11px; font-weight: 600; letter-spacing: 0.08em; color: #fff; text-transform: uppercase; margin-bottom: 10px; background: #1B2A4A; padding: 6px 10px; border-radius: 6px; display: inline-block; }
-.card-label-blue { background: #2E5090; }
-.card-label-red { background: #7F1D1D; }
-.card-label-violet { background: #7C3AED; }
-.card-label-teal { background: #0F766E; }
-.card-label-devblue { background: #0369A1; }
+.card-label { font-size: 11px; font-weight: 600; letter-spacing: 0.08em; color: #fff; background: #1B2A4A; text-transform: uppercase; margin: -1rem -1.25rem 10px; padding: 6px 1.25rem; border-radius: 12px 12px 0 0; }
+.card-label-blue { background: #2E5090 !important; }
+.card-label-red { background: #7F1D1D !important; }
+.card-label-violet { background: #7C3AED !important; }
+.card-label-teal { background: #0F766E !important; }
+.card-label-dev { background: #0369A1 !important; }
 .row { display: flex; gap: 10px; padding: 6px 0; align-items: flex-start; }
 .row + .row { border-top: 1px solid #f0f0f0; }
-.time { font-size: 12px; color: #2E5090; font-weight: 600; min-width: 70px; padding-top: 2px; flex-shrink: 0; }
+.time { font-size: 12px; color: #999; min-width: 70px; padding-top: 2px; flex-shrink: 0; }
 .event { font-size: 14px; color: #1a1a1a; line-height: 1.4; }
 .role { font-size: 11px; color: #999; margin-top: 1px; }
-.dir-label { font-size: 12px; color: #999; min-width: 90px; flex-shrink: 0; padding-top: 2px; }
+.dir-label { font-size: 12px; color: #999; min-width: 100px; flex-shrink: 0; padding-top: 2px; }
 .dir-val { font-size: 13px; color: #1a1a1a; flex: 1; line-height: 1.5; }
 .flag { color: #854F0B; }
 .pri-row { display: flex; align-items: flex-start; gap: 10px; padding: 7px 0; font-size: 14px; }
 .pri-row + .pri-row { border-top: 1px solid #f0f0f0; }
 .num { width: 22px; height: 22px; border-radius: 50%; background: #EEEDFE; color: #534AB7; font-size: 11px; font-weight: 600; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px; }
-.badge { font-size: 11px; padding: 2px 8px; border-radius: 100px; margin-left: auto; background: #f0f0f0; color: #666; white-space: nowrap; flex-shrink: 0; }
+.badge { font-size: 11px; padding: 2px 8px; border-radius: 100px; background: #f0f0f0; color: #666; white-space: nowrap; }
 .badge-warn { background: #FAEEDA; color: #854F0B; }
 .badge-ok { background: #EAF3DE; color: #3B6D11; }
-.badge-red { background: #FEF2F2; color: #7F1D1D; font-weight: 600; }
+.badge-crit { background: #FEF2F2; color: #7F1D1D; }
 .weather-main { display: flex; justify-content: space-between; align-items: flex-start; }
-.temp { font-size: 36px; font-weight: 500; line-height: 1; }
-.wx-right { text-align: right; font-size: 13px; color: #666; line-height: 1.7; }
-.wx-sub { font-size: 12px; color: #999; margin-top: 8px; }
+.temp { font-size: 36px; font-weight: 700; line-height: 1; color: #0F172A; }
+.wx-right { text-align: right; font-size: 13px; color: #64748B; line-height: 1.7; }
+.wx-sub { font-size: 12px; color: #64748B; margin-top: 8px; }
 .sec-head { font-size: 11px; font-weight: 600; color: #999; letter-spacing: 0.06em; text-transform: uppercase; margin: 1rem 0 6px; }
 .task { font-size: 13px; padding: 7px 0; border-bottom: 1px solid #f5f5f5; display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; }
 .task:last-child { border-bottom: none; }
 .task-role { font-size: 11px; color: #999; margin-top: 2px; }
-.task-due-today { color: #7F1D1D; font-weight: 600; font-size: 11px; }
 .generated { font-size: 11px; color: #bbb; text-align: center; padding: 1rem 0; }
+/* Area row colors */
+.row-seacoast { background: #ECFEFF; color: #155e75; }
+.row-sps { background: #FFF1F2; color: #9f1239; }
+.row-teaching { background: #FEF3C7; color: #92400e; }
+.row-freelance { background: #F9FAFB; color: #374151; }
+.row-personal { background: #FFFFFF; color: #1a1a1a; }
+.row-gym { background: #EFF6FF; color: #1e40af; font-style: italic; }
+.row-focus { background: #F0FDF4; color: #166534; }
+/* Fitness */
+.meal-head { font-size: 11px; font-weight: 600; color: #534AB7; text-transform: uppercase; letter-spacing: 0.06em; margin: 10px 0 2px; }
+.meal-head:first-child { margin-top: 0; }
+.meal-items { font-size: 13px; color: #1a1a1a; margin-bottom: 2px; line-height: 1.4; }
+.meal-macros { font-size: 11px; color: #999; display: flex; gap: 14px; padding-bottom: 8px; border-bottom: 1px solid #f0f0f0; }
 .workout-meta { font-size: 12px; color: #999; margin-bottom: 10px; }
 .window-pill { font-size: 12px; padding: 3px 10px; border-radius: 100px; display: inline-block; margin-bottom: 12px; }
 .window-clear { background: #EAF3DE; color: #3B6D11; }
@@ -66,63 +78,19 @@ body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; b
 .macro-table tr.target-row td { color: #999; }
 .macro-table tr.gap-row td { color: #854F0B; font-weight: 500; }
 .macro-rec { font-size: 12px; color: #555; line-height: 1.5; padding-top: 8px; border-top: 1px solid #f0f0f0; margin-top: 4px; }
-/* Area row colors */
-.row-seacoast { background: #ECFEFF; color: #155e75; }
-.row-sps { background: #FFF1F2; color: #9f1239; }
-.row-teaching { background: #FEF3C7; color: #92400e; }
-.row-freelance { background: #F9FAFB; color: #374151; }
-.row-personal { background: #FFFFFF; color: #1a1a1a; }
-.row-gym { background: #EFF6FF; color: #1e40af; font-style: italic; }
-.row-focus { background: #F0FDF4; color: #166534; }
-.area-sps { color: #9f1239; }
-.area-teaching { color: #92400e; }
-.area-freelance { color: #374151; }
-.area-personal { color: #1a1a1a; }
-.area-seacoast { color: #155e75; }
-/* Morning brief */
-.morning-section { margin-bottom: 16px; }
-.morning-header { font-size: 11px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #fff; background: #1B2A4A; padding: 6px 10px; border-radius: 6px; display: inline-block; margin-bottom: 8px; }
-.morning-header-blue { background: #2E5090; }
-.morning-header-red { background: #7F1D1D; }
-.morning-body { font-size: 13px; color: #1a1a1a; line-height: 1.6; }
-.morning-read { font-size: 13px; color: #1a1a1a; line-height: 1.7; padding: 12px; background: #fff; border: 1px solid #e5e5e5; border-radius: 12px; }
-.deadline-row { display: flex; align-items: center; gap: 10px; padding: 6px 10px; border-radius: 8px; margin-bottom: 4px; font-size: 13px; }
-.deadline-name { flex: 1; font-weight: 500; }
-.deadline-area { font-size: 11px; min-width: 120px; }
-.deadline-due { font-size: 12px; font-weight: 600; white-space: nowrap; }
-.due-today { color: #7F1D1D; font-weight: 700; }
-.due-tomorrow { color: #92400e; }
-.due-week { color: #64748B; }
-.divider-label { font-size: 10px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #1B2A4A; background: #E2E8F0; padding: 3px 8px; border-radius: 4px; margin: 8px 0 4px; display: inline-block; }
-.opp-row { padding: 8px 0; border-bottom: 1px solid #f0f0f0; }
-.opp-row:last-child { border-bottom: none; }
-.opp-name { font-size: 14px; font-weight: 600; color: #1a1a1a; }
-.opp-body { font-size: 12px; color: #555; line-height: 1.5; margin-top: 2px; }
-.seq-row { display: flex; gap: 12px; padding: 6px 0; border-bottom: 1px solid #f0f0f0; }
-.seq-row:last-child { border-bottom: none; }
-.seq-time { font-size: 12px; font-weight: 700; color: #2E5090; min-width: 110px; flex-shrink: 0; padding-top: 1px; }
-.seq-task { font-size: 13px; color: #1a1a1a; line-height: 1.4; }
-.proj-card { background: #f8f9fa; border: 1px solid #e5e5e5; border-radius: 10px; margin-bottom: 10px; overflow: hidden; }
-.proj-card-head { display: flex; justify-content: space-between; align-items: center; padding: 8px 12px; font-size: 12px; font-weight: 700; color: #fff; }
-.proj-card-head.seacoast { background: #155e75; }
-.proj-card-head.sps { background: #9f1239; }
-.proj-card-head.teaching { background: #92400e; }
-.proj-card-head.freelance { background: #374151; }
-.proj-card-head.personal { background: #1a1a1a; }
-.proj-card-body { padding: 10px 12px; font-size: 13px; color: #1a1a1a; line-height: 1.6; }
-.proj-card-body .lbl { font-size: 11px; font-weight: 600; color: #999; text-transform: uppercase; letter-spacing: 0.05em; }
-.badge-crit { background: #FEF2F2; color: #7F1D1D; font-size: 11px; padding: 2px 8px; border-radius: 100px; font-weight: 600; }
-.badge-high { background: #FFFBEB; color: #92400e; font-size: 11px; padding: 2px 8px; border-radius: 100px; font-weight: 600; }
-.badge-med { background: #EAF3DE; color: #3B6D11; font-size: 11px; padding: 2px 8px; border-radius: 100px; font-weight: 600; }
-.do-defer-row { padding: 6px 0; border-bottom: 1px solid #f0f0f0; font-size: 13px; display: flex; gap: 10px; }
-.do-defer-row:last-child { border-bottom: none; }
-.do-defer-lbl { font-size: 11px; font-weight: 700; color: #534AB7; min-width: 80px; flex-shrink: 0; text-transform: uppercase; letter-spacing: 0.05em; padding-top: 2px; }
-.overdue-item { padding: 7px 10px; border-radius: 8px; background: #FEF2F2; margin-bottom: 6px; font-size: 13px; display: flex; gap: 10px; align-items: flex-start; }
-.overdue-name { font-weight: 600; color: #7F1D1D; flex: 1; }
-.overdue-rec { font-size: 11px; color: #854F0B; margin-top: 2px; }
-/* Capacity */
-.capacity-card { background: #FEF2F2; border: 1px solid #fca5a5; border-radius: 10px; padding: 10px 14px; margin-bottom: 12px; font-size: 13px; color: #7F1D1D; }
-.capacity-label { font-size: 11px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: #7F1D1D; margin-bottom: 4px; }
+.bar-section { margin: 14px 0 6px; }
+.bar-section-label { font-size: 10px; font-weight: 600; color: #999; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 8px; }
+.bar-row { margin-bottom: 9px; }
+.bar-label { display: flex; justify-content: space-between; font-size: 11px; color: #555; margin-bottom: 3px; }
+.bar-label span:last-child { color: #999; }
+.bar-bg { height: 7px; background: #f0f0f0; border-radius: 4px; overflow: hidden; }
+.bar-fill { height: 100%; border-radius: 4px; background: #534AB7; }
+.bar-fill.over { background: #854F0B; }
+.pack-row { display: flex; gap: 10px; padding: 7px 0; font-size: 13px; align-items: flex-start; }
+.pack-row + .pack-row { border-top: 1px solid #f0f0f0; }
+.pack-meal { font-weight: 500; min-width: 90px; flex-shrink: 0; }
+.pack-conflict { font-size: 11px; color: #854F0B; min-width: 120px; flex-shrink: 0; }
+.pack-swap { font-size: 12px; color: #555; flex: 1; }
 /* Faith */
 .faith-verse { font-size: 16px; line-height: 1.6; color: #1a1a1a; font-style: italic; margin-bottom: 8px; }
 .faith-ref { font-size: 12px; font-weight: 600; color: #5B21B6; text-transform: uppercase; letter-spacing: 0.06em; }
@@ -134,575 +102,474 @@ body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; b
 .dev-body p { font-size: 13px; color: #1a1a1a; line-height: 1.6; margin-bottom: 8px; }
 .dev-question { font-size: 13px; color: #0369A1; font-style: italic; margin-top: 10px; }
 .dev-placeholder { font-size: 13px; color: #999; font-style: italic; }
-/* Macro bars */
-.bar-section { margin: 14px 0 6px; }
-.bar-section-label { font-size: 10px; font-weight: 600; color: #999; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 8px; }
-.bar-row { margin-bottom: 9px; }
-.bar-label { display: flex; justify-content: space-between; font-size: 11px; color: #555; margin-bottom: 3px; }
-.bar-label span:last-child { color: #999; }
-.bar-bg { height: 7px; background: #f0f0f0; border-radius: 4px; overflow: hidden; }
-.bar-fill { height: 100%; border-radius: 4px; background: #534AB7; transition: width 0.3s; }
-.bar-fill.over { background: #854F0B; }
 </style>
 </head>
 <body>
 <div class="header">
-  <div class="header-date">SATURDAY, JUNE 13, 2026</div>
+  <div class="header-date">Saturday, June 13</div>
   <div class="header-title">Good morning, Adam.</div>
 </div>
 <div class="tabs">
   <div class="tab active" data-tab="overview">Overview</div>
   <div class="tab" data-tab="faith">Faith</div>
-  <div class="tab" data-tab="brief">Morning Brief</div>
+  <div class="tab" data-tab="morning">Morning Brief</div>
   <div class="tab" data-tab="fitness">Fitness</div>
-  <div class="tab" data-tab="daily-dev">Daily Development</div>
+  <div class="tab" data-tab="daily-dev">Daily Dev</div>
   <div class="tab" data-tab="weekly">Weekly</div>
   <div class="tab" data-tab="reference">Reference</div>
 </div>
 
-<!-- ========== OVERVIEW PANE ========== -->
+<!-- OVERVIEW -->
 <div class="pane active" id="pane-overview">
   <div class="card">
-    <div class="card-label">Weather -- Hanahan SC</div>
-    <div style="font-size:13px;color:#1a1a1a;line-height:1.8;">91 / 72 &middot; Feels like 92&deg; &middot; Humidity 52% &middot; Mostly cloudy</div>
+    <div class="card-label">Weather</div>
+    <div class="weather-main">
+      <div>
+        <div class="temp">71°</div>
+        <div class="wx-sub">Humidity 96% · Very humid</div>
+      </div>
+      <div class="wx-right">High 89° / Low 71°<br>Feels like 77°<br>SW wind 10-15 mph</div>
+    </div>
+    <div class="wx-sub" style="margin-top:8px">Partly cloudy morning, becoming more cloudy. High humidity -- stay indoors for work sessions.</div>
   </div>
-
   <div class="card">
     <div class="card-label">Today's Schedule</div>
-    <div class="row row-focus">
-      <span class="time">All day</span>
-      <div><div class="event">No events scheduled</div><div class="role">Saturday -- clear calendar</div></div>
-    </div>
-    <div class="row row-focus">
-      <span class="time">8:00 PM</span>
-      <div><div class="event">Evening Focus: Family / Recovery</div><div class="role">Protected Saturday evening</div></div>
-    </div>
+    
+  <div class="row">
+    <span class="time">All day</span>
+    <div><div class="event">No scheduled events</div><div class="role">Family Saturday</div></div>
+  </div>
+  <div class="row">
+    <span class="time">6:00 AM</span>
+    <div><div class="event">Optional: SST or Teaching work window</div><div class="role">Before family time begins</div></div>
+  </div>
+  <div class="row row-focus">
+    <span class="time" style="color:#166534">8-10 PM</span>
+    <div><div class="event" style="color:#166534">Evening Focus: Family / Recovery</div></div>
   </div>
 
+  </div>
   <div class="card">
     <div class="card-label card-label-blue">Today's Game Plan</div>
-    <div class="row">
-      <span class="dir-label">Protect:</span>
-      <span class="dir-val">Family time from noon onward -- free Saturday deserves full protection after a packed week ahead</span>
-    </div>
-    <div class="row">
-      <span class="dir-label">Main pressure:</span>
-      <span class="dir-val">6 teaching deliverables due tomorrow (June 14) -- three lecture recordings and three grading items</span>
-    </div>
-    <div class="row">
-      <span class="dir-label">Tonight:</span>
-      <span class="dir-val">Family / Recovery -- lean into the weekend</span>
-    </div>
-    <div class="row">
-      <span class="dir-label">Watch out:</span>
-      <span class="dir-val">Teaching crunch will pull hard all morning -- set a hard stop at noon to protect the afternoon</span>
-    </div>
-  </div>
+    
+  <div class="row"><span class="dir-label">Protect:</span><span class="dir-val">Family time this afternoon and evening -- it is Saturday</span></div>
+  <div class="row"><span class="dir-label">Main pressure:</span><span class="dir-val flag">Six Teaching items all due tomorrow (June 14): GRADE Exam #1, Denotation/Connotation/Myth, Safari #5 + 3 lecture recordings</span></div>
+  <div class="row"><span class="dir-label">Tonight:</span><span class="dir-val">Family / Recovery -- no formal evening focus block on Saturdays</span></div>
+  <div class="row"><span class="dir-label">Watch out:</span><span class="dir-val flag">Budget is 20 days overdue. DR trip is one week away (June 20) -- vacation logistics still open.</span></div>
 
+  </div>
   <div class="card">
     <div class="card-label">Open Work Windows</div>
-    <div class="row row-sps">
-      <span class="time">6:00 AM</span>
-      <div><div class="event">SST block: 6:00--8:00 AM</div><div class="role">Optional Saturday morning work window -- Module 3 priority</div></div>
-    </div>
-    <div class="row row-teaching">
-      <span class="time">8:00 AM</span>
-      <div><div class="event">Teaching: 8:00 AM -- noon</div><div class="role">Recordings + grading -- set hard noon stop</div></div>
-    </div>
-    <div class="row row-personal" style="background:#F0FDF4;color:#166534;">
-      <span class="time" style="color:#166534;">12:00 PM</span>
-      <div><div class="event">Family time: 12:00 PM onward</div><div class="role">Protected</div></div>
-    </div>
-  </div>
+    
+  <div class="row"><span class="time" style="color:#2E5090;min-width:120px">6:00-8:00 AM</span><div class="event">Optional SST or Teaching block (family Saturday)</div></div>
+  <div class="row"><span class="time" style="color:#2E5090;min-width:120px">Morning</span><div class="event">Best window for grading -- before family activities begin</div></div>
+  <div class="row"><span class="time" style="color:#2E5090;min-width:120px">8:00-10:00 PM</span><div class="event">Evening window -- lecture recordings if grading is done</div></div>
 
+  </div>
   <div class="card">
     <div class="card-label">Top Priorities</div>
-    <div class="pri-row">
-      <span class="num">1</span>
-      <div style="flex:1;">
-        <div style="font-weight:600;">RECORD Week 6 Lectures (15 Formal Analysis, 16 Typography, 17 Graphic Design)</div>
-        <div class="role area-teaching">Teaching &middot; <span class="task-due-today">Due Jun 14</span></div>
-        <div style="font-size:12px;color:#2E5090;margin-top:3px;">Next action: Set up recording space and knock all three in one session</div>
-      </div>
+    
+  <div class="pri-row">
+    <span class="num">1</span>
+    <div style="flex:1">
+      <div style="font-weight:600">GRADE Exam #1</div>
+      <div class="role" style="color:#92400e">Teaching <span style="color:#7F1D1D;font-weight:700">  DUE TOMORROW June 14</span></div>
+      <div style="color:#2E5090;font-size:12px;margin-top:2px">Next action: Open Canvas gradebook and work through submissions</div>
     </div>
-    <div class="pri-row">
-      <span class="num">2</span>
-      <div style="flex:1;">
-        <div style="font-weight:600;">GRADE Exam #1 / Denotation-Connotation-Myth / Safari #5</div>
-        <div class="role area-teaching">Teaching &middot; <span class="task-due-today">Due Jun 14</span></div>
-        <div style="font-size:12px;color:#2E5090;margin-top:3px;">Next action: Complete all three grading items before noon or finish in evening</div>
-      </div>
+    <span class="badge badge-warn">Due Jun 14</span>
+  </div>
+  <div class="pri-row">
+    <span class="num">2</span>
+    <div style="flex:1">
+      <div style="font-weight:600">GRADE Denotation, Connotation, and Myth</div>
+      <div class="role" style="color:#92400e">Teaching <span style="color:#7F1D1D;font-weight:700">  DUE TOMORROW June 14</span></div>
+      <div style="color:#2E5090;font-size:12px;margin-top:2px">Next action: Grade and post feedback before end of day</div>
     </div>
-    <div class="pri-row">
-      <span class="num">3</span>
-      <div style="flex:1;">
-        <div style="font-weight:600;">WRITE Module 3: Capturing the Story</div>
-        <div class="role area-sps">Smartphone Storytellers</div>
-        <div style="font-size:12px;color:#2E5090;margin-top:3px;">Next action: Open a blank doc at 6 AM and write the outline + first section</div>
-      </div>
+    <span class="badge badge-warn">Due Jun 14</span>
+  </div>
+  <div class="pri-row">
+    <span class="num">3</span>
+    <div style="flex:1">
+      <div style="font-weight:600">RECORD: Week 6 Lectures (15, 16, 17)</div>
+      <div class="role" style="color:#92400e">Teaching <span style="color:#7F1D1D;font-weight:700">  DUE TOMORROW June 14</span></div>
+      <div style="color:#2E5090;font-size:12px;margin-top:2px">Next action: Set up recording space, record Formal Analysis first</div>
     </div>
+    <span class="badge badge-warn">Due Jun 14</span>
   </div>
 
-  <div class="capacity-card">
-    <div class="capacity-label">Capacity: Tight</div>
-    Six teaching deliverables due tomorrow compress the morning. Saturday family time still deserves protection from noon onward.
+  </div>
+  <div class="card" style="background:#FEF2F2;border-color:#fca5a5">
+    <div class="card-label card-label-red">Capacity Note</div>
+    <div style="font-size:13px;padding:4px 0"><span style="font-weight:700">Capacity: Tight.</span> Six Teaching items all due tomorrow -- grading and recording on a family Saturday requires deliberate time blocking.</div>
+  </div>
+  <div class="card" style="background:#FEF2F2;border-color:#fca5a5">
+    <div class="card-label card-label-red">Heads Up -- Overdue</div>
+    
+  <div class="task">
+    <div><span style="font-weight:700;color:#7F1D1D">Budget</span><div class="task-role">Personal -- Due May 24. 20 days overdue.</div></div>
   </div>
 
-  <div class="card" style="background:#FEF2F2;border-color:#fca5a5;">
-    <div class="card-label card-label-red">Heads Up</div>
-    <div class="task"><div><div style="color:#7F1D1D;font-weight:600;">Budget</div><div class="task-role">Personal</div></div><span class="badge badge-warn">May 24 -- OVERDUE</span></div>
-    <div class="task"><div><div style="color:#7F1D1D;font-weight:600;">GRADE Light Discussion</div><div class="task-role">Teaching</div></div><span class="badge badge-warn">May 30 -- OVERDUE</span></div>
-    <div class="task"><div><div style="color:#7F1D1D;font-weight:600;">GRADE Color Discussion</div><div class="task-role">Teaching</div></div><span class="badge badge-warn">May 30 -- OVERDUE</span></div>
-    <div class="task"><div><div style="color:#7F1D1D;font-weight:600;">GRADE Safari #4</div><div class="task-role">Teaching</div></div><span class="badge badge-warn">Jun 7 -- OVERDUE</span></div>
   </div>
-
-  <div class="generated">Generated June 13, 2026 at 4:25 AM ET</div>
+  <div class="generated">Generated June 13, 2026 at 6:26 PM ET</div>
 </div>
 
-<!-- ========== FAITH PANE ========== -->
+<!-- FAITH -->
 <div class="pane" id="pane-faith">
   <div class="card">
-    <div class="card-label card-label-violet" style="background:#7C3AED;">My Utmost for His Highest</div>
+    <div class="card-label card-label-violet">My Utmost for His Highest</div>
     <div class="faith-ref">June 13: GETTING THERE</div>
-    <div style="margin-top:10px;">
-      <div class="faith-verse">&ldquo;. . . come, follow Me.&rdquo;</div>
-      <div class="faith-ref">&mdash; Luke 18:22</div>
-    </div>
-    <div style="margin-top:12px;">
-      <p style="font-size:13px;color:#1a1a1a;line-height:1.6;margin-bottom:8px;">Where our individual desire dies and sanctified surrender lives. One of the greatest hindrances in coming to Jesus is the excuse of our own individual temperament. We make our temperament and our natural desires barriers to coming to Jesus. Yet the first thing we realize when we do come to Jesus is that He pays no attention whatsoever to our natural desires. We have the idea that we can dedicate our gifts to God. However, you cannot dedicate what is not yours. There is actually only one thing you can dedicate to God, and that is your right to yourself (see Romans 12:1). If you will give God your right to yourself, He will make a holy experiment out of you&mdash;and His experiments always succeed. The one true mark of a saint of God is the inner creativity that flows from being totally surrendered to Jesus Christ. In the life of a saint there is this amazing Well, which is a continual Source of original life. The Spirit of God is a Well of water springing up perpetually fresh. A saint realizes that it is God who engineers his circumstances; consequently there are no complaints, only unrestrained surrender to Jesus. Never try to make your experience a principle for others, but allow God to be as creative and original with others as He is with you.</p>
-<p style="font-size:13px;color:#1a1a1a;line-height:1.6;margin-bottom:8px;">If you abandon everything to Jesus, and come when He says, &ldquo;Come,&rdquo; then He will continue to say, &ldquo;Come,&rdquo; through you. You will go out into the world reproducing the echo of Christ&rsquo;s &ldquo;Come.&rdquo; That is the result in every soul who has abandoned all and come to Jesus.</p>
-<p style="font-size:13px;color:#1a1a1a;line-height:1.6;margin-bottom:8px;"><em>Have I come to Him? Will I come now?</em></p>
-    </div>
+    <div class="faith-verse" style="margin-top:8px">". . . come, follow Me."</div>
+    <div class="faith-ref">-- Luke 18:22</div>
+    <div style="margin-top:12px"><p style="font-size:13px;color:#1a1a1a;line-height:1.6;margin-bottom:8px">Where our individual desire dies and sanctified surrender lives. One of the greatest hindrances in coming to Jesus is the excuse of our own individual temperament. We make our temperament and our natural desires barriers to coming to Jesus. Yet the first thing we realize when we do come to Jesus is that He pays no attention whatsoever to our natural desires.</p>
+<p style="font-size:13px;color:#1a1a1a;line-height:1.6;margin-bottom:8px">We have the idea that we can dedicate our gifts to God. However, you cannot dedicate what is not yours. There is actually only one thing you can dedicate to God, and that is your right to yourself (see Romans 12:1). If you will give God your right to yourself, He will make a holy experiment out of you -- and His experiments always succeed. The one true mark of a saint of God is the inner creativity that flows from being totally surrendered to Jesus Christ. In the life of a saint there is this amazing Well, which is a continual Source of original life. The Spirit of God is a Well of water springing up perpetually fresh. A saint realizes that it is God who engineers his circumstances; consequently there are no complaints, only unrestrained surrender to Jesus. Never try to make your experience a principle for others, but allow God to be as creative and original with others as He is with you.</p>
+<p style="font-size:13px;color:#1a1a1a;line-height:1.6;margin-bottom:8px">If you abandon everything to Jesus, and come when He says, "Come," then He will continue to say, "Come," through you. You will go out into the world reproducing the echo of Christ's "Come." That is the result in every soul who has abandoned all and come to Jesus.</p>
+<p style="font-size:13px;color:#1a1a1a;line-height:1.6;margin-bottom:8px">Have I come to Him? Will I come now?</p></div>
   </div>
-
   <div class="card">
-    <div class="card-label card-label-violet" style="background:#7C3AED;">Prayer List</div>
-    <div class="prayer-item">Jirah</div>
-    <div class="prayer-item">Russo</div>
-    <div class="prayer-item">Carrie Davis</div>
-    <div class="prayer-item">Jada Jone's Friend</div>
+    <div class="card-label card-label-violet">Prayer List</div>
+    <div class="prayer-item">Jirah</div><div class="prayer-item">Russo</div><div class="prayer-item">Carrie Davis</div><div class="prayer-item">Jada Jones' Friend</div>
   </div>
-
-  <div class="generated">Generated June 13, 2026 at 4:25 AM ET</div>
+  <div class="generated">Generated June 13, 2026 at 6:26 PM ET</div>
 </div>
 
-<!-- ========== MORNING BRIEF PANE ========== -->
-<div class="pane" id="pane-brief">
-  <div style="font-size:13px;color:#888;margin-bottom:12px;">Saturday, June 13, 2026</div>
-
-  <div class="morning-section">
-    <div class="morning-header morning-header-blue">Morning Read</div>
-    <div class="morning-read">
-      The calendar is clear today, but the teaching wall is real -- six items hit their June 14 deadline tomorrow. Three lecture recordings (Formal Analysis, Typography, Graphic Design) and three grading tasks (Exam #1, Denotation/Connotation/Myth, Safari #5) all need to land before midnight. The week ahead is completely consumed by Kidscamp and filming: Monday through Wednesday are full shoot days, Tuesday is a 9-to-5 studio session at Silver Hill, and Wednesday is an all-day takeover story in Hanahan. That means every SST morning window Mon-Wed is gone. This Saturday morning is the last unscheduled space before the most compressed week of the month. Use the 6-8 AM window for Module 3 and then shift fully into teaching until noon. The afternoon is family time -- hold that line.
-      <div style="margin-top:8px;"><strong>Watch out for:</strong> Teaching obligation consuming the whole day -- set a hard noon stop for recordings; finish grading in the evening if needed, but protect Saturday afternoon.
-      </div>
+<!-- MORNING BRIEF -->
+<div class="pane" id="pane-morning">
+  <div style="font-size:13px;color:#1a1a1a;line-height:1.6;margin-bottom:1rem;padding:0 0 1rem;border-bottom:1px solid #e5e5e5">Six Teaching items -- three grades and three lecture recordings -- are all due tomorrow (Sunday, June 14), making today the real deadline day. The calendar is clear, which is good, but it is officially a family Saturday, so block work strategically and protect the afternoon. Humidity is at 96%, so keep plans indoors. Biggest risk: letting the day slip without getting the lecture recordings done.</div>
+  <div class="card" style="background:#FEF2F2;border-color:#fca5a5">
+    <div class="card-label card-label-red">What You Might Be Forgetting</div>
+    <div style="padding:8px 0;border-bottom:1px solid #fca5a5"><div style="font-size:13px;color:#1a1a1a"><b>Budget -- 20 days overdue</b></div><div style="font-size:12px;color:#7F1D1D;margin-top:2px">Due May 24 and still unaddressed. This keeps showing up. Pick a 30-minute block to handle it.</div></div><div style="padding:8px 0;border-bottom:1px solid #fca5a5"><div style="font-size:13px;color:#1a1a1a"><b>DR Trip logistics (June 20)</b></div><div style="font-size:12px;color:#7F1D1D;margin-top:2px">The 'Vacation logistics' task is sitting open with one week until departure. Confirm any outstanding details today.</div></div><div style="padding:8px 0;border-bottom:1px solid #fca5a5"><div style="font-size:13px;color:#1a1a1a"><b>Week 6 lecture recordings</b></div><div style="font-size:12px;color:#7F1D1D;margin-top:2px">Three recordings due tomorrow require setup time -- camera, screen capture, and audio. Don't let grading crowd this out.</div></div>
+  </div>
+  <div class="card">
+    <div class="card-label card-label-blue">What's Next</div>
+    <div class="pri-row"><span class="num">1</span><div style="flex:1"><div style="font-weight:600;font-size:13px"><b>GRADE Exam #1</b></div><div style="font-size:12px;color:#555;margin-top:2px">Due tomorrow. Highest-stakes grading item today -- open Canvas and work through submissions.</div></div></div><div class="pri-row"><span class="num">2</span><div style="flex:1"><div style="font-weight:600;font-size:13px"><b>RECORD Week 6 Lectures (Formal Analysis, Typography, Graphic Design)</b></div><div style="font-size:12px;color:#555;margin-top:2px">Three recordings due tomorrow. Block at least 2-3 hours -- set up recording space first.</div></div></div><div class="pri-row"><span class="num">3</span><div style="flex:1"><div style="font-weight:600;font-size:13px"><b>GRADE Safari #5 + Denotation/Connotation/Myth</b></div><div style="font-size:12px;color:#555;margin-top:2px">Also due tomorrow. Get these done alongside the exam grades to clear the entire Teaching backlog.</div></div></div><div class="pri-row"><span class="num">4</span><div style="flex:1"><div style="font-weight:600;font-size:13px"><b>DR Trip logistics</b></div><div style="font-size:12px;color:#555;margin-top:2px">One week out -- confirm any open details today while the calendar is clear.</div></div></div><div class="pri-row"><span class="num">5</span><div style="flex:1"><div style="font-weight:600;font-size:13px"><b>Start Module 3: Capturing the Story (SST)</b></div><div style="font-size:12px;color:#555;margin-top:2px">If morning time opens, even outlining Module 3 keeps SST momentum alive heading into a Kidscamp week.</div></div></div>
+  </div>
+  <div class="card" style="background:#FFF1F2;border-color:#fda4af">
+    <div class="card-label" style="background:#9f1239">Smartphone Storytellers</div>
+    <div class="row row-sps"><span class="dir-label" style="color:#9f1239">Status:</span><span class="dir-val" style="color:#9f1239">Four modules open with no deadlines -- at risk of continued drift as Kidscamp (Mon-Wed) consumes the coming week.</span></div>
+    <div class="row row-sps"><span class="dir-label" style="color:#9f1239">Today's move:</span><span class="dir-val" style="color:#9f1239">Outline Module 3: Capturing the Story -- even 30 minutes gives it a structure to build on.</span></div>
+    <div class="row row-sps"><span class="dir-label" style="color:#9f1239">Morning block:</span><span class="dir-val" style="color:#9f1239">If up early (6-8 AM), Module 3 outline is the move. Teaching grading owns the rest of the morning.</span></div>
+  </div>
+  <div class="card">
+    <div class="card-label card-label-blue">Morning Read</div>
+    <div style="font-size:13px;color:#1a1a1a;line-height:1.6;padding:4px 0">
+      Today is a clear Saturday calendar-wise, but it's anything but light -- six Teaching items all due tomorrow (June 14) need to get done. Three grading items and three lecture recordings. The recordings alone require 2-3 hours of dedicated setup time. Best strategy: grade in the morning while your brain is sharp, record lectures in the evening after family time. The DR trip leaves June 20, one week out, so all deliverables due before June 19 must land this week. The SST module writing (4 open tasks, no deadlines) continues to drift -- Mon-Wed are Kidscamp days with no morning SST window.
+      <div style="margin-top:10px;font-size:13px"><b>Watch out for:</b> Letting grading run over into the evening and leaving no time for lecture recordings -- both are due tomorrow.</div>
     </div>
   </div>
-
-  <div class="morning-section">
-    <div class="morning-header morning-header-blue">Opportunities</div>
-    <div class="card" style="padding:0.75rem 1.25rem;">
-      <div class="opp-row">
-        <div class="opp-name">WRITE Module 3: Capturing the Story <span class="area-sps" style="font-size:11px;font-weight:400;margin-left:6px;">Smartphone Storytellers</span></div>
-        <div class="opp-body">The 6-8 AM window is open. Even just outlining the structure and writing the opening section this morning puts meaningful momentum into the week -- Mon-Wed have no SST windows at all.</div>
-      </div>
-      <div class="opp-row">
-        <div class="opp-name">Vacation logistics <span class="area-personal" style="font-size:11px;font-weight:400;margin-left:6px;">Personal</span></div>
-        <div class="opp-body">DR trip is one week out (June 20). Confirming logistics this weekend prevents scramble next Friday when Zelda has violin and you are fresh off a full filming week.</div>
-      </div>
-    </div>
+  <div class="card">
+    <div class="card-label card-label-blue">Recommended Sequence</div>
+    <div class="row"><span class="time" style="color:#2E5090;font-weight:600;min-width:110px">6:00-8:00 AM</span><div class="event">Optional: SST work -- Module 3 outline if up early</div></div><div class="row"><span class="time" style="color:#2E5090;font-weight:600;min-width:110px">8:00-10:00 AM</span><div class="event">Teaching grading block -- GRADE Exam #1 (highest urgency)</div></div><div class="row"><span class="time" style="color:#2E5090;font-weight:600;min-width:110px">10:00 AM-12:00 PM</span><div class="event">Continue grading -- Denotation/Connotation/Myth + Safari #5</div></div><div class="row"><span class="time" style="color:#2E5090;font-weight:600;min-width:110px">12:00-1:00 PM</span><div class="event">Family lunch and break</div></div><div class="row"><span class="time" style="color:#2E5090;font-weight:600;min-width:110px">Afternoon</span><div class="event">Family time -- protected</div></div><div class="row"><span class="time" style="color:#2E5090;font-weight:600;min-width:110px">8:00-10:00 PM</span><div class="event">Lecture recordings block -- Formal Analysis, Typography, Graphic Design (all three due tomorrow)</div></div>
   </div>
-
-  <div class="morning-section">
-    <div class="morning-header">Weather</div>
-    <div style="font-size:13px;color:#555;padding:8px 0;">Feels like 92&deg; &middot; High 91 / Low 72 &middot; Humidity 52% &middot; Mostly cloudy all day</div>
+  <div class="card">
+    <div class="card-label">Deadline Pressure</div>
+    <div style="font-size:10px;font-weight:700;color:#1B2A4A;background:#E2E8F0;padding:4px 10px;letter-spacing:0.06em;margin:4px -1.25rem;text-transform:uppercase">TODAY / TOMORROW</div><div class="task row-teaching" style="display:flex;justify-content:space-between;align-items:center">
+              <div><span style="font-weight:500">GRADE Exam #1</span><div class="task-role" style="color:#92400e">Teaching</div></div>
+              <span style="font-size:11px;font-weight:700;color:#7F1D1D;white-space:nowrap;margin-left:8px">TOMORROW Jun 14</span>
+            </div><div class="task row-teaching" style="display:flex;justify-content:space-between;align-items:center">
+              <div><span style="font-weight:500">GRADE Denotation, Connotation, and Myth</span><div class="task-role" style="color:#92400e">Teaching</div></div>
+              <span style="font-size:11px;font-weight:700;color:#7F1D1D;white-space:nowrap;margin-left:8px">TOMORROW Jun 14</span>
+            </div><div class="task row-teaching" style="display:flex;justify-content:space-between;align-items:center">
+              <div><span style="font-weight:500">GRADE Safari #5</span><div class="task-role" style="color:#92400e">Teaching</div></div>
+              <span style="font-size:11px;font-weight:700;color:#7F1D1D;white-space:nowrap;margin-left:8px">TOMORROW Jun 14</span>
+            </div><div class="task row-teaching" style="display:flex;justify-content:space-between;align-items:center">
+              <div><span style="font-weight:500">RECORD Week 6 Lectures (x3)</span><div class="task-role" style="color:#92400e">Teaching</div></div>
+              <span style="font-size:11px;font-weight:700;color:#7F1D1D;white-space:nowrap;margin-left:8px">TOMORROW Jun 14</span>
+            </div><div style="font-size:10px;font-weight:700;color:#1B2A4A;background:#E2E8F0;padding:4px 10px;letter-spacing:0.06em;margin:4px -1.25rem;text-transform:uppercase">THIS WEEK</div><div class="task row-teaching" style="display:flex;justify-content:space-between;align-items:center">
+              <div><span style="font-weight:500">Lecture notes 18-20</span><div class="task-role" style="color:#92400e">Teaching</div></div>
+              <span style="font-size:11px;font-weight:700;color:#64748B;white-space:nowrap;margin-left:8px">Jun 19</span>
+            </div><div class="task row-teaching" style="display:flex;justify-content:space-between;align-items:center">
+              <div><span style="font-weight:500">POST Exam #2 Heads Up</span><div class="task-role" style="color:#92400e">Teaching</div></div>
+              <span style="font-size:11px;font-weight:700;color:#64748B;white-space:nowrap;margin-left:8px">Jun 19</span>
+            </div><div style="font-size:10px;font-weight:700;color:#1B2A4A;background:#E2E8F0;padding:4px 10px;letter-spacing:0.06em;margin:4px -1.25rem;text-transform:uppercase">LATER</div><div class="task row-freelance" style="display:flex;justify-content:space-between;align-items:center">
+              <div><span style="font-weight:500">Overview Video</span><div class="task-role" style="color:#374151">Freelance</div></div>
+              <span style="font-size:11px;font-weight:700;color:#94A3B8;white-space:nowrap;margin-left:8px">Jun 28</span>
+            </div>
   </div>
-
-  <div class="morning-section">
-    <div class="morning-header morning-header-blue">Recommended Sequence</div>
-    <div class="card" style="padding:0.75rem 1.25rem;">
-      <div class="seq-row"><span class="seq-time">6:00--8:00 AM</span><span class="seq-task">SST -- Module 3 outline + first section draft</span></div>
-      <div class="seq-row"><span class="seq-time">8:00--10:00 AM</span><span class="seq-task row-teaching" style="background:transparent;">RECORD Week 6 Lecture 15: Formal Analysis</span></div>
-      <div class="seq-row"><span class="seq-time">10:00 AM--noon</span><span class="seq-task">RECORD Lectures 16 + 17 (Typography, Graphic Design) -- batch both in one session</span></div>
-      <div class="seq-row"><span class="seq-time">12:00 PM onward</span><span class="seq-task" style="color:#166534;">Family time -- protected</span></div>
-      <div class="seq-row"><span class="seq-time">Eve (if needed)</span><span class="seq-task">GRADE Exam #1 + Denotation/Connotation/Myth + Safari #5 -- finish teaching wall</span></div>
-      <div class="seq-row"><span class="seq-time">8:00--10:00 PM</span><span class="seq-task">Budget + vacation logistics (Personal/Admin)</span></div>
-    </div>
+  <div class="card">
+    <div class="card-label">Project Cards</div>
+    <div style="font-size:13px;font-weight:700;color:#92400e;margin-bottom:4px">Teaching <span class="badge badge-crit">Critical</span></div>
+    <div class="row row-teaching"><span class="dir-label" style="color:#92400e">Why today:</span><span class="dir-val">Six items due tomorrow. No more runway.</span></div>
+    <div class="row row-teaching"><span class="dir-label" style="color:#92400e">Best move:</span><span class="dir-val">Grade first, record lectures second. Do both today.</span></div>
+    <div class="row row-teaching" style="margin-bottom:12px"><span class="dir-label" style="color:#92400e">Watch out:</span><span class="dir-val">Recordings require dedicated setup -- don't leave them until late.</span></div>
+    <div style="font-size:13px;font-weight:700;color:#9f1239;margin-bottom:4px;margin-top:8px">Smartphone Storytellers <span class="badge" style="background:#FFF1F2;color:#9f1239">Medium</span></div>
+    <div class="row row-sps"><span class="dir-label" style="color:#9f1239">Why today:</span><span class="dir-val">Mon-Wed blocked by Kidscamp. Today is the last SST window this week.</span></div>
+    <div class="row row-sps"><span class="dir-label" style="color:#9f1239">Best move:</span><span class="dir-val">Module 3 outline in the early morning window.</span></div>
+    <div class="row row-sps"><span class="dir-label" style="color:#9f1239">Watch out:</span><span class="dir-val">All four modules have no deadlines -- they will keep slipping without intentional protection.</span></div>
   </div>
-
-  <div class="morning-section">
-    <div class="morning-header">Deadline Pressure</div>
-    <div class="card" style="padding:0.75rem 1.25rem;">
-      <span class="divider-label">DUE TOMORROW (Jun 14)</span>
-      <div class="deadline-row row-teaching">
-        <span class="deadline-name">RECORD Week 6 Lecture 15: Formal Analysis</span>
-        <span class="deadline-area area-teaching">Teaching</span>
-        <span class="deadline-due due-today">TOMORROW</span>
-      </div>
-      <div class="deadline-row row-teaching">
-        <span class="deadline-name">RECORD Week 6 Lecture 16: Typography</span>
-        <span class="deadline-area area-teaching">Teaching</span>
-        <span class="deadline-due due-today">TOMORROW</span>
-      </div>
-      <div class="deadline-row row-teaching">
-        <span class="deadline-name">RECORD Week 6 Lecture 17: Graphic Design</span>
-        <span class="deadline-area area-teaching">Teaching</span>
-        <span class="deadline-due due-today">TOMORROW</span>
-      </div>
-      <div class="deadline-row row-teaching">
-        <span class="deadline-name">GRADE Exam #1</span>
-        <span class="deadline-area area-teaching">Teaching</span>
-        <span class="deadline-due due-today">TOMORROW</span>
-      </div>
-      <div class="deadline-row row-teaching">
-        <span class="deadline-name">GRADE Denotation, Connotation, and Myth</span>
-        <span class="deadline-area area-teaching">Teaching</span>
-        <span class="deadline-due due-today">TOMORROW</span>
-      </div>
-      <div class="deadline-row row-teaching">
-        <span class="deadline-name">GRADE Safari #5</span>
-        <span class="deadline-area area-teaching">Teaching</span>
-        <span class="deadline-due due-today">TOMORROW</span>
-      </div>
-      <span class="divider-label">THIS WEEK (Jun 19)</span>
-      <div class="deadline-row row-teaching">
-        <span class="deadline-name">Lecture notes 18-20</span>
-        <span class="deadline-area area-teaching">Teaching</span>
-        <span class="deadline-due due-week">Fri Jun 19</span>
-      </div>
-      <div class="deadline-row row-teaching">
-        <span class="deadline-name">POST Exam #2 Heads Up</span>
-        <span class="deadline-area area-teaching">Teaching</span>
-        <span class="deadline-due due-week">Fri Jun 19</span>
-      </div>
-      <span class="divider-label">LATER</span>
-      <div class="deadline-row row-freelance">
-        <span class="deadline-name">Overview Video</span>
-        <span class="deadline-area area-freelance">Freelance</span>
-        <span class="deadline-due due-week">Jun 28</span>
-      </div>
-    </div>
+  <div class="card">
+    <div class="card-label card-label-blue">Do / Defer / Decide</div>
+    <div class="row"><span class="dir-label">Do today:</span><span class="dir-val">All six Teaching items (3 grades + 3 recordings). DR trip logistics check. Module 3 outline if time opens.</span></div>
+    <div class="row"><span class="dir-label">Defer:</span><span class="dir-val">Upcoming Teaching work (Lecture notes 18-20, due June 19) -- don't let it crowd today's deadline work.</span></div>
+    <div class="row"><span class="dir-label">Decide:</span><span class="dir-val">Budget -- 20 days overdue. Decide: handle Monday evening (Admin focus night) or address today.</span></div>
   </div>
-
-  <div class="morning-section">
-    <div class="morning-header">Project Cards</div>
-    <div class="proj-card">
-      <div class="proj-card-head teaching">Teaching <span class="badge-crit">Critical</span></div>
-      <div class="proj-card-body">
-        <div><span class="lbl">Why today:</span> June 14 wall. Six items -- three recordings and three grading items -- all due tomorrow.</div>
-        <div style="margin-top:6px;"><span class="lbl">Best move:</span> Do recordings first (8 AM -- noon), as they require more setup. Grading can happen in evening blocks if needed.</div>
-        <div style="margin-top:6px;"><span class="lbl">Watch out:</span> Also carries three overdue items from May/early June that add to the backlog pressure.</div>
-      </div>
-    </div>
-    <div class="proj-card">
-      <div class="proj-card-head sps">Smartphone Storytellers <span class="badge-med">Medium</span></div>
-      <div class="proj-card-body">
-        <div><span class="lbl">Why today:</span> Mon-Wed are blocked by Kidscamp filming. This Saturday 6-8 AM window is the only SST opportunity until Thursday.</div>
-        <div style="margin-top:6px;"><span class="lbl">Best move:</span> Start Module 3 outline and first section. Even a partial draft keeps momentum going into a compressed week.</div>
-        <div style="margin-top:6px;"><span class="lbl">Watch out:</span> Teaching urgency will tempt you to skip the 6 AM SST window. Resist -- teaching can absorb 8 AM to noon.</div>
-      </div>
-    </div>
-    <div class="proj-card">
-      <div class="proj-card-head personal">Personal <span class="badge-high">High</span></div>
-      <div class="proj-card-body">
-        <div><span class="lbl">Why today:</span> Budget is 20 days overdue. DR trip logistics need confirmation before the Kidscamp week begins.</div>
-        <div style="margin-top:6px;"><span class="lbl">Best move:</span> Handle vacation logistics confirmation today or tomorrow. Budget can go Monday evening (Admin focus night).</div>
-        <div style="margin-top:6px;"><span class="lbl">Watch out:</span> DR trip is one week from today -- do not arrive at Friday with logistics unresolved.</div>
-      </div>
-    </div>
-    <div class="proj-card">
-      <div class="proj-card-head freelance">Freelance <span class="badge-med">Low</span></div>
-      <div class="proj-card-body">
-        <div><span class="lbl">Why today:</span> Overview Video due June 28 -- no immediate action needed today.</div>
-        <div style="margin-top:6px;"><span class="lbl">Best move:</span> Start pre-production Thursday Jun 19 evening (Freelance focus night).</div>
-        <div style="margin-top:6px;"><span class="lbl">Watch out:</span> The DR trip (Jun 20-22) cuts into the production window -- must have a plan before leaving.</div>
-      </div>
-    </div>
+  <div class="card" style="background:#FEF2F2;border-color:#fca5a5">
+    <div class="card-label card-label-red">Overdue / At Risk</div>
+    <div class="task"><div><span style="font-weight:700;color:#7F1D1D">Budget</span> -- 20 days overdue<div class="task-role">Personal -- Do it Monday evening (Admin/Household focus night)</div></div></div>
+    <div class="task"><div><span style="font-weight:700;color:#7F1D1D">GRADE Light Discussion, Color Discussion, Safari #4</span> -- from weekly snapshot<div class="task-role">Teaching -- These were already overdue last week. Confirm status in Canvas.</div></div></div>
   </div>
-
-  <div class="morning-section">
-    <div class="morning-header morning-header-blue">Do / Defer / Decide</div>
-    <div class="card" style="padding:0.75rem 1.25rem;">
-      <div class="do-defer-row"><span class="do-defer-lbl">Do today:</span><span>RECORD Lectures 15, 16, 17 -- GRADE Exam #1, Safari #5, Denotation/Connotation/Myth -- Start Module 3 (6 AM)</span></div>
-      <div class="do-defer-row"><span class="do-defer-lbl">Defer:</span><span>Overview Video (Thu Jun 19 evening) -- Lecture notes 18-20 (this week, not today) -- Budget (Mon evening)</span></div>
-      <div class="do-defer-row"><span class="do-defer-lbl">Decide:</span><span>How much of Saturday does teaching consume? Set a hard noon stop for recordings. Decide whether to move the three overdue grading items (Light Discussion, Color Discussion, Safari #4) to a specific Monday/Tuesday evening slot.</span></div>
-    </div>
-  </div>
-
-  <div class="morning-section">
-    <div class="morning-header morning-header-red">Overdue / At Risk</div>
-    <div class="overdue-item"><div><div class="overdue-name">GRADE Light Discussion</div><div class="task-role">Teaching &middot; Due May 30</div><div class="overdue-rec">Schedule explicitly for Monday or Tuesday evening -- do not let a 4th week pass.</div></div></div>
-    <div class="overdue-item"><div><div class="overdue-name">GRADE Color Discussion</div><div class="task-role">Teaching &middot; Due May 30</div><div class="overdue-rec">Schedule with Light Discussion -- batch both together Monday evening.</div></div></div>
-    <div class="overdue-item"><div><div class="overdue-name">GRADE Safari #4</div><div class="task-role">Teaching &middot; Due Jun 7</div><div class="overdue-rec">Schedule for Monday or Tuesday -- 6 days overdue and counting.</div></div></div>
-    <div class="overdue-item"><div><div class="overdue-name">Budget</div><div class="task-role">Personal &middot; Due May 24</div><div class="overdue-rec">Schedule for Monday evening (Admin/Household focus night). 20 days overdue.</div></div></div>
-  </div>
-
-  <div class="sec-head">Today's Tasks -- All Items</div>
-  <div class="card" style="padding:0.75rem 1.25rem;">
-    <div class="sec-head">Teaching</div>
-    <div class="task"><div><div style="color:#7F1D1D;font-weight:600;">GRADE Denotation, Connotation, and Myth</div><div class="task-role area-teaching">Teaching</div></div><span class="badge badge-warn">Jun 14</span></div>
-    <div class="task"><div><div style="color:#7F1D1D;font-weight:600;">GRADE Exam #1</div><div class="task-role area-teaching">Teaching</div></div><span class="badge badge-warn">Jun 14</span></div>
-    <div class="task"><div><div style="color:#7F1D1D;font-weight:600;">GRADE Safari #5</div><div class="task-role area-teaching">Teaching</div></div><span class="badge badge-warn">Jun 14</span></div>
-    <div class="task"><div><div style="color:#7F1D1D;font-weight:600;">RECORD: Week 6 Lecture 15 -- Formal Analysis</div><div class="task-role area-teaching">Teaching</div></div><span class="badge badge-warn">Jun 14</span></div>
-    <div class="task"><div><div style="color:#7F1D1D;font-weight:600;">RECORD: Week 6 Lecture 16 -- Typography</div><div class="task-role area-teaching">Teaching</div></div><span class="badge badge-warn">Jun 14</span></div>
-    <div class="task"><div><div style="color:#7F1D1D;font-weight:600;">RECORD: Week 6 Lecture 17 -- Graphic Design</div><div class="task-role area-teaching">Teaching</div></div><span class="badge badge-warn">Jun 14</span></div>
-    <div class="sec-head">Smartphone Storytellers</div>
-    <div class="task"><div><div>WRITE Module 3: Capturing the Story</div><div class="task-role area-sps">Smartphone Storytellers</div></div><span class="badge">No deadline</span></div>
-    <div class="task"><div><div>WRITE Module 4: Putting It Together</div><div class="task-role area-sps">Smartphone Storytellers</div></div><span class="badge">No deadline</span></div>
-    <div class="task"><div><div>WRITE Module 5: Getting It Out There</div><div class="task-role area-sps">Smartphone Storytellers</div></div><span class="badge">No deadline</span></div>
-    <div class="task"><div><div>WRITE Bonus: Super Technical</div><div class="task-role area-sps">Smartphone Storytellers</div></div><span class="badge">No deadline</span></div>
-    <div class="sec-head">Freelance</div>
-    <div class="task"><div><div>Overview Video</div><div class="task-role area-freelance">Freelance</div></div><span class="badge">Jun 28</span></div>
-    <div class="sec-head">Personal</div>
-    <div class="task"><div><div>Vacation logistics</div><div class="task-role area-personal">Personal</div></div><span class="badge">No deadline</span></div>
-  </div>
-
-  <div class="sec-head">Upcoming (7 Days)</div>
-  <div class="card" style="padding:0.75rem 1.25rem;">
-    <div class="sec-head">Teaching</div>
-    <div class="task"><div><div>Lecture notes 18-20</div><div class="task-role area-teaching">Teaching</div></div><span class="badge">Jun 19</span></div>
-    <div class="task"><div><div>POST Exam #2 Heads Up</div><div class="task-role area-teaching">Teaching</div></div><span class="badge">Jun 19</span></div>
-    <div class="sec-head">Personal</div>
-    <div class="task"><div><div style="color:#7F1D1D;font-weight:600;">Budget</div><div class="task-role area-personal">Personal</div></div><span class="badge badge-warn">May 24 (OVERDUE)</span></div>
-  </div>
-
-  <div class="generated">Generated June 13, 2026 at 4:25 AM ET</div>
+  <div class="generated">Generated June 13, 2026 at 6:26 PM ET</div>
 </div>
 
-<!-- ========== FITNESS PANE ========== -->
+<!-- FITNESS -->
 <div class="pane" id="pane-fitness">
   <div class="card">
-    <div class="card-label">Today's Workout</div>
-    <div class="rest-day">Rest Day -- Recovery focus</div>
-  </div>
-
+  <div class="card-label">Today's Workout</div>
+  <div class="rest-day">Rest Day -- Recovery focus<br><span style="font-size:11px;color:#bbb">Week ahead: Arms (Mon), Athletic Legs (Tue), Cardio &amp; Core (Wed), Pull (Thu), Push (Fri)</span></div>
+</div>
   <div class="card">
-    <div class="card-label">Macro Plan</div>
-    <table class="macro-table">
-      <tr><th>Meal</th><th>Cal</th><th>Pro</th><th>Carb</th><th>Fat</th></tr>
-      <tr><td>Morning Coffee<div style="font-size:10px;color:#999;">1/2 scoop collagen protein in coffee</div></td><td>18</td><td>4g</td><td>0g</td><td>0g</td></tr>
-      <tr><td>Breakfast<div style="font-size:10px;color:#999;">2 whole eggs + 4 egg whites</div></td><td>210</td><td>28g</td><td>2g</td><td>10g</td></tr>
-      <tr><td>Snack 1<div style="font-size:10px;color:#999;">Cocoa Crispys Protein Shake (1 scoop)</div></td><td>130</td><td>25g</td><td>6g</td><td>2g</td></tr>
-      <tr><td>Lunch<div style="font-size:10px;color:#999;">Project Lean Nation meal</div></td><td>450</td><td>35g</td><td>45g</td><td>12g</td></tr>
-      <tr><td>Post-Lunch Shake<div style="font-size:10px;color:#999;">Six Star Whey -- Frosted Flakes (1 scoop)</div></td><td>190</td><td>30g</td><td>9g</td><td>3g</td></tr>
-      <tr><td>Snack 2<div style="font-size:10px;color:#999;">Mini oranges and/or applesauce</div></td><td>90</td><td>1g</td><td>22g</td><td>0g</td></tr>
-      <tr><td>Dinner (Chicken) <span style="font-size:10px;color:#3B6D11;">Recommended</span><div style="font-size:10px;color:#999;">Baked chicken breast + 1/2 cup rice + butter</div></td><td>430</td><td>48g</td><td>32g</td><td>10g</td></tr>
-      <tr><td>Evening Snack<div style="font-size:10px;color:#999;">Blue Bunny Caramel mini cone + Cinnamon Bun Casein</div></td><td>290</td><td>27g</td><td>31g</td><td>8g</td></tr>
-      <tr class="total-row"><td>Total</td><td>1808</td><td>198g</td><td>147g</td><td>45g</td></tr>
-      <tr class="target-row"><td>Target</td><td>2190</td><td>200g</td><td>215g</td><td>72g</td></tr>
-      <tr class="gap-row"><td>Gap</td><td>-382</td><td>-2g</td><td>-68g</td><td>-27g</td></tr>
-    </table>
-    <div class="bar-section">
-      <div class="bar-section-label">Macros vs. Target</div>
-      <div class="bar-row">
-        <div class="bar-label"><span>Calories</span><span>1808 / 2190</span></div>
-        <div class="bar-bg"><div class="bar-fill" style="width:83%"></div></div>
-      </div>
-      <div class="bar-row">
-        <div class="bar-label"><span>Protein</span><span>198g / 200g</span></div>
-        <div class="bar-bg"><div class="bar-fill" style="width:99%"></div></div>
-      </div>
-      <div class="bar-row">
-        <div class="bar-label"><span>Carbs</span><span>147g / 215g</span></div>
-        <div class="bar-bg"><div class="bar-fill" style="width:68%"></div></div>
-      </div>
-      <div class="bar-row">
-        <div class="bar-label"><span>Fat</span><span>45g / 72g</span></div>
-        <div class="bar-bg"><div class="bar-fill" style="width:62%"></div></div>
-      </div>
-    </div>
-    <div class="macro-rec">Dinner call: Chicken -- protein lands at 198g (just 2g under target), vs. fish at 188g (12g short). Main gap is carbs: -68g. Add a banana with Snack 2 (+27g) and 2-3 rice cakes mid-afternoon (+20g) to recover ~47g of that gap. Fat is -27g under -- add a drizzle of olive oil on the chicken or an extra pat of butter on the rice to help close it without overshooting protein.</div>
-  </div>
+  <div class="card-label">Macro Plan</div>
+  <div class="meal-head">Morning Coffee</div>
+  <div class="meal-items">1/2 serving collagen protein powder mixed into coffee</div>
+  <div class="meal-macros"><span>18 cal</span><span>4g protein</span><span>0g carbs</span><span>0g fat</span></div>
+  <div class="meal-head">Breakfast</div>
+  <div class="meal-items">2 whole eggs + 4 egg whites (scrambled or fried)</div>
+  <div class="meal-macros"><span>210 cal</span><span>28g protein</span><span>2g carbs</span><span>10g fat</span></div>
+  <div class="meal-head">Snack 1</div>
+  <div class="meal-items">1 scoop Cocoa Crispy's Protein Shake (mixed with water)</div>
+  <div class="meal-macros"><span>130 cal</span><span>25g protein</span><span>6g carbs</span><span>2g fat</span></div>
+  <div class="meal-head">Lunch</div>
+  <div class="meal-items">Project Lean Nation meal (~450 cal, ~35g protein)</div>
+  <div class="meal-macros"><span>450 cal</span><span>35g protein</span><span>45g carbs</span><span>12g fat</span></div>
+  <div class="meal-head">Post-Lunch Shake</div>
+  <div class="meal-items">Six Star Whey Protein Plus -- Frosted Flakes flavor (1 scoop, water)</div>
+  <div class="meal-macros"><span>190 cal</span><span>30g protein</span><span>9g carbs</span><span>3g fat</span></div>
+  <div class="meal-head">Snack 2</div>
+  <div class="meal-items">Mini oranges (clementines/cuties) and/or applesauce<br><span style="font-size:11px;color:#854F0B">+ Add banana (+27g carbs) and 2-3 rice cakes (+20g carbs) to close the carb gap</span></div>
+  <div class="meal-macros"><span>90 cal</span><span>1g protein</span><span>22g carbs</span><span>0g fat</span></div>
+  <div class="meal-head">Dinner (Option A -- Chicken)</div>
+  <div class="meal-items">Baked chicken breast + 1/2 cup rice + small pat of butter<br><span style="font-size:11px;color:#2E5090">Chicken call: 198g protein vs. fish at 188g. Add olive oil drizzle to close fat gap.</span></div>
+  <div class="meal-macros"><span>430 cal</span><span>48g protein</span><span>32g carbs</span><span>10g fat</span></div>
+  <div class="meal-head">Evening Snack</div>
+  <div class="meal-items">Blue Bunny Caramel mini cone + Cinnamon Bun Casein shake</div>
+  <div class="meal-macros" style="border-bottom:none"><span>290 cal</span><span>27g protein</span><span>31g carbs</span><span>8g fat</span></div>
+  <table class="macro-table">
+    <tr><th>Meal</th><th>Cal</th><th>Pro</th><th>Carb</th><th>Fat</th></tr>
+    
+  <tr><td>Morning Coffee</td><td>18</td><td>4g</td><td>0g</td><td>0g</td></tr>
+  <tr><td>Breakfast</td><td>210</td><td>28g</td><td>2g</td><td>10g</td></tr>
+  <tr><td>Snack 1</td><td>130</td><td>25g</td><td>6g</td><td>2g</td></tr>
+  <tr><td>Lunch (PLN)</td><td>450</td><td>35g</td><td>45g</td><td>12g</td></tr>
+  <tr><td>Post-Lunch Shake</td><td>190</td><td>30g</td><td>9g</td><td>3g</td></tr>
+  <tr><td>Snack 2</td><td>90</td><td>1g</td><td>22g</td><td>0g</td></tr>
+  <tr><td>Dinner (A -- Chicken)</td><td>430</td><td>48g</td><td>32g</td><td>10g</td></tr>
+  <tr><td>Evening Snack</td><td>290</td><td>27g</td><td>31g</td><td>8g</td></tr>
 
-  <div class="generated">Generated June 13, 2026 at 4:25 AM ET</div>
+    <tr class="total-row"><td>Total</td><td>1,808</td><td>198g</td><td>147g</td><td>45g</td></tr>
+    <tr class="target-row"><td>Target</td><td>2,190</td><td>200g</td><td>215g</td><td>72g</td></tr>
+    <tr class="gap-row"><td>Gap</td><td>-382</td><td>-2g</td><td>-68g</td><td>-27g</td></tr>
+  </table>
+  <div class="bar-section">
+    <div class="bar-section-label">Macros vs. Target</div>
+    <div class="bar-row">
+      <div class="bar-label"><span>Calories</span><span>1808 / 2190</span></div>
+      <div class="bar-bg"><div class="bar-fill" style="width:83%"></div></div>
+    </div><div class="bar-row">
+      <div class="bar-label"><span>Protein</span><span>198g / 200g</span></div>
+      <div class="bar-bg"><div class="bar-fill" style="width:99%"></div></div>
+    </div><div class="bar-row">
+      <div class="bar-label"><span>Carbs</span><span>147g / 215g</span></div>
+      <div class="bar-bg"><div class="bar-fill" style="width:68%"></div></div>
+    </div><div class="bar-row">
+      <div class="bar-label"><span>Fat</span><span>45g / 72g</span></div>
+      <div class="bar-bg"><div class="bar-fill" style="width:62%"></div></div>
+    </div>
+  </div>
+  <div class="macro-rec">Dinner call: Chicken -- protein lands at 198g (just 2g under target), vs. fish at 188g (12g short). Main gap is carbs: -68g. Add a banana with Snack 2 (+27g) and 2-3 rice cakes mid-afternoon (+20g) to recover ~47g of that gap. Fat is -27g under -- add a drizzle of olive oil on the chicken or extra butter on the rice to help close it without overshooting protein.</div>
+</div>
+  <div class="generated">Generated June 13, 2026 at 6:26 PM ET</div>
 </div>
 
-<!-- ========== DAILY DEVELOPMENT PANE ========== -->
+<!-- DAILY DEVELOPMENT -->
 <div class="pane" id="pane-daily-dev">
   <div class="card">
-    <div class="card-label card-label-devblue" style="background:#0369A1;">Daily Creative</div>
-    <div class="dev-title">June 13th - Think of a Card</div>
-    <div class="dev-body">
-      <p style="font-size:13px;color:#1a1a1a;line-height:1.6;margin-bottom:8px;">Think of a card, any card in the deck.</p>
-<p style="font-size:13px;color:#1a1a1a;line-height:1.6;margin-bottom:8px;">When I was a child, I fell in love with magic. I remember watching a Doug Henning special on TV and actually believing that there were people in the world who could bend the laws of physics by making things levitate, disappear, and switch places. As I grew into my late childhood, I knew that these were only illusions, but I was still in love with the feeling of awe that a well-performed magic trick could inspire. Although my sleight of hand skill has waned from a lack of practice, I still have a suitcase of magic gear ready to pull out whenever the occasion calls for it. (Hey, look under your chair right now. Just kidding.)</p>
-<p style="font-size:13px;color:#1a1a1a;line-height:1.6;margin-bottom:8px;">What is it about magic that excites us? My friend Harris, who is a professional illusionist, calls it &ldquo;wonder&rdquo; and believes that it&rsquo;s an essential element of creativity. To make things that the world has never seen, we must first be able to imagine their existence. This requires us to traffic in a kind of shadow world, just beyond our senses. It almost feels like wishful thinking or willing something into existence. It&rsquo;s very similar to childlike play. We must believe in impossible things.</p>
-<p style="font-size:13px;color:#1a1a1a;line-height:1.6;margin-bottom:8px;">Do you have a sense of wonder in your life, or has it faded a bit? Take a few moments today to remember what it felt like to be a child and to see possibility in the world around you. That sense of wonder is the antidote to cynicism and snark, which are the enemies of creativity.</p>
-<p style="font-size:13px;color:#1a1a1a;line-height:1.6;margin-bottom:8px;">Embrace wonder in your life. Don&rsquo;t allow the magic to die.</p>
-    </div>
-    <div class="dev-question">What inspires awe and wonder in you? How can you experience it today?</div>
+    <div class="card-label card-label-dev">Daily Creative</div>
+    <div class="dev-title">June 13th</div>
+    <div class="dev-body"><p style="font-size:13px;color:#1a1a1a;line-height:1.6;margin-bottom:8px">Think of a card, any card in the deck.</p>
+<p style="font-size:13px;color:#1a1a1a;line-height:1.6;margin-bottom:8px">When I was a child, I fell in love with magic. I remember watching a Doug Henning special on TV and actually believing that there were people in the world who could bend the laws of physics by making things levitate, disappear, and switch places. As I grew into my late childhood, I knew that these were only illusions, but I was still in love with the feeling of awe that a well-performed magic trick could inspire. Although my sleight of hand skill has waned from a lack of practice, I still have a suitcase of magic gear ready to pull out whenever the occasion calls for it. (Hey, look under your chair right now. Just kidding.)</p>
+<p style="font-size:13px;color:#1a1a1a;line-height:1.6;margin-bottom:8px">What is it about magic that excites us? My friend Harris, who is a professional illusionist, calls it "wonder" and believes that it's an essential element of creativity. To make things that the world has never seen, we must first be able to imagine their existence. This requires us to traffic in a kind of shadow world, just beyond our senses. It almost feels like wishful thinking or willing something into existence. It's very similar to childlike play. We must believe in impossible things.</p>
+<p style="font-size:13px;color:#1a1a1a;line-height:1.6;margin-bottom:8px">Do you have a sense of wonder in your life, or has it faded a bit? Take a few moments today to remember what it felt like to be a child and to see possibility in the world around you. That sense of wonder is the antidote to cynicism and snark, which are the enemies of creativity.</p>
+<p style="font-size:13px;color:#1a1a1a;line-height:1.6;margin-bottom:8px">Embrace wonder in your life. Don't allow the magic to die.</p></div>
+    <div class="dev-question">Question: What inspires awe and wonder in you? How can you experience it today?</div>
   </div>
-  <div class="generated">Generated June 13, 2026 at 4:25 AM ET</div>
+  <div class="generated">Generated June 13, 2026 at 6:26 PM ET</div>
 </div>
 
-<!-- ========== WEEKLY PANE ========== -->
+<!-- WEEKLY -->
 <div class="pane" id="pane-weekly">
+  <div style="font-size:12px;color:#64748B;margin-bottom:12px;">Generated Saturday, June 13, 2026 &mdash; Week of Jun 14 &ndash; Jun 20</div>
 
   <!-- This Week's Focus -->
   <div class="card">
     <div class="card-label">This Week's Focus</div>
-    <div class="pri-row"><span class="num">1</span> Clear the teaching backlog -- Light Discussion, Color Discussion, Safari #4 all overdue. Four more due June 14.</div>
-    <div class="pri-row"><span class="num">2</span> Record Week 6 lectures (Formal Analysis, Typography, Graphic Design) <span class="badge badge-warn">Due Jun 14</span></div>
-    <div class="pri-row"><span class="num">3</span> Kidscamp week -- Mon-Wed fully consumed by filming. Protect morning Faith block at minimum.</div>
-    <div class="pri-row"><span class="num">4</span> Advance SST module writing -- at least one module (start with Module 3) drafted before DR trip.</div>
-    <div class="pri-row"><span class="num">5</span> Freelance: Overview Video due June 28 -- begin pre-production Thursday evening.</div>
+    <div class="pri-row"><div class="num" style="background:#7F1D1D;color:white;">1</div> <span><b>COMPLETE 6 Teaching items due June 14</b> &mdash; grade Denotation, Exam #1, Safari #5 AND record Lectures 15, 16, 17. These are due tonight. Do not let Sunday pass without finishing them.</span> <span class="badge badge-warn">June 14</span></div>
+    <div class="pri-row"><div class="num">2</div> <span>KIDSCAMP week (Mon-Wed): Full production schedule. Testimonial block Tue at Silver Hill, Takeover Story shoot Wed.</span></div>
+    <div class="pri-row"><div class="num">3</div> <span>SPS Modules 3-5 + Bonus: Protect morning SST blocks where Kidscamp permits. Highest-priority growth work.</span></div>
+    <div class="pri-row"><div class="num">4</div> <span>Overview Video (Freelance, due June 28): Begin before the DR trip Saturday.</span> <span class="badge">June 28</span></div>
+    <div class="pri-row"><div class="num">5</div> <span>DR trip prep: Depart Saturday June 20. Confirm logistics and Seacoast handoffs.</span></div>
   </div>
 
   <!-- Watch Out For -->
-  <div class="card">
-    <div class="card-label">Watch Out For</div>
-    <div class="row"><span class="dir-label">OVERDUE x3</span><span class="dir-val flag">Light Discussion (May 30), Color Discussion (May 30), Safari #4 (June 7) -- Teaching</span></div>
-    <div class="row"><span class="dir-label">Budget</span><span class="dir-val flag">Due May 24 -- 19 days overdue. Personal.</span></div>
-    <div class="row"><span class="dir-label">Mon-Wed blocked</span><span class="dir-val">Kidscamp filming all three days. No SST morning window available.</span></div>
-    <div class="row"><span class="dir-label">DR Trip Jun 20-22</span><span class="dir-val">Eats the weekend + Monday. No buffer -- all deliverables must be done by Friday June 19.</span></div>
-    <div class="row"><span class="dir-label">Week 6 lectures</span><span class="dir-val flag">Due tonight (June 14). Three recordings outstanding.</span></div>
-    <div class="row"><span class="dir-label">Evening blocks</span><span class="dir-val">Mon-Wed shoots will compress evenings. Tue/Wed are Teaching focus nights -- guard them for grading, not recovery.</span></div>
+  <div class="card" style="background:#FEF2F2;">
+    <div class="card-label" style="background:#7F1D1D;">Watch Out For</div>
+    <div class="row"><div class="dir-label">Teaching deadline surge</div><div class="dir-val flag">6 items due June 14 (tonight): grade Denotation, Exam #1, Safari #5 AND record Lectures 15, 16, 17.</div></div>
+    <div class="row"><div class="dir-label">Kidscamp week</div><div class="dir-val">Mon-Wed fully committed. Tue all day Silver Hill. Wed 8 AM-5:30 PM Hanahan. Zero desk work Mon-Wed.</div></div>
+    <div class="row"><div class="dir-label">Thursday evening wiped</div><div class="dir-val">B-roll shoot 4:00-9:30 PM June 18. Freelance night displaced. Shift to Monday evening.</div></div>
+    <div class="row"><div class="dir-label">Budget overdue</div><div class="dir-val flag">Due May 24 -- 3 weeks past due. Find 30-60 min Sunday or Monday to close it.</div></div>
+    <div class="row"><div class="dir-label">DR trip June 20-22</div><div class="dir-val">Departure Saturday morning. Confirm Overview Video status and Seacoast handoffs before leaving.</div></div>
   </div>
 
   <!-- Missed and Overdue -->
-  <div class="card">
-    <div class="card-label" style="color:#7F1D1D">Missed and Overdue</div>
-    <div class="task"><span class="task-role">Teaching</span>GRADE Light Discussion <span class="badge badge-warn">May 30</span></div>
-    <div class="task"><span class="task-role">Teaching</span>GRADE Color Discussion <span class="badge badge-warn">May 30</span></div>
-    <div class="task"><span class="task-role">Teaching</span>GRADE Safari #4 <span class="badge badge-warn">Jun 7</span></div>
-    <div class="task"><span class="task-role">Personal</span>Budget <span class="badge badge-warn">May 24</span></div>
+  <div class="card" style="background:#FEF2F2;">
+    <div class="card-label" style="background:#7F1D1D;color:white;">Missed and Overdue</div>
+    <div class="task"><span class="task-role" style="color:#7F1D1D;">Personal</span> Budget <span class="badge badge-warn">May 24 -- 3 wks late</span></div>
   </div>
 
   <!-- Seacoast -->
   <div class="card">
-    <div class="card-label">Seacoast</div>
+    <div class="card-label" style="background:#155e75;color:white;">Seacoast</div>
     <div class="sec-head">Active Projects</div>
-    <div class="task">Kidscamp 2026 -- Mon-Wed filming (3 consecutive shoot days)</div>
-    <div class="task">Summer Camp Testimonials -- Tue Jun 16, Silver Hill Studio (9am-5pm)</div>
-    <div class="task">Student Takeover Story -- Wed Jun 17 full day + Thu Jun 18 b-roll</div>
-    <div class="task">Devotional Filming -- Wed Jun 24, Podcast Studio</div>
-    <div class="sec-head">Suggestions</div>
-    <div class="task">Block editing time Friday Jun 19 morning -- no runway after the DR trip.</div>
-    <div class="task">Coordinate with Tyler on Kidscamp deliverable expectations before Monday.</div>
+    <div class="task"><span class="task-role row-seacoast">Seacoast</span> Kidscamp capture (June 15-17)</div>
+    <div class="task"><span class="task-role row-seacoast">Seacoast</span> Summer Camp Testimonials (Silver Hill, June 16)</div>
+    <div class="task"><span class="task-role row-seacoast">Seacoast</span> Student Takeover Story shoot (June 17-18)</div>
+    <div class="task"><span class="task-role row-seacoast">Seacoast</span> Devotional filming in Podcast Studio (June 24)</div>
+    <div class="task"><span class="task-role row-seacoast">Seacoast</span> Kidscamp Interview at SVL (June 25)</div>
+    <div class="sec-head">This Week</div>
+    <div class="row"><div class="dir-label">Mon June 15</div><div class="dir-val">Weekend Debrief 9-9:30 AM | Film Team 10:30-11 AM | Emily's Birthday Lunch 12:30-1:30 PM | Kidscamp capture</div></div>
+    <div class="row"><div class="dir-label">Tue June 16</div><div class="dir-val">Testimonials ALL DAY at Silver Hill Studio (9 AM-5 PM)</div></div>
+    <div class="row"><div class="dir-label">Wed June 17</div><div class="dir-val">Takeover Story shoot ALL DAY (8 AM-5:30 PM) + Grail Call 3-3:30 PM</div></div>
+    <div class="row"><div class="dir-label">Thu June 18</div><div class="dir-val">B-roll shoot 4:00-9:30 PM</div></div>
   </div>
 
   <!-- Teaching -->
   <div class="card">
-    <div class="card-label">Teaching</div>
-    <div class="sec-head">Overdue -- Act Now</div>
-    <div class="task">GRADE Light Discussion <span class="badge badge-warn">May 30</span></div>
-    <div class="task">GRADE Color Discussion <span class="badge badge-warn">May 30</span></div>
-    <div class="task">GRADE Safari #4 <span class="badge badge-warn">Jun 7</span></div>
-    <div class="sec-head">Due This Week (Jun 14)</div>
-    <div class="task">RECORD Week 6: Formal Analysis, Typography, Graphic Design <span class="badge badge-warn">Jun 14</span></div>
-    <div class="task">GRADE Exam 1, Denotation/Connotation/Myth, Safari #5, Exam #1 <span class="badge badge-warn">Jun 14</span></div>
-    <div class="sec-head">This Month</div>
-    <div class="task">Lecture notes 18-20 + POST Exam #2 Heads Up <span class="badge">Jun 19</span></div>
-    <div class="task">Week 7 recordings (Photography, Emmett Till, Motion Pictures) + 4 grading items <span class="badge">Jun 21</span></div>
-    <div class="task">Lecture notes 21-22, POST Exam #2, EDIT English Video <span class="badge">Jun 26</span></div>
-    <div class="task">Week 8 recordings (Television, Digital Communication) <span class="badge">Jun 28</span></div>
+    <div class="card-label" style="background:#92400e;color:white;">Teaching</div>
+    <div class="sec-head" style="color:#7F1D1D;">Due Tonight (June 14)</div>
+    <div class="task"><span class="task-role row-teaching">Teaching</span> GRADE Denotation, Connotation, and Myth <span class="badge badge-warn">June 14</span></div>
+    <div class="task"><span class="task-role row-teaching">Teaching</span> GRADE Exam #1 <span class="badge badge-warn">June 14</span></div>
+    <div class="task"><span class="task-role row-teaching">Teaching</span> GRADE Safari #5 <span class="badge badge-warn">June 14</span></div>
+    <div class="task"><span class="task-role row-teaching">Teaching</span> RECORD: Week 6 Lecture 15 (Formal Analysis) <span class="badge badge-warn">June 14</span></div>
+    <div class="task"><span class="task-role row-teaching">Teaching</span> RECORD: Week 6 Lecture 16 (Typography) <span class="badge badge-warn">June 14</span></div>
+    <div class="task"><span class="task-role row-teaching">Teaching</span> RECORD: Week 6 Lecture 17 (Graphic Design) <span class="badge badge-warn">June 14</span></div>
+    <div class="sec-head">Due June 19</div>
+    <div class="task"><span class="task-role row-teaching">Teaching</span> Lecture notes 18-20 <span class="badge">Jun 19</span></div>
+    <div class="task"><span class="task-role row-teaching">Teaching</span> POST Exam #2 Heads Up <span class="badge">Jun 19</span></div>
+    <div class="sec-head">Due June 21</div>
+    <div class="task"><span class="task-role row-teaching">Teaching</span> RECORD: Week 7 Lectures 18, 19, 20 <span class="badge">Jun 21</span></div>
+    <div class="task"><span class="task-role row-teaching">Teaching</span> GRADE Product Placement | Visual Rhetoric | Safari #6 | Safari #7 <span class="badge">Jun 21</span></div>
+    <div class="sec-head">Due June 26-28</div>
+    <div class="task"><span class="task-role row-teaching">Teaching</span> Lecture notes 21-22 | POST Exam #2 | EDIT: English Video <span class="badge">Jun 26</span></div>
+    <div class="task"><span class="task-role row-teaching">Teaching</span> RECORD: Week 8 Lectures 21-22 | GRADE Graphic Design | GRADE Safari #8 <span class="badge">Jun 28</span></div>
+    <div class="sec-head">Due July 5-12</div>
+    <div class="task"><span class="task-role row-teaching">Teaching</span> GRADE Photography | Film | Safari #9 <span class="badge badge-ok">Jul 5</span></div>
+    <div class="task"><span class="task-role row-teaching">Teaching</span> GRADE Big Questions | Safari #10 <span class="badge badge-ok">Jul 12</span></div>
   </div>
 
   <!-- Freelance -->
   <div class="card">
-    <div class="card-label">Freelance</div>
-    <div class="task">Overview Video <span class="badge">Jun 28</span> -- begin pre-production this week</div>
-    <div class="sec-head">Suggestions</div>
-    <div class="task">Thursday Jun 19 evening is the Freelance focus night -- use it for Overview Video.</div>
+    <div class="card-label" style="background:#374151;color:white;">Freelance</div>
+    <div class="task"><span class="task-role row-freelance">Freelance</span> Overview Video <span class="badge">Jun 28</span></div>
+    <div class="row"><div class="dir-label">Watch</div><div class="dir-val">Thu June 18 b-roll displaces Freelance night. Use Monday evening or early Thursday morning instead. DR trip June 20-22 eliminates the weekend buffer.</div></div>
   </div>
 
-  <!-- Smartphone Storytellers -->
+  <!-- SPS -->
   <div class="card">
-    <div class="card-label">Smartphone Storytellers</div>
-    <div class="sec-head">Open (no deadline)</div>
-    <div class="task">WRITE Module 3: Capturing the Story</div>
-    <div class="task">WRITE Module 4: Putting It Together</div>
-    <div class="task">WRITE Module 5: Getting It Out There</div>
-    <div class="task">WRITE Bonus: Super Technical</div>
-    <div class="sec-head">Suggestions</div>
-    <div class="task">Pick Module 3 and complete it this week. Set deadlines on all four tasks before the DR trip.</div>
-    <div class="task">Thu/Fri mornings are the realistic SST windows this week -- Mon-Wed are compromised by filming.</div>
+    <div class="card-label" style="background:#9f1239;color:white;">Smartphone Storytellers</div>
+    <div class="sec-head">Active Tasks (no deadlines)</div>
+    <div class="task"><span class="task-role row-sps">SPS</span> WRITE Module 3: Capturing the Story</div>
+    <div class="task"><span class="task-role row-sps">SPS</span> WRITE Module 4: Putting It Together</div>
+    <div class="task"><span class="task-role row-sps">SPS</span> WRITE Module 5: Getting It Out There</div>
+    <div class="task"><span class="task-role row-sps">SPS</span> WRITE Bonus: Super Technical</div>
+    <div class="sec-head">Morning Block Plan</div>
+    <div class="row"><div class="dir-label">Sunday</div><div class="dir-val">Write Module 3 this morning before the week starts.</div></div>
+    <div class="row"><div class="dir-label">Mon</div><div class="dir-val">Kidscamp 9 AM call -- protect 6-8 AM SST block if possible.</div></div>
+    <div class="row"><div class="dir-label">Tue-Wed</div><div class="dir-val">8 AM production starts. SST block is compressed or gone.</div></div>
+    <div class="row"><div class="dir-label">Thu-Fri</div><div class="dir-val">Full 6-8 AM SST blocks. Target Module 4 Thursday, Module 5 Friday.</div></div>
   </div>
 
   <!-- Speaking -->
   <div class="card">
     <div class="card-label">Speaking</div>
-    <div class="task">Nothing active. Hanahan Business Mixer (Jun 24) is a lead opportunity -- prepare a one-sentence SST positioning statement.</div>
+    <div class="task">Nothing active. Hanahan Business Mixer (June 24, 6-8 PM) is a networking/speaking opportunity.</div>
   </div>
 
   <!-- Personal -->
   <div class="card">
     <div class="card-label">Personal</div>
-    <div class="sec-head">Overdue</div>
-    <div class="task">Budget <span class="badge badge-warn">May 24</span> -- handle Monday evening (Admin/Household focus night)</div>
-    <div class="sec-head">Open</div>
-    <div class="task">Vacation logistics -- confirm DR trip details this weekend</div>
-    <div class="sec-head">Family</div>
-    <div class="task">Emily's Birthday Lunch -- Mon Jun 15, 12:30pm</div>
-    <div class="task">Dad's Birthday -- Fri Jun 26</div>
-    <div class="task">Zelda Violin -- Fri Jun 19, Fri Jun 26</div>
+    <div class="task"><span class="task-role" style="color:#7F1D1D;">Personal</span> <b>Budget -- OVERDUE May 24</b> <span class="badge badge-warn">3 weeks late</span></div>
+    <div class="task"><span class="task-role">Personal</span> Vacation logistics (no deadline)</div>
     <div class="sec-head">Fitness -- Coming Week</div>
-    <div class="task">Mon: Arms (~58 min) | Tue: Athletic Legs (~44 min) | Wed: Cardio &amp; Core (~52 min)</div>
-    <div class="task">Thu: Pull (~42 min) | Fri: Push (~45 min) | Sat-Sun: Rest (DR trip)</div>
+    <div class="row"><div class="dir-label">Mon-Fri</div><div class="dir-val">Arms | Athletic Legs | Cardio/Core | Pull | Push</div></div>
+    <div class="row"><div class="dir-label">Sat-Sun</div><div class="dir-val">Rest</div></div>
+    <div class="sec-head">Family</div>
+    <div class="row"><div class="dir-label">Fri June 19</div><div class="dir-val">Zelda violin 3:30-4 PM. Guard Friday evening -- Thursday b-roll already eats that night.</div></div>
+    <div class="row"><div class="dir-label">June 20-22</div><div class="dir-val">DR trip. Coordinate family logistics for the absence.</div></div>
+    <div class="row"><div class="dir-label">June 26</div><div class="dir-val">Dad E's Birthday + Dad's Birthday. Mark and plan.</div></div>
   </div>
 
   <!-- Role Evaluation -->
   <div class="card">
     <div class="card-label">Role Evaluation</div>
-    <div class="row"><span class="dir-label">Seacoast</span><span class="dir-val">Active and heavy -- three consecutive shoot days this week.</span></div>
-    <div class="row"><span class="dir-label">Teaching</span><span class="dir-val flag">Behind -- three overdue items and a packed grading cycle incoming. Needs immediate attention.</span></div>
-    <div class="row"><span class="dir-label">Freelance</span><span class="dir-val">Light week appropriate; one deliverable (Overview Video) needs to begin.</span></div>
-    <div class="row"><span class="dir-label">SST</span><span class="dir-val flag">Four modules open with no deadlines -- risk of continued drift while Seacoast and Teaching dominate.</span></div>
-    <div class="row"><span class="dir-label">Speaking</span><span class="dir-val">Quiet. No active projects or events.</span></div>
-    <div class="row"><span class="dir-label">Personal</span><span class="dir-val">Budget overdue; DR trip logistics to confirm. Family events this week are manageable.</span></div>
+    <div class="row"><div class="dir-label">Seacoast</div><div class="dir-val">Extremely active -- Kidscamp, testimonials, takeover story. Full production week.</div></div>
+    <div class="row"><div class="dir-label">Teaching</div><div class="dir-val flag">6 items due tonight. Heavy grading/recording backlog continues through July. Front-load lecture recording now.</div></div>
+    <div class="row"><div class="dir-label">Freelance</div><div class="dir-val">One active deliverable (Overview Video, June 28). Needs a window before DR trip.</div></div>
+    <div class="row"><div class="dir-label">SPS</div><div class="dir-val flag">No deadlines, no recent completions visible. Modules 3-5 are the core product -- protect morning blocks or they will not happen.</div></div>
+    <div class="row"><div class="dir-label">Speaking</div><div class="dir-val">Quiet. No active projects.</div></div>
+    <div class="row"><div class="dir-label">Personal</div><div class="dir-val flag">Budget 3 weeks overdue. Family time protected when production schedule is heavy requires intentional guardrails.</div></div>
   </div>
 
-  <!-- Opportunities and Ideas -->
-  <div class="card" style="background:#F0F4FF">
-    <div class="card-label" style="background:#2E5090">Opportunities and Ideas</div>
-    <div class="task"><strong>Set deadlines on all four SST module tasks before the DR trip.</strong> Without deadlines, these tasks remain invisible while Teaching and Seacoast fill the screen. Modules 3-5 are the core product -- treat them like client deliverables.</div>
-    <div class="task">Kidscamp footage may double as SST teaching examples -- flag any smartphone-level storytelling moments for potential course content.</div>
-    <div class="task">Hanahan Business Mixer (Jun 24) -- low-effort speaking lead opportunity for SST. Prepare one-sentence positioning before attending.</div>
-    <div class="task">Two consecutive travel weeks (DR + Florida/AIC) create a compressed runway. All June 28 deliverables must land before Saturday June 19.</div>
-    <div class="task">Legacy Weekend Videos meeting July 7 -- begin pre-production after the travel sprint concludes.</div>
+  <!-- Opportunities -->
+  <div class="card" style="background:#F0F4FF;">
+    <div class="card-label" style="background:#2E5090;color:white;">Opportunities and Ideas</div>
+    <div class="task"><b>Strategic action: Write SPS Module 3 this morning.</b> If Module 3 is done before Monday, you enter Kidscamp week with at least one module banked. Do not let Sunday end without starting it.</div>
+    <div class="task">SPS momentum: four modules, no deadlines. One per week through June = course ready for July. Protection of morning blocks is the only path.</div>
+    <div class="task">Hanahan Business Mixer (June 24): Go prepared with a clear one-sentence SPS pitch. Referral source for both freelance and speaking.</div>
+    <div class="task">Kidscamp footage: Flag any testimonial or b-roll content that demonstrates phone storytelling -- potential SPS marketing material.</div>
+    <div class="task">Overview Video window: Friday June 19 morning is the last clear slot before DR. Block it explicitly.</div>
+    <div class="task">Budget: 3 weeks past due, 30-60 min to close. Do it today.</div>
   </div>
 
   <!-- 30-Day Calendar -->
   <div class="card">
     <div class="card-label">30-Day Calendar</div>
-    <div class="sec-head">Week of June 15</div>
-    <div class="row"><span class="dir-label">Mon Jun 15</span><span class="dir-val">Debrief Call 9am | Film Team 10:30am | Emily Birthday Lunch 12:30pm | Kidscamp Day 1 (filming w/ Tyler)</span></div>
-    <div class="row"><span class="dir-label">Tue Jun 16</span><span class="dir-val">Kidscamp Day 2 | Summer Camp Testimonials -- Silver Hill Studio 9am-5pm</span></div>
-    <div class="row"><span class="dir-label">Wed Jun 17</span><span class="dir-val">Kidscamp Day 3 | Student Takeover Story 8am-5:30pm | Grail Call 3pm</span></div>
-    <div class="row"><span class="dir-label">Thu Jun 18</span><span class="dir-val">B-Roll Takeover Story 1-5pm</span></div>
-    <div class="row"><span class="dir-label">Fri Jun 19</span><span class="dir-val">Zelda Violin 3:30pm</span></div>
-    <div class="sec-head">Week of June 22</div>
-    <div class="row"><span class="dir-label">Sat-Mon Jun 20-22</span><span class="dir-val">Adam in Dominican Republic</span></div>
-    <div class="row"><span class="dir-label">Mon Jun 22</span><span class="dir-val">Film Team Weekly 10:30am</span></div>
-    <div class="row"><span class="dir-label">Wed Jun 24</span><span class="dir-val">Devotional Filming noon-4pm | Hanahan Business Mixer 6-8pm (Hawks Nest)</span></div>
-    <div class="row"><span class="dir-label">Thu Jun 25</span><span class="dir-val">Kidscamp Interview at SVL 9am-noon</span></div>
-    <div class="row"><span class="dir-label">Fri Jun 26</span><span class="dir-val">Dad's Birthday | Zelda Violin 3:30pm</span></div>
-    <div class="sec-head">Week of June 29</div>
-    <div class="row"><span class="dir-label">Mon Jun 29</span><span class="dir-val">Adam in Florida (AIC) | Debrief Call 9am | Film Team 10:30am</span></div>
-    <div class="row"><span class="dir-label">Tue Jun 30</span><span class="dir-val">Hannah OBGYN 1:45pm (Mt Pleasant)</span></div>
-    <div class="row"><span class="dir-label">Wed Jul 1</span><span class="dir-val">Check for Books | Reset Heart Rate Zones</span></div>
-    <div class="row"><span class="dir-label">Fri Jul 3</span><span class="dir-val">Zelda Violin 3:30pm</span></div>
-    <div class="sec-head">Week of July 6</div>
-    <div class="row"><span class="dir-label">Mon Jul 6</span><span class="dir-val">Seacoast Offices Closed (4th of July) | Debrief Call 9am | Film Team 10:30am</span></div>
-    <div class="row"><span class="dir-label">Tue Jul 7</span><span class="dir-val">Legacy Weekend Videos meeting 1-1:30pm</span></div>
-    <div class="row"><span class="dir-label">Fri Jul 10</span><span class="dir-val">Zelda Violin 3:30pm</span></div>
+    <div class="sec-head">Week of June 14-20</div>
+    <div class="row"><div class="dir-label" style="color:#2E5090;font-weight:600;">Sun June 14</div><div class="dir-val">Teaching deadlines due (6 items) -- grade and record today</div></div>
+    <div class="row"><div class="dir-label" style="color:#2E5090;font-weight:600;">Mon June 15</div><div class="dir-val">Kidscamp capture | Debrief 9-9:30 | Film Team 10:30-11 | Emily Lunch 12:30-1:30</div></div>
+    <div class="row"><div class="dir-label" style="color:#2E5090;font-weight:600;">Tue June 16</div><div class="dir-val">Testimonials ALL DAY Silver Hill Studio (9 AM-5 PM)</div></div>
+    <div class="row"><div class="dir-label" style="color:#2E5090;font-weight:600;">Wed June 17</div><div class="dir-val">Takeover Story ALL DAY (8 AM-5:30 PM) | Grail Call 3-3:30 PM</div></div>
+    <div class="row"><div class="dir-label" style="color:#2E5090;font-weight:600;">Thu June 18</div><div class="dir-val">B-roll shoot 4:00-9:30 PM</div></div>
+    <div class="row"><div class="dir-label" style="color:#2E5090;font-weight:600;">Fri June 19</div><div class="dir-val">Zelda violin 3:30-4 PM | Lecture notes 18-20 due | Exam #2 Heads Up due</div></div>
+    <div class="row"><div class="dir-label" style="color:#2E5090;font-weight:600;">Sat June 20</div><div class="dir-val">Adam departs for DR</div></div>
+    <div class="sec-head">Week of June 21-27</div>
+    <div class="row"><div class="dir-label" style="color:#2E5090;font-weight:600;">Sat-Mon Jun 20-22</div><div class="dir-val">Adam in DR</div></div>
+    <div class="row"><div class="dir-label" style="color:#2E5090;font-weight:600;">Mon June 22</div><div class="dir-val">Film Team Weekly 10:30-11 AM</div></div>
+    <div class="row"><div class="dir-label" style="color:#2E5090;font-weight:600;">Wed June 24</div><div class="dir-val">Devotional filming noon-4 PM | Hanahan Business Mixer 6-8 PM</div></div>
+    <div class="row"><div class="dir-label" style="color:#2E5090;font-weight:600;">Thu June 25</div><div class="dir-val">Filming Kidscamp Interview at SVL 9 AM-noon</div></div>
+    <div class="row"><div class="dir-label" style="color:#2E5090;font-weight:600;">Fri June 26</div><div class="dir-val">Dad E's + Dad's Birthday | Zelda violin 3:30-4 PM | Lecture notes 21-22 + English Video due</div></div>
+    <div class="sec-head">Week of June 28 -- July 4</div>
+    <div class="row"><div class="dir-label" style="color:#2E5090;font-weight:600;">Mon June 29</div><div class="dir-val">Adam in Florida with AIC | Debrief 9-9:30 | Film Team 10:30-11</div></div>
+    <div class="row"><div class="dir-label" style="color:#2E5090;font-weight:600;">Tue June 30</div><div class="dir-val">Hannah OBGYN check-up 1:45-2:45 PM</div></div>
+    <div class="row"><div class="dir-label" style="color:#2E5090;font-weight:600;">Fri July 3</div><div class="dir-val">Zelda violin 3:30-4 PM</div></div>
+    <div class="sec-head">Week of July 5-13</div>
+    <div class="row"><div class="dir-label" style="color:#2E5090;font-weight:600;">Mon July 6</div><div class="dir-val">Seacoast offices CLOSED (4th of July) | Debrief 9 AM | Film Team 10:30 AM</div></div>
+    <div class="row"><div class="dir-label" style="color:#2E5090;font-weight:600;">Tue July 7</div><div class="dir-val">2026 Legacy Weekend Videos call (Teams) 1-1:30 PM</div></div>
+    <div class="row"><div class="dir-label" style="color:#2E5090;font-weight:600;">Mon July 13</div><div class="dir-val">Debrief 9 AM | Film Team 10:30 AM | Weekend Experience Videos 11 AM</div></div>
   </div>
 
-  <div class="generated">Generated Friday, June 12, 2026 -- Week of June 15 -- June 21</div>
+  <div class="generated">Generated Saturday, June 13, 2026 &mdash; Week of Jun 14 &ndash; Jun 20, 2026</div>
 </div>
 
-<!-- ========== REFERENCE PANE ========== -->
+<!-- REFERENCE -->
 <div class="pane" id="pane-reference">
   <div class="card">
     <div class="card-label">Ideal Weekday Schedule</div>
-    <div class="row"><span class="dir-label">5:30--6:00 AM</span><span class="dir-val">Faith block -- Bible study, prayer, reflection, planning</span></div>
-    <div class="row"><span class="dir-label">6:00--8:00 AM</span><span class="dir-val">Smartphone Storytellers (SPS) block</span></div>
-    <div class="row"><span class="dir-label">8:00--9:00 AM</span><span class="dir-val">Gym</span></div>
-    <div class="row"><span class="dir-label">9:00 AM--5:00 PM</span><span class="dir-val">Seacoast Church</span></div>
-    <div class="row"><span class="dir-label">5:00--8:00 PM</span><span class="dir-val">Family time (protected)</span></div>
-    <div class="row"><span class="dir-label">8:00--10:00 PM</span><span class="dir-val">Evening Focus Block</span></div>
-    <div class="row"><span class="dir-label">10:00--10:30 PM</span><span class="dir-val">Wind down</span></div>
+    <div class="row"><span class="dir-label">5:30-6:00 AM</span><span class="dir-val">Faith block -- Bible study, prayer, reflection, planning</span></div>
+    <div class="row"><span class="dir-label">6:00-8:00 AM</span><span class="dir-val">Smartphone Storytellers (SPS) block</span></div>
+    <div class="row"><span class="dir-label">8:00-9:00 AM</span><span class="dir-val">Gym</span></div>
+    <div class="row"><span class="dir-label">9:00 AM-5:00 PM</span><span class="dir-val">Seacoast Church</span></div>
+    <div class="row"><span class="dir-label">5:00-8:00 PM</span><span class="dir-val">Family time (protected)</span></div>
+    <div class="row"><span class="dir-label">8:00-10:00 PM</span><span class="dir-val">Evening Focus Block (see themes below)</span></div>
+    <div class="row"><span class="dir-label">10:00-10:30 PM</span><span class="dir-val">Wind down</span></div>
   </div>
-
   <div class="card">
     <div class="card-label">Evening Focus Themes</div>
     <div class="row"><span class="dir-label">Monday</span><span class="dir-val">Household / Admin / Freelance</span></div>
@@ -710,18 +577,16 @@ body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; b
     <div class="row"><span class="dir-label">Wednesday</span><span class="dir-val">Teaching</span></div>
     <div class="row"><span class="dir-label">Thursday</span><span class="dir-val">Freelance</span></div>
     <div class="row"><span class="dir-label">Friday</span><span class="dir-val">Protected Family Night</span></div>
-    <div class="row"><span class="dir-label">Saturday</span><span class="dir-val">Family / recovery. Optional 7--11 AM work block (Smartphone Storytellers priority, twice/month)</span></div>
+    <div class="row"><span class="dir-label">Saturday</span><span class="dir-val">Family / recovery. Optional 7-11 AM work block (Smartphone Storytellers priority, twice/month)</span></div>
     <div class="row"><span class="dir-label">Sunday</span><span class="dir-val">Church (morning), Family (afternoon), Weekly Review (evening)</span></div>
   </div>
-
   <div class="card">
     <div class="card-label">Guiding Philosophy</div>
     <div class="row"><span class="dir-label">Priority order</span><span class="dir-val">Faith, Family, Smartphone Storytellers, Fitness, Seacoast, Margin</span></div>
     <div class="row"><span class="dir-label">Smartphone Storytellers</span><span class="dir-val">Highest-priority growth initiative outside primary employment</span></div>
     <div class="row"><span class="dir-label">Freelance</span><span class="dir-val">Should not crowd out Smartphone Storytellers or family time</span></div>
   </div>
-
-  <div class="generated">Generated June 13, 2026 at 4:25 AM ET</div>
+  <div class="generated">Generated June 13, 2026 at 6:26 PM ET</div>
 </div>
 
 <script>
