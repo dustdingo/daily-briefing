@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
-<title>Daily Briefing -- June 20, 2026</title>
+<title>Daily Briefing -- June 21, 2026</title>
 <style>
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #F2F1EC; color: #1a1a1a; }
@@ -13,64 +13,49 @@ body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; b
 .header-date { font-size: 12px; color: #888; letter-spacing: 0.04em; margin-bottom: 2px; }
 .header-title { font-size: 22px; font-weight: 500; margin-bottom: 1rem; }
 .tabs { display: flex; border-bottom: 1px solid #ddd; padding: 0 1.25rem; background: #F2F1EC; position: sticky; top: 0; z-index: 10; gap: 4px; overflow-x: auto; }
-.tab { padding: 8px 14px; font-size: 12px; font-weight: 500; cursor: pointer; border-bottom: 2px solid transparent; color: #888; white-space: nowrap; flex-shrink: 0; }
+.tab { padding: 8px 14px; font-size: 13px; font-weight: 500; cursor: pointer; border-bottom: 2px solid transparent; color: #888; white-space: nowrap; }
 .tab.active { color: #534AB7; border-bottom-color: #534AB7; }
 .pane { display: none; padding: 1rem 1.25rem 3rem; }
 .pane.active { display: block; }
 .card { background: #fff; border: 1px solid #e5e5e5; border-radius: 12px; padding: 1rem 1.25rem; margin-bottom: 12px; }
-.card-label { font-size: 11px; font-weight: 600; letter-spacing: 0.08em; color: #fff; text-transform: uppercase; background: #1B2A4A; margin: -1rem -1.25rem 10px; padding: 6px 12px; border-radius: 11px 11px 0 0; }
-.card-label-blue { background: #2E5090; }
-.card-label-red { background: #7F1D1D; }
-.card-label-sps { background: #9f1239; }
-.card-label-violet { background: #7C3AED; }
-.card-label-teal { background: #0F766E; }
-.card-label-devblue { background: #0369A1; }
+.card-label { font-size: 11px; font-weight: 600; letter-spacing: 0.08em; color: #fff; text-transform: uppercase; background: #1B2A4A; margin: -1rem -1.25rem 10px; padding: 7px 1.25rem; border-radius: 11px 11px 0 0; }
 .row { display: flex; gap: 10px; padding: 6px 0; align-items: flex-start; }
 .row + .row { border-top: 1px solid #f0f0f0; }
-.time { font-size: 12px; color: #2E5090; font-weight: 700; min-width: 75px; padding-top: 2px; flex-shrink: 0; }
+.time { font-size: 12px; color: #2E5090; font-weight: 600; min-width: 70px; padding-top: 2px; flex-shrink: 0; }
 .event { font-size: 14px; color: #1a1a1a; line-height: 1.4; }
 .role { font-size: 11px; color: #999; margin-top: 1px; }
-.location { font-size: 11px; color: #999; margin-top: 1px; font-style: italic; }
-.dir-label { font-size: 12px; color: #999; min-width: 100px; flex-shrink: 0; padding-top: 2px; }
+.dir-label { font-size: 12px; color: #999; min-width: 115px; flex-shrink: 0; padding-top: 2px; }
 .dir-val { font-size: 13px; color: #1a1a1a; flex: 1; line-height: 1.5; }
-.flag { color: #7F1D1D; font-weight: 600; }
+.flag-red { color: #7F1D1D; font-weight: 600; }
 .pri-row { display: flex; align-items: flex-start; gap: 10px; padding: 7px 0; font-size: 14px; }
 .pri-row + .pri-row { border-top: 1px solid #f0f0f0; }
 .num { width: 22px; height: 22px; border-radius: 50%; background: #EEEDFE; color: #534AB7; font-size: 11px; font-weight: 600; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px; }
 .badge { font-size: 11px; padding: 2px 8px; border-radius: 100px; background: #f0f0f0; color: #666; white-space: nowrap; flex-shrink: 0; }
 .badge-warn { background: #FAEEDA; color: #854F0B; }
-.badge-ok { background: #EAF3DE; color: #3B6D11; }
+.badge-ok   { background: #EAF3DE; color: #3B6D11; }
 .badge-crit { background: #FEF2F2; color: #7F1D1D; }
-.badge-high { background: #FFFBEB; color: #92400e; }
-.weather-main { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px; }
-.temp { font-size: 36px; font-weight: 700; color: #0F172A; line-height: 1; }
-.wx-right { text-align: right; font-size: 13px; color: #666; line-height: 1.7; }
-.wx-sub { font-size: 12px; color: #64748B; margin-top: 6px; }
+.weather-line1 { font-size: 20px; font-weight: 700; color: #0F172A; margin-bottom: 4px; }
+.weather-line2 { font-size: 13px; color: #64748B; }
 .sec-head { font-size: 11px; font-weight: 600; color: #999; letter-spacing: 0.06em; text-transform: uppercase; margin: 1rem 0 6px; }
 .task { font-size: 13px; padding: 7px 0; border-bottom: 1px solid #f5f5f5; display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; }
 .task:last-child { border-bottom: none; }
 .task-role { font-size: 11px; color: #999; margin-top: 2px; }
-.task-due { font-size: 11px; white-space: nowrap; flex-shrink: 0; color: #64748B; }
-.task-due.urgent { color: #7F1D1D; font-weight: 700; }
 .generated { font-size: 11px; color: #bbb; text-align: center; padding: 1rem 0; }
 .workout-meta { font-size: 12px; color: #999; margin-bottom: 10px; }
-.window-pill { font-size: 12px; padding: 3px 10px; border-radius: 100px; display: inline-block; margin-bottom: 12px; }
-.window-clear { background: #EAF3DE; color: #3B6D11; }
-.window-conflict { background: #FAEEDA; color: #854F0B; }
 .rest-day { text-align: center; padding: 1.5rem 0; color: #999; font-size: 14px; }
-.macro-table { width: 100%; border-collapse: collapse; font-size: 12px; margin: 4px 0 10px; }
-.macro-table th { font-size: 10px; font-weight: 600; color: #999; text-transform: uppercase; letter-spacing: 0.05em; padding: 4px 6px; text-align: right; }
-.macro-table th:first-child { text-align: left; }
-.macro-table td { padding: 5px 6px; border-top: 1px solid #f5f5f5; text-align: right; }
-.macro-table td:first-child { text-align: left; color: #1a1a1a; }
-.macro-table tr.total-row td { font-weight: 600; border-top: 1px solid #ddd; }
-.macro-table tr.target-row td { color: #999; }
-.macro-table tr.gap-row td { color: #7F1D1D; font-weight: 500; }
-.macro-rec { font-size: 12px; color: #555; line-height: 1.5; padding-top: 8px; border-top: 1px solid #f0f0f0; margin-top: 4px; }
 .meal-head { font-size: 11px; font-weight: 600; color: #534AB7; text-transform: uppercase; letter-spacing: 0.06em; margin: 10px 0 2px; }
 .meal-head:first-child { margin-top: 0; }
 .meal-items { font-size: 13px; color: #1a1a1a; margin-bottom: 2px; line-height: 1.4; }
 .meal-macros { font-size: 11px; color: #999; display: flex; gap: 14px; padding-bottom: 8px; border-bottom: 1px solid #f0f0f0; }
+.macro-table { width: 100%; border-collapse: collapse; font-size: 12px; margin: 4px 0 10px; }
+.macro-table th { font-size: 10px; font-weight: 600; color: #999; text-transform: uppercase; letter-spacing: 0.05em; padding: 4px 6px; text-align: right; }
+.macro-table th:first-child { text-align: left; }
+.macro-table td { padding: 5px 6px; border-top: 1px solid #f5f5f5; text-align: right; }
+.macro-table td:first-child { text-align: left; }
+.macro-table tr.total-row td { font-weight: 600; border-top: 1px solid #ddd; }
+.macro-table tr.target-row td { color: #999; }
+.macro-table tr.gap-row td { color: #854F0B; font-weight: 500; }
+.macro-rec { font-size: 12px; color: #555; line-height: 1.5; padding-top: 8px; border-top: 1px solid #f0f0f0; margin-top: 4px; }
 .bar-section { margin: 14px 0 6px; }
 .bar-section-label { font-size: 10px; font-weight: 600; color: #999; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 8px; }
 .bar-row { margin-bottom: 9px; }
@@ -78,638 +63,390 @@ body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; b
 .bar-label span:last-child { color: #999; }
 .bar-bg { height: 7px; background: #f0f0f0; border-radius: 4px; overflow: hidden; }
 .bar-fill { height: 100%; border-radius: 4px; background: #534AB7; }
-.bar-fill.over { background: #854F0B; }
-.pack-row { display: flex; gap: 10px; padding: 7px 0; font-size: 13px; align-items: flex-start; }
-.pack-row + .pack-row { border-top: 1px solid #f0f0f0; }
-.pack-meal { font-weight: 500; min-width: 90px; flex-shrink: 0; }
-.pack-conflict { font-size: 11px; color: #854F0B; min-width: 120px; flex-shrink: 0; }
-.pack-swap { font-size: 12px; color: #555; flex: 1; }
-.row-seacoast { background: #ECFEFF; }
-.row-sps { background: #FFF1F2; }
-.row-teaching { background: #FEF3C7; }
-.row-freelance { background: #F9FAFB; }
-.row-personal { background: #FFFFFF; }
-.row-gym { background: #EFF6FF; }
-.row-focus { background: #F0FDF4; }
 .faith-verse { font-size: 16px; line-height: 1.6; color: #1a1a1a; font-style: italic; margin-bottom: 8px; }
-.faith-ref { font-size: 12px; font-weight: 600; color: #5B21B6; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 6px; }
-.faith-placeholder { font-size: 13px; color: #999; font-style: italic; }
+.faith-ref { font-size: 12px; font-weight: 600; color: #5B21B6; text-transform: uppercase; letter-spacing: 0.06em; }
 .prayer-item { padding: 7px 0; font-size: 13px; color: #1a1a1a; border-bottom: 1px solid #f0f0f0; line-height: 1.4; }
 .prayer-item:last-child { border-bottom: none; }
 .dev-title { font-size: 15px; font-weight: 700; color: #1a1a1a; margin-bottom: 6px; }
 .dev-body p { font-size: 13px; color: #1a1a1a; line-height: 1.6; margin-bottom: 8px; }
 .dev-question { font-size: 13px; color: #0369A1; font-style: italic; margin-top: 10px; }
-.morning-prose { font-size: 13px; color: #1a1a1a; line-height: 1.6; margin-bottom: 8px; }
-.deadline-row { display: flex; justify-content: space-between; align-items: flex-start; padding: 6px 0; font-size: 13px; border-bottom: 1px solid #f0f0f0; gap: 6px; }
-.deadline-row:last-child { border-bottom: none; }
-.deadline-area { font-size: 11px; color: #999; flex-shrink: 0; margin: 0 4px; }
-.deadline-due { font-size: 12px; font-weight: 600; white-space: nowrap; flex-shrink: 0; color: #64748B; }
-.deadline-due.tomorrow { color: #7F1D1D; }
-.deadline-due.week { color: #92400e; }
-.deadline-tier { font-size: 10px; font-weight: 700; color: #fff; letter-spacing: 0.08em; text-transform: uppercase; background: #1B2A4A; padding: 3px 8px; margin: 8px 0 4px; border-radius: 4px; display: inline-block; }
-.card-red { background: #FEF2F2; }
-.proj-card { border: 1px solid #e5e5e5; border-radius: 10px; overflow: hidden; margin-bottom: 10px; }
-.proj-card-head { padding: 8px 12px; display: flex; justify-content: space-between; align-items: center; }
-.proj-card-head.teaching { background: #FEF3C7; color: #92400e; }
-.proj-card-head.freelance { background: #F9FAFB; color: #374151; }
-.proj-card-head.sps { background: #FFF1F2; color: #9f1239; }
-.proj-card-body { padding: 10px 12px; font-size: 13px; color: #1a1a1a; line-height: 1.5; background: #fff; }
-.proj-card-body div + div { border-top: 1px solid #f0f0f0; padding-top: 6px; margin-top: 6px; }
-.proj-card-body b { font-size: 11px; font-weight: 700; color: #999; text-transform: uppercase; letter-spacing: 0.05em; margin-right: 4px; }
-.trip-table { width: 100%; border-collapse: collapse; font-size: 13px; margin: 8px 0; }
-.trip-table th { background: #1B2A4A; color: #fff; font-size: 11px; font-weight: 600; padding: 6px 8px; text-align: left; }
-.trip-table td { padding: 6px 8px; border-bottom: 1px solid #f0f0f0; vertical-align: top; }
-.trip-table tr:nth-child(even) td { background: #F8FAFC; }
-.trip-key { font-size: 12px; color: #999; font-weight: 600; text-transform: uppercase; letter-spacing: 0.04em; max-width: 130px; }
-.trip-val { font-size: 13px; color: #1a1a1a; }
-.trip-day-head { font-size: 14px; font-weight: 700; color: #0F766E; margin: 12px 0 6px; }
-.trip-note { font-size: 12px; color: #666; line-height: 1.5; font-style: italic; margin-top: 8px; border-top: 1px solid #f0f0f0; padding-top: 8px; }
+.row-seacoast { background: #ECFEFF; }
+.row-sps      { background: #FFF1F2; }
+.row-teaching { background: #FEF3C7; }
+.row-freelance{ background: #F9FAFB; }
+.row-focus    { background: #F0FDF4; color: #166534; }
+.trip-key { font-size: 12px; color: #999; min-width: 130px; flex-shrink: 0; padding-top: 2px; }
+.trip-val { font-size: 13px; color: #1a1a1a; flex: 1; line-height: 1.5; }
 </style>
 </head>
 <body>
 <div class="header">
-  <div class="header-date">Saturday, June 20</div>
+  <div class="header-date">Sunday, June 21, 2026</div>
   <div class="header-title">Good morning, Adam.</div>
 </div>
 <div class="tabs">
-  <div class="tab active" data-tab="overview">Overview</div>
-  <div class="tab" data-tab="faith">Faith</div>
-  <div class="tab" data-tab="morning">Morning Brief</div>
-  <div class="tab" data-tab="fitness">Fitness</div>
-  <div class="tab" data-tab="daily-dev">Daily Dev</div>
-  <div class="tab" data-tab="trip-dr">Trip - DR</div>
-  <div class="tab" data-tab="weekly">Weekly</div>
-  <div class="tab" data-tab="reference">Reference</div>
+<div class="tab active" data-tab="overview">Overview</div>
+<div class="tab" data-tab="faith">Faith</div>
+<div class="tab" data-tab="morning">Morning Brief</div>
+<div class="tab" data-tab="fitness">Fitness</div>
+<div class="tab" data-tab="daily-dev">Daily Development</div>
+<div class="tab" data-tab="trip-dr">Trip - Dominican Republic</div>
+<div class="tab" data-tab="weekly">Weekly</div>
+<div class="tab" data-tab="reference">Reference</div>
 </div>
-
-<!-- ===== OVERVIEW ===== -->
 <div class="pane active" id="pane-overview">
-  <div class="card">
-    <div class="card-label">Weather -- North Charleston</div>
-    <div class="weather-main">
-      <div><div class="temp">90&deg;</div><div class="wx-sub">High 94&deg; / Low 76&deg; &middot; Feels like 100&deg;</div></div>
-      <div class="wx-right">Humidity 63%<br>Dew point 75&deg;<br>Storms after 5 PM</div>
-    </div>
-    <div class="wx-sub">Humidity 63% &middot; Storms possible after 5 PM &middot; Heat index near 100&deg;</div>
-  </div>
-
-  <div class="card">
-    <div class="card-label">Today's Schedule</div>
-    <div class="row row-seacoast">
-      <span class="time">6:00 AM</span>
-      <div><div class="event">AA 1287 -- CHS to MIA</div><div class="location">Seat 24D &middot; Charleston to Miami</div></div>
-    </div>
-    <div class="row">
-      <span class="time">7:40 AM</span>
-      <div><div class="event">Arrive MIA -- 3-hour layover</div><div class="location">Work window: grading comms + Module 3 outline</div></div>
-    </div>
-    <div class="row row-seacoast">
-      <span class="time">10:41 AM</span>
-      <div><div class="event">AA 2367 -- MIA to SDQ</div><div class="location">Seat 31D &middot; Miami to Santo Domingo</div></div>
-    </div>
-    <div class="row">
-      <span class="time">1:15 PM</span>
-      <div><div class="event">Arrive SDQ -- travel to Hato Mayor</div></div>
-    </div>
-    <div class="row row-seacoast">
-      <span class="time">Afternoon</span>
-      <div><div class="event">VBS prep and team formation</div><div class="location">Seacoast mission trip</div></div>
-    </div>
-    <div class="row row-seacoast">
-      <span class="time">Evening</span>
-      <div><div class="event">Team dinner and welcome</div><div class="location">Hotel Colinas Del Rey, Hato Mayor</div></div>
-    </div>
-  </div>
-
-  <div class="card">
-    <div class="card-label card-label-blue">Today's Game Plan</div>
-    <div class="row"><span class="dir-label">Protect:</span><span class="dir-val">Mission trip commitment -- full focus on team, logistics, and arrival in Hato Mayor</span></div>
-    <div class="row"><span class="dir-label">Main pressure:</span><span class="dir-val flag">4 grading assignments due Sunday Jun 21 while off-grid in the DR</span></div>
-    <div class="row"><span class="dir-label">Tonight:</span><span class="dir-val">Team dinner and welcome in Hato Mayor (Seacoast mission time)</span></div>
-    <div class="row"><span class="dir-label">Watch out:</span><span class="dir-val flag">Teaching deadline conflict tomorrow + Wed Jun 24 has filming + Grail Call + Business Mixer (zero Thought Leadership edit window)</span></div>
-  </div>
-
-  <div class="card">
-    <div class="card-label">Open Work Windows</div>
-    <div class="row"><span class="dir-label">7:40-10:41 AM</span><span class="dir-val">MIA layover -- email grading extension; start Module 3 outline</span></div>
-    <div class="row"><span class="dir-label">10:41 AM-1:15 PM</span><span class="dir-val">Flight MIA-SDQ (~2.5 hrs offline) -- best block for writing Module 3</span></div>
-    <div class="row row-focus"><span class="dir-label">After return</span><span class="dir-val">Tue Jun 23 PM arrival; very tight Tue-Thu window for Thought Leadership edits due Thu Jun 25</span></div>
-  </div>
-
-  <div class="card">
-    <div class="card-label">Top Priorities</div>
-    <div class="pri-row">
-      <div class="num">1</div>
-      <div style="flex:1">
-        <div style="font-weight:600;">Pack Luggage</div>
-        <div class="role">Personal &middot; Before 6 AM departure</div>
-        <div style="font-size:12px;color:#534AB7;margin-top:3px;">Next action: Passport, DR e-ticket (WUGBP3), cleaning gloves, beach towel, water shoes, sunscreen</div>
-      </div>
-    </div>
-    <div class="pri-row">
-      <div class="num" style="background:#FEF2F2;color:#7F1D1D;">2</div>
-      <div style="flex:1">
-        <div style="font-weight:600;color:#7F1D1D;">Communicate grading deadline conflict</div>
-        <div class="role" style="color:#7F1D1D;">Teaching &middot; 4 assignments due Sun Jun 21</div>
-        <div style="font-size:12px;color:#534AB7;margin-top:3px;">Next action: Email or message during MIA layover (7:40 AM) -- before 10:41 AM boarding</div>
-      </div>
-    </div>
-    <div class="pri-row">
-      <div class="num">3</div>
-      <div style="flex:1">
-        <div style="font-weight:600;">WRITE Module 3: Capturing the Story</div>
-        <div class="role">Smartphone Storytellers &middot; Deadline Aug 31</div>
-        <div style="font-size:12px;color:#534AB7;margin-top:3px;">Next action: Use MIA-SDQ flight (~2.5 hrs) for focused writing</div>
-      </div>
-    </div>
-  </div>
-
-  <div class="card">
-    <div class="card-label card-label-red">Capacity Note</div>
-    <div style="font-size:13px;line-height:1.5;"><b>Capacity: Very tight.</b> Full travel day. Only realistic windows are the MIA layover and the MIA-SDQ flight. All other attention belongs to the mission trip.</div>
-  </div>
-
-  <div class="card">
-    <div class="card-label">Open Projects</div>
-    <div class="task"><div><div style="font-weight:600;font-size:13px;">Storyteller 101</div><div class="task-role">Smartphone Storytellers &middot; Deadline Aug 31</div></div></div>
-    <div class="task"><div><div style="font-weight:600;font-size:13px;">American Integrity (ACEP)</div><div class="task-role">Freelance &middot; Active</div></div></div>
-    <div class="task"><div><div style="font-weight:600;font-size:13px;">Renew Global (ACEP)</div><div class="task-role">Freelance &middot; Active</div></div></div>
-    <div class="task"><div><div style="font-weight:600;font-size:13px;">Bread of Life (ACEP)</div><div class="task-role">Freelance &middot; Active</div></div></div>
-    <div class="task"><div><div style="font-weight:600;font-size:13px;">CFX 2026</div><div class="task-role">Speaking &middot; Deadline Sep 15</div></div></div>
-    <div class="task"><div><div style="font-weight:600;font-size:13px;">Product Launch (7 Products)</div><div class="task-role" style="color:#bbb;">Smartphone Storytellers &middot; On Hold</div></div></div>
-  </div>
-
-  <div class="generated">Generated June 20, 2026 at 6:44 AM ET</div>
+<div class="card"><div class="card-label" style="background:#1B2A4A;">Weather -- Hanahan SC</div><div class="weather-line1">86&deg; / 69&deg; &middot; Feels like 95&deg;</div><div class="weather-line2">Humidity 94% &middot; Partly Sunny &middot; S 5-10 mph</div></div>
+<div class="card"><div class="card-label" style="background:#1B2A4A;">Today's Schedule</div>
+<div class="row row-seacoast"><span class="time">6:00 AM</span><div><div class="event">Team Breakfast / Devotion</div><div class="role">Hato Mayor, DR -- Mission Trip Day 2</div></div></div>
+<div class="row row-seacoast"><span class="time">Morning</span><div><div class="event">Church Service at El Renacer</div><div class="role">Spiritual Development -- introduce team</div></div></div>
+<div class="row row-seacoast"><span class="time">Afternoon</span><div><div class="event">Community Outreach -- Batey Jalonga Central Park</div><div class="role">~100 kids/teens: music, testimonies, sports, games</div></div></div>
+<div class="row row-seacoast"><span class="time">Evening</span><div><div class="event">Dinner &amp; Debrief</div><div class="role">Hotel Colinas Del Rey</div></div></div>
+<div class="row row-focus"><span class="time" style="color:#166534;">Late Eve</span><div><div class="event">Evening Focus: Weekly Review</div><div class="role">Sunday evening -- assess the week ahead</div></div></div></div>
+<div class="card"><div class="card-label" style="background:#2E5090;">Today's Game Plan</div>
+<div class="row"><span class="dir-label">Protect:</span><span class="dir-val">Mission trip ministry and team time. This is a Seacoast day of service in Hato Mayor.</span></div>
+<div class="row"><span class="dir-label">Main pressure:</span><span class="dir-val"><span class="flag-red">GRADE Visual Rhetoric is due today.</span> You are in DR -- assess tonight whether remote grading is possible or if it goes overdue entering the week.</span></div>
+<div class="row"><span class="dir-label">Tonight:</span><span class="dir-val">Weekly Review -- map the compressed week (travel Tue, filming Wed-Thu, Teaching + Freelance deadlines Thu-Fri-Sun).</span></div>
+<div class="row"><span class="dir-label">Watch out:</span><span class="dir-val">Arriving home Tuesday at 6:51 PM exhausted and walking straight into a Wednesday with no margin from noon onward. Gear for filming must be ready before you fly Tuesday morning.</span></div></div>
+<div class="card"><div class="card-label" style="background:#1B2A4A;">Open Work Windows</div>
+<div class="row"><span class="dir-label">All day</span><span class="dir-val">Full mission trip day in Dominican Republic -- no standard work windows.</span></div>
+<div class="row"><span class="dir-label">This evening</span><span class="dir-val">Brief window after Dinner & Debrief for Weekly Review and possible remote grading (WiFi dependent).</span></div></div>
+<div class="card"><div class="card-label" style="background:#1B2A4A;">Top Priorities</div><div class="pri-row"><span class="num">1</span><div style="flex:1"><div style="font-weight:600;">Weekly Review</div><div class="task-role" style="margin-top:2px;">Personal -- Sunday evening ritual</div><div style="font-size:12px;color:#534AB7;margin-top:2px;">Next action: Map travel Tue, filming Wed-Thu, and deadline cluster (Teaching + Freelance due Thu-Fri-Sun)</div></div></div></div>
+<div class="card" style="background:#FEF2F2;"><div class="card-label" style="background:#7F1D1D;">Capacity</div><div style="font-size:13px;"><b>Capacity: Tight.</b> Full ministry day in Dominican Republic. No standard work windows until Tuesday evening at earliest.</div></div>
+<div class="card"><div class="card-label" style="background:#1B2A4A;">Open Projects</div>
+<div class="sec-head">Freelance</div>
+<div class="task"><div><div>American Integrity (ACEP)</div><div class="task-role">8 remaining + 5 compiled videos pending</div></div><span class="badge">Active</span></div>
+<div class="task"><div><div>Renew Global (ACEP)</div><div class="task-role">Post-production</div></div><span class="badge">Active</span></div>
+<div class="task"><div><div>Bread of Life (ACEP)</div><div class="task-role">Post-production</div></div><span class="badge">Active</span></div>
+<div class="sec-head">Smartphone Storytellers</div>
+<div class="task"><div><div>Storyteller 101</div><div class="task-role">Module 3 in progress -- deadline Aug 31</div></div><span class="badge">Active</span></div>
+<div class="task"><div><div>Product Launch (7 Products)</div><div class="task-role">Picks up after Storyteller 101 launches</div></div><span class="badge" style="color:#999;">On Hold</span></div>
+<div class="sec-head">Speaking</div>
+<div class="task"><div><div>CFX 2026</div><div class="task-role">Birmingham, AL -- Sept 14-16. Next: develop talk structure.</div></div><span class="badge">Active</span></div></div>
+<div class="card" style="background:#FEF2F2;"><div class="card-label" style="background:#7F1D1D;">Heads Up</div><div class="task" style="background:#FEF2F2;"><div><div style="font-weight:600;color:#7F1D1D;">GRADE Visual Rhetoric</div><div class="task-role" style="color:#92400e;">Teaching -- Due TODAY June 21, 2026. You are in the Dominican Republic.</div></div><span class="badge badge-crit">DUE TODAY</span></div></div>
+<div class="generated">Generated June 21, 2026 at 4:36 AM ET</div>
 </div>
 
-<!-- ===== FAITH ===== -->
 <div class="pane" id="pane-faith">
-  <div class="card">
-    <div class="card-label card-label-violet">My Utmost for His Highest</div>
-    <div class="faith-ref">June 20: HAVE YOU COME TO "WHEN" YET?</div>
-<div class="faith-verse">"The Lord restored Job's losses when he prayed for his friends."</div>
-<div class="faith-ref">Job 42:10</div>
-<p style="font-size:13px;color:#1a1a1a;line-height:1.6;margin-bottom:8px;">A pitiful, sickly, and self-centered kind of prayer and a determined effort and selfish desire to be right with God are never found in the New Testament. The fact that I am trying to be right with God is actually a sign that I am rebelling against the atonement by the Cross of Christ. I pray, "Lord, I will purify my heart if You will answer my prayer -- I will walk rightly before You if You will help me." But I cannot make myself right with God; I cannot make my life perfect. I can only be right with God if I accept the atonement of the Lord Jesus Christ as an absolute gift. Am I humble enough to accept it? I have to surrender all my rights and demands, and cease from every self-effort. I must leave myself completely alone in His hands, and then I can begin to pour my life out in the priestly work of intercession. There is a great deal of prayer that comes from actual disbelief in the atonement. Jesus is not just beginning to save us -- He has already saved us completely. It is an accomplished fact, and it is an insult to Him for us to ask Him to do what He has already done.</p>
-<p style="font-size:13px;color:#1a1a1a;line-height:1.6;margin-bottom:8px;">If you are not now receiving the "hundredfold" which Jesus promised (see Matthew 19:29), and not getting insight into God's Word, then start praying for your friends -- enter into the ministry of the inner life. "The Lord restored Job's losses when he prayed for his friends." As a saved soul, the real business of your life is intercessory prayer. Whatever circumstances God may place you in, always pray immediately that His atonement may be recognized and as fully understood in the lives of others as it has been in yours. Pray for your friends now, and pray for those with whom you come in contact now.</p>
-  </div>
-  <div class="card">
-    <div class="card-label card-label-violet">Prayer List</div>
-    <div class="prayer-item">Brad Zimmerman</div>
-    <div class="prayer-item">Austin Allen</div>
-    <div class="prayer-item">Jirah</div>
-    <div class="prayer-item">Russo</div>
-    <div class="prayer-item">Carrie Davis</div>
-    <div class="prayer-item">Jada Jones' Friend</div>
-  </div>
-  <div class="generated">Generated June 20, 2026 at 6:44 AM ET</div>
+<div class="card"><div class="card-label" style="background:#7C3AED;">My Utmost for His Highest</div><div class="faith-ref">June 21: THE MINISTRY OF THE INNER LIFE</div>
+<div style="margin:10px 0 4px;"><div class="faith-verse">"You are . . . a royal priesthood . . . ."</div><div class="faith-ref">1 Peter 2:9</div></div>
+<p style="font-size:13px;color:#1a1a1a;line-height:1.6;margin-bottom:8px;">By what right have we become "a royal priesthood"? It is by the right of the atonement by the Cross of Christ that this has been accomplished. Are we prepared to purposely disregard ourselves and to launch out into the priestly work of prayer? The continual inner-searching we do in an effort to see if we are what we ought to be generates a self-centered, sickly type of Christianity, not the vigorous and simple life of a child of God. Until we get into this right and proper relationship with God, it is simply a case of our "hanging on by the skin of our teeth," although we say, "What a wonderful victory I have!" Yet there is nothing at all in that which indicates the miracle of redemption. Launch out in reckless, unrestrained belief that the redemption is complete. Then don't worry anymore about yourself, but begin to do as Jesus Christ has said, in essence, "Pray for the friend who comes to you at midnight, pray for the saints of God, and pray for all men." Pray with the realization that you are perfect only in Christ Jesus, not on the basis of this argument: "Oh, Lord, I have done my best; please hear me now."</p><p style="font-size:13px;color:#1a1a1a;line-height:1.6;margin-bottom:8px;">How long is it going to take God to free us from the unhealthy habit of thinking only about ourselves? We must get to the point of being sick to death of ourselves, until there is no longer any surprise at anything God might tell us about ourselves. We cannot reach and understand the depths of our own meagerness. There is only one place where we are right with God, and that is in Christ Jesus. Once we are there, we have to pour out our lives for all we are worth in this ministry of the inner life.</p></div>
+<div class="card"><div class="card-label" style="background:#7C3AED;">Prayer List</div><div class="prayer-item">Brad Zimmerman</div><div class="prayer-item">Austin Allen</div><div class="prayer-item">Jirah</div><div class="prayer-item">Russo</div><div class="prayer-item">Carrie Davis</div><div class="prayer-item">Jada Jone's Friend</div></div>
+<div class="generated">Generated June 21, 2026 at 4:36 AM ET</div>
 </div>
 
-<!-- ===== MORNING BRIEF ===== -->
 <div class="pane" id="pane-morning">
-  <div style="font-size:13px;font-weight:600;color:#64748B;margin-bottom:12px;">Saturday, June 20, 2026</div>
-
-  <div class="card">
-    <div class="card-label card-label-blue">Morning Read</div>
-    <p class="morning-prose">Departure day. You're on a 6:00 AM flight to Miami, connecting to Santo Domingo, landing at 1:15 PM local. By tonight you'll be in Hato Mayor with the Seacoast mission team -- VBS, community outreach, and home visits over three days. The morning is consumed by transit, but the 3-hour MIA layover (7:40-10:41 AM) and the 2.5-hour MIA-SDQ flight are real work windows if you use them.</p>
-    <p class="morning-prose">The most urgent issue has nothing to do with the trip: four Teaching assignments (Product Placement, Visual Rhetoric, Safari #6, Safari #7) are due Sunday, June 21 -- tomorrow -- and you will be off-grid in the Dominican Republic. This is the highest-stakes conflict of the week. A message during the layover to whoever needs to know about a brief extension should happen before you board at 10:41 AM.</p>
-    <p class="morning-prose">The rest of the week is dense on return. Wednesday (Jun 24) has filming 12-4 PM, a Grail Call at 4:30, and the Business Mixer at 6 PM -- essentially no editing window. Thursday morning has filming at SVL 9 AM-12 PM. The Thought Leadership edits for Wei Xie and Biggs are due Thursday Jun 25, which means Tuesday night after landing or early Thursday pre-filming are the only viable edit slots.</p>
-    <p class="morning-prose"><b>Watch out for:</b> The teaching deadline conflict following you into the trip -- handle the communication during the layover so you can be fully present once you land.</p>
-  </div>
-
-  <div class="card card-red">
-    <div class="card-label card-label-red">What You Might Be Forgetting</div>
-    <div style="font-size:13px;line-height:1.6;padding:4px 0 8px;border-bottom:1px solid #f5c6c6;"><b>Grading extension communication:</b> Four assignments due Sunday while you're in the DR. A proactive message now -- during the MIA layover -- prevents a missed deadline from escalating with students or the department.</div>
-    <div style="font-size:13px;line-height:1.6;padding-top:8px;"><b>Thought Leadership edit window after return:</b> You land Tuesday Jun 23 PM. Wednesday is fully packed (filming + Grail Call + Business Mixer). Thursday has filming 9 AM-12 PM. Wei Xie and Biggs are due Thursday Jun 25. The only viable windows are Tuesday night and early Thursday morning -- plan for them now so they don't disappear.</div>
-  </div>
-
-  <div class="card">
-    <div class="card-label card-label-blue">What's Next</div>
-    <div style="font-size:13px;padding:6px 0;border-bottom:1px solid #f0f0f0;line-height:1.5;"><b>1. Pack and depart for airport.</b> Confirm luggage, passport, DR e-ticket (entrance: WUGBP3), cleaning gloves, water shoes, sunscreen. 6 AM is early.</div>
-    <div style="font-size:13px;padding:6px 0;border-bottom:1px solid #f0f0f0;line-height:1.5;color:#7F1D1D;"><b>2. Send grading extension message during MIA layover (7:40 AM).</b> Four assignments due Sunday -- communicate before the 10:41 AM boarding cutoff.</div>
-    <div style="font-size:13px;padding:6px 0;border-bottom:1px solid #f0f0f0;line-height:1.5;"><b>3. Write Module 3 on the MIA-SDQ flight.</b> 2.5 hours offline -- the best uninterrupted writing block you'll have this week. Storyteller 101 has an August 31 conference deadline.</div>
-    <div style="font-size:13px;padding:6px 0;border-bottom:1px solid #f0f0f0;line-height:1.5;"><b>4. Plan Thought Leadership edit window before leaving.</b> Tuesday night or early Thursday AM are the only slots. Block them mentally now.</div>
-    <div style="font-size:13px;padding:6px 0;line-height:1.5;"><b>5. Be present on the mission trip.</b> The work in Hato Mayor is the priority for the next three days. Let the other tasks wait and show up fully.</div>
-  </div>
-
-  <div class="card">
-    <div class="card-label card-label-sps">Smartphone Storytellers</div>
-    <div class="row row-sps">
-      <span class="dir-label" style="color:#9f1239;">Status:</span>
-      <span class="dir-val">Building -- Modules 0-2 complete. Module 3 is the current bottleneck before the September conference launch.</span>
-    </div>
-    <div class="row row-sps">
-      <span class="dir-label" style="color:#9f1239;">Today's move:</span>
-      <span class="dir-val">Write on the MIA-SDQ flight. 2.5 hours offline with no distractions -- open the outline and go.</span>
-    </div>
-    <div class="row row-sps">
-      <span class="dir-label" style="color:#9f1239;">Morning block:</span>
-      <span class="dir-val">No block available (6 AM departure). Use MIA layover after grading comms are sent. Main window: MIA-SDQ flight.</span>
-    </div>
-  </div>
-
-  <div class="card">
-    <div class="card-label card-label-blue">Opportunities</div>
-    <div class="row row-sps" style="padding:8px 0;">
-      <div style="flex:1"><b style="color:#9f1239;font-size:11px;display:block;margin-bottom:3px;">SMARTPHONE STORYTELLERS</b><span style="font-size:13px;">Module 3: Capturing the Story -- flight time today unlocks the next section of Storyteller 101 and keeps August 31 achievable.</span></div>
-    </div>
-    <div class="row row-freelance" style="padding:8px 0;">
-      <div style="flex:1"><b style="color:#374151;font-size:11px;display:block;margin-bottom:3px;">FREELANCE</b><span style="font-size:13px;">EDIT Thought Leadership (Wei Xie + Biggs) due Thu Jun 25. Getting mentally organized now on what each edit needs reduces ramp-up time Tuesday night.</span></div>
-    </div>
-  </div>
-
-  <div class="card">
-    <div class="card-label">Weather</div>
-    <div style="font-size:13px;color:#1a1a1a;">Feels like 100&deg; &middot; High 94&deg; / Low 76&deg; &middot; Humidity 63% &middot; Storms possible after 5 PM</div>
-  </div>
-
-  <div class="card">
-    <div class="card-label card-label-blue">Recommended Sequence</div>
-    <div class="row"><span class="time" style="min-width:110px;">Pre 5:30 AM</span><div class="event">Pack final items; confirm passport, DR e-ticket (WUGBP3); depart for CHS airport</div></div>
-    <div class="row row-seacoast"><span class="time" style="min-width:110px;">6:00 AM</span><div class="event">Flight CHS to MIA -- AA 1287, Seat 24D</div></div>
-    <div class="row"><span class="time" style="min-width:110px;">7:40-10:00 AM</span><div class="event">MIA layover -- send grading extension message; outline Module 3; grab airport food (banana for carb gap)</div></div>
-    <div class="row row-seacoast"><span class="time" style="min-width:110px;">10:41 AM</span><div class="event">Flight MIA to SDQ -- AA 2367, Seat 31D -- write Module 3 offline for 2+ hrs</div></div>
-    <div class="row"><span class="time" style="min-width:110px;">1:15 PM</span><div class="event">Arrive SDQ -- travel to Hato Mayor with team</div></div>
-    <div class="row row-seacoast"><span class="time" style="min-width:110px;">Afternoon</span><div class="event">VBS resource setup, team formation, planning</div></div>
-    <div class="row row-seacoast"><span class="time" style="min-width:110px;">Evening</span><div class="event">Team dinner and welcome -- be present and engaged</div></div>
-  </div>
-
-  <div class="card">
-    <div class="card-label">Deadline Pressure</div>
-    <div class="deadline-tier">TOMORROW -- Sun Jun 21</div>
-    <div class="deadline-row row-teaching"><span>GRADE Product Placement</span><span class="deadline-area">Teaching</span><span class="deadline-due tomorrow">TOMORROW</span></div>
-    <div class="deadline-row row-teaching"><span>GRADE Visual Rhetoric</span><span class="deadline-area">Teaching</span><span class="deadline-due tomorrow">TOMORROW</span></div>
-    <div class="deadline-row row-teaching"><span>GRADE Safari #6</span><span class="deadline-area">Teaching</span><span class="deadline-due tomorrow">TOMORROW</span></div>
-    <div class="deadline-row row-teaching"><span>GRADE Safari #7</span><span class="deadline-area">Teaching</span><span class="deadline-due tomorrow">TOMORROW</span></div>
-    <div class="deadline-tier">THIS WEEK</div>
-    <div class="deadline-row row-teaching"><span>POST Exam #2 Heads Up</span><span class="deadline-area">Teaching</span><span class="deadline-due week">Wed Jun 24</span></div>
-    <div class="deadline-row row-freelance"><span>EDIT Thought Leadership - Wei Xie</span><span class="deadline-area">Freelance</span><span class="deadline-due week">Thu Jun 25</span></div>
-    <div class="deadline-row row-freelance"><span>EDIT Thought Leadership - Steve Biggs</span><span class="deadline-area">Freelance</span><span class="deadline-due week">Thu Jun 25</span></div>
-    <div class="deadline-row row-teaching"><span>EDIT: English Video</span><span class="deadline-area">Teaching</span><span class="deadline-due week">Fri Jun 26</span></div>
-    <div class="deadline-row row-teaching"><span>Lecture notes 21-22</span><span class="deadline-area">Teaching</span><span class="deadline-due week">Fri Jun 26</span></div>
-    <div class="deadline-row row-teaching"><span>POST Exam #2</span><span class="deadline-area">Teaching</span><span class="deadline-due week">Fri Jun 26</span></div>
-  </div>
-
-  <div class="card">
-    <div class="card-label">Project Cards</div>
-    <div class="proj-card">
-      <div class="proj-card-head teaching"><span style="font-weight:700;">Teaching</span><span class="badge badge-crit">Critical</span></div>
-      <div class="proj-card-body">
-        <div><b>Why today:</b> 4 grading assignments due Sunday Jun 21 while in the Dominican Republic. No work access in-country.</div>
-        <div><b>Best move:</b> Send extension request during MIA layover (7:40 AM). Proactive communication avoids a missed-deadline escalation.</div>
-        <div><b>Watch out:</b> POST Exam #2 Heads Up due Wed Jun 24 -- same day as filming + Grail Call + Business Mixer. Zero editing margin that day.</div>
-      </div>
-    </div>
-    <div class="proj-card">
-      <div class="proj-card-head freelance"><span style="font-weight:700;">Freelance</span><span class="badge badge-high">High</span></div>
-      <div class="proj-card-body">
-        <div><b>Why today:</b> EDIT Thought Leadership for Wei Xie and Biggs due Thu Jun 25. Return from DR is Tue Jun 23 PM. Wednesday is fully blocked.</div>
-        <div><b>Best move:</b> Plan the edit session now: Tuesday night after landing (6:51 PM CHS) or early Thursday before the 9 AM SVL shoot.</div>
-        <div><b>Watch out:</b> Thu Jun 25 also has filming 9 AM-12 PM and an Ameriprise call at 2 PM. Editing window is pre-9 AM or 12-2 PM.</div>
-      </div>
-    </div>
-    <div class="proj-card">
-      <div class="proj-card-head sps"><span style="font-weight:700;">Smartphone Storytellers</span><span class="badge badge-ok">Medium</span></div>
-      <div class="proj-card-body">
-        <div><b>Why today:</b> Module 3 is the current bottleneck. MIA-SDQ flight is an ideal 2.5-hour offline writing window.</div>
-        <div><b>Best move:</b> Open the Module 3 outline on the flight and write for 2+ hours. Even a rough draft moves this forward significantly.</div>
-        <div><b>Watch out:</b> August 31 feels distant but the September conference requires a complete course. Every module matters.</div>
-      </div>
-    </div>
-  </div>
-
-  <div class="card">
-    <div class="card-label card-label-blue">Do / Defer / Decide</div>
-    <div class="row"><span class="dir-label">Do today:</span><span class="dir-val">Pack, confirm travel documents, send grading extension message from MIA, write Module 3 on MIA-SDQ flight</span></div>
-    <div class="row"><span class="dir-label">Defer:</span><span class="dir-val">All non-urgent tasks until Tuesday Jun 23 return. Thought Leadership edits, course prep, English video -- all wait.</span></div>
-    <div class="row"><span class="dir-label">Decide:</span><span class="dir-val">How to frame the grading extension request and who to contact. Make this call during the layover, not later.</span></div>
-  </div>
-
-  <div class="card card-red">
-    <div class="card-label card-label-red">Overdue / At Risk</div>
-    <div style="font-size:13px;line-height:1.6;padding:4px 0;"><b>At risk -- 4 Teaching assignments due Jun 21:</b> GRADE Product Placement, GRADE Visual Rhetoric, GRADE Safari #6, GRADE Safari #7. Action: Defer intentionally with communication to students or department chair during MIA layover.</div>
-  </div>
-
-  <div class="sec-head">Today's Tasks</div>
-  <div class="card" style="padding:0.75rem 1.25rem;">
-    <div class="task"><div><div style="font-weight:500;">Pack Luggage</div><div class="task-role">Personal</div></div></div>
-    <div class="task"><div><div style="font-weight:500;">WRITE Module 3: Capturing the Story</div><div class="task-role">Smartphone Storytellers</div></div></div>
-  </div>
-
-  <div class="sec-head">Upcoming (7 days)</div>
-  <div class="card" style="padding:0.75rem 1.25rem;">
-    <div style="font-size:11px;font-weight:700;color:#92400e;text-transform:uppercase;letter-spacing:0.05em;padding:4px 0 2px;">Teaching</div>
-    <div class="task"><div><div style="font-weight:500;color:#7F1D1D;">GRADE Product Placement</div><div class="task-role" style="color:#7F1D1D;">Teaching</div></div><span class="task-due urgent">Sun Jun 21</span></div>
-    <div class="task"><div><div style="font-weight:500;color:#7F1D1D;">GRADE Visual Rhetoric</div><div class="task-role" style="color:#7F1D1D;">Teaching</div></div><span class="task-due urgent">Sun Jun 21</span></div>
-    <div class="task"><div><div style="font-weight:500;color:#7F1D1D;">GRADE Safari #6</div><div class="task-role" style="color:#7F1D1D;">Teaching</div></div><span class="task-due urgent">Sun Jun 21</span></div>
-    <div class="task"><div><div style="font-weight:500;color:#7F1D1D;">GRADE Safari #7</div><div class="task-role" style="color:#7F1D1D;">Teaching</div></div><span class="task-due urgent">Sun Jun 21</span></div>
-    <div class="task"><div><div style="font-weight:500;">POST Exam #2 Heads Up</div><div class="task-role">Teaching</div></div><span class="task-due">Wed Jun 24</span></div>
-    <div class="task"><div><div style="font-weight:500;">EDIT: English Video</div><div class="task-role">Teaching</div></div><span class="task-due">Fri Jun 26</span></div>
-    <div class="task"><div><div style="font-weight:500;">Lecture notes 21-22</div><div class="task-role">Teaching</div></div><span class="task-due">Fri Jun 26</span></div>
-    <div class="task"><div><div style="font-weight:500;">POST Exam #2</div><div class="task-role">Teaching</div></div><span class="task-due">Fri Jun 26</span></div>
-    <div style="font-size:11px;font-weight:700;color:#374151;text-transform:uppercase;letter-spacing:0.05em;padding:8px 0 2px;">Freelance</div>
-    <div class="task"><div><div style="font-weight:500;">EDIT Thought Leadership - Wei Xie</div><div class="task-role">Freelance</div></div><span class="task-due">Thu Jun 25</span></div>
-    <div class="task"><div><div style="font-weight:500;">EDIT Thought Leadership - Steve Biggs</div><div class="task-role">Freelance</div></div><span class="task-due">Thu Jun 25</span></div>
-  </div>
-
-  <div class="generated">Generated June 20, 2026 at 6:44 AM ET</div>
+<div style="font-size:13px;color:#64748B;margin-bottom:12px;">Sunday, June 21, 2026</div>
+<div class="card"><div class="card-label" style="background:#2E5090;">Morning Read</div><p style="font-size:13px;color:#1a1a1a;line-height:1.6;margin-bottom:8px;">Adam is on Day 2 of the Seacoast mission trip in Hato Mayor, Dominican Republic -- a full day of church, community outreach, and team ministry. Back home, GRADE Visual Rhetoric is technically due today (June 21); determine tonight whether grading is possible remotely or whether it enters the week overdue. The week returning is unusually compressed: Tuesday is a full travel day (two flights, home by 6:51 PM), Wednesday runs filming noon-4 PM then Grail call then Hanahan Business Mixer, eliminating the Teaching evening block entirely, and Thursday has back-to-back filming all morning.</p>
+<p style="font-size:13px;color:#1a1a1a;line-height:1.6;margin-bottom:8px;">A Teaching deadline cluster (English Video, Lecture Notes, POST Exam #2) hits Friday June 26, and two Freelance Thought Leadership edits are due Thursday June 25. The strategic imperative is Tuesday evening -- it is the only available window before Wednesday's schedule eliminates all margin. Use it for grading and Teaching prep. Thursday afternoon (after filming ends) is the Freelance edit window. <b>Watch out for:</b> Arriving home Tuesday exhausted at 6:51 PM and walking into a Wednesday that has no margin from noon onward -- gear for filming must be packed and ready before you fly.</p></div>
+<div class="card" style="background:#FEF2F2;"><div class="card-label" style="background:#7F1D1D;">What You Might Be Forgetting</div><div style="padding:8px 0;border-bottom:1px solid #f5d0d0;font-size:13px;"><b>GRADE Visual Rhetoric -- due today.</b> You are in the Dominican Republic and this deadline is live. If grading is not possible tonight, it goes overdue entering the week.</div>
+<div style="padding:8px 0;border-bottom:1px solid #f5d0d0;font-size:13px;"><b>Gear for Wednesday filming.</b> Devotional filming at the Podcast Studio starts at noon Wed Jun 24. Gear must be packed before you fly home Tuesday -- you land at 6:51 PM with no time to prep Wednesday morning.</div>
+<div style="padding:8px 0;font-size:13px;"><b>Hanahan Business Mixer (Wed 6-8 PM).</b> Natural SPS lead-gen moment. Have a one-line Storyteller 101 pitch ready -- September launch is close enough to generate real interest.</div></div>
+<div class="card"><div class="card-label" style="background:#2E5090;">What's Next</div><div style="padding:7px 0;border-bottom:1px solid #f0f0f0;font-size:13px;"><b>1. Weekly Review tonight</b> -- Map the compressed week: travel Tue, filming Wed-Thu, deadlines cluster Thu-Fri-Sun. This 30-minute session will determine if you survive the week or scramble.</div>
+<div style="padding:7px 0;border-bottom:1px solid #f0f0f0;font-size:13px;"><b>2. GRADE Visual Rhetoric</b> -- Attempt tonight if WiFi allows. Otherwise designate Tuesday evening as the hard grading block.</div>
+<div style="padding:7px 0;border-bottom:1px solid #f0f0f0;font-size:13px;"><b>3. EDIT Thought Leadership (Wei Xie + Steve Biggs)</b> -- Both due Thursday Jun 25. Thursday afternoon after filming is the only window. These must be queued before then.</div>
+<div style="padding:7px 0;border-bottom:1px solid #f0f0f0;font-size:13px;"><b>4. Teaching cluster (English Video, Lecture Notes, POST Exam #2)</b> -- All due Friday Jun 26. Wednesday evening is gone (Business Mixer). Tuesday evening is the only teaching prep window.</div>
+<div style="padding:7px 0;font-size:13px;"><b>5. WRITE Module 3: Capturing the Story (SPS)</b> -- No external deadline but August 31 launch is the gate. Protect morning blocks next week. Set internal target: Module 3 draft by July 4.</div></div>
+<div class="card"><div class="card-label" style="background:#9f1239;">Smartphone Storytellers</div><div class="row row-sps"><span class="dir-label" style="color:#9f1239;min-width:115px;">Status:</span><span class="dir-val" style="color:#9f1239;">Storyteller 101 in motion -- Modules 0-2 complete, Module 3 writing in progress. August 31 launch deadline. No internal Module 3 done-by date set.</span></div>
+<div class="row row-sps"><span class="dir-label" style="color:#9f1239;min-width:115px;">Today's move:</span><span class="dir-val" style="color:#9f1239;">Use this evening's reflection time to mentally structure Module 3 content. Mission trip environments often surface compelling story frameworks.</span></div>
+<div class="row row-sps"><span class="dir-label" style="color:#9f1239;min-width:115px;">Morning block:</span><span class="dir-val" style="color:#9f1239;">Sunday in DR -- no SST morning block. Full ministry day. Resume Monday morning block on return.</span></div></div>
+<div class="card"><div class="card-label" style="background:#2E5090;">Opportunities</div><div class="row row-sps"><span class="dir-label" style="color:#9f1239;min-width:115px;">SPS Module 3</span><span class="dir-val">Advancing WRITE Module 3 this week -- even 30 min daily -- keeps the August launch on track and unlocks parallel launch infrastructure work.</span></div>
+<div class="row row-freelance"><span class="dir-label" style="color:#374151;min-width:115px;">Thought Leadership</span><span class="dir-val">Delivering Wei Xie + Steve Biggs edits Thursday closes two of the remaining 8 ACEP pending videos and maintains client relationship momentum.</span></div>
+<div class="row row-seacoast"><span class="dir-label" style="color:#155e75;min-width:115px;">Business Mixer</span><span class="dir-val">Hanahan Business Mixer Wed 6-8 PM is a natural SPS networking moment. A clean Storyteller 101 one-liner could open pilot cohort conversations.</span></div></div>
+<div class="card"><div class="card-label" style="background:#1B2A4A;">Weather -- Hanahan SC</div><div style="font-size:13px;">Feels like 95&deg; &middot; High 86&deg; / Low 69&deg; &middot; Humidity 94% &middot; Partly Sunny &middot; S 5-10 mph</div></div>
+<div class="card"><div class="card-label" style="background:#2E5090;">Recommended Sequence</div><div class="row row-seacoast"><span class="time">6:00 AM</span><div><div class="event">Team Breakfast / Devotion</div></div></div>
+<div class="row row-seacoast"><span class="time">Morning</span><div><div class="event">Church service at El Renacer</div></div></div>
+<div class="row row-seacoast"><span class="time">Afternoon</span><div><div class="event">Community Outreach -- Batey Jalonga Central Park</div></div></div>
+<div class="row row-seacoast"><span class="time">Evening</span><div><div class="event">Dinner &amp; Debrief</div></div></div>
+<div class="row row-focus"><span class="time" style="color:#166534;">Late Eve</span><div><div class="event">Weekly Review + attempt GRADE Visual Rhetoric if WiFi allows</div></div></div></div>
+<div class="card"><div class="card-label" style="background:#1B2A4A;">Deadline Pressure</div><div class="sec-head" style="color:#7F1D1D;">TODAY</div>
+<div class="row row-teaching"><span class="event" style="flex:1;color:#7F1D1D;font-weight:600;">GRADE Visual Rhetoric</span><span style="font-size:11px;color:#999;min-width:70px;">Teaching</span><span class="badge badge-crit">TODAY</span></div>
+<div class="sec-head" style="margin-top:10px;">THIS WEEK</div>
+<div class="row row-teaching"><span class="event" style="flex:1;">POST Exam #2 Heads Up</span><span style="font-size:11px;color:#999;min-width:70px;">Teaching</span><span class="badge badge-warn">WED JUN 24</span></div>
+<div class="row row-freelance"><span class="event" style="flex:1;">EDIT Thought Leadership - Wei Xie</span><span style="font-size:11px;color:#999;min-width:70px;">Freelance</span><span class="badge badge-warn">THU JUN 25</span></div>
+<div class="row row-freelance"><span class="event" style="flex:1;">EDIT Thought Leadership - Steve Biggs</span><span style="font-size:11px;color:#999;min-width:70px;">Freelance</span><span class="badge badge-warn">THU JUN 25</span></div>
+<div class="row row-teaching"><span class="event" style="flex:1;">EDIT: English Video</span><span style="font-size:11px;color:#999;min-width:70px;">Teaching</span><span class="badge badge-warn">FRI JUN 26</span></div>
+<div class="row row-teaching"><span class="event" style="flex:1;">Lecture notes 21-22</span><span style="font-size:11px;color:#999;min-width:70px;">Teaching</span><span class="badge badge-warn">FRI JUN 26</span></div>
+<div class="row row-teaching"><span class="event" style="flex:1;">POST Exam #2</span><span style="font-size:11px;color:#999;min-width:70px;">Teaching</span><span class="badge badge-warn">FRI JUN 26</span></div>
+<div class="row row-teaching"><span class="event" style="flex:1;">GRADE Safari #8</span><span style="font-size:11px;color:#999;min-width:70px;">Teaching</span><span class="badge badge-ok">SUN JUN 28</span></div>
+<div class="row row-teaching"><span class="event" style="flex:1;">GRADE Graphic Design</span><span style="font-size:11px;color:#999;min-width:70px;">Teaching</span><span class="badge badge-ok">SUN JUN 28</span></div>
+<div class="row row-freelance"><span class="event" style="flex:1;">Overview Video</span><span style="font-size:11px;color:#999;min-width:70px;">Freelance</span><span class="badge badge-ok">SUN JUN 28</span></div>
+<div class="row row-teaching"><span class="event" style="flex:1;">RECORD Week 8 Lecture: 21 Television</span><span style="font-size:11px;color:#999;min-width:70px;">Teaching</span><span class="badge badge-ok">SUN JUN 28</span></div>
+<div class="row row-teaching"><span class="event" style="flex:1;">RECORD Week 8 Lecture: 22 Digital Comm</span><span style="font-size:11px;color:#999;min-width:70px;">Teaching</span><span class="badge badge-ok">SUN JUN 28</span></div></div>
+<div class="card"><div class="sec-head">Teaching</div>
+<div class="card" style="margin-bottom:8px;">
+  <div class="card-label" style="background:#92400e;">Teaching <span class="badge badge-crit" style="float:right;">Critical</span></div>
+  <div class="row"><span class="dir-label">Why today:</span><span class="dir-val">Four tasks due Fri Jun 26; GRADE Visual Rhetoric due today; Wednesday teaching block eliminated by Business Mixer.</span></div>
+  <div class="row"><span class="dir-label">Best move:</span><span class="dir-val">Grade Visual Rhetoric tonight if possible. Make Tuesday evening a hard grading + teaching prep block.</span></div>
+  <div class="row"><span class="dir-label">Watch out:</span><span class="dir-val">Wednesday is completely blocked from noon onward. There is no teaching evening this week.</span></div>
+</div>
+<div class="sec-head">Freelance</div>
+<div class="card" style="margin-bottom:8px;">
+  <div class="card-label" style="background:#374151;">Freelance <span class="badge badge-warn" style="float:right;">High</span></div>
+  <div class="row"><span class="dir-label">Why today:</span><span class="dir-val">Wei Xie + Steve Biggs Thought Leadership edits due Thursday Jun 25. Internal Jun 19 target already missed.</span></div>
+  <div class="row"><span class="dir-label">Best move:</span><span class="dir-val">Thursday afternoon (after filming ends at noon) is the primary window. Pre-review scope before then.</span></div>
+  <div class="row"><span class="dir-label">Watch out:</span><span class="dir-val">Ameriprise call at 2 PM Thursday compresses the editing window to noon-2 PM.</span></div>
+</div>
+<div class="sec-head">Seacoast</div>
+<div class="card" style="margin-bottom:8px;">
+  <div class="card-label" style="background:#155e75;">Seacoast <span class="badge badge-ok" style="float:right;">Medium</span></div>
+  <div class="row"><span class="dir-label">Why today:</span><span class="dir-val">Devotional filming Wed 12-4 PM + KidsCamp interviews Thu 9 AM-noon. Gear must be packed before Tuesday flight.</span></div>
+  <div class="row"><span class="dir-label">Best move:</span><span class="dir-val">Pack gear before flying home Tuesday. Confirm shot list for both shoots.</span></div>
+  <div class="row"><span class="dir-label">Watch out:</span><span class="dir-val">Grail Call at 4:30 PM immediately follows filming. Back-to-back with no break before the Business Mixer at 6 PM.</span></div>
+</div></div>
+<div class="card"><div class="card-label" style="background:#2E5090;">Do / Defer / Decide</div><div class="row"><span class="dir-label">Do today:</span><span class="dir-val">Weekly Review; GRADE Visual Rhetoric if WiFi allows.</span></div>
+<div class="row"><span class="dir-label">Defer:</span><span class="dir-val">SPS writing (Monday morning block); ACEP edits (Thursday afternoon); Teaching recordings (Wednesday/Thursday).</span></div>
+<div class="row"><span class="dir-label">Decide:</span><span class="dir-val">Will you attempt grading tonight in DR or designate Tuesday evening as the hard grading block? Make this call during tonight's Weekly Review so Tuesday is planned, not reactive.</span></div></div>
+<div class="card" style="background:#FEF2F2;"><div class="card-label" style="background:#7F1D1D;">Overdue / At Risk</div><div class="task"><div><div style="font-weight:600;color:#7F1D1D;">GRADE Visual Rhetoric</div><div class="task-role" style="color:#92400e;">Due TODAY June 21. You are in DR -- attempt tonight or it is overdue by morning.</div></div><span class="badge badge-crit">DUE TODAY</span></div></div>
+<div class="generated">Generated June 21, 2026 at 4:36 AM ET</div>
 </div>
 
-<!-- ===== FITNESS ===== -->
 <div class="pane" id="pane-fitness">
-  <!-- Tomorrow's Workout: Rest Day (Sunday) -->
-  <div class="card">
-    <div class="card-label">Tomorrow's Workout</div>
-    <div class="rest-day">Rest Day &mdash; Sunday. Recovery focus.</div>
-  </div>
-
-  <div class="card">
-    <div class="card-label">Macro Plan</div>
-    <span class="window-pill window-conflict">&#9992;&#65039; Travel Day &mdash; All meals away from home (Dominican Republic)</span>
-
-    <table class="macro-table">
-      <tr><th>Meal</th><th>Cal</th><th>Pro</th><th>Carb</th><th>Fat</th></tr>
-      <tr><td>Morning Coffee</td><td>18</td><td>4g</td><td>0g</td><td>0g</td></tr>
-      <tr><td>Breakfast</td><td>210</td><td>28g</td><td>2g</td><td>10g</td></tr>
-      <tr><td>Snack 1</td><td>130</td><td>25g</td><td>6g</td><td>2g</td></tr>
-      <tr><td>Lunch (PLN)</td><td>450</td><td>35g</td><td>45g</td><td>12g</td></tr>
-      <tr><td>Post-Lunch Shake</td><td>190</td><td>30g</td><td>9g</td><td>3g</td></tr>
-      <tr><td>Snack 2</td><td>90</td><td>1g</td><td>22g</td><td>0g</td></tr>
-      <tr><td>Dinner (Chicken)</td><td>430</td><td>48g</td><td>32g</td><td>10g</td></tr>
-      <tr><td>Evening Snack</td><td>290</td><td>27g</td><td>31g</td><td>8g</td></tr>
-      <tr class="total-row"><td>Total</td><td>1808</td><td>198g</td><td>147g</td><td>45g</td></tr>
-      <tr class="target-row"><td>Target</td><td>2190</td><td>200g</td><td>215g</td><td>72g</td></tr>
-      <tr class="gap-row"><td>Gap</td><td>-382</td><td>-2g</td><td>-68g</td><td>-27g</td></tr>
-    </table>
-
-    <div class="bar-section">
-      <div class="bar-section-label">Macros vs. Target</div>
-      <div class="bar-row">
-        <div class="bar-label"><span>Calories</span><span>1808 / 2190</span></div>
-        <div class="bar-bg"><div class="bar-fill" style="width:83%"></div></div>
-      </div>
-      <div class="bar-row">
-        <div class="bar-label"><span>Protein</span><span>198g / 200g</span></div>
-        <div class="bar-bg"><div class="bar-fill" style="width:99%"></div></div>
-      </div>
-      <div class="bar-row">
-        <div class="bar-label"><span>Carbs</span><span>147g / 215g</span></div>
-        <div class="bar-bg"><div class="bar-fill" style="width:68%"></div></div>
-      </div>
-      <div class="bar-row">
-        <div class="bar-label"><span>Fat</span><span>45g / 72g</span></div>
-        <div class="bar-bg"><div class="bar-fill" style="width:63%"></div></div>
-      </div>
-    </div>
-
-    <div class="macro-rec"><b>Dinner call: Chicken.</b> Protein lands at 198g (only 2g under target) vs. fish at 188g (12g short). Main gap is carbs: &minus;68g &mdash; add rice or fruit sides where available in the DR. Fat is &minus;27g under &mdash; butter on dinner rice helps. Casein shake in luggage covers the evening snack.</div>
-  </div>
-
-  <div class="card">
-    <div class="card-label">Pack List</div>
-    <div class="workout-meta">6 meals away from home &mdash; all day in the Dominican Republic</div>
-    <div class="pack-row"><div class="pack-meal">Breakfast</div><div class="pack-conflict">DR all day</div><div class="pack-swap">Hard-boiled eggs prepped night before, or protein shake</div></div>
-    <div class="pack-row"><div class="pack-meal">Snack 1</div><div class="pack-conflict">DR all day</div><div class="pack-swap">Protein shake in shaker bottle</div></div>
-    <div class="pack-row"><div class="pack-meal">Lunch</div><div class="pack-conflict">DR all day</div><div class="pack-swap">PLN meal in insulated bag or best available local option</div></div>
-    <div class="pack-row"><div class="pack-meal">Snack 2</div><div class="pack-conflict">DR all day</div><div class="pack-swap">Clementines or applesauce pouches (portable)</div></div>
-    <div class="pack-row"><div class="pack-meal">Dinner</div><div class="pack-conflict">DR all day</div><div class="pack-swap">Team dinner &mdash; choose chicken + rice; highest-protein option</div></div>
-    <div class="pack-row"><div class="pack-meal">Eve Snack</div><div class="pack-conflict">DR all day</div><div class="pack-swap">Casein shake packed in luggage; skip mini cone tonight</div></div>
-  </div>
-
-  <div class="generated">Updated June 20, 2026 at 8:44 PM ET (evening fitness brief)</div>
+<div class="card"><div class="card-label">Today's Workout</div><div class="rest-day">Rest Day -- Recovery focus. No workout scheduled on Sunday.</div></div>
+<div class="card"><div class="card-label">Macro Plan</div><div class="meal-head">Morning Coffee</div><div class="meal-items">1/2 serving collagen protein in coffee</div><div class="meal-macros"><span>18 cal</span><span>4g protein</span><span>0g carbs</span><span>0g fat</span></div><div class="meal-head">Breakfast</div><div class="meal-items">2 whole eggs + 4 egg whites</div><div class="meal-macros"><span>210 cal</span><span>28g protein</span><span>2g carbs</span><span>10g fat</span></div><div class="meal-head">Snack 1</div><div class="meal-items">Cocoa Crispy's Protein Shake (1 scoop, water)</div><div class="meal-macros"><span>130 cal</span><span>25g protein</span><span>6g carbs</span><span>2g fat</span></div><div class="meal-head">Lunch</div><div class="meal-items">Project Lean Nation meal</div><div class="meal-macros"><span>450 cal</span><span>35g protein</span><span>45g carbs</span><span>12g fat</span></div><div class="meal-head">Post-Lunch Shake</div><div class="meal-items">Six Star Whey Protein Plus -- Frosted Flakes (1 scoop)</div><div class="meal-macros"><span>190 cal</span><span>30g protein</span><span>9g carbs</span><span>3g fat</span></div><div class="meal-head">Snack 2</div><div class="meal-items">Mini oranges / clementines and/or applesauce</div><div class="meal-macros"><span>90 cal</span><span>1g protein</span><span>22g carbs</span><span>0g fat</span></div><div class="meal-head">Dinner (Chicken A)</div><div class="meal-items">Baked chicken breast + 1/2 cup rice + butter</div><div class="meal-macros"><span>430 cal</span><span>48g protein</span><span>32g carbs</span><span>10g fat</span></div><div class="meal-head">Evening Snack</div><div class="meal-items">Blue Bunny Caramel mini cone + Cinnamon Bun Casein</div><div class="meal-macros"><span>290 cal</span><span>27g protein</span><span>31g carbs</span><span>8g fat</span></div><table class="macro-table"><tr><th></th><th>Cal</th><th>Pro</th><th>Carb</th><th>Fat</th></tr><tr class="total-row"><td>Total (Chicken)</td><td>1808</td><td>198g</td><td>147g</td><td>45g</td></tr><tr class="target-row"><td>Target</td><td>2190</td><td>200g</td><td>215g</td><td>72g</td></tr><tr class="gap-row"><td>Gap</td><td>-382</td><td>-2g</td><td>-68g</td><td>-27g</td></tr></table><div class="bar-section"><div class="bar-section-label">Macros vs. Target</div><div class="bar-row"><div class="bar-label"><span>Calories</span><span>1808 / 2190</span></div><div class="bar-bg"><div class="bar-fill" style="width:83%;"></div></div></div><div class="bar-row"><div class="bar-label"><span>Protein</span><span>198g / 200g</span></div><div class="bar-bg"><div class="bar-fill" style="width:99%;"></div></div></div><div class="bar-row"><div class="bar-label"><span>Carbs</span><span>147g / 215g</span></div><div class="bar-bg"><div class="bar-fill" style="width:68%;"></div></div></div><div class="bar-row"><div class="bar-label"><span>Fat</span><span>45g / 72g</span></div><div class="bar-bg"><div class="bar-fill" style="width:62%;"></div></div></div></div><div class="macro-rec">Dinner call: Chicken -- protein lands at 198g (just 2g under target), vs. fish at 188g (12g short). Main gap is carbs: -68g. Add a banana with Snack 2 (+27g) and 2-3 rice cakes mid-afternoon (+20g) to recover ~47g. Fat is -27g under -- add olive oil on the chicken or an extra pat of butter on the rice. Note: You are in DR today -- team meals are provided. Apply this template when back home Thursday.</div></div>
+<div class="card"><div class="card-label">Pack List</div><div style="font-size:13px;color:#555;padding:8px 0;">You are in the Dominican Republic today. Team meals are provided (hotel breakfast, field lunch, group dinner). Standard pack list does not apply. Resume standard macro plan Thursday when back home.</div></div>
+<div class="generated">Generated June 21, 2026 at 4:36 AM ET</div>
 </div>
 
-<!-- ===== DAILY DEV ===== -->
 <div class="pane" id="pane-daily-dev">
-  <div class="card">
-    <div class="card-label card-label-devblue">Daily Creative</div>
-    <div class="dev-title">June 20th</div>
-<div class="dev-body">
-<p>You only have so much energy to exert. Any energy that you spend necessarily comes at the expense of other things in your life. It's easy to prune redundant tasks, old projects, and recurring calendar commitments from your life, but sometimes what needs pruning feels a little more personal and awkward. There are some relational commitments that simply outlive their benefit to each person, and the time comes when you simply need to prune the relationship and move on.</p>
-<p>This can be a difficult conversation because the decision is not always mutual. For example, an old colleague may want to continue to meet up for coffee every two weeks to chat about how bad his work situation is, or your college roommate wants to grab a few beers after work to relive the past. Neither of these situations is bad on its face and may have even brought you energy at one point but has now outlived its merits. It may be time to prune so that you have the energy you need to bring to the fulfilling relationships in your life.</p>
-<p>A quick caveat: I am not endorsing walking away from your commitments to others. Those must be honored. However, pay attention to when relationships seem to have withered, and be courageous enough to prune when necessary so that you have the energy you need to pursue your productive passion.</p>
-<p>Sometimes we need to cut ties with people who drain us.</p>
-</div>
-<div class="dev-question">Question: Are there any relationships in your life that need to be pruned?</div>
-  </div>
-  <div class="generated">Generated June 20, 2026 at 6:44 AM ET</div>
+<div class="card"><div class="card-label" style="background:#0369A1;">Daily Creative</div><div class="dev-title">June 21st - Managing Diversions</div><div class="dev-body"><p>If you are old enough, you recall the days when researching a topic meant walking over to a shelf, pulling out an encyclopedia volume, shuffling through the pages until you found the topic, and hoping that the article was written at some point in the past ten years. (Or you may have visited the library to search through microfilm of hundreds of newspapers until you found the exact article you were looking for. Fun times.) Now, you can find the answer to nearly any question with just a few clicks. If you are curious about something or get the urge to follow a hunch, you can do it in an instant, which will likely lead to another click, and another, and soon you are down the rabbit hole of distraction. These distractions driven by curiosity are easy and cheap to follow but actually very costly to your process because they fracture your focus.</p><p>To curb the instinct to bounce from click to click, it can be helpful to keep a small notepad handy to write down interesting thoughts that cross your mind while doing your work. Experiencing a desire to follow a clickbait article? Write it down and follow it later, when you aren't in the middle of something. Want to read an article about your favorite band? Great! Write it down so that you can do it later, when you have time.</p><p>Keep a log of potential diversions, then schedule some "diversion time" to pursue them all.</p><p>Be mindful of small diversions that sidetrack your work.</p></div><div class="dev-question">Question: What small diversions tempt you the most when in the midst of your work?</div></div>
+<div class="generated">Generated June 21, 2026 at 4:36 AM ET</div>
 </div>
 
-<!-- ===== TRIP - DR ===== -->
 <div class="pane" id="pane-trip-dr">
-  <div class="card">
-    <div class="card-label card-label-teal">Dominican Republic -- Jun 20-23, 2026</div>
-    <table class="trip-table">
-      <tr><td class="trip-key">Destination</td><td class="trip-val">Hato Mayor, Dominican Republic</td></tr>
-      <tr><td class="trip-key">Type</td><td class="trip-val">Seacoast mission trip -- VBS, community outreach, home visits</td></tr>
-      <tr><td class="trip-key">Trip #</td><td class="trip-val">2026DR-06A</td></tr>
-      <tr><td class="trip-key">Team Leaders</td><td class="trip-val">Josh, Sean, Emma, Tricia</td></tr>
-      <tr><td class="trip-key">Community Vision</td><td class="trip-val">Anayz</td></tr>
-      <tr><td class="trip-key">Hotel</td><td class="trip-val">Hotel Colinas Del Rey (Jun 20-23)</td></tr>
-      <tr><td class="trip-key">Confirmation</td><td class="trip-val">MSSIKZ | Ticket: 001 7492984843</td></tr>
-      <tr><td class="trip-key">DR Entry e-Ticket</td><td class="trip-val">WUGBP3</td></tr>
-      <tr><td class="trip-key">DR Exit e-Ticket</td><td class="trip-val">7JXH9U</td></tr>
-    </table>
-  </div>
-
-  <div class="card">
-    <div class="card-label card-label-teal">Flights</div>
-    <table class="trip-table">
-      <tr><th>Leg</th><th>Flight</th><th>Date</th><th>Dep</th><th>Arr</th><th>Seat</th></tr>
-      <tr><td>CHS-MIA</td><td>AA 1287</td><td>Sat Jun 20</td><td>6:00 AM</td><td>7:40 AM</td><td>24D</td></tr>
-      <tr><td>MIA-SDQ</td><td>AA 2367</td><td>Sat Jun 20</td><td>10:41 AM</td><td>1:15 PM</td><td>31D</td></tr>
-      <tr><td>SDQ-MIA</td><td>AA 1856</td><td>Tue Jun 23</td><td>10:29 AM</td><td>12:57 PM</td><td>28D</td></tr>
-      <tr><td>MIA-CHS</td><td>AA 1657</td><td>Tue Jun 23</td><td>5:00 PM</td><td>6:51 PM</td><td>21D</td></tr>
-    </table>
-  </div>
-
-  <div class="card">
-    <div class="card-label card-label-teal">Itinerary</div>
-    <div class="trip-day-head">Day 1 -- Sat Jun 20</div>
-    <ul style="font-size:13px;color:#1a1a1a;line-height:1.8;padding-left:1.2rem;">
-      <li>6:00 AM -- Depart CHS (AA 1287)</li>
-      <li>10:41 AM -- Depart MIA (AA 2367)</li>
-      <li>1:15 PM -- Arrive SDQ</li>
-      <li>Afternoon -- Travel to Hato Mayor; VBS setup and team formation</li>
-      <li>Evening -- Dinner and Welcome</li>
-    </ul>
-    <div class="trip-day-head">Day 2 -- Sun Jun 21</div>
-    <ul style="font-size:13px;color:#1a1a1a;line-height:1.8;padding-left:1.2rem;">
-      <li>6:00-8:00 AM -- Team Breakfast and Devotion</li>
-      <li>Morning -- Church service at El Renacer (introduce team)</li>
-      <li>Afternoon -- Community Outreach at Batey Jalonga's Central Park (~100 kids and teens)</li>
-      <li>Evening -- Dinner and Debrief</li>
-    </ul>
-    <div class="trip-day-head">Day 3 -- Mon Jun 22</div>
-    <ul style="font-size:13px;color:#1a1a1a;line-height:1.8;padding-left:1.2rem;">
-      <li>6:00-8:00 AM -- Team Breakfast and Devotion</li>
-      <li>Morning -- VBS at El Renacer school (3 groups of 20-30 kids, ages 6-11)</li>
-      <li>Lunch -- Transformation Center</li>
-      <li>Afternoon -- Farming tour + home visits in Las Chinas</li>
-      <li>Evening -- Dinner and Debrief</li>
-    </ul>
-    <div class="trip-day-head">Day 4 -- Tue Jun 23</div>
-    <ul style="font-size:13px;color:#1a1a1a;line-height:1.8;padding-left:1.2rem;">
-      <li>Morning -- Depart for SDQ airport</li>
-      <li>10:29 AM -- Depart SDQ (AA 1856, Seat 28D)</li>
-      <li>5:00 PM -- Depart MIA (AA 1657, Seat 21D)</li>
-      <li>6:51 PM -- Arrive CHS</li>
-    </ul>
-    <div class="trip-note">Pack: cleaning gloves, apron, beach towel, water shoes (required), sunscreen. Malaria prevention recommended for rural travel. Passport valid on arrival required. DR exit fee payable on departure.</div>
-  </div>
-
-  <div class="card">
-    <div class="card-label card-label-teal">Contacts</div>
-    <div style="font-size:13px;line-height:1.8;color:#1a1a1a;">
-      Golden Rule Travel: 330-893-1501<br>
-      Travel consultant: Marvin Jay Mast<br>
-      American Airlines: 800-433-7300
-    </div>
-  </div>
-  <div class="generated">Generated June 20, 2026 at 6:44 AM ET</div>
+<div class="card"><div class="card-label" style="background:#0F766E;">Overview</div>
+<div class="row"><span class="trip-key">Destination</span><span class="trip-val">Hato Mayor, Dominican Republic</span></div>
+<div class="row"><span class="trip-key">Dates</span><span class="trip-val">Jun 20-23, 2026</span></div>
+<div class="row"><span class="trip-key">Type</span><span class="trip-val">Business (Seacoast)</span></div>
+<div class="row"><span class="trip-key">Purpose</span><span class="trip-val">Mission trip -- VBS, community outreach, home visits (Trip 2026DR-06A)</span></div>
+<div class="row"><span class="trip-key">Team Leaders</span><span class="trip-val">Josh, Sean, Emma, Tricia</span></div>
+<div class="row"><span class="trip-key">Hotel</span><span class="trip-val">Hotel Colinas Del Rey (Jun 20-23)</span></div></div>
+<div class="card"><div class="card-label" style="background:#0F766E;">Flights</div><table style="width:100%;font-size:12px;border-collapse:collapse;">
+<tr style="background:#0F766E;color:#fff;"><th style="padding:5px 8px;text-align:left;">Leg</th><th>Flight</th><th>Date</th><th>Departs</th><th>Arrives</th><th>Seat</th></tr>
+<tr style="background:#F8FAFC;"><td style="padding:5px 8px;">CHS-MIA</td><td>AA 1287</td><td>Sat Jun 20</td><td>6:00 AM</td><td>7:40 AM</td><td>24D</td></tr>
+<tr><td style="padding:5px 8px;">MIA-SDQ</td><td>AA 2367</td><td>Sat Jun 20</td><td>10:41 AM</td><td>1:15 PM</td><td>31D</td></tr>
+<tr style="background:#F8FAFC;"><td style="padding:5px 8px;">SDQ-MIA</td><td>AA 1856</td><td>Tue Jun 23</td><td>10:29 AM</td><td>12:57 PM</td><td>28D</td></tr>
+<tr><td style="padding:5px 8px;">MIA-CHS</td><td>AA 1657</td><td>Tue Jun 23</td><td>5:00 PM</td><td>6:51 PM</td><td>21D</td></tr>
+</table>
+<div style="font-size:11px;color:#64748B;margin-top:8px;">Confirmation: MSSIKZ | Ticket: 001 7492984843 | DR e-Ticket In: WUGBP3 | Out: 7JXH9U</div></div>
+<div class="card"><div class="card-label" style="background:#0F766E;">Itinerary</div>
+<div style="color:#0F766E;font-weight:600;font-size:13px;margin:8px 0 4px;">Day 2 -- Sun Jun 21 (TODAY)</div>
+<ul style="font-size:12px;color:#1a1a1a;line-height:1.8;padding-left:16px;margin-bottom:8px;">
+<li>6:00-8:00 AM: Team Breakfast / Devotion</li>
+<li>Morning: Church service at El Renacer (introduce team)</li>
+<li>Afternoon: Community Outreach at Batey Jalonga Central Park (~100 kids/teens ages 4-14)</li>
+<li>Evening: Dinner &amp; Debrief at Hotel Colinas Del Rey</li>
+</ul>
+<div style="color:#0F766E;font-weight:600;font-size:13px;margin:8px 0 4px;">Day 3 -- Mon Jun 22</div>
+<ul style="font-size:12px;color:#1a1a1a;line-height:1.8;padding-left:16px;margin-bottom:8px;">
+<li>6:00-8:00 AM: Team Breakfast / Devotion</li>
+<li>Morning: VBS at El Renacer school (3 groups, 20-30 kids); school cleaning service project</li>
+<li>Afternoon: Farming tour at Transformation Center; Home visits in Las Chinas</li>
+<li>Evening: Dinner &amp; Debrief</li>
+</ul>
+<div style="color:#0F766E;font-weight:600;font-size:13px;margin:8px 0 4px;">Day 4 -- Tue Jun 23 (Travel Home)</div>
+<ul style="font-size:12px;color:#1a1a1a;line-height:1.8;padding-left:16px;">
+<li>Morning: Depart for airport</li>
+<li>10:29 AM: AA 1856 SDQ-MIA | 12:57 PM: Arrive MIA</li>
+<li>5:00 PM: AA 1657 MIA-CHS | 6:51 PM: Arrive CHS</li>
+</ul></div>
+<div class="card"><div class="card-label" style="background:#0F766E;">Notes</div><ul style="font-size:12px;color:#1a1a1a;line-height:1.8;padding-left:16px;">
+<li>All days Jun 20-23 are Seacoast time. Costs pre-paid by Seacoast.</li>
+<li>Bring cleaning gloves for school service project</li>
+<li>Malaria prevention recommended for rural travel</li>
+<li>Passport valid on arrival required; DR exit fee payable on departure</li>
+</ul>
+<div style="font-size:11px;color:#64748B;margin-top:8px;">Golden Rule Travel: 330-893-1501 | Consultant: Marvin Jay Mast | AA: 800-433-7300</div></div>
+<div class="generated">Generated June 21, 2026 at 4:36 AM ET</div>
 </div>
 
-<!-- ===== WEEKLY ===== -->
 <div class="pane" id="pane-weekly">
-<div style="font-size:11px;color:#64748B;margin-bottom:12px;">Generated Sunday, June 14, 2026 &mdash; Week of Jun 15 &ndash; Jun 21</div>
+<div style="font-size:13px;color:#64748B;margin-bottom:12px;">Generated Sunday, June 21, 2026 &mdash; Week of Monday, June 22 &ndash; Sunday, June 28</div>
 
+<!-- This Week's Focus -->
 <div class="card">
   <div class="card-label">This Week's Focus</div>
-  <div class="pri-row"><span class="num">1</span> KidsCamp Filming (Mon-Wed, Mt. Pleasant) &mdash; Full Seacoast shoot with Tyler.</div>
-  <div class="pri-row"><span class="num">2</span> Summer Camp Testimonials Shoot &mdash; Tuesday all day at Silver Hill Studio.</div>
-  <div class="pri-row"><span class="num">3</span> <span class="badge badge-warn">DUE TODAY</span> Teaching: 6 items (grading + 3 lecture recordings) due June 14.</div>
-  <div class="pri-row"><span class="num">4</span> DR Trip Prep &mdash; Departing Saturday June 20. All loose ends by Friday.</div>
-  <div class="pri-row"><span class="num">5</span> Budget &mdash; <span class="badge badge-warn">3 WEEKS OVERDUE</span> Originally due May 24.</div>
+  <div class="pri-row"><span class="num">1</span> <span><b>GRADE Visual Rhetoric</b> <span class="badge badge-warn">DUE TODAY</span> &mdash; open on Today list, must complete tonight or it's overdue going into the week.</span></div>
+  <div class="pri-row"><span class="num">2</span> <span><b>Teaching cluster:</b> English Video + Lecture Notes 21-22 + POST Exam #2 &mdash; all due Friday June 26. <span class="badge badge-warn">FRI JUN 26</span></span></div>
+  <div class="pri-row"><span class="num">3</span> <span><b>Freelance Thought Leadership edits:</b> Wei Xie + Steve Biggs &mdash; due Thursday June 25. <span class="badge badge-warn">THU JUN 25</span></span></div>
+  <div class="pri-row"><span class="num">4</span> <span><b>Seacoast filming week:</b> Devotional filming Wed 12-4pm + KidsCamp/Kidscoast interviews Thu 9am-12pm. Prep gear before Tuesday.</span></div>
+  <div class="pri-row"><span class="num">5</span> <span><b>SPS Module 3:</b> Advance WRITE Module 3 in the 6-8am morning blocks. Protect SST time despite a compressed week.</span></div>
 </div>
 
-<div class="card" style="background:#FEF2F2;">
+<!-- Watch Out For -->
+<div class="card" style="background:#FEF2F2;border-left:3px solid #7F1D1D;">
   <div class="card-label" style="background:#7F1D1D;">Watch Out For</div>
-  <div class="row"><span class="dir-label">Thu evening shoot</span><span class="dir-val flag">B-Roll 4:00-9:30 PM &mdash; displaces family time AND focus block entirely.</span></div>
-  <div class="row"><span class="dir-label">Teaching overload</span><span class="dir-val flag">6 due today + 7 due June 21. Mon-Wed are full shoots. Thursday morning is the only realistic window.</span></div>
-  <div class="row"><span class="dir-label">Overview Video</span><span class="dir-val">Freelance, due June 28. No editing time scheduled this week. Plan needed.</span></div>
-  <div class="row"><span class="dir-label">DR Departure</span><span class="dir-val">Saturday June 20. Confirm all logistics by Friday.</span></div>
+  <div class="row"><span class="dir-label">Travel disruption</span><span class="dir-val">Tue Jun 23 is a full travel day. Two flights (DR-MIA-CHS), arrive 6:51pm. No work capacity.</span></div>
+  <div class="row"><span class="dir-label">Wed is maxed out</span><span class="dir-val">Devotional filming 12-4pm + Grail call 4:30pm + Business Mixer 6-8pm. Teaching focus block (8-10pm) is gone. Grading backlog risk.</span></div>
+  <div class="row"><span class="dir-label">Thu compression</span><span class="dir-val">Filming 9am-12pm + Ameriprise 2pm. Freelance edits due Thu &mdash; only afternoon window available.</span></div>
+  <div class="row"><span class="dir-label">Visual Rhetoric open</span><span class="dir-val"><span class="flag">Due tonight June 21 &mdash; if not done, it is overdue entering the week.</span></span></div>
+  <div class="row"><span class="dir-label">AIC trip Mon Jun 29</span><span class="dir-val">Another out/travel day immediately following an already brutal week. June 28 is the last workday before travel.</span></div>
 </div>
 
+<!-- Missed and Overdue -->
+<div class="card" style="background:#FEF2F2;">
+  <div class="card-label" style="background:#7F1D1D;color:#fff;">Missed and Overdue</div>
+  <div class="task"><span style="color:#7F1D1D;font-weight:600;">GRADE Visual Rhetoric</span> <span class="badge badge-warn">DUE TODAY</span><br/><span class="task-role" style="color:#92400e;">Teaching &mdash; CSU COM 115 &mdash; Due June 21, 2026</span></div>
+</div>
+
+<!-- Seacoast -->
 <div class="card">
   <div class="card-label">Seacoast</div>
   <div class="sec-head">This Week</div>
-  <div class="task"><span class="task-role">Seacoast</span>KidsCamp filming Mon-Wed with Tyler</div>
-  <div class="task"><span class="task-role">Seacoast</span>Testimonials shoot Tuesday (Silver Hill Studio, all day)</div>
-  <div class="task"><span class="task-role">Seacoast</span>Student Takeover Story Wednesday (8am-5:30pm)</div>
-  <div class="task"><span class="task-role">Seacoast</span>B-Roll Thursday 4pm-9:30pm &mdash; late finish</div>
+  <div class="task">Devotional Filming at Podcast Studio<br/><span class="task-role">Wed Jun 24, 12:00 &ndash; 4:00pm</span></div>
+  <div class="task">KidsCamp + Kidscoast Interviews at SVL<br/><span class="task-role">Thu Jun 25, 9:00am &ndash; 12:00pm</span></div>
+  <div class="sec-head">Upcoming</div>
+  <div class="task">2026 Legacy Weekend Videos (Teams meeting)<br/><span class="task-role">Tue Jul 7, 1:00pm</span></div>
+  <div class="task">Weekend Experience Videos (Teams)<br/><span class="task-role">Mon Jul 13, 11:00am</span></div>
 </div>
 
+<!-- Teaching -->
 <div class="card">
   <div class="card-label">Teaching</div>
-  <div class="sec-head">Due Today (June 14)</div>
-  <div class="task"><span class="task-role" style="color:#7F1D1D;">OVERDUE</span>GRADE Denotation, Connotation, and Myth <span class="badge badge-warn">TODAY</span></div>
-  <div class="task"><span class="task-role" style="color:#7F1D1D;">OVERDUE</span>GRADE Exam #1 <span class="badge badge-warn">TODAY</span></div>
-  <div class="task"><span class="task-role" style="color:#7F1D1D;">OVERDUE</span>GRADE Safari #5 <span class="badge badge-warn">TODAY</span></div>
-  <div class="task"><span class="task-role" style="color:#7F1D1D;">OVERDUE</span>RECORD Week 6 Lectures 15, 16, 17 (3 recordings) <span class="badge badge-warn">TODAY</span></div>
-  <div class="sec-head">Due June 21</div>
-  <div class="task"><span class="task-role">Teaching</span>RECORD Week 7 Lectures 18, 19, 20</div>
-  <div class="task"><span class="task-role">Teaching</span>GRADE Product Placement, Visual Rhetoric, Safari #6, Safari #7</div>
-  <div class="sec-head">Due June 26</div>
-  <div class="task"><span class="task-role">Teaching</span>EDIT: English Video</div>
-  <div class="task"><span class="task-role">Teaching</span>Lecture notes 21-22 + POST Exam #2</div>
+  <div class="sec-head">This Week</div>
+  <div class="task">POST Exam #2 Heads Up <span class="badge badge-warn">WED JUN 24</span><br/><span class="task-role">Teaching &mdash; COM 115</span></div>
+  <div class="task">EDIT: English Video <span class="badge badge-warn">FRI JUN 26</span><br/><span class="task-role">Teaching &mdash; COM 115</span></div>
+  <div class="task">Lecture Notes 21-22 <span class="badge badge-warn">FRI JUN 26</span><br/><span class="task-role">Teaching &mdash; COM 115</span></div>
+  <div class="task">POST Exam #2 <span class="badge badge-warn">FRI JUN 26</span><br/><span class="task-role">Teaching &mdash; COM 115</span></div>
+  <div class="task">GRADE Safari #8 <span class="badge badge-ok">SUN JUN 28</span><br/><span class="task-role">Teaching &mdash; COM 115</span></div>
+  <div class="task">GRADE Graphic Design <span class="badge badge-ok">SUN JUN 28</span><br/><span class="task-role">Teaching &mdash; COM 115</span></div>
+  <div class="task">RECORD Week 8 Lecture: 21 Television <span class="badge badge-ok">SUN JUN 28</span><br/><span class="task-role">Teaching &mdash; COM 115</span></div>
+  <div class="task">RECORD Week 8 Lecture: 22 Digital Communication <span class="badge badge-ok">SUN JUN 28</span><br/><span class="task-role">Teaching &mdash; COM 115</span></div>
+  <div class="sec-head">This Month</div>
+  <div class="task">GRADE Photography, Film, Safari #9 <span class="badge badge-ok">SUN JUL 5</span></div>
+  <div class="task">GRADE Big Questions, Safari #10 <span class="badge badge-ok">SUN JUL 12</span></div>
 </div>
 
-<div class="card">
-  <div class="card-label">Smartphone Storytellers</div>
-  <div class="sec-head">Active</div>
-  <div class="task"><span class="task-role">SPS</span>WRITE Module 3: Capturing the Story (no deadline)</div>
-  <div class="task"><span class="task-role">SPS</span>WRITE Module 4: Putting It Together (no deadline)</div>
-  <div class="task"><span class="task-role">SPS</span>WRITE Module 5: Getting It Out There (no deadline)</div>
-  <div class="task"><span class="task-role">SPS</span>WRITE Bonus: Super Technical (no deadline)</div>
-  <div class="sec-head">Suggestions</div>
-  <div class="task"><span class="task-role">SPS</span>Set a deadline on Module 3 to give it gravity against teaching demands.</div>
-  <div class="task"><span class="task-role">SPS</span>Thursday June 19 morning (6-8am) before the 4pm shoot = best SPS window this week.</div>
-</div>
-
+<!-- Freelance -->
 <div class="card">
   <div class="card-label">Freelance</div>
-  <div class="task"><span class="task-role">Freelance</span>Overview Video &mdash; due June 28. No editing window scheduled.</div>
+  <div class="sec-head">This Week</div>
+  <div class="task">EDIT Thought Leadership - Wei Xie <span class="badge badge-warn">THU JUN 25</span><br/><span class="task-role">Freelance &mdash; American Integrity (ACEP)</span></div>
+  <div class="task">EDIT Thought Leadership - Steve Biggs <span class="badge badge-warn">THU JUN 25</span><br/><span class="task-role">Freelance &mdash; American Integrity (ACEP)</span></div>
+  <div class="task">Overview Video <span class="badge badge-ok">SUN JUN 28</span><br/><span class="task-role">Freelance &mdash; Confirm status</span></div>
+  <div class="sec-head">Active Projects</div>
+  <div class="task">American Integrity (ACEP) &mdash; 8 remaining + 5 compiled videos pending<br/><span class="task-role">Freelance &mdash; No hard deadline set</span></div>
+  <div class="task">Renew Global (ACEP) &mdash; post-production<br/><span class="task-role">Freelance</span></div>
+  <div class="task">Bread of Life (ACEP) &mdash; post-production<br/><span class="task-role">Freelance</span></div>
 </div>
 
+<!-- Smartphone Storytellers -->
+<div class="card">
+  <div class="card-label">Smartphone Storytellers</div>
+  <div class="sec-head">Active Projects</div>
+  <div class="task">Storyteller 101 &mdash; Module 3 in progress <span class="badge badge-ok">AUG 31</span><br/><span class="task-role">Modules 0-2 complete. Launch infrastructure (hosting, landing page, enrollment) runs in parallel.</span></div>
+  <div class="task">Product Launch (7 Products) &mdash; On Hold<br/><span class="task-role">Picks up after Storyteller 101 launches. Week 1 done.</span></div>
+  <div class="sec-head">This Week</div>
+  <div class="task">WRITE Module 3: Capturing the Story<br/><span class="task-role">SPS &mdash; No deadline set. Current active task.</span></div>
+  <div class="sec-head">Suggestions</div>
+  <div class="task">Set internal Module 3 done-by date of July 4. Block Saturday Jun 28 morning (7-11am) for SST writing exclusively.</div>
+</div>
+
+<!-- Speaking -->
+<div class="card">
+  <div class="card-label">Speaking</div>
+  <div class="sec-head">Active Projects</div>
+  <div class="task">CFX 2026 &mdash; Birmingham, AL <span class="badge badge-ok">SEPT 14-16</span><br/><span class="task-role">Next action: develop talk structure. ~12 weeks out.</span></div>
+  <div class="sec-head">This Week</div>
+  <div class="task" style="color:#64748B;">No Speaking tasks or events this week.</div>
+</div>
+
+<!-- Personal -->
 <div class="card">
   <div class="card-label">Personal</div>
-  <div class="row"><span class="dir-label flag">Budget</span><span class="dir-val flag">OVERDUE since May 24. Monday evening = designated Admin/Freelance slot. 30 min closes this.</span></div>
-  <div class="row"><span class="dir-label">DR Trip</span><span class="dir-val">Departing June 20 (Santo Domingo). Return June 22.</span></div>
-  <div class="row"><span class="dir-label">Zelda violin</span><span class="dir-val">Friday June 19, 3:30-4pm, Goose Creek</span></div>
+  <div class="sec-head">This Week</div>
+  <div class="task">Dad E's Birthday + Dad's Birthday<br/><span class="task-role">Personal &mdash; Friday June 26</span></div>
+  <div class="task">Zelda's Violin Lesson<br/><span class="task-role">Friday Jun 26, 3:30pm &mdash; 358 Camelot Dr, Goose Creek</span></div>
+  <div class="sec-head">Workout Plan</div>
+  <div class="task">Mon: Arms (~58 min) | Tue: Travel BW Workout A | Wed: Cardio + Core (~52 min)</div>
+  <div class="task">Thu: Pull (~42 min) | Fri: Push (~45 min) | Sat/Sun: Rest</div>
+  <div class="sec-head">This Month</div>
+  <div class="task">Hannah OBGYN &mdash; Tue Jun 30, 1:45pm (Mount Pleasant)</div>
+  <div class="task">Zelda Violin &mdash; Jul 3, 10, 17</div>
+  <div class="task">Summer Camp &mdash; Jul 18-22 (hard blackout)</div>
 </div>
 
+<!-- Role Evaluation -->
+<div class="card">
+  <div class="card-label">Role Evaluation</div>
+  <div class="row"><span class="dir-label">Seacoast</span><span class="dir-val">Active filming week. Devotional + KidsCamp shots scheduled. No stall.</span></div>
+  <div class="row"><span class="dir-label">Teaching</span><span class="dir-val"><span class="flag">Heavy deadline cluster this week. Wednesday teaching night is eliminated by the Business Mixer. Grading backlog risk is real if Tuesday evening is also lost to travel fatigue.</span></span></div>
+  <div class="row"><span class="dir-label">Freelance</span><span class="dir-val">Two edits due Thursday. June 19 internal target already missed per projects.md. Thursday afternoon is the only clear window.</span></div>
+  <div class="row"><span class="dir-label">Smartphone Storytellers</span><span class="dir-val"><span class="flag">Module 3 is in progress but no internal deadline set. This is the highest-priority growth initiative. Protect morning blocks and set a concrete milestone this week.</span></span></div>
+  <div class="row"><span class="dir-label">Speaking</span><span class="dir-val">No activity this week. CFX is 12 weeks out -- talk development should begin in July.</span></div>
+  <div class="row"><span class="dir-label">Personal</span><span class="dir-val">Family time protected on Friday. Dad's birthdays acknowledged. Workout plan is realistic given travel.</span></div>
+</div>
+
+<!-- Opportunities and Ideas -->
 <div class="card" style="background:#F0F4FF;">
   <div class="card-label" style="background:#2E5090;">Opportunities and Ideas</div>
-  <div class="task"><strong>Strategic action: Assign a deadline to Module 3 in Things tonight.</strong></div>
-  <div class="task">KidsCamp footage = SPS content opportunity. Document BTS notes during shoots.</div>
-  <div class="task">Hanahan Business Mixer (June 24) matches SPS target audience exactly. Bring a pitch.</div>
-  <div class="task">Teaching backlog peaks now then lightens after June 26 &mdash; pre-allocate late July to SPS.</div>
+  <div class="task"><b>Strategic action:</b> Block Saturday June 28 morning (7-11am optional SST block) and target Module 3 draft complete by July 4. This is the content gate that unlocks parallel launch infrastructure work.</div>
+  <div class="task">Use the AIC Florida travel day (Mon Jun 29) to draft a rough CFX talk outline. Even a bullet-point structure prevents arriving cold to a September deadline.</div>
+  <div class="task">The Hanahan Business Mixer (Wed Jun 24) is a natural SPS lead-gen moment. Have a one-line Storyteller 101 pitch ready -- September launch is close enough to generate interest.</div>
+  <div class="task">Legacy Weekend Videos meeting (Jul 7) may expand Seacoast scope in July. Flag scope size early to protect the SST launch window in August.</div>
+  <div class="task">Summer Camp (Jul 18-22) is a hard blackout. Move any deliverables that fall in that window now.</div>
 </div>
 
+<!-- 30-Day Calendar -->
 <div class="card">
   <div class="card-label">30-Day Calendar</div>
-  <div class="sec-head">Week of June 15</div>
-  <div class="row"><span class="dir-label">Mon-Wed</span><span class="dir-val">KidsCamp filming (Mt. Pleasant)</span></div>
-  <div class="row"><span class="dir-label">Tue Jun 16</span><span class="dir-val">Testimonials shoot all day (Silver Hill Studio)</span></div>
-  <div class="row"><span class="dir-label">Wed Jun 17</span><span class="dir-val">Takeover Story shoot + Grail call 3pm</span></div>
-  <div class="row"><span class="dir-label" style="color:#7F1D1D;">Thu Jun 18</span><span class="dir-val flag">B-Roll 4pm-9:30pm &mdash; evening consumed</span></div>
-  <div class="row"><span class="dir-label">Fri Jun 19</span><span class="dir-val">Zelda violin 3:30pm. Teaching: notes 18-20 + Exam 2 heads up due.</span></div>
-  <div class="row"><span class="dir-label">Sat Jun 20</span><span class="dir-val">Depart for Dominican Republic</span></div>
-  <div class="sec-head">Week of June 22</div>
-  <div class="row"><span class="dir-label">Mon Jun 22</span><span class="dir-val">Return from DR</span></div>
-  <div class="row"><span class="dir-label">Wed Jun 24</span><span class="dir-val">Devotional filming 12-4pm + Hanahan Business Mixer 6-8pm</span></div>
-  <div class="row"><span class="dir-label">Thu Jun 25</span><span class="dir-val">KidsCamp interview filming (9am-12pm)</span></div>
-  <div class="row"><span class="dir-label">Fri Jun 26</span><span class="dir-val">Dad E + Dad birthdays. Teaching: English Video + Lecture notes 21-22 + Exam 2 all due.</span></div>
-  <div class="sec-head">Week of June 29</div>
-  <div class="row"><span class="dir-label">Mon Jun 29</span><span class="dir-val">Adam in Tampa (AIC). Debrief + Film Team calls.</span></div>
-  <div class="row"><span class="dir-label">Tue Jun 30</span><span class="dir-val">Hannah OBGYN (1:45pm)</span></div>
-  <div class="sec-head">Week of July 6</div>
-  <div class="row"><span class="dir-label">Mon Jul 6</span><span class="dir-val">Seacoast offices closed (July 4th)</span></div>
-  <div class="row"><span class="dir-label">Tue Jul 7</span><span class="dir-val">Legacy Weekend Videos planning (1pm)</span></div>
-  <div class="row"><span class="dir-label">Mon Jul 13</span><span class="dir-val">Weekend Debrief + Film Team + Weekend Experience Videos</span></div>
+  <div class="sec-head">Week of June 22-28</div>
+  <div class="row"><span class="dir-label" style="color:#2E5090;">Sun-Mon Jun 22</span><span class="dir-val">Adam in DR (returning)</span></div>
+  <div class="row"><span class="dir-label" style="color:#2E5090;">Tue Jun 23</span><span class="dir-val">AA 1856 SDQ-MIA 10:29am &rarr; AA 1657 MIA-CHS 5:00pm (arr. 6:51pm)</span></div>
+  <div class="row"><span class="dir-label" style="color:#2E5090;">Wed Jun 24</span><span class="dir-val">Devotional Filming 12-4pm | Grail Call 4:30pm | Hanahan Mixer 6-8pm</span></div>
+  <div class="row"><span class="dir-label" style="color:#2E5090;">Thu Jun 25</span><span class="dir-val">KidsCamp filming 9am-12pm | Kidscoast 10-11am | Ameriprise 2pm</span></div>
+  <div class="row"><span class="dir-label" style="color:#2E5090;">Fri Jun 26</span><span class="dir-val">Dad Birthdays | Zelda Violin 3:30pm</span></div>
+  <div class="sec-head">Week of June 29 - July 5</div>
+  <div class="row"><span class="dir-label" style="color:#2E5090;">Mon Jun 29</span><span class="dir-val">Adam in Florida with AIC (Tampa) -- out</span></div>
+  <div class="row"><span class="dir-label" style="color:#2E5090;">Tue Jun 30</span><span class="dir-val">Hannah OBGYN 1:45pm (Mount Pleasant)</span></div>
+  <div class="row"><span class="dir-label" style="color:#2E5090;">Wed Jul 1</span><span class="dir-val">Check for Books | Reset Heart Rate Zones</span></div>
+  <div class="row"><span class="dir-label" style="color:#2E5090;">Fri Jul 3</span><span class="dir-val">Zelda Violin 3:30pm</span></div>
+  <div class="sec-head">Week of July 6-12 (4th of July)</div>
+  <div class="row"><span class="dir-label" style="color:#2E5090;">Mon Jul 6</span><span class="dir-val">Seacoast CLOSED (4th of July) | Debrief 9am | Film Team 10:30am</span></div>
+  <div class="row"><span class="dir-label" style="color:#2E5090;">Tue Jul 7</span><span class="dir-val">Legacy Weekend Videos 1pm (Teams)</span></div>
+  <div class="row"><span class="dir-label" style="color:#2E5090;">Fri Jul 10</span><span class="dir-val">Zelda Violin 3:30pm</span></div>
+  <div class="sec-head">Week of July 13-19</div>
+  <div class="row"><span class="dir-label" style="color:#2E5090;">Mon Jul 13</span><span class="dir-val">Debrief 9am | Film Team 10:30am | Weekend Experience Videos 11am</span></div>
+  <div class="row"><span class="dir-label" style="color:#2E5090;">Fri Jul 17</span><span class="dir-val">Zelda Violin 3:30pm</span></div>
+  <div class="row"><span class="dir-label" style="color:#2E5090;">Sat Jul 18</span><span class="dir-val">SUMMER CAMP begins (through Jul 22)</span></div>
+  <div class="row"><span class="dir-label" style="color:#2E5090;">Sun Jul 19</span><span class="dir-val">Block for Marriage Connect Story</span></div>
+  <div class="sec-head">Week of July 20-26</div>
+  <div class="row"><span class="dir-label" style="color:#2E5090;">Mon Jul 20</span><span class="dir-val">Debrief 9am | Film Team 10:30am</span></div>
+  <div class="row"><span class="dir-label" style="color:#2E5090;">Tue Jul 22</span><span class="dir-val">Summer Camp ends</span></div>
 </div>
 
-<div class="generated">Generated Sunday, June 14, 2026 &mdash; Week of Jun 15 &ndash; Jun 21, 2026</div>
+<div class="generated">Generated Sunday, June 21, 2026 &mdash; Week of Monday, June 22 &ndash; Sunday, June 28</div>
 </div>
-
-<!-- ===== REFERENCE ===== -->
 <div class="pane" id="pane-reference">
-  <div class="card">
-    <div class="card-label">Ideal Weekday Schedule</div>
-    <div class="row"><span class="dir-label">5:30-6:00 AM</span><span class="dir-val">Faith block -- Bible study, prayer, reflection, planning</span></div>
-    <div class="row"><span class="dir-label">6:00-8:00 AM</span><span class="dir-val">Smartphone Storytellers (SPS) block</span></div>
-    <div class="row"><span class="dir-label">8:00-9:00 AM</span><span class="dir-val">Gym</span></div>
-    <div class="row"><span class="dir-label">9:00 AM-5:00 PM</span><span class="dir-val">Seacoast Church</span></div>
-    <div class="row"><span class="dir-label">5:00-8:00 PM</span><span class="dir-val">Family time (protected)</span></div>
-    <div class="row"><span class="dir-label">8:00-10:00 PM</span><span class="dir-val">Evening Focus Block</span></div>
-    <div class="row"><span class="dir-label">10:00-10:30 PM</span><span class="dir-val">Wind down</span></div>
-  </div>
-  <div class="card">
-    <div class="card-label">Evening Focus Themes</div>
-    <div class="row"><span class="dir-label">Monday</span><span class="dir-val">Household / Admin / Freelance</span></div>
-    <div class="row"><span class="dir-label">Tuesday</span><span class="dir-val">Teaching</span></div>
-    <div class="row"><span class="dir-label">Wednesday</span><span class="dir-val">Teaching</span></div>
-    <div class="row"><span class="dir-label">Thursday</span><span class="dir-val">Freelance</span></div>
-    <div class="row"><span class="dir-label">Friday</span><span class="dir-val">Protected Family Night</span></div>
-    <div class="row"><span class="dir-label">Saturday</span><span class="dir-val">Family / recovery. Optional 7-11 AM work block (SPS priority, twice/month)</span></div>
-    <div class="row"><span class="dir-label">Sunday</span><span class="dir-val">Church (morning), Family (afternoon), Weekly Review (evening)</span></div>
-  </div>
-  <div class="card">
-    <div class="card-label">Guiding Philosophy</div>
-    <div class="row"><span class="dir-label">Priority order</span><span class="dir-val">Faith, Family, Smartphone Storytellers, Fitness, Seacoast, Margin</span></div>
-    <div class="row"><span class="dir-label">SPS</span><span class="dir-val">Highest-priority growth initiative outside primary employment</span></div>
-    <div class="row"><span class="dir-label">Freelance</span><span class="dir-val">Should not crowd out Smartphone Storytellers or family time</span></div>
-  </div>
-  <div class="generated">Generated June 20, 2026 at 6:44 AM ET</div>
+<div class="card"><div class="card-label" style="background:#1B2A4A;">Ideal Weekday Schedule</div>
+<div class="row"><span class="dir-label">5:30-6:00 AM</span><span class="dir-val">Faith block -- Bible study, prayer, reflection, planning</span></div>
+<div class="row"><span class="dir-label">6:00-8:00 AM</span><span class="dir-val">Smartphone Storytellers (SPS) block</span></div>
+<div class="row"><span class="dir-label">8:00-9:00 AM</span><span class="dir-val">Gym</span></div>
+<div class="row"><span class="dir-label">9:00 AM-5:00 PM</span><span class="dir-val">Seacoast Church</span></div>
+<div class="row"><span class="dir-label">5:00-8:00 PM</span><span class="dir-val">Family time (protected)</span></div>
+<div class="row"><span class="dir-label">8:00-10:00 PM</span><span class="dir-val">Evening Focus Block</span></div>
+<div class="row"><span class="dir-label">10:00-10:30 PM</span><span class="dir-val">Wind down</span></div></div>
+<div class="card"><div class="card-label" style="background:#1B2A4A;">Evening Focus Themes</div>
+<div class="row"><span class="dir-label">Monday</span><span class="dir-val">Household / Admin / Freelance</span></div>
+<div class="row"><span class="dir-label">Tuesday</span><span class="dir-val">Teaching</span></div>
+<div class="row"><span class="dir-label">Wednesday</span><span class="dir-val">Teaching</span></div>
+<div class="row"><span class="dir-label">Thursday</span><span class="dir-val">Freelance</span></div>
+<div class="row"><span class="dir-label">Friday</span><span class="dir-val">Protected Family Night</span></div>
+<div class="row"><span class="dir-label">Saturday</span><span class="dir-val">Family / recovery. Optional 7-11 AM work block (SPS priority, twice/month)</span></div>
+<div class="row"><span class="dir-label">Sunday</span><span class="dir-val">Church (morning), Family (afternoon), Weekly Review (evening)</span></div></div>
+<div class="card"><div class="card-label" style="background:#1B2A4A;">Guiding Philosophy</div>
+<div class="row"><span class="dir-label">Priority order</span><span class="dir-val">Faith, Family, Smartphone Storytellers, Fitness, Seacoast, Margin</span></div>
+<div class="row"><span class="dir-label">SPS</span><span class="dir-val">Highest-priority growth initiative outside primary employment</span></div>
+<div class="row"><span class="dir-label">Freelance</span><span class="dir-val">Should not crowd out Smartphone Storytellers or family time</span></div></div>
+<div class="generated">Generated June 21, 2026 at 4:36 AM ET</div>
 </div>
 
 <script>
-document.querySelectorAll('.tab').forEach(function(tab) {
-  tab.addEventListener('click', function() {
-    document.querySelectorAll('.tab').forEach(function(t) { t.classList.remove('active'); });
-    document.querySelectorAll('.pane').forEach(function(p) { p.classList.remove('active'); });
+document.querySelectorAll('.tab').forEach(function(tab){
+  tab.addEventListener('click',function(){
+    document.querySelectorAll('.tab').forEach(function(t){t.classList.remove('active');});
+    document.querySelectorAll('.pane').forEach(function(p){p.classList.remove('active');});
     tab.classList.add('active');
-    var pane = document.getElementById('pane-' + tab.dataset.tab);
-    if (pane) pane.classList.add('active');
+    document.getElementById('pane-'+tab.dataset.tab).classList.add('active');
   });
 });
 </script>
