@@ -5,27 +5,26 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
-<title>Daily Briefing -- June 28, 2026</title>
+<title>Daily Briefing -- June 29, 2026</title>
 <style>
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #F2F1EC; color: #1a1a1a; }
 .header { padding: 1.25rem 1.25rem 0; }
 .header-date { font-size: 12px; color: #888; letter-spacing: 0.04em; margin-bottom: 2px; }
 .header-title { font-size: 22px; font-weight: 500; margin-bottom: 1rem; }
-.tabs { display: flex; border-bottom: 1px solid #ddd; padding: 0 1.25rem; background: #F2F1EC; position: sticky; top: 0; z-index: 10; gap: 4px; overflow-x: auto; }
-.tab { padding: 8px 14px; font-size: 12px; font-weight: 500; cursor: pointer; border-bottom: 2px solid transparent; color: #888; white-space: nowrap; }
+.tabs { display: flex; border-bottom: 1px solid #ddd; padding: 0 1.25rem; background: #F2F1EC; position: sticky; top: 0; z-index: 10; gap: 4px; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+.tab { padding: 8px 16px; font-size: 13px; font-weight: 500; cursor: pointer; border-bottom: 2px solid transparent; color: #888; white-space: nowrap; flex-shrink: 0; }
 .tab.active { color: #534AB7; border-bottom-color: #534AB7; }
 .pane { display: none; padding: 1rem 1.25rem 3rem; }
 .pane.active { display: block; }
 .card { background: #fff; border: 1px solid #e5e5e5; border-radius: 12px; padding: 1rem 1.25rem; margin-bottom: 12px; }
-.card-label { font-size: 11px; font-weight: 600; letter-spacing: 0.08em; color: #fff; text-transform: uppercase; margin-bottom: 10px; background: #1B2A4A; padding: 6px 10px; border-radius: 6px; display: inline-block; }
+.card-label { font-size: 11px; font-weight: 600; letter-spacing: 0.08em; color: #534AB7; text-transform: uppercase; margin-bottom: 10px; }
 .row { display: flex; gap: 10px; padding: 6px 0; align-items: flex-start; }
 .row + .row { border-top: 1px solid #f0f0f0; }
-.time { font-size: 12px; color: #534AB7; font-weight: 600; min-width: 70px; padding-top: 2px; flex-shrink: 0; }
+.time { font-size: 12px; color: #534AB7; font-weight: 700; min-width: 70px; padding-top: 2px; flex-shrink: 0; }
 .event { font-size: 14px; color: #1a1a1a; line-height: 1.4; }
 .role { font-size: 11px; color: #999; margin-top: 1px; }
-.row-focus { background: #F0FDF4; border-radius: 8px; }
-.dir-label { font-size: 12px; color: #999; min-width: 100px; flex-shrink: 0; padding-top: 2px; }
+.dir-label { font-size: 12px; color: #999; min-width: 90px; flex-shrink: 0; padding-top: 2px; }
 .dir-val { font-size: 13px; color: #1a1a1a; flex: 1; line-height: 1.5; }
 .flag { color: #854F0B; }
 .pri-row { display: flex; align-items: flex-start; gap: 10px; padding: 7px 0; font-size: 14px; }
@@ -34,470 +33,233 @@ body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; b
 .badge { font-size: 11px; padding: 2px 8px; border-radius: 100px; margin-left: auto; background: #f0f0f0; color: #666; white-space: nowrap; flex-shrink: 0; }
 .badge-warn { background: #FAEEDA; color: #854F0B; }
 .badge-ok { background: #EAF3DE; color: #3B6D11; }
-.badge-crit { background: #FEF2F2; color: #7F1D1D; }
+.weather-main { display: flex; justify-content: space-between; align-items: flex-start; }
+.temp { font-size: 36px; font-weight: 500; line-height: 1; }
+.wx-right { text-align: right; font-size: 13px; color: #666; line-height: 1.7; }
+.wx-sub { font-size: 12px; color: #999; margin-top: 8px; }
 .sec-head { font-size: 11px; font-weight: 600; color: #999; letter-spacing: 0.06em; text-transform: uppercase; margin: 1rem 0 6px; }
-.task { font-size: 13px; padding: 7px 0; border-bottom: 1px solid #f5f5f5; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start; gap: 4px; }
+.task { font-size: 13px; padding: 7px 0; border-bottom: 1px solid #f5f5f5; display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; }
 .task:last-child { border-bottom: none; }
-.task-role { font-size: 11px; color: #999; width: 100%; margin-top: 2px; }
+.task-role { font-size: 11px; color: #999; margin-top: 2px; }
 .generated { font-size: 11px; color: #bbb; text-align: center; padding: 1rem 0; }
-/* Fitness */
-.meal-head { font-size: 11px; font-weight: 600; color: #534AB7; text-transform: uppercase; letter-spacing: 0.06em; margin: 10px 0 2px; }
-.meal-head:first-child { margin-top: 0; }
-.meal-items { font-size: 13px; color: #1a1a1a; margin-bottom: 2px; line-height: 1.4; }
-.meal-macros { font-size: 11px; color: #999; display: flex; gap: 14px; padding-bottom: 8px; border-bottom: 1px solid #f0f0f0; }
-.bar-section { margin: 14px 0 6px; }
-.bar-section-label { font-size: 10px; font-weight: 600; color: #999; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 8px; }
-.bar-row { margin-bottom: 9px; }
-.bar-label { display: flex; justify-content: space-between; font-size: 11px; color: #555; margin-bottom: 3px; }
-.bar-label span:last-child { color: #999; }
-.bar-bg { height: 7px; background: #f0f0f0; border-radius: 4px; overflow: hidden; }
-.bar-fill { height: 100%; border-radius: 4px; background: #534AB7; }
-.bar-fill.over { background: #854F0B; }
-.rest-day { text-align: center; padding: 1.5rem 0; color: #999; font-size: 14px; }
+.workout-meta { font-size: 12px; color: #999; margin-bottom: 10px; }
+.window-pill { font-size: 12px; padding: 3px 10px; border-radius: 100px; display: inline-block; margin-bottom: 12px; }
+.window-clear { background: #EAF3DE; color: #3B6D11; }
+.window-conflict { background: #FAEEDA; color: #854F0B; }
+.exercise { font-size: 13px; padding: 6px 0; border-bottom: 1px solid #f5f5f5; display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
+.exercise:last-child { border-bottom: none; }
+.exercise-sets { font-size: 12px; color: #999; white-space: nowrap; flex-shrink: 0; }
 .macro-table { width: 100%; border-collapse: collapse; font-size: 12px; margin: 4px 0 10px; }
-.macro-table th { font-size: 10px; font-weight: 600; color: #999; text-transform: uppercase; letter-spacing: 0.05em; padding: 4px 6px; text-align: left; border-bottom: 1px solid #e5e5e5; }
-.macro-table td { padding: 5px 6px; border-top: 1px solid #f5f5f5; }
+.macro-table th { font-size: 10px; font-weight: 600; color: #999; text-transform: uppercase; letter-spacing: 0.05em; padding: 4px 6px; text-align: right; }
+.macro-table th:first-child { text-align: left; }
+.macro-table td { padding: 5px 6px; border-top: 1px solid #f5f5f5; text-align: right; }
+.macro-table td:first-child { text-align: left; color: #1a1a1a; }
 .macro-table tr.total-row td { font-weight: 600; border-top: 1px solid #ddd; }
 .macro-table tr.target-row td { color: #999; }
 .macro-table tr.gap-row td { color: #854F0B; font-weight: 500; }
 .macro-rec { font-size: 12px; color: #555; line-height: 1.5; padding-top: 8px; border-top: 1px solid #f0f0f0; margin-top: 4px; }
-/* Faith */
-.faith-verse { font-size: 16px; line-height: 1.6; color: #1a1a1a; font-style: italic; margin-bottom: 8px; margin-top: 8px; }
-.faith-ref { font-size: 12px; font-weight: 600; color: #5B21B6; text-transform: uppercase; letter-spacing: 0.06em; }
-.faith-placeholder { font-size: 13px; color: #999; font-style: italic; }
-.prayer-item { padding: 7px 0; font-size: 13px; color: #1a1a1a; border-bottom: 1px solid #f0f0f0; line-height: 1.4; }
-.prayer-item:last-child { border-bottom: none; }
-/* Daily Dev */
-.dev-title { font-size: 15px; font-weight: 700; color: #1a1a1a; margin-bottom: 6px; }
-.dev-body-p { font-size: 13px; color: #1a1a1a; line-height: 1.6; margin-bottom: 8px; }
-.dev-question { font-size: 13px; color: #0369A1; font-style: italic; margin-top: 10px; }
+.pack-row { display: flex; gap: 10px; padding: 7px 0; font-size: 13px; align-items: flex-start; }
+.pack-row + .pack-row { border-top: 1px solid #f0f0f0; }
+.pack-meal { font-weight: 500; min-width: 90px; flex-shrink: 0; }
+.pack-conflict { font-size: 11px; color: #854F0B; min-width: 120px; flex-shrink: 0; }
+.pack-swap { font-size: 12px; color: #555; flex: 1; }
 </style>
 </head>
 <body>
 <div class="header">
-  <div class="header-date">SUNDAY, JUNE 28, 2026</div>
+  <div class="header-date">Monday, June 29, 2026</div>
   <div class="header-title">Good morning, Adam.</div>
 </div>
 <div class="tabs">
   <div class="tab active" data-tab="overview">Overview</div>
-  <div class="tab" data-tab="faith">Faith</div>
-  <div class="tab" data-tab="morning">Morning Brief</div>
+  <div class="tab" data-tab="brief">Morning Brief</div>
   <div class="tab" data-tab="fitness">Fitness</div>
-  <div class="tab" data-tab="daily-dev">Daily Dev</div>
-  <div class="tab" data-tab="trip-tampa">Trip - Tampa</div>
   <div class="tab" data-tab="weekly">Weekly</div>
-  <div class="tab" data-tab="reference">Reference</div>
 </div>
 
-
+<!-- OVERVIEW -->
 <div class="pane active" id="pane-overview">
   <div class="card">
     <div class="card-label">Today's Schedule</div>
-    
-  <div class="row">
-    <span class="time" style="color:#534AB7;">All day</span>
-    <div class="event">Sunday -- no calendar events<div class="role">Family + church + rest</div></div>
-  </div>
-  <div class="row row-focus">
-    <span class="time" style="color:#166534;">8:00 PM</span>
-    <div class="event" style="color:#166534;">Evening Focus: Weekly Review<div class="role" style="color:#166534;">Plan the week ahead</div></div>
-  </div>
-  <div class="row" style="background:#FEF2F2;border-radius:6px;">
-    <span class="time" style="color:#7F1D1D;font-size:11px;">Tomorrow</span>
-    <div class="event" style="color:#7F1D1D;font-weight:500;">Delta 2124 departs CHS 6:15 AM<div class="role" style="color:#7F1D1D;">Pack tonight -- wake 3:45 AM</div></div>
-  </div>
-
+    <div class="row">
+      <span class="time">All day</span>
+      <div><div class="event">Adam in Florida with AIC</div><div class="role">Tampa, FL</div></div>
+    </div>
+    <div class="row">
+      <span class="time">All day</span>
+      <div><div class="event">Sarah PTO</div></div>
+    </div>
+    <div class="row" style="background:#F0FDF4;border-radius:6px;padding:6px 8px;margin-top:4px;">
+      <span class="time" style="color:#166534;">8:00 PM</span>
+      <div><div class="event" style="color:#166534;">Evening Focus: Household / Admin / Freelance</div></div>
+    </div>
   </div>
   <div class="card">
-    <div class="card-label" style="background:#2E5090;">Today's Game Plan</div>
-    
-  <div class="row">
-    <span class="dir-label">Protect</span>
-    <span class="dir-val">Family time and Sunday rest -- no work blocks today</span>
-  </div>
-  <div class="row">
-    <span class="dir-label">Main pressure</span>
-    <span class="dir-val">10 tasks overdue or due today (Teaching + Freelance). Address in weekly review tonight.</span>
-  </div>
-  <div class="row">
-    <span class="dir-label">Tonight</span>
-    <span class="dir-val">Weekly Review (8:00 PM), then pack for Tampa shoot</span>
-  </div>
-  <div class="row">
-    <span class="dir-label">Watch out</span>
-    <span class="dir-val flag">6:15 AM departure tomorrow -- earliest possible call. Need to be out the door by 4:30 AM at latest.</span>
-  </div>
-
-  </div>
-  <div class="card">
-    <div class="card-label" style="background:#2E5090;">Today's Direction</div>
-    
-  <div class="row">
-    <span class="dir-label">Tonight</span>
-    <span class="dir-val">Weekly Review (8:00 PM)</span>
-  </div>
-  <div class="row">
-    <span class="dir-label">Watch out</span>
-    <span class="dir-val flag">Tampa flight 6:15 AM tomorrow -- pack camera gear tonight, set 3:45 AM alarm. Ground transport to shoot venue is TBD.</span>
-  </div>
-
+    <div class="card-label">Today's Direction</div>
+    <div class="row">
+      <span class="dir-label">SST block</span>
+      <span class="dir-val">Travel day in Tampa -- if downtime opens up, outline Module 4 or draft Reels hooks on your phone. Add one SST task to Things to break the stall.</span>
+    </div>
+    <div class="row">
+      <span class="dir-label">Tonight</span>
+      <span class="dir-val">Household / Admin / Freelance (Monday)</span>
+    </div>
+    <div class="row">
+      <span class="dir-label">Watch out</span>
+      <span class="dir-val flag">Travel day -- family time is disrupted. 5 overdue tasks need clearing before you add new commitments.</span>
+    </div>
   </div>
   <div class="card">
     <div class="card-label">Top Priorities</div>
-    
-  <div class="pri-row">
-    <div class="num">1</div>
-    <div>
-      <div style="font-weight:600;font-size:14px;">Weekly Review</div>
-      <div class="role">Sunday evening focus</div>
-      <div style="font-size:12px;color:#534AB7;margin-top:2px;">Next action: Review all 10 overdue/due tasks and plan the week</div>
+    <div class="pri-row">
+      <span class="num">1</span>
+      <div style="flex:1">
+        <div style="font-size:14px;font-weight:600;color:#7F1D1D;">GRADE Visual Rhetoric</div>
+        <div class="role" style="color:#7F1D1D;">Teaching -- OVERDUE (June 21)</div>
+      </div>
+    </div>
+    <div class="pri-row">
+      <span class="num">2</span>
+      <div style="flex:1">
+        <div style="font-size:14px;font-weight:600;color:#7F1D1D;">EDIT Thought Leadership - Wei Xie</div>
+        <div class="role" style="color:#7F1D1D;">Freelance -- OVERDUE (June 25)</div>
+      </div>
+    </div>
+    <div class="pri-row">
+      <span class="num">3</span>
+      <div style="flex:1">
+        <div style="font-size:14px;font-weight:600;color:#7F1D1D;">GRADE Safari #8</div>
+        <div class="role" style="color:#7F1D1D;">Teaching -- OVERDUE (June 28)</div>
+      </div>
     </div>
   </div>
-  <div style="font-size:12px;color:#999;font-style:italic;padding:8px 0;">
-    Work task priorities not surfaced on Sundays. See Morning Brief tab for full task view.
-  </div>
-
-  </div>
-  <div class="card">
-    <div class="card-label">Open Projects</div>
-    
-  <div class="sec-head">Freelance (ACEP)</div>
-  <div class="task"><span style="font-weight:500;">American Integrity</span> <span class="badge badge-ok">Active</span>
-    <div class="task-role">Post-production -- TL edits in progress; 8 remaining + 5 compiled pending</div></div>
-  <div class="task"><span style="font-weight:500;">Renew Global</span> <span class="badge badge-ok">Active</span>
-    <div class="task-role">Post-production -- see Things</div></div>
-  <div class="task"><span style="font-weight:500;">Bread of Life</span> <span class="badge badge-ok">Active</span>
-    <div class="task-role">Post-production -- see Things</div></div>
-  <div class="sec-head">Smartphone Storytellers</div>
-  <div class="task"><span style="font-weight:500;">Storyteller 101</span> <span class="badge badge-warn">Active</span>
-    <div class="task-role">Next: Build Module 3 | Deadline: Aug 31, 2026 (Sept conference)</div></div>
-  <div class="task"><span style="font-weight:500;">Product Launch (7 Products)</span> <span class="badge" style="color:#999;">On Hold</span>
-    <div class="task-role">Picks up after Storyteller 101 launches</div></div>
-  <div class="sec-head">Speaking</div>
-  <div class="task"><span style="font-weight:500;">CFX 2026</span> <span class="badge badge-warn">Active</span>
-    <div class="task-role">Next: Develop talk structure | Sep 14-16, Birmingham AL</div></div>
-
-  </div>
-  <div class="card" style="background:#FEF2F2;">
-    <div class="card-label" style="background:#7F1D1D;">Heads Up -- Overdue and Due Today</div>
-    <div class="task" style="color:#7F1D1D;font-weight:600;">DUE TODAY: RECORD: Week 8 Lecture: 21 Television <span class="task-role" style="color:#7F1D1D;">Teaching</span></div><div class="task" style="color:#7F1D1D;font-weight:600;">DUE TODAY: RECORD: Week 8 Lecture: 22 Digital Communication <span class="task-role" style="color:#7F1D1D;">Teaching</span></div><div class="task" style="color:#7F1D1D;font-weight:600;">DUE TODAY: GRADE Safari #8 <span class="task-role" style="color:#7F1D1D;">Teaching</span></div><div class="task" style="color:#7F1D1D;font-weight:600;">DUE TODAY: GRADE Graphic Design <span class="task-role" style="color:#7F1D1D;">Teaching</span></div><div class="task" style="color:#7F1D1D;"><b>OVERDUE:</b> GRADE Visual Rhetoric -- Jun 21 (7 days overdue) <span class="task-role" style="color:#7F1D1D;">Teaching</span></div><div class="task" style="color:#7F1D1D;"><b>OVERDUE:</b> POST Exam #2 Heads Up -- Jun 24 (4 days overdue) <span class="task-role" style="color:#7F1D1D;">Teaching</span></div><div class="task" style="color:#7F1D1D;"><b>OVERDUE:</b> EDIT Thought Leadership - Wei Xie -- Jun 25 (3 days overdue) <span class="task-role" style="color:#7F1D1D;">Freelance</span></div><div class="task" style="color:#7F1D1D;"><b>OVERDUE:</b> EDIT Thought Leadership - Steve Biggs -- Jun 25 (3 days overdue) <span class="task-role" style="color:#7F1D1D;">Freelance</span></div><div class="task" style="color:#7F1D1D;"><b>OVERDUE:</b> Lecture notes 21-22 -- Jun 26 (2 days overdue) <span class="task-role" style="color:#7F1D1D;">Teaching</span></div><div class="task" style="color:#7F1D1D;"><b>OVERDUE:</b> POST Exam #2 -- Jun 26 (2 days overdue) <span class="task-role" style="color:#7F1D1D;">Teaching</span></div>
-  </div>
-  <div class="generated">Generated June 28, 2026 at 4:26 AM ET</div>
+  <div class="generated">Generated June 29, 2026 at 4:24 AM ET</div>
 </div>
 
-
-<div class="pane" id="pane-faith">
+<!-- MORNING BRIEF -->
+<div class="pane" id="pane-brief">
   <div class="card">
-    <div class="card-label" style="background:#7C3AED;">My Utmost for His Highest</div>
-    <div class="faith-ref">June 28: HELD BY THE GRIP OF GOD</div>
-    <div class="faith-verse">I press on, that I may lay hold of that for which Christ Jesus has also laid hold of me.</div>
-    <div class="faith-ref">Philippians 3:12</div>
-    <br>
-    <p style="font-size:13px;color:#1a1a1a;line-height:1.6;margin-bottom:8px;">Never choose to be a worker for God, but once God has placed His call on you, woe be to you if you &quot;turn aside to the right hand or to the left&quot; (Deuteronomy 5:32). We are not here to work for God because we have chosen to do so, but because God has &quot;laid hold of&quot; us. And once He has done so, we never have this thought, &quot;Well, I&#x27;m really not suited for this.&quot; What you are to preach is also determined by God, not by your own natural leanings or desires. Keep your soul steadfastly related to God, and remember that you are called not simply to convey your testimony but also to preach the gospel. Every Christian must testify to the truth of God, but when it comes to the call to preach, there must be the agonizing grip of God&#x27;s hand on you--your life is in the grip of God for that very purpose. How many of us are held like that?</p><p style="font-size:13px;color:#1a1a1a;line-height:1.6;margin-bottom:8px;">Never water down the Word of God, but preach it in its undiluted sternness. There must be unflinching faithfulness to the Word of God, but when you come to personal dealings with others, remember who you are--you are not some special being created in heaven, but a sinner saved by grace.</p><p style="font-size:13px;color:#1a1a1a;line-height:1.6;margin-bottom:8px;">&quot;Brethren, I do not count myself to have apprehended; but one thing I do . . . I press toward the goal for the prize of the upward call of God in Christ Jesus&quot; (Philippians 3:13-14).</p>
+    <div class="card-label">Weather -- Tampa, FL</div>
+    <div class="weather-main">
+      <div>
+        <div class="temp">95&#176;F</div>
+        <div class="wx-sub">Hot and humid -- Humidity ~82%</div>
+      </div>
+      <div class="wx-right">High 95&#176;F / Low 79&#176;F<br>Feels like 105&#176;F<br>Afternoon storms possible</div>
+    </div>
+    <div class="wx-sub" style="margin-top:8px;color:#854F0B;">Heat index 105F -- stay hydrated, seek shade</div>
   </div>
-  <div class="card">
-    <div class="card-label" style="background:#7C3AED;">Prayer List</div>
-    <div class="prayer-item">Brad Zimmerman</div><div class="prayer-item">Austin Allen</div><div class="prayer-item">Jirah</div><div class="prayer-item">Russo</div><div class="prayer-item">Carrie Davis</div><div class="prayer-item">Jada Jones&#x27; Friend</div>
-  </div>
-  <div class="generated">Generated June 28, 2026 at 4:26 AM ET</div>
-</div>
-
-
-<div class="pane" id="pane-morning">
-  <div class="card" style="background:#EEEDFE;">
-    <div class="card-label" style="background:#2E5090;">Morning Read</div>
-    <div style="font-size:14px;line-height:1.6;color:#1a1a1a;">
-      Today is Sunday -- a day for church, family, and rest. The work calendar is empty, but the task list is not:
-      10 items are either overdue or due today across Teaching and Freelance. The most urgent are the 4 teaching
-      tasks due today (RECORD Week 8 lectures, GRADE Safari #8 and Graphic Design), plus 4 overdue teaching items
-      and 2 overdue Thought Leadership edits. Individually none of these are catastrophic, but the pile is growing.
-    </div>
-    <div style="font-size:14px;line-height:1.6;color:#1a1a1a;margin-top:8px;">
-      Tampa begins tomorrow -- Delta 2124 departs CHS at 6:15 AM, meaning a 4:30 AM departure from home at the latest.
-      Pack tonight, confirm ground transport to the shoot venue (currently TBD), and finish any grading or recordings
-      that can be done before you leave.
-    </div>
-    <div style="font-size:14px;line-height:1.6;color:#1a1a1a;margin-top:8px;">
-      <b>Watch out for:</b> SST is completely stalled -- no active tasks anywhere. This is the highest-priority growth
-      initiative and it has no momentum. The weekly review tonight is the right moment to add at least one concrete SST task.
-    </div>
-  </div>
-
-  <div class="card" style="background:#FFF1F2;">
-    <div class="card-label" style="background:#9f1239;">Smartphone Storytellers</div>
-    <div class="row" style="background:#FFF1F2;">
-      <span class="dir-label" style="color:#9f1239;">Status</span>
-      <span class="dir-val" style="color:#9f1239;">No active tasks -- area is completely stalled</span>
-    </div>
-    <div class="row" style="background:#FFF1F2;">
-      <span class="dir-label" style="color:#9f1239;">Today's move</span>
-      <span class="dir-val">Add one concrete SST task to Things during the weekly review tonight to break the stall</span>
-    </div>
-    <div class="row" style="background:#FFF1F2;">
-      <span class="dir-label" style="color:#9f1239;">Morning block</span>
-      <span class="dir-val" style="color:#999;font-style:italic;">Sunday -- no SST block</span>
-    </div>
-  </div>
-
-  <div class="card">
-    <div class="card-label" style="background:#2E5090;">What's Next (Top 5 Actions)</div>
-    <div class="pri-row"><div class="num">1</div>
-      <div><b>Finish today's due items</b><div style="font-size:12px;color:#64748B;">RECORD Week 8 Lectures 21+22, GRADE Safari #8 and Graphic Design -- all due today</div></div></div>
-    <div class="pri-row"><div class="num">2</div>
-      <div><b>EDIT Thought Leadership - Steve Biggs and Wei Xie</b><div style="font-size:12px;color:#64748B;">Both 3 days overdue -- client is waiting. Target delivery before the Tampa trip disrupts the week.</div></div></div>
-    <div class="pri-row"><div class="num">3</div>
-      <div><b>Pack for Tampa tonight</b><div style="font-size:12px;color:#64748B;">Camera gear, clothes, chargers. Confirm ground transport. Flight 6:15 AM -- leave home by 4:30 AM.</div></div></div>
-    <div class="pri-row"><div class="num">4</div>
-      <div><b>Weekly Review</b><div style="font-size:12px;color:#64748B;">Clear the overdue backlog, reset SST momentum with at least one task, plan the compressed week</div></div></div>
-    <div class="pri-row"><div class="num">5</div>
-      <div><b>Add one SST task to Things</b><div style="font-size:12px;color:#64748B;">Storyteller 101 deadline is Aug 31. Module 3 needs to start. One task added tonight keeps the initiative alive.</div></div></div>
-  </div>
-
   <div class="sec-head">Today's Tasks</div>
-  <div class="card" style="padding:0.75rem 1.25rem;"><div class="sec-head" style="color:#92400e;">Teaching</div><div class="task" style="background:#FEF3C7;"><span style="color:#7F1D1D;font-weight:700;">RECORD: Week 8 Lecture: 21 Television</span><span class="badge badge-warn">DUE TODAY</span><div class="task-role" style="color:#92400e;">Teaching</div></div><div class="task" style="background:#FEF3C7;"><span style="color:#7F1D1D;font-weight:700;">RECORD: Week 8 Lecture: 22 Digital Communication</span><span class="badge badge-warn">DUE TODAY</span><div class="task-role" style="color:#92400e;">Teaching</div></div><div class="task" style="background:#FEF3C7;"><span style="color:#7F1D1D;font-weight:700;">GRADE Safari #8</span><span class="badge badge-warn">DUE TODAY</span><div class="task-role" style="color:#92400e;">Teaching</div></div><div class="task" style="background:#FEF3C7;"><span style="color:#7F1D1D;font-weight:700;">GRADE Graphic Design</span><span class="badge badge-warn">DUE TODAY</span><div class="task-role" style="color:#92400e;">Teaching</div></div><div class="task" style="background:#FEF3C7;"><span style="color:#7F1D1D;font-weight:700;">GRADE Visual Rhetoric</span><span class="badge badge-warn">Jun 21 (7 days overdue)</span><div class="task-role" style="color:#92400e;">Teaching</div></div><div class="task" style="background:#FEF3C7;"><span style="color:#7F1D1D;font-weight:700;">POST Exam #2 Heads Up</span><span class="badge badge-warn">Jun 24 (4 days overdue)</span><div class="task-role" style="color:#92400e;">Teaching</div></div><div class="task" style="background:#FEF3C7;"><span style="color:#7F1D1D;font-weight:700;">Lecture notes 21-22</span><span class="badge badge-warn">Jun 26 (2 days overdue)</span><div class="task-role" style="color:#92400e;">Teaching</div></div><div class="task" style="background:#FEF3C7;"><span style="color:#7F1D1D;font-weight:700;">POST Exam #2</span><span class="badge badge-warn">Jun 26 (2 days overdue)</span><div class="task-role" style="color:#92400e;">Teaching</div></div><div class="sec-head" style="color:#374151;">Freelance</div><div class="task" style="background:#F9FAFB;"><span style="color:#7F1D1D;font-weight:700;">EDIT Thought Leadership - Wei Xie</span><span class="badge badge-warn">Jun 25 (3 days overdue)</span><div class="task-role" style="color:#374151;">Freelance</div></div><div class="task" style="background:#F9FAFB;"><span style="color:#7F1D1D;font-weight:700;">EDIT Thought Leadership - Steve Biggs</span><span class="badge badge-warn">Jun 25 (3 days overdue)</span><div class="task-role" style="color:#374151;">Freelance</div></div><div class="task" style="background:#F9FAFB;"><span style="color:#1a1a1a;">EDIT Thought Leadership - Angie Quinn</span><div class="task-role" style="color:#374151;">Freelance</div></div></div>
-
-  <div class="sec-head">Upcoming (7 Days)</div>
-  <div class="card" style="padding:0.75rem 1.25rem;"><div class="sec-head" style="color:#92400e;">Teaching</div><div class="task" style="background:#FEF3C7;"><span style="color:#1a1a1a;">EDIT: English Video</span><span class="badge">Jul 5</span><div class="task-role" style="color:#92400e;">Teaching</div></div><div class="task" style="background:#FEF3C7;"><span style="color:#1a1a1a;">GRADE Photography</span><span class="badge">Jul 5</span><div class="task-role" style="color:#92400e;">Teaching</div></div><div class="task" style="background:#FEF3C7;"><span style="color:#1a1a1a;">GRADE Film</span><span class="badge">Jul 5</span><div class="task-role" style="color:#92400e;">Teaching</div></div><div class="task" style="background:#FEF3C7;"><span style="color:#1a1a1a;">GRADE Safari #9</span><span class="badge">Jul 5</span><div class="task-role" style="color:#92400e;">Teaching</div></div><div class="sec-head" style="color:#374151;">Freelance</div><div class="task" style="background:#F9FAFB;"><span style="color:#1a1a1a;">Overview Video</span><span class="badge">Jul 5</span><div class="task-role" style="color:#374151;">Freelance</div></div></div>
-
-  <div class="sec-head">Overdue and At Risk</div><div class="card" style="background:#FEF2F2;padding:0.75rem 1.25rem;"><div class="task" style="color:#7F1D1D;"><b>GRADE Visual Rhetoric</b> (Teaching) -- Jun 21 (7 days overdue)</div><div class="task" style="color:#7F1D1D;"><b>POST Exam #2 Heads Up</b> (Teaching) -- Jun 24 (4 days overdue)</div><div class="task" style="color:#7F1D1D;"><b>EDIT Thought Leadership - Wei Xie</b> (Freelance) -- Jun 25 (3 days overdue)</div><div class="task" style="color:#7F1D1D;"><b>EDIT Thought Leadership - Steve Biggs</b> (Freelance) -- Jun 25 (3 days overdue)</div><div class="task" style="color:#7F1D1D;"><b>Lecture notes 21-22</b> (Teaching) -- Jun 26 (2 days overdue)</div><div class="task" style="color:#7F1D1D;"><b>POST Exam #2</b> (Teaching) -- Jun 26 (2 days overdue)</div></div>
-
-  <div class="card" style="background:#FEF2F2;">
-    <div class="card-label" style="background:#7F1D1D;">Overdue / At Risk</div>
-<div class="task" style="color:#7F1D1D;"><b>GRADE Visual Rhetoric</b> (Teaching) -- Jun 21 (7 days overdue)</div><div class="task" style="color:#7F1D1D;"><b>POST Exam #2 Heads Up</b> (Teaching) -- Jun 24 (4 days overdue)</div><div class="task" style="color:#7F1D1D;"><b>EDIT Thought Leadership - Wei Xie</b> (Freelance) -- Jun 25 (3 days overdue)</div><div class="task" style="color:#7F1D1D;"><b>EDIT Thought Leadership - Steve Biggs</b> (Freelance) -- Jun 25 (3 days overdue)</div><div class="task" style="color:#7F1D1D;"><b>Lecture notes 21-22</b> (Teaching) -- Jun 26 (2 days overdue)</div><div class="task" style="color:#7F1D1D;"><b>POST Exam #2</b> (Teaching) -- Jun 26 (2 days overdue)</div>
+  <div class="card" style="padding: 0.75rem 1.25rem;">
+    <div class="sec-head" style="margin-top:0;margin-bottom:4px;">Smartphone Storytellers</div>
+    <div class="task">
+      <div><div style="font-size:13px;font-weight:500;">WRITE Module 3: Capturing the Story</div><div class="task-role" style="color:#9f1239;">Smartphone Storytellers</div></div>
+      <span class="badge badge-ok">No deadline</span>
+    </div>
+    <div class="sec-head" style="margin-top:12px;margin-bottom:4px;">Teaching</div>
+    <div class="task">
+      <div><div style="font-size:13px;font-weight:600;color:#7F1D1D;">GRADE Visual Rhetoric</div><div class="task-role" style="color:#7F1D1D;">Teaching</div></div>
+      <span class="badge badge-warn">OVERDUE Jun 21</span>
+    </div>
+    <div class="task">
+      <div><div style="font-size:13px;font-weight:600;color:#7F1D1D;">GRADE Safari #8</div><div class="task-role" style="color:#7F1D1D;">Teaching</div></div>
+      <span class="badge badge-warn">OVERDUE Jun 28</span>
+    </div>
+    <div class="task">
+      <div><div style="font-size:13px;font-weight:600;color:#7F1D1D;">GRADE Graphic Design</div><div class="task-role" style="color:#7F1D1D;">Teaching</div></div>
+      <span class="badge badge-warn">OVERDUE Jun 28</span>
+    </div>
+    <div class="sec-head" style="margin-top:12px;margin-bottom:4px;">Freelance</div>
+    <div class="task">
+      <div><div style="font-size:13px;font-weight:600;color:#7F1D1D;">EDIT Thought Leadership - Wei Xie</div><div class="task-role" style="color:#7F1D1D;">Freelance</div></div>
+      <span class="badge badge-warn">OVERDUE Jun 25</span>
+    </div>
+    <div class="task">
+      <div><div style="font-size:13px;font-weight:600;color:#7F1D1D;">EDIT Thought Leadership - Steve Biggs</div><div class="task-role" style="color:#7F1D1D;">Freelance</div></div>
+      <span class="badge badge-warn">OVERDUE Jun 25</span>
+    </div>
+    <div class="task">
+      <div><div style="font-size:13px;">EDIT Thought Leadership - Angie Quinn</div><div class="task-role">Freelance</div></div>
+      <span class="badge">No deadline</span>
+    </div>
   </div>
-  <div class="generated">Generated June 28, 2026 at 4:26 AM ET</div>
+  <div class="sec-head">Upcoming (7 days)</div>
+  <div class="card" style="padding: 0.75rem 1.25rem;">
+    <div class="sec-head" style="margin-top:0;margin-bottom:4px;">Teaching</div>
+    <div class="task">
+      <div><div style="font-size:13px;">EDIT: English Video</div><div class="task-role" style="color:#92400e;">Teaching</div></div>
+      <span class="badge">Jul 5</span>
+    </div>
+    <div class="task">
+      <div><div style="font-size:13px;">GRADE Photography</div><div class="task-role" style="color:#92400e;">Teaching</div></div>
+      <span class="badge">Jul 5</span>
+    </div>
+    <div class="task">
+      <div><div style="font-size:13px;">GRADE Film</div><div class="task-role" style="color:#92400e;">Teaching</div></div>
+      <span class="badge">Jul 5</span>
+    </div>
+    <div class="task">
+      <div><div style="font-size:13px;">GRADE Safari #9</div><div class="task-role" style="color:#92400e;">Teaching</div></div>
+      <span class="badge">Jul 5</span>
+    </div>
+    <div class="sec-head" style="margin-top:12px;margin-bottom:4px;">Freelance</div>
+    <div class="task">
+      <div><div style="font-size:13px;">Overview Video</div><div class="task-role">Freelance</div></div>
+      <span class="badge">Jul 5</span>
+    </div>
+  </div>
+  <div class="sec-head">Overdue</div>
+  <div class="card" style="padding: 0.75rem 1.25rem; background:#FEF2F2;">
+    <div class="task">
+      <div><div style="font-size:13px;font-weight:600;color:#7F1D1D;">GRADE Visual Rhetoric</div><div class="task-role" style="color:#92400e;">Teaching</div></div>
+      <span class="badge badge-warn">Jun 21</span>
+    </div>
+    <div class="task">
+      <div><div style="font-size:13px;font-weight:600;color:#7F1D1D;">EDIT Thought Leadership - Wei Xie</div><div class="task-role" style="color:#92400e;">Freelance</div></div>
+      <span class="badge badge-warn">Jun 25</span>
+    </div>
+    <div class="task">
+      <div><div style="font-size:13px;font-weight:600;color:#7F1D1D;">EDIT Thought Leadership - Steve Biggs</div><div class="task-role" style="color:#92400e;">Freelance</div></div>
+      <span class="badge badge-warn">Jun 25</span>
+    </div>
+    <div class="task">
+      <div><div style="font-size:13px;font-weight:600;color:#7F1D1D;">GRADE Safari #8</div><div class="task-role" style="color:#92400e;">Teaching</div></div>
+      <span class="badge badge-warn">Jun 28</span>
+    </div>
+    <div class="task">
+      <div><div style="font-size:13px;font-weight:600;color:#7F1D1D;">GRADE Graphic Design</div><div class="task-role" style="color:#92400e;">Teaching</div></div>
+      <span class="badge badge-warn">Jun 28</span>
+    </div>
+  </div>
+  <div class="generated">Generated June 29, 2026 at 4:24 AM ET</div>
 </div>
 
-
+<!-- FITNESS -->
 <div class="pane" id="pane-fitness">
-
-  <!-- Tomorrow's Workout -->
   <div class="card">
-    <div class="card-label">Tomorrow's Workout — Arms</div>
-    <div class="workout-meta" style="font-size:12px;color:#64748B;margin-bottom:8px;">Arms / Biceps / Triceps / Shoulders · ~58 min</div>
-    <span class="badge badge-warn" style="display:inline-block;margin-bottom:10px;">⚠ Window Conflict — In Transit 8–9 AM</span>
-    <div style="font-size:12px;color:#854F0B;line-height:1.5;margin-bottom:10px;padding:6px 10px;background:#FEF3C7;border-radius:6px;">
-      Default 8–9 AM window blocked — flight CHS→ATL→TPA, arrives 10:08 AM. Best alternative: hotel gym 10:30–11:30 AM before noon shoot. If no gym, use Travel BW Workout A below (no equipment needed).
-    </div>
-
-    <div class="sec-head">Option A — Arms (gym required)</div>
-    <table class="macro-table">
-      <tr><th>Exercise</th><th style="width:110px;">Sets × Reps</th></tr>
-      <tr><td>Dumbbell Palm Up Wrist Curl</td><td>2 × 10</td></tr>
-      <tr><td>Dumbbell Palm Down Wrist Curl</td><td>2 × 10</td></tr>
-      <tr><td>Cable Internal Shoulder Rotation</td><td>3 × 10</td></tr>
-      <tr><td>Kettlebell Alternating Halo</td><td>3 × 10</td></tr>
-      <tr><td>Dumbbell Incline Bicep Curl</td><td>3 × 10–12</td></tr>
-      <tr><td>Barbell Narrow Grip Bicep Curl <em>(superset)</em></td><td>3 × 10</td></tr>
-      <tr><td>Barbell Wide Grip Bicep Curl <em>(superset)</em></td><td>3 × 10</td></tr>
-      <tr><td>Cable V-Bar Overhead Tricep Extension</td><td>3 × 10–12</td></tr>
-      <tr><td>Single Arm Tricep Pushdown</td><td>3 × 8/side</td></tr>
-    </table>
-
-    <div class="sec-head" style="margin-top:12px;">Option B — Travel BW Workout A (~42 min, no equipment)</div>
-    <table class="macro-table">
-      <tr><th>Exercise</th><th style="width:160px;">Sets × Duration</th></tr>
-      <tr><td>High Plank</td><td>3 × 30 sec (90s rest)</td></tr>
-      <tr><td>3D Lunge</td><td>2 × 10 (90s rest)</td></tr>
-      <tr><td>Agility: 90-Degree Hops</td><td>2 × 10 (90s rest)</td></tr>
-      <tr><td>Agility: Side to Side Steps</td><td>2 × 20 (90s rest)</td></tr>
-      <tr><td>Agility: In/Out Hops</td><td>2 × 20 (90s rest)</td></tr>
-      <tr><td>Alternating Crescent Lunge</td><td>2 × 10 (90s rest)</td></tr>
-      <tr><td>Alternating Lateral Deadlift Hinge</td><td>2 × 10 (90s rest)</td></tr>
-      <tr><td>Bear Plank</td><td>3 × 30 sec (90s rest)</td></tr>
-    </table>
+    <div class="card-label">Today's Workout -- Travel BW Workout (A)</div>
+    <div class="workout-meta">Bodyweight / Agility / Core -- ~42 min</div>
+    <span class="window-pill window-conflict">Travel day -- hotel room or hotel gym</span>
+    <div class="exercise"><span>High Plank</span><span class="exercise-sets">3 x 30 sec, 90s rest</span></div><div class="exercise"><span>3D Lunge</span><span class="exercise-sets">2 x 10, 90s rest</span></div><div class="exercise"><span>Agility: 90-Degree Hops</span><span class="exercise-sets">2 x 10, 90s rest</span></div><div class="exercise"><span>Agility: Side to Side Steps</span><span class="exercise-sets">2 x 20, 90s rest</span></div><div class="exercise"><span>Agility: In/Out Hops</span><span class="exercise-sets">2 x 20, 90s rest</span></div><div class="exercise"><span>Alternating Crescent Lunge</span><span class="exercise-sets">2 x 10, 90s rest</span></div><div class="exercise"><span>Alternating Lateral Deadlift Hinge</span><span class="exercise-sets">2 x 10, 90s rest</span></div><div class="exercise"><span>Bear Plank</span><span class="exercise-sets">3 x 30 sec, 90s rest</span></div>
   </div>
-
-  <!-- Macro Plan -->
   <div class="card">
     <div class="card-label">Macro Plan</div>
     <table class="macro-table">
       <tr><th>Meal</th><th>Cal</th><th>Pro</th><th>Carb</th><th>Fat</th></tr>
-      <tr><td>Morning Coffee (collagen)</td><td>18</td><td>4g</td><td>0g</td><td>0g</td></tr>
-      <tr><td>Breakfast (2 eggs + 4 whites)</td><td>210</td><td>28g</td><td>2g</td><td>10g</td></tr>
-      <tr><td>Snack 1 (Cocoa Crispy's shake)</td><td>130</td><td>25g</td><td>6g</td><td>2g</td></tr>
-      <tr><td>Lunch (PLN or Chick-fil-A)</td><td>450</td><td>35g</td><td>45g</td><td>12g</td></tr>
-      <tr><td>Post-Lunch Shake (Six Star Whey)</td><td>190</td><td>30g</td><td>9g</td><td>3g</td></tr>
-      <tr><td>Snack 2 (clementines / applesauce)</td><td>90</td><td>1g</td><td>22g</td><td>0g</td></tr>
-      <tr><td>Dinner — Chicken ✓</td><td>430</td><td>48g</td><td>32g</td><td>10g</td></tr>
-      <tr><td>Evening Snack (Casein shake)</td><td>290</td><td>27g</td><td>31g</td><td>8g</td></tr>
-      <tr class="total-row"><td>Total</td><td>1,808</td><td>198g</td><td>147g</td><td>45g</td></tr>
-      <tr class="target-row"><td>Target</td><td>2,190</td><td>200g</td><td>215g</td><td>72g</td></tr>
-      <tr class="gap-row"><td>Gap</td><td>−382</td><td>−2g</td><td>−68g</td><td>−27g</td></tr>
-    </table>
-    <div class="macro-rec">
-      <b>Dinner call: Chicken.</b> Protein lands at 198g with chicken (only 2g short), vs. 188g with fish (12g short). Clear win for chicken. Main gap is carbs: −68g — add a banana at the hotel (+27g) and favor a sandwich option over nuggets for extra carbs. Fat is 27g under target — restaurant cooking will close most of that naturally.
-    </div>
-  </div>
-
-  <!-- Pack List -->
-  <div class="card" style="background:#FEF3C7;border-color:#F59E0B;">
-    <div class="card-label" style="background:#854F0B;">Pack List — All-Day Travel</div>
-    <div style="font-size:12px;color:#854F0B;margin-bottom:10px;">Every meal window is away from home tomorrow. Pack or plan each one.</div>
-    <div class="row"><span class="dir-label">Breakfast (7–9 AM)</span><span class="dir-val">Protein shake — airport or hotel</span></div>
-    <div class="row"><span class="dir-label">Snack 1 (10–11 AM)</span><span class="dir-val">Protein shake — bring shaker + powder in bag</span></div>
-    <div class="row"><span class="dir-label">Lunch (12–1:30 PM)</span><span class="dir-val">Chick-fil-A: 12ct grilled nuggets + side salad + fruit cup (~350 cal, 44g protein)</span></div>
-    <div class="row"><span class="dir-label">Snack 2 (3–4 PM)</span><span class="dir-val">Applesauce pouch or clementines — naturally portable</span></div>
-    <div class="row"><span class="dir-label">Dinner (6–8 PM)</span><span class="dir-val">Restaurant chicken — see Fast Food Cheat Sheet; grilled over fried</span></div>
-    <div class="row"><span class="dir-label">Evening Snack</span><span class="dir-val">Casein shake (pack scoop in small bag); skip mini cone tonight</span></div>
-  </div>
-
-  <!-- Fast Food Cheat Sheet -->
-  <div class="card">
-    <div class="card-label">Fast Food Cheat Sheet — Tampa</div>
-
-    <div class="sec-head">Chick-fil-A</div>
-    <table class="macro-table">
-      <tr><th>Item</th><th>Cal</th><th>Pro</th><th>Carb</th><th>Fat</th></tr>
-      <tr><td>Grilled Chicken Sandwich</td><td>390</td><td>37g</td><td>40g</td><td>7g</td></tr>
-      <tr><td>Grilled Chicken Nuggets (8 ct)</td><td>140</td><td>25g</td><td>2g</td><td>3g</td></tr>
-      <tr><td>Grilled Chicken Nuggets (12 ct)</td><td>210</td><td>38g</td><td>3g</td><td>5g</td></tr>
-      <tr><td>Grilled Cool Wrap</td><td>360</td><td>42g</td><td>26g</td><td>11g</td></tr>
-      <tr><td>Side Salad (no dressing)</td><td>80</td><td>5g</td><td>9g</td><td>4g</td></tr>
-      <tr><td>Fruit Cup</td><td>60</td><td>1g</td><td>15g</td><td>0g</td></tr>
-    </table>
-    <div style="font-size:11px;color:#64748B;margin:4px 0 10px;"><b>Best:</b> 12ct Nuggets + Side Salad + Fruit Cup (~350 cal, 44g protein)</div>
-
-    <div class="sec-head">McDonald's</div>
-    <table class="macro-table">
-      <tr><th>Item</th><th>Cal</th><th>Pro</th><th>Carb</th><th>Fat</th></tr>
-      <tr><td>Grilled Chicken Sandwich</td><td>380</td><td>37g</td><td>38g</td><td>8g</td></tr>
-      <tr><td>Egg McMuffin</td><td>310</td><td>17g</td><td>30g</td><td>13g</td></tr>
-      <tr><td>Egg White Delight McMuffin</td><td>260</td><td>18g</td><td>29g</td><td>8g</td></tr>
-      <tr><td>Side Salad (no dressing)</td><td>15</td><td>1g</td><td>3g</td><td>0g</td></tr>
-      <tr><td>Apple Slices</td><td>15</td><td>0g</td><td>4g</td><td>0g</td></tr>
-    </table>
-    <div style="font-size:11px;color:#64748B;margin:4px 0 10px;"><b>Best:</b> Grilled Chicken + Side Salad + Apple Slices (~410 cal, 38g protein)</div>
-
-    <div class="sec-head">Subway</div>
-    <table class="macro-table">
-      <tr><th>Item</th><th>Cal</th><th>Pro</th><th>Carb</th><th>Fat</th></tr>
-      <tr><td>6" Rotisserie Chicken (9-grain, no cheese, mustard)</td><td>350</td><td>30g</td><td>45g</td><td>6g</td></tr>
-      <tr><td>6" Turkey Breast (9-grain, no cheese, mustard)</td><td>280</td><td>19g</td><td>45g</td><td>4g</td></tr>
-      <tr><td>Rotisserie Chicken Chopped Salad (no dressing)</td><td>190</td><td>25g</td><td>12g</td><td>5g</td></tr>
-      <tr><td>Turkey Chopped Salad (no dressing)</td><td>140</td><td>16g</td><td>12g</td><td>3g</td></tr>
-    </table>
-    <div style="font-size:11px;color:#64748B;margin:4px 0 10px;"><b>Best:</b> Rotisserie Chicken Chopped Salad + extra chicken (~190–240 cal, 25–30g protein)</div>
-  </div>
-
-  <div class="generated">Updated June 28, 2026 at 8:44 PM ET (evening fitness brief)</div>
-</div>
-
-  <div class="card">
-    <div class="card-label">Macro Plan</div>
-
-    <div class="meal-head">Morning Coffee</div>
-    <div class="meal-items">1/2 serving collagen protein powder (2 TBSP) in coffee</div>
-    <div class="meal-macros"><span>18 cal</span><span>4g protein</span><span>0g carbs</span><span>0g fat</span></div>
-
-    <div class="meal-head">Breakfast</div>
-    <div class="meal-items">2 whole eggs + 4 egg whites (scrambled or fried)</div>
-    <div class="meal-macros"><span>210 cal</span><span>28g protein</span><span>2g carbs</span><span>10g fat</span></div>
-
-    <div class="meal-head">Snack 1</div>
-    <div class="meal-items">1 scoop Cocoa Crispys Protein Shake (water)</div>
-    <div class="meal-macros"><span>130 cal</span><span>25g protein</span><span>6g carbs</span><span>2g fat</span></div>
-
-    <div class="meal-head">Lunch</div>
-    <div class="meal-items">Project Lean Nation meal (~450 cal, ~35g protein)</div>
-    <div class="meal-macros"><span>450 cal</span><span>35g protein</span><span>45g carbs</span><span>12g fat</span></div>
-
-    <div class="meal-head">Post-Lunch Shake</div>
-    <div class="meal-items">Six Star Whey Plus -- Frosted Flakes (1 scoop, water)</div>
-    <div class="meal-macros"><span>190 cal</span><span>30g protein</span><span>9g carbs</span><span>3g fat</span></div>
-
-    <div class="meal-head">Snack 2</div>
-    <div class="meal-items">Mini oranges (clementines) and/or applesauce</div>
-    <div class="meal-macros"><span>90 cal</span><span>1g protein</span><span>22g carbs</span><span>0g fat</span></div>
-
-    <div class="meal-head">Dinner -- Option A: Chicken (Recommended)</div>
-    <div class="meal-items">Baked chicken breast (6-7 oz, lightly breaded) + 1/2 cup rice + small pat butter</div>
-    <div class="meal-macros"><span>430 cal</span><span>48g protein</span><span>32g carbs</span><span>10g fat</span></div>
-
-    <div class="meal-head">Evening Snack</div>
-    <div class="meal-items">Blue Bunny Caramel mini cone + Cinnamon Bun Casein shake (1 scoop, water)</div>
-    <div class="meal-macros"><span>290 cal</span><span>27g protein</span><span>31g carbs</span><span>8g fat</span></div>
-
-    <table class="macro-table">
-      <tr><th>Meal</th><th>Cal</th><th>Pro</th><th>Carb</th><th>Fat</th></tr>
+      <tr><td>Morning Coffee</td><td>18</td><td>4g</td><td>0g</td><td>0g</td></tr><tr><td>Breakfast</td><td>210</td><td>28g</td><td>2g</td><td>10g</td></tr><tr><td>Snack 1</td><td>130</td><td>25g</td><td>6g</td><td>2g</td></tr><tr><td>Lunch</td><td>450</td><td>35g</td><td>45g</td><td>12g</td></tr><tr><td>Post-Lunch Shake</td><td>190</td><td>30g</td><td>9g</td><td>3g</td></tr><tr><td>Snack 2</td><td>90</td><td>1g</td><td>22g</td><td>0g</td></tr><tr><td>Dinner (Chicken A)</td><td>430</td><td>48g</td><td>32g</td><td>10g</td></tr><tr><td>Evening Snack</td><td>290</td><td>27g</td><td>31g</td><td>8g</td></tr>
       <tr class="total-row"><td>Total</td><td>1808</td><td>198g</td><td>147g</td><td>45g</td></tr>
       <tr class="target-row"><td>Target</td><td>2190</td><td>200g</td><td>215g</td><td>72g</td></tr>
       <tr class="gap-row"><td>Gap</td><td>-382</td><td>-2g</td><td>-68g</td><td>-27g</td></tr>
     </table>
-
-    <div class="bar-section">
-      <div class="bar-section-label">Macros vs. Target</div>
-      <div class="bar-row">
-        <div class="bar-label"><span>Calories</span><span>1808 / 2190</span></div>
-        <div class="bar-bg"><div class="bar-fill" style="width:83%;"></div></div>
-      </div>
-      <div class="bar-row">
-        <div class="bar-label"><span>Protein</span><span>198g / 200g</span></div>
-        <div class="bar-bg"><div class="bar-fill" style="width:99%;"></div></div>
-      </div>
-      <div class="bar-row">
-        <div class="bar-label"><span>Carbs</span><span>147g / 215g</span></div>
-        <div class="bar-bg"><div class="bar-fill" style="width:68%;"></div></div>
-      </div>
-      <div class="bar-row">
-        <div class="bar-label"><span>Fat</span><span>45g / 72g</span></div>
-        <div class="bar-bg"><div class="bar-fill" style="width:62%;"></div></div>
-      </div>
-    </div>
-
-    <div class="macro-rec">Dinner call: Chicken. With Option A, protein lands at 198g (2g under target), vs. fish at 188g (12g under). The protein gap is minimal with chicken, so that is the clear call. Main gap is carbs: -68g. Add a banana with Snack 2 (+27g) and 2-3 rice cakes mid-afternoon (+20g) to recover about 47g of that gap. Fat is 27g under -- a drizzle of olive oil on the chicken or an extra pat of butter on the rice will help close it without overshooting protein.</div>
+    <div class="macro-rec">Dinner call: Chicken -- protein lands at 198g (just 2g under target), vs. fish at 188g (12g short). Main gap is carbs: -68g. Traveling makes this trickier -- grab a banana with Snack 2 (+27g) and rice cakes or Goldfish crackers mid-afternoon (+20g) to close ~47g of the gap. Fat is -27g under -- add butter on the rice at dinner. Beef jerky is a solid travel add if you need extra protein on the road.</div>
   </div>
-
-  <div class="generated">Generated June 28, 2026 at 4:26 AM ET</div>
+  
+<div class="card">
+  <div class="card-label">Pack List</div>
+  <div class="workout-meta">6 meals away from home -- travel day</div>
+  <div class="pack-row"><div class="pack-meal">Breakfast</div><div class="pack-conflict">All-day Tampa travel</div><div class="pack-swap">Hard-boiled eggs or hotel eggs / protein shake</div></div><div class="pack-row"><div class="pack-meal">Snack 1</div><div class="pack-conflict">All-day Tampa travel</div><div class="pack-swap">Protein shake in shaker bottle</div></div><div class="pack-row"><div class="pack-meal">Lunch</div><div class="pack-conflict">All-day Tampa travel</div><div class="pack-swap">PLN in insulated bag OR Chick-fil-A Grilled Nuggets 12ct + Fruit Cup</div></div><div class="pack-row"><div class="pack-meal">Snack 2</div><div class="pack-conflict">All-day Tampa travel</div><div class="pack-swap">Clementines or applesauce pouch</div></div><div class="pack-row"><div class="pack-meal">Dinner</div><div class="pack-conflict">All-day Tampa travel</div><div class="pack-swap">Prepped chicken + rice in container or local clean option</div></div><div class="pack-row"><div class="pack-meal">Evening Snack</div><div class="pack-conflict">All-day Tampa travel</div><div class="pack-swap">Casein shake travels fine; skip the cone or pack in a cooler</div></div>
 </div>
-
-
-<div class="pane" id="pane-daily-dev">
-  <div class="card">
-    <div class="card-label" style="background:#0369A1;">Daily Creative</div>
-    <div class="dev-title">June 28th</div>
-    <div class="dev-body">
-      <p class="dev-body-p">&quot;Are you sure you want to...&quot;</p><p class="dev-body-p">&quot;Wouldn&#x27;t it be better to...&quot;</p><p class="dev-body-p">&quot;Maybe you should wait until...&quot;</p><p class="dev-body-p">&quot;What if they say...&quot;</p><p class="dev-body-p">&quot;What if they don&#x27;t say...&quot;</p><p class="dev-body-p">&quot;It would be safer to...&quot;</p><p class="dev-body-p">These narratives play inside our heads each time we confront uncertainty and choose to take a creative risk. On the surface, they sound like the voice of wisdom, but their motivation is often rooted in fear, driven by self-protection.</p><p class="dev-body-p">The problem is that you cannot take a creative risk and self-protect simultaneously. They are antithetical to one another.</p><p class="dev-body-p">How can you tell the difference between wisdom and fear?</p><p class="dev-body-p">Fear only cares about preservation, whereas wisdom seeks the best possible result. Fear exaggerates the perceived consequences of failure, whereas wisdom is realistic about both the upside and the downside of action. Fear tends to grow once it&#x27;s entertained and become more consuming, whereas wisdom maintains perspective. Fear dissipates when exposed to facts and reality, whereas wisdom thrives on accurate information.</p><p class="dev-body-p">When you operate in wisdom, you recognize the potential consequences of failure but also consider the benefits of success. Wisdom calculates the cost and chooses to act anyway when action is warranted. Fear only desires inaction and self-protection.</p><p class="dev-body-p">Pay attention to the narratives inside your head, and strive to parse the voice of fear from the voice of wisdom.</p>
-    </div>
-  </div>
-  <div class="generated">Generated June 28, 2026 at 4:26 AM ET</div>
-</div>
-
-
-<div class="pane" id="pane-trip-tampa">
-  <div class="card">
-    <div class="card-label" style="background:#0F766E;">Tampa Trip -- Overview</div>
-    <div class="row"><span class="dir-label">Destination</span><span class="dir-val">Tampa, FL</span></div>
-    <div class="row"><span class="dir-label">Dates</span><span class="dir-val">Jun 29-30, 2026</span></div>
-    <div class="row"><span class="dir-label">Type</span><span class="dir-val">Business / Freelance</span></div>
-    <div class="row"><span class="dir-label">Purpose</span><span class="dir-val">Freelance video shoot (same client as June 1-4 trip)</span></div>
-    <div class="row"><span class="dir-label">Notes</span><span class="dir-val flag">Ground transport not confirmed. Pack gear tonight. EARLY departure -- wake up 3:45 AM.</span></div>
-  </div>
-  <div class="card">
-    <div class="card-label" style="background:#0F766E;">Flights</div>
-    <table class="macro-table">
-      <tr><th style="text-align:left;">Leg</th><th style="text-align:left;">Flight</th><th style="text-align:left;">Date</th><th style="text-align:left;">Dep</th><th style="text-align:left;">Arr</th><th style="text-align:left;">Conf</th></tr>
-      <tr><td>CHS to ATL</td><td>Delta 2124</td><td>Mon Jun 29</td><td>6:15 AM</td><td>7:25 AM</td><td>GP326J</td></tr><tr><td>ATL to TPA</td><td>Delta 1227</td><td>Mon Jun 29</td><td>8:37 AM</td><td>10:08 AM</td><td>GP326J</td></tr><tr><td>TPA to ATL</td><td>Delta 1594</td><td>Tue Jun 30</td><td>7:57 PM</td><td>9:43 PM</td><td>GP326J</td></tr><tr><td>ATL to CHS</td><td>Delta 2850</td><td>Tue Jun 30</td><td>11:20 PM</td><td>12:36 AM</td><td>GP326J</td></tr>
-    </table>
-    <div style="font-size:11px;color:#64748B;margin-top:8px;">Seats: DL2124 (28A), DL1227 (28A), DL1594 (28A), DL2850 (28A)<br>Ticket: 0062437948302 | Total: $440.40</div>
-  </div>
-  <div class="card">
-    <div class="card-label" style="background:#0F766E;">Hotel / Lodging</div>
-    <div style="font-size:13px;color:#1a1a1a;">Tampa Bay 1BR - Pool, Balcony &amp; Beach Access (VRBO) | Check-in Jun 29 4:00 PM | Check-out Jun 30 11:00 AM | Conf: 379775337</div>
-  </div>
-  <div class="card">
-    <div class="card-label" style="background:#0F766E;">Itinerary</div>
-    <div style="font-size:13px;font-weight:700;color:#0F766E;margin:10px 0 4px;">Day 1 - Mon Jun 29</div><div class="task">6:15 AM depart CHS (Delta 2124)</div><div class="task">10:08 AM arrive TPA</div><div class="task">12:00-4:00 PM shoot (TBD)</div><div style="font-size:13px;font-weight:700;color:#0F766E;margin:10px 0 4px;">Day 2 - Tue Jun 30</div><div class="task">8:00 AM - 4:00 PM shoot (TBD)</div><div class="task">7:57 PM depart TPA (Delta 1594)</div><div class="task">12:36 AM arrive CHS (Wed Jul 1)</div>
-  </div>
-  <div class="card">
-    <div class="card-label" style="background:#0F766E;">Costs</div>
-    <table class="macro-table">
-      <tr><th style="text-align:left;">Item</th><th style="text-align:right;">Amount</th></tr>
-      <tr><td>Delta flights</td><td style="text-align:right;">$440.40</td></tr><tr><td>VRBO lodging</td><td style="text-align:right;">$159.83</td></tr><tr><td><b>Total (known)</b></td><td style="text-align:right;"><b>$600.23</b></td></tr>
-    </table>
-    <div style="font-size:12px;color:#0F766E;font-weight:700;margin-top:6px;">Total (known): $600.23</div>
-  </div>
-  <div class="generated">Generated June 28, 2026 at 4:26 AM ET</div>
+  <div class="generated">Generated June 29, 2026 at 4:24 AM ET</div>
 </div>
 
 <div class="pane" id="pane-weekly">
@@ -636,46 +398,13 @@ body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; b
   <div class="generated">Generated Sunday, June 28, 2026 &mdash; Week of June 29 &ndash; July 5, 2026</div>
 </div>
 
-<div class="pane" id="pane-reference">
-  <div class="card">
-    <div class="card-label">Ideal Weekday Schedule</div>
-    <div class="row"><span class="dir-label">5:30-6:00 AM</span><span class="dir-val">Faith block -- Bible study, prayer, reflection, planning</span></div>
-    <div class="row"><span class="dir-label">6:00-8:00 AM</span><span class="dir-val">Smartphone Storytellers (SPS) block</span></div>
-    <div class="row"><span class="dir-label">8:00-9:00 AM</span><span class="dir-val">Gym</span></div>
-    <div class="row"><span class="dir-label">9:00 AM-5:00 PM</span><span class="dir-val">Seacoast Church</span></div>
-    <div class="row"><span class="dir-label">5:00-8:00 PM</span><span class="dir-val">Family time (protected)</span></div>
-    <div class="row"><span class="dir-label">8:00-10:00 PM</span><span class="dir-val">Evening Focus Block (see themes below)</span></div>
-    <div class="row"><span class="dir-label">10:00-10:30 PM</span><span class="dir-val">Wind down</span></div>
-  </div>
-  <div class="card">
-    <div class="card-label">Evening Focus Themes</div>
-    <div class="row"><span class="dir-label">Monday</span><span class="dir-val">Household / Admin / Freelance</span></div>
-    <div class="row"><span class="dir-label">Tuesday</span><span class="dir-val">Teaching</span></div>
-    <div class="row"><span class="dir-label">Wednesday</span><span class="dir-val">Teaching</span></div>
-    <div class="row"><span class="dir-label">Thursday</span><span class="dir-val">Freelance</span></div>
-    <div class="row"><span class="dir-label">Friday</span><span class="dir-val">Protected Family Night</span></div>
-    <div class="row"><span class="dir-label">Saturday</span><span class="dir-val">Family / recovery. Optional 7-11 AM work block (SPS priority, twice/month)</span></div>
-    <div class="row"><span class="dir-label">Sunday</span><span class="dir-val">Church (morning), Family (afternoon), Weekly Review (evening)</span></div>
-  </div>
-  <div class="card">
-    <div class="card-label">Guiding Philosophy</div>
-    <div class="row"><span class="dir-label">Priority order</span><span class="dir-val">Faith, Family, Smartphone Storytellers, Fitness, Seacoast, Margin</span></div>
-    <div class="row"><span class="dir-label">SPS</span><span class="dir-val">Highest-priority growth initiative outside primary employment</span></div>
-    <div class="row"><span class="dir-label">Freelance</span><span class="dir-val">Should not crowd out Smartphone Storytellers or family time</span></div>
-  </div>
-  <div class="generated">Generated June 28, 2026 at 4:26 AM ET</div>
-</div>
-
-
 <script>
 document.querySelectorAll('.tab').forEach(function(tab) {
   tab.addEventListener('click', function() {
     document.querySelectorAll('.tab').forEach(function(t) { t.classList.remove('active'); });
     document.querySelectorAll('.pane').forEach(function(p) { p.classList.remove('active'); });
     tab.classList.add('active');
-    var paneId = 'pane-' + tab.dataset.tab;
-    var pane = document.getElementById(paneId);
-    if (pane) pane.classList.add('active');
+    document.getElementById('pane-' + tab.dataset.tab).classList.add('active');
   });
 });
 </script>
