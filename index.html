@@ -5,197 +5,374 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
-<title>Daily Briefing -- July 11</title>
+<title>Daily Briefing -- July 11, 2026</title>
 <style>
-* { box-sizing: border-box; margin: 0; padding: 0; }
-body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #F2F1EC; color: #1a1a1a; }
-.header { padding: 1.25rem 1.25rem 0; }
-.header-date { font-size: 12px; color: #888; letter-spacing: 0.04em; margin-bottom: 2px; }
-.header-title { font-size: 22px; font-weight: 500; margin-bottom: 1rem; }
-.tabs { display: flex; border-bottom: 1px solid #ddd; padding: 0 1.25rem; background: #F2F1EC; position: sticky; top: 0; z-index: 10; gap: 4px; overflow-x: auto; }
-.tab { padding: 8px 14px; font-size: 13px; font-weight: 500; cursor: pointer; border-bottom: 2px solid transparent; color: #888; white-space: nowrap; }
-.tab.active { color: #534AB7; border-bottom-color: #534AB7; }
-.pane { display: none; padding: 1rem 1.25rem 3rem; }
-.pane.active { display: block; }
-.card { background: #fff; border: 1px solid #e5e5e5; border-radius: 12px; padding: 1rem 1.25rem; margin-bottom: 12px; }
-.card-label { font-size: 11px; font-weight: 600; letter-spacing: 0.08em; color: #534AB7; text-transform: uppercase; margin-bottom: 10px; }
-.card-label-blue { background: #2E5090; color: #fff; padding: 4px 10px; border-radius: 6px; display: inline-block; }
-.card-label-red { background: #7F1D1D; color: #fff; padding: 4px 10px; border-radius: 6px; display: inline-block; }
-.row { display: flex; gap: 10px; padding: 6px 0; align-items: flex-start; }
-.row + .row { border-top: 1px solid #f0f0f0; }
-.time { font-size: 12px; color: #999; min-width: 70px; padding-top: 2px; flex-shrink: 0; }
-.event { font-size: 14px; color: #1a1a1a; line-height: 1.4; }
-.role { font-size: 11px; color: #999; margin-top: 1px; }
-.now { background: #EEEDFE; border-radius: 8px; }
-.now .event { color: #3C3489; font-weight: 500; }
-.now .time { color: #534AB7; }
-.dir-label { font-size: 12px; color: #999; min-width: 90px; flex-shrink: 0; padding-top: 2px; }
-.dir-val { font-size: 13px; color: #1a1a1a; flex: 1; line-height: 1.5; }
-.flag { color: #854F0B; }
-.pri-row { display: flex; align-items: flex-start; gap: 10px; padding: 7px 0; font-size: 14px; }
-.pri-row + .pri-row { border-top: 1px solid #f0f0f0; }
-.num { width: 22px; height: 22px; border-radius: 50%; background: #EEEDFE; color: #534AB7; font-size: 11px; font-weight: 600; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px; }
-.badge { font-size: 11px; padding: 2px 8px; border-radius: 100px; margin-left: auto; background: #f0f0f0; color: #666; white-space: nowrap; }
-.badge-warn { background: #FAEEDA; color: #854F0B; }
-.badge-ok { background: #EAF3DE; color: #3B6D11; }
-.badge-crit { background: #FEF2F2; color: #7F1D1D; }
-.badge-high { background: #FFFBEB; color: #92400e; }
-.weather-main { display: flex; justify-content: space-between; align-items: flex-start; }
-.temp { font-size: 36px; font-weight: 500; line-height: 1; }
-.wx-right { text-align: right; font-size: 13px; color: #666; line-height: 1.7; }
-.wx-sub { font-size: 12px; color: #999; margin-top: 8px; }
-.sec-head { font-size: 11px; font-weight: 600; color: #999; letter-spacing: 0.06em; text-transform: uppercase; margin: 1rem 0 6px; }
-.task { font-size: 13px; padding: 7px 0; border-bottom: 1px solid #f5f5f5; display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; }
-.task:last-child { border-bottom: none; }
-.task-role { font-size: 11px; color: #999; margin-top: 2px; }
-.generated { font-size: 11px; color: #bbb; text-align: center; padding: 1rem 0; }
-.workout-meta { font-size: 12px; color: #999; margin-bottom: 10px; }
-.window-pill { font-size: 12px; padding: 3px 10px; border-radius: 100px; display: inline-block; margin-bottom: 12px; }
-.window-clear { background: #EAF3DE; color: #3B6D11; }
-.window-conflict { background: #FAEEDA; color: #854F0B; }
-.exercise { font-size: 13px; padding: 6px 0; border-bottom: 1px solid #f5f5f5; display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
-.exercise:last-child { border-bottom: none; }
-.exercise-sets { font-size: 12px; color: #999; white-space: nowrap; flex-shrink: 0; }
-.rest-day { text-align: center; padding: 1.5rem 0; color: #999; font-size: 14px; }
-.macro-table { width: 100%; border-collapse: collapse; font-size: 12px; margin: 4px 0 10px; }
-.macro-table th { font-size: 10px; font-weight: 600; color: #999; text-transform: uppercase; letter-spacing: 0.05em; padding: 4px 6px; text-align: right; }
-.macro-table th:first-child { text-align: left; }
-.macro-table td { padding: 5px 6px; border-top: 1px solid #f5f5f5; text-align: right; }
-.macro-table td:first-child { text-align: left; color: #1a1a1a; }
-.macro-table tr.total-row td { font-weight: 600; border-top: 1px solid #ddd; }
-.macro-table tr.target-row td { color: #999; }
-.macro-table tr.gap-row td { color: #854F0B; font-weight: 500; }
-.macro-rec { font-size: 12px; color: #555; line-height: 1.5; padding-top: 8px; border-top: 1px solid #f0f0f0; margin-top: 4px; }
-.meal-head { font-size: 11px; font-weight: 600; color: #534AB7; text-transform: uppercase; letter-spacing: 0.06em; margin: 10px 0 2px; }
-.meal-head:first-child { margin-top: 0; }
-.meal-items { font-size: 13px; color: #1a1a1a; margin-bottom: 2px; line-height: 1.4; }
-.meal-macros { font-size: 11px; color: #999; display: flex; gap: 14px; padding-bottom: 8px; border-bottom: 1px solid #f0f0f0; }
-.bar-section { margin: 14px 0 6px; }
-.bar-section-label { font-size: 10px; font-weight: 600; color: #999; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 8px; }
-.bar-row { margin-bottom: 9px; }
-.bar-label { display: flex; justify-content: space-between; font-size: 11px; color: #555; margin-bottom: 3px; }
-.bar-label span:last-child { color: #999; }
-.bar-bg { height: 7px; background: #f0f0f0; border-radius: 4px; overflow: hidden; }
-.bar-fill { height: 100%; border-radius: 4px; background: #534AB7; }
-.bar-fill.over { background: #854F0B; }
-.pack-row { display: flex; gap: 10px; padding: 7px 0; font-size: 13px; align-items: flex-start; }
-.pack-row + .pack-row { border-top: 1px solid #f0f0f0; }
-.pack-meal { font-weight: 500; min-width: 90px; flex-shrink: 0; }
-.pack-conflict { font-size: 11px; color: #854F0B; min-width: 120px; flex-shrink: 0; }
-.pack-swap { font-size: 12px; color: #555; flex: 1; }
-.row-seacoast { background: #ECFEFF; color: #155e75; }
-.row-sps { background: #FFF1F2; color: #9f1239; }
-.row-teaching { background: #FEF3C7; color: #92400e; }
-.row-freelance { background: #F9FAFB; color: #374151; }
-.row-personal { background: #FFFFFF; color: #1a1a1a; }
-.row-gym { background: #EFF6FF; color: #1e40af; font-style: italic; }
-.row-focus { background: #F0FDF4; color: #166534; }
-.proj-card-head { display: flex; justify-content: space-between; align-items: center; padding: 8px 12px; border-radius: 8px 8px 0 0; margin: -1rem -1.25rem 10px; font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; }
-.proj-card-head.seacoast { background: #ECFEFF; color: #155e75; }
-.proj-card-head.teaching { background: #FEF3C7; color: #92400e; }
-.proj-card-head.freelance { background: #F9FAFB; color: #374151; }
-.proj-card-head.personal { background: #FFFFFF; color: #1a1a1a; }
-.proj-card-head.sps { background: #FFF1F2; color: #9f1239; }
-.faith-verse { font-size: 16px; line-height: 1.6; color: #1a1a1a; font-style: italic; margin-bottom: 8px; }
-.faith-ref { font-size: 12px; font-weight: 600; color: #5B21B6; text-transform: uppercase; letter-spacing: 0.06em; }
-.faith-placeholder { font-size: 13px; color: #999; font-style: italic; }
-.prayer-item { padding: 7px 0; font-size: 13px; color: #1a1a1a; border-bottom: 1px solid #f0f0f0; line-height: 1.4; }
-.prayer-item:last-child { border-bottom: none; }
-.dev-title { font-size: 15px; font-weight: 700; color: #1a1a1a; margin-bottom: 6px; }
-.dev-body p { font-size: 13px; color: #1a1a1a; line-height: 1.6; margin-bottom: 8px; }
-.dev-question { font-size: 13px; color: #0369A1; font-style: italic; margin-top: 10px; }
-.dev-placeholder { font-size: 13px; color: #999; font-style: italic; }
+:root{
+  --bg:#FFFFFF;
+  --surface:#FFFFFF;
+  --border:#E9E9E9;
+  --border-light:#F0F0F0;
+  --text:#16181D;
+  --text-muted:#6B7280;
+  --text-faint:#9CA3AF;
+  --navy:#1B2A4A;
+  --blue:#2E5090;
+  --blue-bg:#EEF3FB;
+  --red:#7F1D1D;
+  --red-bg:#FDF1F1;
+  --violet:#6D28D9;
+  --teal:#0F766E;
+  --amber:#92400E;
+  --amber-bg:#FFF9EC;
+  --green:#3B6D11;
+  --green-bg:#EEF5E4;
+  --devblue:#0369A1;
+  --sps:#E11D48;
+  --sps-bg:#FFE4E6;
+  --sps-feature:#E11D48;
+  --sps-feature-bg:#FFE4E6;
+  --seacoast:#0891B2;
+  --seacoast-bg:#CFFAFE;
+  --teaching:#D97706;
+  --teaching-bg:#FEF3C7;
+  --freelance:#1F2937;
+  --freelance-bg:#F3F4F6;
+  --speaking:#7C3AED;
+  --speaking-bg:#F5F3FF;
+  --warn:#C2410C;
+  --warn-bg:#FDF1EC;
+  --sched-empty:#EC4899;
+  --sched-focus:#F97316;
+  --shadow:0 1px 2px rgba(16,24,40,.04), 0 6px 16px rgba(16,24,40,.06);
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+html,body{background:var(--bg);}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--text);font-size:17px;-webkit-font-smoothing:antialiased;}
+.shell{max-width:640px;margin:0 auto;padding:14px 12px 32px;}
+@media(min-width:701px) and (max-width:1024px){ .shell{max-width:720px;padding:22px 20px 40px;} }
+@media(min-width:1025px){ .shell{max-width:920px;padding:28px 24px 48px;} }
+.ic{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0;opacity:.85;}
+.app-card{background:#fff;border:1px solid var(--border);border-radius:14px;box-shadow:var(--shadow);overflow:hidden;}
+.header{padding:20px 20px 0;}
+@media(min-width:701px){ .header{padding:24px 28px 0;} }
+.header-date{font-size:12.5px;letter-spacing:.09em;text-transform:uppercase;color:var(--text-faint);font-weight:600;margin-bottom:5px;}
+.header-row{display:flex;align-items:baseline;justify-content:space-between;gap:12px;}
+.header-title{font-size:25px;font-weight:600;color:var(--text);letter-spacing:-.01em;}
+.header-meta{font-size:12.5px;color:var(--text-faint);white-space:nowrap;}
+@media(max-width:600px){ .header-meta{display:none;} }
+.tabs{display:flex;gap:2px;overflow-x:auto;border-bottom:1px solid var(--border);margin-top:16px;padding:0 20px;-webkit-overflow-scrolling:touch;scrollbar-width:none;}
+@media(min-width:701px){ .tabs{padding:0 28px;} }
+.tabs::-webkit-scrollbar{display:none;}
+.tab{padding:9px 13px;font-size:14.5px;font-weight:500;color:var(--text-muted);white-space:nowrap;border-bottom:2px solid transparent;cursor:pointer;flex-shrink:0;}
+.tab.active{color:var(--blue);border-bottom-color:var(--blue);font-weight:600;}
+.pane{display:none;}
+.pane.active{display:block;}
+.surface{background:transparent;}
+.section{padding:24px 20px;}
+.section + .section{border-top:1px solid var(--border-light);}
+@media(min-width:701px){ .section{padding:30px 28px;} }
+.section.tight{padding-top:14px;padding-bottom:14px;}
+.sec-label{display:flex;align-items:center;gap:7px;font-size:12.5px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--text-muted);margin-bottom:12px;}
+.sec-label.blue{color:var(--blue);}
+.sec-label.red{color:var(--red);}
+.sec-label.warn{color:var(--warn);}
+.sec-label.violet{color:var(--violet);}
+.sec-label.teal{color:var(--teal);}
+.sec-label.devblue{color:var(--devblue);}
+.sec-label.sps{color:var(--sps-feature);}
+.dot{width:7px;height:7px;border-radius:50%;display:inline-block;margin-right:5px;flex-shrink:0;}
+.section.callout-red{background:var(--red-bg);}
+.section.callout-warn{background:var(--warn-bg);}
+.section.callout-blue{background:var(--blue-bg);}
+.section.callout-sps{background:var(--sps-feature-bg);}
+.weather-panel{background:var(--blue-bg);border-left:3px solid var(--blue);padding:22px 20px;}
+@media(min-width:701px){ .weather-panel{padding:28px 28px;} }
+.wx-line{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;}
+.wx-hi{font-size:34px;font-weight:700;color:var(--text);letter-spacing:-.01em;}
+.wx-lo{font-size:19px;font-weight:500;color:var(--text-muted);}
+.wx-feels{font-size:19px;font-weight:700;color:var(--text);}
+.wx-sub{font-size:14px;color:var(--text-muted);margin-top:6px;line-height:1.5;}
+.row{display:flex;gap:10px;padding:8px 0;align-items:flex-start;}
+.row + .row{border-top:1px solid var(--border-light);}
+.dir-label{font-size:13.5px;color:var(--text-faint);min-width:104px;flex-shrink:0;padding-top:1px;}
+.dir-val{font-size:15.5px;color:var(--text);flex:1;line-height:1.5;}
+.dir-val.flag{color:var(--amber);}
+.sched-row{display:flex;gap:12px;padding:10px 0 10px 12px;position:relative;}
+.sched-row + .sched-row{border-top:1px solid var(--border-light);}
+.sched-row::before{content:"";position:absolute;left:0;top:8px;bottom:8px;width:3px;border-radius:2px;background:var(--border);}
+.sched-row.role-focus::before{background:var(--sched-focus);}
+.sched-row.role-empty::before{background:var(--sched-empty);}
+.sched-row.role-gym::before{background:var(--blue);}
+.sched-row.role-seacoast::before{background:var(--seacoast);}
+.sched-row.role-sps::before{background:var(--sps);}
+.sched-time{width:68px;flex-shrink:0;font-size:14px;color:var(--text-muted);font-variant-numeric:tabular-nums;padding-top:1px;}
+.sched-title{font-size:16px;color:var(--text);line-height:1.4;}
+.sched-sub{font-size:13.5px;color:var(--text-faint);margin-top:2px;}
+.gp-grid{display:grid;grid-template-columns:1fr;}
+@media(min-width:701px){ .gp-grid{grid-template-columns:1fr 1fr;column-gap:28px;} }
+.gp-item{display:flex;gap:10px;padding:8px 0;}
+.gp-item .dir-label{color:var(--blue);font-weight:600;min-width:100px;}
+.pri-item{display:flex;gap:12px;padding:11px 0;}
+.pri-item + .pri-item{border-top:1px solid var(--border-light);}
+.pri-num{width:22px;height:22px;border-radius:50%;background:var(--blue-bg);color:var(--blue);font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px;}
+.pri-name{font-weight:600;font-size:16px;}
+.pri-meta{font-size:13px;color:var(--text-faint);margin-top:3px;}
+.pri-meta .overdue{color:var(--red);font-weight:700;}
+.pri-next{font-size:13.5px;color:var(--blue);margin-top:4px;}
+.badge{font-size:12px;padding:2px 8px;border-radius:100px;background:#F0F0EE;color:#6B7280;white-space:nowrap;}
+.badge-warn{background:var(--amber-bg);color:var(--amber);}
+.badge-ok{background:var(--green-bg);color:var(--green);}
+.badge-crit{background:var(--red-bg);color:var(--red);}
+.badge-high{background:var(--amber-bg);color:var(--amber);}
+.proj-grid{display:grid;grid-template-columns:1fr;column-gap:24px;}
+@media(min-width:701px){ .proj-grid{grid-template-columns:1fr 1fr;} }
+@media(min-width:1025px){ .proj-grid{grid-template-columns:1fr 1fr 1fr;} }
+.proj-group{margin-bottom:16px;}
+.proj-group-label{font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--text-faint);margin-bottom:6px;}
+.proj-row{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:6px 0 6px 10px;border-left:3px solid var(--border);font-size:15px;margin-bottom:2px;}
+.proj-row.r-seacoast{border-left-color:var(--seacoast);}
+.proj-row.r-teaching{border-left-color:var(--teaching);}
+.proj-row.r-freelance{border-left-color:#9CA3AF;}
+.proj-row.r-sps{border-left-color:var(--sps);}
+.proj-row.r-speaking{border-left-color:var(--speaking);}
+.proj-row.on-hold{color:var(--text-faint);}
+.proj-row .hold-tag{font-size:12px;color:var(--text-faint);flex-shrink:0;}
+.task{font-size:15px;padding:8px 0;display:flex;justify-content:space-between;align-items:flex-start;gap:8px;}
+.task + .task{border-top:1px solid var(--border-light);}
+.task-role{font-size:12.5px;color:var(--text-faint);margin-top:2px;display:block;}
+.tier-head{font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;margin:14px 0 4px;}
+.tier-head:first-child{margin-top:0;}
+.generated{font-size:12.5px;color:var(--text-faint);text-align:center;padding:14px 0 6px;}
+.workout-meta{font-size:13.5px;color:var(--text-faint);margin-bottom:10px;}
+.window-pill{font-size:13px;padding:3px 10px;border-radius:100px;display:inline-block;margin-bottom:12px;}
+.window-clear{background:var(--green-bg);color:var(--green);}
+.window-conflict{background:var(--amber-bg);color:var(--amber);}
+.rest-day{text-align:center;padding:1.5rem 0;color:var(--text-faint);font-size:16px;}
+.meal-head{font-size:12.5px;font-weight:700;color:var(--blue);text-transform:uppercase;letter-spacing:.06em;margin:12px 0 3px;}
+.meal-head:first-child{margin-top:0;}
+.meal-items{font-size:15.5px;color:var(--text);margin-bottom:3px;line-height:1.4;}
+.meal-macros{font-size:12.5px;color:var(--text-faint);display:flex;gap:14px;padding-bottom:9px;border-bottom:1px solid var(--border-light);}
+.table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;}
+.macro-table{width:100%;min-width:320px;border-collapse:collapse;font-size:13.5px;margin:6px 0 10px;}
+.macro-table th{font-size:11.5px;font-weight:700;color:var(--text-faint);text-transform:uppercase;letter-spacing:.05em;padding:5px 6px;text-align:right;}
+.macro-table th:first-child{text-align:left;}
+.macro-table td{padding:6px;border-top:1px solid var(--border-light);text-align:right;}
+.macro-table td:first-child{text-align:left;color:var(--text);}
+.macro-table tr.total-row td{font-weight:700;border-top:1px solid var(--border);}
+.macro-table tr.target-row td{color:var(--text-faint);}
+.macro-table tr.gap-row td{color:var(--amber);font-weight:600;}
+.macro-rec{font-size:14px;color:var(--text-muted);line-height:1.55;padding-top:10px;border-top:1px solid var(--border-light);margin-top:6px;}
+.bar-section{margin:16px 0 4px;}
+.bar-section-label{font-size:11.5px;font-weight:700;color:var(--text-faint);text-transform:uppercase;letter-spacing:.06em;margin-bottom:9px;}
+.bar-row{margin-bottom:10px;}
+.bar-label{display:flex;justify-content:space-between;font-size:13px;color:#555;margin-bottom:3px;}
+.bar-label span:last-child{color:var(--text-faint);}
+.bar-bg{height:6px;background:#F0EFEA;border-radius:4px;overflow:hidden;}
+.bar-fill{height:100%;border-radius:4px;background:var(--blue);}
+.bar-fill.over{background:var(--amber);}
+.pack-row{display:flex;gap:10px;padding:8px 0;font-size:15px;align-items:flex-start;}
+.pack-row + .pack-row{border-top:1px solid var(--border-light);}
+.pack-meal{font-weight:600;min-width:90px;flex-shrink:0;}
+.pack-conflict{font-size:12.5px;color:var(--amber);min-width:120px;flex-shrink:0;}
+.pack-swap{font-size:13.5px;color:var(--text-muted);flex:1;}
+.faith-verse{font-size:18px;line-height:1.65;color:var(--text);font-style:italic;margin-bottom:8px;}
+.faith-ref{font-size:13.5px;font-weight:700;color:var(--violet);text-transform:uppercase;letter-spacing:.06em;}
+.faith-placeholder{font-size:15px;color:var(--text-faint);font-style:italic;}
+.prayer-item{padding:8px 0;font-size:15.5px;color:var(--text);line-height:1.4;}
+.prayer-item + .prayer-item{border-top:1px solid var(--border-light);}
+.dev-title{font-size:17px;font-weight:700;color:var(--text);margin-bottom:8px;}
+.dev-body p{font-size:15.5px;color:var(--text);line-height:1.65;margin-bottom:10px;}
+.dev-question{font-size:14.5px;color:var(--devblue);font-style:italic;margin-top:10px;}
+.pcard-grid{display:grid;grid-template-columns:1fr;gap:14px;}
+@media(min-width:701px){ .pcard-grid{grid-template-columns:1fr 1fr;} }
+.pcard{border:1px solid var(--border);border-radius:8px;overflow:hidden;}
+.pcard-head{display:flex;justify-content:space-between;align-items:center;padding:8px 12px;font-size:13.5px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;}
+.pcard-head.seacoast{background:var(--seacoast-bg);color:var(--seacoast);}
+.pcard-head.teaching{background:var(--teaching-bg);color:var(--teaching);}
+.pcard-head.freelance{background:var(--freelance-bg);color:var(--freelance);}
+.pcard-head.sps{background:var(--sps-bg);color:var(--sps);}
+.pcard-body{padding:10px 12px;}
+.pcard-body .row{padding:6px 0;}
+.trip-day{font-weight:700;color:var(--teal);margin:12px 0 4px;font-size:14.5px;}
+.trip-day:first-child{margin-top:0;}
 </style>
 </head>
 <body>
-<div class="header">
-  <div class="header-date">SATURDAY, JULY 11</div>
-  <div class="header-title">Good morning, Adam.</div>
-</div>
-<div class="tabs">
-<div class="tab active" data-tab="overview">Overview</div>
-<div class="tab" data-tab="faith">Faith</div>
-<div class="tab" data-tab="morning">Morning Brief</div>
-<div class="tab" data-tab="fitness">Fitness</div>
-<div class="tab" data-tab="daily-dev">Daily Development</div>
-<div class="tab" data-tab="reference">Reference</div>
-</div>
+<svg style="display:none">
+<defs>
+<symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M2 12h2M20 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></symbol>
+<symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></symbol>
+<symbol id="i-compass" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M14.5 9.5l-2 5-5 2 2-5z"/></symbol>
+<symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></symbol>
+<symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.5" style="fill:currentColor;stroke:none"/></symbol>
+<symbol id="i-folder" viewBox="0 0 24 24"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7z"/></symbol>
+<symbol id="i-layers" viewBox="0 0 24 24"><path d="M12 2l9 5-9 5-9-5z"/><path d="M3 12l9 5 9-5"/><path d="M3 17l9 5 9-5"/></symbol>
+<symbol id="i-alert" viewBox="0 0 24 24"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><path d="M12 9v4"/><path d="M12 17h.01"/></symbol>
+<symbol id="i-receipt" viewBox="0 0 24 24"><path d="M4 2l1.5 1 1.5-1 1.5 1 1.5-1 1.5 1 1.5-1 1.5 1 1.5-1v20l-1.5-1-1.5 1-1.5-1-1.5 1-1.5-1-1.5 1-1.5-1-1.5 1V2z"/><path d="M8 8h8M8 12h8M8 16h5"/></symbol>
+<symbol id="i-book" viewBox="0 0 24 24"><path d="M2 4h7a3 3 0 0 1 3 3v13a2 2 0 0 0-2-2H2z"/><path d="M22 4h-7a3 3 0 0 0-3 3v13a2 2 0 0 1 2-2h8z"/></symbol>
+<symbol id="i-heart" viewBox="0 0 24 24"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 1 0-7.8 7.8l1 1L12 21l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.6z"/></symbol>
+<symbol id="i-sunrise" viewBox="0 0 24 24"><path d="M12 2v6M4.5 9.5l1.4 1.4M2 18h20M17.6 10.9l1.4-1.4M6 18a6 6 0 0 1 12 0"/><path d="M9 5l3-3 3 3"/></symbol>
+<symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+<symbol id="i-phone" viewBox="0 0 24 24"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></symbol>
+<symbol id="i-trending" viewBox="0 0 24 24"><path d="M3 17l6-6 4 4 8-8"/><path d="M17 7h4v4"/></symbol>
+<symbol id="i-layout" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></symbol>
+<symbol id="i-check-square" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M8 12l3 3 5-6"/></symbol>
+<symbol id="i-dumbbell" viewBox="0 0 24 24"><path d="M6 7v10M18 7v10"/><path d="M3 10v4M21 10v4"/><path d="M6 12h12"/></symbol>
+<symbol id="i-pie" viewBox="0 0 24 24"><path d="M21.21 15.89A10 10 0 1 1 8 2.83"/><path d="M22 12A10 10 0 0 0 12 2v10z" style="fill:currentColor;fill-opacity:.15;stroke:none"/></symbol>
+<symbol id="i-lightbulb" viewBox="0 0 24 24"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12.7c.6.5 1 1.3 1 2.3h6c0-1 .4-1.8 1-2.3A7 7 0 0 0 12 2z"/></symbol>
+<symbol id="i-map-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+<symbol id="i-plane" viewBox="0 0 24 24"><path d="M22 2L11 13"/><path d="M22 2l-7 20-4-9-9-4z"/></symbol>
+<symbol id="i-bed" viewBox="0 0 24 24"><path d="M2 20v-8a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v8"/><path d="M2 14h20"/><path d="M6 14V9a2 2 0 0 1 2-2h3v3"/></symbol>
+<symbol id="i-car" viewBox="0 0 24 24"><path d="M3 13l2-6h14l2 6"/><path d="M3 13v4h2M21 13v4h-2"/><circle cx="7" cy="17" r="1.5"/><circle cx="17" cy="17" r="1.5"/></symbol>
+<symbol id="i-list" viewBox="0 0 24 24"><path d="M8 6h13M8 12h13M8 18h13"/><path d="M3 6h.01M3 12h.01M3 18h.01"/></symbol>
+<symbol id="i-dollar" viewBox="0 0 24 24"><path d="M12 1v22"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></symbol>
+</defs>
+</svg>
+<div class="shell">
+<div class="app-card">
+  <div class="header">
+    <div class="header-date">SATURDAY, JULY 11</div>
+    <div class="header-row">
+      <div class="header-title">Good morning, Adam.</div>
+      <div class="header-meta">July 11, 2026</div>
+    </div>
+  </div>
+  <div class="tabs">
+  <div class="tab active" data-tab="overview">Overview</div>
+  <div class="tab" data-tab="faith">Faith</div>
+  <div class="tab" data-tab="morning">Morning Brief</div>
+  <div class="tab" data-tab="fitness">Fitness</div>
+  <div class="tab" data-tab="daily-dev">Daily Development</div>
+  <div class="tab" data-tab="weekly">Weekly</div>
+  <div class="tab" data-tab="reference">Reference</div>
+  </div>
 
+  
 <div class="pane active" id="pane-overview">
-  <div class="card">
-    <div class="card-label">Weather</div>
-    <div style="font-size:20px;font-weight:700;color:#0F172A;">98&deg; / 78&deg; &middot; Feels like 102&deg;</div>
-    <div style="font-size:13px;color:#64748B;margin-top:4px;">Humidity 90% &middot; Storms possible with flooding downpours &middot; Damaging wind gusts possible</div>
+
+  <div class="weather-panel">
+    <div class="sec-label"><svg class="ic"><use href="#i-sun"></use></svg>Weather</div>
+    <div class="wx-line"><span class="wx-hi">96&deg;</span><span class="wx-lo">/ 76&deg;</span><span class="wx-feels">Feels like 83&deg;</span></div>
+    <div class="wx-sub">Humidity 92% &middot; 90% chance of rain, heavy PM thunderstorms &middot; gusty winds possible</div>
   </div>
-  <div class="card">
-    <div class="card-label">Today's Schedule</div>
-    <div class="row row-focus"><span class="time">All day</span><span class="event">No events on the calendar today</span></div>
-    <div class="row row-focus"><span class="time">8:00-10:00 PM</span><span class="event">Evening Focus: Family / recovery</span></div>
+
+  <div class="section">
+    <div class="sec-label"><svg class="ic"><use href="#i-calendar"></use></svg>Today's schedule</div>
+    <div class="sched-row role-empty">
+      <div><div class="sched-title">No calendar events today</div></div>
+    </div>
+    <div class="sched-row role-focus">
+      <div class="sched-time">8:00 PM</div>
+      <div><div class="sched-title">Evening Focus: Family / Recovery</div></div>
+    </div>
   </div>
-  <div class="card">
-    <div class="card-label card-label-blue">Today's Game Plan</div>
-    <div class="row"><span class="dir-label">Protect:</span><span class="dir-val">Family time all day -- default Saturday, nothing on the calendar to protect against.</span></div>
-    <div class="row"><span class="dir-label">Main pressure:</span><span class="dir-val">4 overdue ChatGPT Scripts reviews and the Overview Video due tomorrow.</span></div>
-    <div class="row"><span class="dir-label">Tonight:</span><span class="dir-val">Family / recovery (default Saturday evening); optional Storyteller 101 Module 3 sketch if energy allows.</span></div>
-    <div class="row"><span class="dir-label">Watch out:</span><span class="dir-val flag">Nothing threatens family time today. Don't let the overdue script reviews slide into next week.</span></div>
+
+  <div class="section">
+    <div class="sec-label blue"><svg class="ic"><use href="#i-compass"></use></svg>Today's game plan</div>
+    <div class="gp-grid">
+      <div class="gp-item"><span class="dir-label">Protect:</span><span class="dir-val">The open calendar &mdash; no events today, keep it that way for family and recovery.</span></div>
+      <div class="gp-item"><span class="dir-label">Main pressure:</span><span class="dir-val">Overdue ChatGPT Scripts review backlog (Batches 3, 4, 5) plus tomorrow's Overview Video deadline.</span></div>
+      <div class="gp-item"><span class="dir-label">Tonight:</span><span class="dir-val">Family / Recovery (default Saturday theme).</span></div>
+      <div class="gp-item"><span class="dir-label">Watch out:</span><span class="dir-val flag">An unscheduled day can slip by with nothing done &mdash; give the SPS backlog and Freelance deadline real blocks.</span></div>
+    </div>
   </div>
-  <div class="card">
-    <div class="card-label">Open Work Windows</div>
-    <div class="row"><span class="dir-label">All day</span><span class="dir-val">Open -- default family/recovery, no calendar constraints</span></div>
-    <div class="row"><span class="dir-label">If working</span><span class="dir-val">Any window today -- prioritize the overdue script reviews, then Storyteller 101 Module 3</span></div>
-    <div class="row"><span class="dir-label">8:00-10:00 PM</span><span class="dir-val">Evening Focus block</span></div>
+
+  <div class="section">
+    <div class="sec-label"><svg class="ic"><use href="#i-clock"></use></svg>Open work windows</div>
+    <div class="row"><span class="dir-label">SST block:</span><span class="dir-val">6:00&ndash;7:15 AM (or anytime today, calendar is clear)</span></div>
+    <div class="row"><span class="dir-label">Freelance block:</span><span class="dir-val">9:00 AM&ndash;12:00 PM &mdash; finish Overview Video</span></div>
+    <div class="row"><span class="dir-label">Open:</span><span class="dir-val">12:00 PM&ndash;8:00 PM &mdash; family / recovery, no commitments</span></div>
   </div>
-  <div class="card">
-    <div class="card-label">Top Priorities</div>
-    <div class="pri-row"><span class="num">1</span><div style="flex:1;"><b>REVIEW ChatGPT Scripts (2-5)</b><div class="role" style="color:#999;">Uncategorized &middot; <span style="color:#7F1D1D;font-weight:600;">OVERDUE -- was due Jul 10</span></div><div style="font-size:12px;color:#534AB7;margin-top:2px;">Next action: knock out all four reviews in one sitting -- they're quick and already late.</div></div></div>
-    <div class="pri-row"><span class="num">2</span><div style="flex:1;"><b>Overview Video</b><div class="role" style="color:#999;">Uncategorized &middot; Due tomorrow, Jul 12</div><div style="font-size:12px;color:#534AB7;margin-top:2px;">Next action: finish and export before Sunday commitments start.</div></div></div>
-    <div class="pri-row"><span class="num">3</span><div style="flex:1;"><b>Seacoast Filmmaker Residency</b><div class="role" style="color:#155e75;">Seacoast &middot; Due Jul 16</div><div style="font-size:12px;color:#534AB7;margin-top:2px;">Next action: start the page-by-page markup pass on the full manual PDF.</div></div></div>
+
+  <div class="section">
+    <div class="sec-label"><svg class="ic"><use href="#i-list"></use></svg>Top priorities</div>
+    <div class="pri-item">
+      <span class="pri-num">1</span>
+      <div>
+        <div class="pri-name">REVIEW ChatGPT Scripts &mdash; Batches 3, 4, 5</div>
+        <div class="pri-meta"><span class="dot" style="background:#E11D48"></span>Smartphone Storytellers &middot; <span class="overdue">OVERDUE (was due Jul 10)</span></div>
+        <div class="pri-next">Next action: Review all three batches back-to-back before starting anything else.</div>
+      </div>
+    </div>
+    <div class="pri-item">
+      <span class="pri-num">2</span>
+      <div>
+        <div class="pri-name">Overview Video</div>
+        <div class="pri-meta"><span class="dot" style="background:#1F2937"></span>Freelance &middot; due tomorrow, Jul 12</div>
+        <div class="pri-next">Next action: Finish the edit and export today so it's not a scramble tomorrow.</div>
+      </div>
+    </div>
+    <div class="pri-item">
+      <span class="pri-num">3</span>
+      <div>
+        <div class="pri-name">SALT Talk Pitches</div>
+        <div class="pri-meta"><span class="dot" style="background:#7C3AED"></span>Speaking &middot; no deadline</div>
+        <div class="pri-next">Next action: Capture pitch ideas while they're fresh.</div>
+      </div>
+    </div>
   </div>
-  <div class="card" style="background:#FEF2F2;">
-    <div class="card-label card-label-red">Capacity</div>
-    <div style="font-size:13px;color:#1a1a1a;">Capacity: Open. No calendar events today -- the full day is available for family, recovery, or optional work.</div>
+
+  <div class="section callout-warn">
+    <div class="sec-label warn"><svg class="ic"><use href="#i-alert"></use></svg>Capacity</div>
+    <div class="dir-val">Capacity: Open. No calendar commitments today &mdash; only the SPS backlog and tomorrow's Freelance deadline create any real pressure.</div>
   </div>
-  <div class="card">
-    <div class="card-label">Open Projects</div>
-    <div class="sec-head" style="margin-top:0;">Seacoast</div>
-    <div class="task"><span>Seacoast Filmmaker Residency</span><span class="badge">On Hold</span></div>
-    <div class="sec-head">Teaching</div>
-    <div class="task"><span>CM 1110 (Moody)</span></div>
-    <div class="task"><span>SOC 2204 (Moody)</span></div>
-    <div class="sec-head">Freelance</div>
-    <div class="task"><span>American Integrity (ACEP)</span></div>
-    <div class="task"><span>Renew Global (ACEP)</span></div>
-    <div class="task"><span>Bread of Life (ACEP)</span></div>
-    <div class="sec-head">Smartphone Storytellers</div>
-    <div class="task"><span>Storyteller 101</span></div>
-    <div class="task"><span>Product Launch (7 Products)</span><span class="badge">On Hold</span></div>
-    <div class="sec-head">Speaking</div>
-    <div class="task"><span>CFX 2026</span></div>
+
+  <div class="section">
+    <div class="sec-label"><svg class="ic"><use href="#i-layers"></use></svg>Open projects</div>
+    <div class="proj-grid">
+      <div class="proj-group">
+        <div class="proj-group-label">Seacoast</div>
+        <div class="proj-row r-seacoast on-hold">Seacoast Filmmaker Residency <span class="hold-tag">On Hold</span></div>
+      </div>
+      <div class="proj-group">
+        <div class="proj-group-label">Teaching</div>
+        <div class="proj-row r-teaching">CM 1110 (Moody)</div>
+        <div class="proj-row r-teaching">SOC 2204 (Moody)</div>
+      </div>
+      <div class="proj-group">
+        <div class="proj-group-label">Freelance</div>
+        <div class="proj-row r-freelance">American Integrity (ACEP)</div>
+        <div class="proj-row r-freelance">Renew Global (ACEP)</div>
+        <div class="proj-row r-freelance">Bread of Life (ACEP)</div>
+      </div>
+      <div class="proj-group">
+        <div class="proj-group-label">Smartphone Storytellers</div>
+        <div class="proj-row r-sps">Storyteller 101</div>
+        <div class="proj-row r-sps on-hold">Product Launch (7 Products) <span class="hold-tag">On Hold</span></div>
+      </div>
+      <div class="proj-group">
+        <div class="proj-group-label">Speaking</div>
+        <div class="proj-row r-speaking">CFX 2026</div>
+      </div>
+    </div>
   </div>
-  <div class="card" style="background:#FEF2F2;">
-    <div class="card-label card-label-red">Heads Up</div>
-    <div class="task"><span class="task-role" style="color:#7F1D1D;">Uncategorized</span> REVIEW ChatGPT Scripts (2, 3, 4, 5) <span class="badge badge-warn">Overdue since Jul 10</span></div>
+
+  <div class="section callout-red">
+    <div class="sec-label red"><svg class="ic"><use href="#i-alert"></use></svg>Heads up</div>
+    <div class="dir-val"><b>REVIEW ChatGPT Scripts &mdash; Batches 3, 4, 5</b> (Smartphone Storytellers) overdue since Friday, Jul 10.</div>
   </div>
-  <div class="card">
-    <div class="card-label card-label-blue">Freelance</div>
-    <div style="font-size:13px;">There are 321 receipts that need manual review.</div>
-    <div style="font-size:11px;color:#999;margin-top:4px;">Say "Review ACEP receipts" to process them.</div>
+
+  <div class="section callout-blue">
+    <div class="sec-label blue"><svg class="ic"><use href="#i-receipt"></use></svg>Freelance</div>
+    <div class="dir-val">There are 321 receipts that need manual review.</div>
+    <div class="wx-sub">Say "Review ACEP receipts" to process them.</div>
   </div>
-  <div class="generated">Generated July 11, 2026 at 4:23 AM ET</div>
+
+  <div class="generated">Generated July 11, 2026 at 10:49 PM ET</div>
 </div>
 
-
+  
 <div class="pane" id="pane-faith">
-  <div class="card">
-    <div class="card-label" style="background:#7C3AED;color:#fff;padding:4px 10px;border-radius:6px;display:inline-block;">My Utmost for His Highest</div>
-    <div class="faith-ref" style="margin-top:10px;">July 11: THE SPIRITUALLY VIGOROUS SAINT</div>
+  <div class="section">
+    <div class="sec-label violet"><svg class="ic"><use href="#i-book"></use></svg>My Utmost for His Highest</div>
+    <div class="faith-ref">July 11: THE SPIRITUALLY VIGOROUS SAINT</div>
     <div class="faith-verse">&ldquo;. . . that I may know Him . . . .&rdquo;</div>
     <div class="faith-ref">&mdash; Philippians 3:10</div>
-    <p style="font-size:13px;color:#1a1a1a;line-height:1.6;margin-top:10px;margin-bottom:8px;">A saint is not to take the initiative toward self-realization, but toward knowing Jesus Christ. A spiritually vigorous saint never believes that his circumstances simply happen at random, nor does he ever think of his life as being divided into the secular and the sacred. He sees every situation in which he finds himself as the means of obtaining a greater knowledge of Jesus Christ, and he has an attitude of unrestrained abandon and total surrender about him. The Holy Spirit is determined that we will have the realization of Jesus Christ in every area of our lives, and He will bring us back to the same point over and over again until we do. Self-realization only leads to the glorification of good works, whereas a saint of God glorifies Jesus Christ through his good works. Whatever we may be doing&mdash;even eating, drinking, or washing disciples' feet&mdash;we have to take the initiative of realizing and recognizing Jesus Christ in it. Every phase of our life has its counterpart in the life of Jesus. Our Lord realized His relationship to the Father even in the most menial task. &ldquo;Jesus, knowing . . . that He had come from God and was going to God, . . . took a towel . . . and began to wash the disciples' feet . . .&rdquo; (John 13:3&ndash;5).</p>
+    <p style="font-size:13px;color:#1a1a1a;line-height:1.6;margin-top:10px;margin-bottom:8px;">A saint is not to take the initiative toward self-realization, but toward knowing Jesus Christ. A spiritually vigorous saint never believes that his circumstances simply happen at random, nor does he ever think of his life as being divided into the secular and the sacred. He sees every situation in which he finds himself as the means of obtaining a greater knowledge of Jesus Christ, and he has an attitude of unrestrained abandon and total surrender about him. The Holy Spirit is determined that we will have the realization of Jesus Christ in every area of our lives, and He will bring us back to the same point over and over again until we do. Self-realization only leads to the glorification of good works, whereas a saint of God glorifies Jesus Christ through his good works. Whatever we may be doing&mdash;even eating, drinking, or washing disciples&rsquo; feet&mdash;we have to take the initiative of realizing and recognizing Jesus Christ in it. Every phase of our life has its counterpart in the life of Jesus. Our Lord realized His relationship to the Father even in the most menial task. &ldquo;Jesus, knowing . . . that He had come from God and was going to God, . . . took a towel . . . and began to wash the disciples&rsquo; feet . . .&rdquo; (John 13:3&ndash;5).</p>
     <p style="font-size:13px;color:#1a1a1a;line-height:1.6;margin-bottom:8px;">The aim of a spiritually vigorous saint is &ldquo;that I may know Him . . .&rdquo; Do I know Him where I am today? If not, I am failing Him. I am not here for self-realization, but to know Jesus Christ. In Christian work our initiative and motivation are too often simply the result of realizing that there is work to be done and that we must do it. Yet that is never the attitude of a spiritually vigorous saint. His aim is to achieve the realization of Jesus Christ in every set of circumstances.</p>
   </div>
-  <div class="card">
-    <div class="card-label" style="background:#7C3AED;color:#fff;padding:4px 10px;border-radius:6px;display:inline-block;">Prayer List</div>
+  <div class="section">
+    <div class="sec-label violet"><svg class="ic"><use href="#i-heart"></use></svg>Prayer List</div>
     <div class="prayer-item">Brad Zimmerman</div>
     <div class="prayer-item">Austin Allen</div>
     <div class="prayer-item">Jirah</div>
@@ -204,165 +381,186 @@ body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; b
     <div class="prayer-item">Moondog</div>
     <div class="prayer-item">Jada Jones Family</div>
   </div>
-  <div class="generated">Generated July 11, 2026 at 4:23 AM ET</div>
+  <div class="generated">Generated July 11, 2026 at 10:49 PM ET</div>
 </div>
 
-
+  
 <div class="pane" id="pane-morning">
-  <div class="card">
-    <div class="card-label card-label-blue">Morning Read</div>
-    <p style="font-size:13px;line-height:1.6;margin-bottom:8px;">Today's calendar is completely clear -- no meetings, no obligations, just a Saturday. That said, four ChatGPT Scripts review tasks slipped a day past due yesterday and the Overview Video is due tomorrow, so there's real pressure sitting in Things even without a scheduled block. The week ahead stays quiet through Sunday, then picks up Monday with a debrief call and Film Team Weekly, CFA Dress Like a Cow Day Tuesday, and Lynne heading to summer camp starting next Friday. No Smartphone Storytellers tasks are flagged in Things today, so the smart move is to protect this as a recovery day, clear the overdue script reviews if a natural window opens, and let any found time go toward Storyteller 101's Module 3 build.</p>
-    <p style="font-size:13px;line-height:1.6;"><b>Watch out for:</b> the four overdue ChatGPT Scripts reviews quietly piling up before Monday's Film Team Weekly call.</p>
+
+  <div class="section">
+    <div class="sec-label blue"><svg class="ic"><use href="#i-sunrise"></use></svg>Morning Read</div>
+    <p style="font-size:15.5px;line-height:1.65;">Today is unusually clear: Saturday, July 11 has no calendar events at all, which opens real margin for family and recovery. The main pressure is a small backlog of overdue Smartphone Storytellers tasks (ChatGPT Scripts Batches 3, 4, and 5, due yesterday) and tomorrow's Overview Video deadline for Freelance. Humid, stormy weather (96&deg; high, 90% chance of rain) makes today a good day to stay in and knock out desk work rather than plan anything outdoors. The recommended strategy is to clear the SPS review backlog first, finish the Overview Video so it isn't a scramble tomorrow, then protect the rest of the day for family and rest per the Saturday default.</p>
+    <p style="font-size:15.5px;line-height:1.65;margin-top:8px;"><b>Watch out for:</b> letting the open calendar turn into a day where nothing gets done &mdash; both the SPS backlog and the Freelance deadline need dedicated blocks even on an unscheduled day.</p>
   </div>
-  <div class="card" style="background:#FEF2F2;">
-    <div class="card-label card-label-red">What You Might Be Forgetting</div>
-    <div class="row"><span class="dir-val"><b>Overview Video -- due tomorrow.</b> No time has been set aside for it yet, and Sunday mornings are church, not work.</span></div>
-    <div class="row"><span class="dir-val"><b>Summer Camp packing (Jul 18-22).</b> A full week out for the kids starts in a week -- worth starting the prep list now.</span></div>
-    <div class="row"><span class="dir-val"><b>Seacoast Filmmaker Residency markup pass.</b> Deadline is Jul 16 (5 days out) and the project has been On Hold pending your review -- it needs a work block soon.</span></div>
+
+  <div class="section callout-red">
+    <div class="sec-label red"><svg class="ic"><use href="#i-alert"></use></svg>What You Might Be Forgetting</div>
+    <div class="dir-val" style="margin-bottom:10px;"><b>NJ Trip &mdash; hotel decision.</b> The Jul 24 &ndash; Aug 3/4 road trip is two weeks out and nothing is booked yet. Plan A vs. Plan B (which one depends on Chesapeake Bay sailing weather) still needs to be decided so hotels can be locked in.</div>
+    <div class="dir-val"><b>ACEP receipts backlog.</b> 321 receipts are sitting unreviewed &mdash; it's been building for a while and is easy to keep deferring.</div>
   </div>
-  <div class="card">
-    <div class="card-label card-label-blue">What's Next</div>
-    <div class="pri-row"><span class="num">1</span><span><b>Clear the 4 overdue ChatGPT Scripts reviews</b> -- they've been sitting since Friday and are quick wins that stop the overdue count from growing.</span></div>
-    <div class="pri-row"><span class="num">2</span><span><b>Finish the Overview Video</b> -- due tomorrow; don't let it get squeezed by Sunday's church and family commitments.</span></div>
-    <div class="pri-row"><span class="num">3</span><span><b>Advance Storyteller 101 Module 3</b> -- the highest-priority growth initiative, but nothing is queued in Things, so it only moves if self-initiated today.</span></div>
-    <div class="pri-row"><span class="num">4</span><span><b>Start the Seacoast Filmmaker Residency markup pass</b> -- due Jul 16 and currently stalled On Hold.</span></div>
-    <div class="pri-row"><span class="num">5</span><span><b>Shape the SALT Talk Pitches</b> -- newly captured today, worth developing while fresh; may feed CFX 2026 talk structure.</span></div>
+
+  <div class="section">
+    <div class="sec-label blue"><svg class="ic"><use href="#i-arrow-right"></use></svg>What's Next</div>
+    <div class="pri-item"><span class="pri-num">1</span><div><div class="pri-name">Clear the ChatGPT Scripts review backlog</div><div class="pri-meta">Unblocks the SPS content pipeline &mdash; overdue since yesterday.</div></div></div>
+    <div class="pri-item"><span class="pri-num">2</span><div><div class="pri-name">Finish the Overview Video</div><div class="pri-meta">Due tomorrow, Sun Jul 12 &mdash; a Freelance deliverable.</div></div></div>
+    <div class="pri-item"><span class="pri-num">3</span><div><div class="pri-name">Capture SALT Talk Pitches</div><div class="pri-meta">Speaking pipeline &mdash; best jotted down while it's top of mind.</div></div></div>
+    <div class="pri-item"><span class="pri-num">4</span><div><div class="pri-name">Begin the Filmmaker Residency markup pass</div><div class="pri-meta">Seacoast &mdash; 5 days to the Jul 16 deadline, currently On Hold.</div></div></div>
+    <div class="pri-item"><span class="pri-num">5</span><div><div class="pri-name">Decide NJ Trip Plan A vs. B</div><div class="pri-meta">Weather call needed before the Jul 24 departure &mdash; nothing booked yet.</div></div></div>
   </div>
-  <div class="card">
-    <div class="card-label" style="background:#9f1239;color:#fff;padding:4px 10px;border-radius:6px;display:inline-block;">Smartphone Storytellers</div>
-    <div class="row row-sps" style="border-radius:8px;padding:6px 8px;"><span class="dir-label">Status:</span><span class="dir-val">No active Things tasks tagged SST today. projects.md shows Storyteller 101 in active build (Module 3) and the 7-Product Launch on hold pending that launch.</span></div>
-    <div class="row row-sps" style="border-radius:8px;padding:6px 8px;"><span class="dir-label">Today's move:</span><span class="dir-val">Sketch or outline Module 3 content, even roughly -- nothing is queued in Things, so this only happens if self-initiated.</span></div>
-    <div class="row row-sps" style="border-radius:8px;padding:6px 8px;"><span class="dir-label">Morning block:</span><span class="dir-val">No SST-tagged tasks and no work block on today's calendar. If time opens up, Module 3 build takes priority over anything else.</span></div>
+
+  <div class="section callout-sps">
+    <div class="sec-label sps"><svg class="ic"><use href="#i-phone"></use></svg>Smartphone Storytellers</div>
+    <div class="row"><span class="dir-label" style="color:var(--sps-feature)">Status:</span><span class="dir-val">Building &mdash; Storyteller 101 course development is active (Module 3 next); the 7-Product Launch plan stays on hold until the course ships.</span></div>
+    <div class="row"><span class="dir-label" style="color:var(--sps-feature)">Today's move:</span><span class="dir-val">Clear the overdue ChatGPT Scripts review backlog (Batches 3, 4, 5) &mdash; it's the single blocker on the next content step.</span></div>
+    <div class="row"><span class="dir-label" style="color:var(--sps-feature)">Morning block:</span><span class="dir-val">Review Batches 3, 4, and 5 back-to-back; if time remains, start outlining Module 3.</span></div>
   </div>
-  <div class="card">
-    <div class="card-label card-label-blue">Opportunities</div>
-    <div class="row row-seacoast" style="border-radius:8px;padding:6px 8px;"><span class="dir-val"><b>Seacoast Filmmaker Residency</b> <span style="font-size:11px;">(Seacoast)</span> -- moving the markup pass forward today closes the gap before Jul 16 and unblocks confirming Christmas/Easter dates.</span></div>
-    <div class="row row-sps" style="border-radius:8px;padding:6px 8px;"><span class="dir-val"><b>Storyteller 101 Module 3</b> <span style="font-size:11px;">(Smartphone Storytellers)</span> -- building momentum here compounds toward the Aug 31 launch deadline.</span></div>
-    <div class="row" style="border-radius:8px;padding:6px 8px;"><span class="dir-val"><b>SALT Talk Pitches</b> <span style="font-size:11px;color:#999;">(Uncategorized)</span> -- shaping these while fresh could feed CFX 2026 talk structure work.</span></div>
+
+  <div class="section">
+    <div class="sec-label blue"><svg class="ic"><use href="#i-trending"></use></svg>Opportunities</div>
+    <div class="row"><span class="dot" style="background:#E11D48;margin-top:6px"></span><span class="dir-val"><b>REVIEW ChatGPT Scripts</b> <span style="color:var(--sps)">Smartphone Storytellers</span> &mdash; clearing this backlog unblocks the next round of content production for Storyteller 101.</span></div>
+    <div class="row"><span class="dot" style="background:#1F2937;margin-top:6px"></span><span class="dir-val"><b>Overview Video</b> <span style="color:var(--freelance)">Freelance</span> &mdash; finishing tomorrow's deliverable early frees Sunday for family and margin.</span></div>
+    <div class="row"><span class="dot" style="background:#0891B2;margin-top:6px"></span><span class="dir-val"><b>Seacoast Filmmaker Residency</b> <span style="color:var(--seacoast)">Seacoast</span> &mdash; starting the markup pass now creates breathing room before the Jul 16 deadline given its On Hold status.</span></div>
   </div>
-  <div class="card">
-    <div class="card-label">Weather</div>
-    <div style="font-size:13px;">Feels like 102&deg; &middot; High 98&deg; / Low 78&deg; &middot; Humidity 90% &middot; Storms possible, flooding downpours and damaging wind gusts possible</div>
+
+  <div class="section">
+    <div class="sec-label"><svg class="ic"><use href="#i-sun"></use></svg>Weather</div>
+    <div class="dir-val">Feels like 83&deg; &middot; High 96&deg; / Low 76&deg; &middot; Humidity 92% &middot; 90% chance of rain, heavy PM thunderstorms</div>
   </div>
-  <div class="card">
-    <div class="card-label card-label-blue">Recommended Sequence</div>
-    <div class="row"><span class="dir-label" style="color:#2E5090;font-weight:700;">Anytime AM</span><span class="dir-val">Clear the 4 overdue ChatGPT Scripts reviews (quick task)</span></div>
-    <div class="row"><span class="dir-label" style="color:#2E5090;font-weight:700;">Late morning</span><span class="dir-val">Finish the Overview Video (due tomorrow)</span></div>
-    <div class="row"><span class="dir-label" style="color:#2E5090;font-weight:700;">Midday-afternoon</span><span class="dir-val">Family / recovery (protected)</span></div>
-    <div class="row"><span class="dir-label" style="color:#2E5090;font-weight:700;">If time allows</span><span class="dir-val">Storyteller 101 Module 3 sketch or Seacoast markup pass</span></div>
-    <div class="row"><span class="dir-label" style="color:#2E5090;font-weight:700;">8:00-10:00 PM</span><span class="dir-val">Evening Focus: family / recovery</span></div>
+
+  <div class="section">
+    <div class="sec-label blue"><svg class="ic"><use href="#i-clock"></use></svg>Recommended Sequence</div>
+    <div class="row"><span class="dir-label" style="color:var(--blue);font-weight:700">6:00&ndash;8:00 AM</span><span class="dir-val">SST block &mdash; clear ChatGPT Scripts Batches 3, 4, 5</span></div>
+    <div class="row"><span class="dir-label" style="color:var(--blue);font-weight:700">8:00&ndash;9:00 AM</span><span class="dir-val">Rest day, no workout &mdash; free time / margin</span></div>
+    <div class="row"><span class="dir-label" style="color:var(--blue);font-weight:700">9:00 AM&ndash;12:00 PM</span><span class="dir-val">Freelance &mdash; finish Overview Video for tomorrow's deadline</span></div>
+    <div class="row"><span class="dir-label" style="color:var(--blue);font-weight:700">12:00&ndash;5:00 PM</span><span class="dir-val">Family / recovery (Saturday default)</span></div>
+    <div class="row"><span class="dir-label" style="color:var(--blue);font-weight:700">5:00&ndash;8:00 PM</span><span class="dir-val">Family time (protected)</span></div>
+    <div class="row"><span class="dir-label" style="color:var(--blue);font-weight:700">8:00&ndash;10:00 PM</span><span class="dir-val">Evening Focus &mdash; Family / Recovery</span></div>
   </div>
-  <div class="card">
-    <div class="card-label">Deadline Pressure</div>
-    <div class="sec-head" style="margin-top:0;color:#7F1D1D;">OVERDUE</div>
-    <div class="task row-personal"><span><b>REVIEW ChatGPT Scripts - 2</b><div class="task-role" style="color:#999;">Uncategorized</div></span><span style="color:#7F1D1D;font-weight:700;">Jul 10</span></div>
-    <div class="task row-personal"><span><b>REVIEW ChatGPT Scripts - 3</b><div class="task-role" style="color:#999;">Uncategorized</div></span><span style="color:#7F1D1D;font-weight:700;">Jul 10</span></div>
-    <div class="task row-personal"><span><b>REVIEW ChatGPT Scripts - 4</b><div class="task-role" style="color:#999;">Uncategorized</div></span><span style="color:#7F1D1D;font-weight:700;">Jul 10</span></div>
-    <div class="task row-personal"><span><b>REVIEW ChatGPT Scripts - 5</b><div class="task-role" style="color:#999;">Uncategorized</div></span><span style="color:#7F1D1D;font-weight:700;">Jul 10</span></div>
-    <div class="sec-head" style="color:#92400e;">TOMORROW</div>
-    <div class="task row-personal"><span><b>Overview Video</b><div class="task-role" style="color:#999;">Uncategorized</div></span><span style="color:#92400e;font-weight:700;">Jul 12</span></div>
-    <div class="sec-head" style="color:#64748B;">THIS WEEK</div>
-    <div class="task row-seacoast" style="border-radius:6px;padding:7px 8px;"><span><b>Seacoast Filmmaker Residency</b><div class="task-role" style="color:#155e75;">Seacoast</div></span><span style="color:#64748B;">Jul 16</span></div>
+
+  <div class="section">
+    <div class="sec-label"><svg class="ic"><use href="#i-alert"></use></svg>Deadline Pressure</div>
+    <div class="tier-head">TODAY</div>
+    <div class="task"><div><div>REVIEW ChatGPT Scripts &mdash; Batches 3, 4, 5<span class="task-role" style="color:var(--sps)">Smartphone Storytellers</span></div></div><div style="color:var(--red);font-weight:700;">OVERDUE</div></div>
+    <div class="tier-head">TOMORROW</div>
+    <div class="task"><div><div>Overview Video<span class="task-role" style="color:var(--freelance)">Freelance</span></div></div><div>TOMORROW</div></div>
+    <div class="tier-head">THIS WEEK</div>
+    <div class="task"><div><div>Seacoast Filmmaker Residency<span class="task-role" style="color:var(--seacoast)">Seacoast</span></div></div><div>Thu Jul 16</div></div>
   </div>
-  <div class="card">
-    <div class="card-label">Project Cards</div>
-    <div class="proj-card-head seacoast"><span>Seacoast</span><span class="badge badge-high">High</span></div>
-    <div class="row"><span class="dir-label">Why today:</span><span class="dir-val">Deadline in 5 days (Jul 16) and the curriculum plan needs to be finished.</span></div>
-    <div class="row"><span class="dir-label">Best move:</span><span class="dir-val">If work time opens today, use it for the page-by-page markup pass on the full manual PDF.</span></div>
-    <div class="row"><span class="dir-label">Watch out:</span><span class="dir-val flag">Currently marked On Hold in projects.md while paused for your review pass -- don't let the Jul 16 deadline slip further.</span></div>
-    <div class="row"><span class="dir-label">Next:</span><span class="dir-val" style="color:#999;">Fold markup notes back into source docs, then confirm exact Christmas/Easter dates and settle Stories-vs-Recaps order.</span></div>
+
+  <div class="section">
+    <div class="sec-label"><svg class="ic"><use href="#i-layout"></use></svg>Project Cards</div>
+    <div class="pcard-grid">
+      <div class="pcard">
+        <div class="pcard-head seacoast">Seacoast <span class="badge badge-high">High</span></div>
+        <div class="pcard-body">
+          <div class="row"><span class="dir-label">Why today:</span><span class="dir-val">Filmmaker Residency curriculum plan due Thu Jul 16, still On Hold pending Adam's review pass.</span></div>
+          <div class="row"><span class="dir-label">Best move:</span><span class="dir-val">Do the page-by-page markup pass on the full manual PDF.</span></div>
+          <div class="row"><span class="dir-label">Watch out:</span><span class="dir-val flag">Only 5 days out and still On Hold &mdash; risk of slipping.</span></div>
+        </div>
+      </div>
+      <div class="pcard">
+        <div class="pcard-head freelance">Freelance <span class="badge badge-crit">Critical</span></div>
+        <div class="pcard-body">
+          <div class="row"><span class="dir-label">Why today:</span><span class="dir-val">Overview Video is due tomorrow, Sun Jul 12.</span></div>
+          <div class="row"><span class="dir-label">Best move:</span><span class="dir-val">Finish the edit and export it today.</span></div>
+          <div class="row"><span class="dir-label">Watch out:</span><span class="dir-val">Slipping to tomorrow eats into family/margin time.</span></div>
+        </div>
+      </div>
+      <div class="pcard">
+        <div class="pcard-head sps" style="background:var(--speaking-bg);color:var(--speaking)">Speaking <span class="badge badge-ok">Low</span></div>
+        <div class="pcard-body">
+          <div class="row"><span class="dir-label">Why today:</span><span class="dir-val">SALT Talk Pitches was added today, no rush.</span></div>
+          <div class="row"><span class="dir-label">Best move:</span><span class="dir-val">Jot down pitch ideas while fresh.</span></div>
+          <div class="row"><span class="dir-label">Watch out:</span><span class="dir-val">Nothing &mdash; low pressure.</span></div>
+        </div>
+      </div>
+    </div>
   </div>
-  <div class="card">
-    <div class="card-label card-label-blue">Do / Defer / Decide</div>
-    <div class="row"><span class="dir-label">Do today:</span><span class="dir-val">Clear overdue ChatGPT Scripts reviews (2-5); finish Overview Video (due tomorrow).</span></div>
-    <div class="row"><span class="dir-label">Defer:</span><span class="dir-val">Seacoast Filmmaker Residency markup pass -- push to a Monday/Tuesday work block unless free time opens today; Jul 16 gives some room. SALT Talk Pitches -- let sit a day or two, no deadline yet.</span></div>
-    <div class="row"><span class="dir-label">Decide:</span><span class="dir-val">If a work window opens today, decide between clearing script reviews vs. starting Storyteller 101 Module 3 -- both matter, but script reviews are the quicker win.</span></div>
+
+  <div class="section callout-blue">
+    <div class="sec-label blue"><svg class="ic"><use href="#i-check-square"></use></svg>Do / Defer / Decide</div>
+    <div class="row"><span class="dir-label">Do today:</span><span class="dir-val">Clear the ChatGPT Scripts backlog; finish the Overview Video.</span></div>
+    <div class="row"><span class="dir-label">Defer:</span><span class="dir-val">Teaching course reviews (CM 1110, SOC 2204) &mdash; not due until August/October.</span></div>
+    <div class="row"><span class="dir-label">Decide:</span><span class="dir-val">NJ Trip Plan A vs. B &mdash; the Chesapeake sailing weather call.</span></div>
   </div>
-  <div class="card" style="background:#FEF2F2;">
-    <div class="card-label card-label-red">Overdue / At Risk</div>
-    <div class="row"><span class="dir-val"><b>REVIEW ChatGPT Scripts (2, 3, 4, 5)</b> -- overdue since Jul 10. <span style="color:#534AB7;">Do it today</span> -- they're quick and already late.</span></div>
-    <div class="row"><span class="dir-val"><b>Seacoast Filmmaker Residency</b> -- On Hold with a Jul 16 deadline. <span style="color:#534AB7;">Schedule it</span> -- needs a Monday or Tuesday work block to avoid slipping.</span></div>
+
+  <div class="section callout-red">
+    <div class="sec-label red"><svg class="ic"><use href="#i-alert"></use></svg>Overdue / At Risk</div>
+    <div class="task"><div><div>REVIEW ChatGPT Scripts &mdash; Batches 3, 4, 5<span class="task-role" style="color:var(--sps)">Smartphone Storytellers, was due Jul 10</span></div></div><div style="color:var(--red);font-weight:700;">Do it today</div></div>
   </div>
-  <div class="generated">Generated July 11, 2026 at 4:23 AM ET</div>
+
+  <div class="generated">Generated July 11, 2026 at 10:49 PM ET</div>
 </div>
 
-
+  
 <div class="pane" id="pane-fitness">
-  <div class="card">
-    <div class="card-label">Tomorrow's Workout</div>
-    <div class="rest-day">Rest Day -- Recovery focus</div>
+  <div class="section">
+    <div class="sec-label"><svg class="ic"><use href="#i-dumbbell"></use></svg>Today's Workout</div>
+    <div class="rest-day">Rest Day &mdash; Recovery focus</div>
   </div>
-  <div class="card">
-    <div class="card-label">Macro Plan</div>
-    
+  <div class="section">
+    <div class="sec-label"><svg class="ic"><use href="#i-pie"></use></svg>Macro Plan</div>
+    <span class="window-pill window-clear">No workout today &mdash; Rest Day</span>
+
     <div class="meal-head">Morning Coffee</div>
-    <div class="meal-items">1/2 serving collagen protein powder (2 TBSP) mixed into coffee</div>
+    <div class="meal-items">1/2 serving collagen protein powder mixed into coffee</div>
     <div class="meal-macros"><span>18 cal</span><span>4g protein</span><span>0g carbs</span><span>0g fat</span></div>
-    
+
     <div class="meal-head">Breakfast</div>
     <div class="meal-items">2 whole eggs + 4 egg whites (scrambled or fried)</div>
     <div class="meal-macros"><span>210 cal</span><span>28g protein</span><span>2g carbs</span><span>10g fat</span></div>
-    
+
     <div class="meal-head">Snack 1</div>
-    <div class="meal-items">1 scoop Cocoa Crispy's Protein Shake (mixed with water)</div>
+    <div class="meal-items">1 scoop Cocoa Crispy's Protein Shake (water)</div>
     <div class="meal-macros"><span>130 cal</span><span>25g protein</span><span>6g carbs</span><span>2g fat</span></div>
-    
+
     <div class="meal-head">Lunch</div>
-    <div class="meal-items">Project Lean Nation meal (rotate between favorites)</div>
+    <div class="meal-items">Project Lean Nation meal (rotate favorites)</div>
     <div class="meal-macros"><span>450 cal</span><span>35g protein</span><span>45g carbs</span><span>12g fat</span></div>
-    
+
     <div class="meal-head">Post-Lunch Shake</div>
-    <div class="meal-items">Six Star Whey Protein Plus -- Frosted Flakes (1 scoop, water)</div>
+    <div class="meal-items">Six Star Whey Protein Plus &mdash; Frosted Flakes (1 scoop, water)</div>
     <div class="meal-macros"><span>190 cal</span><span>30g protein</span><span>9g carbs</span><span>3g fat</span></div>
-    
+
     <div class="meal-head">Snack 2</div>
-    <div class="meal-items">Mini oranges (clementines/cuties) and/or applesauce</div>
+    <div class="meal-items">Mini oranges (clementines) and/or applesauce</div>
     <div class="meal-macros"><span>90 cal</span><span>1g protein</span><span>22g carbs</span><span>0g fat</span></div>
-    
-    <div class="meal-head">Dinner</div>
-    <div class="meal-items">Option A - Chicken: baked chicken breast (6-7oz) + 1/2 cup rice + butter</div><div style="font-size:11px;color:#534AB7;margin-top:2px;">Chicken selected -- see recommendation below</div>
+
+    <div class="meal-head">Dinner &mdash; Option A: Chicken</div>
+    <div class="meal-items">Baked chicken breast (6&ndash;7 oz) + 1/2 cup rice + butter. Chicken is the call today: protein lands 2g under target vs. 12g under with fish.</div>
     <div class="meal-macros"><span>430 cal</span><span>48g protein</span><span>32g carbs</span><span>10g fat</span></div>
-    
+
     <div class="meal-head">Evening Snack</div>
     <div class="meal-items">Blue Bunny Caramel mini cone + Cinnamon Bun Casein shake</div>
     <div class="meal-macros"><span>290 cal</span><span>27g protein</span><span>31g carbs</span><span>8g fat</span></div>
-    
+
+    <div class="table-scroll">
     <table class="macro-table">
       <tr><th>Meal</th><th>Cal</th><th>Pro</th><th>Carb</th><th>Fat</th></tr>
-      <tr class="total-row"><td>Total</td><td>1808</td><td>198g</td><td>147g</td><td>45g</td></tr>
-      <tr class="target-row"><td>Target</td><td>2190</td><td>200g</td><td>215g</td><td>72g</td></tr>
+      <tr class="total-row"><td>Total</td><td>1,808</td><td>198g</td><td>147g</td><td>45g</td></tr>
+      <tr class="target-row"><td>Target</td><td>2,190</td><td>200g</td><td>215g</td><td>72g</td></tr>
       <tr class="gap-row"><td>Gap</td><td>-382</td><td>-2g</td><td>-68g</td><td>-27g</td></tr>
     </table>
+    </div>
+
     <div class="bar-section">
       <div class="bar-section-label">Macros vs. Target</div>
-      
-    <div class="bar-row">
-      <div class="bar-label"><span>Calories</span><span>1808 / 2190</span></div>
-      <div class="bar-bg"><div class="bar-fill " style="width:83%;"></div></div>
+      <div class="bar-row"><div class="bar-label"><span>Calories</span><span>1,808 / 2,190</span></div><div class="bar-bg"><div class="bar-fill" style="width:83%"></div></div></div>
+      <div class="bar-row"><div class="bar-label"><span>Protein</span><span>198g / 200g</span></div><div class="bar-bg"><div class="bar-fill" style="width:99%"></div></div></div>
+      <div class="bar-row"><div class="bar-label"><span>Carbs</span><span>147g / 215g</span></div><div class="bar-bg"><div class="bar-fill" style="width:68%"></div></div></div>
+      <div class="bar-row"><div class="bar-label"><span>Fat</span><span>45g / 72g</span></div><div class="bar-bg"><div class="bar-fill" style="width:63%"></div></div></div>
     </div>
-    <div class="bar-row">
-      <div class="bar-label"><span>Protein</span><span>198 / 200g</span></div>
-      <div class="bar-bg"><div class="bar-fill " style="width:99%;"></div></div>
-    </div>
-    <div class="bar-row">
-      <div class="bar-label"><span>Carbs</span><span>147 / 215g</span></div>
-      <div class="bar-bg"><div class="bar-fill " style="width:68%;"></div></div>
-    </div>
-    <div class="bar-row">
-      <div class="bar-label"><span>Fat</span><span>45 / 72g</span></div>
-      <div class="bar-bg"><div class="bar-fill " style="width:62%;"></div></div>
-    </div>
-    </div>
-    <div class="macro-rec">Dinner call: Chicken -- protein lands at 198g (just 2g under target), vs. fish at 188g (12g short). Main gap is carbs: -68g. Add a banana with Snack 2 (+27g) and 2-3 rice cakes mid-afternoon (+20g) to recover ~47g of that gap. Fat is -27g under -- add a drizzle of olive oil on the chicken or extra butter on the rice to help close it without overshooting protein.</div>
+
+    <div class="macro-rec">Dinner call: Chicken &mdash; protein lands at 198g (just 2g under target), vs. fish at 188g (12g short). Main gap is carbs: -68g. Add a banana with Snack 2 (+27g) and 2-3 rice cakes mid-afternoon (+20g) to recover ~47g of that gap. Fat is -27g under &mdash; add a drizzle of olive oil on the chicken or extra butter on the rice to help close it without overshooting protein.</div>
   </div>
-  <div class="generated">Updated July 11, 2026 at 8:41 PM ET (evening fitness brief)</div>
+  <div class="generated">Generated July 11, 2026 at 10:49 PM ET</div>
 </div>
 
-
+  
 <div class="pane" id="pane-daily-dev">
-  <div class="card">
-    <div class="card-label" style="background:#0369A1;color:#fff;padding:4px 10px;border-radius:6px;display:inline-block;">Daily Creative</div>
-    <div class="dev-title" style="margin-top:10px;">July 11th</div>
+  <div class="section">
+    <div class="sec-label devblue"><svg class="ic"><use href="#i-lightbulb"></use></svg>Daily Creative</div>
+    <div class="dev-title">July 11th</div>
     <div class="dev-body">
       <p>As creative pros, we don't struggle with new ideas, new projects, new meetings, new initiatives, new businesses, etc. What we often struggle with is saying no. We add thing after thing to our lives until we are suffocating. There is simply no room left for another commitment. Then, of course, we add another.</p>
       <p>This dynamic often plays out in organizations as well, where we love to add new systems and initiatives and expectations but rarely remove any of the old ones.</p>
@@ -373,38 +571,198 @@ body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; b
     </div>
     <div class="dev-question">Question: What needs to be pruned so that you have the focus, energy, and time to pour into what matters most?</div>
   </div>
-  <div class="generated">Generated July 11, 2026 at 4:23 AM ET</div>
+  <div class="generated">Generated July 11, 2026 at 10:49 PM ET</div>
 </div>
 
+  <div class="pane" id="pane-weekly">
 
-<div class="pane" id="pane-reference">
-  <div class="card">
-    <div class="card-label">Ideal Weekday Schedule</div>
-    <div class="row"><span class="dir-label">5:30-6:00 AM</span><span class="dir-val">Faith block -- Bible study, prayer, reflection, planning</span></div>
-    <div class="row"><span class="dir-label">6:00-8:00 AM</span><span class="dir-val">Smartphone Storytellers (SPS) block</span></div>
-    <div class="row"><span class="dir-label">8:00-9:00 AM</span><span class="dir-val">Gym</span></div>
-    <div class="row"><span class="dir-label">9:00 AM-5:00 PM</span><span class="dir-val">Seacoast Church</span></div>
-    <div class="row"><span class="dir-label">5:00-8:00 PM</span><span class="dir-val">Family time (protected)</span></div>
-    <div class="row"><span class="dir-label">8:00-10:00 PM</span><span class="dir-val">Evening Focus Block</span></div>
-    <div class="row"><span class="dir-label">10:00-10:30 PM</span><span class="dir-val">Wind down</span></div>
+  <div class="section tight">Source: weekly-data.txt &middot; Week of July 13 &ndash; July 19, 2026</div>
+
+  <div class="section">
+    <div class="sec-label"><svg class="ic"><use href="#i-target"></use></svg>This Week's Focus</div>
+    <div class="pri-item"><span class="pri-num">1</span><div><div class="pri-name">Catch up 3 overdue SST script reviews</div><div class="pri-meta"><span class="dot" style="background:#E11D48"></span>Smartphone Storytellers &middot; <span class="overdue">overdue since Jul 10</span></div><div class="pri-next">Next: Clear REVIEW ChatGPT Scripts 3, 4, 5 first thing Monday</div></div></div>
+    <div class="pri-item"><span class="pri-num">2</span><div><div class="pri-name">Overview Video <span class="badge badge-warn">Due Jul 12</span></div><div class="pri-meta"><span class="dot" style="background:#1F2937"></span>Freelance</div><div class="pri-next">Next: Finish and deliver before the work week starts</div></div></div>
+    <div class="pri-item"><span class="pri-num">3</span><div><div class="pri-name">Seacoast Filmmaker Residency curriculum plan <span class="badge badge-warn">Due Jul 16</span></div><div class="pri-meta"><span class="dot" style="background:#0891B2"></span>Seacoast &middot; On Hold</div><div class="pri-next">Next: Restart the page-by-page markup pass on the manual PDF</div></div></div>
+    <div class="pri-item"><span class="pri-num">4</span><div><div class="pri-name">SALT Talk Pitches</div><div class="pri-meta"><span class="dot" style="background:#7C3AED"></span>Speaking &middot; no deadline</div><div class="pri-next">Next: Draft pitch angles while CFX 2026 work is fresh</div></div></div>
+    <div class="pri-item"><span class="pri-num">5</span><div><div class="pri-name">Storyteller 101 &mdash; Module 3</div><div class="pri-meta"><span class="dot" style="background:#E11D48"></span>Smartphone Storytellers &middot; deadline Aug 31</div><div class="pri-next">Next: Protect the 6:00-8:00 AM block this week</div></div></div>
   </div>
-  <div class="card">
-    <div class="card-label">Evening Focus Themes</div>
+
+  <div class="section callout-red">
+    <div class="sec-label red"><svg class="ic"><use href="#i-alert"></use></svg>Watch Out For</div>
+    <div class="row"><span class="dir-label">3 overdue</span><span class="dir-val flag">REVIEW ChatGPT Scripts 3, 4, 5 (SST) &mdash; due Jul 10, still open</span></div>
+    <div class="row"><span class="dir-label">Tight turnaround</span><span class="dir-val flag">Overview Video (Freelance) due Jul 12, before the review week begins</span></div>
+    <div class="row"><span class="dir-label">Busy Monday AM</span><span class="dir-val flag">Jul 13 stacks three back-to-back calls, 9:00-11:30 AM</span></div>
+    <div class="row"><span class="dir-label">Out of office</span><span class="dir-val">Jack on PTO Jul 12-17 &mdash; factor into Seacoast turnaround</span></div>
+    <div class="row"><span class="dir-label">Evening focus</span><span class="dir-val">Clear this week &mdash; no calendar events land in the 8:00-10:00 PM window</span></div>
+  </div>
+
+  <div class="section callout-red">
+    <div class="sec-label red"><svg class="ic"><use href="#i-alert"></use></svg>Missed and Overdue</div>
+    <div class="task"><div><span class="task-role" style="color:#E11D48;">Smartphone Storytellers</span>REVIEW ChatGPT Scripts - 3</div><span class="badge badge-warn">Jul 10</span></div>
+    <div class="task"><div><span class="task-role" style="color:#E11D48;">Smartphone Storytellers</span>REVIEW ChatGPT Scripts - 4</div><span class="badge badge-warn">Jul 10</span></div>
+    <div class="task"><div><span class="task-role" style="color:#E11D48;">Smartphone Storytellers</span>REVIEW ChatGPT Scripts - 5</div><span class="badge badge-warn">Jul 10</span></div>
+  </div>
+
+  <div class="section">
+    <div class="sec-label"><svg class="ic"><use href="#i-folder"></use></svg>Seacoast</div>
+    <div class="tier-head">Active Projects</div>
+    <div class="task"><div>Seacoast Filmmaker Residency <span class="task-role">On Hold &mdash; page-by-page markup pass on the manual PDF, confirm Christmas/Easter dates, settle Stories-vs-Recaps order</span></div><span class="badge badge-warn">Jul 16</span></div>
+    <div class="tier-head">Open (no deadline)</div>
+    <div class="task">Nothing else on the Things list this week.</div>
+  </div>
+
+  <div class="section">
+    <div class="sec-label"><svg class="ic"><use href="#i-book"></use></svg>Teaching</div>
+    <div class="tier-head">Active Projects</div>
+    <div class="task"><div>CM 1110 (Moody) <span class="task-role">Weeks 1-8 all marked To Review &mdash; review ahead of Oct 1 start</span></div></div>
+    <div class="task"><div>SOC 2204 (Moody) <span class="task-role">Review course intros (Weeks 1-8, already transcribed) &mdash; Aug 1 start</span></div></div>
+    <div class="tier-head">Open (no deadline)</div>
+    <div class="task">16 lecture review items across both courses carry no individual due dates in Things.</div>
+    <div class="tier-head">Suggestions</div>
+    <div class="task">Add interim due dates for the SOC 2204 intro reviews &mdash; Aug 1 start is 3 weeks out</div>
+    <div class="task">Block one evening focus session this week to start the CM 1110 Week 1-2 review</div>
+  </div>
+
+  <div class="section">
+    <div class="sec-label"><svg class="ic"><use href="#i-receipt"></use></svg>Freelance</div>
+    <div class="tier-head">Active Projects</div>
+    <div class="task"><div>American Integrity (ACEP) <span class="task-role">Angie Quinn awaiting review; Biggs + Xie in editing; 8 remaining + 5 compiled videos pending</span></div></div>
+    <div class="task"><div>Renew Global (ACEP) <span class="task-role">Post-production, see Things for task list</span></div></div>
+    <div class="task"><div>Bread of Life (ACEP) <span class="task-role">Post-production, see Things for task list</span></div></div>
+    <div class="tier-head">This Week</div>
+    <div class="task"><div>Overview Video</div><span class="badge badge-warn">Jul 12</span></div>
+  </div>
+
+  <div class="section">
+    <div class="sec-label"><svg class="ic"><use href="#i-phone"></use></svg>Smartphone Storytellers</div>
+    <div class="tier-head">Active Projects</div>
+    <div class="task"><div>Storyteller 101 <span class="task-role">Build Module 3; web/launch infrastructure runs in parallel</span></div><span class="badge">Aug 31</span></div>
+    <div class="task"><div>Product Launch (7 Products) <span class="task-role">On Hold &mdash; pick up 19-week plan at Week 2 after Storyteller 101 launches</span></div></div>
+    <div class="tier-head">Overdue</div>
+    <div class="task"><div>REVIEW ChatGPT Scripts - 3, 4, 5</div><span class="badge badge-warn">Jul 10</span></div>
+    <div class="tier-head">Suggestions</div>
+    <div class="task">Clear the 3 script reviews before starting new Module 3 work</div>
+    <div class="task">Protect the 6:00-8:00 AM block daily &mdash; the highest-priority growth initiative</div>
+  </div>
+
+  <div class="section">
+    <div class="sec-label"><svg class="ic"><use href="#i-list"></use></svg>Speaking</div>
+    <div class="tier-head">Active Projects</div>
+    <div class="task"><div>CFX 2026 <span class="task-role">Develop talk structure &mdash; Sept 14-16, Birmingham</span></div><span class="badge">Sep 15</span></div>
+    <div class="tier-head">This Week</div>
+    <div class="task"><div>SALT Talk Pitches</div><span class="badge badge-ok">No deadline</span></div>
+  </div>
+
+  <div class="section">
+    <div class="sec-label"><svg class="ic"><use href="#i-heart"></use></svg>Personal</div>
+    <div class="tier-head">Active Projects</div>
+    <div class="task">Nothing active tracked in projects.md this cycle.</div>
+    <div class="tier-head">Family / Faith</div>
+    <div class="row"><span class="dir-label">Jul 17-25</span><span class="dir-val">Lynne at Summer Camp (HS &amp; MS)</span></div>
+    <div class="row"><span class="dir-label">Jul 18-22</span><span class="dir-val">Summer Camp</span></div>
+    <div class="row"><span class="dir-label">Jul 17 / Jul 24</span><span class="dir-val">Zelda's Violin Lesson, 3:30 PM, Goose Creek</span></div>
+    <div class="row"><span class="dir-label">Jul 31</span><span class="dir-val">The day Lily prayed to ask Jesus into her heart, 2:00-3:00 PM</span></div>
+    <div class="tier-head">Fitness &mdash; Coming Week</div>
+    <div class="row"><span class="dir-label">Mon</span><span class="dir-val">Arms (~58 min)</span></div>
+    <div class="row"><span class="dir-label">Tue</span><span class="dir-val">Athletic Legs (~44 min)</span></div>
+    <div class="row"><span class="dir-label">Wed</span><span class="dir-val">Cardio &amp; Core (~52 min)</span></div>
+    <div class="row"><span class="dir-label">Thu</span><span class="dir-val">Pull (~42 min)</span></div>
+    <div class="row"><span class="dir-label">Fri</span><span class="dir-val">Push (~45 min)</span></div>
+    <div class="row"><span class="dir-label">Sat/Sun</span><span class="dir-val">Rest days</span></div>
+  </div>
+
+  <div class="section">
+    <div class="sec-label"><svg class="ic"><use href="#i-check-square"></use></svg>Role Evaluation</div>
+    <div class="row"><span class="dir-label">Seacoast</span><span class="dir-val">One active project with a hard Thu deadline and no recent movement &mdash; needs dedicated time this week.</span></div>
+    <div class="row"><span class="dir-label">Teaching</span><span class="dir-val flag">Quiet &mdash; 16 review items sit open with no due dates across both courses.</span></div>
+    <div class="row"><span class="dir-label">Freelance</span><span class="dir-val">On track &mdash; Overview Video due tomorrow, ACEP post-production moving.</span></div>
+    <div class="row"><span class="dir-label">Smartphone Storytellers</span><span class="dir-val flag">3 script reviews overdue &mdash; the highest-priority growth initiative needs a reset before Module 3 work continues.</span></div>
+    <div class="row"><span class="dir-label">Speaking</span><span class="dir-val">Moving &mdash; SALT pitches and CFX 2026 talk structure both in motion.</span></div>
+    <div class="row"><span class="dir-label">Personal</span><span class="dir-val">Family calendar full and protected (Summer Camp, violin, faith milestone) &mdash; no projects.md entries to evaluate.</span></div>
+  </div>
+
+  <div class="section callout-blue">
+    <div class="sec-label blue"><svg class="ic"><use href="#i-trending"></use></svg>Opportunities and Ideas</div>
+    <div class="task"><b>Strategic action: Use the clear evening-focus week (no 8-10 PM conflicts) to push Storyteller 101 Module 3 past its current stall point &mdash; the highest-leverage SST move available this week.</b></div>
+    <div class="task">Clearing the 3 overdue script reviews is a fast, low-effort way to unstick SST momentum before diving into Module 3 build work.</div>
+    <div class="task">Seacoast Filmmaker Residency has held the same next action (markup pass) for a while and now has a hard Jul 16 deadline &mdash; worth blocking specific time rather than treating it as background work.</div>
+    <div class="task">Teaching is quiet this cycle; SOC 2204 starts Aug 1, about three weeks out &mdash; adding interim due dates would prevent a late crunch.</div>
+    <div class="task">CFX 2026 talk structure work pairs naturally with this week's SALT Talk Pitches &mdash; drafting both in one sitting could surface reusable material.</div>
+    <div class="task">Personal/family has no active projects tracked in projects.md &mdash; if there's anything worth capturing (boat, smarthome, etc.) it is currently invisible to this review.</div>
+  </div>
+
+  <div class="section">
+    <div class="sec-label"><svg class="ic"><use href="#i-calendar"></use></svg>30-Day Calendar</div>
+    <div class="tier-head">Week of Jul 13 &ndash; Jul 19</div>
+    <div class="row"><span class="dir-label">Sun-Fri</span><span class="dir-val">Jack PTO, Jul 12-17</span></div>
+    <div class="row"><span class="dir-label">Mon 9:00 AM</span><span class="dir-val">Weekend Debrief Call</span></div>
+    <div class="row"><span class="dir-label">Mon 10:30 AM</span><span class="dir-val">Film Team Weekly</span></div>
+    <div class="row"><span class="dir-label">Mon 11:00 AM</span><span class="dir-val">Weekend Experience Videos</span></div>
+    <div class="row"><span class="dir-label">Tue</span><span class="dir-val">CFA Dress like a Cow Day</span></div>
+    <div class="row"><span class="dir-label">Thu 3:05 PM</span><span class="dir-val">The Odyssey (2026), Regal Azalea Square</span></div>
+    <div class="row"><span class="dir-label">Fri-Sat</span><span class="dir-val flag">Lynne at Summer Camp (HS &amp; MS) begins</span></div>
+    <div class="row"><span class="dir-label">Fri 3:30 PM</span><span class="dir-val">Zelda's Violin Lesson</span></div>
+    <div class="tier-head">Week of Jul 20 &ndash; Jul 26</div>
+    <div class="row"><span class="dir-label">Sat-Wed</span><span class="dir-val flag">Summer Camp, Jul 18-22</span></div>
+    <div class="row"><span class="dir-label">Mon 9:00 AM</span><span class="dir-val">Weekend Debrief Call</span></div>
+    <div class="row"><span class="dir-label">Mon 10:30 AM</span><span class="dir-val">Film Team Weekly</span></div>
+    <div class="row"><span class="dir-label">Mon 1:45 PM</span><span class="dir-val">2026 Legacy Video Assets Meeting</span></div>
+    <div class="row"><span class="dir-label">Fri 3:30 PM</span><span class="dir-val">Zelda's Violin Lesson</span></div>
+    <div class="tier-head">Week of Jul 27 &ndash; Aug 2</div>
+    <div class="row"><span class="dir-label">Mon 9:00 AM</span><span class="dir-val">Weekend Debrief Call</span></div>
+    <div class="row"><span class="dir-label">Mon 10:30 AM</span><span class="dir-val">Film Team Weekly</span></div>
+    <div class="row"><span class="dir-label">Fri 2:00 PM</span><span class="dir-val">The day Lily prayed to ask Jesus into her heart</span></div>
+    <div class="row"><span class="dir-label">Fri 3:30 PM</span><span class="dir-val">Zelda's Violin Lesson</span></div>
+    <div class="row"><span class="dir-label">Fri 5:30 PM</span><span class="dir-val">O.A.R., Firefly Distillery</span></div>
+    <div class="row"><span class="dir-label">Sat</span><span class="dir-val">Check for Books / Reset Heart Rate Zones</span></div>
+    <div class="tier-head">Week of Aug 3 &ndash; Aug 9</div>
+    <div class="row"><span class="dir-label">Mon 9:00 AM</span><span class="dir-val">Weekend Debrief Call</span></div>
+    <div class="row"><span class="dir-label">Mon 10:30 AM</span><span class="dir-val">Film Team Weekly</span></div>
+    <div class="row"><span class="dir-label">Wed-Tue</span><span class="dir-val">Tyler PTO, Aug 5-11</span></div>
+    <div class="row"><span class="dir-label">Fri 3:30 PM</span><span class="dir-val">Zelda's Violin Lesson</span></div>
+    <div class="tier-head">Week of Aug 10</div>
+    <div class="row"><span class="dir-label">Mon 9:00 AM</span><span class="dir-val">Weekend Debrief Call</span></div>
+    <div class="row"><span class="dir-label">Mon 10:30 AM</span><span class="dir-val">Film Team Weekly</span></div>
+    <div class="row"><span class="dir-label">Mon 11:00 AM</span><span class="dir-val">Weekend Experience Videos</span></div>
+    <div class="row"><span class="dir-label">Mon 7:00 PM</span><span class="dir-val">Muse, The Wow! Signal Tour, Truliant Amphitheater Charlotte</span></div>
+  </div>
+
+  <div class="generated">Generated Saturday, July 11, 2026 &mdash; Week of July 13 &ndash; July 19, 2026</div>
+</div>
+
+  
+<div class="pane" id="pane-reference">
+  <div class="section">
+    <div class="sec-label"><svg class="ic"><use href="#i-clock"></use></svg>Ideal Weekday Schedule</div>
+    <div class="row"><span class="dir-label">5:30&ndash;6:00 AM</span><span class="dir-val">Faith block &mdash; Bible study, prayer, reflection, planning</span></div>
+    <div class="row"><span class="dir-label">6:00&ndash;8:00 AM</span><span class="dir-val">Smartphone Storytellers (SPS) block</span></div>
+    <div class="row"><span class="dir-label">8:00&ndash;9:00 AM</span><span class="dir-val">Gym</span></div>
+    <div class="row"><span class="dir-label">9:00 AM&ndash;5:00 PM</span><span class="dir-val">Seacoast Church</span></div>
+    <div class="row"><span class="dir-label">5:00&ndash;8:00 PM</span><span class="dir-val">Family time (protected)</span></div>
+    <div class="row"><span class="dir-label">8:00&ndash;10:00 PM</span><span class="dir-val">Evening Focus Block (see themes below)</span></div>
+    <div class="row"><span class="dir-label">10:00&ndash;10:30 PM</span><span class="dir-val">Wind down</span></div>
+  </div>
+  <div class="section">
+    <div class="sec-label"><svg class="ic"><use href="#i-list"></use></svg>Evening Focus Themes</div>
     <div class="row"><span class="dir-label">Monday</span><span class="dir-val">Household / Admin / Freelance</span></div>
     <div class="row"><span class="dir-label">Tuesday</span><span class="dir-val">Teaching</span></div>
     <div class="row"><span class="dir-label">Wednesday</span><span class="dir-val">Teaching</span></div>
     <div class="row"><span class="dir-label">Thursday</span><span class="dir-val">Freelance</span></div>
     <div class="row"><span class="dir-label">Friday</span><span class="dir-val">Protected Family Night</span></div>
-    <div class="row"><span class="dir-label">Saturday</span><span class="dir-val">Family / recovery. Optional 7-11 AM work block (Smartphone Storytellers priority, twice/month)</span></div>
+    <div class="row"><span class="dir-label">Saturday</span><span class="dir-val">Family / recovery. Optional 7&ndash;11 AM work block (Smartphone Storytellers priority, twice/month)</span></div>
     <div class="row"><span class="dir-label">Sunday</span><span class="dir-val">Church (morning), Family (afternoon), Weekly Review (evening)</span></div>
   </div>
-  <div class="card">
-    <div class="card-label">Guiding Philosophy</div>
+  <div class="section">
+    <div class="sec-label"><svg class="ic"><use href="#i-compass"></use></svg>Guiding Philosophy</div>
     <div class="row"><span class="dir-label">Priority order</span><span class="dir-val">Faith, Family, Smartphone Storytellers, Fitness, Seacoast, Margin</span></div>
     <div class="row"><span class="dir-label">Smartphone Storytellers</span><span class="dir-val">Highest-priority growth initiative outside primary employment</span></div>
     <div class="row"><span class="dir-label">Freelance</span><span class="dir-val">Should not crowd out Smartphone Storytellers or family time</span></div>
   </div>
-  <div class="generated">Generated July 11, 2026 at 4:23 AM ET</div>
+  <div class="generated">Generated July 11, 2026 at 10:49 PM ET</div>
+</div>
+
+
+</div>
 </div>
 
 <script>
