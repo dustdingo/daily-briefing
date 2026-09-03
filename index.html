@@ -3,10 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Daily Briefing -- September 2, 2026</title>
+<title>Adam's Daily Briefing -- September 3, 2026</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
+
 :root{
   --bg:#FAF8F6;
   --surface:#FFFFFF;
@@ -63,11 +64,11 @@ body{font-family:'Public Sans',-apple-system,BlinkMacSystemFont,"Segoe UI",sans-
 .header-title{font-family:'Playfair Display',serif;font-size:27px;font-weight:700;color:var(--ink);letter-spacing:-.01em;}
 .header-meta{font-size:12.5px;color:var(--text-faint);white-space:nowrap;}
 @media(max-width:600px){ .header-meta{display:none;} }
-.tabs{display:flex;gap:22px;overflow-x:auto;border-bottom:1px solid var(--border);margin-top:18px;padding:0 24px;-webkit-overflow-scrolling:touch;scrollbar-width:none;}
-@media(min-width:701px){ .tabs{padding:0 32px;} }
-.tabs::-webkit-scrollbar{display:none;}
-.tab{padding:0 0 14px;font-family:'Playfair Display',serif;font-size:15px;font-weight:500;color:var(--text-muted);white-space:nowrap;border-bottom:2px solid transparent;cursor:pointer;flex-shrink:0;}
-.tab.active{color:var(--ink);border-bottom-color:var(--red-accent);}
+.tabs{display:flex;flex-wrap:wrap;gap:8px;border-bottom:1px solid var(--border);margin-top:18px;padding:0 24px 16px;}
+@media(min-width:701px){ .tabs{padding:0 32px 16px;} }
+.tab{padding:7px 16px;font-family:'Playfair Display',serif;font-size:13.5px;font-weight:500;color:var(--text-muted);white-space:nowrap;cursor:pointer;border-radius:999px;background:var(--border-light);border:1px solid var(--border);line-height:1.2;transition:background .15s,color .15s,border-color .15s;}
+.tab:hover{background:var(--bg);}
+.tab.active{color:var(--surface);background:var(--red-accent);border-color:var(--red-accent);}
 .pane{display:none;}
 .pane.active{display:block;}
 .surface{background:transparent;}
@@ -211,10 +212,12 @@ body{font-family:'Public Sans',-apple-system,BlinkMacSystemFont,"Segoe UI",sans-
 .pcard-head.teaching{background:var(--teaching-bg);color:var(--teaching);}
 .pcard-head.freelance{background:var(--freelance-bg);color:var(--freelance);}
 .pcard-head.sps{background:var(--sps-bg);color:var(--sps);}
+.pcard-head.speaking{background:var(--speaking-bg);color:var(--speaking);}
 .pcard-body{padding:10px 12px;}
 .pcard-body .row{padding:6px 0;}
 .trip-day{font-family:'Playfair Display',serif;font-weight:700;color:var(--teal);margin:12px 0 4px;font-size:15px;}
 .trip-day:first-child{margin-top:0;}
+
 </style>
 </head>
 <body>
@@ -250,625 +253,661 @@ body{font-family:'Public Sans',-apple-system,BlinkMacSystemFont,"Segoe UI",sans-
 </svg>
 <div class="shell">
 <div class="app-card">
-
 <div class="header">
-  <div class="header-date">Wednesday, September 2, 2026</div>
-  <div class="header-row">
-    <div class="header-title">Good morning, Adam.</div>
-    <div class="header-meta">Updated 4:22 AM ET</div>
-  </div>
-  <div class="tabs">
-    <div class="tab active" data-tab="overview">Overview</div>
-    <div class="tab" data-tab="morning">Morning Brief</div>
-    <div class="tab" data-tab="faith">Faith</div>
-    <div class="tab" data-tab="daily-dev">Daily Development</div>
-    <div class="tab" data-tab="fitness">Fitness</div>
-    <div class="tab" data-tab="weekly">Weekly</div>
-    <div class="tab" data-tab="reference">Reference</div>
-  </div>
+<div class="header-date">THURSDAY, SEPTEMBER 3, 2026</div>
+<div class="header-row">
+<div class="header-title">Good morning, Adam.</div>
+<div class="header-meta">Generated 4:21 AM ET</div>
 </div>
-
-<!-- ===================== OVERVIEW ===================== -->
+<div class="tabs">
+<div class="tab active" data-tab="overview">Overview</div>
+<div class="tab" data-tab="morning">Morning Brief</div>
+<div class="tab" data-tab="faith">Faith</div>
+<div class="tab" data-tab="daily-dev">Daily Development</div>
+<div class="tab" data-tab="fitness">Fitness</div>
+<div class="tab" data-tab="time">Time</div>
+<div class="tab" data-tab="weekly">Weekly</div>
+<div class="tab" data-tab="reference">Reference</div>
+</div>
+</div>
 <div class="pane active" id="pane-overview">
 
-  <div class="weather-panel">
-    <div class="sec-label"><svg class="ic"><use href="#i-sun"></use></svg>Weather</div>
-    <div class="wx-line"><span class="wx-hi">93°</span><span class="wx-lo">/ 74°</span><span class="wx-feels">Feels like 99°</span></div>
-    <div class="wx-sub">Humidity running high all day, air quality fair &middot; Partly sunny, no rain expected today (storms return tomorrow afternoon) &middot; SW wind 5-10 mph</div>
-  </div>
-
-  <div class="section">
-    <div class="sec-label"><svg class="ic"><use href="#i-calendar"></use></svg>Today's Schedule</div>
-    <div class="sched-row role-seacoast" style="border-left:none;">
-      <div class="sched-time">10:30 AM</div>
-      <div><div class="sched-title">In Office</div><div class="sched-sub">713 Long Point Rd, Mount Pleasant &middot; until 5:00 PM</div></div>
-    </div>
-    <div class="sched-row">
-      <div class="sched-time">2:00 PM</div>
-      <div><div class="sched-title">Portside Remoting Into Laptop</div><div class="sched-sub">until 2:30 PM</div></div>
-    </div>
-    <div class="sched-row">
-      <div class="sched-time">5:00 PM</div>
-      <div><div class="sched-title">First Wed Training</div><div class="sched-sub">750 Long Point Rd, Mount Pleasant &middot; until 6:30 PM</div></div>
-    </div>
-    <div class="sched-row role-focus">
-      <div class="sched-time">8:00 PM</div>
-      <div><div class="sched-title">Evening Focus: Teaching</div></div>
-    </div>
-  </div>
-
-  <div class="section hero-ink">
-    <div class="sec-label">Today's Game Plan</div>
-    <div class="gp-grid">
-      <div class="gp-item"><div class="dir-label">Protect:</div><div class="dir-val">What's left of family time after First Wed Training runs late (6:30-8 PM).</div></div>
-      <div class="gp-item"><div class="dir-label">Main pressure:</div><div class="dir-val">CFX 2026 talk outline, slide deck, and visual examples are all overdue since Monday, with the conference 12 days out.</div></div>
-      <div class="gp-item"><div class="dir-label">Tonight:</div><div class="dir-val">Evening Focus is Teaching -- grade Assignment 2-1 and Introduce Yourself, both due Friday.</div></div>
-      <div class="gp-item"><div class="dir-label">Watch out:</div><div class="dir-val flag">CFX prep is now three tasks deep in overdue territory with Birmingham only 12 days away.</div></div>
-    </div>
-  </div>
-
-  <div class="section">
-    <div class="sec-label"><svg class="ic"><use href="#i-clock"></use></svg>Open Work Windows</div>
-    <div class="row"><div class="dir-label">SPS block:</div><div class="dir-val">5:30-7:15 AM</div></div>
-    <div class="row"><div class="dir-label">Open:</div><div class="dir-val">9:00-10:30 AM (before the office day starts -- good spot for CFX outline work)</div></div>
-    <div class="row"><div class="dir-label">Evening:</div><div class="dir-val">8:00-10:00 PM (Evening Focus: Teaching)</div></div>
-  </div>
-
-  <div class="section">
-    <div class="sec-label"><svg class="ic"><use href="#i-list"></use></svg>Top Priorities</div>
-    <div class="pri-grid">
-      <div class="pri-card">
-        <div>
-          <div class="pri-num">1</div>
-          <div class="pri-name">CFX 2026 talk outline &amp; slide deck</div>
-          <div class="pri-meta"><span class="dot" style="background:var(--speaking)"></span>Speaking &middot; <span class="overdue">overdue since Mon 8/31</span></div>
-        </div>
-        <div class="pri-next">Next action: Block 90 minutes for the outline -- the deck can't move until it exists.</div>
-      </div>
-      <div class="pri-card">
-        <div>
-          <div class="pri-num">2</div>
-          <div class="pri-name">GRADE Assignment 2-1 &amp; Introduce Yourself</div>
-          <div class="pri-meta"><span class="dot" style="background:var(--teaching)"></span>Teaching &middot; due Fri 9/4</div>
-        </div>
-        <div class="pri-next">Next action: Use tonight's Evening Focus block to knock out both.</div>
-      </div>
-      <div class="pri-card">
-        <div>
-          <div class="pri-num">3</div>
-          <div class="pri-name">Legacy Vision Night scripts (Josh and Lisa)</div>
-          <div class="pri-meta"><span class="dot" style="background:var(--seacoast)"></span>Seacoast &middot; due Fri 9/11</div>
-        </div>
-        <div class="pri-next">Next action: Draft the Look Back script first -- likely the shortest of the three.</div>
-      </div>
-    </div>
-  </div>
-
-  <div class="section callout-warn">
-    <div class="sec-label warn"><svg class="ic"><use href="#i-alert"></use></svg>Capacity</div>
-    <div>Capacity: Tight. Full in-office day (10:30-5) plus First Wed Training until 6:30 PM, overdue CFX prep needing attention, and Friday grading all competing on a 93&deg; humid day.</div>
-  </div>
-
-  <div class="section">
-    <div class="sec-label"><svg class="ic"><use href="#i-layers"></use></svg>Open Projects</div>
-    <div class="proj-grid">
-      <div class="proj-group">
-        <div class="proj-group-label">Seacoast</div>
-        <div class="proj-row r-seacoast"><span>2026-27 Campus Coverage</span></div>
-      </div>
-      <div class="proj-group">
-        <div class="proj-group-label">Teaching</div>
-        <div class="proj-row r-teaching"><span>COMM 335 (CSU)</span></div>
-        <div class="proj-row r-teaching"><span>CM 1110 (Moody)</span></div>
-        <div class="proj-row r-teaching"><span>SOC 2204 (Moody)</span></div>
-        <div class="proj-row r-teaching"><span>GSU 1120 (Moody)</span></div>
-      </div>
-      <div class="proj-group">
-        <div class="proj-group-label">Freelance</div>
-        <div class="proj-row r-freelance"><span>American Integrity (ACEP)</span></div>
-        <div class="proj-row r-freelance"><span>Bread of Life (ACEP)</span></div>
-      </div>
-      <div class="proj-group">
-        <div class="proj-group-label">Smartphone Storytellers</div>
-        <div class="proj-row r-sps"><span>Storyteller 101</span></div>
-        <div class="proj-row r-sps on-hold"><span>Product Launch (7 Products)</span><span class="hold-tag">On Hold</span></div>
-      </div>
-      <div class="proj-group">
-        <div class="proj-group-label">Speaking</div>
-        <div class="proj-row r-speaking"><span>CFX 2026</span></div>
-        <div class="proj-row r-speaking"><span>SALT 2026</span></div>
-        <div class="proj-row r-speaking on-hold"><span>FILO</span><span class="hold-tag">On Hold</span></div>
-      </div>
-      <div class="proj-group">
-        <div class="proj-group-label">Personal</div>
-        <div class="proj-row"><span>Guitar</span></div>
-        <div class="proj-row on-hold"><span>Smart Home Automation</span><span class="hold-tag">On Hold</span></div>
-      </div>
-    </div>
-  </div>
-
-  <div class="section callout-red">
-    <div class="sec-label red"><svg class="ic"><use href="#i-alert"></use></svg>Heads Up</div>
-    <div class="task"><span>Develop talk outline and structure -- Speaking</span><span class="badge badge-crit">overdue since Mon 8/31</span></div>
-    <div class="task"><span>Build slide deck -- Speaking</span><span class="badge badge-crit">overdue since Mon 8/31</span></div>
-    <div class="task"><span>Gather visual examples -- Speaking</span><span class="badge badge-crit">overdue since Mon 8/31</span></div>
-  </div>
-
-  <div class="section callout-blue">
-    <div class="sec-label blue"><svg class="ic"><use href="#i-receipt"></use></svg>Freelance</div>
-    <div>There are 323 receipts that need manual review.</div>
-    <div style="font-size:13.5px;color:var(--text-muted);margin-top:4px;">Say "Review ACEP receipts" to process them.</div>
-  </div>
-
-  <div class="generated">Generated Wednesday, September 2, 2026 &middot; 4:22 AM ET</div>
-
+<div class="weather-panel">
+<div class="sec-label" style="margin-bottom:10px;"><svg class="ic"><use href="#i-sun"></use></svg>Weather</div>
+<div class="wx-line"><span class="wx-hi">90°</span><span class="wx-lo">/ 74°</span><span class="wx-feels">Feels like 97°</span></div>
+<div class="wx-sub">Humidity 65% &middot; Thunderstorms possible this afternoon &middot; Wind ENE 5-10 mph</div>
 </div>
-
-<!-- ===================== MORNING BRIEF ===================== -->
-<div class="pane" id="pane-morning">
-
-  <div class="section">
-    <div class="sec-label blue"><svg class="ic"><use href="#i-sunrise"></use></svg>Morning Read</div>
-    <p style="line-height:1.65;">Today's headline is the CFX 2026 slate: the talk outline, slide deck, and visual-examples task were all due Monday and are now sitting overdue with the Birmingham conference just 12 days out. It's also a full in-office day (10:30 AM-5 PM) capped by First Wed Training until 6:30 PM, which eats into the front of family time, and the forecast is running hot and humid (93&deg;, feels like 99&deg;) with no rain relief until tomorrow. Grading for COMM 335 (Assignment 2-1 and Introduce Yourself) is also due Friday, so Teaching can't be pushed off either. The best move is to use the 9:00-10:30 AM gap before the office day starts for real progress on the CFX outline, since that window would otherwise go to waste, and to protect tonight's Evening Focus block for grading rather than letting the lost family time bleed into it. <strong>Watch out for:</strong> the CFX prep gap compounding, since the slide deck can't really start until the outline exists and Birmingham is only 12 days away.</p>
-  </div>
-
-  <div class="section callout-red">
-    <div class="sec-label red"><svg class="ic"><use href="#i-alert"></use></svg>What You Might Be Forgetting</div>
-    <div><strong>CFX outline is the bottleneck.</strong> The slide deck and visual-examples tasks are also overdue but can't really move until the outline exists -- if it stays untouched today, all three fall further behind with 12 days left before Birmingham.</div>
-    <div style="margin-top:10px;"><strong>American Integrity invoicing.</strong> Wei Xie and Steve Biggs are delivered/approved per the tracker but still need invoicing -- easy to lose track of since they're no longer open edit tasks in Things.</div>
-  </div>
-
-  <div class="section">
-    <div class="sec-label blue"><svg class="ic"><use href="#i-arrow-right"></use></svg>What's Next</div>
-    <div class="row"><div class="dir-label">1.</div><div class="dir-val"><strong>Outline the CFX talk.</strong> This is the one task blocking two others (slide deck, visual examples), and the conference is 12 days out.</div></div>
-    <div class="row"><div class="dir-label">2.</div><div class="dir-val"><strong>Grade Assignment 2-1 and Introduce Yourself.</strong> Both due Friday -- clearing them today avoids a Friday crunch.</div></div>
-    <div class="row"><div class="dir-label">3.</div><div class="dir-val"><strong>Draft the Legacy Vision Night Look Back script.</strong> Due Sept 11 -- starting early gives Josh and Lisa real review time.</div></div>
-    <div class="row"><div class="dir-label">4.</div><div class="dir-val"><strong>Push EDIT 15, 16, and 24 forward.</strong> Albert Ortiz, Alexandra Rodriguez, and Rebecca Rogers are all scheduled for active editing today.</div></div>
-    <div class="row"><div class="dir-label">5.</div><div class="dir-val"><strong>Protect the 6:30-8 PM family window.</strong> First Wed Training runs until 6:30, so don't let Evening Focus bleed into what's left.</div></div>
-  </div>
-
-  <div class="section callout-sps">
-    <div class="sec-label sps"><svg class="ic"><use href="#i-phone"></use></svg>Smartphone Storytellers</div>
-    <div class="row"><div class="dir-label" style="color:var(--sps-feature)">Status:</div><div class="dir-val">Between phases -- Modules 0-5 of Storyteller 101 are complete, and Module 6 (Case Study) is the only piece left, but it's blocked on filming landscape and portrait footage.</div></div>
-    <div class="row"><div class="dir-label" style="color:var(--sps-feature)">Today's move:</div><div class="dir-val">Since Module 6 needs footage first, use today to plan the shoot (landscape locations, portrait talking-head subject) rather than trying to write around missing footage.</div></div>
-    <div class="row"><div class="dir-label" style="color:var(--sps-feature)">Morning block:</div><div class="dir-val">Today's 5:30-7:15 AM window is open, but with CFX prep and Friday grading also competing for attention, use it for Module 6 shoot planning rather than new writing.</div></div>
-  </div>
-
-  <div class="section">
-    <div class="sec-label blue"><svg class="ic"><use href="#i-trending"></use></svg>Opportunities</div>
-    <div class="task"><span><strong>Legacy Vision Night scripts</strong> <span class="dot" style="background:var(--seacoast)"></span><span style="color:var(--seacoast);font-size:13px;">Seacoast</span> -- writing these now, well ahead of Sept 11, gives Josh and Lisa real review time instead of a last-minute scramble.</span></div>
-    <div class="task"><span><strong>American Integrity invoicing</strong> <span class="dot" style="background:#9CA3AF"></span><span style="color:var(--freelance);font-size:13px;">Freelance</span> -- closing out Wei Xie and Steve Biggs' invoices clears two delivered videos off the books entirely.</span></div>
-    <div class="task"><span><strong>CFX talk outline</strong> <span class="dot" style="background:var(--speaking)"></span><span style="color:var(--speaking);font-size:13px;">Speaking</span> -- since SALT 2026's Talk 1 will closely mirror the CFX talk, getting this outline solid now sets up SALT's build later this month.</span></div>
-  </div>
-
-  <div class="section">
-    <div class="sec-label"><svg class="ic"><use href="#i-sun"></use></svg>Weather</div>
-    <div>Feels like 99&deg; &middot; High 93&deg; / Low 74&deg; &middot; Humidity high &middot; Dry today, storms return tomorrow afternoon</div>
-  </div>
-
-  <div class="section">
-    <div class="sec-label blue"><svg class="ic"><use href="#i-clock"></use></svg>Recommended Sequence</div>
-    <div class="row"><div class="dir-label" style="color:var(--blue);font-weight:700;">5:00-5:30 AM</div><div class="dir-val">Faith block</div></div>
-    <div class="row"><div class="dir-label" style="color:var(--blue);font-weight:700;">5:30-7:15 AM</div><div class="dir-val">Smartphone Storytellers block -- Module 6 shoot planning</div></div>
-    <div class="row"><div class="dir-label" style="color:var(--blue);font-weight:700;">7:15-7:45 AM</div><div class="dir-val">School drop-off</div></div>
-    <div class="row"><div class="dir-label" style="color:var(--blue);font-weight:700;">8:00-9:00 AM</div><div class="dir-val">Gym -- Back &amp; Triceps</div></div>
-    <div class="row"><div class="dir-label" style="color:var(--blue);font-weight:700;">9:00-10:30 AM</div><div class="dir-val">Open window -- CFX talk outline</div></div>
-    <div class="row"><div class="dir-label" style="color:var(--blue);font-weight:700;">10:30 AM-5:00 PM</div><div class="dir-val">In Office (Mount Pleasant) -- Portside remoting call at 2:00 PM</div></div>
-    <div class="row"><div class="dir-label" style="color:var(--blue);font-weight:700;">5:00-6:30 PM</div><div class="dir-val">First Wed Training <em style="color:var(--text-faint);font-style:italic;">(bumps early Family block -- family resumes 6:30 PM)</em></div></div>
-    <div class="row"><div class="dir-label" style="color:var(--blue);font-weight:700;">6:30-10:30 PM</div><div class="dir-val">Family (compressed), then Evening Focus: Teaching -- grade Assignment 2-1 &amp; Introduce Yourself, wind down by 10:30</div></div>
-  </div>
-
-  <div class="section">
-    <div class="sec-label"><svg class="ic"><use href="#i-alert"></use></svg>Deadline Pressure</div>
-    <div class="tier-head" style="color:var(--text-muted);">THIS WEEK</div>
-    <div class="task"><span>GRADE Assignment 2-1: Talk to Your Tech Essay<span class="task-role" style="color:var(--teaching)">Teaching</span></span><span style="color:var(--red);font-weight:700;">FRI</span></div>
-    <div class="task"><span>GRADE Introduce Yourself<span class="task-role" style="color:var(--teaching)">Teaching</span></span><span style="color:var(--red);font-weight:700;">FRI</span></div>
-    <div class="task"><span>RESPOND Discussion 3: Jesus and Culture<span class="task-role" style="color:var(--teaching)">Teaching</span></span><span style="color:var(--text-muted);">SAT</span></div>
-    <div class="tier-head" style="color:var(--text-faint);">LATER</div>
-    <div class="task"><span>RECORD Blogs lecture<span class="task-role" style="color:var(--teaching)">Teaching</span></span><span style="color:var(--text-faint);">Mon 9/7</span></div>
-    <div class="task"><span>Legacy - Vision Night Look Back<span class="task-role" style="color:var(--seacoast)">Seacoast</span></span><span style="color:var(--text-faint);">Fri 9/11</span></div>
-    <div class="task"><span>Legacy - Vision Night Look Ahead<span class="task-role" style="color:var(--seacoast)">Seacoast</span></span><span style="color:var(--text-faint);">Fri 9/11</span></div>
-    <div class="task"><span>Legacy - One Day Missions Script<span class="task-role" style="color:var(--seacoast)">Seacoast</span></span><span style="color:var(--text-faint);">Fri 9/11</span></div>
-  </div>
-
-  <div class="section">
-    <div class="sec-label"><svg class="ic"><use href="#i-layout"></use></svg>Project Cards</div>
-    <div class="pcard-grid">
-      <div class="pcard">
-        <div class="pcard-head" style="background:var(--speaking-bg);color:var(--speaking);"><span>Speaking</span><span class="badge badge-crit">Critical</span></div>
-        <div class="pcard-body">
-          <div class="row"><div class="dir-label">Why today:</div><div class="dir-val">CFX outline, slides, and visuals all overdue; conference is 12 days out.</div></div>
-          <div class="row"><div class="dir-label">Best move:</div><div class="dir-val">Block time today to finish the outline first.</div></div>
-          <div class="row"><div class="dir-label">Watch out:</div><div class="dir-val">The slide deck can't start until the outline is done.</div></div>
-        </div>
-      </div>
-      <div class="pcard">
-        <div class="pcard-head" style="background:var(--teaching-bg);color:var(--teaching);"><span>Teaching</span><span class="badge badge-high">High</span></div>
-        <div class="pcard-body">
-          <div class="row"><div class="dir-label">Why today:</div><div class="dir-val">Two assignments due Friday, plus ongoing student check-ins.</div></div>
-          <div class="row"><div class="dir-label">Best move:</div><div class="dir-val">Grade during tonight's Evening Focus block.</div></div>
-          <div class="row"><div class="dir-label">Watch out:</div><div class="dir-val">Discussion 3 (9 posts) is also due Saturday, stacking on top of grading.</div></div>
-        </div>
-      </div>
-      <div class="pcard">
-        <div class="pcard-head" style="background:var(--freelance-bg);color:var(--freelance);"><span>Freelance</span><span class="badge badge-ok">Medium</span></div>
-        <div class="pcard-body">
-          <div class="row"><div class="dir-label">Why today:</div><div class="dir-val">EDIT 15, 16, and 24 (Albert Ortiz, Alexandra Rodriguez, Rebecca Rogers) are scheduled for active editing.</div></div>
-          <div class="row"><div class="dir-label">Best move:</div><div class="dir-val">Keep chipping at the 15-video editing queue.</div></div>
-          <div class="row"><div class="dir-label">Watch out:</div><div class="dir-val">323 receipts still need manual review -- say "Review ACEP receipts" when ready.</div></div>
-          <div class="row"><div class="dir-label">American Integrity:</div><div class="dir-val">Today: EDIT 15 Albert Ortiz, EDIT 16 Alexandra Rodriguez, EDIT 24 Rebecca Rogers. Nothing else on deck this week per the current snapshot.</div></div>
-        </div>
-      </div>
-      <div class="pcard">
-        <div class="pcard-head" style="background:var(--seacoast-bg);color:var(--seacoast);"><span>Seacoast</span><span class="badge badge-ok">Medium</span></div>
-        <div class="pcard-body">
-          <div class="row"><div class="dir-label">Why today:</div><div class="dir-val">Three Legacy Vision Night scripts due Sept 11 -- 9 days of runway.</div></div>
-          <div class="row"><div class="dir-label">Best move:</div><div class="dir-val">Start the Look Back script today since writing tends to take longest.</div></div>
-          <div class="row"><div class="dir-label">Watch out:</div><div class="dir-val">All three scripts compete for the same review window with Josh and Lisa.</div></div>
-          <div class="row"><div class="dir-label">Next:</div><div class="dir-val">Outreach sent to all 14 campus pastors 8/19; pastor call held 8/25.</div></div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="section callout-blue">
-    <div class="sec-label blue"><svg class="ic"><use href="#i-check-square"></use></svg>Do / Defer / Decide</div>
-    <div class="row"><div class="dir-label">Do today:</div><div class="dir-val">Grade Assignment 2-1 &amp; Introduce Yourself (due Fri); make real progress on the CFX outline.</div></div>
-    <div class="row"><div class="dir-label">Defer:</div><div class="dir-val">Legacy Vision Night scripts -- due Sept 11, plenty of runway. Start tomorrow or Thursday if today fills up.</div></div>
-    <div class="row"><div class="dir-label">Decide:</div><div class="dir-val">Whether the 9:00-10:30 AM window goes to the CFX outline or the EDIT queue -- recommend CFX given the overdue status and looming conference.</div></div>
-  </div>
-
-  <div class="section callout-red">
-    <div class="sec-label red"><svg class="ic"><use href="#i-alert"></use></svg>Overdue / At Risk</div>
-    <div class="task"><span>Develop talk outline and structure -- Speaking</span><span style="color:var(--red);font-size:13px;">Do it today</span></div>
-    <div class="task"><span>Build slide deck -- Speaking</span><span style="color:var(--text-muted);font-size:13px;">Schedule it (tomorrow, after outline)</span></div>
-    <div class="task"><span>Gather visual examples -- Speaking</span><span style="color:var(--red);font-size:13px;">Do it today (should inform the outline)</span></div>
-  </div>
-
-  <div class="generated">Generated Wednesday, September 2, 2026 &middot; 4:22 AM ET</div>
-
-</div>
-
-<!-- ===================== FAITH ===================== -->
-<div class="pane" id="pane-faith">
-
-  <div class="section">
-    <div class="sec-label violet"><svg class="ic"><use href="#i-book"></use></svg>My Utmost for His Highest</div>
-    <div class="faith-ref">September 2: A Life of Pure and Holy Sacrifice</div>
-    <div class="faith-verse">"He who believes in Me . . . out of his heart will flow . . . ."</div>
-    <div class="faith-ref">-- John 7:38</div>
-    <p style="font-size:13px;color:#1a1a1a;line-height:1.6;margin-bottom:8px;margin-top:12px;">Jesus did not say, "He who believes in Me will realize all the blessings of the fullness of God," but, in essence, "He who believes in Me will have everything he receives escape out of him." Our Lord's teaching was always anti-self-realization. His purpose is not the development of a person -- His purpose is to make a person exactly like Himself, and the Son of God is characterized by self-expenditure. If we believe in Jesus, it is not what we gain but what He pours through us that really counts. God's purpose is not simply to make us beautiful, plump grapes, but to make us grapes so that He may squeeze the sweetness out of us. Our spiritual life cannot be measured by success as the world measures it, but only by what God pours through us -- and we cannot measure that at all.</p>
-    <p style="font-size:13px;color:#1a1a1a;line-height:1.6;margin-bottom:8px;">When Mary of Bethany "broke the flask . . . of very costly oil . . . and poured it on [Jesus'] head," it was an act for which no one else saw any special occasion; in fact, ". . . there were some who . . . said, 'Why was this fragrant oil wasted?'" (Mark 14:3-4). But Jesus commended Mary for her extravagant act of devotion, and said, ". . . wherever this gospel is preached . . . what this woman has done will also be told as a memorial to her" (Mark 14:9). Our Lord is filled with overflowing joy whenever He sees any of us doing what Mary did -- not being bound by a particular set of rules, but being totally surrendered to Him. God poured out the life of His Son "that the world through Him might be saved" (John 3:17). Are we prepared to pour out our lives for Him?</p>
-    <p style="font-size:13px;color:#1a1a1a;line-height:1.6;margin-bottom:8px;">"He who believes in Me . . . out of his heart will flow rivers of living water" -- and hundreds of other lives will be continually refreshed. Now is the time for us to break "the flask" of our lives, to stop seeking our own satisfaction, and to pour out our lives before Him. Our Lord is asking who of us will do it for Him?</p>
-  </div>
-
-  <div class="section">
-    <div class="sec-label violet"><svg class="ic"><use href="#i-heart"></use></svg>Prayer List</div>
-    <div class="prayer-item">Micah Kongkousonh's family</div>
-    <div class="prayer-item">Jirah</div>
-    <div class="prayer-item">Russo</div>
-    <div class="prayer-item">Carrie Davis</div>
-    <div class="prayer-item">Moondog</div>
-  </div>
-
-  <div class="generated">Generated Wednesday, September 2, 2026 &middot; 4:22 AM ET</div>
-
-</div>
-
-<!-- ===================== DAILY DEVELOPMENT ===================== -->
-<div class="pane" id="pane-daily-dev">
-
-  <div class="section">
-    <div class="sec-label devblue"><svg class="ic"><use href="#i-lightbulb"></use></svg>Daily Creative</div>
-    <div class="dev-title">September 2nd - Todd Henry</div>
-    <div class="dev-body">
-      <p>"I didn't have time" is the most common excuse I hear for why important things don't get done. It's as if some magical unicorns roam this planet with an extra number of hours to spend while the rest of us have to make do with a mere 168 hours a week. But we all know that everyone we admire and respect has precisely the same amount of time in the day that we do.</p>
-      <p>If things are important, you make time for them.</p>
-      <p>What we are really saying when we say "I don't have time," is "It's not really that important to me," or sometimes "I don't want to deal with the uncertainty of it." But if an emergency arose, for example if you broke your leg, I guarantee that you'd find the time to deal with it. Everything else would become suddenly less urgent. Where did that time come from? Were you suddenly gifted the time to deal with your medical emergency? No, you prioritized it.</p>
-      <p>Today, I encourage you to shift your language from "I don't have time," to "It's not important right now." It's a small thing and very subtle, but it's a major mindset shift that is actually more honest and will keep you from making excuses that will eat away at your creative drive.</p>
-      <p>If something is truly important to us, we make time for it.</p>
-    </div>
-    <div class="dev-question">Question: Are you really lacking the time to do what you need to do, or are those things just not as much of a priority right now?</div>
-  </div>
-
-  <div class="generated">Generated Wednesday, September 2, 2026 &middot; 4:22 AM ET</div>
-
-</div>
-
-<!-- ===================== FITNESS ===================== -->
-<div class="pane" id="pane-fitness">
-
-  <div class="section">
-    <div class="sec-label"><svg class="ic"><use href="#i-dumbbell"></use></svg>Today's Workout</div>
-    <div class="workout-meta">Back &amp; Triceps -- Evan's Workout Plan (3-day split, Mon/Wed/Fri)</div>
-    <div class="window-pill window-clear">Workout window clear -- 8-9 AM</div>
-    <div class="exercise"><span>Back (pick 3): Wide Grip Lat Pulldowns, Reverse Close Grip Lat Pulldowns, V-bar Lat Pulldowns, Bent Over Rows, Dumbbell Pullovers, One Arm Rows</span></div>
-    <div class="exercise"><span>Triceps (pick 3): Behind the Head Dumbbell Press, Close Grip Barbell Press, Tricep Dips, Tricep Pressdowns, Skull Crushers, Reverse Grip Triceps Bench</span></div>
-  </div>
-
-  <div class="section">
-    <div class="sec-label"><svg class="ic"><use href="#i-pie"></use></svg>Macro Plan</div>
-
-    <div class="meal-head">Morning Coffee</div>
-    <div class="meal-items">1/2 serving collagen protein powder (2 TBSP) mixed into coffee</div>
-    <div class="meal-macros"><span>18 cal</span><span>4g protein</span><span>0g carbs</span><span>0g fat</span></div>
-
-    <div class="meal-head">Breakfast</div>
-    <div class="meal-items">2 whole eggs + 4 egg whites</div>
-    <div class="meal-macros"><span>210 cal</span><span>28g protein</span><span>2g carbs</span><span>10g fat</span></div>
-
-    <div class="meal-head">Snack 1</div>
-    <div class="meal-items">1 scoop Cocoa Crispy's Protein Shake (water)</div>
-    <div class="meal-macros"><span>130 cal</span><span>25g protein</span><span>6g carbs</span><span>2g fat</span></div>
-
-    <div class="meal-head">Lunch</div>
-    <div class="meal-items">Project Lean Nation meal (rotate favorites)</div>
-    <div class="meal-macros"><span>450 cal</span><span>35g protein</span><span>45g carbs</span><span>12g fat</span></div>
-
-    <div class="meal-head">Post-Lunch Shake</div>
-    <div class="meal-items">Six Star Whey Protein Plus -- Frosted Flakes (1 scoop, water)</div>
-    <div class="meal-macros"><span>190 cal</span><span>30g protein</span><span>9g carbs</span><span>3g fat</span></div>
-
-    <div class="meal-head">Snack 2</div>
-    <div class="meal-items">Mini oranges (clementines) and/or applesauce</div>
-    <div class="meal-macros"><span>90 cal</span><span>1g protein</span><span>22g carbs</span><span>0g fat</span></div>
-
-    <div class="meal-head">Dinner -- Option A: Chicken (recommended)</div>
-    <div class="meal-items">Baked chicken breast, lightly breaded (6-7 oz) + 1/2 cup rice + pat of butter</div>
-    <div class="meal-macros"><span>430 cal</span><span>48g protein</span><span>32g carbs</span><span>10g fat</span></div>
-
-    <div class="meal-head">Evening Snack</div>
-    <div class="meal-items">Blue Bunny Caramel mini cone + Cinnamon Bun Casein shake</div>
-    <div class="meal-macros"><span>290 cal</span><span>27g protein</span><span>31g carbs</span><span>8g fat</span></div>
-
-    <div class="table-scroll">
-    <table class="macro-table">
-      <tr><th>Chicken Day</th><th>Cal</th><th>Protein</th><th>Carbs</th><th>Fat</th></tr>
-      <tr class="total-row"><td>Total</td><td>1,808</td><td>198g</td><td>147g</td><td>45g</td></tr>
-      <tr class="target-row"><td>Target</td><td>2,308</td><td>200g</td><td>215g</td><td>72g</td></tr>
-      <tr class="gap-row"><td>Gap</td><td>-500</td><td>-2g</td><td>-68g</td><td>-27g</td></tr>
-    </table>
-    </div>
-
-    <div class="bar-section">
-      <div class="bar-section-label">Macros vs. Target</div>
-      <div class="bar-row"><div class="bar-label"><span>Calories</span><span>1,808 / 2,308</span></div><div class="bar-bg"><div class="bar-fill" style="width:78%"></div></div></div>
-      <div class="bar-row"><div class="bar-label"><span>Protein</span><span>198g / 200g</span></div><div class="bar-bg"><div class="bar-fill" style="width:99%"></div></div></div>
-      <div class="bar-row"><div class="bar-label"><span>Carbs</span><span>147g / 215g</span></div><div class="bar-bg"><div class="bar-fill" style="width:68%"></div></div></div>
-      <div class="bar-row"><div class="bar-label"><span>Fat</span><span>45g / 72g</span></div><div class="bar-bg"><div class="bar-fill" style="width:63%"></div></div></div>
-    </div>
-
-    <div class="macro-rec">Dinner call: Chicken -- protein lands at 198g (just 2g under target), vs. fish at 188g (12g short). Main gap is carbs: -68g. Add a banana with Snack 2 (+27g) and 2-3 rice cakes mid-afternoon (+20g) to recover about 47g of that gap; grapes or a second clementine can close the rest. Fat is -27g under -- add a drizzle of olive oil on the chicken or extra butter on the rice to help close it without overshooting protein.</div>
-  </div>
-
-  <div class="section">
-    <div class="sec-label"><svg class="ic"><use href="#i-list"></use></svg>Pack List</div>
-    <div class="workout-meta">3 meals away from home</div>
-    <div class="pack-row"><div class="pack-meal">Lunch</div><div class="pack-conflict">In Office, 10:30 AM-5 PM</div><div class="pack-swap">PLN meal in insulated bag, or pack chicken + rice in a container</div></div>
-    <div class="pack-row"><div class="pack-meal">Snack 2</div><div class="pack-conflict">In Office, 10:30 AM-5 PM</div><div class="pack-swap">Clementines or applesauce pouch -- both naturally portable</div></div>
-    <div class="pack-row"><div class="pack-meal">Dinner</div><div class="pack-conflict">First Wed Training until 6:30 PM</div><div class="pack-swap">Prepped chicken + rice in a container for a quick turnaround</div></div>
-  </div>
-
-  <div class="generated">Generated Wednesday, September 2, 2026 &middot; 4:22 AM ET</div>
-
-</div>
-
-<!-- ===================== WEEKLY (pasted verbatim from weekly-snapshot.html) ===================== -->
-<div class="pane" id="pane-weekly">
 
 <div class="section">
-  <div class="sec-label"><svg class="ic"><use href="#i-target"></use></svg>This Week's Focus</div>
-  <div class="row"><div class="dir-label">1</div><div class="dir-val"><strong>Finish the CFX 2026 talk outline and slide deck</strong> (Speaking) <span class="badge badge-warn">overdue</span> -- conference is Sept 14-16, 12 days out, and all three prep tasks are already sitting overdue.</div></div>
-  <div class="row"><div class="dir-label">2</div><div class="dir-val"><strong>Keep the American Integrity editing queue moving</strong> (Freelance) -- 15 videos in active editing, three scheduled for today (Albert Ortiz, Alexandra Rodriguez, Rebecca Rogers).</div></div>
-  <div class="row"><div class="dir-label">3</div><div class="dir-val"><strong>Clear the COMM 335 grading stack</strong> (Teaching) <span class="badge badge-warn">due Fri</span> -- Assignment 2-1 and Introduce Yourself both due Friday, Discussion 3 due Saturday.</div></div>
-  <div class="row"><div class="dir-label">4</div><div class="dir-val"><strong>Write the Legacy Vision Night scripts</strong> (Seacoast) -- Look Back, Look Ahead, and the One Day Missions script all due Friday, Sept 11.</div></div>
-  <div class="row"><div class="dir-label">5</div><div class="dir-val"><strong>Review CFX talk for SALT feedback</strong> (Speaking) -- due Sept 19, and Talk 1 for SALT 2026 will closely mirror the CFX talk, so this doubles as prep for both.</div></div>
+<div class="sec-label"><svg class="ic"><use href="#i-calendar"></use></svg>Today's Schedule</div>
+<div class="sched-row role-seacoast"><div class="sched-time">10:30 AM<br>2:30 PM</div><div><div class="sched-title">In Office</div><div class="sched-sub">713 Long Point Rd, Mount Pleasant SC</div></div></div>
+<div class="sched-row role-seacoast"><div class="sched-time">2:30 PM<br>3:30 PM</div><div><div class="sched-title">September Staff Video Recording</div><div class="sched-sub">Breezeway</div></div></div>
+<div class="sched-row role-focus"><div class="sched-time">8:00 PM<br>10:00 PM</div><div><div class="sched-title">Evening Focus: Freelance</div></div></div>
+</div>
+
+<div class="section hero-ink">
+<div class="sec-label">Today's Game Plan</div>
+<div class="gp-grid">
+<div class="gp-item"><div class="dir-label">Protect:</div><div class="dir-val">Family time, 5:00-8:00 PM -- clear on the calendar tonight.</div></div>
+<div class="gp-item"><div class="dir-label">Main pressure:</div><div class="dir-val">CFX 2026 talk outline, slides, and visuals -- all overdue since Aug 31, event is 11 days out.</div></div>
+<div class="gp-item"><div class="dir-label">Tonight:</div><div class="dir-val">Freelance -- push an American Integrity edit (Albert Ortiz, Alexandra Rodriguez, or Rebecca Rogers).</div></div>
+<div class="gp-item"><div class="dir-label">Watch out:</div><div class="dir-val flag">CFX prep keeps slipping while a full Seacoast day and tonight's edit queue compete for the same hours.</div></div>
+</div>
+</div>
+
+<div class="section">
+<div class="sec-label"><svg class="ic"><use href="#i-clock"></use></svg>Open Work Windows</div>
+<div class="row"><div class="dir-label">SPS block</div><div class="dir-val">5:30-7:15 AM</div></div>
+<div class="row"><div class="dir-label">Pre-Seacoast</div><div class="dir-val">9:00-10:30 AM (after gym, before In Office) -- best window for the CFX outline</div></div>
+<div class="row"><div class="dir-label">Seacoast</div><div class="dir-val">10:30 AM-3:30 PM (In Office + Staff Video Recording)</div></div>
+<div class="row"><div class="dir-label">Evening</div><div class="dir-val">8:00-10:00 PM</div></div>
+</div>
+
+<div class="section">
+<div class="sec-label"><svg class="ic"><use href="#i-list"></use></svg>Top Priorities</div>
+<div class="pri-grid">
+<div class="pri-card">
+<div><div class="pri-num">1</div><div class="pri-name">CFX 2026 talk prep</div><div class="pri-meta"><span class="dot" style="background:var(--speaking)"></span>Speaking &middot; <span class="overdue">3 days overdue</span></div></div>
+<div class="pri-next">Next action: Finish the talk outline and structure -- slides and visuals both depend on it.</div>
+</div>
+<div class="pri-card">
+<div><div class="pri-num">2</div><div class="pri-name">American Integrity edits</div><div class="pri-meta"><span class="dot" style="background:var(--freelance)"></span>Freelance &middot; Due today</div></div>
+<div class="pri-next">Next action: Finish at least one full edit tonight (Ortiz, Rodriguez, or Rogers).</div>
+</div>
+<div class="pri-card">
+<div><div class="pri-num">3</div><div class="pri-name">CSU grading</div><div class="pri-meta"><span class="dot" style="background:var(--teaching)"></span>Teaching &middot; Due tomorrow</div></div>
+<div class="pri-next">Next action: Grade Assignment 2-1 and Introduce Yourself before end of day.</div>
+</div>
+</div>
+</div>
+
+<div class="section callout-warn">
+<div class="sec-label warn"><svg class="ic"><use href="#i-alert"></use></svg>Capacity</div>
+<div class="dir-val">Capacity: Tight. CFX slides are already overdue and the event is 11 days out, on top of a full Seacoast day (10:30 AM-3:30 PM) and 3 Freelance edits queued for tonight.</div>
+</div>
+
+<div class="section">
+<div class="sec-label"><svg class="ic"><use href="#i-layers"></use></svg>Open Projects</div>
+<div class="proj-grid">
+<div class="proj-group">
+<div class="proj-group-label">Seacoast</div>
+<div class="proj-row r-seacoast">2026-27 Campus Coverage</div>
+</div>
+<div class="proj-group">
+<div class="proj-group-label">Teaching</div>
+<div class="proj-row r-teaching">COMM 335 (CSU)</div>
+<div class="proj-row r-teaching">CM 1110 (Moody)</div>
+<div class="proj-row r-teaching">SOC 2204 (Moody)</div>
+<div class="proj-row r-teaching">GSU 1120 (Moody)</div>
+</div>
+<div class="proj-group">
+<div class="proj-group-label">Freelance</div>
+<div class="proj-row r-freelance">American Integrity (ACEP)</div>
+<div class="proj-row r-freelance">Bread of Life (ACEP)</div>
+</div>
+<div class="proj-group">
+<div class="proj-group-label">Smartphone Storytellers</div>
+<div class="proj-row r-sps">Storyteller 101</div>
+<div class="proj-row r-sps on-hold">Product Launch (7 Products) <span class="hold-tag">On Hold</span></div>
+</div>
+<div class="proj-group">
+<div class="proj-group-label">Speaking</div>
+<div class="proj-row r-speaking">CFX 2026</div>
+<div class="proj-row r-speaking">SALT 2026</div>
+<div class="proj-row r-speaking on-hold">FILO <span class="hold-tag">On Hold</span></div>
+</div>
+<div class="proj-group">
+<div class="proj-group-label">Personal</div>
+<div class="proj-row">Guitar</div>
+<div class="proj-row on-hold">Smart Home Automation <span class="hold-tag">On Hold</span></div>
+</div>
+</div>
 </div>
 
 <div class="section callout-red">
-  <div class="sec-label red"><svg class="ic"><use href="#i-alert"></use></svg>Watch Out For</div>
-  <div class="row"><div class="dir-label">CFX prep</div><div class="dir-val flag">Outline, slide deck, and visual examples are all overdue since Mon 8/31 with the conference only 12 days away -- this is the week's biggest risk.</div></div>
-  <div class="row"><div class="dir-label">Today (Wed)</div><div class="dir-val">First Wed Training runs 5:00-6:30 PM, cutting into the front of family time.</div></div>
-  <div class="row"><div class="dir-label">Wed 9/9</div><div class="dir-val">MDWK runs 6:30-8:30 PM, displacing that night's Teaching-focused Evening Focus block -- risk of grading backlog if nothing is done earlier that day.</div></div>
-  <div class="row"><div class="dir-label">9/4-9/12</div><div class="dir-val">Jack and Lynne both out on PTO for stretches this week and next -- expect a lighter but less-supported office week.</div></div>
-  <div class="row"><div class="dir-label">9/14-9/16</div><div class="dir-val">CFX 2026 travel to Birmingham -- no SPS or Freelance progress realistic those days, so front-load this week.</div></div>
-</div>
-
-<div class="section callout-red">
-  <div class="sec-label red"><svg class="ic"><use href="#i-alert"></use></svg>Missed and Overdue</div>
-  <div class="task"><span>Develop talk outline and structure</span><span class="badge badge-warn">overdue since Mon 8/31</span></div>
-  <div class="task"><span>Build slide deck</span><span class="badge badge-warn">overdue since Mon 8/31</span></div>
-  <div class="task"><span>Gather visual examples</span><span class="badge badge-warn">overdue since Mon 8/31</span></div>
-</div>
-
-<div class="section">
-  <div class="sec-label"><svg class="ic"><use href="#i-folder"></use></svg>Seacoast</div>
-  <div class="tier-head">This Week</div>
-  <div class="task"><span>Legacy - Vision Night Look Back (Josh and Lisa)<span class="task-role" style="color:var(--seacoast)">Seacoast</span></span><span class="badge">Fri 9/11</span></div>
-  <div class="task"><span>Legacy - Vision Night Look Ahead (Josh and Lisa)<span class="task-role" style="color:var(--seacoast)">Seacoast</span></span><span class="badge">Fri 9/11</span></div>
-  <div class="task"><span>Legacy - One Day Missions Script (Jodi)<span class="task-role" style="color:var(--seacoast)">Seacoast</span></span><span class="badge">Fri 9/11</span></div>
-  <div class="tier-head">Active Projects</div>
-  <div class="task"><span>2026-27 Campus Coverage -- outreach sent to all 14 campus pastors, pastor call held 8/25</span></div>
-  <div class="tier-head">Suggestions</div>
-  <div class="task"><span>Draft the Look Back script first -- it's likely the shortest of the three and builds momentum before Look Ahead and the Missions script.</span></div>
-  <div class="task"><span>Loop Josh and Lisa in early rather than delivering all three scripts at once on the 11th.</span></div>
-</div>
-
-<div class="section">
-  <div class="sec-label"><svg class="ic"><use href="#i-book"></use></svg>Teaching</div>
-  <div class="tier-head">This Week</div>
-  <div class="task"><span>GRADE Assignment 2-1: Talk to Your Tech Essay<span class="task-role" style="color:var(--teaching)">Teaching</span></span><span class="badge">Fri 9/4</span></div>
-  <div class="task"><span>GRADE Introduce Yourself<span class="task-role" style="color:var(--teaching)">Teaching</span></span><span class="badge">Fri 9/4</span></div>
-  <div class="task"><span>RESPOND Discussion 3: Jesus and Culture (9 posts)<span class="task-role" style="color:var(--teaching)">Teaching</span></span><span class="badge">Sat 9/5</span></div>
-  <div class="task"><span>RECORD Blogs lecture<span class="task-role" style="color:var(--teaching)">Teaching</span></span><span class="badge">Mon 9/7</span></div>
-  <div class="tier-head">This Month</div>
-  <div class="task"><span>GRADE Assignment 3-1: Jesus and the Media<span class="task-role" style="color:var(--teaching)">Teaching</span></span><span class="badge">Fri 9/11</span></div>
-  <div class="task"><span>RESPOND Discussion 4: Film and Christian Witness<span class="task-role" style="color:var(--teaching)">Teaching</span></span><span class="badge">Sat 9/12</span></div>
-  <div class="task"><span>RECORD News Design lecture<span class="task-role" style="color:var(--teaching)">Teaching</span></span><span class="badge">Mon 9/14</span></div>
-  <div class="tier-head">Active Projects</div>
-  <div class="task"><span>COMM 335 (CSU) -- launched, Blogs/News Design/Web Design decks built, need recording</span></div>
-  <div class="task"><span>CM 1110 (Moody) -- Week 1 wrap target 10/8</span></div>
-  <div class="task"><span>SOC 2204 (Moody) -- only re-recording week intros left</span></div>
-  <div class="task"><span>GSU 1120 (Moody) -- Lesson 1 recorded, needs editing</span></div>
-  <div class="tier-head">Suggestions</div>
-  <div class="task"><span>Batch the two Friday grading items together rather than splitting across days -- both are due the same day.</span></div>
-  <div class="task"><span>Record the Blogs/News Design decks that are already built before starting anything new -- they're just sitting ready.</span></div>
-</div>
-
-<div class="section">
-  <div class="sec-label"><svg class="ic"><use href="#i-receipt"></use></svg>Freelance</div>
-  <div class="tier-head">This Week</div>
-  <div class="task"><span>EDIT 15 - Albert Ortiz<span class="task-role" style="color:var(--freelance)">Freelance</span></span><span class="badge">Active editing</span></div>
-  <div class="task"><span>EDIT 16 - Alexandra Rodriguez<span class="task-role" style="color:var(--freelance)">Freelance</span></span><span class="badge">Active editing</span></div>
-  <div class="task"><span>EDIT 24 - Rebecca Rogers<span class="task-role" style="color:var(--freelance)">Freelance</span></span><span class="badge">Active editing</span></div>
-  <div class="tier-head">Active Projects</div>
-  <div class="task"><span>American Integrity -- 3 of 28 delivered/approved, 10 awaiting client feedback, 15 in active editing, 1 on hold (Kerry Nafzger)</span></div>
-  <div class="task"><span>Bread of Life -- next focus alongside American Integrity once a tracker exists</span></div>
-  <div class="tier-head">Suggestions</div>
-  <div class="task"><span>Invoice Wei Xie and Steve Biggs -- both delivered/approved but still not billed.</span></div>
-  <div class="task"><span>Set aside time for the 323-item ACEP receipt review pile before it grows further.</span></div>
-</div>
-
-<div class="section">
-  <div class="sec-label"><svg class="ic"><use href="#i-phone"></use></svg>Smartphone Storytellers</div>
-  <div class="tier-head">Open (no deadline)</div>
-  <div class="task"><span>No SPS tasks appear in Things this week -- Module 6 (Case Study) is blocked on filming landscape and portrait footage.</span></div>
-  <div class="tier-head">Active Projects</div>
-  <div class="task"><span>Storyteller 101 -- Modules 0-5 complete; Module 6 is the only piece left, needs footage shot first</span></div>
-  <div class="task"><span>Product Launch (7 Products) -- On Hold until Storyteller 101 launches</span></div>
-  <div class="tier-head">Suggestions</div>
-  <div class="task"><span>Use an open morning block this week to plan the Module 6 shoot (locations for landscape, subject for the portrait talking-head) since writing can't start without footage.</span></div>
-  <div class="task"><span>Even 20 minutes logged against Module 6 planning keeps this from going fully quiet for another week.</span></div>
-</div>
-
-<div class="section">
-  <div class="sec-label"><svg class="ic"><use href="#i-list"></use></svg>Speaking</div>
-  <div class="tier-head">This Week</div>
-  <div class="task"><span>Develop talk outline and structure<span class="task-role" style="color:var(--speaking)">Speaking</span></span><span class="badge badge-warn">overdue</span></div>
-  <div class="task"><span>Build slide deck<span class="task-role" style="color:var(--speaking)">Speaking</span></span><span class="badge badge-warn">overdue</span></div>
-  <div class="task"><span>Gather visual examples<span class="task-role" style="color:var(--speaking)">Speaking</span></span><span class="badge badge-warn">overdue</span></div>
-  <div class="tier-head">This Month</div>
-  <div class="task"><span>Review CFX talk for feedback<span class="task-role" style="color:var(--speaking)">Speaking</span></span><span class="badge">Sat 9/19</span></div>
-  <div class="tier-head">Active Projects</div>
-  <div class="task"><span>CFX 2026 -- Sept 14-16, Birmingham; slides were due 8/31</span></div>
-  <div class="task"><span>SALT 2026 -- Oct 14-16, Irving TX; slides due 9/23; Talk 1 will mirror the CFX talk</span></div>
-  <div class="tier-head">Suggestions</div>
-  <div class="task"><span>Outline before slides -- the deck can't really progress until the outline exists, so that's the one task to protect this week.</span></div>
-</div>
-
-<div class="section">
-  <div class="sec-label"><svg class="ic"><use href="#i-heart"></use></svg>Personal</div>
-  <div class="tier-head">Open (no deadline)</div>
-  <div class="task"><span>Guitar -- Modules 0-2 in guitar-curriculum.md (setup, fretting basics, first three chords)</span></div>
-  <div class="tier-head">This Week</div>
-  <div class="task"><span>Zelda's Violin Lesson<span class="task-role" style="color:#726C67">Personal</span></span><span class="badge">Tue 9/8, 3:45 PM</span></div>
-  <div class="tier-head">Suggestions</div>
-  <div class="task"><span>Labor Day (Mon 9/7) is a real day off -- Seacoast offices closed and no school -- protect it as family time rather than catch-up time.</span></div>
-</div>
-
-<div class="section">
-  <div class="sec-label"><svg class="ic"><use href="#i-check-square"></use></svg>Role Evaluation</div>
-  <div class="row"><div class="dir-label">Faith</div><div class="dir-val">No data source for daily Faith block completion -- assumed protected per the ideal schedule.</div></div>
-  <div class="row"><div class="dir-label">Family</div><div class="dir-val flag">At risk twice this week -- First Wed Training (today) and MDWK (9/9) both cut into the 5-8 PM or Evening Focus window.</div></div>
-  <div class="row"><div class="dir-label">Smartphone Storytellers</div><div class="dir-val flag">Stalled -- no SPS tasks in Things this week and Module 6 has been blocked on footage for several weeks now. This is the highest-priority growth initiative; it needs a concrete next action, even just shoot planning.</div></div>
-  <div class="row"><div class="dir-label">Fitness</div><div class="dir-val">On schedule per the 3-day split (Mon/Wed/Fri) plus Tue/Thu circuits.</div></div>
-  <div class="row"><div class="dir-label">Seacoast</div><div class="dir-val">On track -- Campus Coverage outreach sent, Legacy scripts have runway to Sept 11.</div></div>
-  <div class="row"><div class="dir-label">Margin</div><div class="dir-val flag">Tight -- CFX overdue items, Friday grading, and three Seacoast scripts are all competing for the same open windows this week.</div></div>
+<div class="sec-label red"><svg class="ic"><use href="#i-alert"></use></svg>Heads Up</div>
+<div class="task">Develop talk outline and structure<span class="task-role" style="color:var(--speaking)">Speaking -- CFX 2026</span><span class="badge badge-warn">3 days overdue</span></div>
+<div class="task">Build slide deck<span class="task-role" style="color:var(--speaking)">Speaking -- CFX 2026</span><span class="badge badge-warn">3 days overdue</span></div>
+<div class="task">Gather visual examples<span class="task-role" style="color:var(--speaking)">Speaking -- CFX 2026</span><span class="badge badge-warn">3 days overdue</span></div>
 </div>
 
 <div class="section callout-blue">
-  <div class="sec-label blue"><svg class="ic"><use href="#i-trending"></use></svg>Opportunities and Ideas</div>
-  <div class="task"><span><strong>One strategic action: block 90 uninterrupted minutes for the CFX outline this week</strong> -- it's the single task blocking two others (slide deck, visual examples) and it doubles as the starting point for SALT 2026's Talk 1, which mirrors it closely.</span></div>
-  <div class="task"><span>Plan the Module 6 shoot now so filming can happen before the CFX trip eats the 14th-16th -- otherwise Storyteller 101 stalls for another two weeks.</span></div>
-  <div class="task"><span>Invoicing Wei Xie and Steve Biggs this week is a quick win -- both are already delivered, just needs the paperwork.</span></div>
-  <div class="task"><span>SALT 2026's "Review CFX talk for feedback" task (due 9/19) means the CFX outline work this week has a second payoff -- don't treat it as single-use.</span></div>
+<div class="sec-label blue"><svg class="ic"><use href="#i-receipt"></use></svg>Freelance</div>
+<div class="dir-val">There are 323 receipts that need manual review.</div>
+<div class="dir-val" style="color:var(--text-faint);font-size:13.5px;margin-top:4px;">Say "Review ACEP receipts" to process them.</div>
+</div>
+
+<div class="section callout-blue">
+<div class="sec-label blue"><svg class="ic"><use href="#i-alert"></use></svg>Calendar</div>
+<div class="dir-val">14 invite(s) need a flag.</div>
+<div class="dir-val" style="color:var(--text-faint);font-size:13.5px;margin-top:4px;">Say "flag my invites" to resolve.</div>
+</div>
+
+<div class="generated">Generated Thursday, September 3, 2026 &middot; 4:21 AM ET</div>
+</div>
+<div class="pane" id="pane-morning">
+
+<div class="section">
+<div class="sec-label blue"><svg class="ic"><use href="#i-sunrise"></use></svg>Morning Read</div>
+<p style="font-size:15.5px;line-height:1.65;color:var(--text);">Today's biggest pressure is CFX 2026 -- the talk outline, slide deck, and visual examples were all due August 31 and are now three days overdue, with the Birmingham event only 11 days out on September 14. A full Seacoast day (In Office 10:30 AM-2:30 PM, then the September Staff Video Recording at Breezeway until 3:30) leaves a narrow morning window and an evening Freelance block to make progress. Three American Integrity edits are also queued for today (Albert Ortiz, Alexandra Rodriguez, Rebecca Rogers), and grading for two CSU assignments is due tomorrow. Given the CFX deadline pressure, prioritize the talk outline in the open 9:00-10:30 AM window before Seacoast, and treat tonight's Freelance block as edit time rather than CFX catch-up. <strong>Watch out for:</strong> CFX prep continuing to slip while today's calendar and tonight's Freelance queue compete for the same hours.</p>
+</div>
+
+<div class="section callout-red">
+<div class="sec-label red"><svg class="ic"><use href="#i-alert"></use></svg>What You Might Be Forgetting</div>
+<div class="row"><div class="dir-val"><strong>CFX outline overdue:</strong> Talk outline, slide deck, and visual examples were all due Aug 31 and haven't moved -- with the event 11 days away, this needs a concrete block soon, not just "when there's time."</div></div>
+<div class="row"><div class="dir-val"><strong>14 calendar invites need a flag:</strong> the event-flags manifest hasn't kept pace with the calendar feed's new UID format, so it never matches -- worth a "flag my invites" pass soon.</div></div>
+<div class="row"><div class="dir-val"><strong>323 ACEP receipts pending:</strong> a growing backlog worth a dedicated review pass rather than letting it compound further.</div></div>
 </div>
 
 <div class="section">
-  <div class="sec-label"><svg class="ic"><use href="#i-calendar"></use></svg>30-Day Calendar</div>
-
-  <div class="tier-head">Week of Sept 1</div>
-  <div class="row"><div class="dir-label">Wed 9/2</div><div class="dir-val">In Office 10:30 AM-5 PM; Portside Remoting 2:00 PM; First Wed Training 5:00-6:30 PM</div></div>
-  <div class="row"><div class="dir-label">Thu 9/3</div><div class="dir-val">In Office 10:30 AM-2:30 PM; September Staff Video Recording 2:30-3:30 PM</div></div>
-
-  <div class="tier-head">Week of Sept 7</div>
-  <div class="row"><div class="dir-label">Sun 9/6</div><div class="dir-val">Labor Day - No School</div></div>
-  <div class="row"><div class="dir-label">Mon 9/7</div><div class="dir-val">Seacoast Offices Closed (Labor Day); Film Team Weekly 10:30 AM</div></div>
-  <div class="row"><div class="dir-label">Tue 9/8</div><div class="dir-val">Weekend Debrief Call 9:00 AM; Zelda's Violin Lesson 3:45 PM</div></div>
-  <div class="row"><div class="dir-label">Wed 9/9</div><div class="dir-val">Central Teams Potluck 11:30 AM; Q2 Quarterly Ops Call 1:00 PM; MDWK 6:30-8:30 PM <em>(displaces Evening Focus)</em></div></div>
-
-  <div class="tier-head">Week of Sept 13</div>
-  <div class="row"><div class="dir-label">Sun 9/13</div><div class="dir-val">Dog Day Afternoon: North Charleston, 1-6 PM</div></div>
-  <div class="row"><div class="dir-label">Mon 9/14</div><div class="dir-val">Adam Out: CFX 2026 (Birmingham); Weekend Debrief Call 9:00 AM; Film Team Weekly 10:30 AM; CFX Speaker Meet-Up 5:30-7 PM</div></div>
-  <div class="row"><div class="dir-label">Tue 9/15</div><div class="dir-val">CFX 2026 (Birmingham); Zelda's Violin Lesson 3:45 PM</div></div>
-  <div class="row"><div class="dir-label">Wed 9/16</div><div class="dir-val">MDWK 6:30-8:30 PM</div></div>
-  <div class="row"><div class="dir-label">Thu 9/17</div><div class="dir-val">Chosen 2026</div></div>
-
-  <div class="tier-head">Week of Sept 20</div>
-  <div class="row"><div class="dir-label">Mon 9/21</div><div class="dir-val">Weekend Debrief Call 9:00 AM; Film Team Weekly 10:30 AM; Lunch with Adam Erickson (Greg Surratt) 12-1 PM; Major Moment Show 7-11 PM</div></div>
-  <div class="row"><div class="dir-label">Tue 9/22</div><div class="dir-val">October Staff Recording 12:30 PM; <span class="badge">FYI</span> Hannah SIC Meeting- HHA Library; Zelda's Violin Lesson 3:45 PM; Switchfoot 8-11 PM</div></div>
-  <div class="row"><div class="dir-label">Wed 9/23</div><div class="dir-val">MDWK 6:30-8:30 PM; Gorillaz (Charlotte) 7:30-11:30 PM</div></div>
-
-  <div class="tier-head">Week of Sept 27</div>
-  <div class="row"><div class="dir-label">Mon 9/28</div><div class="dir-val">Weekend Debrief Call 9:00 AM; Film Team Weekly 10:30 AM</div></div>
-  <div class="row"><div class="dir-label">Tue 9/29</div><div class="dir-val">Zelda's Violin Lesson 3:45 PM</div></div>
-  <div class="row"><div class="dir-label">Wed 9/30</div><div class="dir-val">MDWK 6:30-8:30 PM; LINKIN PARK: UNSHATTER, Summerville, 7:05-8:05 PM</div></div>
-  <div class="row"><div class="dir-label">Thu 10/1</div><div class="dir-val">Check for Books; Reset Heart Rate Zones</div></div>
-  <div class="row"><div class="dir-label">Fri 10/2</div><div class="dir-val">Relay Podcastathon; Spectrum Sailing (through 10/3)</div></div>
-
+<div class="sec-label blue"><svg class="ic"><use href="#i-arrow-right"></use></svg>What's Next</div>
+<div class="row"><div class="dir-val"><strong>1. Finish the CFX talk outline and structure</strong> -- everything else (slides, visuals) depends on it, and it's already 3 days overdue with the event 11 days out.</div></div>
+<div class="row"><div class="dir-val"><strong>2. Edit at least one American Integrity video tonight</strong> -- Albert Ortiz, Alexandra Rodriguez, or Rebecca Rogers are all queued and ready.</div></div>
+<div class="row"><div class="dir-val"><strong>3. Grade Assignment 2-1 and Introduce Yourself</strong> -- both due tomorrow (Sept 4) for CSU.</div></div>
+<div class="row"><div class="dir-val"><strong>4. Check in with the 4 students on incomplete submissions</strong> -- sitting on today's list, quick to knock out.</div></div>
+<div class="row"><div class="dir-val"><strong>5. Move Module 6 (Case Study) forward</strong> -- pre-production only (shot list, BTS location-picking concept) since scripting waits on footage.</div></div>
 </div>
 
-<div class="generated">Generated Wednesday, September 2, 2026 -- Week of Sept 1 -- Oct 2 (30-day view)</div>
-
+<div class="section callout-sps">
+<div class="sec-label sps"><svg class="ic"><use href="#i-phone"></use></svg>Smartphone Storytellers</div>
+<div class="row"><div class="dir-label" style="color:var(--sps-feature)">Status:</div><div class="dir-val">Modules 0-5 are complete; Module 6 (Case Study) is the only piece left, blocked on filming the landscape and portrait footage.</div></div>
+<div class="row"><div class="dir-label" style="color:var(--sps-feature)">Today's move:</div><div class="dir-val">Filming isn't scheduled yet -- use today's window to nail down the Module 6 shot list and BTS location-picking concept so the shoot can actually get booked.</div></div>
+<div class="row"><div class="dir-label" style="color:var(--sps-feature)">Morning block:</div><div class="dir-val">5:30-7:15 AM -- draft the Module 6 shot list (portrait: DR missions footage + US talking head; landscape: separate shoot) and BTS concept.</div></div>
 </div>
 
-<!-- ===================== REFERENCE ===================== -->
+<div class="section">
+<div class="sec-label blue"><svg class="ic"><use href="#i-trending"></use></svg>Opportunities</div>
+<div class="row"><div class="dir-val"><strong>Module 6 pre-production</strong> <span class="dot" style="background:var(--sps)"></span><span style="color:var(--sps);font-size:13px;">Smartphone Storytellers</span> -- locking the shot list this week unblocks the final module and clears the path to launch.</div></div>
+<div class="row"><div class="dir-val"><strong>CFX talk</strong> <span class="dot" style="background:var(--speaking)"></span><span style="color:var(--speaking);font-size:13px;">Speaking</span> -- finishing this outline also feeds directly into SALT 2026's Talk 1, which is meant to mirror it.</div></div>
+<div class="row"><div class="dir-val"><strong>American Integrity queue</strong> <span class="dot" style="background:var(--freelance)"></span><span style="color:var(--freelance);font-size:13px;">Freelance</span> -- closing out tonight's 3 edits chips into the 15 still in editing.</div></div>
+</div>
+
+<div class="section">
+<div class="sec-label"><svg class="ic"><use href="#i-sun"></use></svg>Weather</div>
+<div class="dir-val">Feels like 97° &middot; High 90° / Low 74° &middot; Humidity 65% &middot; Thunderstorms possible this afternoon</div>
+</div>
+
+<div class="section">
+<div class="sec-label blue"><svg class="ic"><use href="#i-clock"></use></svg>Recommended Sequence</div>
+<div class="row"><div class="dir-label" style="color:var(--blue);font-weight:700;">5:00-5:30 AM</div><div class="dir-val">Faith block</div></div>
+<div class="row"><div class="dir-label" style="color:var(--blue);font-weight:700;">5:30-7:15 AM</div><div class="dir-val">Smartphone Storytellers -- Module 6 shot list / BTS concept</div></div>
+<div class="row"><div class="dir-label" style="color:var(--blue);font-weight:700;">7:15-7:45 AM</div><div class="dir-val">School drop-off</div></div>
+<div class="row"><div class="dir-label" style="color:var(--blue);font-weight:700;">8:00-9:00 AM</div><div class="dir-val">Gym -- Off Day Circuit</div></div>
+<div class="row"><div class="dir-label" style="color:var(--blue);font-weight:700;">9:00-10:30 AM</div><div class="dir-val">CFX talk outline (open window before Seacoast)</div></div>
+<div class="row"><div class="dir-label" style="color:var(--blue);font-weight:700;">10:30 AM-3:30 PM</div><div class="dir-val">Seacoast -- In Office + September Staff Video Recording</div></div>
+<div class="row"><div class="dir-label" style="color:var(--blue);font-weight:700;">5:00-8:00 PM</div><div class="dir-val">Family time</div></div>
+<div class="row"><div class="dir-label" style="color:var(--blue);font-weight:700;">8:00-10:00 PM</div><div class="dir-val">Evening Focus: Freelance -- American Integrity edit</div></div>
+</div>
+
+<div class="section">
+<div class="sec-label"><svg class="ic"><use href="#i-alert"></use></svg>Deadline Pressure</div>
+<div class="tier-head">TOMORROW</div>
+<div class="task">GRADE Assignment 2-1: Talk to Your Tech Essay<span class="task-role" style="color:var(--teaching)">Teaching</span><span style="color:var(--amber);font-weight:600;">TOMORROW</span></div>
+<div class="task">GRADE Introduce Yourself<span class="task-role" style="color:var(--teaching)">Teaching</span><span style="color:var(--amber);font-weight:600;">TOMORROW</span></div>
+<div class="tier-head">THIS WEEK</div>
+<div class="task">RESPOND Discussion 3: Jesus and Culture (9 posts)<span class="task-role" style="color:var(--teaching)">Teaching</span><span style="color:var(--text-muted);">Sat</span></div>
+<div class="task">RECORD Blogs lecture<span class="task-role" style="color:var(--teaching)">Teaching</span><span style="color:var(--text-muted);">Mon</span></div>
+</div>
+
+<div class="section">
+<div class="sec-label"><svg class="ic"><use href="#i-layout"></use></svg>Project Cards</div>
+<div class="pcard-grid">
+
+<div class="pcard">
+<div class="pcard-head seacoast">Seacoast <span class="badge badge-ok">Medium</span></div>
+<div class="pcard-body">
+<div class="row"><div class="dir-label">Why today:</div><div class="dir-val">In Office 10:30 AM-2:30 PM plus the staff video recording; three Legacy scripts (Look Back, Look Ahead, One Day Missions) are on today's list, due Sept 11.</div></div>
+<div class="row"><div class="dir-label">Best move:</div><div class="dir-val">Knock out the Legacy scripts during any pocket in the office day.</div></div>
+<div class="row"><div class="dir-label">Watch out:</div><div class="dir-val">Nothing urgent -- deadline is over a week out.</div></div>
+</div>
+</div>
+
+<div class="pcard">
+<div class="pcard-head teaching">Teaching <span class="badge badge-high">High</span></div>
+<div class="pcard-body">
+<div class="row"><div class="dir-label">Why today:</div><div class="dir-val">Two check tasks today (grading queue, 4 incomplete-submission check-ins) plus two assignments due tomorrow.</div></div>
+<div class="row"><div class="dir-label">Best move:</div><div class="dir-val">Grade both tomorrow-due items today, then check in with the 4 students.</div></div>
+<div class="row"><div class="dir-label">Watch out:</div><div class="dir-val">Discussion 3 (9 posts, Sat) and Blogs lecture (Mon) are stacking up right behind tomorrow's grading.</div></div>
+</div>
+</div>
+
+<div class="pcard">
+<div class="pcard-head freelance">Freelance <span class="badge badge-high">High</span></div>
+<div class="pcard-body">
+<div class="row"><div class="dir-label">Why today:</div><div class="dir-val">Today: EDIT Albert Ortiz, EDIT Alexandra Rodriguez, EDIT Rebecca Rogers. Nothing additional scheduled in Things for this week yet.</div></div>
+<div class="row"><div class="dir-label">Best move:</div><div class="dir-val">Finish at least one full edit tonight during the Freelance evening block.</div></div>
+<div class="row"><div class="dir-label">Watch out:</div><div class="dir-val">15 videos still in active editing overall; client hard deadlines are gone but the queue keeps growing. 323 ACEP receipts also pending review.</div></div>
+</div>
+</div>
+
+<div class="pcard">
+<div class="pcard-head speaking">Speaking <span class="badge badge-crit">Critical</span></div>
+<div class="pcard-body">
+<div class="row"><div class="dir-label">Why today:</div><div class="dir-val">CFX outline/slides/visuals are 3 days overdue with the event 11 days out (Sept 14-16).</div></div>
+<div class="row"><div class="dir-label">Best move:</div><div class="dir-val">Block the 9:00-10:30 AM window specifically for the talk outline -- everything else depends on it.</div></div>
+<div class="row"><div class="dir-label">Watch out:</div><div class="dir-val">If the outline doesn't move today, the whole CFX prep timeline compresses further.</div></div>
+<div class="row"><div class="dir-label">Next:</div><div class="dir-val">Answer the open questions (Christmas story outcome, "recent story" example, one-thing takeaway, confirm what Frameset does) before building the outline.</div></div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="section callout-blue">
+<div class="sec-label blue"><svg class="ic"><use href="#i-check-square"></use></svg>Do / Defer / Decide</div>
+<div class="row"><div class="dir-label">Do today:</div><div class="dir-val">Finish the CFX talk outline; edit one American Integrity video; grade the two CSU assignments due tomorrow.</div></div>
+<div class="row"><div class="dir-label">Defer:</div><div class="dir-val">Module 6 SPS scripting (waits on footage); Discussion 3 grading (not due until Saturday); Legacy Seacoast scripts (due Sept 11, not urgent yet).</div></div>
+<div class="row"><div class="dir-label">Decide:</div><div class="dir-val">If the 9:00-10:30 AM window gets eaten by Seacoast prep, decide whether CFX outline or CSU grading wins the evening Freelance block -- CFX should win given the 3-day overdue status and fixed event date.</div></div>
+</div>
+
+<div class="section callout-red">
+<div class="sec-label red"><svg class="ic"><use href="#i-alert"></use></svg>Overdue / At Risk</div>
+<div class="task"><div>Develop talk outline and structure<span class="task-role" style="color:var(--speaking)">Speaking -- CFX 2026, 3 days overdue</span></div></div>
+<div class="dir-val" style="margin:-4px 0 10px;color:var(--text-muted);font-size:14px;">Recommend: Do it today -- block the 9:00-10:30 AM window specifically for this.</div>
+<div class="task"><div>Build slide deck<span class="task-role" style="color:var(--speaking)">Speaking -- CFX 2026, 3 days overdue</span></div></div>
+<div class="dir-val" style="margin:-4px 0 10px;color:var(--text-muted);font-size:14px;">Recommend: Schedule it -- right after the outline is done, ideally this week.</div>
+<div class="task"><div>Gather visual examples<span class="task-role" style="color:var(--speaking)">Speaking -- CFX 2026, 3 days overdue</span></div></div>
+<div class="dir-val" style="margin:-4px 0 0;color:var(--text-muted);font-size:14px;">Recommend: Schedule it -- can happen in parallel once the outline defines what's needed.</div>
+</div>
+
+<div class="generated">Generated Thursday, September 3, 2026 &middot; 4:21 AM ET</div>
+</div>
+<div class="pane" id="pane-faith">
+
+<div class="section">
+<div class="sec-label violet"><svg class="ic"><use href="#i-book"></use></svg>My Utmost for His Highest</div>
+<div class="faith-ref">September 3: POURING OUT THE WATER OF SATISFACTION</div>
+<div class="faith-verse" style="margin-top:10px;">&ldquo;He would not drink it, but poured it out to the Lord.&rdquo;</div>
+<div class="faith-ref">&mdash; 2 Samuel 23:16</div>
+<p style="font-size:13px;color:#1a1a1a;line-height:1.6;margin-top:14px;margin-bottom:8px;">What has been like &ldquo;water from the well of Bethlehem&rdquo; to you recently&mdash;love, friendship, or maybe some spiritual blessing (23:16)? Have you taken whatever it may be, even at the risk of damaging your own soul, simply to satisfy yourself? If you have, then you cannot pour it out &ldquo;to the Lord.&rdquo; You can never set apart for God something that you desire for yourself to achieve your own satisfaction. If you try to satisfy yourself with a blessing from God, it will corrupt you. You must sacrifice it, pouring it out to God&mdash;something that your common sense says is an absurd waste.</p>
+<p style="font-size:13px;color:#1a1a1a;line-height:1.6;margin-bottom:8px;">How can I pour out &ldquo;to the Lord&rdquo; natural love and spiritual blessings? There is only one way&mdash;I must make a determination in my mind to do so. There are certain things other people do that could never be received by someone who does not know God, because it is humanly impossible to repay them. As soon as I realize that something is too wonderful for me, that I am not worthy to receive it, and that it is not meant for a human being at all, I must pour it out &ldquo;to the Lord.&rdquo; Then these very things that have come to me will be poured out as &ldquo;rivers of living water&rdquo; all around me (John 7:38). And until I pour these things out to God, they actually endanger those I love, as well as myself, because they will be turned into lust. Yes, we can be lustful in things that are not sordid and vile. Even love must be transformed by being poured out &ldquo;to the Lord.&rdquo;</p>
+<p style="font-size:13px;color:#1a1a1a;line-height:1.6;margin-bottom:0;">If you have become bitter and sour, it is because when God gave you a blessing you hoarded it. Yet if you had poured it out to Him, you would have been the sweetest person on earth. If you are always keeping blessings to yourself and never learning to pour out anything &ldquo;to the Lord,&rdquo; other people will never have their vision of God expanded through you.</p>
+</div>
+
+<div class="section">
+<div class="sec-label violet"><svg class="ic"><use href="#i-heart"></use></svg>Prayer List</div>
+<div><span class="prayer-item">Micah Kongkousonh's family</span><span class="prayer-item">Jirah</span><span class="prayer-item">Russo</span><span class="prayer-item">Carrie Davis</span><span class="prayer-item">Moondog</span></div>
+</div>
+
+<div class="generated">Generated Thursday, September 3, 2026 &middot; 4:21 AM ET</div>
+</div>
+<div class="pane" id="pane-daily-dev">
+
+<div class="section">
+<div class="sec-label devblue"><svg class="ic"><use href="#i-lightbulb"></use></svg>Daily Creative</div>
+<div class="dev-title">September 3rd</div>
+<div class="dev-body">
+<p>Despite what so many classic rock songs have told us about authority&mdash;that it only exists to be resisted and challenged&mdash;it's actually a gift. Good, trustworthy authority brings stability to our lives. Have you ever had a really effective manager who made you feel like you were protected but who also spoke directly and candidly to you when you needed it? That's what really good authority looks like.</p>
+<p>Not all of us are gifted with this kind of manager. Unfortunately, some people use their authority to abuse others, get their own way, or make themselves look good at the expense of the people they lead. Even if that's the case for you, it's still possible to seek good authority in your life to help you make better decisions, learn, and grow in your skill sets.</p>
+<p>In my book <em>The Accidental Creative</em>, I wrote about the importance of forming a &ldquo;core team.&rdquo; This is a small group of people who have permission to speak truth to you and help you make better decisions. They might be people who are a little further down the path than you and who have visibility into your life and career. But most importantly, they care about you. They want to see you thrive.</p>
+<p>Do you have a core team? If not, who might be able to play that role for you?</p>
+<p>When we walk with the wise, we grow wise.</p>
+</div>
+<div class="dev-question">Question: Who is, or should be, a part of your core team?</div>
+</div>
+
+<div class="generated">Generated Thursday, September 3, 2026 &middot; 4:21 AM ET</div>
+</div>
+<div class="pane" id="pane-fitness">
+
+<div class="section">
+<div class="sec-label"><svg class="ic"><use href="#i-dumbbell"></use></svg>Today's Workout</div>
+<div class="workout-meta">Off Day Circuit &middot; ~10-15 min &middot; Core, legs, calves &middot; Home</div>
+<div class="exercise"><span>Squats (bodyweight)</span><span class="exercise-sets">15 reps x 3 sets</span></div>
+<div class="exercise"><span>Sit-ups (bodyweight)</span><span class="exercise-sets">15 reps x 3 sets</span></div>
+<div class="exercise"><span>Kettlebell swings</span><span class="exercise-sets">15 reps x 3 sets</span></div>
+<div class="exercise"><span>Calf raises (bodyweight)</span><span class="exercise-sets">15 reps x 3 sets</span></div>
+<div class="dir-val" style="color:var(--text-faint);font-size:13px;margin-top:8px;">Stretch goal: +5 reps on top to hit 50 total for an exercise (optional, not the baseline target).</div>
+</div>
+
+<div class="section">
+<div class="sec-label"><svg class="ic"><use href="#i-pie"></use></svg>Macro Plan</div>
+<span class="window-pill window-clear">Workout window clear -- 8-9 AM</span>
+
+<div class="meal-head">Morning Coffee</div>
+<div class="meal-items">1/2 serving collagen protein powder (2 TBSP) mixed into coffee</div>
+<div class="meal-macros"><span>18 cal</span><span>4g protein</span><span>0g carbs</span><span>0g fat</span></div>
+
+<div class="meal-head">Breakfast</div>
+<div class="meal-items">2 whole eggs + 4 egg whites (scrambled or fried)</div>
+<div class="meal-macros"><span>210 cal</span><span>28g protein</span><span>2g carbs</span><span>10g fat</span></div>
+
+<div class="meal-head">Snack 1</div>
+<div class="meal-items">1 scoop Cocoa Crispy's Protein Shake (mixed with water)</div>
+<div class="meal-macros"><span>130 cal</span><span>25g protein</span><span>6g carbs</span><span>2g fat</span></div>
+
+<div class="meal-head">Lunch</div>
+<div class="meal-items">Project Lean Nation meal (~450 cal, ~35g protein)</div>
+<div class="meal-macros"><span>450 cal</span><span>35g protein</span><span>45g carbs</span><span>12g fat</span></div>
+
+<div class="meal-head">Post-Lunch Shake</div>
+<div class="meal-items">Six Star Whey Protein Plus, Frosted Flakes (1 scoop, water)</div>
+<div class="meal-macros"><span>190 cal</span><span>30g protein</span><span>9g carbs</span><span>3g fat</span></div>
+
+<div class="meal-head">Snack 2</div>
+<div class="meal-items">Mini oranges (clementines) and/or applesauce</div>
+<div class="meal-macros"><span>90 cal</span><span>1g protein</span><span>22g carbs</span><span>0g fat</span></div>
+
+<div class="meal-head">Dinner -- Option A: Chicken (recommended tonight)</div>
+<div class="meal-items">Baked chicken breast, lightly breaded (6-7 oz) + 1/2 cup rice + pat of butter</div>
+<div class="meal-macros"><span>430 cal</span><span>48g protein</span><span>32g carbs</span><span>10g fat</span></div>
+
+<div class="meal-head">Evening Snack</div>
+<div class="meal-items">Blue Bunny Caramel mini cone + Cinnamon Bun Casein shake</div>
+<div class="meal-macros"><span>290 cal</span><span>27g protein</span><span>31g carbs</span><span>8g fat</span></div>
+
+<div class="table-scroll">
+<table class="macro-table">
+<tr><th>Chicken Day</th><th>Cal</th><th>Protein</th><th>Carbs</th><th>Fat</th></tr>
+<tr class="total-row"><td>Total</td><td>1,808</td><td>198g</td><td>147g</td><td>45g</td></tr>
+<tr class="target-row"><td>Target</td><td>2,308</td><td>200g</td><td>215g</td><td>72g</td></tr>
+<tr class="gap-row"><td>Gap</td><td>-500</td><td>-2g</td><td>-68g</td><td>-27g</td></tr>
+</table>
+</div>
+
+<div class="bar-section">
+<div class="bar-section-label">Macros vs. Target</div>
+<div class="bar-row"><div class="bar-label"><span>Calories</span><span>1,808 / 2,308</span></div><div class="bar-bg"><div class="bar-fill" style="width:78%"></div></div></div>
+<div class="bar-row"><div class="bar-label"><span>Protein</span><span>198g / 200g</span></div><div class="bar-bg"><div class="bar-fill" style="width:99%"></div></div></div>
+<div class="bar-row"><div class="bar-label"><span>Carbs</span><span>147g / 215g</span></div><div class="bar-bg"><div class="bar-fill" style="width:68%"></div></div></div>
+<div class="bar-row"><div class="bar-label"><span>Fat</span><span>45g / 72g</span></div><div class="bar-bg"><div class="bar-fill" style="width:63%"></div></div></div>
+</div>
+
+<div class="macro-rec">Dinner call: Chicken -- protein lands at 198g (just 2g under target), vs. fish at 188g (12g short). Main gap is carbs: -68g. Add a banana with Snack 2 (+27g) and 2-3 rice cakes mid-afternoon (+20g) to recover ~47g of that gap. Fat is -27g under -- add a drizzle of olive oil on the chicken or extra butter on the rice to help close it without overshooting protein.</div>
+</div>
+
+<div class="section">
+<div class="sec-label"><svg class="ic"><use href="#i-list"></use></svg>Pack List</div>
+<div class="workout-meta">3 meals away from home</div>
+<div class="pack-row"><div class="pack-meal">Snack 1</div><div class="pack-conflict">In Office, 10:30 AM</div><div class="pack-swap">Protein shake in shaker bottle</div></div>
+<div class="pack-row"><div class="pack-meal">Lunch</div><div class="pack-conflict">In Office, 10:30 AM-2:30 PM</div><div class="pack-swap">PLN meal in insulated bag, or pack chicken + rice in a container</div></div>
+<div class="pack-row"><div class="pack-meal">Snack 2</div><div class="pack-conflict">Staff Video Recording, 2:30 PM</div><div class="pack-swap">Clementines or applesauce pouch</div></div>
+</div>
+
+<div class="generated">Generated Thursday, September 3, 2026 &middot; 4:21 AM ET</div>
+</div>
+<div class="pane" id="pane-time">
+
+<div class="section">
+<div class="sec-label"><svg class="ic"><use href="#i-clock"></use></svg>Past 7 Days</div>
+
+<div class="bar-section">
+<div class="bar-section-label">Wednesday, Sep 2 -- 7.9h total</div>
+<div class="bar-row"><div class="bar-label"><span>Seacoast Church</span><span>7.3h</span></div><div class="bar-bg"><div class="bar-fill" style="width:100%;background:#0891B2"></div></div></div>
+<div class="bar-row"><div class="bar-label"><span>ACEP</span><span>0.7h</span></div><div class="bar-bg"><div class="bar-fill" style="width:10%;background:#1F2937"></div></div></div>
+</div>
+
+<div class="bar-section">
+<div class="bar-section-label">Tuesday, Sep 1 -- 5.7h total</div>
+<div class="bar-row"><div class="bar-label"><span>Seacoast Church</span><span>3.7h</span></div><div class="bar-bg"><div class="bar-fill" style="width:51%;background:#0891B2"></div></div></div>
+<div class="bar-row"><div class="bar-label"><span>Moody</span><span>1.4h</span></div><div class="bar-bg"><div class="bar-fill" style="width:19%;background:#D97706"></div></div></div>
+<div class="bar-row"><div class="bar-label"><span>Music</span><span>0.3h</span></div><div class="bar-bg"><div class="bar-fill" style="width:4%;background:#9CA3AF"></div></div></div>
+<div class="bar-row"><div class="bar-label"><span>ACEP</span><span>0.2h</span></div><div class="bar-bg"><div class="bar-fill" style="width:4%;background:#1F2937"></div></div></div>
+</div>
+
+<div class="bar-section">
+<div class="bar-section-label">Monday, Aug 31 -- 7.2h total</div>
+<div class="bar-row"><div class="bar-label"><span>Seacoast Church</span><span>5.9h</span></div><div class="bar-bg"><div class="bar-fill" style="width:81%;background:#0891B2"></div></div></div>
+<div class="bar-row"><div class="bar-label"><span>Moody</span><span>1.3h</span></div><div class="bar-bg"><div class="bar-fill" style="width:18%;background:#D97706"></div></div></div>
+</div>
+
+<div class="bar-section">
+<div class="bar-section-label">Sunday, Aug 30 -- 4.5h total</div>
+<div class="bar-row"><div class="bar-label"><span>CSU</span><span>2.5h</span></div><div class="bar-bg"><div class="bar-fill" style="width:34%;background:#D97706"></div></div></div>
+<div class="bar-row"><div class="bar-label"><span>Moody</span><span>2.0h</span></div><div class="bar-bg"><div class="bar-fill" style="width:27%;background:#D97706"></div></div></div>
+</div>
+
+<div class="bar-section">
+<div class="bar-section-label">Saturday, Aug 29 -- 3.5h total</div>
+<div class="bar-row"><div class="bar-label"><span>Moody</span><span>3.5h</span></div><div class="bar-bg"><div class="bar-fill" style="width:48%;background:#D97706"></div></div></div>
+</div>
+
+<div class="bar-section">
+<div class="bar-section-label">Friday, Aug 28 -- 5.7h total</div>
+<div class="bar-row"><div class="bar-label"><span>ACEP</span><span>5.7h</span></div><div class="bar-bg"><div class="bar-fill" style="width:78%;background:#1F2937"></div></div></div>
+</div>
+
+<div class="bar-section">
+<div class="bar-section-label">Thursday, Aug 27 -- 6.8h total</div>
+<div class="bar-row"><div class="bar-label"><span>Seacoast Church</span><span>5.8h</span></div><div class="bar-bg"><div class="bar-fill" style="width:79%;background:#0891B2"></div></div></div>
+<div class="bar-row"><div class="bar-label"><span>ACEP</span><span>1.0h</span></div><div class="bar-bg"><div class="bar-fill" style="width:14%;background:#1F2937"></div></div></div>
+</div>
+</div>
+
+<div class="section">
+<div class="sec-label"><svg class="ic"><use href="#i-clock"></use></svg>This Week (last 7 days)</div>
+<div class="bar-section">
+<div class="bar-section-label">Aug 28 &ndash; Sep 3</div>
+<div class="bar-row"><div class="bar-label"><span>Seacoast Church</span><span>16.9h</span></div><div class="bar-bg"><div class="bar-fill" style="width:100%;background:#0891B2"></div></div></div>
+<div class="bar-row"><div class="bar-label"><span>Moody</span><span>8.3h</span></div><div class="bar-bg"><div class="bar-fill" style="width:49%;background:#D97706"></div></div></div>
+<div class="bar-row"><div class="bar-label"><span>ACEP</span><span>6.6h</span></div><div class="bar-bg"><div class="bar-fill" style="width:39%;background:#1F2937"></div></div></div>
+<div class="bar-row"><div class="bar-label"><span>CSU</span><span>2.5h</span></div><div class="bar-bg"><div class="bar-fill" style="width:15%;background:#D97706"></div></div></div>
+<div class="bar-row"><div class="bar-label"><span>Music</span><span>0.3h</span></div><div class="bar-bg"><div class="bar-fill" style="width:2%;background:#9CA3AF"></div></div></div>
+</div>
+</div>
+
+<div class="section">
+<div class="sec-label"><svg class="ic"><use href="#i-clock"></use></svg>Last Month (August 2026)</div>
+<div class="bar-section">
+<div class="bar-row"><div class="bar-label"><span>Seacoast Church</span><span>102.3h</span></div><div class="bar-bg"><div class="bar-fill" style="width:100%;background:#0891B2"></div></div></div>
+<div class="bar-row"><div class="bar-label"><span>ACEP</span><span>43.4h</span></div><div class="bar-bg"><div class="bar-fill" style="width:42%;background:#1F2937"></div></div></div>
+<div class="bar-row"><div class="bar-label"><span>Moody</span><span>20.1h</span></div><div class="bar-bg"><div class="bar-fill" style="width:20%;background:#D97706"></div></div></div>
+<div class="bar-row"><div class="bar-label"><span>CSU</span><span>11.3h</span></div><div class="bar-bg"><div class="bar-fill" style="width:11%;background:#D97706"></div></div></div>
+</div>
+</div>
+
+<div class="generated">Generated Thursday, September 3, 2026 &middot; 4:21 AM ET</div>
+</div>
+<div class="pane" id="pane-weekly">
+<div class="section tight">14 invites need a flag -- run "flag my invites" to resolve.</div>
+
+<div class="section">
+<div class="sec-label"><svg class="ic"><use href="#i-target"></use></svg>This Week's Focus</div>
+<div class="row"><div class="dir-label"><span class="pri-num" style="display:inline-flex;width:20px;height:20px;border-radius:50%;background:#F5F1EC;color:var(--red-deep);font-size:11px;align-items:center;justify-content:center;">1</span></div><div class="dir-val"><strong>CFX 2026 talk prep</strong> -- outline, slide deck, and visual examples all overdue since Aug 31, event is Sept 14-16. <span class="badge badge-warn">OVERDUE</span></div></div>
+<div class="row"><div class="dir-label"><span style="display:inline-flex;width:20px;height:20px;border-radius:50%;background:#F5F1EC;color:var(--red-deep);font-size:11px;align-items:center;justify-content:center;">2</span></div><div class="dir-val"><strong>American Integrity edit queue</strong> -- 3 videos due today (Albert Ortiz, Alexandra Rodriguez, Rebecca Rogers), 15 total in active editing.</div></div>
+<div class="row"><div class="dir-label"><span style="display:inline-flex;width:20px;height:20px;border-radius:50%;background:#F5F1EC;color:var(--red-deep);font-size:11px;align-items:center;justify-content:center;">3</span></div><div class="dir-val"><strong>CSU/Moody grading cadence</strong> -- Assignment 2-1 and Introduce Yourself due tomorrow, Discussion 3 due Saturday, Blogs lecture due Monday.</div></div>
+<div class="row"><div class="dir-label"><span style="display:inline-flex;width:20px;height:20px;border-radius:50%;background:#F5F1EC;color:var(--red-deep);font-size:11px;align-items:center;justify-content:center;">4</span></div><div class="dir-val"><strong>Legacy Vision Night materials</strong> (Seacoast) -- Look Back, Look Ahead, and One Day Missions Script due Sept 11.</div></div>
+<div class="row"><div class="dir-label"><span style="display:inline-flex;width:20px;height:20px;border-radius:50%;background:#F5F1EC;color:var(--red-deep);font-size:11px;align-items:center;justify-content:center;">5</span></div><div class="dir-val"><strong>SPS Module 6 pre-production</strong> -- shot list and BTS concept need to lock so filming can be scheduled.</div></div>
+</div>
+
+<div class="section callout-red">
+<div class="sec-label red"><svg class="ic"><use href="#i-alert"></use></svg>Watch Out For</div>
+<div class="row"><div class="dir-label">Speaking</div><div class="dir-val flag">CFX outline/slides/visuals are 3 days overdue with the event only 11 days out (Sept 14-16) -- the whole prep timeline compresses further if this doesn't move this week.</div></div>
+<div class="row"><div class="dir-label">Calendar</div><div class="dir-val">14 calendar invites have no matching flag in the event-flags manifest (it's still keyed to placeholder IDs while the calendar feed now sends real UIDs) -- run "flag my invites" to reconcile.</div></div>
+<div class="row"><div class="dir-label">Evenings</div><div class="dir-val">No 8:00-10:00 PM evening-focus blocks are displaced by calendar events this week (through Sept 9) -- protected so far.</div></div>
+</div>
+
+<div class="section callout-red">
+<div class="sec-label red"><svg class="ic"><use href="#i-alert"></use></svg>Missed and Overdue</div>
+<div class="task"><div>Develop talk outline and structure<span class="task-role" style="color:var(--speaking)">Speaking -- CFX 2026</span></div><span class="badge badge-warn">3 days overdue</span></div>
+<div class="task"><div>Build slide deck<span class="task-role" style="color:var(--speaking)">Speaking -- CFX 2026</span></div><span class="badge badge-warn">3 days overdue</span></div>
+<div class="task"><div>Gather visual examples<span class="task-role" style="color:var(--speaking)">Speaking -- CFX 2026</span></div><span class="badge badge-warn">3 days overdue</span></div>
+</div>
+
+<div class="section">
+<div class="sec-label"><svg class="ic"><use href="#i-folder"></use></svg>Seacoast</div>
+<div class="tier-head">Active Projects</div>
+<div class="task">2026-27 Campus Coverage<span class="task-role" style="color:var(--seacoast)">Phase 1 deadline 2027-06-30</span></div>
+<div class="tier-head">This Week</div>
+<div class="task">Legacy - Vision Night Look Back (Josh and Lisa)<span class="task-role" style="color:var(--seacoast)">Seacoast</span><span class="badge">Sept 11</span></div>
+<div class="task">Legacy - Vision Night Look Ahead (Josh and Lisa)<span class="task-role" style="color:var(--seacoast)">Seacoast</span><span class="badge">Sept 11</span></div>
+<div class="task">Legacy - One Day Missions Script (Jodi)<span class="task-role" style="color:var(--seacoast)">Seacoast</span><span class="badge">Sept 11</span></div>
+<div class="tier-head">Suggestions</div>
+<div class="task">Use pockets during today's In Office block to draft the three Legacy scripts</div>
+<div class="task">Confirm Legacy Vision Night logistics with Josh and Lisa ahead of the Sept 11 deadline</div>
+</div>
+
+<div class="section">
+<div class="sec-label"><svg class="ic"><use href="#i-book"></use></svg>Teaching</div>
+<div class="tier-head">Active Projects</div>
+<div class="task">COMM 335 (CSU)<span class="task-role" style="color:var(--teaching)">Launched, live for students</span></div>
+<div class="task">CM 1110 (Moody)<span class="task-role" style="color:var(--teaching)">Week 1 wrap target Oct 8</span></div>
+<div class="task">SOC 2204 (Moody)<span class="task-role" style="color:var(--teaching)">Week intro re-recording ongoing</span></div>
+<div class="task">GSU 1120 (Moody)<span class="task-role" style="color:var(--teaching)">Lesson 1 recorded, needs editing</span></div>
+<div class="tier-head">This Week</div>
+<div class="task">GRADE Assignment 2-1: Talk to Your Tech Essay<span class="task-role" style="color:var(--teaching)">CSU</span><span class="badge">Tomorrow</span></div>
+<div class="task">GRADE Introduce Yourself<span class="task-role" style="color:var(--teaching)">CSU</span><span class="badge">Tomorrow</span></div>
+<div class="task">RESPOND Discussion 3: Jesus and Culture (9 posts)<span class="task-role" style="color:var(--teaching)">CSU</span><span class="badge">Sat 9/5</span></div>
+<div class="task">RECORD Blogs lecture<span class="task-role" style="color:var(--teaching)">CSU</span><span class="badge">Mon 9/7</span></div>
+<div class="tier-head">This Month</div>
+<div class="task">GRADE Assignment 3-1: Jesus and the Media<span class="task-role" style="color:var(--teaching)">CSU</span><span class="badge">Sept 11</span></div>
+<div class="task">RESPOND Discussion 4: Film and Christian Witness<span class="task-role" style="color:var(--teaching)">CSU</span><span class="badge">Sept 12</span></div>
+<div class="task">RECORD News Design lecture<span class="task-role" style="color:var(--teaching)">CSU</span><span class="badge">Sept 14</span></div>
+<div class="task">GRADE Assignment 4-1/4-2, Print Evaluation 1<span class="task-role" style="color:var(--teaching)">CSU</span><span class="badge">Sept 18</span></div>
+<div class="task">RESPOND Discussion 5: Style or Substance<span class="task-role" style="color:var(--teaching)">CSU</span><span class="badge">Sept 19</span></div>
+<div class="task">InDesign Walkthrough (write outline, build slides, record)<span class="task-role" style="color:var(--teaching)">CSU</span><span class="badge">Sept 21</span></div>
+<div class="tier-head">Suggestions</div>
+<div class="task">Batch-grade both CSU items due tomorrow tonight to stay ahead</div>
+<div class="task">Get a start on Discussion 3 responses before Saturday's rush</div>
+</div>
+
+<div class="section">
+<div class="sec-label"><svg class="ic"><use href="#i-receipt"></use></svg>Freelance</div>
+<div class="tier-head">Active Projects</div>
+<div class="task">American Integrity (ACEP)<span class="task-role" style="color:var(--freelance)">15 editing, 10 awaiting feedback, 1 on hold</span></div>
+<div class="task">Bread of Life (ACEP)<span class="task-role" style="color:var(--freelance)">Tracker build pending shoot/edit list</span></div>
+<div class="tier-head">This Week</div>
+<div class="task">EDIT 15 - Albert Ortiz<span class="task-role" style="color:var(--freelance)">American Integrity</span><span class="badge">Today</span></div>
+<div class="task">EDIT 16 - Alexandra Rodriguez<span class="task-role" style="color:var(--freelance)">American Integrity</span><span class="badge">Today</span></div>
+<div class="task">EDIT 24 - Rebecca Rogers<span class="task-role" style="color:var(--freelance)">American Integrity</span><span class="badge">Today</span></div>
+<div class="tier-head">Open (no deadline)</div>
+<div class="task">15 videos in active editing across the 28-video queue -- no hard client deadlines remain</div>
+<div class="task">323 ACEP receipts pending manual review</div>
+<div class="tier-head">Suggestions</div>
+<div class="task">Finish one edit per night this week to make a real dent in the 15-video backlog</div>
+<div class="task">Invoice Wei Xie and Steve Biggs on the next invoice run</div>
+<div class="task">Use Monday's Admin evening focus for a dedicated pass on the 323 pending receipts</div>
+</div>
+
+<div class="section">
+<div class="sec-label"><svg class="ic"><use href="#i-phone"></use></svg>Smartphone Storytellers</div>
+<div class="tier-head">Active Projects</div>
+<div class="task">Storyteller 101<span class="task-role" style="color:var(--sps)">Modules 0-5 complete, Module 6 remains</span></div>
+<div class="tier-head">This Month</div>
+<div class="task">Module 6 (Case Study) -- blocked on filming landscape + portrait footage<span class="task-role" style="color:var(--sps)">Storyteller 101</span></div>
+<div class="tier-head">Suggestions</div>
+<div class="task">Finalize the Module 6 shot list and BTS location-picking concept this week</div>
+<div class="task">Get the landscape and portrait shoot days on the calendar</div>
+<div class="task">Once footage is filmed, scripting can start immediately -- the outline work is otherwise done</div>
+</div>
+
+<div class="section">
+<div class="sec-label"><svg class="ic"><use href="#i-list"></use></svg>Speaking</div>
+<div class="tier-head">Active Projects</div>
+<div class="task">CFX 2026<span class="task-role" style="color:var(--speaking)">Sept 14-16, Birmingham AL</span></div>
+<div class="task">SALT 2026<span class="task-role" style="color:var(--speaking)">Oct 14-16, Irving TX</span></div>
+<div class="tier-head">This Week</div>
+<div class="task">Develop talk outline and structure<span class="task-role" style="color:var(--speaking)">CFX 2026</span><span class="badge badge-warn">Overdue</span></div>
+<div class="task">Build slide deck<span class="task-role" style="color:var(--speaking)">CFX 2026</span><span class="badge badge-warn">Overdue</span></div>
+<div class="task">Gather visual examples<span class="task-role" style="color:var(--speaking)">CFX 2026</span><span class="badge badge-warn">Overdue</span></div>
+<div class="tier-head">This Month</div>
+<div class="task">Review CFX talk for feedback<span class="task-role" style="color:var(--speaking)">SALT 2026</span><span class="badge">Sept 19</span></div>
+<div class="tier-head">Suggestions</div>
+<div class="task">Block dedicated time this week for the CFX outline -- everything else depends on it</div>
+<div class="task">Once CFX is finalized, mirror it directly into SALT Talk 1</div>
+</div>
+
+<div class="section">
+<div class="sec-label"><svg class="ic"><use href="#i-heart"></use></svg>Personal</div>
+<div class="tier-head">Active Projects</div>
+<div class="task">Guitar<span class="task-role">Working through Modules 0-2</span></div>
+<div class="tier-head">Open (no deadline)</div>
+<div class="task">Smart Home Automation<span class="task-role">On Hold -- idea backlog only</span></div>
+<div class="tier-head">Suggestions</div>
+<div class="task">Keep chipping at Guitar Modules 0-2 in open evening pockets</div>
+</div>
+
+<div class="section">
+<div class="sec-label"><svg class="ic"><use href="#i-check-square"></use></svg>Role Evaluation</div>
+<div class="row"><div class="dir-label">Seacoast</div><div class="dir-val">Steady -- full office day plus Legacy scripts on deck, on track.</div></div>
+<div class="row"><div class="dir-label">Teaching</div><div class="dir-val">Busy but current -- manageable if tomorrow's two grading items get done today.</div></div>
+<div class="row"><div class="dir-label">Freelance</div><div class="dir-val">Under pressure -- 15-video backlog, but today's 3 edits keep it moving.</div></div>
+<div class="row"><div class="dir-label">Smartphone Storytellers</div><div class="dir-val flag">Stalled on filming -- no script progress possible until Module 6 footage is shot.</div></div>
+<div class="row"><div class="dir-label">Speaking</div><div class="dir-val flag">CFX prep is overdue and slipping toward the event date.</div></div>
+<div class="row"><div class="dir-label">Family</div><div class="dir-val">Protected so far this week -- no evening-focus encroachments through Sept 9.</div></div>
+</div>
+
+<div class="section callout-blue">
+<div class="sec-label blue"><svg class="ic"><use href="#i-trending"></use></svg>Opportunities and Ideas</div>
+<div class="task"><strong>One strategic action:</strong> Lock the Module 6 landscape and portrait shoot dates this week -- it's the single blocker between "SPS course is basically done" and "SPS course is fully launched."</div>
+<div class="task">The CFX outline doubles as the SALT Talk 1 draft -- finishing it once serves two speaking engagements.</div>
+<div class="task">American Integrity's Culture/Building Move videos (Core Values, Community & Philanthropy, Culture: Why Work at American Integrity) could double as SPS teaching examples of church/brand storytelling once delivered.</div>
+<div class="task">323 ACEP receipts pending review is a growing backlog -- worth a dedicated admin pass rather than letting it compound (Monday's Household/Admin evening focus is the natural slot).</div>
+</div>
+
+<div class="section">
+<div class="sec-label"><svg class="ic"><use href="#i-calendar"></use></svg>30-Day Calendar</div>
+<div class="tier-head">Week of Sept 1 - 6</div>
+<div class="row"><div class="dir-label">Thu 9/3</div><div class="dir-val">10:30 AM-2:30 PM In Office; 2:30-3:30 PM September Staff Video Recording</div></div>
+<div class="row"><div class="dir-label">Sun 9/6</div><div class="dir-val">Labor Day - No School</div></div>
+<div class="tier-head">Week of Sept 7 - 13</div>
+<div class="row"><div class="dir-label">Mon 9/7</div><div class="dir-val">Seacoast Offices Closed (Labor Day holiday); 10:30-11:00 AM Film Team Weekly</div></div>
+<div class="row"><div class="dir-label">Tue 9/8</div><div class="dir-val">9:00-9:30 AM Weekend Debrief Call; 3:45-4:15 PM Zelda's Violin Lesson</div></div>
+<div class="row"><div class="dir-label">Wed 9/9</div><div class="dir-val">11:30 AM-1:00 PM Central Teams Potluck; 1:00-2:00 PM Q2 Quarterly Ops Call; 6:30-8:30 PM MDWK</div></div>
+<div class="row"><div class="dir-label">Sun 9/13</div><div class="dir-val">1:00-6:00 PM Dog Day Afternoon: North Charleston</div></div>
+<div class="tier-head">Week of Sept 14 - 20</div>
+<div class="row"><div class="dir-label">Mon 9/14</div><div class="dir-val">Adam Out: CFX 2026 (through 9/15); 9:00-9:30 AM Weekend Debrief Call; 10:30-11:00 AM Film Team Weekly; 5:30-7:00 PM CFX Speaker Meet-Up</div></div>
+<div class="row"><div class="dir-label">Tue 9/15</div><div class="dir-val">3:45-4:15 PM Zelda's Violin Lesson</div></div>
+<div class="row"><div class="dir-label">Wed 9/16</div><div class="dir-val">6:30-8:30 PM MDWK</div></div>
+<div class="row"><div class="dir-label">Thu 9/17</div><div class="dir-val">Chosen 2026</div></div>
+<div class="tier-head">Week of Sept 21 - 27</div>
+<div class="row"><div class="dir-label">Mon 9/21</div><div class="dir-val">9:00-9:30 AM Weekend Debrief Call; 10:30-11:00 AM Film Team Weekly; 12:00-1:00 PM Lunch with Adam Erickson; 7:00-11:00 PM Major Moment Show</div></div>
+<div class="row"><div class="dir-label">Tue 9/22</div><div class="dir-val">12:30-1:00 PM October Staff Recording (PJS and PLS); 3:30-4:30 PM Hannah SIC Meeting; 3:45-4:15 PM Zelda's Violin Lesson; 8:00-11:00 PM Switchfoot</div></div>
+<div class="row"><div class="dir-label">Wed 9/23</div><div class="dir-val">6:30-8:30 PM MDWK; 7:30-11:30 PM Gorillaz</div></div>
+<div class="tier-head">Week of Sept 28 - Oct 3</div>
+<div class="row"><div class="dir-label">Mon 9/28</div><div class="dir-val">9:00-9:30 AM Weekend Debrief Call; 10:30-11:00 AM Film Team Weekly</div></div>
+<div class="row"><div class="dir-label">Tue 9/29</div><div class="dir-val">3:45-4:15 PM Zelda's Violin Lesson</div></div>
+<div class="row"><div class="dir-label">Wed 9/30</div><div class="dir-val">6:30-8:30 PM MDWK; 7:05-8:05 PM Linkin Park: Unshatter</div></div>
+<div class="row"><div class="dir-label">Thu 10/1</div><div class="dir-val">Check for Books; Reset Heart Rate Zones</div></div>
+<div class="row"><div class="dir-label">Fri 10/2</div><div class="dir-val">Relay Podcastathon; Spectrum Sailing (through 10/3)</div></div>
+<div class="row"><div class="dir-label">Sat 10/3</div><div class="dir-val">2:00-5:00 PM Linkin Park: Unshatter</div></div>
+</div>
+
+<div class="generated">Generated Thursday, September 3, 2026 -- Week of Aug 31 - Sep 6</div>
+</div>
 <div class="pane" id="pane-reference">
 
-  <div class="section">
-    <div class="sec-label"><svg class="ic"><use href="#i-clock"></use></svg>Ideal Weekday Schedule</div>
-    <div class="row"><div class="dir-label">5:00-5:30 AM</div><div class="dir-val">Faith block -- Bible study, prayer, reflection, planning</div></div>
-    <div class="row"><div class="dir-label">5:30-7:15 AM</div><div class="dir-val">Smartphone Storytellers (SPS) block</div></div>
-    <div class="row"><div class="dir-label">7:15-7:45 AM</div><div class="dir-val">School drop-off (Mon-Fri only)</div></div>
-    <div class="row"><div class="dir-label">8:00-9:00 AM</div><div class="dir-val">Gym</div></div>
-    <div class="row"><div class="dir-label">9:00 AM-5:00 PM</div><div class="dir-val">Seacoast Church</div></div>
-    <div class="row"><div class="dir-label">5:00-8:00 PM</div><div class="dir-val">Family time (protected)</div></div>
-    <div class="row"><div class="dir-label">8:00-10:00 PM</div><div class="dir-val">Evening Focus Block (see themes below)</div></div>
-    <div class="row"><div class="dir-label">10:00-10:30 PM</div><div class="dir-val">Wind down</div></div>
-  </div>
-
-  <div class="section">
-    <div class="sec-label"><svg class="ic"><use href="#i-list"></use></svg>Evening Focus Themes</div>
-    <div class="row"><div class="dir-label">Monday</div><div class="dir-val">Household / Admin / Freelance</div></div>
-    <div class="row"><div class="dir-label">Tuesday</div><div class="dir-val">Teaching</div></div>
-    <div class="row"><div class="dir-label">Wednesday</div><div class="dir-val">Teaching</div></div>
-    <div class="row"><div class="dir-label">Thursday</div><div class="dir-val">Freelance</div></div>
-    <div class="row"><div class="dir-label">Friday</div><div class="dir-val">Protected Family Night</div></div>
-    <div class="row"><div class="dir-label">Saturday</div><div class="dir-val">Family / recovery. Optional 7-11 AM work block (Smartphone Storytellers priority, twice/month)</div></div>
-    <div class="row"><div class="dir-label">Sunday</div><div class="dir-val">Church (morning), Family (afternoon), Weekly Review (evening)</div></div>
-  </div>
-
-  <div class="section">
-    <div class="sec-label"><svg class="ic"><use href="#i-compass"></use></svg>Guiding Philosophy</div>
-    <div class="row"><div class="dir-label">Priority order</div><div class="dir-val">Faith, Family, Smartphone Storytellers, Fitness, Seacoast, Margin</div></div>
-    <div class="row"><div class="dir-label">Smartphone Storytellers</div><div class="dir-val">Highest-priority growth initiative outside primary employment</div></div>
-    <div class="row"><div class="dir-label">Freelance</div><div class="dir-val">Should not crowd out Smartphone Storytellers or family time</div></div>
-  </div>
-
-  <div class="generated">Generated Wednesday, September 2, 2026 &middot; 4:22 AM ET</div>
-
+<div class="section">
+<div class="sec-label"><svg class="ic"><use href="#i-clock"></use></svg>Ideal Weekday Schedule</div>
+<div class="row"><div class="dir-label">5:00-5:30 AM</div><div class="dir-val">Faith block -- Bible study, prayer, reflection, planning</div></div>
+<div class="row"><div class="dir-label">5:30-7:15 AM</div><div class="dir-val">Smartphone Storytellers (SPS) block</div></div>
+<div class="row"><div class="dir-label">7:15-7:45 AM</div><div class="dir-val">School drop-off (Mon-Fri only)</div></div>
+<div class="row"><div class="dir-label">8:00-9:00 AM</div><div class="dir-val">Gym</div></div>
+<div class="row"><div class="dir-label">9:00 AM-5:00 PM</div><div class="dir-val">Seacoast Church</div></div>
+<div class="row"><div class="dir-label">5:00-8:00 PM</div><div class="dir-val">Family time (protected)</div></div>
+<div class="row"><div class="dir-label">8:00-10:00 PM</div><div class="dir-val">Evening Focus Block (see themes below)</div></div>
+<div class="row"><div class="dir-label">10:00-10:30 PM</div><div class="dir-val">Wind down</div></div>
 </div>
 
-</div>
+<div class="section">
+<div class="sec-label"><svg class="ic"><use href="#i-list"></use></svg>Evening Focus Themes</div>
+<div class="row"><div class="dir-label">Monday</div><div class="dir-val">Household / Admin / Freelance</div></div>
+<div class="row"><div class="dir-label">Tuesday</div><div class="dir-val">Teaching</div></div>
+<div class="row"><div class="dir-label">Wednesday</div><div class="dir-val">Teaching</div></div>
+<div class="row"><div class="dir-label">Thursday</div><div class="dir-val">Freelance</div></div>
+<div class="row"><div class="dir-label">Friday</div><div class="dir-val">Protected Family Night</div></div>
+<div class="row"><div class="dir-label">Saturday</div><div class="dir-val">Family / recovery. Optional 7-11 AM work block (Smartphone Storytellers priority, twice/month)</div></div>
+<div class="row"><div class="dir-label">Sunday</div><div class="dir-val">Church (morning), Family (afternoon), Weekly Review (evening)</div></div>
 </div>
 
+<div class="section">
+<div class="sec-label"><svg class="ic"><use href="#i-compass"></use></svg>Guiding Philosophy</div>
+<div class="row"><div class="dir-label">Priority order</div><div class="dir-val">Faith, Family, Smartphone Storytellers, Fitness, Seacoast, Margin</div></div>
+<div class="row"><div class="dir-label">Smartphone Storytellers</div><div class="dir-val">Highest-priority growth initiative outside primary employment</div></div>
+<div class="row"><div class="dir-label">Freelance</div><div class="dir-val">Should not crowd out Smartphone Storytellers or family time</div></div>
+</div>
+
+<div class="generated">Generated Thursday, September 3, 2026 &middot; 4:21 AM ET</div>
+</div>
+</div>
+</div>
 <script>
 document.querySelectorAll('.tab').forEach(function(tab){
   tab.addEventListener('click', function(){
     document.querySelectorAll('.tab').forEach(function(t){ t.classList.remove('active'); });
     document.querySelectorAll('.pane').forEach(function(p){ p.classList.remove('active'); });
     tab.classList.add('active');
-    document.getElementById('pane-' + tab.getAttribute('data-tab')).classList.add('active');
+    document.getElementById('pane-' + tab.dataset.tab).classList.add('active');
   });
 });
 </script>
