@@ -1,1234 +1,1247 @@
 {
-  "schemaVersion": 1,
-  "title": "Briefing 10-03",
-  "date": "2026-10-03",
-  "dateLabel": "Saturday, October 3",
-  "generatedAt": "Saturday, October 3, 2026 at 4:22 AM ET",
-  "today": {
-    "weather": {
-      "hi": 82,
-      "lo": 72,
-      "feelsLike": "~87°",
-      "humidity": "94%",
-      "summary": "Storms likely before 10 AM, more showers after noon (70%). Heavy rain Sunday night."
-    },
-    "gamePlan": [
-      {
-        "label": "Protect",
-        "tone": "ok",
-        "text": "Family day. Linkin Park in Summerville 2–5 PM, and the evening stays open."
-      },
-      {
-        "label": "Pressure",
-        "tone": "warn",
-        "text": "SALT talk. Outline, deck and visuals all passed Oct 2; the talk is Fri Oct 16."
-      },
-      {
-        "label": "Tonight",
-        "tone": "neutral",
-        "text": "Family and recovery. No work block on Saturdays."
-      },
-      {
-        "label": "Watch out",
-        "tone": "warn",
-        "text": "Week 7 intro video is due Sunday. Record it today so church and family keep tomorrow."
-      }
-    ],
-    "priorities": [
-      {
-        "title": "SALT talk outline and structure",
-        "role": "Speaking",
-        "due": "Overdue (Oct 2)",
-        "overdue": true,
-        "next": "Lock the outline in the 9–11 AM stretch. It gates the deck and the visuals."
-      },
-      {
-        "title": "Smartphone Storytellers promos scripting",
-        "role": "SPS",
-        "due": "No date",
-        "overdue": false,
-        "next": "Draft the first promo script, 7–9 AM."
-      },
-      {
-        "title": "Record Week 7 intro video",
-        "role": "Teaching",
-        "due": "Due tomorrow",
-        "overdue": false,
-        "next": "Record it before noon so Sunday stays clear."
-      }
-    ],
-    "sequenceNote": "Optional work block 7–11 AM, then family.",
-    "sequence": [
-      {
-        "time": "5:00–5:30 AM",
-        "what": "Faith: My Utmost and the prayer list"
-      },
-      {
-        "time": "7:00–9:00 AM",
-        "what": "Smartphone Storytellers: promos scripting"
-      },
-      {
-        "time": "9:00–11:00 AM",
-        "what": "SALT talk outline and structure (overdue)"
-      },
-      {
-        "time": "11:00–11:45 AM",
-        "what": "Record Week 7 intro, and SOC 2204 Week 8 if the setup is still up"
-      },
-      {
-        "time": "11:45 AM–1:30 PM",
-        "what": "Lunch and family. Optional 10–15 min Off Day circuit"
-      },
-      {
-        "time": "2:00–5:00 PM",
-        "what": "Linkin Park: Unshatter, Summerville (pack Snack 2)"
-      },
-      {
-        "time": "5:00–8:00 PM",
-        "what": "Family time"
-      },
-      {
-        "time": "10:00–10:30 PM",
-        "what": "Wind down. Lights out early; sleep has been short all week"
-      }
-    ],
-    "headsUp": [
-      {
-        "kind": "Overdue",
-        "role": "Speaking",
-        "text": "SALT talk outline and structure (Oct 2)"
-      },
-      {
-        "kind": "Overdue",
-        "role": "Speaking",
-        "text": "SALT slide deck (Oct 2)"
-      },
-      {
-        "kind": "Overdue",
-        "role": "Speaking",
-        "text": "SALT visual examples (Oct 2)"
-      },
-      {
-        "kind": "Overdue",
-        "role": "Teaching",
-        "text": "REVISIT CM 1110 Things list build (Sep 29)"
-      },
-      {
-        "kind": "Calendar",
-        "role": null,
-        "text": "4 invites need a flag. Say \"flag my invites\" to resolve."
-      }
-    ]
+ "schemaVersion": 1,
+ "title": "Briefing 10-03",
+ "date": "2026-10-03",
+ "dateLabel": "Saturday, October 3",
+ "generatedAt": "Saturday, October 3, 2026 at 12:55 PM ET",
+ "today": {
+  "weather": {
+   "hi": 82,
+   "lo": 72,
+   "feelsLike": "84°",
+   "humidity": "79%",
+   "summary": "Mostly cloudy and 80° at noon. Showers and a possible thunderstorm likely this afternoon (70%), so bring rain gear to Summerville. More showers likely after 5 AM tonight."
   },
-  "brief": {
-    "morningRead": [
-      "Saturday with storms through mid-morning and Linkin Park in Summerville from 2 to 5. The SALT outline, deck, and visuals all slid past Oct 2, and the Week 7 intro video is due tomorrow.",
-      "If you take the 7–11 AM block, open with SPS promos, then give the back half to the SALT outline, since the talk is 13 days out and the deck can't start without it. Record the Week 7 intro before noon."
-    ],
-    "watchOut": "overdue work swallowing the whole family day.",
-    "forgetting": [
-      {
-        "role": "Speaking",
-        "title": "SALT reply",
-        "text": "You still owe SALT an answer on which meals you'll join and whether you're bringing a guest. Quick email, easy to lose."
-      },
-      {
-        "role": "Teaching",
-        "title": "SOC 2204 Week 8",
-        "text": "Due Monday, which already has the Debrief call, Film Team, and a 3 PM dental visit in Mount Pleasant. Batch it with today's Week 7 recording."
-      },
-      {
-        "role": "Seacoast",
-        "title": "Oct 13 shoot scripts",
-        "text": "Missions Video 3 outline and the full shooting scripts are still open. The shoot is 10 days out and you fly to Dallas the next morning."
-      },
-      {
-        "role": "Speaking",
-        "title": "Preproduction Cheat Sheet",
-        "text": "Still in scoping with no Things tasks, and it needs a print buffer before SALT travel on Oct 14."
-      }
-    ],
-    "whatsNext": [
-      {
-        "title": "Lock the SALT talk outline.",
-        "text": "Deck and visuals both wait on it, and the deck needs offline-ready files before Oct 14."
-      },
-      {
-        "title": "Script the SPS promos.",
-        "text": "Smartphone Storytellers logged 0.7h all of September. This is the one live SPS task and it feeds the Storyteller 101 launch."
-      },
-      {
-        "title": "Record Week 7 intro and SOC 2204 Week 8 together.",
-        "text": "Both are due Sun–Mon. One setup, two videos, and Monday stays lighter."
-      },
-      {
-        "title": "Wrap CM 1110 Week 1 by Oct 8.",
-        "text": "Course starts Oct 20. Clear the overdue Things list build first; it is the scaffold for the wrap."
-      },
-      {
-        "title": "Finish Oct 13 shoot scripts.",
-        "text": "Module 6 portrait plus the Missions videos all film that day. No script, no shoot."
-      }
-    ],
-    "opportunities": [
-      {
-        "role": "SPS",
-        "title": "Oct 7 SPS meeting with Megan Draper",
-        "text": "Walking in with draft promos turns a conversation into feedback on real material."
-      },
-      {
-        "role": "Speaking",
-        "title": "Preproduction Cheat Sheet",
-        "text": "Built for SALT, it could double as a Storyteller 101 handout or lead magnet."
-      },
-      {
-        "role": "Seacoast",
-        "title": "Oct 13 combined shoot",
-        "text": "One day yields Module 6 footage plus three Seacoast training videos. Tight scripts make that day pay off twice."
-      }
-    ],
-    "projectCards": [
-      {
-        "role": "Speaking",
-        "level": "Critical",
-        "why": "Three SALT tasks passed Oct 2 and the talk is Oct 16, 1:15 PM CT.",
-        "best": "Outline first, mirroring the CFX talk. Deck Mon–Tue nights.",
-        "watch": "CFX cleanup (Archive Talk, Edit Talk Video and Send) has sat since mid-September. Next: Preproduction Cheat Sheet needs a print buffer."
-      },
-      {
-        "role": "Teaching",
-        "level": "High",
-        "why": "Week 7 intro due Sunday, SOC 2204 Week 8 due Monday.",
-        "best": "Record both in one setup today. Recurring GSU check-ins (announcement, grading check, 4 student check-ins) can wait for Tuesday night.",
-        "watch": "Five grading tasks land Fri Oct 9, and the Oct 7 live recording eats Wednesday evening. Next: CM 1110 Week 1 wrap by Oct 8."
-      },
-      {
-        "role": "Seacoast",
-        "level": "Medium",
-        "why": "Not a Saturday task. Flagging for the week.",
-        "best": "Monday: Missions pastor outreach and Video 3 outline for the Oct 13 shoot.",
-        "watch": "ARC Gather fills Tuesday 9–4, and Wednesday is the live recording until 8:30 PM."
-      },
-      {
-        "role": "Personal",
-        "level": "Low",
-        "why": "Two small tasks have been rolling on Today for weeks.",
-        "best": "Send the scheduling email for the Money Review with Rich Young (on the list since June).",
-        "watch": "Fix Home Assistant Missing Devices can wait. Smart Home is on hold."
-      }
-    ]
+  "gamePlan": [
+   {
+    "label": "Protect",
+    "tone": "ok",
+    "text": "Family day. Linkin Park in Summerville 2–5 PM, and the evening stays open."
+   },
+   {
+    "label": "Pressure",
+    "tone": "warn",
+    "text": "SALT talk. Outline, deck and visuals all passed Oct 2; the talk is Fri Oct 16."
+   },
+   {
+    "label": "Tonight",
+    "tone": "neutral",
+    "text": "Family and recovery. No work block on Saturdays."
+   },
+   {
+    "label": "Watch out",
+    "tone": "warn",
+    "text": "Week 7 intro video is due Sunday. Record it today so church and family keep tomorrow."
+   }
+  ],
+  "priorities": [
+   {
+    "title": "SALT talk outline and structure",
+    "role": "Speaking",
+    "due": "Overdue (Oct 2)",
+    "overdue": true,
+    "next": "Lock the outline in the 9–11 AM stretch. It gates the deck and the visuals."
+   },
+   {
+    "title": "Smartphone Storytellers promos scripting",
+    "role": "SPS",
+    "due": "No date",
+    "overdue": false,
+    "next": "Draft the first promo script, 7–9 AM."
+   },
+   {
+    "title": "Record Week 7 intro video",
+    "role": "Teaching",
+    "due": "Due tomorrow",
+    "overdue": false,
+    "next": "Record it before noon so Sunday stays clear."
+   }
+  ],
+  "sequenceNote": "Optional work block 7–11 AM, then family.",
+  "sequence": [
+   {
+    "time": "5:00–5:30 AM",
+    "what": "Faith: My Utmost and the prayer list"
+   },
+   {
+    "time": "7:00–9:00 AM",
+    "what": "Smartphone Storytellers: promos scripting"
+   },
+   {
+    "time": "9:00–11:00 AM",
+    "what": "SALT talk outline and structure (overdue)"
+   },
+   {
+    "time": "11:00–11:45 AM",
+    "what": "Record Week 7 intro, and SOC 2204 Week 8 if the setup is still up"
+   },
+   {
+    "time": "11:45 AM–1:30 PM",
+    "what": "Lunch and family. Optional 10–15 min Off Day circuit"
+   },
+   {
+    "time": "2:00–5:00 PM",
+    "what": "Linkin Park: Unshatter, Summerville (pack Snack 2)"
+   },
+   {
+    "time": "5:00–8:00 PM",
+    "what": "Family time"
+   },
+   {
+    "time": "10:00–10:30 PM",
+    "what": "Wind down. Lights out early; sleep has been short all week"
+   }
+  ],
+  "headsUp": [
+   {
+    "kind": "Overdue",
+    "role": "Speaking",
+    "text": "SALT talk outline and structure (Oct 2)"
+   },
+   {
+    "kind": "Overdue",
+    "role": "Speaking",
+    "text": "SALT slide deck (Oct 2)"
+   },
+   {
+    "kind": "Overdue",
+    "role": "Speaking",
+    "text": "SALT visual examples (Oct 2)"
+   },
+   {
+    "kind": "Overdue",
+    "role": "Teaching",
+    "text": "REVISIT CM 1110 Things list build (Sep 29)"
+   },
+   {
+    "kind": "Calendar",
+    "role": null,
+    "text": "6 invites need a flag, run 'flag my invites' to resolve."
+   },
+   {
+    "kind": "Nutrition",
+    "role": null,
+    "text": "Food logs reconciled: Oct 2 rebuilt from MyFitnessPal (2,089 kcal, snack had been folded into dinner). The 4:16 AM download failed (curl exit 22); the 9:04 AM re-export worked."
+   }
+  ]
+ },
+ "brief": {
+  "morningRead": [
+   "Saturday with showers and possible storms likely this afternoon (70%), right as Linkin Park runs in Summerville from 2 to 5. The SALT outline, deck, and visuals all slid past Oct 2, and the Week 7 intro video is due tomorrow.",
+   "If you take the 7–11 AM block, open with SPS promos, then give the back half to the SALT outline, since the talk is 13 days out and the deck can't start without it. Record the Week 7 intro before noon."
+  ],
+  "watchOut": "overdue work swallowing the whole family day.",
+  "forgetting": [
+   {
+    "role": "Speaking",
+    "title": "SALT reply",
+    "text": "You still owe SALT an answer on which meals you'll join and whether you're bringing a guest. Quick email, easy to lose."
+   },
+   {
+    "role": "Teaching",
+    "title": "SOC 2204 Week 8",
+    "text": "Due Monday, which already has the Debrief call, Film Team, and a 3 PM dental visit in Mount Pleasant. Batch it with today's Week 7 recording."
+   },
+   {
+    "role": "Seacoast",
+    "title": "Oct 13 shoot scripts",
+    "text": "Missions Video 3 outline and the full shooting scripts are still open. The shoot is 10 days out and you fly to Dallas the next morning."
+   },
+   {
+    "role": "Speaking",
+    "title": "Preproduction Cheat Sheet",
+    "text": "Still in scoping with no Things tasks, and it needs a print buffer before SALT travel on Oct 14."
+   }
+  ],
+  "whatsNext": [
+   {
+    "title": "Lock the SALT talk outline.",
+    "text": "Deck and visuals both wait on it, and the deck needs offline-ready files before Oct 14."
+   },
+   {
+    "title": "Script the SPS promos.",
+    "text": "Smartphone Storytellers logged 0.7h all of September. This is the one live SPS task and it feeds the Storyteller 101 launch."
+   },
+   {
+    "title": "Record Week 7 intro and SOC 2204 Week 8 together.",
+    "text": "Both are due Sun–Mon. One setup, two videos, and Monday stays lighter."
+   },
+   {
+    "title": "Wrap CM 1110 Week 1 by Oct 8.",
+    "text": "Course starts Oct 20. Clear the overdue Things list build first; it is the scaffold for the wrap."
+   },
+   {
+    "title": "Finish Oct 13 shoot scripts.",
+    "text": "Module 6 portrait plus the Missions videos all film that day. No script, no shoot."
+   }
+  ],
+  "opportunities": [
+   {
+    "role": "SPS",
+    "title": "Oct 7 SPS meeting with Megan Draper",
+    "text": "Walking in with draft promos turns a conversation into feedback on real material."
+   },
+   {
+    "role": "Speaking",
+    "title": "Preproduction Cheat Sheet",
+    "text": "Built for SALT, it could double as a Storyteller 101 handout or lead magnet."
+   },
+   {
+    "role": "Seacoast",
+    "title": "Oct 13 combined shoot",
+    "text": "One day yields Module 6 footage plus three Seacoast training videos. Tight scripts make that day pay off twice."
+   }
+  ],
+  "projectCards": [
+   {
+    "role": "Speaking",
+    "level": "Critical",
+    "why": "Three SALT tasks passed Oct 2 and the talk is Oct 16, 1:15 PM CT.",
+    "best": "Outline first, mirroring the CFX talk. Deck Mon–Tue nights.",
+    "watch": "CFX cleanup (Archive Talk, Edit Talk Video and Send) has sat since mid-September. Next: Preproduction Cheat Sheet needs a print buffer."
+   },
+   {
+    "role": "Teaching",
+    "level": "High",
+    "why": "Week 7 intro due Sunday, SOC 2204 Week 8 due Monday.",
+    "best": "Record both in one setup today. Recurring GSU check-ins (announcement, grading check, 4 student check-ins) can wait for Tuesday night.",
+    "watch": "Five grading tasks land Fri Oct 9, and the Oct 7 live recording eats Wednesday evening. Next: CM 1110 Week 1 wrap by Oct 8."
+   },
+   {
+    "role": "Seacoast",
+    "level": "Medium",
+    "why": "Not a Saturday task. Flagging for the week.",
+    "best": "Monday: Missions pastor outreach and Video 3 outline for the Oct 13 shoot.",
+    "watch": "ARC Gather fills Tuesday 9–4, and Wednesday is the live recording until 8:30 PM."
+   },
+   {
+    "role": "Personal",
+    "level": "Low",
+    "why": "Two small tasks have been rolling on Today for weeks.",
+    "best": "Send the scheduling email for the Money Review with Rich Young (on the list since June).",
+    "watch": "Fix Home Assistant Missing Devices can wait. Smart Home is on hold."
+   }
+  ]
+ },
+ "reading": {
+  "devotional": {
+   "series": "My Utmost for His Highest",
+   "date": "Oct 3",
+   "title": "The Place of Ministry",
+   "reference": "Mark 9:29",
+   "summary": [
+    "The disciples couldn't cast it out because they leaned on their own ideas about serving, not on knowing Jesus. The remedy is concentrating on Him, again and again.",
+    "Clear away whatever sits between you and Him by facing it, not skipping past it.",
+    "The saint's power shows in coming down from the mountaintop and living in the valley."
+   ],
+   "fullText": [
+    "“He said to them, ‘This kind [of unclean spirit] can come out by nothing but prayer and fasting.’”",
+    "His disciples asked Him privately, ‘Why could we not cast it out?’” (9:28). The answer lies in a personal relationship with Jesus Christ. “This kind can come out by nothing but” concentrating on Him, and then doubling and redoubling that concentration on Him. We can remain powerless forever, as the disciples were in this situation, by trying to do God’s work without concentrating on His power, and by following instead the ideas that we draw from our own nature. We actually slander and dishonor God by our very eagerness to serve Him without knowing Him.",
+    "When you are brought face to face with a difficult situation and nothing happens externally, you can still know that freedom and release will be given because of your continued concentration on Jesus Christ. Your duty in service and ministry is to see that there is nothing between Jesus and yourself. Is there anything between you and Jesus even now? If there is, you must get through it, not by ignoring it as an irritation, or by going up and over it, but by facing it and getting through it into the presence of Jesus Christ. Then that very problem itself, and all that you have been through in connection with it, will glorify Jesus Christ in a way that you will never know until you see Him face to face.",
+    "We must be able to “mount up with wings like eagles” (Isaiah 40:31), but we must also know how to come down. The power of the saint lies in the coming down and in the living that is done in the valley. Paul said, “I can do all things through Christ who strengthens me” (Philippians 4:13) and what he was referring to were mostly humiliating things. And yet it is in our power to refuse to be humiliated and to say, “No, thank you, I much prefer to be on the mountaintop with God.” Can I face things as they actually are in the light of the reality of Jesus Christ, or do things as they really are destroy my faith in Him, and put me into a panic?"
+   ]
   },
-  "reading": {
-    "devotional": {
-      "series": "My Utmost for His Highest",
-      "date": "Oct 3",
-      "title": "The place of ministry",
-      "reference": "Mark 9:29",
-      "summary": [
-        "The disciples couldn't cast it out because they leaned on their own ideas about serving, not on knowing Jesus. The remedy is concentrating on Him, again and again.",
-        "Clear away whatever sits between you and Him by facing it, not skipping past it.",
-        "The saint's power shows in coming down from the mountaintop and living in the valley."
-      ],
-      "fullText": [],
-      "url": "https://dustdingo.github.io/daily-briefing/"
-    },
-    "prayer": [
-      "Micah Kongkousonh’s family",
-      "Jirah",
-      "Russo",
-      "Carrie Davis",
-      "Moondog",
-      "Stephanie Lippi"
-    ],
-    "creative": {
-      "date": "Oct 3",
-      "title": "Bird by bird",
-      "summary": "Overwhelm usually means the work is undefined or feels endless. Break it into chunks, list them, block time for each, then take them one at a time. Small progress builds momentum.",
-      "question": "What is the next task you need to complete?"
-    }
-  },
-  "fitness": {
-    "eyebrow": "Saturday · Rest day",
-    "stats": [
-      {
-        "value": "228.6",
-        "label": "lb weekly avg"
-      },
-      {
-        "value": "~0.5",
-        "label": "lb/wk, goal 1.2"
-      },
-      {
-        "value": "6.9h",
-        "label": "sleep avg"
-      },
-      {
-        "value": "6,650",
-        "label": "steps/day"
-      }
-    ],
-    "progress": [
-      {
-        "label": "Weight",
-        "text": "228.6 lb avg this week, losing about 0.5 lb/wk over 3 weeks; goal needs 1.2 lb/wk; sustainable range 1.1–2.3 lb/wk. That is under 0.5% a week, so progress has stalled (some creatine water still in the mix)."
-      },
-      {
-        "label": "Nutrition (Sep 26–Oct 2)",
-        "text": "2,155 kcal avg vs 2,308, protein 180g avg vs 200g, 6 of 7 days at 180g+. Only Oct 1 dipped (138g). Oct 2 is not reconciled yet."
-      },
-      {
-        "label": "Strength",
-        "text": "Leg press 205 to 250 lb and stiff leg deadlift 100 to 135 lb in a week. Front raise up 5 lb. DB bench holding at 45 lb, row steady at 80 lb. Leg extension set 3 flagged \"struggled.\" Back & Triceps last done Sep 23 (10 days)."
-      },
-      {
-        "label": "Recovery",
-        "text": "6.9h avg sleep, but four short nights Sep 28–Oct 1 (about 5.5h each). Today reads normal: RHR 71 vs 70 avg, HRV 65 vs 53."
-      },
-      {
-        "label": "Activity",
-        "text": "6,650 steps/day avg (target 10,000). Walks this week: 3 sessions, 6.9 mi, 136 min."
-      }
-    ],
-    "closing": "Food and lifting are working. Sleep is the gap: get 7h tonight and tomorrow, and protect Wednesday's Back & Triceps at 8 AM before the live recording day starts.",
-    "goals": [
-      {
-        "name": "Strength sessions",
-        "done": 2,
-        "total": 3
-      },
-      {
-        "name": "Off Day circuit",
-        "done": 0,
-        "total": 2
-      },
-      {
-        "name": "Walks (2 mi)",
-        "done": 3,
-        "total": 3
-      },
-      {
-        "name": "Protein days (180g+)",
-        "done": 4,
-        "total": 5
-      },
-      {
-        "name": "Sleep 7h+",
-        "done": 1,
-        "total": 5
-      }
-    ],
-    "goalsNote": "2 days left: a circuit today and one tomorrow closes circuits, and one more 180g day closes protein. Sleep can't reach 5 this week, so aim for 7h both nights.",
-    "workout": {
-      "label": "Today's workout · Saturday",
-      "title": "Rest day",
-      "lines": [
-        "No workout scheduled.",
-        "Optional: the 10–15 min Off Day circuit at home (squats, sit-ups, kettlebell swings, calf raises, 15 × 3) to start this week's 0 of 2."
-      ]
-    },
-    "split": [
-      {
-        "day": "Mon",
-        "what": "Chest & Biceps"
-      },
-      {
-        "day": "Tue",
-        "what": "Circuit"
-      },
-      {
-        "day": "Wed",
-        "what": "Back & Triceps (8 AM)"
-      },
-      {
-        "day": "Thu",
-        "what": "Circuit"
-      },
-      {
-        "day": "Fri",
-        "what": "Legs & Shoulders"
-      }
-    ],
-    "splitNote": "Wednesday is the live recording, so lift at 8 AM.",
-    "strengthNotes": [
-      "Leg press 205 to 250 lb and stiff leg deadlift 100 to 135 lb in a week.",
-      "Front raise up 5 lb (45 lb total vs 40). DB bench holding at 45 lb, row steady at 80 lb.",
-      "Leg extension set 3 flagged \"struggled.\"",
-      "Back & Triceps last done Sep 23 (10 days)."
-    ],
-    "macroTargets": {
-      "cal": 2308,
-      "protein": 200,
-      "carbs": 215,
-      "fat": 72
-    },
-    "macroNote": "Rest day: no workout window needed.",
-    "meals": [
-      {
-        "slot": "Morning coffee",
-        "what": "1/2 serving collagen protein powder in coffee",
-        "cal": 18,
-        "protein": 4,
-        "carbs": 0,
-        "fat": 0
-      },
-      {
-        "slot": "Breakfast",
-        "what": "2 whole eggs + 4 egg whites",
-        "cal": 210,
-        "protein": 28,
-        "carbs": 2,
-        "fat": 10
-      },
-      {
-        "slot": "Snack 1",
-        "what": "Cocoa Crispy’s protein shake (water)",
-        "cal": 130,
-        "protein": 25,
-        "carbs": 6,
-        "fat": 2
-      },
-      {
-        "slot": "Lunch",
-        "what": "Project Lean Nation meal",
-        "cal": 450,
-        "protein": 35,
-        "carbs": 45,
-        "fat": 12
-      },
-      {
-        "slot": "Post-lunch shake",
-        "what": "Six Star Whey Protein Plus, Frosted Flakes (water)",
-        "cal": 190,
-        "protein": 30,
-        "carbs": 9,
-        "fat": 3
-      },
-      {
-        "slot": "Snack 2",
-        "what": "Clementines and/or applesauce (pack it for Linkin Park)",
-        "cal": 90,
-        "protein": 1,
-        "carbs": 22,
-        "fat": 0
-      },
-      {
-        "slot": "Dinner",
-        "what": "Baked chicken breast (6–7 oz), 1/2 cup rice, pat of butter",
-        "cal": 430,
-        "protein": 48,
-        "carbs": 32,
-        "fat": 10
-      },
-      {
-        "slot": "Evening snack",
-        "what": "Blue Bunny caramel mini cone + Cinnamon Bun casein shake",
-        "cal": 290,
-        "protein": 27,
-        "carbs": 31,
-        "fat": 8
-      }
-    ],
-    "pack": {
-      "count": "1 meal away from home",
-      "items": [
-        {
-          "slot": "Snack 2",
-          "when": "Linkin Park, 2:00 PM",
-          "text": "Clementines or an applesauce pouch (both naturally portable)"
-        }
-      ]
-    },
-    "dinnerCall": {
-      "title": "Dinner call: chicken",
-      "text": "Protein lands at 198g (2g under), vs. fish at 188g. The real gap is carbs, 68g under. A banana with Snack 2 (+27g) and an oatmeal pack this morning (about +30g) recover most of it. Fat is 27g under, so extra butter on the rice and a string cheese in the afternoon close part of that."
-    },
-    "alert": {
-      "title": "Nutrition",
-      "text": "Food logs not reconciled this morning. The MyFitnessPal export download failed (curl exit 22). Check the Keyboard Maestro \"MFP 2 - Download Export\" macro and the download log."
-    }
-  },
-  "time": {
-    "guidingOrder": "Faith, Family, Smartphone Storytellers, Fitness, Seacoast, Margin. Freelance shouldn't crowd out SPS or family time.",
-    "periods": [
-      {
-        "id": "week",
-        "label": "This week",
-        "total": "32.7",
-        "caption": "Oct 3 week · logged so far",
-        "note": "ACEP logged 20.0h against a rough 2–4h plan, nearly all Tue–Thu. Seacoast shows 7.7h against roughly 40h. Smartphone Storytellers has 0h logged. That is the category to protect next week.",
-        "rows": [
-          {
-            "name": "ACEP",
-            "hours": 20.0,
-            "role": "Freelance"
-          },
-          {
-            "name": "Seacoast Church",
-            "hours": 7.7,
-            "role": "Seacoast"
-          },
-          {
-            "name": "Moody",
-            "hours": 2.4,
-            "role": "Teaching"
-          },
-          {
-            "name": "Speaking",
-            "hours": 1.3,
-            "role": "Speaking"
-          },
-          {
-            "name": "CSU",
-            "hours": 1.3,
-            "role": "Teaching"
-          },
-          {
-            "name": "Smartphone Storytellers",
-            "hours": 0,
-            "role": "SPS"
-          }
-        ],
-        "days": [
-          {
-            "day": "Mon",
-            "hours": 7.3
-          },
-          {
-            "day": "Tue",
-            "hours": 5.5
-          },
-          {
-            "day": "Wed",
-            "hours": 10.4
-          },
-          {
-            "day": "Thu",
-            "hours": 6.8
-          },
-          {
-            "day": "Fri",
-            "hours": 2.6
-          },
-          {
-            "day": "Sat",
-            "hours": 0
-          }
-        ]
-      },
-      {
-        "id": "last",
-        "label": "Last week",
-        "total": "49.2",
-        "caption": "Sep 21–27",
-        "note": "Seacoast took 91% of last week, with a Saturday and a Sunday of work on top of the weekdays.",
-        "rows": [
-          {
-            "name": "Seacoast Church",
-            "hours": 44.9,
-            "role": "Seacoast"
-          },
-          {
-            "name": "Moody",
-            "hours": 3.1,
-            "role": "Teaching"
-          },
-          {
-            "name": "Speaking",
-            "hours": 0.5,
-            "role": "Speaking"
-          },
-          {
-            "name": "Music",
-            "hours": 0.4,
-            "role": null
-          },
-          {
-            "name": "CSU",
-            "hours": 0.3,
-            "role": "Teaching"
-          }
-        ],
-        "days": null
-      },
-      {
-        "id": "sep",
-        "label": "September",
-        "total": "206.7",
-        "caption": "September 2026",
-        "note": "Smartphone Storytellers logged just 0.7h all of September, the lowest of any category.",
-        "rows": [
-          {
-            "name": "Seacoast Church",
-            "hours": 116.0,
-            "role": "Seacoast"
-          },
-          {
-            "name": "Speaking",
-            "hours": 43.8,
-            "role": "Speaking"
-          },
-          {
-            "name": "Moody",
-            "hours": 21.8,
-            "role": "Teaching"
-          },
-          {
-            "name": "ACEP",
-            "hours": 17.3,
-            "role": "Freelance"
-          },
-          {
-            "name": "CSU",
-            "hours": 5.8,
-            "role": "Teaching"
-          },
-          {
-            "name": "Music",
-            "hours": 1.3,
-            "role": null
-          },
-          {
-            "name": "Smartphone Storytellers",
-            "hours": 0.7,
-            "role": "SPS"
-          }
-        ],
-        "days": null
-      }
-    ]
-  },
-  "week": {
-    "rangeLabel": "Week of Sep 28 – Oct 4",
-    "focus": [
-      {
-        "role": "Speaking",
-        "title": "SALT talk outline, deck, and visuals",
-        "text": "All three passed their Oct 2 date. Talk is Fri Oct 16, 1:15 PM CT in Irving; you fly out Wed Oct 14 at 5:30 AM.",
-        "when": "Overdue",
-        "overdue": true
-      },
-      {
-        "role": "Teaching",
-        "title": "Teaching recordings and CM 1110 wrap",
-        "text": "Week 7 intro (Sun Oct 4), SOC 2204 Week 8 (Mon Oct 5), CM 1110 Week 1 wrap (Thu Oct 8) ahead of the Oct 20 start.",
-        "when": "Oct 4–8",
-        "overdue": false
-      },
-      {
-        "role": "Teaching",
-        "title": "Five grading tasks",
-        "text": "Web Evaluation, Type and Color, 7-1, 7-2, and Blog Proposal all due Fri Oct 9.",
-        "when": "Oct 9",
-        "overdue": false
-      },
-      {
-        "role": "SPS",
-        "title": "SPS promos and the Oct 7 meeting",
-        "text": "Promos scripting is the live SPS task. Meeting with Megan Draper Wed Oct 7, 10:30 AM.",
-        "when": "Oct 7",
-        "overdue": false
-      },
-      {
-        "role": "Seacoast",
-        "title": "Prep the Oct 13 combined shoot",
-        "text": "Storyteller 101 Module 6 portrait plus the Seacoast Missions and Filming Best Practices videos, the day before SALT travel.",
-        "when": "Oct 13",
-        "overdue": false
-      }
-    ],
-    "overdue": [
-      {
-        "title": "Develop talk outline and structure",
-        "role": "Speaking",
-        "due": "Oct 2"
-      },
-      {
-        "title": "Build slide deck",
-        "role": "Speaking",
-        "due": "Oct 2"
-      },
-      {
-        "title": "Gather visual examples",
-        "role": "Speaking",
-        "due": "Oct 2"
-      },
-      {
-        "title": "REVISIT CM 1110 Things list build",
-        "role": "Teaching",
-        "due": "Sep 29"
-      }
-    ],
-    "projects": [
-      {
-        "role": "Seacoast",
-        "area": "Seacoast",
-        "roleEvaluation": "Only 7.7h logged this week with Tue–Thu going to ACEP. Busy stretch ahead with ARC Gather, the live recording, and the Oct 13 shoot.",
-        "blocks": [
-          {
-            "label": "Active projects",
-            "lines": [
-              "2026-27 Campus Coverage (Phase 1 through Jun 2027)",
-              "Missions Storyteller Project (films Oct 13)",
-              "Filming Best Practices (scope not defined)"
-            ]
-          },
-          {
-            "label": "This week",
-            "lines": [
-              "ARC Gather, October all staff: Tue Oct 6, 9–4",
-              "First Wednesday live recording: Oct 7, 12–8:30 PM",
-              "Lunch with Greg Surratt: Thu Oct 8, noon"
-            ]
-          },
-          {
-            "label": "This month",
-            "lines": [
-              "Seacoast New Year setup (Oct 19) and shoot (Oct 20)",
-              "Margaret & Creative: The Trilogy (Oct 29)"
-            ]
-          },
-          {
-            "label": "Suggestions",
-            "lines": [
-              "Define the Filming Best Practices scope before Oct 13 so it isn’t improvised on shoot day.",
-              "Send the missions pastor outreach for photo needs this week."
-            ]
-          }
-        ]
-      },
-      {
-        "role": "Teaching",
-        "area": "Teaching",
-        "roleEvaluation": "Close to plan in hours, but the CM 1110 list slipped and Wednesday’s Teaching night is lost to the live recording.",
-        "blocks": [
-          {
-            "label": "Active projects",
-            "lines": [
-              "CM 1110 (starts Oct 20)",
-              "SOC 2204 (ends Oct 12)",
-              "GSU 1120",
-              "COMM 335 (CSU)",
-              "Moody Devotional (Nov 11)"
-            ]
-          },
-          {
-            "label": "This week",
-            "lines": [
-              "Record Week 7 intro video: Oct 4",
-              "Record SOC 2204 Week 8 video: Oct 5",
-              "Wrap CM 1110 Week 1: Oct 8",
-              "Grade five assignments: Oct 9"
-            ]
-          },
-          {
-            "label": "Open (no deadline)",
-            "lines": [
-              "Record video announcement",
-              "Check for assignments to grade",
-              "Check in with 4 students on incomplete submissions"
-            ]
-          },
-          {
-            "label": "Suggestions",
-            "lines": [
-              "Batch both video recordings in one setup this weekend.",
-              "Move Wednesday’s teaching work to Tuesday night, since the live recording takes Wednesday.",
-              "Start the Moody devotional outline before SALT travel."
-            ]
-          }
-        ]
-      },
-      {
-        "role": "Freelance",
-        "area": "Freelance",
-        "roleEvaluation": "20h this week, well over its evening windows. It crowded the week.",
-        "blocks": [
-          {
-            "label": "Active projects",
-            "lines": [
-              "American Integrity (15 in editing, 10 awaiting client feedback)",
-              "Bread of Life (needs an edit tracker)"
-            ]
-          },
-          {
-            "label": "This week",
-            "lines": [
-              "No EDIT tasks in Today or the 30-day window."
-            ]
-          },
-          {
-            "label": "Suggestions",
-            "lines": [
-              "ACEP logged 20h Tue–Thu. Keep it to the Mon/Thu evening windows so it doesn’t eat SPS or Seacoast time.",
-              "Invoice Wei Xie and Steve Biggs if that’s still open."
-            ]
-          }
-        ]
-      },
-      {
-        "role": "SPS",
-        "area": "Smartphone Storytellers",
-        "roleEvaluation": "No logged time this week and 0.7h in September. Stalled; promos are the way back in.",
-        "blocks": [
-          {
-            "label": "Active projects",
-            "lines": [
-              "Storyteller 101: Modules 0–5 done, Module 6 portrait films Oct 13",
-              "Product Launch (on hold until Storyteller 101 launches)"
-            ]
-          },
-          {
-            "label": "This week",
-            "lines": [
-              "Meet to discuss Smartphone Storytellers (Megan Draper): Wed Oct 7, 10:30 AM."
-            ]
-          },
-          {
-            "label": "Open (no deadline)",
-            "lines": [
-              "Smartphone Storytellers promos scripting"
-            ]
-          },
-          {
-            "label": "Suggestions",
-            "lines": [
-              "Draft promos before Wednesday’s meeting.",
-              "Write the Module 6 portrait shot list for Oct 13.",
-              "Line up launch infrastructure (hosting, landing page) to run alongside filming."
-            ]
-          }
-        ]
-      },
-      {
-        "role": "Speaking",
-        "area": "Speaking",
-        "roleEvaluation": "SALT prep slipped past Oct 2 with the talk 13 days out.",
-        "blocks": [
-          {
-            "label": "Active projects",
-            "lines": [
-              "SALT 2026 (Irving, TX): Oct 16",
-              "Preproduction Cheat Sheet (scoping)",
-              "FILO (on hold)"
-            ]
-          },
-          {
-            "label": "This month",
-            "lines": [
-              "SALT Workshop: Why Preproduction Is the Most Important Part of Production, Fri Oct 16, 1:15 PM CT."
-            ]
-          },
-          {
-            "label": "Open (no deadline)",
-            "lines": [
-              "Archive Talk (CFX)",
-              "Edit Talk Video and Send (CFX)"
-            ]
-          },
-          {
-            "label": "Suggestions",
-            "lines": [
-              "Reply to SALT about meals and guest.",
-              "Download everything offline and pack HDMI adapters; Wi-Fi may not be available.",
-              "Remember: the home flight leaves from Love Field (DAL), not DFW."
-            ]
-          }
-        ]
-      },
-      {
-        "role": "Personal",
-        "area": "Personal",
-        "roleEvaluation": "Family night was protected Friday. Sleep was short most of the week.",
-        "blocks": [
-          {
-            "label": "Active projects",
-            "lines": [
-              "Guitar",
-              "Smart Home Automation (on hold)"
-            ]
-          },
-          {
-            "label": "This week",
-            "lines": [
-              "Adam and Zelda dental, East Cooper Smiles: Mon Oct 5, 3 PM",
-              "Zelda’s violin lessons: Tuesdays 3:45",
-              "Camping, James Island County Park: Oct 9–10"
-            ]
-          },
-          {
-            "label": "This month",
-            "lines": [
-              "Lily’s birthday (Oct 20)",
-              "HHA Trunk or Treat (Oct 23)",
-              "Sonic Live in Concert (Oct 28)"
-            ]
-          },
-          {
-            "label": "Open (no deadline)",
-            "lines": [
-              "Schedule Money Review with Rich Young",
-              "Fix Home Assistant Missing Devices"
-            ]
-          },
-          {
-            "label": "Suggestions",
-            "lines": [
-              "Camping Fri–Sat Oct 9–10 covers family night; protect it from grading spillover."
-            ]
-          }
-        ]
-      }
-    ],
-    "calendarNote": "Covers Oct 3 – Nov 2. Muted entries are FYI items.",
-    "calendar": [
-      {
-        "kicker": "This week",
-        "title": "Rest of Sat Oct 3",
-        "rows": [
-          {
-            "day": "Sat 10/3",
-            "time": "All day",
-            "title": "Spectrum Sailing (ends today)",
-            "fyi": false
-          },
-          {
-            "day": "",
-            "time": "2:00 PM",
-            "title": "LINKIN PARK: UNSHATTER (2026), Summerville",
-            "fyi": false
-          },
-          {
-            "day": "",
-            "time": "FYI",
-            "title": "Lynne and Sarah on Sisterhood Hike",
-            "fyi": true
-          }
-        ]
-      },
-      {
-        "kicker": "Next 30 days",
-        "title": "Week of Oct 5",
-        "rows": [
-          {
-            "day": "Mon 10/5",
-            "time": "9:00 AM",
-            "title": "Weekend Debrief Call",
-            "fyi": false
-          },
-          {
-            "day": "",
-            "time": "10:30 AM",
-            "title": "Film Team Weekly",
-            "fyi": false
-          },
-          {
-            "day": "",
-            "time": "3:00 PM",
-            "title": "Adam and Zelda Dental Apt",
-            "fyi": false
-          },
-          {
-            "day": "",
-            "time": "FYI",
-            "title": "Sarah out",
-            "fyi": true
-          },
-          {
-            "day": "Tue 10/6",
-            "time": "9:00 AM",
-            "title": "ARC Gather: October All Staff (to 4 PM)",
-            "fyi": false
-          },
-          {
-            "day": "",
-            "time": "3:45 PM",
-            "title": "Zelda’s Violin Lesson",
-            "fyi": false
-          },
-          {
-            "day": "Wed 10/7",
-            "time": "10:30 AM",
-            "title": "Meet to discuss Smartphone Storytellers",
-            "fyi": false
-          },
-          {
-            "day": "",
-            "time": "12:00 PM",
-            "title": "First Wednesday: Seacoast Music Live Recording (to 8:30 PM)",
-            "fyi": false
-          },
-          {
-            "day": "Thu 10/8",
-            "time": "12:00 PM",
-            "title": "Lunch with Greg Surratt",
-            "fyi": false
-          },
-          {
-            "day": "",
-            "time": "3:30 PM",
-            "title": "Camp: Story Team",
-            "fyi": false
-          },
-          {
-            "day": "",
-            "time": "FYI",
-            "title": "Tyler: Men’s Hike (Thu–Sat)",
-            "fyi": true
-          },
-          {
-            "day": "Fri 10/9",
-            "time": "Fri–Sat",
-            "title": "Camping, James Island County Park",
-            "fyi": false
-          },
-          {
-            "day": "Sun 10/11",
-            "time": "8:00 PM",
-            "title": "Oct (On Company Time), Music Farm",
-            "fyi": false
-          }
-        ]
-      },
-      {
-        "kicker": "Next 30 days",
-        "title": "Week of Oct 12",
-        "rows": [
-          {
-            "day": "Mon 10/12",
-            "time": "9:00 AM",
-            "title": "Weekend Debrief Call",
-            "fyi": false
-          },
-          {
-            "day": "",
-            "time": "10:30 AM",
-            "title": "Film Team Weekly",
-            "fyi": false
-          },
-          {
-            "day": "",
-            "time": "11:00 AM",
-            "title": "Weekend Experience Videos",
-            "fyi": false
-          },
-          {
-            "day": "",
-            "time": "FYI",
-            "title": "Half-day teacher work day",
-            "fyi": true
-          },
-          {
-            "day": "Tue 10/13",
-            "time": "8:00 AM",
-            "title": "Filming Smartphone Storytellers (to 5 PM)",
-            "fyi": false
-          },
-          {
-            "day": "",
-            "time": "3:45 PM",
-            "title": "Zelda’s Violin Lesson",
-            "fyi": false
-          },
-          {
-            "day": "",
-            "time": "FYI",
-            "title": "November Staff Recording (PJS and PLS), 11:00 AM",
-            "fyi": true
-          },
-          {
-            "day": "Wed 10/14",
-            "time": "Wed–Thu",
-            "title": "SALT Conference (5:30 AM flight)",
-            "fyi": false
-          },
-          {
-            "day": "",
-            "time": "12:00 PM",
-            "title": "Creative Lunch",
-            "fyi": false
-          },
-          {
-            "day": "",
-            "time": "6:30 PM",
-            "title": "MDWK",
-            "fyi": false
-          },
-          {
-            "day": "Thu 10/15",
-            "time": "FYI",
-            "title": "Titus: 3rd Grade Show, 6:30 PM",
-            "fyi": true
-          },
-          {
-            "day": "Fri 10/16",
-            "time": "2:15 PM ET",
-            "title": "SALT Workshop: Why Preproduction Is the Most Important Part of Production (1:15 PM CT)",
-            "fyi": false
-          }
-        ]
-      },
-      {
-        "kicker": "Next 30 days",
-        "title": "Week of Oct 19",
-        "rows": [
-          {
-            "day": "Mon 10/19",
-            "time": "9:00 AM",
-            "title": "Weekend Debrief Call",
-            "fyi": false
-          },
-          {
-            "day": "",
-            "time": "10:30 AM",
-            "title": "Film Team Weekly",
-            "fyi": false
-          },
-          {
-            "day": "",
-            "time": "4:00 PM",
-            "title": "Setup for Seacoast New Year at home",
-            "fyi": false
-          },
-          {
-            "day": "Tue 10/20",
-            "time": "All day",
-            "title": "Lily’s Birthday",
-            "fyi": false
-          },
-          {
-            "day": "",
-            "time": "9:00 AM",
-            "title": "Seacoast New Year Shoot",
-            "fyi": false
-          },
-          {
-            "day": "",
-            "time": "3:45 PM",
-            "title": "Zelda’s Violin Lesson",
-            "fyi": false
-          },
-          {
-            "day": "Wed 10/21",
-            "time": "12:00 PM",
-            "title": "Creative Lunch",
-            "fyi": false
-          },
-          {
-            "day": "",
-            "time": "6:30 PM",
-            "title": "MDWK",
-            "fyi": false
-          },
-          {
-            "day": "Thu 10/22",
-            "time": "12:00 PM",
-            "title": "Filming with Awaken Church",
-            "fyi": false
-          },
-          {
-            "day": "",
-            "time": "6:00 PM",
-            "title": "Hanahan Business Mixer",
-            "fyi": false
-          },
-          {
-            "day": "",
-            "time": "FYI",
-            "title": "Half-day students / parent-teacher conferences",
-            "fyi": true
-          },
-          {
-            "day": "Fri 10/23",
-            "time": "5:00 PM",
-            "title": "HHA Trunk or Treat",
-            "fyi": false
-          }
-        ]
-      },
-      {
-        "kicker": "Next 30 days",
-        "title": "Week of Oct 26",
-        "rows": [
-          {
-            "day": "Mon 10/26",
-            "time": "9:00 AM",
-            "title": "Weekend Debrief Call",
-            "fyi": false
-          },
-          {
-            "day": "",
-            "time": "10:30 AM",
-            "title": "Film Team Weekly",
-            "fyi": false
-          },
-          {
-            "day": "Tue 10/27",
-            "time": "3:30 PM",
-            "title": "Hannah SIC Meeting, HHA Library",
-            "fyi": false
-          },
-          {
-            "day": "",
-            "time": "3:45 PM",
-            "title": "Zelda’s Violin Lesson",
-            "fyi": false
-          },
-          {
-            "day": "Wed 10/28",
-            "time": "12:00 PM",
-            "title": "Creative Lunch",
-            "fyi": false
-          },
-          {
-            "day": "",
-            "time": "6:30 PM",
-            "title": "MDWK",
-            "fyi": false
-          },
-          {
-            "day": "",
-            "time": "7:30 PM",
-            "title": "Sonic Live in Concert",
-            "fyi": false
-          },
-          {
-            "day": "Thu 10/29",
-            "time": "1:00 PM",
-            "title": "Margaret & Creative: The Trilogy",
-            "fyi": false
-          },
-          {
-            "day": "",
-            "time": "1:00 PM",
-            "title": "Moody Lunch and Learn",
-            "fyi": false
-          },
-          {
-            "day": "Sun 11/1",
-            "time": "All day",
-            "title": "Check for Books",
-            "fyi": false
-          }
-        ]
-      },
-      {
-        "kicker": "Next 30 days",
-        "title": "Week of Nov 2",
-        "rows": [
-          {
-            "day": "Mon 11/2",
-            "time": "9:00 AM",
-            "title": "Weekend Debrief Call",
-            "fyi": false
-          },
-          {
-            "day": "",
-            "time": "10:30 AM",
-            "title": "Film Team Weekly",
-            "fyi": false
-          }
-        ]
-      }
-    ]
+  "prayer": [
+   "Micah Kongkousonh’s family",
+   "Jirah",
+   "Russo",
+   "Carrie Davis",
+   "Moondog",
+   "Stephanie Lippi"
+  ],
+  "creative": {
+   "date": "Oct 3",
+   "title": "",
+   "paragraphs": [
+    "InBird by Bird, her phenomenal book on writing, Anne Lamott shared the story of a time when her younger brother was overwhelmed by a school project. He was supposed to categorize a large number of birds but had put off the project until the last minute. Distraught, he sat at the kitchen table ready to break down in tears. Lamott’s father sat beside him, put his arm around him, and said, “Bird by bird, buddy. Just take it bird by bird.”",
+    "It’s easy to feel overwhelmed with the amount of work required to complete a project. Sometimes that feeling is due to a lack of definition of the work, and sometimes it’s the result of an overall sense that we’re never going to get it done.",
+    "In both cases, charting a clear, measurable course for completion is the best approach.",
+    "Break the work down into manageable chunks. Make a list of those chunks. Block time for each chunk. Then take it chunk by chunk. It’s amazing how simply making a small amount of progress can lighten your spirits and cultivate a sense of momentum.",
+    "What is the “bird” you need to complete next to make progress on an important project?",
+    "All creative work is accomplished task by task. Don’t allow the weight of the undone tasks to cause you to despair. Take them one at a time."
+   ],
+   "question": "What is the next task that you need to complete?"
   }
+ },
+ "fitness": {
+  "eyebrow": "Saturday · Rest day",
+  "stats": [
+   {
+    "value": "228.8",
+    "label": "lb weekly avg"
+   },
+   {
+    "value": "~0.5",
+    "label": "lb/wk, goal 1.2"
+   },
+   {
+    "value": "6.9h",
+    "label": "sleep avg"
+   },
+   {
+    "value": "6,650",
+    "label": "steps/day"
+   }
+  ],
+  "progress": [
+   {
+    "label": "Weight",
+    "text": "228.8 lb avg this week (6 weigh-ins), losing about 0.5 lb/wk over 3 weeks; goal needs 1.2 lb/wk; sustainable range 1.1-2.3 lb/wk. That is under 0.5% a week, so progress has stalled."
+   },
+   {
+    "label": "Nutrition (Sep 26–Oct 2)",
+    "text": "2,155 kcal avg vs 2,308, protein 180g avg vs 200g, 6 of 7 days at 180g+. Only Oct 1 dipped (138g). All 7 days now match MyFitnessPal."
+   },
+   {
+    "label": "Strength",
+    "text": "Leg press 205 to 250 lb and stiff leg deadlift 100 to 135 lb in a week. Front raise up 5 lb. DB bench holding at 45 lb, row steady at 80 lb. Leg extension set 3 flagged \"struggled.\" Back & Triceps last done Sep 23 (10 days)."
+   },
+   {
+    "label": "Recovery",
+    "text": "6.9h avg sleep, but four short nights Sep 28–Oct 1 (about 5.5h each). Today reads normal: RHR 71 vs 70 avg, HRV 65 vs 53."
+   },
+   {
+    "label": "Activity",
+    "text": "6,650 steps/day avg (target 10,000). Walks this week: 3 sessions, 6.9 mi, 136 min."
+   }
+  ],
+  "closing": "Food and lifting are working; the scale is 3 weeks behind goal pace, so tighten logging on concert and weekend days before touching the target. Sleep is the other gap: get 7h tonight and tomorrow, and protect Wednesday's Back & Triceps at 8 AM.",
+  "goals": [
+   {
+    "name": "Strength sessions",
+    "done": 2,
+    "total": 3
+   },
+   {
+    "name": "Off Day circuit",
+    "done": 0,
+    "total": 2
+   },
+   {
+    "name": "Walks (2 mi)",
+    "done": 3,
+    "total": 3
+   },
+   {
+    "name": "Protein days (180g+)",
+    "done": 4,
+    "total": 5
+   },
+   {
+    "name": "Sleep 7h+",
+    "done": 1,
+    "total": 5
+   }
+  ],
+  "goalsNote": "2 days left: a circuit today and one tomorrow closes circuits, and one more 180g day closes protein. Sleep can't reach 5 this week, so aim for 7h both nights.",
+  "workout": {
+   "label": "Today's workout · Saturday",
+   "title": "Rest day",
+   "lines": [
+    "No workout scheduled.",
+    "Optional: the 10–15 min Off Day circuit at home (squats, sit-ups, kettlebell swings, calf raises, 15 × 3) to start this week's 0 of 2."
+   ]
+  },
+  "split": [
+   {
+    "day": "Mon",
+    "what": "Chest & Biceps"
+   },
+   {
+    "day": "Tue",
+    "what": "Circuit"
+   },
+   {
+    "day": "Wed",
+    "what": "Back & Triceps (8 AM)"
+   },
+   {
+    "day": "Thu",
+    "what": "Circuit"
+   },
+   {
+    "day": "Fri",
+    "what": "Legs & Shoulders"
+   }
+  ],
+  "splitNote": "Wednesday is the live recording, so lift at 8 AM.",
+  "strengthNotes": [
+   "Leg press 205 to 250 lb and stiff leg deadlift 100 to 135 lb in a week.",
+   "Front raise up 5 lb (45 lb total vs 40). DB bench holding at 45 lb, row steady at 80 lb.",
+   "Leg extension set 3 flagged \"struggled.\"",
+   "Back & Triceps last done Sep 23 (10 days)."
+  ],
+  "macroTargets": {
+   "cal": 2308,
+   "protein": 200,
+   "carbs": 215,
+   "fat": 72
+  },
+  "macroNote": "Rest day: no workout window needed.",
+  "meals": [
+   {
+    "slot": "Morning coffee",
+    "what": "1/2 serving collagen protein powder in coffee",
+    "cal": 18,
+    "protein": 4,
+    "carbs": 0,
+    "fat": 0
+   },
+   {
+    "slot": "Breakfast",
+    "what": "2 whole eggs + 4 egg whites",
+    "cal": 210,
+    "protein": 28,
+    "carbs": 2,
+    "fat": 10
+   },
+   {
+    "slot": "Snack 1",
+    "what": "Cocoa Crispy’s protein shake (water)",
+    "cal": 130,
+    "protein": 25,
+    "carbs": 6,
+    "fat": 2
+   },
+   {
+    "slot": "Lunch",
+    "what": "Project Lean Nation meal",
+    "cal": 450,
+    "protein": 35,
+    "carbs": 45,
+    "fat": 12
+   },
+   {
+    "slot": "Post-lunch shake",
+    "what": "Six Star Whey Protein Plus, Frosted Flakes (water)",
+    "cal": 190,
+    "protein": 30,
+    "carbs": 9,
+    "fat": 3
+   },
+   {
+    "slot": "Snack 2",
+    "what": "Clementines and/or applesauce (pack it for Linkin Park)",
+    "cal": 90,
+    "protein": 1,
+    "carbs": 22,
+    "fat": 0
+   },
+   {
+    "slot": "Dinner",
+    "what": "Baked chicken breast (6–7 oz), 1/2 cup rice, pat of butter",
+    "cal": 430,
+    "protein": 48,
+    "carbs": 32,
+    "fat": 10
+   },
+   {
+    "slot": "Evening snack",
+    "what": "Blue Bunny caramel mini cone + Cinnamon Bun casein shake",
+    "cal": 290,
+    "protein": 27,
+    "carbs": 31,
+    "fat": 8
+   }
+  ],
+  "pack": {
+   "count": "1 meal away from home",
+   "items": [
+    {
+     "slot": "Snack 2",
+     "when": "Linkin Park, 2:00 PM",
+     "text": "Clementines or an applesauce pouch (both naturally portable)"
+    }
+   ]
+  },
+  "dinnerCall": {
+   "title": "Dinner call: chicken",
+   "text": "Protein lands at 198g (2g under), vs. fish at 188g. The real gap is carbs, 68g under. A banana with Snack 2 (+27g) and an oatmeal pack this morning (about +30g) recover most of it. Fat is 27g under, so extra butter on the rice and a string cheese in the afternoon close part of that."
+  },
+  "alert": null
+ },
+ "time": {
+  "guidingOrder": "Faith, Family, Smartphone Storytellers, Fitness, Seacoast, Margin. Freelance shouldn't crowd out SPS or family time.",
+  "periods": [
+   {
+    "id": "week",
+    "label": "This week",
+    "total": "32.7",
+    "caption": "Oct 3 week · logged so far",
+    "note": "ACEP logged 20.0h against a rough 2–4h plan, nearly all Tue–Thu. Seacoast shows 7.7h against roughly 40h. Smartphone Storytellers has 0h logged. That is the category to protect next week.",
+    "rows": [
+     {
+      "name": "ACEP",
+      "hours": 20.0,
+      "role": "Freelance"
+     },
+     {
+      "name": "Seacoast Church",
+      "hours": 7.7,
+      "role": "Seacoast"
+     },
+     {
+      "name": "Moody",
+      "hours": 2.4,
+      "role": "Teaching"
+     },
+     {
+      "name": "Speaking",
+      "hours": 1.3,
+      "role": "Speaking"
+     },
+     {
+      "name": "CSU",
+      "hours": 1.3,
+      "role": "Teaching"
+     },
+     {
+      "name": "Smartphone Storytellers",
+      "hours": 0,
+      "role": "SPS"
+     }
+    ],
+    "days": [
+     {
+      "day": "Mon",
+      "hours": 7.3
+     },
+     {
+      "day": "Tue",
+      "hours": 5.5
+     },
+     {
+      "day": "Wed",
+      "hours": 10.4
+     },
+     {
+      "day": "Thu",
+      "hours": 6.8
+     },
+     {
+      "day": "Fri",
+      "hours": 2.6
+     },
+     {
+      "day": "Sat",
+      "hours": 0
+     }
+    ]
+   },
+   {
+    "id": "last",
+    "label": "Last week",
+    "total": "49.2",
+    "caption": "Sep 21–27",
+    "note": "Seacoast took 91% of last week, with a Saturday and a Sunday of work on top of the weekdays.",
+    "rows": [
+     {
+      "name": "Seacoast Church",
+      "hours": 44.9,
+      "role": "Seacoast"
+     },
+     {
+      "name": "Moody",
+      "hours": 3.1,
+      "role": "Teaching"
+     },
+     {
+      "name": "Speaking",
+      "hours": 0.5,
+      "role": "Speaking"
+     },
+     {
+      "name": "Music",
+      "hours": 0.4,
+      "role": null
+     },
+     {
+      "name": "CSU",
+      "hours": 0.3,
+      "role": "Teaching"
+     }
+    ],
+    "days": null
+   },
+   {
+    "id": "sep",
+    "label": "September",
+    "total": "206.7",
+    "caption": "September 2026",
+    "note": "Smartphone Storytellers logged just 0.7h all of September, the lowest of any category.",
+    "rows": [
+     {
+      "name": "Seacoast Church",
+      "hours": 116.0,
+      "role": "Seacoast"
+     },
+     {
+      "name": "Speaking",
+      "hours": 43.8,
+      "role": "Speaking"
+     },
+     {
+      "name": "Moody",
+      "hours": 21.8,
+      "role": "Teaching"
+     },
+     {
+      "name": "ACEP",
+      "hours": 17.3,
+      "role": "Freelance"
+     },
+     {
+      "name": "CSU",
+      "hours": 5.8,
+      "role": "Teaching"
+     },
+     {
+      "name": "Music",
+      "hours": 1.3,
+      "role": null
+     },
+     {
+      "name": "Smartphone Storytellers",
+      "hours": 0.7,
+      "role": "SPS"
+     }
+    ],
+    "days": null
+   }
+  ]
+ },
+ "week": {
+  "rangeLabel": "Week of Sep 28 – Oct 4",
+  "focus": [
+   {
+    "role": "Speaking",
+    "title": "SALT talk outline, deck, and visuals",
+    "text": "All three passed their Oct 2 date. Talk is Fri Oct 16, 1:15 PM CT in Irving; you fly out Wed Oct 14 at 5:30 AM.",
+    "when": "Overdue",
+    "overdue": true
+   },
+   {
+    "role": "Teaching",
+    "title": "Teaching recordings and CM 1110 wrap",
+    "text": "Week 7 intro (Sun Oct 4), SOC 2204 Week 8 (Mon Oct 5), CM 1110 Week 1 wrap (Thu Oct 8) ahead of the Oct 20 start.",
+    "when": "Oct 4–8",
+    "overdue": false
+   },
+   {
+    "role": "Teaching",
+    "title": "Five grading tasks",
+    "text": "Web Evaluation, Type and Color, 7-1, 7-2, and Blog Proposal all due Fri Oct 9.",
+    "when": "Oct 9",
+    "overdue": false
+   },
+   {
+    "role": "SPS",
+    "title": "SPS promos and the Oct 7 meeting",
+    "text": "Promos scripting is the live SPS task. Meeting with Megan Draper Wed Oct 7, 10:30 AM.",
+    "when": "Oct 7",
+    "overdue": false
+   },
+   {
+    "role": "Seacoast",
+    "title": "Prep the Oct 13 combined shoot",
+    "text": "Storyteller 101 Module 6 portrait plus the Seacoast Missions and Filming Best Practices videos, the day before SALT travel.",
+    "when": "Oct 13",
+    "overdue": false
+   }
+  ],
+  "overdue": [
+   {
+    "title": "Develop talk outline and structure",
+    "role": "Speaking",
+    "due": "Oct 2"
+   },
+   {
+    "title": "Build slide deck",
+    "role": "Speaking",
+    "due": "Oct 2"
+   },
+   {
+    "title": "Gather visual examples",
+    "role": "Speaking",
+    "due": "Oct 2"
+   },
+   {
+    "title": "REVISIT CM 1110 Things list build",
+    "role": "Teaching",
+    "due": "Sep 29"
+   }
+  ],
+  "projects": [
+   {
+    "role": "Seacoast",
+    "area": "Seacoast",
+    "roleEvaluation": "Only 7.7h logged this week with Tue–Thu going to ACEP. Busy stretch ahead with ARC Gather, the live recording, and the Oct 13 shoot.",
+    "blocks": [
+     {
+      "label": "Active projects",
+      "lines": [
+       "2026-27 Campus Coverage (Phase 1 through Jun 2027)",
+       "Missions Storyteller Project (films Oct 13)",
+       "Filming Best Practices (scope not defined)"
+      ]
+     },
+     {
+      "label": "This week",
+      "lines": [
+       "ARC Gather, October all staff: Tue Oct 6, 9–4",
+       "First Wednesday live recording: Oct 7, 12–8:30 PM",
+       "Lunch with Greg Surratt: Thu Oct 8, noon"
+      ]
+     },
+     {
+      "label": "This month",
+      "lines": [
+       "Seacoast New Year setup (Oct 19) and shoot (Oct 20)",
+       "Margaret & Creative: The Trilogy (Oct 29)"
+      ]
+     },
+     {
+      "label": "Suggestions",
+      "lines": [
+       "Define the Filming Best Practices scope before Oct 13 so it isn’t improvised on shoot day.",
+       "Send the missions pastor outreach for photo needs this week."
+      ]
+     }
+    ]
+   },
+   {
+    "role": "Teaching",
+    "area": "Teaching",
+    "roleEvaluation": "Close to plan in hours, but the CM 1110 list slipped and Wednesday’s Teaching night is lost to the live recording.",
+    "blocks": [
+     {
+      "label": "Active projects",
+      "lines": [
+       "CM 1110 (starts Oct 20)",
+       "SOC 2204 (ends Oct 12)",
+       "GSU 1120",
+       "COMM 335 (CSU)",
+       "Moody Devotional (Nov 11)"
+      ]
+     },
+     {
+      "label": "This week",
+      "lines": [
+       "Record Week 7 intro video: Oct 4",
+       "Record SOC 2204 Week 8 video: Oct 5",
+       "Wrap CM 1110 Week 1: Oct 8",
+       "Grade five assignments: Oct 9"
+      ]
+     },
+     {
+      "label": "Open (no deadline)",
+      "lines": [
+       "Record video announcement",
+       "Check for assignments to grade",
+       "Check in with 4 students on incomplete submissions"
+      ]
+     },
+     {
+      "label": "Suggestions",
+      "lines": [
+       "Batch both video recordings in one setup this weekend.",
+       "Move Wednesday’s teaching work to Tuesday night, since the live recording takes Wednesday.",
+       "Start the Moody devotional outline before SALT travel."
+      ]
+     }
+    ]
+   },
+   {
+    "role": "Freelance",
+    "area": "Freelance",
+    "roleEvaluation": "20h this week, well over its evening windows. It crowded the week.",
+    "blocks": [
+     {
+      "label": "Active projects",
+      "lines": [
+       "American Integrity (15 in editing, 10 awaiting client feedback)",
+       "Bread of Life (needs an edit tracker)"
+      ]
+     },
+     {
+      "label": "This week",
+      "lines": [
+       "No EDIT tasks in Today or the 30-day window."
+      ]
+     },
+     {
+      "label": "Suggestions",
+      "lines": [
+       "ACEP logged 20h Tue–Thu. Keep it to the Mon/Thu evening windows so it doesn’t eat SPS or Seacoast time.",
+       "Invoice Wei Xie and Steve Biggs if that’s still open."
+      ]
+     }
+    ]
+   },
+   {
+    "role": "SPS",
+    "area": "Smartphone Storytellers",
+    "roleEvaluation": "No logged time this week and 0.7h in September. Stalled; promos are the way back in.",
+    "blocks": [
+     {
+      "label": "Active projects",
+      "lines": [
+       "Storyteller 101: Modules 0–5 done, Module 6 portrait films Oct 13",
+       "Product Launch (on hold until Storyteller 101 launches)"
+      ]
+     },
+     {
+      "label": "This week",
+      "lines": [
+       "Meet to discuss Smartphone Storytellers (Megan Draper): Wed Oct 7, 10:30 AM."
+      ]
+     },
+     {
+      "label": "Open (no deadline)",
+      "lines": [
+       "Smartphone Storytellers promos scripting"
+      ]
+     },
+     {
+      "label": "Suggestions",
+      "lines": [
+       "Draft promos before Wednesday’s meeting.",
+       "Write the Module 6 portrait shot list for Oct 13.",
+       "Line up launch infrastructure (hosting, landing page) to run alongside filming."
+      ]
+     }
+    ]
+   },
+   {
+    "role": "Speaking",
+    "area": "Speaking",
+    "roleEvaluation": "SALT prep slipped past Oct 2 with the talk 13 days out.",
+    "blocks": [
+     {
+      "label": "Active projects",
+      "lines": [
+       "SALT 2026 (Irving, TX): Oct 16",
+       "Preproduction Cheat Sheet (scoping)",
+       "FILO (on hold)"
+      ]
+     },
+     {
+      "label": "This month",
+      "lines": [
+       "SALT Workshop: Why Preproduction Is the Most Important Part of Production, Fri Oct 16, 1:15 PM CT."
+      ]
+     },
+     {
+      "label": "Open (no deadline)",
+      "lines": [
+       "Archive Talk (CFX)",
+       "Edit Talk Video and Send (CFX)"
+      ]
+     },
+     {
+      "label": "Suggestions",
+      "lines": [
+       "Reply to SALT about meals and guest.",
+       "Download everything offline and pack HDMI adapters; Wi-Fi may not be available.",
+       "Remember: the home flight leaves from Love Field (DAL), not DFW."
+      ]
+     }
+    ]
+   },
+   {
+    "role": "Personal",
+    "area": "Personal",
+    "roleEvaluation": "Family night was protected Friday. Sleep was short most of the week.",
+    "blocks": [
+     {
+      "label": "Active projects",
+      "lines": [
+       "Guitar",
+       "Smart Home Automation (on hold)"
+      ]
+     },
+     {
+      "label": "This week",
+      "lines": [
+       "Adam and Zelda dental, East Cooper Smiles: Mon Oct 5, 3 PM",
+       "Zelda’s violin lessons: Tuesdays 3:45",
+       "Camping, James Island County Park: Oct 9–10"
+      ]
+     },
+     {
+      "label": "This month",
+      "lines": [
+       "Lily’s birthday (Oct 20)",
+       "HHA Trunk or Treat (Oct 23)",
+       "Sonic Live in Concert (Oct 28)"
+      ]
+     },
+     {
+      "label": "Open (no deadline)",
+      "lines": [
+       "Schedule Money Review with Rich Young",
+       "Fix Home Assistant Missing Devices"
+      ]
+     },
+     {
+      "label": "Suggestions",
+      "lines": [
+       "Camping Fri–Sat Oct 9–10 covers family night; protect it from grading spillover."
+      ]
+     }
+    ]
+   }
+  ],
+  "calendarNote": "Covers Oct 3 – Nov 2. Muted entries are FYI items.",
+  "calendar": [
+   {
+    "kicker": "This week",
+    "title": "Rest of Sat Oct 3",
+    "rows": [
+     {
+      "day": "Sat 10/3",
+      "time": "All day",
+      "title": "Spectrum Sailing (ends today)",
+      "fyi": false
+     },
+     {
+      "day": "",
+      "time": "2:00 PM",
+      "title": "LINKIN PARK: UNSHATTER (2026), Summerville",
+      "fyi": false
+     },
+     {
+      "day": "",
+      "time": "FYI",
+      "title": "Lynne and Sarah on Sisterhood Hike",
+      "fyi": true
+     }
+    ]
+   },
+   {
+    "kicker": "Next 30 days",
+    "title": "Week of Oct 5",
+    "rows": [
+     {
+      "day": "Mon 10/5",
+      "time": "9:00 AM",
+      "title": "Weekend Debrief Call",
+      "fyi": false
+     },
+     {
+      "day": "",
+      "time": "10:30 AM",
+      "title": "Film Team Weekly",
+      "fyi": false
+     },
+     {
+      "day": "",
+      "time": "3:00 PM",
+      "title": "Adam and Zelda Dental Apt",
+      "fyi": false
+     },
+     {
+      "day": "",
+      "time": "FYI",
+      "title": "Sarah out",
+      "fyi": true
+     },
+     {
+      "day": "Tue 10/6",
+      "time": "9:00 AM",
+      "title": "ARC Gather: October All Staff (to 4 PM)",
+      "fyi": false
+     },
+     {
+      "day": "",
+      "time": "3:45 PM",
+      "title": "Zelda’s Violin Lesson",
+      "fyi": false
+     },
+     {
+      "day": "Wed 10/7",
+      "time": "10:30 AM",
+      "title": "Meet to discuss Smartphone Storytellers",
+      "fyi": false
+     },
+     {
+      "day": "",
+      "time": "12:00 PM",
+      "title": "First Wednesday: Seacoast Music Live Recording (to 8:30 PM)",
+      "fyi": false
+     },
+     {
+      "day": "Thu 10/8",
+      "time": "12:00 PM",
+      "title": "Lunch with Greg Surratt",
+      "fyi": false
+     },
+     {
+      "day": "",
+      "time": "3:30 PM",
+      "title": "Camp: Story Team",
+      "fyi": false
+     },
+     {
+      "day": "",
+      "time": "FYI",
+      "title": "Tyler: Men’s Hike (Thu–Sat)",
+      "fyi": true
+     },
+     {
+      "day": "Fri 10/9",
+      "time": "Fri–Sat",
+      "title": "Camping, James Island County Park",
+      "fyi": false
+     },
+     {
+      "day": "Sun 10/11",
+      "time": "8:00 PM",
+      "title": "Oct (On Company Time), Music Farm",
+      "fyi": false
+     }
+    ]
+   },
+   {
+    "kicker": "Next 30 days",
+    "title": "Week of Oct 12",
+    "rows": [
+     {
+      "day": "Mon 10/12",
+      "time": "9:00 AM",
+      "title": "Weekend Debrief Call",
+      "fyi": false
+     },
+     {
+      "day": "",
+      "time": "10:30 AM",
+      "title": "Film Team Weekly",
+      "fyi": false
+     },
+     {
+      "day": "",
+      "time": "11:00 AM",
+      "title": "Weekend Experience Videos",
+      "fyi": false
+     },
+     {
+      "day": "",
+      "time": "FYI",
+      "title": "Half-day teacher work day",
+      "fyi": true
+     },
+     {
+      "day": "Tue 10/13",
+      "time": "8:00 AM",
+      "title": "Filming Smartphone Storytellers (to 5 PM)",
+      "fyi": false
+     },
+     {
+      "day": "",
+      "time": "3:45 PM",
+      "title": "Zelda’s Violin Lesson",
+      "fyi": false
+     },
+     {
+      "day": "",
+      "time": "FYI",
+      "title": "November Staff Recording (PJS and PLS), 11:00 AM",
+      "fyi": true
+     },
+     {
+      "day": "Wed 10/14",
+      "time": "Wed–Thu",
+      "title": "SALT Conference (5:30 AM flight)",
+      "fyi": false
+     },
+     {
+      "day": "",
+      "time": "12:00 PM",
+      "title": "Creative Lunch",
+      "fyi": false
+     },
+     {
+      "day": "",
+      "time": "6:30 PM",
+      "title": "MDWK",
+      "fyi": false
+     },
+     {
+      "day": "Thu 10/15",
+      "time": "FYI",
+      "title": "Titus: 3rd Grade Show, 6:30 PM",
+      "fyi": true
+     },
+     {
+      "day": "Fri 10/16",
+      "time": "2:15 PM ET",
+      "title": "SALT Workshop: Why Preproduction Is the Most Important Part of Production (1:15 PM CT)",
+      "fyi": false
+     }
+    ]
+   },
+   {
+    "kicker": "Next 30 days",
+    "title": "Week of Oct 19",
+    "rows": [
+     {
+      "day": "Mon 10/19",
+      "time": "9:00 AM",
+      "title": "Weekend Debrief Call",
+      "fyi": false
+     },
+     {
+      "day": "",
+      "time": "10:30 AM",
+      "title": "Film Team Weekly",
+      "fyi": false
+     },
+     {
+      "day": "",
+      "time": "4:00 PM",
+      "title": "Setup for Seacoast New Year at home",
+      "fyi": false
+     },
+     {
+      "day": "Tue 10/20",
+      "time": "All day",
+      "title": "Lily’s Birthday",
+      "fyi": false
+     },
+     {
+      "day": "",
+      "time": "9:00 AM",
+      "title": "Seacoast New Year Shoot",
+      "fyi": false
+     },
+     {
+      "day": "",
+      "time": "3:45 PM",
+      "title": "Zelda’s Violin Lesson",
+      "fyi": false
+     },
+     {
+      "day": "Wed 10/21",
+      "time": "12:00 PM",
+      "title": "Creative Lunch",
+      "fyi": false
+     },
+     {
+      "day": "",
+      "time": "6:30 PM",
+      "title": "MDWK",
+      "fyi": false
+     },
+     {
+      "day": "Thu 10/22",
+      "time": "12:00 PM",
+      "title": "Filming with Awaken Church",
+      "fyi": false
+     },
+     {
+      "day": "",
+      "time": "6:00 PM",
+      "title": "Hanahan Business Mixer",
+      "fyi": false
+     },
+     {
+      "day": "",
+      "time": "FYI",
+      "title": "Half-day students / parent-teacher conferences",
+      "fyi": true
+     },
+     {
+      "day": "Fri 10/23",
+      "time": "5:00 PM",
+      "title": "HHA Trunk or Treat",
+      "fyi": false
+     }
+    ]
+   },
+   {
+    "kicker": "Next 30 days",
+    "title": "Week of Oct 26",
+    "rows": [
+     {
+      "day": "Mon 10/26",
+      "time": "9:00 AM",
+      "title": "Weekend Debrief Call",
+      "fyi": false
+     },
+     {
+      "day": "",
+      "time": "10:30 AM",
+      "title": "Film Team Weekly",
+      "fyi": false
+     },
+     {
+      "day": "Tue 10/27",
+      "time": "3:30 PM",
+      "title": "Hannah SIC Meeting, HHA Library",
+      "fyi": false
+     },
+     {
+      "day": "",
+      "time": "3:45 PM",
+      "title": "Zelda’s Violin Lesson",
+      "fyi": false
+     },
+     {
+      "day": "Wed 10/28",
+      "time": "12:00 PM",
+      "title": "Creative Lunch",
+      "fyi": false
+     },
+     {
+      "day": "",
+      "time": "6:30 PM",
+      "title": "MDWK",
+      "fyi": false
+     },
+     {
+      "day": "",
+      "time": "7:30 PM",
+      "title": "Sonic Live in Concert",
+      "fyi": false
+     },
+     {
+      "day": "Thu 10/29",
+      "time": "1:00 PM",
+      "title": "Margaret & Creative: The Trilogy",
+      "fyi": false
+     },
+     {
+      "day": "",
+      "time": "1:00 PM",
+      "title": "Moody Lunch and Learn",
+      "fyi": false
+     },
+     {
+      "day": "Sun 11/1",
+      "time": "All day",
+      "title": "Check for Books",
+      "fyi": false
+     }
+    ]
+   },
+   {
+    "kicker": "Next 30 days",
+    "title": "Week of Nov 2",
+    "rows": [
+     {
+      "day": "Mon 11/2",
+      "time": "9:00 AM",
+      "title": "Weekend Debrief Call",
+      "fyi": false
+     },
+     {
+      "day": "",
+      "time": "10:30 AM",
+      "title": "Film Team Weekly",
+      "fyi": false
+     }
+    ]
+   }
+  ]
+ }
 }
