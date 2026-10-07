@@ -223,7 +223,7 @@
     ]
   },
   "fitness": {
-    "eyebrow": "Tuesday · Off Day Circuit",
+    "eyebrow": "Tomorrow · Wednesday · Back & Triceps",
     "stats": [
       {
         "value": "228.9",
@@ -294,16 +294,18 @@
     ],
     "goalsNote": "Monday's strength session has not synced its exercises yet, so its day is unclassified. Still to go: Day 2 Back & Triceps (Wednesday 8 AM is clear), two circuits starting today, and two more walks. Walk stretch goal is 5. Monday night ran 6.9h, just short.",
     "workout": {
-      "label": "Today's workout · Tuesday",
-      "title": "Off Day Circuit",
+      "label": "Tomorrow's workout · Wednesday",
+      "title": "Back & Triceps",
       "lines": [
-        "Home, about 10 to 15 min. 15 reps x 3 sets each.",
-        "Bodyweight squats",
-        "Sit-ups",
-        "Kettlebell swings",
-        "Calf raises (bodyweight)",
-        "Stretch goal: +5 reps to hit 50 total on an exercise.",
-        "Window conflict: ARC Call Time takes 8 to 9 AM and Gather runs to 4 PM. Best slot: 4:15 to 4:45 PM at home."
+        "Evan's plan, Day 2. Pick 3 back and 3 triceps exercises, rotating from last session.",
+        "Back: Wide grip lat pulldowns",
+        "Back: Bent over rows (ready to step up from 80 lb)",
+        "Back: One arm rows",
+        "Triceps: Tricep pressdowns",
+        "Triceps: Skull crushers",
+        "Triceps: Close grip barbell press",
+        "Other options: reverse close grip or V-bar pulldowns, dumbbell pullovers, behind the head dumbbell press, bench dips, reverse grip bench.",
+        "Workout window clear, 8-9 AM. First event is the Smartphone Storytellers meeting at 10:30."
       ]
     },
     "split": [
@@ -348,7 +350,7 @@
       "carbs": 215,
       "fat": 72
     },
-    "macroNote": "Template with chicken: 1,808 kcal, 198g protein, 147g carbs, 45g fat. Gap: -500 kcal, -2g protein, -68g carbs, -27g fat.",
+    "macroNote": "Template with chicken: 1,808 kcal, 198g protein, 147g carbs, 45g fat. Gap: -500 kcal, -2g protein, -68g carbs, -27g fat. Protein is within 10g, so no protein fix needed.",
     "meals": [
       {
         "slot": "Morning Coffee",
@@ -419,30 +421,45 @@
       "count": "4 meals away from home",
       "items": [
         {
-          "slot": "Breakfast",
-          "when": "ARC Call Time, 8:00 AM",
-          "text": "Hard-boiled eggs (2 whole + 4 whites) or a protein shake"
-        },
-        {
           "slot": "Snack 1",
-          "when": "ARC Gather, 9:00 AM",
+          "when": "Smartphone Storytellers meeting, 10:30 AM",
           "text": "Protein shake in a shaker bottle"
         },
         {
           "slot": "Lunch",
-          "when": "ARC Gather, 9:00 AM-4:00 PM",
-          "text": "PLN meal in an insulated bag, or chicken and rice in a container"
+          "when": "First Wednesday recording, from 12:00 PM",
+          "text": "PLN meal in an insulated bag, or chicken and rice in a container. Bring the post-lunch whey in a shaker too."
         },
         {
           "slot": "Snack 2",
-          "when": "ARC Gather, until 4:00 PM",
+          "when": "First Wednesday recording, 3:00 PM",
           "text": "Clementines or an applesauce pouch"
+        },
+        {
+          "slot": "Dinner",
+          "when": "First Wednesday recording, until 8:30 PM",
+          "text": "Prepped chicken and rice in a container. Bang bang salmon doesn't travel well."
+        },
+        {
+          "slot": "Eating out",
+          "when": "Chick-fil-A backup",
+          "text": "12 ct grilled nuggets + side salad + fruit cup, about 350 kcal, 44g protein"
+        },
+        {
+          "slot": "Eating out",
+          "when": "McDonald's backup",
+          "text": "Grilled chicken sandwich + side salad + apple slices, about 410 kcal, 38g protein"
+        },
+        {
+          "slot": "Eating out",
+          "when": "Subway backup",
+          "text": "Rotisserie chicken chopped salad, extra chicken if available, about 190-240 kcal, 25-30g protein"
         }
       ]
     },
     "dinnerCall": {
       "title": "Dinner call: chicken",
-      "text": "Chicken lands protein at 198g (2g under) vs fish at 188g (12g short). Main gap is carbs, -68g: add a banana with Snack 2 (+27g) and 2 to 3 rice cakes mid-afternoon (+20g) to recover about 47g. Fat is -27g; a drizzle of olive oil on the chicken or extra butter on the rice helps close it without touching protein."
+      "text": "Chicken lands protein at 198g (2g under) vs fish at 188g (12g short), and it packs for the 8:30 PM recording finish. Main gap is carbs, -68g: pack a banana with Snack 2 and 2 to 3 rice cakes to recover about 45g. Extra butter on the rice helps the -27g fat gap."
     },
     "alert": null
   },
