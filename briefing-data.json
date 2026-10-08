@@ -259,7 +259,7 @@
   }
  },
  "fitness": {
-  "eyebrow": "Wednesday · Back & Triceps",
+  "eyebrow": "Tomorrow · Thursday · Off Day Circuit",
   "stats": [
    {
     "value": "228.6",
@@ -330,13 +330,16 @@
   ],
   "goalsNote": "Day 1 done; Day 2 today and Day 3 Friday before camping. Tuesday's circuit didn't sync, and Oct 6 and 7 sleep aren't recorded yet. 5 days left.",
   "workout": {
-   "label": "Today's workout · Wednesday",
-   "title": "Back & Triceps",
+   "label": "Tomorrow's workout · Thursday",
+   "title": "Off Day Circuit",
    "lines": [
-    "Workout window clear, 8:00 to 9:15 AM (Gym on calendar)",
-    "Back, pick 3: wide grip lat pulldowns, reverse close grip lat pulldowns, V-bar lat pulldowns, bent over rows, dumbbell pullovers, one arm rows",
-    "Triceps, pick 3: behind the head dumbbell press, close grip barbell press, tricep dips, tricep pressdowns, skull crushers, reverse grip triceps bench",
-    "3 sets of about 10 reps each"
+    "Workout window clear, 8-9 AM (circuit takes about 10-15 min, at home)",
+    "Squats (bodyweight): 3 x 15",
+    "Sit-ups (bodyweight): 3 x 15",
+    "Kettlebell swings: 3 x 15",
+    "Calf raises (bodyweight): 3 x 15",
+    "Stretch goal (optional): +5 reps on one exercise to hit 50 total",
+    "Cardio: 10,000 steps via treadmill or a night walk"
    ]
   },
   "split": [
@@ -380,7 +383,7 @@
    "carbs": 215,
    "fat": 72
   },
-  "macroNote": "Workout window clear, 8:00 to 9:15 AM.",
+  "macroNote": "Workout window clear, 8-9 AM. Plan totals 1,808 kcal, 198g protein, 147g carbs, 45g fat: protein 2g short, carbs 68g short, fat 27g short, about 500 kcal under.",
   "meals": [
    {
     "slot": "Morning Coffee",
@@ -448,33 +451,23 @@
    }
   ],
   "pack": {
-   "count": "4 meals away from home",
+   "count": "2 meals overlap calendar events",
    "items": [
     {
-     "slot": "Snack 1",
-     "when": "Meet to discuss Smartphone Storytellers, 10:30 AM",
-     "text": "Protein shake in a shaker bottle"
-    },
-    {
      "slot": "Lunch",
-     "when": "Seacoast Music Live Recording, 12:00 PM",
-     "text": "PLN meal in an insulated bag"
+     "when": "Lunch with Adam Erickson, 12:00 PM (location TBD)",
+     "text": "PLN meal in an insulated bag, or pack chicken and rice in a container if you end up out"
     },
     {
      "slot": "Snack 2",
-     "when": "Seacoast Music Live Recording, 12:00 PM",
-     "text": "Clementines or an applesauce pouch"
-    },
-    {
-     "slot": "Dinner",
-     "when": "Seacoast Music Live Recording, until 8:30 PM",
-     "text": "Prepped chicken and rice in a container"
+     "when": "Camp: Story Team (Teams), 3:30 PM",
+     "text": "Clementines or an applesauce pouch; easy to eat on the call"
     }
    ]
   },
   "dinnerCall": {
    "title": "Dinner call: chicken",
-   "text": "Chicken lands protein at 198g (2g short) vs fish at 188g, and it travels better for tonight. Carbs are 68g short: add a banana with Snack 2 (+27g) and 2 rice cakes in the afternoon (+15g). Fat is 27g short: an extra pat of butter on the rice or a string cheese closes part of it. Even with those, calories land near 2,020, so a second Cocoa Crispy's shake would help."
+   "text": "Chicken lands protein at 198g (2g short) vs fish at 188g (12g short). Carbs are 68g short: add a banana with Snack 2 (+27g) and 2 rice cakes in the afternoon (+15g). Fat is 27g short: an extra pat of butter on the rice or a string cheese helps. Calories still land near 2,000, so a second Cocoa Crispy's shake would close more of the gap."
   },
   "alert": {
    "title": "Nutrition",
