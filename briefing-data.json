@@ -296,7 +296,7 @@
     }
   },
   "fitness": {
-    "eyebrow": "Thursday · Off Day Circuit",
+    "eyebrow": "Tomorrow · Friday · Legs & Shoulders",
     "stats": [
       {
         "value": "228.3",
@@ -367,16 +367,16 @@
     ],
     "goalsNote": "Day 1 done Mon, circuit done Tue. Wednesday's Day 2 didn't sync, and sleep and meals since Oct 6 aren't recorded. 4 days left with camping Fri to Sat, so Day 3 and two walks are the realistic targets.",
     "workout": {
-      "label": "Today's workout · Thursday",
-      "title": "Off Day Circuit",
+      "label": "Tomorrow's workout · Friday",
+      "title": "Legs & Shoulders",
       "lines": [
-        "Workout window clear, 8-9 AM (about 10-15 min, at home)",
-        "Squats (bodyweight): 3 x 15",
-        "Sit-ups (bodyweight): 3 x 15",
-        "Kettlebell swings: 3 x 15",
-        "Calf raises (bodyweight): 3 x 15",
-        "Stretch goal (optional): +5 reps on one exercise to hit 50 total",
-        "Cardio: 10,000 steps via treadmill or a night walk"
+        "Workout window clear, 8-9 AM. Get it in before the 11:30 FILO call and leaving for camping.",
+        "Leg extensions: 3 x 10-12",
+        "Leg press (rotate foot position: regular, high, low, wide or close): 3 x 10-12",
+        "Stiff leg dead lifts: 3 x 10-12",
+        "Shoulders, pick 3 (suggested): Dumbbell press, Side laterals, Front raises: 3 x 10-12 each",
+        "Other shoulder options: Dumbbell upright rows, Shrugs",
+        "If the gym doesn't happen: Travel BW Workout (A), about 42 min at the campsite (high plank, 3D lunge, agility hops, crescent lunge, lateral deadlift hinge, bear plank)"
       ]
     },
     "split": [
@@ -488,18 +488,48 @@
       }
     ],
     "pack": {
-      "count": "1 meal may be away from home",
+      "count": "4 meals away from home (camping Fri to Sat)",
       "items": [
         {
           "slot": "Lunch",
-          "when": "Lunch with Greg Surratt, 12:00 PM (location TBD, Meet link)",
-          "text": "If it ends up in person, bring the PLN meal in an insulated bag or chicken and rice in a container."
+          "when": "FILO 2027 Track Leader Kickoff Call, 11:30 AM-12:30 PM (Zoom)",
+          "text": "Eat the PLN meal right after the call, or bring it in an insulated bag if you're already heading out."
+        },
+        {
+          "slot": "Snack 2",
+          "when": "Camping, James Island County Park (all day)",
+          "text": "Clementines or an applesauce pouch, both naturally portable."
+        },
+        {
+          "slot": "Dinner",
+          "when": "Camping, James Island County Park (all day)",
+          "text": "Prepped chicken and rice in a container, kept in the cooler."
+        },
+        {
+          "slot": "Evening Snack",
+          "when": "Camping, James Island County Park (overnight)",
+          "text": "Casein shake in a shaker bottle; skip the mini cone or pack it in the cooler."
+        },
+        {
+          "slot": "Eating out",
+          "when": "Chick-fil-A",
+          "text": "Grilled nuggets (12 ct) + side salad + fruit cup, about 350 cal, 44g protein."
+        },
+        {
+          "slot": "Eating out",
+          "when": "McDonald's",
+          "text": "Grilled chicken sandwich + side salad + apple slices, about 410 cal, 38g protein."
+        },
+        {
+          "slot": "Eating out",
+          "when": "Subway",
+          "text": "Rotisserie chicken chopped salad, add extra chicken, about 190-240 cal, 25-30g protein."
         }
       ]
     },
     "dinnerCall": {
       "title": "Dinner call: chicken",
-      "text": "Chicken lands protein at 198g (2g short) vs fish at 188g (12g short). Carbs are 68g short: add a banana with Snack 2 (+27g) and 2 rice cakes in the afternoon (+15g). Fat is 27g short: an extra pat of butter on the rice or a string cheese helps."
+      "text": "Chicken lands protein at 198g (2g short) vs fish at 188g (12g short), and prepped chicken and rice travels to the campsite; bang bang salmon doesn't. Carbs are 68g short: pack bananas and grapes (+40g). Fat is 27g short: string cheese or beef jerky are easy camping adds."
     },
     "alert": {
       "title": "Nutrition",
