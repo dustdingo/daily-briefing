@@ -286,7 +286,7 @@
     }
   },
   "fitness": {
-    "eyebrow": "Friday · Legs and Shoulders",
+    "eyebrow": "Tomorrow · Saturday · Rest day",
     "stats": [
       {
         "value": "228.3",
@@ -357,13 +357,12 @@
     ],
     "goalsNote": "Day 1 and Day 2 done; Day 3 is today. Thursday's circuit isn't in Wellness yet. One more 2-mile walk hits the goal (stretch 5). Sleep can't reach 5 this week; four nights fell just under 7h.",
     "workout": {
-      "label": "Today's workout · Friday",
-      "title": "Legs and Shoulders",
+      "label": "Tomorrow's workout · Saturday",
+      "title": "Rest day",
       "lines": [
-        "Window: 8:00-9:00 AM, clear",
-        "Legs: leg extensions, leg press (rotate foot position), stiff leg deadlifts",
-        "Shoulders (pick 3): front raises, side laterals, dumbbell upright rows, shrugs, dumbbell press",
-        "3 sets of 10 per Evan's plan"
+        "No workout scheduled. Rest day per the weekly split.",
+        "Workout window: not needed tomorrow (rest day).",
+        "Camping at James Island County Park wraps tomorrow; a walk around the park counts toward the 10,000-step target."
       ]
     },
     "split": [
@@ -408,7 +407,7 @@
       "carbs": 215,
       "fat": 72
     },
-    "macroNote": "Workout window clear, 8-9 AM. Dinner and the evening snack are at home.",
+    "macroNote": "Rest day, no workout window needed. The camping trip runs through tomorrow with no return time on the calendar, so the morning meals and lunch are flagged to pack. If you're still out past 3 PM, pack Snack 2 too.",
     "meals": [
       {
         "slot": "Morning Coffee",
@@ -476,18 +475,43 @@
       }
     ],
     "pack": {
-      "count": "1 meal away from home",
+      "count": "3 meals away from home",
       "items": [
         {
+          "slot": "Breakfast",
+          "when": "Camping, James Island County Park (all day)",
+          "text": "Hard-boiled eggs (2 whole + 4 whites) prepped tonight, or a protein shake. Bring the collagen for the coffee."
+        },
+        {
+          "slot": "Snack 1",
+          "when": "Camping, James Island County Park (all day)",
+          "text": "Cocoa Crispy's shake in a shaker bottle, just add water."
+        },
+        {
           "slot": "Lunch",
-          "when": "FILO kickoff call, 11:30 AM",
-          "text": "PLN meal in an insulated bag, eat right after the call."
+          "when": "Camping, James Island County Park (all day)",
+          "text": "PLN meal in an insulated bag, or chicken + rice in a container."
+        },
+        {
+          "slot": "Eating out",
+          "when": "Chick-fil-A",
+          "text": "12 ct grilled nuggets + side salad + fruit cup (~350 cal, 44g protein)."
+        },
+        {
+          "slot": "Eating out",
+          "when": "McDonald's",
+          "text": "Grilled chicken sandwich + side salad + apple slices (~410 cal, 38g protein)."
+        },
+        {
+          "slot": "Eating out",
+          "when": "Subway",
+          "text": "Rotisserie chicken chopped salad, extra chicken if available (~190-240 cal, 25-30g protein)."
         }
       ]
     },
     "dinnerCall": {
       "title": "Dinner call: chicken",
-      "text": "Chicken lands protein at 198g (2g short) vs fish at 188g. Carbs are the big gap at -68g: add a banana with Snack 2 (+27g) and a tortilla or extra rice at dinner. Fat is -27g; extra butter on the rice helps without touching protein."
+      "text": "Chicken lands protein at 198g (2g short) vs fish at 188g. Carbs are the big gap at -68g: add a banana with Snack 2 (+27g) and a tortilla or extra rice at dinner. Fat is -27g; extra butter on the rice covers it without touching protein."
     },
     "alert": {
       "title": "Nutrition",
