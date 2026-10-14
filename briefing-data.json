@@ -285,7 +285,7 @@
     }
   },
   "fitness": {
-    "eyebrow": "Tuesday · Off Day Circuit",
+    "eyebrow": "Tomorrow · Wednesday · Travel day (SALT)",
     "stats": [
       {
         "value": "228.3",
@@ -356,16 +356,19 @@
     ],
     "goalsNote": "Nothing from this week has reached Wellness yet (last sync Oct 10), so Monday isn't counted. SALT takes Wed-Fri: today's circuit and a hotel Travel BW workout are the realistic wins before strength resumes Monday.",
     "workout": {
-      "label": "Today's workout · Tuesday",
-      "title": "Off Day Circuit",
+      "label": "Tomorrow's workout · Wednesday",
+      "title": "Travel BW Workout (A)",
       "lines": [
-        "About 10-15 min at home, 15 reps x 3 sets each",
-        "Bodyweight squats",
-        "Sit-ups",
-        "Kettlebell swings",
-        "Calf raises (bodyweight)",
-        "Stretch goal: +5 reps to hit 50 total on one exercise",
-        "Window conflict: 8-9 AM sits inside the 8-5 shoot. Best slot: about 4:20-4:40 PM, right after the violin lesson."
+        "Swaps in for Back & Triceps while you're at SALT. About 42 min, bodyweight and a mat, 90s rest between sets",
+        "High plank: 3 x 30 sec",
+        "3D lunge: 2 x 10",
+        "Agility, 90-degree hops: 2 x 10",
+        "Agility, side to side steps: 2 x 20",
+        "Agility, in/out hops: 2 x 20",
+        "Alternating crescent lunge: 2 x 10",
+        "Alternating lateral deadlift hinge: 2 x 10",
+        "Bear plank: 3 x 30 sec",
+        "Window conflict: 8-9 AM is in the air (5:30 AM CHS departure, lands DFW 8:53 AM CT). Best slot: about 10:30-11:15 AM CT at the hotel, before the 12:30 PM TBN masterclass."
       ]
     },
     "split": [
@@ -410,7 +413,7 @@
       "carbs": 215,
       "fat": 72
     },
-    "macroNote": "The 8-5 shoot covers the 8-9 AM window; the circuit moves to late afternoon.",
+    "macroNote": "Travel day: the early flight covers the 8-9 AM window, so the workout moves to late morning at the hotel. Every meal is away from home.",
     "meals": [
       {
         "slot": "Morning Coffee",
@@ -478,33 +481,58 @@
       }
     ],
     "pack": {
-      "count": "4 meals away from home",
+      "count": "6 meals away from home",
       "items": [
         {
           "slot": "Breakfast",
-          "when": "Filming, 8:00 AM",
-          "text": "Hard-boiled eggs (2 whole + 4 whites) or a protein shake"
+          "when": "Flight, 5:30 AM ET",
+          "text": "Hard-boiled eggs (2 whole + 4 whites, prep tonight) or a protein shake"
         },
         {
           "slot": "Snack 1",
-          "when": "Filming, 8:00 AM-5:00 PM",
-          "text": "Protein shake in a shaker bottle"
+          "when": "Landing DFW, 8:53 AM CT",
+          "text": "Protein shake in a shaker bottle; carry the powder dry and add water past security"
         },
         {
           "slot": "Lunch",
-          "when": "Filming, 8:00 AM-5:00 PM",
-          "text": "PLN meal in an insulated bag"
+          "when": "TBN masterclass, 12:30 PM",
+          "text": "PLN meal in an insulated bag, or a Chick-fil-A order below"
         },
         {
           "slot": "Snack 2",
-          "when": "Violin lesson, 3:45 PM",
-          "text": "Clementines or an applesauce pouch"
+          "when": "SALT, afternoon",
+          "text": "Clementines (easier through security than an applesauce pouch)"
+        },
+        {
+          "slot": "Dinner",
+          "when": "Main Session 1, 6:30 PM",
+          "text": "Eating out: grilled chicken, see the orders below"
+        },
+        {
+          "slot": "Evening Snack",
+          "when": "Upper Room, 9:00 PM",
+          "text": "Cinnamon Bun casein shake; skip the mini cone"
+        },
+        {
+          "slot": "Eating out",
+          "when": "Chick-fil-A",
+          "text": "Grilled nuggets (12 ct) + side salad + fruit cup, about 350 cal, 44g protein"
+        },
+        {
+          "slot": "Eating out",
+          "when": "McDonald's",
+          "text": "Grilled chicken sandwich + side salad + apple slices, about 410 cal, 38g protein"
+        },
+        {
+          "slot": "Eating out",
+          "when": "Subway",
+          "text": "Rotisserie chicken chopped salad, extra chicken if available, about 190-240 cal, 25-30g protein"
         }
       ]
     },
     "dinnerCall": {
       "title": "Dinner call: chicken",
-      "text": "Chicken lands protein at 198g (2g short) vs fish at 188g. Carbs run 68g under: add a banana with Snack 2 (+27g) and 2-3 rice cakes on set (+20g). Fat is 27g under, so a drizzle of olive oil on the chicken or extra butter on the rice closes part of it."
+      "text": "Chicken lands protein at 198g (2g short) vs fish at 188g, and salmon doesn't travel. Before Main Session 1, Chick-fil-A 12 ct grilled nuggets (38g) is the closest match. Carbs run 68g under and fat 27g under: add a banana at the airport (+27g carbs) and a fruit cup or grapes later."
     },
     "alert": {
       "title": "Nutrition",
