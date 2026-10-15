@@ -1,37 +1,37 @@
 {
  "schemaVersion": 1,
- "title": "Briefing 10-14",
- "date": "2026-10-14",
- "dateLabel": "Wednesday, October 14",
- "generatedAt": "Wednesday, October 14, 2026 at 4:22 AM ET",
+ "title": "Briefing 10-15",
+ "date": "2026-10-15",
+ "dateLabel": "Thursday, October 15",
+ "generatedAt": "Thursday, October 15, 2026 at 4:20 AM ET",
  "today": {
   "weather": {
-   "hi": 89,
-   "lo": 64,
-   "feelsLike": "~67° now",
-   "humidity": "100%",
-   "summary": "Hanahan: muggy 67° and 100% humidity before dawn, then sunny and hot with no rain. You'll be in Irving: 90/73, 79% humidity, a stray afternoon storm possible, and Friday's front drops it to 66/49 and windy."
+   "hi": 90,
+   "lo": 69,
+   "feelsLike": "~70° now",
+   "humidity": "66%",
+   "summary": "Hanahan: clear and 70° before dawn, then sunny and 90 with a 4% rain chance (66% average humidity). You're in Irving: highs near 88 with isolated storms possible, a cold front late tonight, and Friday turns much cooler with 20-30 mph winds gusting near 40."
   },
   "gamePlan": [
    {
     "label": "Protect",
     "tone": "ok",
-    "text": "Travel and energy for Friday. Get to Irving, register by 11:30 AM CT, and don't stack extra work around the TBN masterclass."
+    "text": "The 8:00 AM CT podcast recording in Studio A (ride at 7:20), and a call home around Titus's 3rd grade show at 5:30 PM CT."
    },
    {
     "label": "Pressure",
     "tone": "warn",
-    "text": "Your SALT workshop is Friday at 1:15 PM CT. Today is logistics; Thursday night is the last run-through."
+    "text": "Your workshop is tomorrow at 1:15 PM CT in Adult B. Tonight after Main Session 3 is the last run-through."
    },
    {
     "label": "Tonight",
     "tone": "neutral",
-    "text": "Teaching night is displaced by Main Session 1 at 6:30 PM CT. Call home before it."
+    "text": "Freelance night is displaced by Main Session 3 (6:30-8:30 PM CT). Final workshop run after, then pack for checkout."
    },
    {
     "label": "Watch out",
     "tone": "warn",
-    "text": "GRADE Type and Color is 5 days overdue and three more CSU grades are due Friday, workshop day."
+    "text": "GRADE Type and Color is 6 days overdue and three more CSU grades are due tomorrow, workshop day. The 2:45-4:00 PM CT gap is the only real window."
    }
   ],
   "priorities": [
@@ -40,64 +40,68 @@
     "role": "Teaching",
     "due": "Overdue (Oct 9)",
     "overdue": true,
-    "next": "Grade it in the hotel gap before 11:30 AM CT registration."
+    "next": "Grade it in the 2:45-4:00 PM CT labs and break window."
+   },
+   {
+    "title": "Final workshop run-through",
+    "role": "Speaking",
+    "due": "Fri Oct 16, 1:15 PM CT",
+    "overdue": false,
+    "next": "After Main Session 3: offline files, HDMI adapter, and timing for the 60-minute slot."
    },
    {
     "title": "Scout Foundations speakers at SALT",
     "role": "Speaking",
     "due": "Fri Oct 16",
     "overdue": false,
-    "next": "Shortlist from the Foundations track (Flex room): Whisnant, MacDonald, Shearer, Hodge, Merrifield."
-   },
-   {
-    "title": "Bill American Integrity",
-    "role": "Freelance",
-    "due": "No deadline",
-    "overdue": false,
-    "next": "Send the invoice from your phone while you wait to board or at the gate in ATL."
+    "next": "Brady Shearer's 7 Building Blocks at 4:00 PM CT is a Foundations session; note him as a candidate."
    }
   ],
-  "sequenceNote": "Travel day. ET until you land, then Central.",
+  "sequenceNote": "SALT day 2. Times are Central.",
   "sequence": [
    {
-    "time": "4:00–5:15 AM ET",
-    "what": "Devotional and prayer list at the gate"
+    "time": "5:00-5:30 AM",
+    "what": "Devotional and prayer list"
    },
    {
-    "time": "5:30–8:53 AM",
-    "what": "CHS to ATL to DFW. SPS block on the plane: revisit next year's SPS schedule and goals"
+    "time": "5:30-6:45 AM",
+    "what": "SPS block in the room: revisit next year's SPS schedule and goals"
    },
    {
-    "time": "9:30–11:15 AM CT",
-    "what": "Driver to hotel, Travel BW workout if the room is ready, then grade Type and Color"
+    "time": "6:45-7:20 AM",
+    "what": "Off Day circuit (15 min), breakfast, ride at 7:20"
    },
    {
-    "time": "11:30 AM CT",
-    "what": "Registration at Irving Bible Church"
+    "time": "8:00-8:45 AM",
+    "what": "Film/Story podcast recording, Studio A, lower level"
    },
    {
-    "time": "12:30–4:30 PM CT",
-    "what": "TBN Studios masterclass (bus from the church)"
+    "time": "9:00 AM-2:30 PM",
+    "what": "Main Session 2, AI Automation & Logic (Adult C), lunch, Crafting Documentaries"
    },
    {
-    "time": "5:00–6:00 PM CT",
-    "what": "Call home (family block), dinner"
+    "time": "2:45-4:00 PM",
+    "what": "Grade Type and Color (skip labs and vendor time)"
    },
    {
-    "time": "6:30 PM CT",
-    "what": "Main Session 1, then rest. Upper Room at 9:00 PM is optional"
+    "time": "4:00-6:00 PM",
+    "what": "7 Building Blocks (scout Shearer), food trucks, call home for Titus's show"
+   },
+   {
+    "time": "6:30-8:30 PM",
+    "what": "Main Session 3, then final workshop run and pack"
    }
   ],
   "headsUp": [
    {
     "kind": "Overdue",
     "role": "Teaching",
-    "text": "GRADE Type and Color was due Oct 9."
+    "text": "GRADE Type and Color was due Oct 9. GRADE 8-1, 8-2 and Blog Post #1 are due tomorrow."
    },
    {
     "kind": "Travel",
     "role": "Speaking",
-    "text": "You fly home Friday out of DAL (Love Field), not DFW. Tell the SALT driver, and reply to SALT about meals and a guest."
+    "text": "Tomorrow: check out and bring luggage to the green room. You fly home from DAL (Love Field) at 6:50 PM, not DFW, so tell the SALT driver."
    },
    {
     "kind": "Calendar",
@@ -107,15 +111,22 @@
    {
     "kind": "Fitness data",
     "role": null,
-    "text": "Wellness still has no Apple Health data since Sat Oct 10: no meals, sleep, steps, or workouts for Oct 11-13. Check the Apple Health sync."
+    "text": "Wellness still has no Apple Health data since Sat Oct 10: no meals, sleep, steps, or workouts for Oct 11-14. Check the Apple Health sync."
    },
    {
     "kind": "Nutrition",
     "role": null,
-    "text": "Food logs NOT reconciled this morning. No new MyFitnessPal export email, and none has arrived since Oct 6. Check the Keyboard Maestro \"MyFitnessPal Download\" macro (2:30 AM) on the Mac Mini, that the Mini was awake, and that Chrome is still signed in to MyFitnessPal. Last successful export: Monday, Oct 5 (9 days ago)."
+    "text": "Food logs NOT reconciled this morning. No new MyFitnessPal export email, and none has arrived since Oct 6. Check the Keyboard Maestro \"MyFitnessPal Download\" macro (2:30 AM) on the Mac Mini, that the Mini was awake, and that Chrome is still signed in to MyFitnessPal. Last successful export: Monday, Oct 5 (10 days ago)."
    }
   ],
   "schedule": [
+   {
+    "time": "All day",
+    "title": "SALT Conference",
+    "location": "Irving Bible Church",
+    "role": "Speaking",
+    "fyi": false
+   },
    {
     "time": "All day",
     "title": "Adam OOO - Salt & Pepper Conference",
@@ -125,50 +136,99 @@
    },
    {
     "time": "All day",
-    "title": "SALT Conference",
+    "title": "Mark Brant, birthday",
+    "location": "",
+    "role": "Personal",
+    "fyi": false
+   },
+   {
+    "time": "7:20 AM CT",
+    "title": "Ride",
     "location": "",
     "role": "Speaking",
     "fyi": false
    },
    {
-    "time": "12:00 PM",
-    "title": "Creative Lunch",
-    "location": "Microsoft Teams Meeting",
-    "role": null,
-    "fyi": true
-   },
-   {
-    "time": "1:00 PM",
-    "title": "Fraud to Claude: Seacoast’s AI Reset",
-    "location": "Microsoft Teams Meeting",
-    "role": "Seacoast",
+    "time": "8:00 AM CT",
+    "title": "Film/Story Podcast Recording - SALT26",
+    "location": "Studio A, lower level",
+    "role": "Speaking",
     "fyi": false
    },
    {
-    "time": "6:30 PM",
-    "title": "MDWK",
-    "location": "750 Long Point Rd",
-    "role": "Seacoast",
+    "time": "9:00 AM CT",
+    "title": "SALT: Main Session 2",
+    "location": "Irving Bible Church (Main Sessions)",
+    "role": "Speaking",
+    "fyi": false
+   },
+   {
+    "time": "11:00 AM CT",
+    "title": "SALT: AI Automation & Logic: Building Custom Systems that Actually Work for Your Team",
+    "location": "Irving Bible Church, Adult C",
+    "role": "Speaking",
+    "fyi": false
+   },
+   {
+    "time": "12:00 PM CT",
+    "title": "SALT: Lunch + Community",
+    "location": "Irving Bible Church (Commons)",
+    "role": "Speaking",
+    "fyi": false
+   },
+   {
+    "time": "1:30 PM CT",
+    "title": "SALT: Crafting Documentaries that Inspire Change",
+    "location": "Irving Bible Church",
+    "role": "Speaking",
+    "fyi": false
+   },
+   {
+    "time": "4:00 PM CT",
+    "title": "SALT: The 7 Building Blocks: A Better System for Church Communication",
+    "location": "Irving Bible Church",
+    "role": "Speaking",
+    "fyi": false
+   },
+   {
+    "time": "4:45 PM CT",
+    "title": "SALT: Dinner / Food Trucks",
+    "location": "Irving Bible Church (Outside)",
+    "role": "Speaking",
+    "fyi": false
+   },
+   {
+    "time": "5:30 PM CT",
+    "title": "Titus- 3rd Grade Show (6:30 PM ET)",
+    "location": "Howe Hall AIMS",
+    "role": "Personal",
+    "fyi": true
+   },
+   {
+    "time": "6:30 PM CT",
+    "title": "SALT: Main Session 3",
+    "location": "Irving Bible Church (Main Sessions)",
+    "role": "Speaking",
     "fyi": false
    }
   ]
  },
  "brief": {
   "morningRead": [
-   "Travel day. You're in the air at 5:30 AM, land at DFW at 8:53 CT, and the TBN Studios masterclass bus leaves at 12:30. Irving runs 90 and humid with a stray storm, and a front cools it to the 60s by Friday.",
-   "The real pressure is Friday: your 1:15 PM CT workshop lands the same day three CSU grades come due, with Type and Color already 5 days late. Use the hotel gaps today and Thursday for grading so Friday morning stays clear for the talk."
+   "SALT day 2. The podcast recording at 8:00 AM CT is first (ride at 7:20), and sessions run until 8:30 PM. Irving tops out near 88 with a stray storm possible before a front comes through tonight.",
+   "Tomorrow's 1:15 workshop is the main event, and CSU grading is the drag on it: Type and Color is six days late and three more grades are due Friday. Grade in the 2:45-4:00 PM gap and run the talk after Main Session 3."
   ],
-  "watchOut": "letting CSU grading slide into Friday, workshop day.",
+  "watchOut": "letting the grading spill into workshop morning.",
   "forgetting": [
    {
-    "role": "Speaking",
-    "title": "Love Field on Friday",
-    "text": "You land at DFW but fly home from DAL. Tell the SALT driver when they reach out."
+    "role": "Personal",
+    "title": "Titus's 3rd grade show tonight",
+    "text": "It's 6:30 PM ET (5:30 CT, during the food trucks). Call or FaceTime before or after so he knows you're cheering."
    },
    {
     "role": "Speaking",
-    "title": "SALT meals and guest reply",
-    "text": "Still open in the trip note, and SALT needs it for catering counts."
+    "title": "Love Field tomorrow",
+    "text": "You fly home from DAL, not DFW. Tell the SALT driver and bring luggage to the green room at checkout."
    },
    {
     "role": "SPS",
@@ -183,20 +243,20 @@
   ],
   "whatsNext": [
    {
+    "title": "Show up sharp for the podcast",
+    "text": "8:00 AM CT in Studio A with Dustin Hyer, Chris Mano and Patrick Clark; it's a preview of your Friday workshop."
+   },
+   {
     "title": "Clear GRADE Type and Color",
-    "text": "Five days overdue, and it's the first of four CSU grades due by Friday."
+    "text": "Six days overdue, and the first of four CSU grades due by Friday."
    },
    {
-    "title": "Scout Foundations speakers at SALT",
-    "text": "Due Friday; it feeds the Nov 6 proposal in the Class Planning Collab Sheet."
+    "title": "Final workshop run tonight",
+    "text": "Offline files, HDMI adapter, and timing for the 60-minute slot the app now shows."
    },
    {
-    "title": "Bill American Integrity",
-    "text": "A five-minute invoice that keeps freelance cash moving while edits pause for the trip."
-   },
-   {
-    "title": "Final workshop run Thursday night",
-    "text": "Offline files, HDMI adapter, 30 minutes of teaching plus 15 of Q&A."
+    "title": "Scout Foundations speakers",
+    "text": "Brady Shearer at 4:00 PM CT is today's Foundations session; it feeds the Nov 6 proposal."
    },
    {
     "title": "Moody launch prep",
@@ -205,55 +265,55 @@
   ],
   "opportunities": [
    {
-    "role": "Speaking",
-    "title": "Get the workshop recording",
-    "text": "SALT records every workshop. Ask for your file; it's a ready speaker reel for future bookings."
-   },
-   {
     "role": "SPS",
-    "title": "60 Second Storytelling, Thu 1:30 PM",
-    "text": "Ashton Tucker's Digital Media session overlaps SPS directly. Notes from it feed next year's SPS goals."
+    "title": "Crafting Documentaries, 1:30 PM CT",
+    "text": "Patrick Clark is also on your podcast this morning. A follow-up conversation could sharpen the Module 6 case study."
    },
    {
     "role": "Seacoast",
-    "title": "Claude for Churches, Fri 11:00 AM",
-    "text": "Brad Zimmerman's session pairs with today's Fraud to Claude AI reset at Seacoast. Bring back one usable workflow."
+    "title": "AI Automation & Logic, 11:00 AM CT",
+    "text": "Pairs with Seacoast's AI reset. Bring back one workflow you can build next week."
+   },
+   {
+    "role": "Speaking",
+    "title": "Get the workshop recording",
+    "text": "SALT records every workshop. Ask for your file tomorrow; it's a ready speaker reel."
    }
   ],
   "projectCards": [
    {
     "role": "Speaking",
     "level": "Critical",
-    "why": "Workshop E is Friday at 1:15 PM CT in Adult B, recorded, with a room tech to mic you.",
-    "best": "Check in at the green room before 1:15 Friday. Do the final run Thursday night with offline files.",
-    "watch": "Onsite Wi-Fi may not work, and Friday's flight leaves from Love Field."
+    "why": "Workshop E is tomorrow at 1:15 PM CT in Adult B, recorded, with a room tech to mic you. The podcast is this morning.",
+    "best": "Do the final run after Main Session 3 tonight with offline files. Check in at the green room before 1:15 tomorrow.",
+    "watch": "Onsite Wi-Fi may not work, and tomorrow's flight leaves from Love Field."
    },
    {
     "role": "SPS",
     "level": "High",
-    "why": "Storyteller 101 has only Module 6 left, and 'Revisit SPS schedule and goals for next year' is on Today.",
-    "best": "Status: building, 4.0h logged Monday. Today's move: draft next year's schedule and goals. Morning block: the 5:30-7:15 window is in the air, so use the CHS to ATL leg for it.",
-    "watch": "SALT eats Thursday and Friday mornings. Log Tuesday's Module 6 portrait shoot in project_status.md."
+    "why": "Status: building, 4.0h logged Monday and Storyteller 101 has only Module 6 left. Today's move: draft next year's SPS schedule and goals.",
+    "best": "Morning block: 5:30-6:45 AM CT in the hotel room, before the 7:20 ride. Use it for 'Revisit SPS schedule and goals for next year.'",
+    "watch": "Tomorrow's morning goes to checkout and the workshop. Log Tuesday's Module 6 portrait shoot in project_status.md."
    },
    {
     "role": "Teaching",
     "level": "High",
-    "why": "Type and Color is overdue, 8-1, 8-2, and Blog Post #1 are due Friday, and SALT takes both Teaching nights.",
-    "best": "Grade Type and Color in this morning's hotel gap, then 8-1 and 8-2 Thursday.",
+    "why": "Type and Color is 6 days overdue, and 8-1, 8-2 and Blog Post #1 are due tomorrow. SALT took both Teaching nights.",
+    "best": "Grade Type and Color in the 2:45 PM CT gap; push the Friday three to the flight home or Saturday morning.",
     "watch": "CM 1110 starts Oct 20, with the Week 9 intro due Oct 18 and Week 1 announcement Oct 19."
    },
    {
     "role": "Freelance",
     "level": "Medium",
-    "why": "Bill American Integrity is on Today. Today in Things: EDIT 05 Why Become Appointed - National, EDIT 16 Alexandra Rodriguez, EDIT 27 Wayne Dennis, EDIT 28 Zach Smith.",
-    "best": "Send the invoice today; edits wait until you're home.",
-    "watch": "Thursday Oct 22 is the first Freelance night back."
+    "why": "Bill American Integrity is still on Today. Today in Things: EDIT 05 Why Become Appointed - National, EDIT 16 Alexandra Rodriguez, EDIT 27 Wayne Dennis, EDIT 28 Zach Smith.",
+    "best": "Send the invoice from your phone between sessions; edits wait until you're home.",
+    "watch": "Tonight's Freelance night goes to Main Session 3. Thursday Oct 22 is the next one."
    },
    {
     "role": "Seacoast",
     "level": "Low",
-    "why": "You're out through Friday. Legacy Video Re-Edits and the campus pastor follow-up sit on Today.",
-    "best": "Send the campus pastor follow-up from the airport; it's been open since Aug 19.",
+    "why": "Out through Friday. The campus pastor follow-up has been open since Aug 19.",
+    "best": "Send the campus pastor follow-up during a break.",
     "watch": "Oct 19 setup runs 4-7 PM into family time, then the New Year shoot Oct 20 and MCC filming Oct 21."
    }
   ]
@@ -261,20 +321,17 @@
  "reading": {
   "devotional": {
    "series": "My Utmost for His Highest",
-   "date": "Oct 14",
-   "title": "THE KEY TO THE MISSIONARY’S WORK",
-   "reference": "Matthew 28:18–19",
+   "date": "Oct 15",
+   "title": "THE KEY TO THE MISSIONARY’S MESSAGE",
+   "reference": "1 John 2:2",
    "summary": [
-    "The authority of Jesus, not the needs of the lost, is the key to the missionary's work.",
-    "To go simply means to live, abiding in Him, and He takes on the work of sending us."
+    "Christ's propitiation for the sins of the whole world is the key to the missionary's message, not merely what He has done for me."
    ],
    "fullText": [
-    "“Jesus came and spoke to them, saying, ‘All authority has been given to Me in heaven and on earth. Go therefore and make disciples of all the nations . . . .’”",
-    "The key to the missionary’s work is the authority of Jesus Christ, not the needs of the lost. We are inclined to look on our Lord as one who assists us in our endeavors for God. Yet our Lord places Himself as the absolute sovereign and supreme Lord over His disciples. He does not say that the lost will never be saved if we don’t go—He simply says, “Go therefore and make disciples of all the nations . . . .” He says, “Go on the basis of the revealed truth of My sovereignty, teaching and preaching out of your living experience of Me.”",
-    "“Then the eleven disciples went . . . to the mountain which Jesus had appointed for them” (28:16). If I want to know the universal sovereignty of Christ, I must know Him myself. I must take time to worship the One whose name I bear. Jesus says, “Come to Me . . .”—that is the place to meet Jesus—“all you who labor and are heavy laden . . .” (Matthew 11:28)—and how many missionaries are! We completely dismiss these wonderful words of the universal Sovereign of the world, but they are the words of Jesus to His disciples meant for here and now.",
-    "“Go therefore . . . .” To “go” simply means to live. Acts 1:8 is the description of how to go. Jesus did not say in this verse, “Go into Jerusalem, Judea, and Samaria,” but, “. . . you shall be witnesses to Me in [all these places].” He takes upon Himself the work of sending us.",
-    "“If you abide in Me, and My words abide in you . . .” (John 15:7)—that is the way to keep going . Where we are placed is then a matter of indifference to us, because God sovereignly engineers our goings .",
-    "“None of these things move me; nor do I count my life dear to myself, so that I may finish my race with joy, and the ministry which I received from the Lord Jesus . . .” (Acts 20:24). That is how to keep going until we are gone from this life."
+    "“He Himself is the propitiation for our sins, and not for ours only but also for the whole world.”",
+    "The key to the missionary’s message is the propitiation of Christ Jesus—His sacrifice for us that completely satisfied the wrath of God. Look at any other aspect of Christ’s work, whether it is healing, saving, or sanctifying, and you will see that there is nothing limitless about those. But—“The Lamb of God who takes away the sin of the world!”—that is limitless (John 1:29). The missionary’s message is the limitless importance of Jesus Christ as the propitiation for our sins, and a missionary is someone who is immersed in the truth of that revelation.",
+    "The real key to the missionary’s message is the “remissionary” aspect of Christ’s life, not His kindness, His goodness, or even His revealing of the fatherhood of God to us. “. . . repentance and remission of sins should be preached . . . to all nations . . .” (Luke 24:47). The greatest message of limitless importance is that “He Himself is the propitiation for our sins . . . .” The missionary’s message is not nationalistic, favoring nations or individuals; it is “for the whole world.” When the Holy Spirit comes into me, He does not consider my partialities or preferences; He simply brings me into oneness with the Lord Jesus.",
+    "A missionary is someone who is bound by marriage to the stated mission and purpose of his Lord and Master. He is not to proclaim his own point of view, but is only to proclaim “the Lamb of God.” It is easier to belong to a faction that simply tells what Jesus Christ has done for me, and easier to become a devotee of divine healing, or of a special type of sanctification, or of the baptism of the Holy Spirit. But Paul did not say, “Woe is me if I do not preach what Christ has done for me,” but, “. . . woe is me if I do not preach the gospel!” (1 Corinthians 9:16). And this is the gospel—“the Lamb of God who takes away the sin of the world!”"
    ]
   },
   "prayer": [
@@ -286,27 +343,28 @@
    "Stephanie Lippi"
   ],
   "creative": {
-   "date": "Oct 14",
+   "date": "Oct 15",
    "title": "",
    "summary": "",
    "paragraphs": [
-    "As a principle, nothing goes from complex to simple on its own. It requires outside energy to bring simplicity to a complex process or to a complex organization. In fact, on their own, things devolve into ever-greater chaos.",
-    "How do you bring simplicity to a complex situation? One way is by establishing principles that guide your decisions and behaviors. If you have to approach every single project or creative problem in a fresh way, your world is going to be remarkably complex. However, if you have a set of guiding principles to help you make decisions and frameworks to shape your decisions, you already have a head start. Premake as many decisions as you can by thinking through the governing principles that guide your work and your leadership. For example, what are the specific qualities you look for in a good idea? How do you handle conflict when people disagree about direction? What are the values you refuse to compromise, no matter what?",
-    "By establishing some core principles ahead of time, you carve out a space for simplicity in the midst of complexity. You bring order to your world.",
-    "Nothing goes from complex to simple on its own. Establish principles to guide your work so that you begin from a point of simplicity."
+    "What is the most powerful question you can ask your team or collaborators? I’m a big believer in, “Is there anything can I do for you right now?”",
+    "A lot of managers toss out, “Let me know if I can do anything for you,” or “Let me know how I can be of help,” but team members often don’t take them seriously because those phrases are too generic and vague. They don’t mean anything, because they are a promise of something to be done at an undetermined time in the future about a yet to be experienced problem.",
+    "However, adding the qualifier “right now” implies urgency. It means, “I will drop everything at this moment and take care of your issue.” It’s a promise of immediate action. Simply adding that qualifier to the end of the question completely reframes it. It shows the person you’re communicating with that you are serious.",
+    "As you interact with others today, strive to avoid vagaries and empty offers of help. Instead, add a sense of precision and seriousness to your offer by indicating that you will act right now.",
+    "Asking, “What can I do for you right now?” is a powerful way of showing that you are committed to helping your team or collaborators success."
    ],
-   "question": "Question: What are the core three to four principles that govern your work?"
+   "question": "Who can you ask this question of today?"
   }
  },
  "fitness": {
-  "eyebrow": "Tomorrow · Friday · Travel day (SALT)",
+  "eyebrow": "Thursday · Off Day Circuit · SALT, Irving",
   "stats": [
    {
     "value": "228.3",
     "label": "lb weekly avg"
    },
    {
-    "value": "0.5",
+    "value": "0.3",
     "label": "lb/wk loss (3 wk)"
    },
    {
@@ -321,7 +379,7 @@
   "progress": [
    {
     "label": "Weight",
-    "text": "228.3 lb avg (week of Oct 5), losing 0.5 lb/wk over 3 weeks; goal needs 1.2 lb/wk; sustainable range 1.1-2.3 lb/wk. Under 0.5% a week, so progress has stalled. One weigh-in this week: 227.5 on Oct 13."
+    "text": "228.3 lb avg (week of Oct 5), losing about 0.3 lb/wk over 3 weeks; goal needs 1.25 lb/wk; sustainable range 1.1-2.3 lb/wk. Under 0.5% a week, so progress has stalled. One weigh-in this week: 227.5 on Oct 13."
    },
    {
     "label": "Nutrition",
@@ -329,18 +387,18 @@
    },
    {
     "label": "Strength",
-    "text": "Dumbbell bench up to 50 lb and stiff leg deadlift up to 150 lb. Row has held at 80 lb since Sep 17. Leg press read 150 lb on Oct 9 after 250 on Oct 2, worth checking. All three days hit last week."
+    "text": "Dumbbell bench up to 50 lb and stiff leg deadlift up to 150 lb. Row has held at 80 lb since Sep 17. Leg press read 150 lb on Oct 9 after 250 on Oct 2, worth checking. No sessions synced since Oct 9."
    },
    {
     "label": "Recovery",
-    "text": "Oct 7-10: 7.3h avg sleep, no nights under 6.5h. Latest read (Oct 10) is normal: RHR 62 vs 66 avg, HRV 54 vs 45. Nothing recorded since."
+    "text": "Oct 6-10: 7.1h avg sleep, one short night (6.1h on Oct 6). Latest read (Oct 10) is normal: RHR 62 vs 67 avg, HRV 54 vs 44. Nothing recorded since."
    },
    {
     "label": "Activity",
-    "text": "5,365 avg steps Oct 7-10, under the 10,000 goal. Last week: 4 walks, 7.9 mi, 161 min (3 of them 2 mi+). Nothing synced yet this week."
+    "text": "6,297 avg steps Oct 6-10, under the 10,000 goal. Last week: 2 walks of 2 mi+ (Oct 6, Oct 9). Nothing synced this week."
    }
   ],
-  "closing": "Protein is locked in. The flat scale lines up with nine days of unreconciled food logs, so get the MyFitnessPal export running again before reading much into the trend, and lean on shakes and grilled protein at SALT.",
+  "closing": "Protein is locked in. The flat scale lines up with ten days of unreconciled food logs, so get the MyFitnessPal export and Apple Health sync running again before reading much into the trend, and lean on shakes and grilled protein at SALT.",
   "goals": [
    {
     "name": "Strength sessions",
@@ -368,21 +426,18 @@
     "total": 5
    }
   ],
-  "goalsNote": "Nothing since Oct 10 has synced to Wellness, so Monday and Tuesday aren't counted yet. With SALT through Friday, the realistic wins are a hotel Travel BW workout, venue walking, and protein days; strength resumes Monday.",
+  "goalsNote": "Nothing since Oct 10 has synced to Wellness, so this week reads zero. 4 days left: today's hotel circuit and protein days are the realistic wins; strength resumes Monday.",
   "workout": {
-   "label": "Tomorrow's workout · Friday",
-   "title": "Travel BW Workout (A)",
+   "label": "Today's workout · Thursday",
+   "title": "Off Day Circuit (hotel room)",
    "lines": [
-    "Swaps in for Legs & Shoulders on the last day of SALT. About 42 min, bodyweight and a mat, 90s rest between sets",
-    "High plank: 3 x 30 sec",
-    "3D lunge: 2 x 10",
-    "Agility, 90-degree hops: 2 x 10",
-    "Agility, side to side steps: 2 x 20",
-    "Agility, in/out hops: 2 x 20",
-    "Alternating crescent lunge: 2 x 10",
-    "Alternating lateral deadlift hinge: 2 x 10",
-    "Bear plank: 3 x 30 sec",
-    "Window conflict: 8-9 AM CT runs into hotel checkout and the ride to Main Session 4 at 9:00. Best slot: about 7:00-7:45 AM CT in the hotel room, then shower and pack. The rest of the day is booked through the 6:50 PM flight."
+    "About 10-15 min, bodyweight. 15 reps x 3 sets each",
+    "Squats (bodyweight)",
+    "Sit-ups (bodyweight)",
+    "Kettlebell swings (no kettlebell on the road; skip or add a set of squats)",
+    "Calf raises (bodyweight)",
+    "Stretch goal: +5 reps on any exercise to hit 50 total",
+    "Window conflict: 8-9 AM CT is the podcast recording (ride at 7:20). Best slot: about 6:45-7:00 AM CT in the room, right after the SPS block."
    ]
   },
   "split": [
@@ -416,7 +471,7 @@
    }
   ],
   "strengthNotes": [
-   "Travel BW Workout (A) Wednesday through Friday; regular split resumes Monday with Chest & Biceps.",
+   "Off Day circuit today; Travel BW Workout (A) stands in for Legs & Shoulders tomorrow if checkout allows. Chest & Biceps resumes Monday.",
    "Row has been 80 lb x 10 x 3 since Sep 17; try 85 on the first set next Back day.",
    "Leg press dropped from 250 lb (Oct 2) to 150 lb (Oct 9). If that was a different machine, note it so the trend reads right."
   ],
@@ -426,7 +481,7 @@
    "carbs": 215,
    "fat": 72
   },
-  "macroNote": "Travel day: every meal from breakfast on is away from home, and dinner lands at Love Field before the 6:50 PM flight.",
+  "macroNote": "Every meal after coffee is at SALT. Workshop leaders get catering in the green room (lower level).",
   "meals": [
    {
     "slot": "Morning Coffee",
@@ -454,7 +509,7 @@
    },
    {
     "slot": "Lunch",
-    "what": "PLN meal or SALT lunch lean protein",
+    "what": "SALT lunch, lean protein first",
     "cal": 450,
     "protein": 35,
     "carbs": 45,
@@ -478,7 +533,7 @@
    },
    {
     "slot": "Dinner",
-    "what": "Option A: chicken breast (6-7 oz) + 1/2 cup rice with butter, or the closest airport match",
+    "what": "Option A: chicken breast (6-7 oz) + 1/2 cup rice with butter, or the closest food truck match",
     "cal": 430,
     "protein": 48,
     "carbs": 32,
@@ -498,54 +553,39 @@
    "items": [
     {
      "slot": "Breakfast",
-     "when": "Hotel checkout, before Main Session 4 at 9:00 AM CT",
-     "text": "Hard-boiled eggs (2 whole + 4 whites) or a protein shake"
+     "when": "Ride at 7:20, podcast 8:00 AM CT",
+     "text": "Hotel eggs, or a protein shake if breakfast runs short"
     },
     {
      "slot": "Snack 1",
-     "when": "Main Session 4, 9:00-10:45 AM CT",
+     "when": "Main Session 2, 9:00-10:45 AM CT",
      "text": "Protein shake in a shaker bottle"
     },
     {
      "slot": "Lunch",
-     "when": "Lunch + Community, 12:00-1:00 PM CT, before your 1:15 workshop",
-     "text": "SALT lunch lean protein, or chicken + rice in a container"
+     "when": "Lunch + Community, 12:00-1:00 PM CT",
+     "text": "SALT lunch lean protein, or green room catering"
     },
     {
      "slot": "Snack 2",
-     "when": "Main Session 5, 2:30-4:00 PM CT",
+     "when": "Grading break, 2:45-4:00 PM CT",
      "text": "Clementines or an applesauce pouch"
     },
     {
      "slot": "Dinner",
-     "when": "Love Field, before DL2780 at 6:50 PM CT",
-     "text": "Grilled chicken and rice if you can find it; bang bang salmon doesn't travel"
+     "when": "Food trucks, 4:45-6:00 PM CT",
+     "text": "Grilled chicken and rice or the closest match; skip fried"
     },
     {
      "slot": "Evening Snack",
-     "when": "In the air, DAL to ATL to CHS",
-     "text": "Casein shake (powder dry, add water past security); skip the mini cone"
-    },
-    {
-     "slot": "Eating out",
-     "when": "Chick-fil-A",
-     "text": "Grilled nuggets 12 ct + side salad + fruit cup, about 350 cal and 44g protein"
-    },
-    {
-     "slot": "Eating out",
-     "when": "McDonald's",
-     "text": "Grilled chicken + side salad + apple slices, about 410 cal and 38g protein"
-    },
-    {
-     "slot": "Eating out",
-     "when": "Subway",
-     "text": "Rotisserie chicken chopped salad, extra chicken if available, about 190-240 cal and 25-30g protein"
+     "when": "After Main Session 3, hotel",
+     "text": "Casein shake; skip the mini cone on the road"
     }
    ]
   },
   "dinnerCall": {
    "title": "Dinner call: chicken",
-   "text": "Template chicken lands 198g protein vs fish at 188g, only 2g short. Carbs run 68g short, so add a banana or extra rice at lunch; fat is 27g under, which is fine on a travel day."
+   "text": "Template chicken lands 198g protein vs fish at 188g, only 2g short. Carbs run 68g short, so add rice or fruit at lunch; fat is 27g under, which is fine on a conference day."
   },
   "alert": {
    "title": "Nutrition",
@@ -560,7 +600,7 @@
     "label": "This week",
     "total": "13.0",
     "caption": "Oct 12 week · logged so far",
-    "note": "SPS has 4.0h against a rough 9-11h plan, already more than all of last week (1.2h). Seacoast logged 9.0h Monday and nothing Tuesday, the combined shoot day, so Tuesday's timer may not have run. SALT takes Wednesday through Friday, so Seacoast will land well under 40h and Speaking will climb, which is expected. Teaching shows 0h, and SALT takes both Teaching nights.",
+    "note": "SPS has 4.0h against a rough 9-11h plan, already more than all of last week (1.2h). Seacoast logged 9.0h Monday and nothing since; Tuesday was the combined shoot and Wednesday a travel day, so those timers may not have run. SALT runs through Friday, so Speaking should climb and Seacoast will land well under 40h, which is expected. Teaching shows 0h with grading due Friday.",
     "rows": [
      {
       "name": "Seacoast Church",
@@ -580,6 +620,10 @@
      },
      {
       "day": "Tue",
+      "hours": 0.0
+     },
+     {
+      "day": "Wed",
       "hours": 0.0
      }
     ]
@@ -706,7 +750,7 @@
    {
     "role": "Speaking",
     "title": "SALT workshop",
-    "text": "Why Preproduction Is the Most Important Part of Production, 1:15 PM CT, Room Adult B.",
+    "text": "Why Preproduction Is the Most Important Part of Production, 1:15 PM CT, Room Adult B. Podcast recording today at 8:00 AM CT.",
     "when": "Oct 16",
     "overdue": false
    },
@@ -790,7 +834,7 @@
    {
     "role": "Teaching",
     "area": "Teaching",
-    "roleEvaluation": "Behind: Type and Color is overdue, 0h logged this week, and SALT takes both Teaching nights.",
+    "roleEvaluation": "Behind: Type and Color is 6 days overdue, 0h logged this week, and SALT took both Teaching nights.",
     "blocks": [
      {
       "label": "Active projects",
@@ -833,8 +877,8 @@
      {
       "label": "Suggestions",
       "lines": [
-       "Grade Type and Color in today's hotel gap and 8-1/8-2 Thursday so Friday stays clear.",
-       "Block Saturday morning for Blog Post #1 and the Week 9 intro if SALT eats the gaps."
+       "Grade Type and Color in today's 2:45 PM CT gap.",
+       "Block Saturday morning for 8-1, 8-2 and Blog Post #1 plus the Week 9 intro."
       ]
      }
     ]
@@ -842,7 +886,7 @@
    {
     "role": "Freelance",
     "area": "Freelance",
-    "roleEvaluation": "Paused for travel: 3.3h last week is fine, but the invoice should go out today.",
+    "roleEvaluation": "Paused for travel: the invoice is still open and tonight's Freelance night goes to Main Session 3.",
     "blocks": [
      {
       "label": "Active projects",
@@ -863,7 +907,7 @@
      {
       "label": "Suggestions",
       "lines": [
-       "Send the American Integrity invoice today.",
+       "Send the American Integrity invoice between sessions.",
        "Put one edit on the Oct 22 Freelance night after you're back."
       ]
      }
@@ -891,8 +935,8 @@
       "label": "Suggestions",
       "lines": [
        "Log Tuesday's shoot in project_status.md and projects.md.",
-       "Use today's flight for next year's SPS schedule and goals.",
-       "Take notes in 60 Second Storytelling (Thu 1:30 PM) for SPS."
+       "Use this morning's 5:30 CT block for next year's SPS schedule and goals.",
+       "Take notes in Crafting Documentaries (1:30 PM CT) for Module 6."
       ]
      }
     ]
@@ -900,7 +944,7 @@
    {
     "role": "Speaking",
     "area": "Speaking",
-    "roleEvaluation": "Peak week: 11h of SALT prep last week and the workshop is Friday.",
+    "roleEvaluation": "Peak week: podcast today, workshop tomorrow.",
     "blocks": [
      {
       "label": "Active projects",
@@ -912,9 +956,10 @@
      {
       "label": "This week",
       "lines": [
+       "Film/Story podcast recording, Thu Oct 15, 8:00 AM CT",
        "Scout Foundations speakers at SALT, Oct 16",
-       "Ship Phil Gauthier hat",
-       "SALT workshop, Fri Oct 16, 1:15 PM CT"
+       "SALT workshop, Fri Oct 16, 1:15 PM CT",
+       "Ship Phil Gauthier hat"
       ]
      },
      {
@@ -937,13 +982,13 @@
    {
     "role": "Personal",
     "area": "Personal",
-    "roleEvaluation": "Family time takes a hit: three nights away, and Titus's show Thursday is flagged not attending.",
+    "roleEvaluation": "Family time takes a hit: three nights away, and you miss Titus's show tonight.",
     "blocks": [
      {
       "label": "This week",
       "lines": [
-       "Pretrip",
-       "Travel BW workout Wed-Fri, Chest & Biceps resumes Mon"
+       "Call home around Titus's 3rd grade show tonight",
+       "Off Day circuit today, Travel BW workout Fri, Chest & Biceps resumes Mon"
       ]
      },
      {
@@ -970,39 +1015,57 @@
     "title": "Week of Oct 12",
     "rows": [
      {
-      "day": "Wed 10/14",
+      "day": "Thu 10/15",
       "time": "All day",
-      "title": "Adam OOO - Salt & Pepper Conference",
-      "fyi": true
+      "title": "Mark Brant, birthday! (1973)",
+      "fyi": false
      },
      {
       "day": "",
-      "time": "All day",
-      "title": "SALT Conference",
+      "time": "8:20 AM",
+      "title": "Ride",
+      "fyi": false
+     },
+     {
+      "day": "",
+      "time": "9:00 AM",
+      "title": "Film/Story Podcast Recording - SALT26",
+      "fyi": false
+     },
+     {
+      "day": "",
+      "time": "10:00 AM",
+      "title": "SALT: Main Session 2",
       "fyi": false
      },
      {
       "day": "",
       "time": "12:00 PM",
-      "title": "Creative Lunch",
-      "fyi": true
+      "title": "SALT: AI Automation & Logic: Building Custom Systems that Actually Work for Your Team",
+      "fyi": false
      },
      {
       "day": "",
       "time": "1:00 PM",
-      "title": "Fraud to Claude: Seacoast’s AI Reset",
+      "title": "SALT: Lunch + Community",
       "fyi": false
      },
      {
       "day": "",
-      "time": "6:30 PM",
-      "title": "MDWK",
+      "time": "2:30 PM",
+      "title": "SALT: Crafting Documentaries that Inspire Change",
       "fyi": false
      },
      {
-      "day": "Thu 10/15",
-      "time": "All day",
-      "title": "Mark Brant, birthday! (1973)",
+      "day": "",
+      "time": "5:00 PM",
+      "title": "SALT: The 7 Building Blocks: A Better System for Church Communication",
+      "fyi": false
+     },
+     {
+      "day": "",
+      "time": "5:45 PM",
+      "title": "SALT: Dinner / Food Trucks",
       "fyi": false
      },
      {
@@ -1012,9 +1075,45 @@
       "fyi": true
      },
      {
+      "day": "",
+      "time": "7:30 PM",
+      "title": "SALT: Main Session 3",
+      "fyi": false
+     },
+     {
       "day": "Fri 10/16",
+      "time": "10:00 AM",
+      "title": "SALT: Main Session 4",
+      "fyi": false
+     },
+     {
+      "day": "",
+      "time": "12:00 PM",
+      "title": "SALT: Claude for Churches: Using AI to Get Real Work Done",
+      "fyi": false
+     },
+     {
+      "day": "",
+      "time": "1:00 PM",
+      "title": "SALT: Lunch + Community",
+      "fyi": false
+     },
+     {
+      "day": "",
+      "time": "2:15 PM",
+      "title": "PRIORITY, MY SESSION: Why Preproduction Is the Most Important Part of Production",
+      "fyi": false
+     },
+     {
+      "day": "",
       "time": "2:15 PM",
       "title": "SALT Workshop: Why Preproduction Is the Most Important Part of Production",
+      "fyi": false
+     },
+     {
+      "day": "",
+      "time": "3:30 PM",
+      "title": "SALT: Main Session 5",
       "fyi": false
      }
     ]
@@ -1115,7 +1214,7 @@
      },
      {
       "day": "Sat 10/24",
-      "time": "All day",
+      "time": "3:00 PM",
       "title": "FILMING CONNECT YOUNG ADULT STORY",
       "fyi": false
      }
@@ -1174,6 +1273,12 @@
       "fyi": false
      },
      {
+      "day": "",
+      "time": "6:00 PM",
+      "title": "FILMING MCC SMALL GROUP B- ROLL",
+      "fyi": false
+     },
+     {
       "day": "Sun 11/1",
       "time": "All day",
       "title": "Check for Books",
@@ -1219,10 +1324,16 @@
       "day": "",
       "time": "12:00 PM",
       "title": "Creative Lunch",
-      "fyi": true
+      "fyi": false
      },
      {
       "day": "Thu 11/5",
+      "time": "1:01 AM",
+      "title": "Zelda Launch",
+      "fyi": false
+     },
+     {
+      "day": "",
       "time": "5:00 PM",
       "title": "AALC Meeting",
       "fyi": false
@@ -1265,8 +1376,8 @@
      },
      {
       "day": "Tue 11/10",
-      "time": "12:00 PM",
-      "title": "SALT Call",
+      "time": "11:30 AM",
+      "title": "SALT Meetup - Adam Erickson",
       "fyi": false
      },
      {
@@ -1279,7 +1390,7 @@
       "day": "Wed 11/11",
       "time": "12:00 PM",
       "title": "Creative Lunch",
-      "fyi": true
+      "fyi": false
      },
      {
       "day": "",
@@ -1290,13 +1401,19 @@
      {
       "day": "Thu 11/12",
       "time": "12:00 PM",
-      "title": "Appointment at Lesslie Vision Care (Adam C. Erickson Productions)",
+      "title": "Appointment at Lesslie Vision Care",
       "fyi": false
      },
      {
       "day": "",
       "time": "12:00 PM",
-      "title": "Lesslie Vision Care Appt (Adam C. Erickson Productions)",
+      "title": "Lesslie Vision Care Appt",
+      "fyi": false
+     },
+     {
+      "day": "Fri 11/13",
+      "time": "11:30 AM",
+      "title": "FILO 2027 | Track Leader Connect",
       "fyi": false
      }
     ]
@@ -1320,7 +1437,7 @@
     },
     {
      "label": "Purpose",
-     "value": "Workshop E: Why Preproduction Is the Most Important Part of Production, Fri Oct 16, 1:15-2:00 PM CT, Room Adult B"
+     "value": "Workshop E: Why Preproduction Is the Most Important Part of Production, Fri Oct 16, 1:15-2:15 PM CT (SALT app; packet said 2:00), Room Adult B"
     },
     {
      "label": "Venue",
@@ -1439,23 +1556,39 @@
        "label": "Day 2: Thu Oct 15",
        "lines": [
         {
-         "time": "9:00 am",
+         "time": "7:20 am",
+         "text": "Ride"
+        },
+        {
+         "time": "8:00-8:45 am",
+         "text": "PRIORITY: Film/Story podcast recording, Studio A entrance, lower level (by Cuppa Coffee). Guests: Dustin Hyer, Chris Mano, Patrick Clark"
+        },
+        {
+         "time": "9:00-10:45 am",
          "text": "Main Session 2"
         },
         {
          "time": "11:00 am",
-         "text": "Workshops A"
+         "text": "Workshops A: AI Automation & Logic (Adult C per app)"
         },
         {
-         "time": "1:30 pm",
-         "text": "Workshops B"
+         "time": "12:00-1:00 pm",
+         "text": "Lunch + Community"
         },
         {
-         "time": "4:00 pm",
-         "text": "Workshops C"
+         "time": "1:30-2:30 pm",
+         "text": "Workshops B: Crafting Documentaries That Inspire Change (Patrick Clark)"
         },
         {
-         "time": "6:30 pm",
+         "time": "4:00-4:45 pm",
+         "text": "Workshops C: The 7 Building Blocks (Brady Shearer, Foundations)"
+        },
+        {
+         "time": "4:45-6:00 pm",
+         "text": "Dinner / Food Trucks"
+        },
+        {
+         "time": "6:30-8:30 pm",
          "text": "Main Session 3"
         }
        ]
@@ -1468,12 +1601,24 @@
          "text": "Hotel checkout, luggage to the green room"
         },
         {
+         "time": "9:00-10:45 am",
+         "text": "Main Session 4"
+        },
+        {
+         "time": "11:00 am",
+         "text": "Workshops D: Claude for Churches (Brad Zimmerman)"
+        },
+        {
          "time": "Before 1:15 pm",
          "text": "Check in at the green room (lower level) for your badge"
         },
         {
-         "time": "1:15-2:00 pm",
+         "time": "1:15-2:15 pm",
          "text": "Your workshop, Room Adult B"
+        },
+        {
+         "time": "2:30-4:00 pm",
+         "text": "Main Session 5"
         },
         {
          "time": "6:50 pm",
@@ -1515,9 +1660,9 @@
      "warn": true,
      "lines": [
       "Reply to SALT: which meals you'll join and whether a guest is coming.",
-      "Pack HDMI adapters and download all presentation content offline.",
-      "No tight patterns on camera; the workshop is recorded.",
-      "Choose breakouts for Workshops A to D."
+      "Download all presentation content offline and pack HDMI adapters.",
+      "The app shows a 60-minute slot (1:15-2:15); the packet said 45 (30 teaching, 15 Q&A).",
+      "No tight patterns on camera; the workshop is recorded."
      ]
     },
     {
@@ -1531,8 +1676,8 @@
    ],
    "weather": {
     "title": "Weather watch, Irving TX",
-    "text": "Wednesday: clouds early, then hot, high 90 and low 73, 79% humidity, a stray storm possible. Thursday: partly cloudy, high 90, low 60 as a north wind picks up. Friday: windy and much cooler, high 66, low 49, slight chance of a shower. Pack a jacket for Friday.",
-    "asOf": "As of Oct 14"
+    "text": "Thursday: highs near 88 with isolated storms possible, mainly west of I-35, and a cold front late tonight that drops temps into the 60s. Friday: windy and much cooler, 20-30 mph winds gusting near 40. Pack a jacket for Friday.",
+    "asOf": "As of Oct 15"
    }
   }
  ]
