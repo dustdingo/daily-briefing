@@ -299,7 +299,7 @@
   }
  },
  "fitness": {
-  "eyebrow": "Wednesday · Travel day (SALT)",
+  "eyebrow": "Tomorrow · Friday · Travel day (SALT)",
   "stats": [
    {
     "value": "228.3",
@@ -370,10 +370,10 @@
   ],
   "goalsNote": "Nothing since Oct 10 has synced to Wellness, so Monday and Tuesday aren't counted yet. With SALT through Friday, the realistic wins are a hotel Travel BW workout, venue walking, and protein days; strength resumes Monday.",
   "workout": {
-   "label": "Today's workout · Wednesday",
+   "label": "Tomorrow's workout · Friday",
    "title": "Travel BW Workout (A)",
    "lines": [
-    "Swaps in for Back & Triceps while you're at SALT. About 42 min, bodyweight and a mat, 90s rest between sets",
+    "Swaps in for Legs & Shoulders on the last day of SALT. About 42 min, bodyweight and a mat, 90s rest between sets",
     "High plank: 3 x 30 sec",
     "3D lunge: 2 x 10",
     "Agility, 90-degree hops: 2 x 10",
@@ -382,7 +382,7 @@
     "Alternating crescent lunge: 2 x 10",
     "Alternating lateral deadlift hinge: 2 x 10",
     "Bear plank: 3 x 30 sec",
-    "Window conflict: 8-9 AM is in the air (lands DFW 8:53 AM CT). Best slot: about 9:45-10:30 AM CT at the hotel, before 11:30 registration. If the room isn't ready, do it Thursday morning before Main Session 2."
+    "Window conflict: 8-9 AM CT runs into hotel checkout and the ride to Main Session 4 at 9:00. Best slot: about 7:00-7:45 AM CT in the hotel room, then shower and pack. The rest of the day is booked through the 6:50 PM flight."
    ]
   },
   "split": [
@@ -426,11 +426,11 @@
    "carbs": 215,
    "fat": 72
   },
-  "macroNote": "Travel day: every meal is away from home, so plan around the flights and SALT catering.",
+  "macroNote": "Travel day: every meal from breakfast on is away from home, and dinner lands at Love Field before the 6:50 PM flight.",
   "meals": [
    {
     "slot": "Morning Coffee",
-    "what": "Coffee with 2 TBSP collagen protein (airport coffee if needed)",
+    "what": "Coffee with 2 TBSP collagen protein (hotel coffee works)",
     "cal": 18,
     "protein": 4,
     "carbs": 0,
@@ -438,7 +438,7 @@
    },
    {
     "slot": "Breakfast",
-    "what": "2 whole eggs + 4 egg whites (hard-boiled for the flight)",
+    "what": "2 whole eggs + 4 egg whites, or the closest hotel breakfast match",
     "cal": 210,
     "protein": 28,
     "carbs": 2,
@@ -454,7 +454,7 @@
    },
    {
     "slot": "Lunch",
-    "what": "PLN meal or SALT catering lean protein",
+    "what": "PLN meal or SALT lunch lean protein",
     "cal": 450,
     "protein": 35,
     "carbs": 45,
@@ -478,7 +478,7 @@
    },
    {
     "slot": "Dinner",
-    "what": "Option A: chicken breast (6-7 oz) + 1/2 cup rice with butter, or the closest SALT match",
+    "what": "Option A: chicken breast (6-7 oz) + 1/2 cup rice with butter, or the closest airport match",
     "cal": 430,
     "protein": 48,
     "carbs": 32,
@@ -498,39 +498,54 @@
    "items": [
     {
      "slot": "Breakfast",
-     "when": "Flight, 5:30 AM ET",
+     "when": "Hotel checkout, before Main Session 4 at 9:00 AM CT",
      "text": "Hard-boiled eggs (2 whole + 4 whites) or a protein shake"
     },
     {
      "slot": "Snack 1",
-     "when": "Landing DFW, 8:53 AM CT",
-     "text": "Protein shake in a shaker bottle; powder dry, add water past security"
+     "when": "Main Session 4, 9:00-10:45 AM CT",
+     "text": "Protein shake in a shaker bottle"
     },
     {
      "slot": "Lunch",
-     "when": "Registration and TBN masterclass, 11:30 AM-12:30 PM CT",
-     "text": "SALT catering lean protein, or Chick-fil-A 12 ct grilled nuggets + side salad + fruit cup"
+     "when": "Lunch + Community, 12:00-1:00 PM CT, before your 1:15 workshop",
+     "text": "SALT lunch lean protein, or chicken + rice in a container"
     },
     {
      "slot": "Snack 2",
-     "when": "TBN Studios tour, afternoon",
+     "when": "Main Session 5, 2:30-4:00 PM CT",
      "text": "Clementines or an applesauce pouch"
     },
     {
      "slot": "Dinner",
-     "when": "Main Session 1, 6:30 PM CT",
-     "text": "Grilled chicken and rice from catering or nearby; bang bang salmon doesn't travel"
+     "when": "Love Field, before DL2780 at 6:50 PM CT",
+     "text": "Grilled chicken and rice if you can find it; bang bang salmon doesn't travel"
     },
     {
      "slot": "Evening Snack",
-     "when": "Hotel, after Main Session 1",
-     "text": "Casein shake; skip the mini cone"
+     "when": "In the air, DAL to ATL to CHS",
+     "text": "Casein shake (powder dry, add water past security); skip the mini cone"
+    },
+    {
+     "slot": "Eating out",
+     "when": "Chick-fil-A",
+     "text": "Grilled nuggets 12 ct + side salad + fruit cup, about 350 cal and 44g protein"
+    },
+    {
+     "slot": "Eating out",
+     "when": "McDonald's",
+     "text": "Grilled chicken + side salad + apple slices, about 410 cal and 38g protein"
+    },
+    {
+     "slot": "Eating out",
+     "when": "Subway",
+     "text": "Rotisserie chicken chopped salad, extra chicken if available, about 190-240 cal and 25-30g protein"
     }
    ]
   },
   "dinnerCall": {
    "title": "Dinner call: chicken",
-   "text": "Template chicken lands 198g protein vs fish at 188g. Carbs run 68g short, so add a banana or extra rice at catering; fat is 27g under, which is fine on a travel day."
+   "text": "Template chicken lands 198g protein vs fish at 188g, only 2g short. Carbs run 68g short, so add a banana or extra rice at lunch; fat is 27g under, which is fine on a travel day."
   },
   "alert": {
    "title": "Nutrition",
