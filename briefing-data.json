@@ -298,7 +298,7 @@
     }
   },
   "fitness": {
-    "eyebrow": "Friday · Legs & Shoulders (travel swap) · SALT, Irving",
+    "eyebrow": "Tomorrow · Saturday · Rest day",
     "stats": [
       {
         "value": "228.3",
@@ -369,19 +369,13 @@
     ],
     "goalsNote": "Workouts and sleep couldn't be read today and nothing since Oct 10 has synced, so these show zero. No meals are logged Oct 12-15, so protein days read 0 of 5 in Wellness. Today's travel workout is the realistic win.",
     "workout": {
-      "label": "Today's workout · Friday",
-      "title": "Travel BW Workout (A) (hotel room)",
+      "label": "Tomorrow's workout · Saturday",
+      "title": "Rest day",
       "lines": [
-        "Scheduled: Legs & Shoulders. No leg press or dumbbells on checkout day, so the travel workout stands in. About 42 min, bodyweight and a mat, 90s rest between sets",
-        "High Plank: 3 x 30 sec",
-        "3D Lunge: 2 x 10",
-        "Agility: 90-Degree Hops: 2 x 10",
-        "Agility: Side to Side Steps: 2 x 20",
-        "Agility: In/Out Hops: 2 x 20",
-        "Alternating Crescent Lunge: 2 x 10",
-        "Alternating Lateral Deadlift Hinge: 2 x 10",
-        "Bear Plank: 3 x 30 sec",
-        "Workout window: the usual 8-9 AM ET is 7-8 AM CT, crowded by checkout and Main Session 4 at 9:00 AM CT. Best slot: 6:45-7:30 AM CT in the room."
+        "No workout scheduled. Recovery day after SALT and the late flight home.",
+        "Optional: an easy walk toward the 10,000-step target if you feel up to it.",
+        "No workout window needed. Calendar is clear tomorrow.",
+        "Chest & Biceps resumes Monday."
       ]
     },
     "split": [
@@ -425,11 +419,11 @@
       "carbs": 215,
       "fat": 72
     },
-    "macroNote": "Every meal after coffee is on the road: SALT all day, then DAL at 6:50 PM CT and home around midnight ET. Template with chicken: 1,808 kcal, 198g protein, 147g carbs, 45g fat.",
+    "macroNote": "Rest day at home with a clear calendar, so every meal runs from the template. With chicken: 1,808 kcal, 198g protein, 147g carbs, 45g fat.",
     "meals": [
       {
         "slot": "Morning Coffee",
-        "what": "Coffee with 2 TBSP collagen protein (hotel coffee works)",
+        "what": "Coffee with 2 TBSP collagen protein",
         "cal": 18,
         "protein": 4,
         "carbs": 0,
@@ -437,7 +431,7 @@
       },
       {
         "slot": "Breakfast",
-        "what": "2 whole eggs + 4 egg whites, or the closest hotel breakfast match",
+        "what": "2 whole eggs + 4 egg whites",
         "cal": 210,
         "protein": 28,
         "carbs": 2,
@@ -453,7 +447,7 @@
       },
       {
         "slot": "Lunch",
-        "what": "SALT lunch, lean protein first, plus rice or fruit for carbs",
+        "what": "Project Lean Nation meal",
         "cal": 450,
         "protein": 35,
         "carbs": 45,
@@ -469,7 +463,7 @@
       },
       {
         "slot": "Snack 2",
-        "what": "Clementines or applesauce pouch",
+        "what": "Clementines or applesauce",
         "cal": 90,
         "protein": 1,
         "carbs": 22,
@@ -477,7 +471,7 @@
       },
       {
         "slot": "Dinner",
-        "what": "Option A: grilled chicken + rice, or the closest airport match at Love Field",
+        "what": "Option A: baked chicken breast (6-7 oz) + 1/2 cup jasmine rice with butter",
         "cal": 430,
         "protein": 48,
         "carbs": 32,
@@ -485,66 +479,16 @@
       },
       {
         "slot": "Evening Snack",
-        "what": "Cinnamon Bun casein shake (skip the mini cone on the road)",
+        "what": "Blue Bunny Caramel mini cone + Cinnamon Bun casein shake",
         "cal": 290,
         "protein": 27,
         "carbs": 31,
         "fat": 8
       }
     ],
-    "pack": {
-      "count": "6 meals away from home",
-      "items": [
-        {
-          "slot": "Breakfast",
-          "when": "Checkout morning, before Main Session 4 at 9:00 AM CT",
-          "text": "Hotel eggs, or a protein shake if breakfast runs short"
-        },
-        {
-          "slot": "Snack 1",
-          "when": "Main Session 4, 9:00-10:45 AM CT",
-          "text": "Protein shake in a shaker bottle"
-        },
-        {
-          "slot": "Lunch",
-          "when": "Lunch + Community, 12:00-1:00 PM CT",
-          "text": "SALT lunch lean protein, or green room catering before your 1:15 workshop"
-        },
-        {
-          "slot": "Snack 2",
-          "when": "Main Session 5, 2:30-4:00 PM CT",
-          "text": "Clementines or an applesauce pouch"
-        },
-        {
-          "slot": "Dinner",
-          "when": "Love Field before DL2780, 6:50 PM CT",
-          "text": "Grilled chicken and rice or the closest airport match; skip fried"
-        },
-        {
-          "slot": "Evening Snack",
-          "when": "ATL layover, DL2850 at 10:44 PM ET",
-          "text": "Casein powder dry in the shaker, add water past security; skip the mini cone"
-        },
-        {
-          "slot": "Eating out",
-          "when": "Chick-fil-A",
-          "text": "Grilled nuggets (12 ct) + side salad + fruit cup: about 350 cal, 44g protein"
-        },
-        {
-          "slot": "Eating out",
-          "when": "McDonald's",
-          "text": "Grilled chicken sandwich + side salad + apple slices: about 410 cal, 38g protein"
-        },
-        {
-          "slot": "Eating out",
-          "when": "Subway",
-          "text": "Rotisserie chicken chopped salad, extra chicken if available: about 190-240 cal, 25-30g protein"
-        }
-      ]
-    },
     "dinnerCall": {
       "title": "Dinner call: chicken",
-      "text": "Chicken lands 198g protein vs fish at 188g, only 2g short, so no fix needed. Carbs run 68g short and fat 27g under; add a banana or fruit cup at lunch or the airport. At Love Field, grilled chicken travels better than salmon."
+      "text": "Chicken lands 198g protein vs fish at 188g, only 2g short, so no protein fix needed. Carbs run 68g short and fat 27g under; add a banana at Snack 2 and a second 1/2 cup of jasmine rice at dinner."
     },
     "alert": {
       "title": "Nutrition",
