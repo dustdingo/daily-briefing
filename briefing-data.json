@@ -317,7 +317,7 @@
     }
   },
   "fitness": {
-    "eyebrow": "Wednesday · Back & Triceps",
+    "eyebrow": "Tomorrow · Thursday · Off Day Circuit",
     "stats": [
       {
         "value": "228.3",
@@ -362,13 +362,16 @@
     "goals": [],
     "goalsNote": "Weekly tally unavailable: Wellness hit its daily limit of 3 analysis calls before this run. The evening fitness brief can fill it in.",
     "workout": {
-      "label": "Today's workout · Wednesday",
-      "title": "Back & Triceps",
+      "label": "Tomorrow's workout · Thursday",
+      "title": "Off Day Circuit",
       "lines": [
-        "Workout window: 8-9 AM is lost to the drive to McClellanville for the 9 AM shoot. Best alternative: 4:00-5:00 PM after filming, before family time.",
-        "Back (pick 3): Wide grip lat pulldowns, Reverse close grip lat pulldowns, V-bar lat pulldowns, Bent over rows, Dumbbell pullovers, One arm rows",
-        "Triceps (pick 3): Behind the head dumbbell press, Close grip barbell press, Tricep dips, Tricep pressdowns, Skull crushers, Reverse grip triceps bench",
-        "Rotate picks from session to session. Sets and reps per Evan's plan."
+        "Workout window clear: 8-9 AM. About 10-15 min at home.",
+        "Squats (bodyweight): 3 x 15",
+        "Sit-ups (bodyweight): 3 x 15",
+        "Kettlebell swings: 3 x 15",
+        "Calf raises (bodyweight): 3 x 15",
+        "Stretch goal: +5 reps on top to hit 50 total for an exercise (optional).",
+        "Cardio: 10,000 steps via treadmill or a night walk."
       ]
     },
     "split": [
@@ -424,7 +427,7 @@
       },
       {
         "slot": "Breakfast",
-        "what": "2 whole eggs + 4 egg whites (eat before leaving)",
+        "what": "2 whole eggs + 4 egg whites",
         "cal": 210,
         "protein": 28,
         "carbs": 2,
@@ -456,7 +459,7 @@
       },
       {
         "slot": "Snack 2",
-        "what": "Clementines or applesauce pouch",
+        "what": "Clementines or applesauce pouch (pack it for the workshop)",
         "cal": 90,
         "protein": 1,
         "carbs": 22,
@@ -480,33 +483,18 @@
       }
     ],
     "pack": {
-      "count": "4 meals away from home",
+      "count": "1 meal away from home",
       "items": [
         {
-          "slot": "Snack 1",
-          "when": "MCC Food Pantry filming, 9:00 AM-3:00 PM",
-          "text": "Protein shake in a shaker bottle."
-        },
-        {
-          "slot": "Lunch",
-          "when": "MCC Food Pantry filming, 9:00 AM-3:00 PM",
-          "text": "PLN meal in an insulated bag, plus the post-lunch shake."
-        },
-        {
           "slot": "Snack 2",
-          "when": "Filming wraps 3:00 PM, drive back",
-          "text": "Clementines or an applesauce pouch for the drive."
-        },
-        {
-          "slot": "Dinner",
-          "when": "Hanahan Business Mixer 6:00 PM or MDWK 6:30 PM",
-          "text": "Prepped chicken and rice in a container, eaten before you head out; bang bang salmon doesn't travel well."
+          "when": "Synthesia Workshop Session, 2:00-4:00 PM",
+          "text": "Clementines or an applesauce pouch; both travel fine."
         }
       ]
     },
     "dinnerCall": {
       "title": "Dinner call: chicken",
-      "text": "Chicken lands protein at 198g (2g under) vs. fish at 188g (12g short), and it packs better tonight. Main gap is carbs, about 68g: add a banana with Snack 2 (+27g) and 2-3 rice cakes on the drive home (+20g). Fat is about 27g under; a drizzle of olive oil on the chicken or extra butter on the rice helps without touching protein."
+      "text": "Chicken lands protein at 198g (2g under) vs. fish at 188g (12g short). Main gap is carbs, about 68g: add a banana with Snack 2 (+27g) and 2-3 rice cakes or brown sugar cinnamon oatmeal later (+20-30g). Fat is about 27g under; extra butter on the rice helps without touching protein."
     },
     "alert": {
       "title": "Nutrition",
