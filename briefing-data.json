@@ -142,7 +142,7 @@
    {
     "kind": "Nutrition",
     "role": null,
-    "text": "Food logs NOT reconciled this morning. Found why exports stopped: MyFitnessPal now sends them from hello@info.myfitnesspal.com, and the reconcile skill searches no-reply@myfitnesspal.com, so the Nov 3 export was missed. Today's export was found and its download queued, but Wellness's daily limit blocked the meal comparison. Last successful export: Tue, Oct 27 (8 days ago). Fix: update the sender in step 1 of food-log-reconcile.md."
+    "text": "Food logs NOT reconciled this morning. Found why exports stopped: MyFitnessPal now sends them from hello@info.myfitnesspal.com, and the reconcile skill searches no-reply@myfitnesspal.com, so the Nov 3 export was missed. Today's export was found and queued, but the download didn't run within 5 minutes (check the Keyboard Maestro \"MFP 2 - Download Export\" macro and _Inbox/MFP/download-log.txt), and Wellness's daily limit blocked the meal comparison anyway. Last successful export: Tue, Oct 27 (8 days ago). Fix: update the sender in step 1 of food-log-reconcile.md."
    }
   ],
   "schedule": [
@@ -588,7 +588,7 @@
   },
   "alert": {
    "title": "Nutrition",
-   "text": "Food logs NOT reconciled this morning. MyFitnessPal exports now come from hello@info.myfitnesspal.com, which the reconcile skill doesn't search, so nothing has synced since Oct 27. Today's download was queued, but Wellness's daily limit blocked the comparison."
+   "text": "Food logs NOT reconciled this morning. MyFitnessPal exports now come from hello@info.myfitnesspal.com, which the reconcile skill doesn't search, so nothing has synced since Oct 27. Today's download was queued but didn't run, and Wellness's daily limit blocked the comparison."
   },
   "workoutDays": [
    {
