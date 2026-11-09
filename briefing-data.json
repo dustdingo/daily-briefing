@@ -410,7 +410,7 @@
     }
   },
   "fitness": {
-    "eyebrow": "Sunday · Rest day",
+    "eyebrow": "Tomorrow · Monday · Chest & Biceps",
     "stats": [
       {
         "value": "199",
@@ -471,23 +471,17 @@
     ],
     "goalsNote": "Week ends today, so strength, circuits and walks fall short this week. Protein and sleep counts couldn't be read (Wellness limit). The Nov 2 Upper session counts; its split day isn't confirmed.",
     "workout": {
-      "label": "Today's workout · Sunday",
-      "title": "Rest day",
-      "date": "2026-11-08",
+      "label": "Tomorrow's workout · Monday",
+      "title": "Chest & Biceps",
+      "date": "2026-11-09",
       "lines": [
-        "No workout scheduled. A walk counts toward next week's goal if you want one."
+        "Chest, pick 3: flat or incline barbell bench, flat or incline dumbbell bench, flat or incline dumbbell flys",
+        "Biceps, pick 3: alternate arm curls, incline hammer curls, EZ bar curls, barbell curls, concentration curls",
+        "Optional: pushups to failure before and after chest",
+        "Window clear, 8-9 AM (only all-day events on the calendar)"
       ]
     },
     "workoutDays": [
-      {
-        "date": "2026-11-09",
-        "title": "Chest & Biceps",
-        "lines": [
-          "Chest, pick 3: flat or incline barbell bench, flat or incline dumbbell bench, flat or incline dumbbell flys",
-          "Biceps, pick 3: alternate arm curls, incline hammer curls, EZ bar curls, barbell curls, concentration curls",
-          "Optional: pushups to failure before and after chest"
-        ]
-      },
       {
         "date": "2026-11-10",
         "title": "Off Day Circuit",
@@ -582,7 +576,7 @@
       "carbs": 215,
       "fat": 72
     },
-    "macroNote": "Rest day: no workout window needed.",
+    "macroNote": "Workout window clear, 8-9 AM. First day of your Mon-Thu out of office; the CSU Public Speaking Invitational is all day with no set time, so if you go, pack lunch and the post-lunch shake.",
     "meals": [
       {
         "slot": "Morning Coffee",
@@ -651,7 +645,7 @@
     ],
     "dinnerCall": {
       "title": "Dinner call: chicken",
-      "text": "Chicken lands protein at 198g (2g under), fish at 188g (12g short). Carbs are the big gap at -68g: add a banana with Snack 2 (+27g) and 2-3 rice cakes mid-afternoon (+20g). Fat is -27g, so a drizzle of olive oil on the chicken or extra butter on the rice helps without touching protein."
+      "text": "Chicken lands protein at 198g (2g under), fish at 188g (12g short). Carbs are the big gap at -68g: add a banana with Snack 2 (+27g) and 2-3 rice cakes mid-afternoon (+20g). Fat is -27g, so a drizzle of olive oil on the chicken or extra butter on the rice helps without touching protein. Lifting day, so don't skip the post-workout Snack 1 shake."
     },
     "alert": {
       "title": "Food logs not reconciled",
