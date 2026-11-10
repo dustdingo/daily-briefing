@@ -484,7 +484,7 @@
     }
   },
   "fitness": {
-    "eyebrow": "Monday · Chest & Biceps",
+    "eyebrow": "Tomorrow · Tuesday · Off Day Circuit",
     "stats": [
       {
         "value": "224.7",
@@ -555,29 +555,20 @@
     ],
     "goalsNote": "Last week final: strength 1 of 3 (Day 1, Nov 2), circuits 0 of 2, walks 1 of 3, protein days 2 of 5, sleep 4 of 5 (Nov 2 not recorded). New week starts today with 7 days and four of them off work.",
     "workout": {
-      "label": "Today's workout · Monday",
-      "title": "Chest & Biceps",
-      "date": "2026-11-09",
+      "label": "Tomorrow's workout · Tuesday",
+      "title": "Off Day Circuit",
+      "date": "2026-11-10",
       "lines": [
-        "Chest, pick 3: flat or incline barbell bench, flat or incline dumbbell bench, flat or incline dumbbell flys",
-        "Biceps, pick 3: alternate arm curls, incline hammer curls, EZ bar curls, barbell curls, concentration curls",
-        "Optional: pushups to failure before and after chest",
-        "Last time (Nov 2): dumbbell bench 45 x10 all 3 sets, incline dumbbell bench 40, barbell curl up to 60. Try 50 on the bench.",
+        "15 reps x 3 sets each, about 10-15 min at home",
+        "Bodyweight squats",
+        "Sit-ups",
+        "Kettlebell swings",
+        "Calf raises",
+        "Stretch goal: +5 reps on any exercise, optional",
         "Workout window clear, 8-9 AM"
       ]
     },
     "workoutDays": [
-      {
-        "date": "2026-11-10",
-        "title": "Off Day Circuit",
-        "lines": [
-          "15 reps x 3 sets each, about 10-15 min at home",
-          "Bodyweight squats",
-          "Sit-ups",
-          "Kettlebell swings",
-          "Calf raises"
-        ]
-      },
       {
         "date": "2026-11-11",
         "title": "Back & Triceps",
@@ -670,7 +661,7 @@
       "carbs": 215,
       "fat": 72
     },
-    "macroNote": "Workout window clear, 8-9 AM. The CSU Public Speaking Invitational is all day with no set time; if you go, pack lunch and the post-lunch shake.",
+    "macroNote": "Workout window clear, 8-9 AM. Circuit is only 10-15 min, so it fits easily before the SALT Meetup Zoom at 11:30.",
     "meals": [
       {
         "slot": "Morning Coffee",
@@ -739,9 +730,24 @@
     ],
     "dinnerCall": {
       "title": "Dinner call: chicken",
-      "text": "Chicken lands protein at 198g (2g under), fish at 188g (12g short). Carbs are the big gap at -68g: add a banana with Snack 2 (+27g) and 2-3 rice cakes mid-afternoon (+20g). Fat is -27g, so a drizzle of olive oil on the chicken or extra butter on the rice helps without touching protein. Lifting day, so don't skip the post-workout Snack 1 shake."
+      "text": "Chicken lands protein at 198g (2g under), fish at 188g (12g short). Carbs are the big gap at -68g: add a banana with Snack 2 (+27g) and 2-3 rice cakes mid-afternoon (+20g). Fat is -27g, so a little extra butter on the rice helps without touching protein. Total runs about 500 kcal under target, so those adds matter."
     },
-    "alert": null
+    "alert": null,
+    "pack": {
+      "count": "2 meals overlap events",
+      "items": [
+        {
+          "slot": "Lunch",
+          "when": "SALT Meetup on Zoom, 11:30 AM-1:00 PM",
+          "text": "You're at home but on a call. Eat the PLN meal before 11:30 or right after 1:00, and have the post-lunch shake ready."
+        },
+        {
+          "slot": "Snack 2",
+          "when": "Zelda's violin lesson, Goose Creek, 3:45 PM",
+          "text": "Bring clementines or an applesauce pouch (and the banana) for the car."
+        }
+      ]
+    }
   },
   "time": {
     "guidingOrder": "Faith, Family, Smartphone Storytellers, Fitness, Seacoast, Margin",
