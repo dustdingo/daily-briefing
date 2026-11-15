@@ -535,7 +535,7 @@
     }
   },
   "fitness": {
-    "eyebrow": "Saturday · Rest day",
+    "eyebrow": "Tomorrow · Sunday · Rest day",
     "stats": [
       {
         "value": "227.4",
@@ -606,23 +606,16 @@
     ],
     "goalsNote": "Walks are done for the week. Yesterday's session was Back & Triceps, so Chest & Biceps and Legs & Shoulders are open. A circuit this weekend would still count. Last night's sleep isn't in yet.",
     "workout": {
-      "label": "Today's workout · Saturday",
+      "label": "Tomorrow's workout · Sunday",
       "title": "Rest day",
-      "date": "2026-11-14",
+      "date": "2026-11-15",
       "lines": [
         "No workout scheduled.",
-        "No workout window needed; the calendar is clear all day.",
-        "Walk goal is already met (3 of 3). A fourth walk moves toward the stretch goal of 5."
+        "No workout window needed. The only calendar event is the U2 Listening Party at Black Circle Records, 12:00-1:00 PM.",
+        "An easy walk would add to the step goal if you feel like moving."
       ]
     },
     "workoutDays": [
-      {
-        "date": "2026-11-15",
-        "title": "Rest day",
-        "lines": [
-          "No workout scheduled."
-        ]
-      },
       {
         "date": "2026-11-16",
         "title": "Chest & Biceps",
@@ -721,7 +714,7 @@
       "carbs": 215,
       "fat": 72
     },
-    "macroNote": "Rest day: no workout window needed. Nothing on the calendar today, so every meal is at home and nothing needs packing.",
+    "macroNote": "Rest day: no workout window needed. Lunch overlaps the U2 Listening Party (12:00-1:00 PM), so pack it. Every other meal is at home.",
     "meals": [
       {
         "slot": "Morning Coffee",
@@ -790,9 +783,19 @@
     ],
     "dinnerCall": {
       "title": "Dinner call: chicken",
-      "text": "Chicken puts protein at 198g vs 188g with fish, within 2g of target. The plan runs about 500 kcal light: carbs 68g short and fat 27g short. A banana with Snack 2 (+27g carbs), a brown sugar cinnamon oatmeal pack, and a string cheese close most of it."
+      "text": "Chicken puts protein at 198g vs 188g with fish, within 2g of target. The plan runs about 500 kcal light: carbs 68g short and fat 27g short. A banana with Snack 2, a brown sugar cinnamon oatmeal pack, and a string cheese close most of it."
     },
-    "alert": null
+    "alert": null,
+    "pack": {
+      "count": "1 meal away from home",
+      "items": [
+        {
+          "slot": "Lunch",
+          "when": "U2 Listening Party, 12:00 PM",
+          "text": "PLN meal in an insulated bag (it travels fine), or chicken and rice in a container. Bring the post-lunch shake in a shaker bottle too."
+        }
+      ]
+    }
   },
   "time": {
     "guidingOrder": "Faith, Family, Smartphone Storytellers, Fitness, Seacoast, Margin",
