@@ -520,7 +520,7 @@
     }
   },
   "fitness": {
-    "eyebrow": "Tomorrow · Tuesday · Off Day Circuit",
+    "eyebrow": "Tomorrow · Monday · Chest & Biceps",
     "stats": [
       {
         "value": "227.4",
@@ -591,16 +591,14 @@
     ],
     "goalsNote": "Final day of the week. Walks are done. Strength had only Back & Triceps; no circuits. Last night's sleep isn't in yet, so sleep could still reach 4.",
     "workout": {
-      "label": "Tomorrow's workout · Tuesday",
-      "title": "Off Day Circuit",
-      "date": "2026-11-17",
+      "label": "Tomorrow's workout · Monday",
+      "title": "Chest & Biceps",
+      "date": "2026-11-16",
       "lines": [
-        "15 reps x 3 sets each, about 10-15 min at home",
-        "Bodyweight squats",
-        "Sit-ups",
-        "Kettlebell swings",
-        "Calf raises",
-        "Workout window clear, 8-9 AM. Christmagiving at Mount Pleasant Campus starts 9:30 AM, so finish the circuit early and leave time to drive."
+        "Chest, pick 3: flat or incline barbell bench, flat or incline dumbbell bench, flat or incline dumbbell flys",
+        "Biceps, pick 3: alternate arm curls, incline hammer curls, EZ bar curls, barbell curls, concentration curls",
+        "Optional: pushups to failure before and after chest",
+        "Workout window clear, 8-9 AM, but tight: the Weekend Debrief call starts at 9:00 and Christmas Decor at 9:30. Start right at 8 and wrap by 8:55. Backup slot: 3:00-4:00 PM, after the Bryce interview."
       ]
     },
     "strengthNotes": [
@@ -609,7 +607,7 @@
       "Legs last logged Oct 9 (leg press 150, stiff leg deadlift 150). Start near those weights Friday and build back.",
       "Front raises: log the total weight (one dumbbell, both hands) since Oct 2."
     ],
-    "macroNote": "Off Day Circuit at home 8-9 AM, then a long day out. Christmagiving (9:30 AM-2:30 PM) covers Snack 1 and lunch, and the Hannah SIC meeting at Howe Hall (3:30 PM) covers Snack 2. Breakfast is at home. Dinner overlaps the 6:30 PM Josslyn Zoom interview, so eat before or after it.",
+    "macroNote": "Chest & Biceps 8-9 AM. Snack 1 falls during Christmas Decor (9:30-11:30 AM), so pack the shake. Lunch and Snack 2 are clear. Dinner overlaps the 6:00 PM Tatum Zoom interview, so eat after it.",
     "alert": null,
     "split": [
       {
@@ -714,45 +712,31 @@
       }
     ],
     "pack": {
-      "count": "3 meals away from home",
+      "count": "1 meal away from home",
       "items": [
         {
           "slot": "Snack 1",
-          "when": "Christmagiving, 10:00 AM",
+          "when": "Christmas Decor, 10:00 AM",
           "text": "Cocoa Crispy's protein shake in a shaker bottle, add water on site."
-        },
-        {
-          "slot": "Lunch",
-          "when": "Christmagiving, 12:00 PM",
-          "text": "PLN meal in an insulated bag (it travels fine), or chicken and rice in a container. Bring the post-lunch shake in a shaker bottle too."
-        },
-        {
-          "slot": "Snack 2",
-          "when": "Hannah SIC Meeting, 3:30 PM",
-          "text": "Clementines or an applesauce pouch, plus a banana for the carb gap."
-        },
-        {
-          "slot": "Eating out",
-          "when": "Chick-fil-A",
-          "text": "Grilled nuggets (12 ct) + side salad + fruit cup, about 350 kcal and 44g protein."
-        },
-        {
-          "slot": "Eating out",
-          "when": "McDonald's",
-          "text": "Grilled chicken sandwich + side salad + apple slices, about 410 kcal and 38g protein."
-        },
-        {
-          "slot": "Eating out",
-          "when": "Subway",
-          "text": "Rotisserie chicken chopped salad, extra chicken if available, about 190-240 kcal and 25-30g protein."
         }
       ]
     },
     "dinnerCall": {
       "title": "Dinner call: chicken",
-      "text": "Chicken puts protein at 198g vs 188g with fish, within 2g of target. The plan runs about 500 kcal light: carbs 68g short and fat 27g short. Pack a banana with Snack 2, add a brown sugar cinnamon oatmeal pack at breakfast, and a string cheese to close most of it."
+      "text": "Chicken puts protein at 198g vs 188g with fish, within 2g of target. The plan runs about 500 kcal light: carbs 68g short and fat 27g short. A banana with Snack 2, a brown sugar cinnamon oatmeal pack at breakfast, and a string cheese close most of it."
     },
     "workoutDays": [
+      {
+        "date": "2026-11-17",
+        "title": "Off Day Circuit",
+        "lines": [
+          "15 reps x 3 sets each, about 10-15 min at home",
+          "Bodyweight squats",
+          "Sit-ups",
+          "Kettlebell swings",
+          "Calf raises"
+        ]
+      },
       {
         "date": "2026-11-18",
         "title": "Back & Triceps",
@@ -793,15 +777,6 @@
         "title": "Rest day",
         "lines": [
           "No workout scheduled."
-        ]
-      },
-      {
-        "date": "2026-11-23",
-        "title": "Chest & Biceps",
-        "lines": [
-          "Chest, pick 3: flat or incline barbell bench, flat or incline dumbbell bench, flat or incline dumbbell flys",
-          "Biceps, pick 3: alternate arm curls, incline hammer curls, EZ bar curls, barbell curls, concentration curls",
-          "Optional: pushups to failure before and after chest"
         ]
       }
     ]
