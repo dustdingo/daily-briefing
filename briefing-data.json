@@ -1,1911 +1,1939 @@
 {
- "today": {
-  "weather": {
-   "hi": 62,
-   "lo": 43,
-   "feelsLike": "~41°",
-   "humidity": "74%",
-   "summary": "Clear and 41° before dawn, humidity 74%. Mostly sunny with clouds building, high near 62. Around 43 tonight. No advisories."
+  "today": {
+    "weather": {
+      "hi": 62,
+      "lo": 43,
+      "feelsLike": "~41°",
+      "humidity": "74%",
+      "summary": "Clear and 41° before dawn, humidity 74%. Mostly sunny with clouds building, high near 62. Around 43 tonight. No advisories."
+    },
+    "gamePlan": [
+      {
+        "label": "Protect",
+        "tone": "ok",
+        "text": "Family time 5-8 PM. The Tatum DR interview at 6:00 takes 30 minutes of it, so eat around it and keep the rest of the evening home."
+      },
+      {
+        "label": "Pressure",
+        "tone": "warn",
+        "text": "Teaching: Week 5 announcement and Website Evaluation 2 roster are due today, the Week 13 intro is now overdue, and three grading tasks are behind."
+      },
+      {
+        "label": "Tonight",
+        "tone": "neutral",
+        "text": "Household/Admin/Freelance. Finish the roster first, then Preproduction (due Nov 11)."
+      },
+      {
+        "label": "Watch out",
+        "tone": "warn",
+        "text": "A tight morning. Lift at 8:00 sharp to make the 9:00 Debrief, and Film Team Weekly (10:30) overlaps Christmas Decor."
+      }
+    ],
+    "priorities": [
+      {
+        "title": "FILM Week 5 Announcement Video",
+        "role": "Teaching",
+        "due": "Today",
+        "overdue": false,
+        "next": "Film it at lunch, and record the overdue Week 13 intro in the same setup"
+      },
+      {
+        "title": "BUILD Website Evaluation 2 roster with new links",
+        "role": "Teaching",
+        "due": "Today",
+        "overdue": false,
+        "next": "First thing in the 8 PM block"
+      },
+      {
+        "title": "Preproduction",
+        "role": "Freelance",
+        "due": "Overdue (Nov 11)",
+        "overdue": true,
+        "next": "Second half of tonight's Freelance/Admin block"
+      }
+    ],
+    "sequenceNote": "Monday: Seacoast morning meetings, Teaching videos at lunch, Freelance/Admin tonight.",
+    "sequence": [
+      {
+        "time": "5:00-5:30 AM",
+        "start": "05:00",
+        "end": "05:30",
+        "what": "Faith: My Utmost (Still Human!, 1 Corinthians 10:31), then the prayer list"
+      },
+      {
+        "time": "5:30-7:15 AM",
+        "start": "05:30",
+        "end": "07:15",
+        "what": "SPS: revisit the 2027 schedule and goals, then add dated Storyteller 101 b-roll and edit tasks"
+      },
+      {
+        "time": "7:15-7:45 AM",
+        "start": "07:15",
+        "end": "07:45",
+        "what": "School drop-off"
+      },
+      {
+        "time": "8:00-8:55 AM",
+        "start": "08:00",
+        "end": "08:55",
+        "what": "Chest & Biceps. Wrap by 8:55 for the 9:00 call"
+      },
+      {
+        "time": "9:00-11:30 AM",
+        "start": "09:00",
+        "end": "11:30",
+        "what": "Weekend Debrief, Christmas Decor, Film Team Weekly at 10:30"
+      },
+      {
+        "time": "12:00-5:00 PM",
+        "start": "12:00",
+        "end": "17:00",
+        "what": "Lunch: film Week 5 announcement and Week 13 intro. Seacoast work, ask Jen Cameron about Summerville. Bryce DR interview 2:30"
+      },
+      {
+        "time": "5:00-8:00 PM",
+        "start": "17:00",
+        "end": "20:00",
+        "what": "Family (Tatum DR interview 6:00-6:30)"
+      },
+      {
+        "time": "8:00-10:00 PM",
+        "start": "20:00",
+        "end": "22:00",
+        "what": "Website Evaluation 2 roster, then Preproduction"
+      }
+    ],
+    "headsUp": [
+      {
+        "kind": "Due today",
+        "role": "Teaching",
+        "text": "FILM Week 5 Announcement Video and BUILD Website Evaluation 2 roster are due today."
+      },
+      {
+        "kind": "Overdue",
+        "role": "Teaching",
+        "text": "RECORD Week 13 Intro video was due Nov 15. Moody shows 1.1h logged Sunday; check it off if done."
+      },
+      {
+        "kind": "Overdue",
+        "role": "Teaching",
+        "text": "GRADE Newspaper Article Design #2 was due Nov 6."
+      },
+      {
+        "kind": "Overdue",
+        "role": "Teaching",
+        "text": "GRADE Blog Post #5 and GRADE Newspaper Article Design #3 were due Nov 13."
+      },
+      {
+        "kind": "Overdue",
+        "role": "Freelance",
+        "text": "Preproduction was due Nov 11."
+      },
+      {
+        "kind": "Freelance",
+        "role": "Freelance",
+        "text": "EDIT 16 - Alexandra Rodriguez is still on Today, but the tracker has it awaiting client feedback."
+      },
+      {
+        "kind": "Calendar",
+        "role": null,
+        "text": "13 invites need a flag, run 'flag my invites' to resolve."
+      },
+      {
+        "kind": "Calendar",
+        "role": "Personal",
+        "text": "DR interviews land in family time today (6:00 PM) and tomorrow (6:30 PM)."
+      },
+      {
+        "kind": "System",
+        "role": null,
+        "text": "Wellness-free test: 6 of 6 Apple Health sources OK. See Briefings/Data/health-test-log.md."
+      },
+      {
+        "kind": "Nutrition",
+        "role": null,
+        "text": "Food from MyFitnessPal export, through Nov 15 (Nov 9-15 parsed, no Wellness writes). Yesterday: 1,138 kcal and 50g protein with no breakfast logged, so Nov 15 looks incomplete (Apple Health shows 1,258 kcal)."
+      }
+    ],
+    "schedule": [
+      {
+        "time": "9:00 AM",
+        "start": "09:00",
+        "end": "09:30",
+        "title": "Weekend Debrief Call",
+        "location": "Microsoft Teams",
+        "role": "Seacoast",
+        "fyi": false
+      },
+      {
+        "time": "9:30 AM",
+        "start": "09:30",
+        "end": "11:30",
+        "title": "Christmas Decor- Central and MTP Staff",
+        "location": "Grand Staircase",
+        "role": "Seacoast",
+        "fyi": false
+      },
+      {
+        "time": "10:30 AM",
+        "start": "10:30",
+        "end": "11:00",
+        "title": "Film Team Weekly",
+        "location": "Microsoft Teams",
+        "role": "Seacoast",
+        "fyi": false
+      },
+      {
+        "time": "2:30 PM",
+        "start": "14:30",
+        "end": "15:00",
+        "title": "Bryce DR interview",
+        "location": "Zoom",
+        "role": null,
+        "fyi": false
+      },
+      {
+        "time": "6:00 PM",
+        "start": "18:00",
+        "end": "18:30",
+        "title": "Tatum DR interview",
+        "location": "Zoom",
+        "role": null,
+        "fyi": false
+      }
+    ],
+    "scheduleDays": [
+      {
+        "date": "2026-11-17",
+        "events": [
+          {
+            "time": "All day",
+            "title": "Ralph's Birthday",
+            "location": "",
+            "role": "Personal",
+            "fyi": false
+          },
+          {
+            "time": "9:30 AM",
+            "start": "09:30",
+            "end": "14:30",
+            "title": "Christmagiving",
+            "location": "Mount Pleasant Campus",
+            "role": "Seacoast",
+            "fyi": false
+          },
+          {
+            "time": "3:30 PM",
+            "start": "15:30",
+            "end": "16:15",
+            "title": "Hannah SIC Meeting- HHA Library",
+            "location": "Howe Hall AIMS",
+            "role": "Personal",
+            "fyi": true
+          },
+          {
+            "time": "3:45 PM",
+            "start": "15:45",
+            "end": "16:15",
+            "title": "Zelda’s Violin Lesson",
+            "location": "358 Camelot Dr.",
+            "role": "Personal",
+            "fyi": false
+          },
+          {
+            "time": "4:00 PM",
+            "start": "16:00",
+            "end": "16:30",
+            "title": "Cambyll DR interview",
+            "location": "Zoom",
+            "role": null,
+            "fyi": false
+          },
+          {
+            "time": "6:30 PM",
+            "start": "18:30",
+            "end": "19:00",
+            "title": "Josslyn DR interview",
+            "location": "Zoom",
+            "role": null,
+            "fyi": false
+          }
+        ]
+      },
+      {
+        "date": "2026-11-18",
+        "events": [
+          {
+            "time": "10:00 AM",
+            "start": "10:00",
+            "end": "11:00",
+            "title": "Doc Tremble",
+            "location": "",
+            "role": null,
+            "fyi": false
+          },
+          {
+            "time": "12:00 PM",
+            "start": "12:00",
+            "end": "13:00",
+            "title": "Book Club: Mac Lake's Leading Others",
+            "location": "Microsoft Teams",
+            "role": "Seacoast",
+            "fyi": false
+          },
+          {
+            "time": "12:00 PM",
+            "start": "12:00",
+            "end": "13:00",
+            "title": "Creative Lunch",
+            "location": "Microsoft Teams",
+            "role": "Seacoast",
+            "fyi": false
+          },
+          {
+            "time": "6:30 PM",
+            "start": "18:30",
+            "end": "20:30",
+            "title": "MDWK",
+            "location": "750 Long Point Rd",
+            "role": null,
+            "fyi": false
+          }
+        ]
+      },
+      {
+        "date": "2026-11-19",
+        "events": [
+          {
+            "time": "All day",
+            "title": "NYE Service V1 due",
+            "location": "",
+            "role": "Seacoast",
+            "fyi": false
+          },
+          {
+            "time": "12:00 PM",
+            "start": "12:00",
+            "end": "13:00",
+            "title": "AI Training Session 1a: Optional AI Q&A",
+            "location": "Microsoft Teams",
+            "role": "Seacoast",
+            "fyi": true
+          },
+          {
+            "time": "12:00 PM",
+            "start": "12:00",
+            "end": "13:00",
+            "title": "Margaret & Creative: The Trilogy",
+            "location": "713 - Operations Meeting Room",
+            "role": "Seacoast",
+            "fyi": false
+          },
+          {
+            "time": "3:00 PM",
+            "start": "15:00",
+            "end": "18:00",
+            "title": "BLOCK FOR 2027 BUMPER STUDIO DAYS",
+            "location": "409 Altman St",
+            "role": "Seacoast",
+            "fyi": false
+          },
+          {
+            "time": "6:00 PM",
+            "start": "18:00",
+            "end": "19:30",
+            "title": "Lily- 4th Grade Show",
+            "location": "Howe Hall AIMS",
+            "role": "Personal",
+            "fyi": false
+          }
+        ]
+      },
+      {
+        "date": "2026-11-20",
+        "events": [
+          {
+            "time": "All day",
+            "title": "BLOCK 2027 BUMPER STUDIO DAYS",
+            "location": "",
+            "role": "Seacoast",
+            "fyi": false
+          },
+          {
+            "time": "All day",
+            "title": "Thanksgiving Break",
+            "location": "",
+            "role": "Personal",
+            "fyi": false
+          }
+        ]
+      },
+      {
+        "date": "2026-11-21",
+        "events": [
+          {
+            "time": "All day",
+            "title": "BLOCK 2027 BUMPER STUDIO DAYS",
+            "location": "",
+            "role": "Seacoast",
+            "fyi": false
+          },
+          {
+            "time": "All day",
+            "title": "Hannah Rumberger, birthday! (1985)",
+            "location": "",
+            "role": "Personal",
+            "fyi": false
+          }
+        ]
+      },
+      {
+        "date": "2026-11-22",
+        "events": [
+          {
+            "time": "6:00 AM",
+            "start": "06:00",
+            "end": "12:30",
+            "title": "Creative on Call",
+            "location": "",
+            "role": "Seacoast",
+            "fyi": false
+          }
+        ]
+      },
+      {
+        "date": "2026-11-23",
+        "events": [
+          {
+            "time": "9:00 AM",
+            "start": "09:00",
+            "end": "09:30",
+            "title": "Weekend Debrief Call",
+            "location": "Microsoft Teams",
+            "role": "Seacoast",
+            "fyi": false
+          },
+          {
+            "time": "10:30 AM",
+            "start": "10:30",
+            "end": "11:00",
+            "title": "Film Team Weekly",
+            "location": "Microsoft Teams",
+            "role": "Seacoast",
+            "fyi": false
+          }
+        ]
+      }
+    ]
   },
-  "gamePlan": [
-   {
-    "label": "Protect",
-    "tone": "ok",
-    "text": "Family time 5-8 PM. The Tatum DR interview at 6:00 takes 30 minutes of it, so eat around it and keep the rest of the evening home."
-   },
-   {
-    "label": "Pressure",
-    "tone": "warn",
-    "text": "Teaching: Week 5 announcement and Website Evaluation 2 roster are due today, the Week 13 intro is now overdue, and three grading tasks are behind."
-   },
-   {
-    "label": "Tonight",
-    "tone": "neutral",
-    "text": "Household/Admin/Freelance. Finish the roster first, then Preproduction (due Nov 11)."
-   },
-   {
-    "label": "Watch out",
-    "tone": "warn",
-    "text": "A tight morning. Lift at 8:00 sharp to make the 9:00 Debrief, and Film Team Weekly (10:30) overlaps Christmas Decor."
-   }
-  ],
-  "priorities": [
-   {
-    "title": "FILM Week 5 Announcement Video",
-    "role": "Teaching",
-    "due": "Today",
-    "overdue": false,
-    "next": "Film it at lunch, and record the overdue Week 13 intro in the same setup"
-   },
-   {
-    "title": "BUILD Website Evaluation 2 roster with new links",
-    "role": "Teaching",
-    "due": "Today",
-    "overdue": false,
-    "next": "First thing in the 8 PM block"
-   },
-   {
-    "title": "Preproduction",
-    "role": "Freelance",
-    "due": "Overdue (Nov 11)",
-    "overdue": true,
-    "next": "Second half of tonight's Freelance/Admin block"
-   }
-  ],
-  "sequenceNote": "Monday: Seacoast morning meetings, Teaching videos at lunch, Freelance/Admin tonight.",
-  "sequence": [
-   {
-    "time": "5:00-5:30 AM",
-    "start": "05:00",
-    "end": "05:30",
-    "what": "Faith: My Utmost (Still Human!, 1 Corinthians 10:31), then the prayer list"
-   },
-   {
-    "time": "5:30-7:15 AM",
-    "start": "05:30",
-    "end": "07:15",
-    "what": "SPS: revisit the 2027 schedule and goals, then add dated Storyteller 101 b-roll and edit tasks"
-   },
-   {
-    "time": "7:15-7:45 AM",
-    "start": "07:15",
-    "end": "07:45",
-    "what": "School drop-off"
-   },
-   {
-    "time": "8:00-8:55 AM",
-    "start": "08:00",
-    "end": "08:55",
-    "what": "Chest & Biceps. Wrap by 8:55 for the 9:00 call"
-   },
-   {
-    "time": "9:00-11:30 AM",
-    "start": "09:00",
-    "end": "11:30",
-    "what": "Weekend Debrief, Christmas Decor, Film Team Weekly at 10:30"
-   },
-   {
-    "time": "12:00-5:00 PM",
-    "start": "12:00",
-    "end": "17:00",
-    "what": "Lunch: film Week 5 announcement and Week 13 intro. Seacoast work, ask Jen Cameron about Summerville. Bryce DR interview 2:30"
-   },
-   {
-    "time": "5:00-8:00 PM",
-    "start": "17:00",
-    "end": "20:00",
-    "what": "Family (Tatum DR interview 6:00-6:30)"
-   },
-   {
-    "time": "8:00-10:00 PM",
-    "start": "20:00",
-    "end": "22:00",
-    "what": "Website Evaluation 2 roster, then Preproduction"
-   }
-  ],
-  "headsUp": [
-   {
-    "kind": "Due today",
-    "role": "Teaching",
-    "text": "FILM Week 5 Announcement Video and BUILD Website Evaluation 2 roster are due today."
-   },
-   {
-    "kind": "Overdue",
-    "role": "Teaching",
-    "text": "RECORD Week 13 Intro video was due Nov 15. Moody shows 1.1h logged Sunday; check it off if done."
-   },
-   {
-    "kind": "Overdue",
-    "role": "Teaching",
-    "text": "GRADE Newspaper Article Design #2 was due Nov 6."
-   },
-   {
-    "kind": "Overdue",
-    "role": "Teaching",
-    "text": "GRADE Blog Post #5 and GRADE Newspaper Article Design #3 were due Nov 13."
-   },
-   {
-    "kind": "Overdue",
-    "role": "Freelance",
-    "text": "Preproduction was due Nov 11."
-   },
-   {
-    "kind": "Freelance",
-    "role": "Freelance",
-    "text": "EDIT 16 - Alexandra Rodriguez is still on Today, but the tracker has it awaiting client feedback."
-   },
-   {
-    "kind": "Calendar",
-    "role": null,
-    "text": "13 invites need a flag, run 'flag my invites' to resolve."
-   },
-   {
-    "kind": "Calendar",
-    "role": "Personal",
-    "text": "DR interviews land in family time today (6:00 PM) and tomorrow (6:30 PM)."
-   },
-   {
-    "kind": "System",
-    "role": null,
-    "text": "Wellness-free test: 6 of 6 Apple Health sources OK. See Briefings/Data/health-test-log.md."
-   },
-   {
-    "kind": "Nutrition",
-    "role": null,
-    "text": "Food from MyFitnessPal export, through Nov 15 (Nov 9-15 parsed, no Wellness writes). Yesterday: 1,138 kcal and 50g protein with no breakfast logged, so Nov 15 looks incomplete (Apple Health shows 1,258 kcal)."
-   }
-  ],
-  "schedule": [
-   {
-    "time": "9:00 AM",
-    "start": "09:00",
-    "end": "09:30",
-    "title": "Weekend Debrief Call",
-    "location": "Microsoft Teams",
-    "role": "Seacoast",
-    "fyi": false
-   },
-   {
-    "time": "9:30 AM",
-    "start": "09:30",
-    "end": "11:30",
-    "title": "Christmas Decor- Central and MTP Staff",
-    "location": "Grand Staircase",
-    "role": "Seacoast",
-    "fyi": false
-   },
-   {
-    "time": "10:30 AM",
-    "start": "10:30",
-    "end": "11:00",
-    "title": "Film Team Weekly",
-    "location": "Microsoft Teams",
-    "role": "Seacoast",
-    "fyi": false
-   },
-   {
-    "time": "2:30 PM",
-    "start": "14:30",
-    "end": "15:00",
-    "title": "Bryce DR interview",
-    "location": "Zoom",
-    "role": null,
-    "fyi": false
-   },
-   {
-    "time": "6:00 PM",
-    "start": "18:00",
-    "end": "18:30",
-    "title": "Tatum DR interview",
-    "location": "Zoom",
-    "role": null,
-    "fyi": false
-   }
-  ],
-  "scheduleDays": [
-   {
-    "date": "2026-11-17",
-    "events": [
-     {
-      "time": "All day",
-      "title": "Ralph's Birthday",
-      "location": "",
-      "role": "Personal",
-      "fyi": false
-     },
-     {
-      "time": "9:30 AM",
-      "start": "09:30",
-      "end": "14:30",
-      "title": "Christmagiving",
-      "location": "Mount Pleasant Campus",
-      "role": "Seacoast",
-      "fyi": false
-     },
-     {
-      "time": "3:30 PM",
-      "start": "15:30",
-      "end": "16:15",
-      "title": "Hannah SIC Meeting- HHA Library",
-      "location": "Howe Hall AIMS",
-      "role": "Personal",
-      "fyi": true
-     },
-     {
-      "time": "3:45 PM",
-      "start": "15:45",
-      "end": "16:15",
-      "title": "Zelda’s Violin Lesson",
-      "location": "358 Camelot Dr.",
-      "role": "Personal",
-      "fyi": false
-     },
-     {
-      "time": "4:00 PM",
-      "start": "16:00",
-      "end": "16:30",
-      "title": "Cambyll DR interview",
-      "location": "Zoom",
-      "role": null,
-      "fyi": false
-     },
-     {
-      "time": "6:30 PM",
-      "start": "18:30",
-      "end": "19:00",
-      "title": "Josslyn DR interview",
-      "location": "Zoom",
-      "role": null,
-      "fyi": false
-     }
+  "brief": {
+    "morningRead": [
+      "A Seacoast-heavy morning (Debrief, Christmas Decor, Film Team Weekly) with two Teaching deadlines due today and a third now overdue. Cool and dry, 41° at dawn, 62° this afternoon.",
+      "The week tightens fast: Christmagiving takes most of Tuesday, NYE Service V1 is due Thursday, and four more grading tasks land Friday. Clear today's Teaching videos at lunch, then use Tuesday and Wednesday evenings for the grading backlog before Friday."
+    ],
+    "watchOut": "Letting the Teaching backlog roll into Thanksgiving Break.",
+    "forgetting": [
+      {
+        "role": "Seacoast",
+        "title": "NYE Service V1, due Thursday",
+        "text": "It's on the calendar for Nov 19 but has no Things task. Add one so it isn't buried under Christmagiving."
+      },
+      {
+        "role": "Seacoast",
+        "title": "Bumper Studio Days are unflagged",
+        "text": "Nov 19-21 blocks run into the start of Thanksgiving Break. Decide if you're attending."
+      },
+      {
+        "role": "Personal",
+        "title": "Ralph's birthday tomorrow",
+        "text": "Tuesday is packed with Christmagiving and two DR interviews, so handle a card or call tonight."
+      },
+      {
+        "role": "SPS",
+        "title": "SPS status files are stale",
+        "text": "project_status.md still says Module 5 is next, and projects.md says Modules 0-5 are complete. Update both during this morning's planning."
+      }
+    ],
+    "whatsNext": [
+      {
+        "title": "Revisit SPS schedule and 2027 goals",
+        "text": "It's on Today and Monday is your SPS planning day. It sets up the Dec 29 planning deadline and the January Storyteller 101 launch."
+      },
+      {
+        "title": "Film Week 5 announcement and Week 13 intro together",
+        "text": "One setup at lunch clears today's deadline and yesterday's overdue video."
+      },
+      {
+        "title": "Build the Website Evaluation 2 roster",
+        "text": "Due today, and students need the new links before they start."
+      },
+      {
+        "title": "Knock out Preproduction",
+        "text": "Five days overdue; tonight's Freelance block is the natural slot."
+      },
+      {
+        "title": "Grade the backlog Tuesday and Wednesday nights",
+        "text": "Three overdue grading tasks plus four due Friday. Clear the old ones before Thanksgiving Break."
+      }
+    ],
+    "opportunities": [
+      {
+        "role": "SPS",
+        "title": "The spark and the scorpion",
+        "text": "Today's Daily Creative is a ready-made Storyteller 101 or team talking point on balancing ideas and critique."
+      },
+      {
+        "role": "Teaching",
+        "title": "Batch three more videos",
+        "text": "With the camera set up for Week 5, record the Week 14 intro (Nov 22) and Week 6 announcement (Nov 23) too."
+      },
+      {
+        "role": "Seacoast",
+        "title": "Lock in Summerville",
+        "text": "Asking Jen Cameron today which month the 3rd Saturday films lets you plan December and January shoots."
+      }
+    ],
+    "projectCards": [
+      {
+        "role": "SPS",
+        "level": "High",
+        "why": "Status: Storyteller 101 main teaching is filmed; b-roll and editing are still open for the January launch. No SPS time in Toggl since the week of Oct 12.",
+        "best": "Today's move: revisit the SPS schedule and 2027 goals (2027 Planning, due Dec 29), then turn Storyteller 101 b-roll and edits into dated Things tasks for Tue-Thu mornings.",
+        "watch": "Morning block: 5:30-7:15 AM is clear. Start the Toggl timer for Smartphone Storytellers. project_status.md still says Module 5 is next, but projects.md says Modules 0-5 are complete; update project_status.md."
+      },
+      {
+        "role": "Teaching",
+        "level": "Critical",
+        "why": "Week 5 announcement and Website Evaluation 2 roster due today; Week 13 intro overdue since yesterday; three grading tasks overdue (oldest Nov 6).",
+        "best": "Videos at lunch, roster at 8 PM, grading Tuesday and Wednesday nights.",
+        "watch": "Four grading tasks due Fri Nov 20, Discussion 5 and Week 14 intro Nov 22."
+      },
+      {
+        "role": "Freelance",
+        "level": "High",
+        "why": "Preproduction is five days overdue.",
+        "best": "Tonight's Freelance/Admin block, after the roster.",
+        "watch": "American Integrity: Today in Things is EDIT 16 Alexandra Rodriguez (tracker: awaiting client feedback). Nothing else this week; EDIT 20th 08 Dick Dowd is due Nov 25."
+      },
+      {
+        "role": "Seacoast",
+        "level": "Medium",
+        "why": "Debrief, Christmas Decor and Film Team Weekly this morning, Christmagiving Tuesday, NYE Service V1 due Thursday.",
+        "best": "Ask Jen Cameron about the Summerville 3rd Saturday month today.",
+        "watch": "Film Team Weekly (10:30) overlaps Christmas Decor. Bumper Studio Days Nov 19-21 are unflagged."
+      },
+      {
+        "role": "Personal",
+        "level": "Medium",
+        "why": "DR interviews take family time tonight and tomorrow; Ralph's birthday is Tuesday.",
+        "best": "Keep the rest of 5-8 PM home both nights.",
+        "watch": "Lily's 4th Grade Show Thursday 6:00 PM overlaps the end of the Bumper Studio block."
+      },
+      {
+        "role": "Speaking",
+        "level": "Low",
+        "why": "Only Archive Old Talks and Archive Talk remain, both undated.",
+        "best": "Leave them for a light evening.",
+        "watch": "SALT Advisory Team Info Meeting, Thu Dec 3 at 4:30 PM."
+      }
     ]
-   },
-   {
-    "date": "2026-11-18",
-    "events": [
-     {
-      "time": "10:00 AM",
-      "start": "10:00",
-      "end": "11:00",
-      "title": "Doc Tremble",
-      "location": "",
-      "role": null,
-      "fyi": false
-     },
-     {
-      "time": "12:00 PM",
-      "start": "12:00",
-      "end": "13:00",
-      "title": "Book Club: Mac Lake's Leading Others",
-      "location": "Microsoft Teams",
-      "role": "Seacoast",
-      "fyi": false
-     },
-     {
-      "time": "12:00 PM",
-      "start": "12:00",
-      "end": "13:00",
-      "title": "Creative Lunch",
-      "location": "Microsoft Teams",
-      "role": "Seacoast",
-      "fyi": false
-     },
-     {
-      "time": "6:30 PM",
-      "start": "18:30",
-      "end": "20:30",
-      "title": "MDWK",
-      "location": "750 Long Point Rd",
-      "role": null,
-      "fyi": false
-     }
-    ]
-   },
-   {
-    "date": "2026-11-19",
-    "events": [
-     {
-      "time": "All day",
-      "title": "NYE Service V1 due",
-      "location": "",
-      "role": "Seacoast",
-      "fyi": false
-     },
-     {
-      "time": "12:00 PM",
-      "start": "12:00",
-      "end": "13:00",
-      "title": "AI Training Session 1a: Optional AI Q&A",
-      "location": "Microsoft Teams",
-      "role": "Seacoast",
-      "fyi": true
-     },
-     {
-      "time": "12:00 PM",
-      "start": "12:00",
-      "end": "13:00",
-      "title": "Margaret & Creative: The Trilogy",
-      "location": "713 - Operations Meeting Room",
-      "role": "Seacoast",
-      "fyi": false
-     },
-     {
-      "time": "3:00 PM",
-      "start": "15:00",
-      "end": "18:00",
-      "title": "BLOCK FOR 2027 BUMPER STUDIO DAYS",
-      "location": "409 Altman St",
-      "role": "Seacoast",
-      "fyi": false
-     },
-     {
-      "time": "6:00 PM",
-      "start": "18:00",
-      "end": "19:30",
-      "title": "Lily- 4th Grade Show",
-      "location": "Howe Hall AIMS",
-      "role": "Personal",
-      "fyi": false
-     }
-    ]
-   },
-   {
-    "date": "2026-11-20",
-    "events": [
-     {
-      "time": "All day",
-      "title": "BLOCK 2027 BUMPER STUDIO DAYS",
-      "location": "",
-      "role": "Seacoast",
-      "fyi": false
-     },
-     {
-      "time": "All day",
-      "title": "Thanksgiving Break",
-      "location": "",
-      "role": "Personal",
-      "fyi": false
-     }
-    ]
-   },
-   {
-    "date": "2026-11-21",
-    "events": [
-     {
-      "time": "All day",
-      "title": "BLOCK 2027 BUMPER STUDIO DAYS",
-      "location": "",
-      "role": "Seacoast",
-      "fyi": false
-     },
-     {
-      "time": "All day",
-      "title": "Hannah Rumberger, birthday! (1985)",
-      "location": "",
-      "role": "Personal",
-      "fyi": false
-     }
-    ]
-   },
-   {
-    "date": "2026-11-22",
-    "events": [
-     {
-      "time": "6:00 AM",
-      "start": "06:00",
-      "end": "12:30",
-      "title": "Creative on Call",
-      "location": "",
-      "role": "Seacoast",
-      "fyi": false
-     }
-    ]
-   },
-   {
-    "date": "2026-11-23",
-    "events": [
-     {
-      "time": "9:00 AM",
-      "start": "09:00",
-      "end": "09:30",
-      "title": "Weekend Debrief Call",
-      "location": "Microsoft Teams",
-      "role": "Seacoast",
-      "fyi": false
-     },
-     {
-      "time": "10:30 AM",
-      "start": "10:30",
-      "end": "11:00",
-      "title": "Film Team Weekly",
-      "location": "Microsoft Teams",
-      "role": "Seacoast",
-      "fyi": false
-     }
-    ]
-   }
-  ]
- },
- "brief": {
-  "morningRead": [
-   "A Seacoast-heavy morning (Debrief, Christmas Decor, Film Team Weekly) with two Teaching deadlines due today and a third now overdue. Cool and dry, 41° at dawn, 62° this afternoon.",
-   "The week tightens fast: Christmagiving takes most of Tuesday, NYE Service V1 is due Thursday, and four more grading tasks land Friday. Clear today's Teaching videos at lunch, then use Tuesday and Wednesday evenings for the grading backlog before Friday."
-  ],
-  "watchOut": "Letting the Teaching backlog roll into Thanksgiving Break.",
-  "forgetting": [
-   {
-    "role": "Seacoast",
-    "title": "NYE Service V1, due Thursday",
-    "text": "It's on the calendar for Nov 19 but has no Things task. Add one so it isn't buried under Christmagiving."
-   },
-   {
-    "role": "Seacoast",
-    "title": "Bumper Studio Days are unflagged",
-    "text": "Nov 19-21 blocks run into the start of Thanksgiving Break. Decide if you're attending."
-   },
-   {
-    "role": "Personal",
-    "title": "Ralph's birthday tomorrow",
-    "text": "Tuesday is packed with Christmagiving and two DR interviews, so handle a card or call tonight."
-   },
-   {
-    "role": "SPS",
-    "title": "SPS status files are stale",
-    "text": "project_status.md still says Module 5 is next, and projects.md says Modules 0-5 are complete. Update both during this morning's planning."
-   }
-  ],
-  "whatsNext": [
-   {
-    "title": "Revisit SPS schedule and 2027 goals",
-    "text": "It's on Today and Monday is your SPS planning day. It sets up the Dec 29 planning deadline and the January Storyteller 101 launch."
-   },
-   {
-    "title": "Film Week 5 announcement and Week 13 intro together",
-    "text": "One setup at lunch clears today's deadline and yesterday's overdue video."
-   },
-   {
-    "title": "Build the Website Evaluation 2 roster",
-    "text": "Due today, and students need the new links before they start."
-   },
-   {
-    "title": "Knock out Preproduction",
-    "text": "Five days overdue; tonight's Freelance block is the natural slot."
-   },
-   {
-    "title": "Grade the backlog Tuesday and Wednesday nights",
-    "text": "Three overdue grading tasks plus four due Friday. Clear the old ones before Thanksgiving Break."
-   }
-  ],
-  "opportunities": [
-   {
-    "role": "SPS",
-    "title": "The spark and the scorpion",
-    "text": "Today's Daily Creative is a ready-made Storyteller 101 or team talking point on balancing ideas and critique."
-   },
-   {
-    "role": "Teaching",
-    "title": "Batch three more videos",
-    "text": "With the camera set up for Week 5, record the Week 14 intro (Nov 22) and Week 6 announcement (Nov 23) too."
-   },
-   {
-    "role": "Seacoast",
-    "title": "Lock in Summerville",
-    "text": "Asking Jen Cameron today which month the 3rd Saturday films lets you plan December and January shoots."
-   }
-  ],
-  "projectCards": [
-   {
-    "role": "SPS",
-    "level": "High",
-    "why": "Status: Storyteller 101 main teaching is filmed; b-roll and editing are still open for the January launch. No SPS time in Toggl since the week of Oct 12.",
-    "best": "Today's move: revisit the SPS schedule and 2027 goals (2027 Planning, due Dec 29), then turn Storyteller 101 b-roll and edits into dated Things tasks for Tue-Thu mornings.",
-    "watch": "Morning block: 5:30-7:15 AM is clear. Start the Toggl timer for Smartphone Storytellers. project_status.md still says Module 5 is next, but projects.md says Modules 0-5 are complete; update project_status.md."
-   },
-   {
-    "role": "Teaching",
-    "level": "Critical",
-    "why": "Week 5 announcement and Website Evaluation 2 roster due today; Week 13 intro overdue since yesterday; three grading tasks overdue (oldest Nov 6).",
-    "best": "Videos at lunch, roster at 8 PM, grading Tuesday and Wednesday nights.",
-    "watch": "Four grading tasks due Fri Nov 20, Discussion 5 and Week 14 intro Nov 22."
-   },
-   {
-    "role": "Freelance",
-    "level": "High",
-    "why": "Preproduction is five days overdue.",
-    "best": "Tonight's Freelance/Admin block, after the roster.",
-    "watch": "American Integrity: Today in Things is EDIT 16 Alexandra Rodriguez (tracker: awaiting client feedback). Nothing else this week; EDIT 20th 08 Dick Dowd is due Nov 25."
-   },
-   {
-    "role": "Seacoast",
-    "level": "Medium",
-    "why": "Debrief, Christmas Decor and Film Team Weekly this morning, Christmagiving Tuesday, NYE Service V1 due Thursday.",
-    "best": "Ask Jen Cameron about the Summerville 3rd Saturday month today.",
-    "watch": "Film Team Weekly (10:30) overlaps Christmas Decor. Bumper Studio Days Nov 19-21 are unflagged."
-   },
-   {
-    "role": "Personal",
-    "level": "Medium",
-    "why": "DR interviews take family time tonight and tomorrow; Ralph's birthday is Tuesday.",
-    "best": "Keep the rest of 5-8 PM home both nights.",
-    "watch": "Lily's 4th Grade Show Thursday 6:00 PM overlaps the end of the Bumper Studio block."
-   },
-   {
-    "role": "Speaking",
-    "level": "Low",
-    "why": "Only Archive Old Talks and Archive Talk remain, both undated.",
-    "best": "Leave them for a light evening.",
-    "watch": "SALT Advisory Team Info Meeting, Thu Dec 3 at 4:30 PM."
-   }
-  ]
- },
- "fitness": {
-  "eyebrow": "Monday · Chest & Biceps",
-  "stats": [
-   {
-    "value": "227.4",
-    "label": "lb, Nov 12 weigh-in"
-   },
-   {
-    "value": "2,320",
-    "label": "avg kcal, 5 full days Nov 9-14"
-   },
-   {
-    "value": "155",
-    "label": "avg protein g, same days"
-   },
-   {
-    "value": "7.2",
-    "label": "avg sleep h, 6 nights"
-   }
-  ],
-  "progress": [
-   {
-    "label": "Weight",
-    "text": "No weigh-in since 227.4 lb on Nov 12, so no weekly average yet. Goal 199 by Mar 28 needs about 1.5 lb/wk, inside the sustainable 1.1-2.3 lb/wk range. Weigh in a few mornings this week."
-   },
-   {
-    "label": "Nutrition",
-    "text": "Five full days (Nov 9, 10, 12, 13, 14) averaged 2,320 kcal (target 2,308) and 155g protein (target 200). Only Nov 10 and 13 hit 180g. Nov 11 (two meals) and Nov 15 (no breakfast, 1,138 kcal) look incomplete."
-   },
-   {
-    "label": "Strength",
-    "text": "One session last week: Back & Triceps Nov 13. Row held at 90 lb x10, close grip bench marked struggled at 75 lb again. Chest last trained Nov 2, legs last logged Oct 9."
-   },
-   {
-    "label": "Recovery",
-    "text": "7.2h average over 6 nights (Nov 10-15), two short (6.3h Nov 10 and 13). Yesterday RHR 63 and HRV 40 are both normal, so recovery is fine for lifting. Last night isn't in yet."
-   },
-   {
-    "label": "Activity",
-    "text": "About 5,400 steps a day Nov 10-15. Watch walks of 2.2 mi on Nov 12 and 13."
-   }
-  ],
-  "closing": "Protein is still the gap (155g vs 200g). Dumbbell bench was clean at 45 lb x10 on Nov 2, so try 50 lb today, and add a shake on low-protein days.",
-  "goals": [
-   {
-    "name": "Strength sessions",
-    "done": 0,
-    "total": 3
-   },
-   {
-    "name": "Off Day circuits",
-    "done": 0,
-    "total": 2
-   },
-   {
-    "name": "Walks (2 mi)",
-    "done": 0,
-    "total": 3
-   },
-   {
-    "name": "Protein days (180g+)",
-    "done": 0,
-    "total": 5
-   },
-   {
-    "name": "Sleep (7h+)",
-    "done": 0,
-    "total": 5
-   }
-  ],
-  "goalsNote": "New week. Last week's final: strength 1 of 3 (Back & Triceps only), circuits 0 of 2, walks 3 of 3, protein days 2 of 5, sleep 4 of 5. Chest & Biceps this morning starts the count; last night's sleep isn't in yet.",
-  "workout": {
-   "label": "Today's workout · Monday",
-   "title": "Chest & Biceps",
-   "date": "2026-11-16",
-   "lines": [
-    "Chest, pick 3: flat or incline barbell bench, flat or incline dumbbell bench, flat or incline dumbbell flys",
-    "Biceps, pick 3: alternate arm curls, incline hammer curls, EZ bar curls, barbell curls, concentration curls",
-    "Optional: pushups to failure before and after chest",
-    "Workout window clear, 8-9 AM, but tight: the Weekend Debrief call starts at 9:00. Start right at 8 and wrap by 8:55. Backup slot: 3:00-4:00 PM, after the Bryce interview."
-   ]
   },
-  "strengthNotes": [
-   "Dumbbell bench was clean at 45 lb x10 for all three sets Nov 2. Try 50 lb today.",
-   "Concentration curls struggled at 25 lb on Oct 19 and went mostly clean Nov 2 (10, 10, 8). Stay at 25 lb and finish the last set.",
-   "Close grip bench was marked struggled Nov 13 and Oct 30 at 75 lb. Drop to 70 lb on Wednesday and own all three sets.",
-   "Legs last logged Oct 9 (leg press 150, stiff leg deadlift 150). Start near those weights Friday."
-  ],
-  "macroNote": "Chest & Biceps 8-9 AM. Snack 1 falls during Christmas Decor (9:30-11:30 AM), so pack the shake. Dinner overlaps the 6:00 PM Tatum Zoom interview, so eat after it.",
-  "pack": {
-   "count": "1 meal away from home",
-   "items": [
-    {
-     "slot": "Snack 1",
-     "when": "Christmas Decor, 9:30 AM",
-     "text": "Cocoa Crispy's protein shake in a shaker bottle, add water on site."
+  "fitness": {
+    "eyebrow": "Tomorrow · Tuesday · Off Day Circuit",
+    "stats": [
+      {
+        "value": "227.4",
+        "label": "lb, Nov 12 weigh-in"
+      },
+      {
+        "value": "2,320",
+        "label": "avg kcal, 5 full days Nov 9-14"
+      },
+      {
+        "value": "155",
+        "label": "avg protein g, same days"
+      },
+      {
+        "value": "7.2",
+        "label": "avg sleep h, 6 nights"
+      }
+    ],
+    "progress": [
+      {
+        "label": "Weight",
+        "text": "No weigh-in since 227.4 lb on Nov 12, so no weekly average yet. Goal 199 by Mar 28 needs about 1.5 lb/wk, inside the sustainable 1.1-2.3 lb/wk range. Weigh in a few mornings this week."
+      },
+      {
+        "label": "Nutrition",
+        "text": "Five full days (Nov 9, 10, 12, 13, 14) averaged 2,320 kcal (target 2,308) and 155g protein (target 200). Only Nov 10 and 13 hit 180g. Nov 11 (two meals) and Nov 15 (no breakfast, 1,138 kcal) look incomplete."
+      },
+      {
+        "label": "Strength",
+        "text": "One session last week: Back & Triceps Nov 13. Row held at 90 lb x10, close grip bench marked struggled at 75 lb again. Chest last trained Nov 2, legs last logged Oct 9."
+      },
+      {
+        "label": "Recovery",
+        "text": "7.2h average over 6 nights (Nov 10-15), two short (6.3h Nov 10 and 13). Yesterday RHR 63 and HRV 40 are both normal, so recovery is fine for lifting. Last night isn't in yet."
+      },
+      {
+        "label": "Activity",
+        "text": "About 5,400 steps a day Nov 10-15. Watch walks of 2.2 mi on Nov 12 and 13."
+      }
+    ],
+    "closing": "Protein is still the gap (155g vs 200g). Dumbbell bench was clean at 45 lb x10 on Nov 2, so try 50 lb today, and add a shake on low-protein days.",
+    "goals": [
+      {
+        "name": "Strength sessions",
+        "done": 0,
+        "total": 3
+      },
+      {
+        "name": "Off Day circuits",
+        "done": 0,
+        "total": 2
+      },
+      {
+        "name": "Walks (2 mi)",
+        "done": 0,
+        "total": 3
+      },
+      {
+        "name": "Protein days (180g+)",
+        "done": 0,
+        "total": 5
+      },
+      {
+        "name": "Sleep (7h+)",
+        "done": 0,
+        "total": 5
+      }
+    ],
+    "goalsNote": "New week. Last week's final: strength 1 of 3 (Back & Triceps only), circuits 0 of 2, walks 3 of 3, protein days 2 of 5, sleep 4 of 5. Chest & Biceps this morning starts the count; last night's sleep isn't in yet.",
+    "workout": {
+      "label": "Tomorrow's workout · Tuesday",
+      "title": "Off Day Circuit",
+      "date": "2026-11-17",
+      "lines": [
+        "15 reps x 3 sets each, about 10-15 min at home",
+        "Bodyweight squats",
+        "Sit-ups",
+        "Kettlebell swings",
+        "Calf raises",
+        "Stretch goal: +5 reps on any exercise to hit 50 total, optional",
+        "Workout window clear, 8-9 AM. Christmagiving starts at 9:30 AM at the Mount Pleasant Campus, so knock out the circuit right at 8:00 before you leave."
+      ]
+    },
+    "strengthNotes": [
+      "Dumbbell bench was clean at 45 lb x10 for all three sets Nov 2. Try 50 lb today.",
+      "Concentration curls struggled at 25 lb on Oct 19 and went mostly clean Nov 2 (10, 10, 8). Stay at 25 lb and finish the last set.",
+      "Close grip bench was marked struggled Nov 13 and Oct 30 at 75 lb. Drop to 70 lb on Wednesday and own all three sets.",
+      "Legs last logged Oct 9 (leg press 150, stiff leg deadlift 150). Start near those weights Friday."
+    ],
+    "macroNote": "Off Day Circuit at 8 AM. Christmagiving (9:30 AM-2:30 PM) covers Snack 1 and lunch, and the 3:30-4:30 PM meetings and Zelda's lesson cover Snack 2, so pack all three. Dinner overlaps the 6:30 PM Josslyn Zoom interview, so eat before or after it.",
+    "pack": {
+      "count": "3 meals away from home",
+      "items": [
+        {
+          "slot": "Snack 1",
+          "when": "Christmagiving, 9:30 AM",
+          "text": "Cocoa Crispy's protein shake in a shaker bottle, add water on site."
+        },
+        {
+          "slot": "Lunch",
+          "when": "Christmagiving, 9:30 AM-2:30 PM",
+          "text": "PLN meal in an insulated bag, or chicken and rice in a container. Bring the Six Star shake powder too."
+        },
+        {
+          "slot": "Snack 2",
+          "when": "Hannah SIC Meeting, 3:30 PM",
+          "text": "Clementines or an applesauce pouch."
+        },
+        {
+          "slot": "Eating out",
+          "when": "Chick-fil-A",
+          "text": "Grilled nuggets (12 ct), side salad, fruit cup. About 350 kcal, 44g protein."
+        },
+        {
+          "slot": "Eating out",
+          "when": "McDonald's",
+          "text": "Grilled chicken sandwich, side salad, apple slices. About 410 kcal, 38g protein."
+        },
+        {
+          "slot": "Eating out",
+          "when": "Subway",
+          "text": "Rotisserie chicken chopped salad, extra chicken if available. About 190-240 kcal, 25-30g protein."
+        }
+      ]
+    },
+    "dinnerCall": {
+      "title": "Dinner call: chicken",
+      "text": "Chicken puts protein at 198g vs 188g with fish, within 2g of target. The plan runs about 500 kcal light: carbs 68g short and fat 27g short. Pack a banana with Snack 2, add a brown sugar cinnamon oatmeal pack at breakfast, and a string cheese to close most of it."
+    },
+    "alert": null,
+    "workoutDays": [
+      {
+        "date": "2026-11-18",
+        "title": "Back & Triceps",
+        "lines": [
+          "Back, pick 3: wide grip, reverse close grip or V-bar lat pulldowns, bent over rows, dumbbell pullovers, one arm rows",
+          "Triceps, pick 3: behind the head dumbbell press, close grip barbell press, dips, pressdowns, skull crushers, reverse grip bench"
+        ]
+      },
+      {
+        "date": "2026-11-19",
+        "title": "Off Day Circuit",
+        "lines": [
+          "15 reps x 3 sets each, about 10-15 min at home",
+          "Bodyweight squats",
+          "Sit-ups",
+          "Kettlebell swings",
+          "Calf raises"
+        ]
+      },
+      {
+        "date": "2026-11-20",
+        "title": "Legs & Shoulders",
+        "lines": [
+          "Legs: leg extensions, leg press (rotate foot position: regular, high, low, wide or close), stiff leg deadlifts",
+          "Shoulders, pick 3: front raises, side laterals, dumbbell upright rows, shrugs, dumbbell press",
+          "About 45-60 min at the gym"
+        ]
+      },
+      {
+        "date": "2026-11-21",
+        "title": "Rest day",
+        "lines": [
+          "No workout scheduled."
+        ]
+      },
+      {
+        "date": "2026-11-22",
+        "title": "Rest day",
+        "lines": [
+          "No workout scheduled."
+        ]
+      },
+      {
+        "date": "2026-11-23",
+        "title": "Chest & Biceps",
+        "lines": [
+          "Chest, pick 3: flat or incline barbell bench, flat or incline dumbbell bench, flat or incline dumbbell flys",
+          "Biceps, pick 3: alternate arm curls, incline hammer curls, EZ bar curls, barbell curls, concentration curls",
+          "Optional: pushups to failure before and after chest"
+        ]
+      },
+      {
+        "date": "2026-11-24",
+        "title": "Off Day Circuit",
+        "lines": [
+          "15 reps x 3 sets each, about 10-15 min at home",
+          "Bodyweight squats",
+          "Sit-ups",
+          "Kettlebell swings",
+          "Calf raises"
+        ]
+      }
+    ],
+    "split": [
+      {
+        "day": "Mon",
+        "what": "Chest & Biceps"
+      },
+      {
+        "day": "Tue",
+        "what": "Off Day Circuit"
+      },
+      {
+        "day": "Wed",
+        "what": "Back & Triceps"
+      },
+      {
+        "day": "Thu",
+        "what": "Off Day Circuit"
+      },
+      {
+        "day": "Fri",
+        "what": "Legs & Shoulders"
+      },
+      {
+        "day": "Sat",
+        "what": "Rest"
+      },
+      {
+        "day": "Sun",
+        "what": "Rest"
+      }
+    ],
+    "meals": [
+      {
+        "slot": "Morning Coffee",
+        "what": "Collagen protein (2 TBSP) in coffee",
+        "cal": 18,
+        "protein": 4,
+        "carbs": 0,
+        "fat": 0
+      },
+      {
+        "slot": "Breakfast",
+        "what": "2 whole eggs + 4 egg whites",
+        "cal": 210,
+        "protein": 28,
+        "carbs": 2,
+        "fat": 10
+      },
+      {
+        "slot": "Snack 1",
+        "what": "Cocoa Crispy's protein shake with water",
+        "cal": 130,
+        "protein": 25,
+        "carbs": 6,
+        "fat": 2
+      },
+      {
+        "slot": "Lunch",
+        "what": "Project Lean Nation meal",
+        "cal": 450,
+        "protein": 35,
+        "carbs": 45,
+        "fat": 12
+      },
+      {
+        "slot": "Post-Lunch Shake",
+        "what": "Six Star Whey, Frosted Flakes, with water",
+        "cal": 190,
+        "protein": 30,
+        "carbs": 9,
+        "fat": 3
+      },
+      {
+        "slot": "Snack 2",
+        "what": "Clementines and/or applesauce",
+        "cal": 90,
+        "protein": 1,
+        "carbs": 22,
+        "fat": 0
+      },
+      {
+        "slot": "Dinner",
+        "what": "Option A: baked chicken breast (6-7 oz), 1/2 cup rice, small pat of butter",
+        "cal": 430,
+        "protein": 48,
+        "carbs": 32,
+        "fat": 10
+      },
+      {
+        "slot": "Evening Snack",
+        "what": "Blue Bunny caramel mini cone + Cinnamon Bun casein shake",
+        "cal": 290,
+        "protein": 27,
+        "carbs": 31,
+        "fat": 8
+      }
+    ],
+    "macroTargets": {
+      "cal": 2308,
+      "protein": 200,
+      "carbs": 215,
+      "fat": 72
     }
-   ]
   },
-  "dinnerCall": {
-   "title": "Dinner call: chicken",
-   "text": "Chicken puts protein at 198g vs 188g with fish, within 2g of target. The plan runs about 500 kcal light: carbs 68g short and fat 27g short. A banana with Snack 2, a brown sugar cinnamon oatmeal pack at breakfast, and a string cheese close most of it."
+  "time": {
+    "guidingOrder": "Faith, Family, Smartphone Storytellers, Fitness, Seacoast, Margin",
+    "periods": [
+      {
+        "id": "week",
+        "label": "This week",
+        "total": "0.0",
+        "caption": "Nov 16 week · nothing logged yet",
+        "note": "Nothing logged yet this week. Last week was light at 8.8h (Speaking 3.5h, Moody 3.1h, ACEP 1.8h, Seacoast 0.4h), with Seacoast far under its rough 40h plan during four days out of the office. Smartphone Storytellers has no logged time since the week of Oct 12, against a rough 9-11h a week. Start the SPS timer at 5:30 this morning.",
+        "rows": [],
+        "days": null
+      },
+      {
+        "id": "lastweek",
+        "label": "Last week",
+        "total": "8.8",
+        "caption": "Nov 9-15",
+        "note": "",
+        "rows": [
+          {
+            "name": "Speaking",
+            "hours": 3.5,
+            "role": "Speaking"
+          },
+          {
+            "name": "Moody",
+            "hours": 3.1,
+            "role": "Teaching"
+          },
+          {
+            "name": "ACEP",
+            "hours": 1.8,
+            "role": "Freelance"
+          },
+          {
+            "name": "Seacoast Church",
+            "hours": 0.4,
+            "role": "Seacoast"
+          }
+        ],
+        "days": [
+          {
+            "day": "Mon",
+            "hours": 0.0
+          },
+          {
+            "day": "Tue",
+            "hours": 0.0
+          },
+          {
+            "day": "Wed",
+            "hours": 2.3
+          },
+          {
+            "day": "Thu",
+            "hours": 2.1
+          },
+          {
+            "day": "Fri",
+            "hours": 1.4
+          },
+          {
+            "day": "Sat",
+            "hours": 2.0
+          },
+          {
+            "day": "Sun",
+            "hours": 1.1
+          }
+        ]
+      },
+      {
+        "id": "month",
+        "label": "Last month",
+        "total": "294.8",
+        "caption": "October 2026",
+        "note": "",
+        "rows": [
+          {
+            "name": "Seacoast Church",
+            "hours": 128.6,
+            "role": "Seacoast"
+          },
+          {
+            "name": "Speaking",
+            "hours": 68.5,
+            "role": "Speaking"
+          },
+          {
+            "name": "ACEP",
+            "hours": 53.5,
+            "role": "Freelance"
+          },
+          {
+            "name": "Moody",
+            "hours": 21.4,
+            "role": "Teaching"
+          },
+          {
+            "name": "CSU",
+            "hours": 11.6,
+            "role": "Teaching"
+          },
+          {
+            "name": "Smartphone Storytellers",
+            "hours": 11.2,
+            "role": "SPS"
+          }
+        ],
+        "days": null
+      }
+    ]
   },
-  "alert": null,
-  "workoutDays": [
-   {
-    "date": "2026-11-17",
-    "title": "Off Day Circuit",
-    "lines": [
-     "15 reps x 3 sets each, about 10-15 min at home",
-     "Bodyweight squats",
-     "Sit-ups",
-     "Kettlebell swings",
-     "Calf raises"
-    ]
-   },
-   {
-    "date": "2026-11-18",
-    "title": "Back & Triceps",
-    "lines": [
-     "Back, pick 3: wide grip, reverse close grip or V-bar lat pulldowns, bent over rows, dumbbell pullovers, one arm rows",
-     "Triceps, pick 3: behind the head dumbbell press, close grip barbell press, dips, pressdowns, skull crushers, reverse grip bench"
-    ]
-   },
-   {
-    "date": "2026-11-19",
-    "title": "Off Day Circuit",
-    "lines": [
-     "15 reps x 3 sets each, about 10-15 min at home",
-     "Bodyweight squats",
-     "Sit-ups",
-     "Kettlebell swings",
-     "Calf raises"
-    ]
-   },
-   {
-    "date": "2026-11-20",
-    "title": "Legs & Shoulders",
-    "lines": [
-     "Legs: leg extensions, leg press (rotate foot position: regular, high, low, wide or close), stiff leg deadlifts",
-     "Shoulders, pick 3: front raises, side laterals, dumbbell upright rows, shrugs, dumbbell press",
-     "About 45-60 min at the gym"
-    ]
-   },
-   {
-    "date": "2026-11-21",
-    "title": "Rest day",
-    "lines": [
-     "No workout scheduled."
-    ]
-   },
-   {
-    "date": "2026-11-22",
-    "title": "Rest day",
-    "lines": [
-     "No workout scheduled."
-    ]
-   },
-   {
-    "date": "2026-11-23",
-    "title": "Chest & Biceps",
-    "lines": [
-     "Chest, pick 3: flat or incline barbell bench, flat or incline dumbbell bench, flat or incline dumbbell flys",
-     "Biceps, pick 3: alternate arm curls, incline hammer curls, EZ bar curls, barbell curls, concentration curls",
-     "Optional: pushups to failure before and after chest"
-    ]
-   }
-  ],
-  "split": [
-   {
-    "day": "Mon",
-    "what": "Chest & Biceps"
-   },
-   {
-    "day": "Tue",
-    "what": "Off Day Circuit"
-   },
-   {
-    "day": "Wed",
-    "what": "Back & Triceps"
-   },
-   {
-    "day": "Thu",
-    "what": "Off Day Circuit"
-   },
-   {
-    "day": "Fri",
-    "what": "Legs & Shoulders"
-   },
-   {
-    "day": "Sat",
-    "what": "Rest"
-   },
-   {
-    "day": "Sun",
-    "what": "Rest"
-   }
-  ],
-  "meals": [
-   {
-    "slot": "Morning Coffee",
-    "what": "Collagen protein (2 TBSP) in coffee",
-    "cal": 18,
-    "protein": 4,
-    "carbs": 0,
-    "fat": 0
-   },
-   {
-    "slot": "Breakfast",
-    "what": "2 whole eggs + 4 egg whites",
-    "cal": 210,
-    "protein": 28,
-    "carbs": 2,
-    "fat": 10
-   },
-   {
-    "slot": "Snack 1",
-    "what": "Cocoa Crispy's protein shake with water",
-    "cal": 130,
-    "protein": 25,
-    "carbs": 6,
-    "fat": 2
-   },
-   {
-    "slot": "Lunch",
-    "what": "Project Lean Nation meal",
-    "cal": 450,
-    "protein": 35,
-    "carbs": 45,
-    "fat": 12
-   },
-   {
-    "slot": "Post-Lunch Shake",
-    "what": "Six Star Whey, Frosted Flakes, with water",
-    "cal": 190,
-    "protein": 30,
-    "carbs": 9,
-    "fat": 3
-   },
-   {
-    "slot": "Snack 2",
-    "what": "Clementines and/or applesauce",
-    "cal": 90,
-    "protein": 1,
-    "carbs": 22,
-    "fat": 0
-   },
-   {
-    "slot": "Dinner",
-    "what": "Option A: baked chicken breast (6-7 oz), 1/2 cup rice, small pat of butter",
-    "cal": 430,
-    "protein": 48,
-    "carbs": 32,
-    "fat": 10
-   },
-   {
-    "slot": "Evening Snack",
-    "what": "Blue Bunny caramel mini cone + Cinnamon Bun casein shake",
-    "cal": 290,
-    "protein": 27,
-    "carbs": 31,
-    "fat": 8
-   }
-  ],
-  "macroTargets": {
-   "cal": 2308,
-   "protein": 200,
-   "carbs": 215,
-   "fat": 72
-  }
- },
- "time": {
-  "guidingOrder": "Faith, Family, Smartphone Storytellers, Fitness, Seacoast, Margin",
-  "periods": [
-   {
-    "id": "week",
-    "label": "This week",
-    "total": "0.0",
-    "caption": "Nov 16 week · nothing logged yet",
-    "note": "Nothing logged yet this week. Last week was light at 8.8h (Speaking 3.5h, Moody 3.1h, ACEP 1.8h, Seacoast 0.4h), with Seacoast far under its rough 40h plan during four days out of the office. Smartphone Storytellers has no logged time since the week of Oct 12, against a rough 9-11h a week. Start the SPS timer at 5:30 this morning.",
-    "rows": [],
-    "days": null
-   },
-   {
-    "id": "lastweek",
-    "label": "Last week",
-    "total": "8.8",
-    "caption": "Nov 9-15",
-    "note": "",
-    "rows": [
-     {
-      "name": "Speaking",
-      "hours": 3.5,
-      "role": "Speaking"
-     },
-     {
-      "name": "Moody",
-      "hours": 3.1,
-      "role": "Teaching"
-     },
-     {
-      "name": "ACEP",
-      "hours": 1.8,
-      "role": "Freelance"
-     },
-     {
-      "name": "Seacoast Church",
-      "hours": 0.4,
-      "role": "Seacoast"
-     }
+  "week": {
+    "rangeLabel": "Week of Nov 16 - Nov 22",
+    "focus": [
+      {
+        "role": "Teaching",
+        "title": "Today's Teaching deadlines",
+        "text": "FILM Week 5 Announcement Video and BUILD Website Evaluation 2 roster.",
+        "when": "Nov 16",
+        "overdue": false
+      },
+      {
+        "role": "Teaching",
+        "title": "Grading backlog",
+        "text": "Newspaper #2 (Nov 6), Blog Post #5 and Newspaper #3 (Nov 13), plus the Week 13 intro (Nov 15).",
+        "when": "Nov 6",
+        "overdue": true
+      },
+      {
+        "role": "Freelance",
+        "title": "Preproduction",
+        "text": "Five days overdue. Tonight's Freelance/Admin block.",
+        "when": "Nov 11",
+        "overdue": true
+      },
+      {
+        "role": "SPS",
+        "title": "2027 schedule and goals",
+        "text": "On Today. Use this morning's planning block and add dated Storyteller 101 tasks.",
+        "when": "Nov 16",
+        "overdue": false
+      },
+      {
+        "role": "Seacoast",
+        "title": "NYE Service V1",
+        "text": "Due Thursday, with no Things task behind it.",
+        "when": "Nov 19",
+        "overdue": false
+      },
+      {
+        "role": "Teaching",
+        "title": "Friday grading",
+        "text": "Discussion 4, Blog Post #6, Website Evaluation #1 and Assignment 4-1.",
+        "when": "Nov 20",
+        "overdue": false
+      }
     ],
-    "days": [
-     {
-      "day": "Mon",
-      "hours": 0.0
-     },
-     {
-      "day": "Tue",
-      "hours": 0.0
-     },
-     {
-      "day": "Wed",
-      "hours": 2.3
-     },
-     {
-      "day": "Thu",
-      "hours": 2.1
-     },
-     {
-      "day": "Fri",
-      "hours": 1.4
-     },
-     {
-      "day": "Sat",
-      "hours": 2.0
-     },
-     {
-      "day": "Sun",
-      "hours": 1.1
-     }
-    ]
-   },
-   {
-    "id": "month",
-    "label": "Last month",
-    "total": "294.8",
-    "caption": "October 2026",
-    "note": "",
-    "rows": [
-     {
-      "name": "Seacoast Church",
-      "hours": 128.6,
-      "role": "Seacoast"
-     },
-     {
-      "name": "Speaking",
-      "hours": 68.5,
-      "role": "Speaking"
-     },
-     {
-      "name": "ACEP",
-      "hours": 53.5,
-      "role": "Freelance"
-     },
-     {
-      "name": "Moody",
-      "hours": 21.4,
-      "role": "Teaching"
-     },
-     {
-      "name": "CSU",
-      "hours": 11.6,
-      "role": "Teaching"
-     },
-     {
-      "name": "Smartphone Storytellers",
-      "hours": 11.2,
-      "role": "SPS"
-     }
+    "overdue": [
+      {
+        "title": "GRADE Newspaper Article Design #2",
+        "role": "Teaching",
+        "due": "Nov 6"
+      },
+      {
+        "title": "Preproduction",
+        "role": "Freelance",
+        "due": "Nov 11"
+      },
+      {
+        "title": "GRADE Blog Post #5",
+        "role": "Teaching",
+        "due": "Nov 13"
+      },
+      {
+        "title": "GRADE Newspaper Article Design #3",
+        "role": "Teaching",
+        "due": "Nov 13"
+      },
+      {
+        "title": "RECORD Week 13 Intro video",
+        "role": "Teaching",
+        "due": "Nov 15"
+      }
     ],
-    "days": null
-   }
-  ]
- },
- "week": {
-  "rangeLabel": "Week of Nov 16 - Nov 22",
-  "focus": [
-   {
-    "role": "Teaching",
-    "title": "Today's Teaching deadlines",
-    "text": "FILM Week 5 Announcement Video and BUILD Website Evaluation 2 roster.",
-    "when": "Nov 16",
-    "overdue": false
-   },
-   {
-    "role": "Teaching",
-    "title": "Grading backlog",
-    "text": "Newspaper #2 (Nov 6), Blog Post #5 and Newspaper #3 (Nov 13), plus the Week 13 intro (Nov 15).",
-    "when": "Nov 6",
-    "overdue": true
-   },
-   {
-    "role": "Freelance",
-    "title": "Preproduction",
-    "text": "Five days overdue. Tonight's Freelance/Admin block.",
-    "when": "Nov 11",
-    "overdue": true
-   },
-   {
-    "role": "SPS",
-    "title": "2027 schedule and goals",
-    "text": "On Today. Use this morning's planning block and add dated Storyteller 101 tasks.",
-    "when": "Nov 16",
-    "overdue": false
-   },
-   {
-    "role": "Seacoast",
-    "title": "NYE Service V1",
-    "text": "Due Thursday, with no Things task behind it.",
-    "when": "Nov 19",
-    "overdue": false
-   },
-   {
-    "role": "Teaching",
-    "title": "Friday grading",
-    "text": "Discussion 4, Blog Post #6, Website Evaluation #1 and Assignment 4-1.",
-    "when": "Nov 20",
-    "overdue": false
-   }
-  ],
-  "overdue": [
-   {
-    "title": "GRADE Newspaper Article Design #2",
-    "role": "Teaching",
-    "due": "Nov 6"
-   },
-   {
-    "title": "Preproduction",
-    "role": "Freelance",
-    "due": "Nov 11"
-   },
-   {
-    "title": "GRADE Blog Post #5",
-    "role": "Teaching",
-    "due": "Nov 13"
-   },
-   {
-    "title": "GRADE Newspaper Article Design #3",
-    "role": "Teaching",
-    "due": "Nov 13"
-   },
-   {
-    "title": "RECORD Week 13 Intro video",
-    "role": "Teaching",
-    "due": "Nov 15"
-   }
-  ],
-  "projects": [
-   {
-    "role": "Seacoast",
-    "area": "Seacoast",
-    "roleEvaluation": "Busy week before Thanksgiving Break: Christmas prep, Christmagiving, NYE Service V1 due Thursday. Only 0.4h logged last week.",
-    "blocks": [
-     {
-      "label": "Active projects",
-      "lines": [
-       "2026-27 Campus Coverage",
-       "Seacoast Missions Storyteller Project (b-roll and edit)",
-       "Seacoast Filming Best Practices (b-roll and edit)",
-       "Seacoast at Home - Weekend After Christmas (edit next)",
-       "Seacoast Story Database (pitch stage)"
-      ]
-     },
-     {
-      "label": "This week",
-      "lines": [
-       "Ask Jen Cameron which month Summerville's 3rd Saturday films (on Today)",
-       "Weekend Debrief, Christmas Decor, Film Team Weekly, Mon Nov 16",
-       "Christmagiving, Tue Nov 17",
-       "NYE Service V1 due, Thu Nov 19",
-       "2027 Bumper Studio Days, Nov 19-21 (unflagged)",
-       "Creative on Call, Sun Nov 22"
-      ]
-     },
-     {
-      "label": "This month",
-      "lines": [
-       "Offices closed Thu Nov 26",
-       "Dream Team Celebration Dec 2, December Staff Recording Dec 3",
-       "Christmas Dress Rehearsal Dec 15 (unflagged)"
-      ]
-     },
-     {
-      "label": "Suggestions",
-      "lines": [
-       "Add a Things task for NYE Service V1.",
-       "Flag the bumper studio days; they overlap the start of Thanksgiving Break."
-      ]
-     }
+    "projects": [
+      {
+        "role": "Seacoast",
+        "area": "Seacoast",
+        "roleEvaluation": "Busy week before Thanksgiving Break: Christmas prep, Christmagiving, NYE Service V1 due Thursday. Only 0.4h logged last week.",
+        "blocks": [
+          {
+            "label": "Active projects",
+            "lines": [
+              "2026-27 Campus Coverage",
+              "Seacoast Missions Storyteller Project (b-roll and edit)",
+              "Seacoast Filming Best Practices (b-roll and edit)",
+              "Seacoast at Home - Weekend After Christmas (edit next)",
+              "Seacoast Story Database (pitch stage)"
+            ]
+          },
+          {
+            "label": "This week",
+            "lines": [
+              "Ask Jen Cameron which month Summerville's 3rd Saturday films (on Today)",
+              "Weekend Debrief, Christmas Decor, Film Team Weekly, Mon Nov 16",
+              "Christmagiving, Tue Nov 17",
+              "NYE Service V1 due, Thu Nov 19",
+              "2027 Bumper Studio Days, Nov 19-21 (unflagged)",
+              "Creative on Call, Sun Nov 22"
+            ]
+          },
+          {
+            "label": "This month",
+            "lines": [
+              "Offices closed Thu Nov 26",
+              "Dream Team Celebration Dec 2, December Staff Recording Dec 3",
+              "Christmas Dress Rehearsal Dec 15 (unflagged)"
+            ]
+          },
+          {
+            "label": "Suggestions",
+            "lines": [
+              "Add a Things task for NYE Service V1.",
+              "Flag the bumper studio days; they overlap the start of Thanksgiving Break."
+            ]
+          }
+        ]
+      },
+      {
+        "role": "Teaching",
+        "area": "Teaching",
+        "roleEvaluation": "Behind: four items overdue (oldest Nov 6) and two due today, with four more grading tasks Friday.",
+        "blocks": [
+          {
+            "label": "Active projects",
+            "lines": [
+              "CM 1110 (Moody)",
+              "GSU 1120 (Moody)",
+              "COMM 335 (CSU)",
+              "COM 260 (CSU), Spring 2027"
+            ]
+          },
+          {
+            "label": "This week",
+            "lines": [
+              "Due today: FILM Week 5 Announcement Video, BUILD Website Evaluation 2 roster",
+              "Overdue: GRADE Newspaper Article Design #2 (Nov 6), GRADE Blog Post #5 and Newspaper #3 (Nov 13), RECORD Week 13 Intro (Nov 15)",
+              "On Today: RECORD video announcement, CHECK IN with 4 students, CHECK for assignments to grade",
+              "Nov 20: four grading tasks",
+              "Nov 22: Discussion 5 response, Week 14 intro"
+            ]
+          },
+          {
+            "label": "This month",
+            "lines": [
+              "Nov 23: Week 6 announcement",
+              "Nov 27: four grading tasks",
+              "Nov 29-30: Discussion 6, Week 15 intro, Week 7 announcement",
+              "Dec 4: five grading tasks",
+              "Dec 11: four grading tasks"
+            ]
+          },
+          {
+            "label": "Suggestions",
+            "lines": [
+              "Grade the backlog Tuesday and Wednesday nights.",
+              "Batch the Week 5, Week 13, Week 14 and Week 6 videos in one sitting."
+            ]
+          }
+        ]
+      },
+      {
+        "role": "Freelance",
+        "area": "Freelance (ACEP)",
+        "roleEvaluation": "Behind: Preproduction is five days past its deadline. 1.8h logged last week.",
+        "blocks": [
+          {
+            "label": "Active projects",
+            "lines": [
+              "American Integrity (edits and 20th anniversary)",
+              "Bread of Life (Eliza's Story, Retreat Center Fundraiser)",
+              "Awaken Church Story (aired Nov 15)",
+              "Walters Marriage Training (pitched)"
+            ]
+          },
+          {
+            "label": "This week",
+            "lines": [
+              "Overdue: Preproduction (due Nov 11)",
+              "EDIT 16 - Alexandra Rodriguez on Today (tracker: awaiting client feedback)"
+            ]
+          },
+          {
+            "label": "This month",
+            "lines": [
+              "EDIT 20th 08 - Dick Dowd, Nov 25",
+              "EDIT 20th 09 - Wei Xie, Nov 30",
+              "EDIT 20th 10 - Danielle DeGain & Donna Gonzalez, Dec 2",
+              "EDIT 20th 11 - Steve Biggs, Dec 9",
+              "EDIT 20th 12 - Dennis Gagnon, Dec 14"
+            ]
+          },
+          {
+            "label": "Suggestions",
+            "lines": [
+              "Move EDIT 16 off Today until the client responds.",
+              "Close the Awaken Church project now that it has aired."
+            ]
+          }
+        ]
+      },
+      {
+        "role": "SPS",
+        "area": "Smartphone Storytellers",
+        "roleEvaluation": "Stalled but restarting: no SPS time logged since the week of Oct 12; the 2027 planning task is on Today.",
+        "blocks": [
+          {
+            "label": "Active projects",
+            "lines": [
+              "Storyteller 101 (January 2027 launch, end of 2026 drop-dead)",
+              "2027 Planning (Dec 29)",
+              "Product Launch, 7 products (on hold)"
+            ]
+          },
+          {
+            "label": "This week",
+            "lines": [
+              "Revisit Smartphone Storytellers schedule and goals for next year (on Today)"
+            ]
+          },
+          {
+            "label": "Open (no deadline)",
+            "lines": [
+              "Storyteller 101 b-roll and editing",
+              "Launch infrastructure: video hosting, landing page, enrollment flow"
+            ]
+          },
+          {
+            "label": "Suggestions",
+            "lines": [
+              "Turn Storyteller 101 b-roll and edits into dated Things tasks for Tue-Thu mornings.",
+              "Update project_status.md (still says Module 5 next)."
+            ]
+          }
+        ]
+      },
+      {
+        "role": "Speaking",
+        "area": "Speaking",
+        "roleEvaluation": "On track: only two undated archive tasks remain.",
+        "blocks": [
+          {
+            "label": "Active projects",
+            "lines": [
+              "FILO",
+              "Church Production Article",
+              "SALT Meetup Call (Nov 10, still listed Active)"
+            ]
+          },
+          {
+            "label": "This week",
+            "lines": [
+              "On Today: Archive Old Talks, Archive Talk"
+            ]
+          },
+          {
+            "label": "This month",
+            "lines": [
+              "SALT Advisory Team Info Meeting, Thu Dec 3, 4:30 PM"
+            ]
+          },
+          {
+            "label": "Suggestions",
+            "lines": [
+              "Mark the SALT Meetup Call done in projects.md if it's finished.",
+              "Set a new date for the Church Production Article draft."
+            ]
+          }
+        ]
+      },
+      {
+        "role": "Personal",
+        "area": "Personal",
+        "roleEvaluation": "Family time takes hits this week: DR interviews Mon and Tue evenings, MDWK Wednesday, Lily's show Thursday.",
+        "blocks": [
+          {
+            "label": "Active projects",
+            "lines": [
+              "Guitar (Modules 0-2)",
+              "Meal Options",
+              "Smart Home Automation (on hold)"
+            ]
+          },
+          {
+            "label": "This week",
+            "lines": [
+              "Ralph's birthday, Tue Nov 17",
+              "Zelda's violin lesson, Tue 3:45 PM",
+              "Lily's 4th Grade Show, Thu Nov 19, 6:00 PM",
+              "Thanksgiving Break starts Fri Nov 20"
+            ]
+          },
+          {
+            "label": "This month",
+            "lines": [
+              "Dragonforce, Tue Nov 24 (Charlotte, runs to 11:30 PM)",
+              "Lindsey Stirling, Sat Nov 28",
+              "Hanahan tree lighting Dec 4, Titus' party Dec 5",
+              "Zelda Orchestra Concert, Thu Dec 10 (unflagged)"
+            ]
+          },
+          {
+            "label": "Suggestions",
+            "lines": [
+              "Workouts: Chest & Biceps today, circuit Tue, Back & Triceps Wed, circuit Thu, Legs & Shoulders Fri.",
+              "Plan travel for the Dragonforce night in Charlotte."
+            ]
+          }
+        ]
+      }
+    ],
+    "calendarNote": "From weekly-data.txt refreshed on the Mac at 3:02 AM (the refresh script can't reach Things from this cloud session). FYI rows are flagged not attending. Coworker PTO blocks are hidden.",
+    "calendar": [
+      {
+        "kicker": "This week",
+        "title": "Week of Nov 16",
+        "rows": [
+          {
+            "date": "2026-11-16",
+            "day": "Mon 11/16",
+            "time": "9:00 AM",
+            "title": "Weekend Debrief Call",
+            "fyi": false,
+            "start": "09:00",
+            "end": "09:30"
+          },
+          {
+            "date": "2026-11-16",
+            "day": "",
+            "time": "9:30 AM",
+            "title": "Christmas Decor- Central and MTP Staff",
+            "fyi": false,
+            "start": "09:30",
+            "end": "11:30"
+          },
+          {
+            "date": "2026-11-16",
+            "day": "",
+            "time": "10:30 AM",
+            "title": "Film Team Weekly",
+            "fyi": false,
+            "start": "10:30",
+            "end": "11:00"
+          },
+          {
+            "date": "2026-11-16",
+            "day": "",
+            "time": "2:30 PM",
+            "title": "Bryce DR interview",
+            "fyi": false,
+            "start": "14:30",
+            "end": "15:00"
+          },
+          {
+            "date": "2026-11-16",
+            "day": "",
+            "time": "6:00 PM",
+            "title": "Tatum DR interview",
+            "fyi": false,
+            "start": "18:00",
+            "end": "18:30"
+          },
+          {
+            "date": "2026-11-17",
+            "day": "Tue 11/17",
+            "time": "All day",
+            "title": "Ralph's Birthday",
+            "fyi": false
+          },
+          {
+            "date": "2026-11-17",
+            "day": "",
+            "time": "9:30 AM",
+            "title": "Christmagiving",
+            "fyi": false,
+            "start": "09:30",
+            "end": "14:30"
+          },
+          {
+            "date": "2026-11-17",
+            "day": "",
+            "time": "3:30 PM",
+            "title": "Hannah SIC Meeting- HHA Library",
+            "fyi": true,
+            "start": "15:30",
+            "end": "16:15"
+          },
+          {
+            "date": "2026-11-17",
+            "day": "",
+            "time": "3:45 PM",
+            "title": "Zelda’s Violin Lesson",
+            "fyi": false,
+            "start": "15:45",
+            "end": "16:15"
+          },
+          {
+            "date": "2026-11-17",
+            "day": "",
+            "time": "4:00 PM",
+            "title": "Cambyll DR interview",
+            "fyi": false,
+            "start": "16:00",
+            "end": "16:30"
+          },
+          {
+            "date": "2026-11-17",
+            "day": "",
+            "time": "6:30 PM",
+            "title": "Josslyn DR interview",
+            "fyi": false,
+            "start": "18:30",
+            "end": "19:00"
+          },
+          {
+            "date": "2026-11-18",
+            "day": "Wed 11/18",
+            "time": "10:00 AM",
+            "title": "Doc Tremble",
+            "fyi": false,
+            "start": "10:00",
+            "end": "11:00"
+          },
+          {
+            "date": "2026-11-18",
+            "day": "",
+            "time": "12:00 PM",
+            "title": "Book Club: Mac Lake's Leading Others",
+            "fyi": false,
+            "start": "12:00",
+            "end": "13:00"
+          },
+          {
+            "date": "2026-11-18",
+            "day": "",
+            "time": "12:00 PM",
+            "title": "Creative Lunch",
+            "fyi": false,
+            "start": "12:00",
+            "end": "13:00"
+          },
+          {
+            "date": "2026-11-18",
+            "day": "",
+            "time": "6:30 PM",
+            "title": "MDWK",
+            "fyi": false,
+            "start": "18:30",
+            "end": "20:30"
+          },
+          {
+            "date": "2026-11-19",
+            "day": "Thu 11/19",
+            "time": "All day",
+            "title": "NYE Service V1 due",
+            "fyi": false
+          },
+          {
+            "date": "2026-11-19",
+            "day": "",
+            "time": "12:00 PM",
+            "title": "AI Training Session 1a: Optional AI Q&A",
+            "fyi": true,
+            "start": "12:00",
+            "end": "13:00"
+          },
+          {
+            "date": "2026-11-19",
+            "day": "",
+            "time": "12:00 PM",
+            "title": "Margaret & Creative: The Trilogy",
+            "fyi": false,
+            "start": "12:00",
+            "end": "13:00"
+          },
+          {
+            "date": "2026-11-19",
+            "day": "",
+            "time": "3:00 PM",
+            "title": "BLOCK FOR 2027 BUMPER STUDIO DAYS",
+            "fyi": false,
+            "start": "15:00",
+            "end": "18:00"
+          },
+          {
+            "date": "2026-11-19",
+            "day": "",
+            "time": "6:00 PM",
+            "title": "Lily- 4th Grade Show",
+            "fyi": false,
+            "start": "18:00",
+            "end": "19:30"
+          },
+          {
+            "date": "2026-11-20",
+            "day": "Fri 11/20",
+            "time": "All day",
+            "title": "BLOCK 2027 BUMPER STUDIO DAYS",
+            "fyi": false
+          },
+          {
+            "date": "2026-11-20",
+            "day": "",
+            "time": "All day",
+            "title": "Thanksgiving Break (through Sat 11/28)",
+            "fyi": false
+          },
+          {
+            "date": "2026-11-21",
+            "day": "Sat 11/21",
+            "time": "All day",
+            "title": "BLOCK 2027 BUMPER STUDIO DAYS",
+            "fyi": false
+          },
+          {
+            "date": "2026-11-21",
+            "day": "",
+            "time": "All day",
+            "title": "Hannah Rumberger, birthday! (1985)",
+            "fyi": false
+          },
+          {
+            "date": "2026-11-22",
+            "day": "Sun 11/22",
+            "time": "6:00 AM",
+            "title": "Creative on Call",
+            "fyi": false,
+            "start": "06:00",
+            "end": "12:30"
+          }
+        ]
+      },
+      {
+        "kicker": "Next 30 days",
+        "title": "Week of Nov 23",
+        "rows": [
+          {
+            "date": "2026-11-23",
+            "day": "Mon 11/23",
+            "time": "9:00 AM",
+            "title": "Weekend Debrief Call",
+            "fyi": false,
+            "start": "09:00",
+            "end": "09:30"
+          },
+          {
+            "date": "2026-11-23",
+            "day": "",
+            "time": "10:30 AM",
+            "title": "Film Team Weekly",
+            "fyi": false,
+            "start": "10:30",
+            "end": "11:00"
+          },
+          {
+            "date": "2026-11-24",
+            "day": "Tue 11/24",
+            "time": "3:45 PM",
+            "title": "Zelda’s Violin Lesson",
+            "fyi": false,
+            "start": "15:45",
+            "end": "16:15"
+          },
+          {
+            "date": "2026-11-24",
+            "day": "",
+            "time": "7:30 PM",
+            "title": "Dragonforce",
+            "fyi": false,
+            "start": "19:30",
+            "end": "23:30"
+          },
+          {
+            "date": "2026-11-25",
+            "day": "Wed 11/25",
+            "time": "12:00 PM",
+            "title": "Creative Lunch",
+            "fyi": false,
+            "start": "12:00",
+            "end": "13:00"
+          },
+          {
+            "date": "2026-11-25",
+            "day": "",
+            "time": "6:30 PM",
+            "title": "MDWK",
+            "fyi": false,
+            "start": "18:30",
+            "end": "20:30"
+          },
+          {
+            "date": "2026-11-26",
+            "day": "Thu 11/26",
+            "time": "All day",
+            "title": "Seacoast Offices Closed [Thanksgiving Holiday]",
+            "fyi": false
+          },
+          {
+            "date": "2026-11-28",
+            "day": "Sat 11/28",
+            "time": "7:00 PM",
+            "title": "Lindsey Stirling",
+            "fyi": false,
+            "start": "19:00",
+            "end": "22:00"
+          },
+          {
+            "date": "2026-11-28",
+            "day": "",
+            "time": "7:00 PM",
+            "title": "Lindsey Stirling - The Snow Waltz Tour",
+            "fyi": false,
+            "start": "19:00",
+            "end": "20:00"
+          }
+        ]
+      },
+      {
+        "kicker": "Next 30 days",
+        "title": "Week of Nov 30",
+        "rows": [
+          {
+            "date": "2026-11-30",
+            "day": "Mon 11/30",
+            "time": "9:00 AM",
+            "title": "Weekend Debrief Call",
+            "fyi": false,
+            "start": "09:00",
+            "end": "09:30"
+          },
+          {
+            "date": "2026-11-30",
+            "day": "",
+            "time": "10:30 AM",
+            "title": "Film Team Weekly",
+            "fyi": false,
+            "start": "10:30",
+            "end": "11:00"
+          },
+          {
+            "date": "2026-12-01",
+            "day": "Tue 12/1",
+            "time": "All day",
+            "title": "Check for Books",
+            "fyi": false
+          },
+          {
+            "date": "2026-12-01",
+            "day": "",
+            "time": "10:30 AM",
+            "title": "Ameriprise meeting with Richard Young Jr",
+            "fyi": false,
+            "start": "10:30",
+            "end": "11:30"
+          },
+          {
+            "date": "2026-12-01",
+            "day": "",
+            "time": "3:45 PM",
+            "title": "Zelda’s Violin Lesson",
+            "fyi": false,
+            "start": "15:45",
+            "end": "16:15"
+          },
+          {
+            "date": "2026-12-02",
+            "day": "Wed 12/2",
+            "time": "12:00 PM",
+            "title": "Book Club: Mac Lake's Leading Others",
+            "fyi": false,
+            "start": "12:00",
+            "end": "13:00"
+          },
+          {
+            "date": "2026-12-02",
+            "day": "",
+            "time": "12:00 PM",
+            "title": "Creative Lunch",
+            "fyi": false,
+            "start": "12:00",
+            "end": "13:00"
+          },
+          {
+            "date": "2026-12-02",
+            "day": "",
+            "time": "6:30 PM",
+            "title": "Dream Team Celebration",
+            "fyi": false,
+            "start": "18:30",
+            "end": "20:30"
+          },
+          {
+            "date": "2026-12-03",
+            "day": "Thu 12/3",
+            "time": "10:00 AM",
+            "title": "December Staff Recording (PJS and PLS)",
+            "fyi": false,
+            "start": "10:00",
+            "end": "12:00"
+          },
+          {
+            "date": "2026-12-03",
+            "day": "",
+            "time": "12:00 PM",
+            "title": "AI Training Session 2: Using AI Wisely in Ministry",
+            "fyi": false,
+            "start": "12:00",
+            "end": "13:00"
+          },
+          {
+            "date": "2026-12-03",
+            "day": "",
+            "time": "12:00 PM",
+            "title": "Margaret & Creative: The Trilogy",
+            "fyi": false,
+            "start": "12:00",
+            "end": "13:00"
+          },
+          {
+            "date": "2026-12-03",
+            "day": "",
+            "time": "4:30 PM",
+            "title": "SALT Advisory Team Info Meeting - Option #3",
+            "fyi": false,
+            "start": "16:30",
+            "end": "17:00"
+          },
+          {
+            "date": "2026-12-04",
+            "day": "Fri 12/4",
+            "time": "5:00 PM",
+            "title": "Hanahan Christmas tree, lighting, and vendor market",
+            "fyi": false,
+            "start": "17:00",
+            "end": "20:30"
+          },
+          {
+            "date": "2026-12-05",
+            "day": "Sat 12/5",
+            "time": "2:00 PM",
+            "title": "Hold for Titus’ birthday party",
+            "fyi": false,
+            "start": "14:00",
+            "end": "16:00"
+          }
+        ]
+      },
+      {
+        "kicker": "Next 30 days",
+        "title": "Week of Dec 7",
+        "rows": [
+          {
+            "date": "2026-12-07",
+            "day": "Mon 12/7",
+            "time": "9:00 AM",
+            "title": "Weekend Debrief Call",
+            "fyi": false,
+            "start": "09:00",
+            "end": "09:30"
+          },
+          {
+            "date": "2026-12-07",
+            "day": "",
+            "time": "10:30 AM",
+            "title": "Film Team Weekly",
+            "fyi": false,
+            "start": "10:30",
+            "end": "11:00"
+          },
+          {
+            "date": "2026-12-08",
+            "day": "Tue 12/8",
+            "time": "3:45 PM",
+            "title": "Zelda’s Violin Lesson",
+            "fyi": false,
+            "start": "15:45",
+            "end": "16:15"
+          },
+          {
+            "date": "2026-12-09",
+            "day": "Wed 12/9",
+            "time": "12:00 PM",
+            "title": "Book Club: Mac Lake's Leading Others",
+            "fyi": false,
+            "start": "12:00",
+            "end": "13:00"
+          },
+          {
+            "date": "2026-12-09",
+            "day": "",
+            "time": "12:00 PM",
+            "title": "Creative Lunch",
+            "fyi": false,
+            "start": "12:00",
+            "end": "13:00"
+          },
+          {
+            "date": "2026-12-09",
+            "day": "",
+            "time": "1:00 PM",
+            "title": "Q3 Quarterly Ops Call",
+            "fyi": false,
+            "start": "13:00",
+            "end": "14:00"
+          },
+          {
+            "date": "2026-12-09",
+            "day": "",
+            "time": "6:30 PM",
+            "title": "MDWK",
+            "fyi": false,
+            "start": "18:30",
+            "end": "20:30"
+          },
+          {
+            "date": "2026-12-10",
+            "day": "Thu 12/10",
+            "time": "6:00 PM",
+            "title": "Hanahan Business Mixer",
+            "fyi": false,
+            "start": "18:00",
+            "end": "20:00"
+          },
+          {
+            "date": "2026-12-10",
+            "day": "",
+            "time": "7:00 PM",
+            "title": "Zelda Orchestra Concert",
+            "fyi": false,
+            "start": "19:00",
+            "end": "20:00"
+          },
+          {
+            "date": "2026-12-10",
+            "day": "",
+            "time": "7:30 PM",
+            "title": "The Game Awards 2026",
+            "fyi": false,
+            "start": "19:30",
+            "end": "23:00"
+          }
+        ]
+      },
+      {
+        "kicker": "Next 30 days",
+        "title": "Week of Dec 14",
+        "rows": [
+          {
+            "date": "2026-12-14",
+            "day": "Mon 12/14",
+            "time": "9:00 AM",
+            "title": "Weekend Debrief Call",
+            "fyi": false,
+            "start": "09:00",
+            "end": "09:30"
+          },
+          {
+            "date": "2026-12-14",
+            "day": "",
+            "time": "10:30 AM",
+            "title": "Film Team Weekly",
+            "fyi": false,
+            "start": "10:30",
+            "end": "11:00"
+          },
+          {
+            "date": "2026-12-14",
+            "day": "",
+            "time": "11:00 AM",
+            "title": "Weekend Experience Videos",
+            "fyi": false,
+            "start": "11:00",
+            "end": "11:30"
+          },
+          {
+            "date": "2026-12-15",
+            "day": "Tue 12/15",
+            "time": "12:00 PM",
+            "title": "AI Training Session 2a: Optional AI Q&A",
+            "fyi": false,
+            "start": "12:00",
+            "end": "13:00"
+          },
+          {
+            "date": "2026-12-15",
+            "day": "",
+            "time": "2:00 PM",
+            "title": "Christmas Dress Rehearsal",
+            "fyi": false,
+            "start": "14:00",
+            "end": "15:30"
+          },
+          {
+            "date": "2026-12-15",
+            "day": "",
+            "time": "3:45 PM",
+            "title": "Zelda’s Violin Lesson",
+            "fyi": false,
+            "start": "15:45",
+            "end": "16:15"
+          },
+          {
+            "date": "2026-12-16",
+            "day": "Wed 12/16",
+            "time": "12:00 PM",
+            "title": "Book Club: Mac Lake's Leading Others",
+            "fyi": false,
+            "start": "12:00",
+            "end": "13:00"
+          },
+          {
+            "date": "2026-12-16",
+            "day": "",
+            "time": "12:00 PM",
+            "title": "Creative Lunch",
+            "fyi": false,
+            "start": "12:00",
+            "end": "13:00"
+          },
+          {
+            "date": "2026-12-16",
+            "day": "",
+            "time": "1:00 PM",
+            "title": "Margaret & Creative: The Trilogy",
+            "fyi": false,
+            "start": "13:00",
+            "end": "14:00"
+          },
+          {
+            "date": "2026-12-16",
+            "day": "",
+            "time": "6:30 PM",
+            "title": "MDWK",
+            "fyi": false,
+            "start": "18:30",
+            "end": "20:30"
+          }
+        ]
+      }
     ]
-   },
-   {
-    "role": "Teaching",
-    "area": "Teaching",
-    "roleEvaluation": "Behind: four items overdue (oldest Nov 6) and two due today, with four more grading tasks Friday.",
-    "blocks": [
-     {
-      "label": "Active projects",
-      "lines": [
-       "CM 1110 (Moody)",
-       "GSU 1120 (Moody)",
-       "COMM 335 (CSU)",
-       "COM 260 (CSU), Spring 2027"
-      ]
-     },
-     {
-      "label": "This week",
-      "lines": [
-       "Due today: FILM Week 5 Announcement Video, BUILD Website Evaluation 2 roster",
-       "Overdue: GRADE Newspaper Article Design #2 (Nov 6), GRADE Blog Post #5 and Newspaper #3 (Nov 13), RECORD Week 13 Intro (Nov 15)",
-       "On Today: RECORD video announcement, CHECK IN with 4 students, CHECK for assignments to grade",
-       "Nov 20: four grading tasks",
-       "Nov 22: Discussion 5 response, Week 14 intro"
-      ]
-     },
-     {
-      "label": "This month",
-      "lines": [
-       "Nov 23: Week 6 announcement",
-       "Nov 27: four grading tasks",
-       "Nov 29-30: Discussion 6, Week 15 intro, Week 7 announcement",
-       "Dec 4: five grading tasks",
-       "Dec 11: four grading tasks"
-      ]
-     },
-     {
-      "label": "Suggestions",
-      "lines": [
-       "Grade the backlog Tuesday and Wednesday nights.",
-       "Batch the Week 5, Week 13, Week 14 and Week 6 videos in one sitting."
-      ]
-     }
-    ]
-   },
-   {
-    "role": "Freelance",
-    "area": "Freelance (ACEP)",
-    "roleEvaluation": "Behind: Preproduction is five days past its deadline. 1.8h logged last week.",
-    "blocks": [
-     {
-      "label": "Active projects",
-      "lines": [
-       "American Integrity (edits and 20th anniversary)",
-       "Bread of Life (Eliza's Story, Retreat Center Fundraiser)",
-       "Awaken Church Story (aired Nov 15)",
-       "Walters Marriage Training (pitched)"
-      ]
-     },
-     {
-      "label": "This week",
-      "lines": [
-       "Overdue: Preproduction (due Nov 11)",
-       "EDIT 16 - Alexandra Rodriguez on Today (tracker: awaiting client feedback)"
-      ]
-     },
-     {
-      "label": "This month",
-      "lines": [
-       "EDIT 20th 08 - Dick Dowd, Nov 25",
-       "EDIT 20th 09 - Wei Xie, Nov 30",
-       "EDIT 20th 10 - Danielle DeGain & Donna Gonzalez, Dec 2",
-       "EDIT 20th 11 - Steve Biggs, Dec 9",
-       "EDIT 20th 12 - Dennis Gagnon, Dec 14"
-      ]
-     },
-     {
-      "label": "Suggestions",
-      "lines": [
-       "Move EDIT 16 off Today until the client responds.",
-       "Close the Awaken Church project now that it has aired."
-      ]
-     }
-    ]
-   },
-   {
-    "role": "SPS",
-    "area": "Smartphone Storytellers",
-    "roleEvaluation": "Stalled but restarting: no SPS time logged since the week of Oct 12; the 2027 planning task is on Today.",
-    "blocks": [
-     {
-      "label": "Active projects",
-      "lines": [
-       "Storyteller 101 (January 2027 launch, end of 2026 drop-dead)",
-       "2027 Planning (Dec 29)",
-       "Product Launch, 7 products (on hold)"
-      ]
-     },
-     {
-      "label": "This week",
-      "lines": [
-       "Revisit Smartphone Storytellers schedule and goals for next year (on Today)"
-      ]
-     },
-     {
-      "label": "Open (no deadline)",
-      "lines": [
-       "Storyteller 101 b-roll and editing",
-       "Launch infrastructure: video hosting, landing page, enrollment flow"
-      ]
-     },
-     {
-      "label": "Suggestions",
-      "lines": [
-       "Turn Storyteller 101 b-roll and edits into dated Things tasks for Tue-Thu mornings.",
-       "Update project_status.md (still says Module 5 next)."
-      ]
-     }
-    ]
-   },
-   {
-    "role": "Speaking",
-    "area": "Speaking",
-    "roleEvaluation": "On track: only two undated archive tasks remain.",
-    "blocks": [
-     {
-      "label": "Active projects",
-      "lines": [
-       "FILO",
-       "Church Production Article",
-       "SALT Meetup Call (Nov 10, still listed Active)"
-      ]
-     },
-     {
-      "label": "This week",
-      "lines": [
-       "On Today: Archive Old Talks, Archive Talk"
-      ]
-     },
-     {
-      "label": "This month",
-      "lines": [
-       "SALT Advisory Team Info Meeting, Thu Dec 3, 4:30 PM"
-      ]
-     },
-     {
-      "label": "Suggestions",
-      "lines": [
-       "Mark the SALT Meetup Call done in projects.md if it's finished.",
-       "Set a new date for the Church Production Article draft."
-      ]
-     }
-    ]
-   },
-   {
-    "role": "Personal",
-    "area": "Personal",
-    "roleEvaluation": "Family time takes hits this week: DR interviews Mon and Tue evenings, MDWK Wednesday, Lily's show Thursday.",
-    "blocks": [
-     {
-      "label": "Active projects",
-      "lines": [
-       "Guitar (Modules 0-2)",
-       "Meal Options",
-       "Smart Home Automation (on hold)"
-      ]
-     },
-     {
-      "label": "This week",
-      "lines": [
-       "Ralph's birthday, Tue Nov 17",
-       "Zelda's violin lesson, Tue 3:45 PM",
-       "Lily's 4th Grade Show, Thu Nov 19, 6:00 PM",
-       "Thanksgiving Break starts Fri Nov 20"
-      ]
-     },
-     {
-      "label": "This month",
-      "lines": [
-       "Dragonforce, Tue Nov 24 (Charlotte, runs to 11:30 PM)",
-       "Lindsey Stirling, Sat Nov 28",
-       "Hanahan tree lighting Dec 4, Titus' party Dec 5",
-       "Zelda Orchestra Concert, Thu Dec 10 (unflagged)"
-      ]
-     },
-     {
-      "label": "Suggestions",
-      "lines": [
-       "Workouts: Chest & Biceps today, circuit Tue, Back & Triceps Wed, circuit Thu, Legs & Shoulders Fri.",
-       "Plan travel for the Dragonforce night in Charlotte."
-      ]
-     }
-    ]
-   }
-  ],
-  "calendarNote": "From weekly-data.txt refreshed on the Mac at 3:02 AM (the refresh script can't reach Things from this cloud session). FYI rows are flagged not attending. Coworker PTO blocks are hidden.",
-  "calendar": [
-   {
-    "kicker": "This week",
-    "title": "Week of Nov 16",
-    "rows": [
-     {
-      "date": "2026-11-16",
-      "day": "Mon 11/16",
-      "time": "9:00 AM",
-      "title": "Weekend Debrief Call",
-      "fyi": false,
-      "start": "09:00",
-      "end": "09:30"
-     },
-     {
-      "date": "2026-11-16",
-      "day": "",
-      "time": "9:30 AM",
-      "title": "Christmas Decor- Central and MTP Staff",
-      "fyi": false,
-      "start": "09:30",
-      "end": "11:30"
-     },
-     {
-      "date": "2026-11-16",
-      "day": "",
-      "time": "10:30 AM",
-      "title": "Film Team Weekly",
-      "fyi": false,
-      "start": "10:30",
-      "end": "11:00"
-     },
-     {
-      "date": "2026-11-16",
-      "day": "",
-      "time": "2:30 PM",
-      "title": "Bryce DR interview",
-      "fyi": false,
-      "start": "14:30",
-      "end": "15:00"
-     },
-     {
-      "date": "2026-11-16",
-      "day": "",
-      "time": "6:00 PM",
-      "title": "Tatum DR interview",
-      "fyi": false,
-      "start": "18:00",
-      "end": "18:30"
-     },
-     {
-      "date": "2026-11-17",
-      "day": "Tue 11/17",
-      "time": "All day",
-      "title": "Ralph's Birthday",
-      "fyi": false
-     },
-     {
-      "date": "2026-11-17",
-      "day": "",
-      "time": "9:30 AM",
-      "title": "Christmagiving",
-      "fyi": false,
-      "start": "09:30",
-      "end": "14:30"
-     },
-     {
-      "date": "2026-11-17",
-      "day": "",
-      "time": "3:30 PM",
-      "title": "Hannah SIC Meeting- HHA Library",
-      "fyi": true,
-      "start": "15:30",
-      "end": "16:15"
-     },
-     {
-      "date": "2026-11-17",
-      "day": "",
-      "time": "3:45 PM",
-      "title": "Zelda’s Violin Lesson",
-      "fyi": false,
-      "start": "15:45",
-      "end": "16:15"
-     },
-     {
-      "date": "2026-11-17",
-      "day": "",
-      "time": "4:00 PM",
-      "title": "Cambyll DR interview",
-      "fyi": false,
-      "start": "16:00",
-      "end": "16:30"
-     },
-     {
-      "date": "2026-11-17",
-      "day": "",
-      "time": "6:30 PM",
-      "title": "Josslyn DR interview",
-      "fyi": false,
-      "start": "18:30",
-      "end": "19:00"
-     },
-     {
-      "date": "2026-11-18",
-      "day": "Wed 11/18",
-      "time": "10:00 AM",
-      "title": "Doc Tremble",
-      "fyi": false,
-      "start": "10:00",
-      "end": "11:00"
-     },
-     {
-      "date": "2026-11-18",
-      "day": "",
-      "time": "12:00 PM",
-      "title": "Book Club: Mac Lake's Leading Others",
-      "fyi": false,
-      "start": "12:00",
-      "end": "13:00"
-     },
-     {
-      "date": "2026-11-18",
-      "day": "",
-      "time": "12:00 PM",
-      "title": "Creative Lunch",
-      "fyi": false,
-      "start": "12:00",
-      "end": "13:00"
-     },
-     {
-      "date": "2026-11-18",
-      "day": "",
-      "time": "6:30 PM",
-      "title": "MDWK",
-      "fyi": false,
-      "start": "18:30",
-      "end": "20:30"
-     },
-     {
-      "date": "2026-11-19",
-      "day": "Thu 11/19",
-      "time": "All day",
-      "title": "NYE Service V1 due",
-      "fyi": false
-     },
-     {
-      "date": "2026-11-19",
-      "day": "",
-      "time": "12:00 PM",
-      "title": "AI Training Session 1a: Optional AI Q&A",
-      "fyi": true,
-      "start": "12:00",
-      "end": "13:00"
-     },
-     {
-      "date": "2026-11-19",
-      "day": "",
-      "time": "12:00 PM",
-      "title": "Margaret & Creative: The Trilogy",
-      "fyi": false,
-      "start": "12:00",
-      "end": "13:00"
-     },
-     {
-      "date": "2026-11-19",
-      "day": "",
-      "time": "3:00 PM",
-      "title": "BLOCK FOR 2027 BUMPER STUDIO DAYS",
-      "fyi": false,
-      "start": "15:00",
-      "end": "18:00"
-     },
-     {
-      "date": "2026-11-19",
-      "day": "",
-      "time": "6:00 PM",
-      "title": "Lily- 4th Grade Show",
-      "fyi": false,
-      "start": "18:00",
-      "end": "19:30"
-     },
-     {
-      "date": "2026-11-20",
-      "day": "Fri 11/20",
-      "time": "All day",
-      "title": "BLOCK 2027 BUMPER STUDIO DAYS",
-      "fyi": false
-     },
-     {
-      "date": "2026-11-20",
-      "day": "",
-      "time": "All day",
-      "title": "Thanksgiving Break (through Sat 11/28)",
-      "fyi": false
-     },
-     {
-      "date": "2026-11-21",
-      "day": "Sat 11/21",
-      "time": "All day",
-      "title": "BLOCK 2027 BUMPER STUDIO DAYS",
-      "fyi": false
-     },
-     {
-      "date": "2026-11-21",
-      "day": "",
-      "time": "All day",
-      "title": "Hannah Rumberger, birthday! (1985)",
-      "fyi": false
-     },
-     {
-      "date": "2026-11-22",
-      "day": "Sun 11/22",
-      "time": "6:00 AM",
-      "title": "Creative on Call",
-      "fyi": false,
-      "start": "06:00",
-      "end": "12:30"
-     }
-    ]
-   },
-   {
-    "kicker": "Next 30 days",
-    "title": "Week of Nov 23",
-    "rows": [
-     {
-      "date": "2026-11-23",
-      "day": "Mon 11/23",
-      "time": "9:00 AM",
-      "title": "Weekend Debrief Call",
-      "fyi": false,
-      "start": "09:00",
-      "end": "09:30"
-     },
-     {
-      "date": "2026-11-23",
-      "day": "",
-      "time": "10:30 AM",
-      "title": "Film Team Weekly",
-      "fyi": false,
-      "start": "10:30",
-      "end": "11:00"
-     },
-     {
-      "date": "2026-11-24",
-      "day": "Tue 11/24",
-      "time": "3:45 PM",
-      "title": "Zelda’s Violin Lesson",
-      "fyi": false,
-      "start": "15:45",
-      "end": "16:15"
-     },
-     {
-      "date": "2026-11-24",
-      "day": "",
-      "time": "7:30 PM",
-      "title": "Dragonforce",
-      "fyi": false,
-      "start": "19:30",
-      "end": "23:30"
-     },
-     {
-      "date": "2026-11-25",
-      "day": "Wed 11/25",
-      "time": "12:00 PM",
-      "title": "Creative Lunch",
-      "fyi": false,
-      "start": "12:00",
-      "end": "13:00"
-     },
-     {
-      "date": "2026-11-25",
-      "day": "",
-      "time": "6:30 PM",
-      "title": "MDWK",
-      "fyi": false,
-      "start": "18:30",
-      "end": "20:30"
-     },
-     {
-      "date": "2026-11-26",
-      "day": "Thu 11/26",
-      "time": "All day",
-      "title": "Seacoast Offices Closed [Thanksgiving Holiday]",
-      "fyi": false
-     },
-     {
-      "date": "2026-11-28",
-      "day": "Sat 11/28",
-      "time": "7:00 PM",
-      "title": "Lindsey Stirling",
-      "fyi": false,
-      "start": "19:00",
-      "end": "22:00"
-     },
-     {
-      "date": "2026-11-28",
-      "day": "",
-      "time": "7:00 PM",
-      "title": "Lindsey Stirling - The Snow Waltz Tour",
-      "fyi": false,
-      "start": "19:00",
-      "end": "20:00"
-     }
-    ]
-   },
-   {
-    "kicker": "Next 30 days",
-    "title": "Week of Nov 30",
-    "rows": [
-     {
-      "date": "2026-11-30",
-      "day": "Mon 11/30",
-      "time": "9:00 AM",
-      "title": "Weekend Debrief Call",
-      "fyi": false,
-      "start": "09:00",
-      "end": "09:30"
-     },
-     {
-      "date": "2026-11-30",
-      "day": "",
-      "time": "10:30 AM",
-      "title": "Film Team Weekly",
-      "fyi": false,
-      "start": "10:30",
-      "end": "11:00"
-     },
-     {
-      "date": "2026-12-01",
-      "day": "Tue 12/1",
-      "time": "All day",
-      "title": "Check for Books",
-      "fyi": false
-     },
-     {
-      "date": "2026-12-01",
-      "day": "",
-      "time": "10:30 AM",
-      "title": "Ameriprise meeting with Richard Young Jr",
-      "fyi": false,
-      "start": "10:30",
-      "end": "11:30"
-     },
-     {
-      "date": "2026-12-01",
-      "day": "",
-      "time": "3:45 PM",
-      "title": "Zelda’s Violin Lesson",
-      "fyi": false,
-      "start": "15:45",
-      "end": "16:15"
-     },
-     {
-      "date": "2026-12-02",
-      "day": "Wed 12/2",
-      "time": "12:00 PM",
-      "title": "Book Club: Mac Lake's Leading Others",
-      "fyi": false,
-      "start": "12:00",
-      "end": "13:00"
-     },
-     {
-      "date": "2026-12-02",
-      "day": "",
-      "time": "12:00 PM",
-      "title": "Creative Lunch",
-      "fyi": false,
-      "start": "12:00",
-      "end": "13:00"
-     },
-     {
-      "date": "2026-12-02",
-      "day": "",
-      "time": "6:30 PM",
-      "title": "Dream Team Celebration",
-      "fyi": false,
-      "start": "18:30",
-      "end": "20:30"
-     },
-     {
-      "date": "2026-12-03",
-      "day": "Thu 12/3",
-      "time": "10:00 AM",
-      "title": "December Staff Recording (PJS and PLS)",
-      "fyi": false,
-      "start": "10:00",
-      "end": "12:00"
-     },
-     {
-      "date": "2026-12-03",
-      "day": "",
-      "time": "12:00 PM",
-      "title": "AI Training Session 2: Using AI Wisely in Ministry",
-      "fyi": false,
-      "start": "12:00",
-      "end": "13:00"
-     },
-     {
-      "date": "2026-12-03",
-      "day": "",
-      "time": "12:00 PM",
-      "title": "Margaret & Creative: The Trilogy",
-      "fyi": false,
-      "start": "12:00",
-      "end": "13:00"
-     },
-     {
-      "date": "2026-12-03",
-      "day": "",
-      "time": "4:30 PM",
-      "title": "SALT Advisory Team Info Meeting - Option #3",
-      "fyi": false,
-      "start": "16:30",
-      "end": "17:00"
-     },
-     {
-      "date": "2026-12-04",
-      "day": "Fri 12/4",
-      "time": "5:00 PM",
-      "title": "Hanahan Christmas tree, lighting, and vendor market",
-      "fyi": false,
-      "start": "17:00",
-      "end": "20:30"
-     },
-     {
-      "date": "2026-12-05",
-      "day": "Sat 12/5",
-      "time": "2:00 PM",
-      "title": "Hold for Titus’ birthday party",
-      "fyi": false,
-      "start": "14:00",
-      "end": "16:00"
-     }
-    ]
-   },
-   {
-    "kicker": "Next 30 days",
-    "title": "Week of Dec 7",
-    "rows": [
-     {
-      "date": "2026-12-07",
-      "day": "Mon 12/7",
-      "time": "9:00 AM",
-      "title": "Weekend Debrief Call",
-      "fyi": false,
-      "start": "09:00",
-      "end": "09:30"
-     },
-     {
-      "date": "2026-12-07",
-      "day": "",
-      "time": "10:30 AM",
-      "title": "Film Team Weekly",
-      "fyi": false,
-      "start": "10:30",
-      "end": "11:00"
-     },
-     {
-      "date": "2026-12-08",
-      "day": "Tue 12/8",
-      "time": "3:45 PM",
-      "title": "Zelda’s Violin Lesson",
-      "fyi": false,
-      "start": "15:45",
-      "end": "16:15"
-     },
-     {
-      "date": "2026-12-09",
-      "day": "Wed 12/9",
-      "time": "12:00 PM",
-      "title": "Book Club: Mac Lake's Leading Others",
-      "fyi": false,
-      "start": "12:00",
-      "end": "13:00"
-     },
-     {
-      "date": "2026-12-09",
-      "day": "",
-      "time": "12:00 PM",
-      "title": "Creative Lunch",
-      "fyi": false,
-      "start": "12:00",
-      "end": "13:00"
-     },
-     {
-      "date": "2026-12-09",
-      "day": "",
-      "time": "1:00 PM",
-      "title": "Q3 Quarterly Ops Call",
-      "fyi": false,
-      "start": "13:00",
-      "end": "14:00"
-     },
-     {
-      "date": "2026-12-09",
-      "day": "",
-      "time": "6:30 PM",
-      "title": "MDWK",
-      "fyi": false,
-      "start": "18:30",
-      "end": "20:30"
-     },
-     {
-      "date": "2026-12-10",
-      "day": "Thu 12/10",
-      "time": "6:00 PM",
-      "title": "Hanahan Business Mixer",
-      "fyi": false,
-      "start": "18:00",
-      "end": "20:00"
-     },
-     {
-      "date": "2026-12-10",
-      "day": "",
-      "time": "7:00 PM",
-      "title": "Zelda Orchestra Concert",
-      "fyi": false,
-      "start": "19:00",
-      "end": "20:00"
-     },
-     {
-      "date": "2026-12-10",
-      "day": "",
-      "time": "7:30 PM",
-      "title": "The Game Awards 2026",
-      "fyi": false,
-      "start": "19:30",
-      "end": "23:00"
-     }
-    ]
-   },
-   {
-    "kicker": "Next 30 days",
-    "title": "Week of Dec 14",
-    "rows": [
-     {
-      "date": "2026-12-14",
-      "day": "Mon 12/14",
-      "time": "9:00 AM",
-      "title": "Weekend Debrief Call",
-      "fyi": false,
-      "start": "09:00",
-      "end": "09:30"
-     },
-     {
-      "date": "2026-12-14",
-      "day": "",
-      "time": "10:30 AM",
-      "title": "Film Team Weekly",
-      "fyi": false,
-      "start": "10:30",
-      "end": "11:00"
-     },
-     {
-      "date": "2026-12-14",
-      "day": "",
-      "time": "11:00 AM",
-      "title": "Weekend Experience Videos",
-      "fyi": false,
-      "start": "11:00",
-      "end": "11:30"
-     },
-     {
-      "date": "2026-12-15",
-      "day": "Tue 12/15",
-      "time": "12:00 PM",
-      "title": "AI Training Session 2a: Optional AI Q&A",
-      "fyi": false,
-      "start": "12:00",
-      "end": "13:00"
-     },
-     {
-      "date": "2026-12-15",
-      "day": "",
-      "time": "2:00 PM",
-      "title": "Christmas Dress Rehearsal",
-      "fyi": false,
-      "start": "14:00",
-      "end": "15:30"
-     },
-     {
-      "date": "2026-12-15",
-      "day": "",
-      "time": "3:45 PM",
-      "title": "Zelda’s Violin Lesson",
-      "fyi": false,
-      "start": "15:45",
-      "end": "16:15"
-     },
-     {
-      "date": "2026-12-16",
-      "day": "Wed 12/16",
-      "time": "12:00 PM",
-      "title": "Book Club: Mac Lake's Leading Others",
-      "fyi": false,
-      "start": "12:00",
-      "end": "13:00"
-     },
-     {
-      "date": "2026-12-16",
-      "day": "",
-      "time": "12:00 PM",
-      "title": "Creative Lunch",
-      "fyi": false,
-      "start": "12:00",
-      "end": "13:00"
-     },
-     {
-      "date": "2026-12-16",
-      "day": "",
-      "time": "1:00 PM",
-      "title": "Margaret & Creative: The Trilogy",
-      "fyi": false,
-      "start": "13:00",
-      "end": "14:00"
-     },
-     {
-      "date": "2026-12-16",
-      "day": "",
-      "time": "6:30 PM",
-      "title": "MDWK",
-      "fyi": false,
-      "start": "18:30",
-      "end": "20:30"
-     }
-    ]
-   }
-  ]
- },
- "schemaVersion": 1,
- "title": "Briefing 11-16",
- "date": "2026-11-16",
- "dateLabel": "Monday, November 16",
- "generatedAt": "Monday, November 16, 2026 at 4:21 AM ET",
- "reading": {
-  "devotional": {
-   "series": "My Utmost for His Highest",
-   "date": "Nov 16",
-   "title": "STILL HUMAN!",
-   "reference": "1 Corinthians 10:31",
-   "summary": [
-    "Ordinary days, done for God's glory, are the real test. Faithfulness on the human level matters more than visible success."
-   ],
-   "fullText": [
-    "“. . . whatever you do, do all to the glory of God.”",
-    "In the Scriptures, the great miracle of the incarnation slips into the ordinary life of a child; the great miracle of the transfiguration fades into the demon-possessed valley below; the glory of the resurrection descends into a breakfast on the seashore. This is not an anticlimax, but a great revelation of God.",
-    "We have a tendency to look for wonder in our experience, and we mistake heroic actions for real heroes. It’s one thing to go through a crisis grandly, yet quite another to go through every day glorifying God when there is no witness, no limelight, and no one paying even the remotest attention to us. If we are not looking for halos, we at least want something that will make people say, “What a wonderful man of prayer he is!” or, “What a great woman of devotion she is!” If you are properly devoted to the Lord Jesus, you have reached the lofty height where no one would ever notice you personally. All that is noticed is the power of God coming through you all the time.",
-    "We want to be able to say, “Oh, I have had a wonderful call from God!” But to do even the most humbling tasks to the glory of God takes the Almighty God Incarnate working in us. To be utterly unnoticeable requires God’s Spirit in us making us absolutely humanly His. The true test of a saint’s life is not successfulness but faithfulness on the human level of life. We tend to set up success in Christian work as our purpose, but our purpose should be to display the glory of God in human life, to live a life “hidden with Christ in God” in our everyday human conditions (Colossians 3:3). Our human relationships are the very conditions in which the ideal life of God should be exhibited."
-   ]
   },
-  "prayer": [
-   "Samuel - Clear communication and rambling",
-   "Hope - Communicating how she feels to others",
-   "Micah Kongkousonh’s family",
-   "Natalie and Conflict Resolution + Long Distance Relationship",
-   "Lois and asking questions in relationships",
-   "Phillip - Reconciliation with his Sisters",
-   "Eliana Gale - Dropped Class",
-   "Jirah",
-   "Moondog",
-   "Stephanie Lippi"
-  ],
-  "creative": {
-   "date": "Nov 16",
-   "title": "",
-   "summary": "",
-   "paragraphs": [
-    "In my bookHerding Tigers, I wrote about two common kinds of people you might find on your team. The first is what I call “the spark.” This is a person who has never met an idea they don’t like. They are in perpetual idea-generation mode and can toss out a hundred of them in a half-hour meeting. They see possibilities everywhere, which may not be useful when you need to choose an idea and move on.",
-    "The second profile is “the scorpion.” They dislike every idea and immediately dismiss new thinking. Their very presence brings down the vibe of the room, because everyone knows they will be the first to offer critique. In fact, people may even look right at them when sharing an idea in anticipation of their response.",
-    "Both of these qualities can be useful. It’s important to be able to spot possibility and to play with ideas. It’s also important to be able to critique ideas to improve them. However, maintaining a balance of each quality is necessary to be effective.",
-    "Both the spark and the scorpion can disrupt the flow of your team. Strive to maintain a balance between possibility seeking and critique."
-   ],
-   "question": "Question: Do you skew toward one profile or the other, the spark or the scorpion?"
+  "schemaVersion": 1,
+  "title": "Briefing 11-16",
+  "date": "2026-11-16",
+  "dateLabel": "Monday, November 16",
+  "generatedAt": "Monday, November 16, 2026 at 4:21 AM ET",
+  "reading": {
+    "devotional": {
+      "series": "My Utmost for His Highest",
+      "date": "Nov 16",
+      "title": "STILL HUMAN!",
+      "reference": "1 Corinthians 10:31",
+      "summary": [
+        "Ordinary days, done for God's glory, are the real test. Faithfulness on the human level matters more than visible success."
+      ],
+      "fullText": [
+        "“. . . whatever you do, do all to the glory of God.”",
+        "In the Scriptures, the great miracle of the incarnation slips into the ordinary life of a child; the great miracle of the transfiguration fades into the demon-possessed valley below; the glory of the resurrection descends into a breakfast on the seashore. This is not an anticlimax, but a great revelation of God.",
+        "We have a tendency to look for wonder in our experience, and we mistake heroic actions for real heroes. It’s one thing to go through a crisis grandly, yet quite another to go through every day glorifying God when there is no witness, no limelight, and no one paying even the remotest attention to us. If we are not looking for halos, we at least want something that will make people say, “What a wonderful man of prayer he is!” or, “What a great woman of devotion she is!” If you are properly devoted to the Lord Jesus, you have reached the lofty height where no one would ever notice you personally. All that is noticed is the power of God coming through you all the time.",
+        "We want to be able to say, “Oh, I have had a wonderful call from God!” But to do even the most humbling tasks to the glory of God takes the Almighty God Incarnate working in us. To be utterly unnoticeable requires God’s Spirit in us making us absolutely humanly His. The true test of a saint’s life is not successfulness but faithfulness on the human level of life. We tend to set up success in Christian work as our purpose, but our purpose should be to display the glory of God in human life, to live a life “hidden with Christ in God” in our everyday human conditions (Colossians 3:3). Our human relationships are the very conditions in which the ideal life of God should be exhibited."
+      ]
+    },
+    "prayer": [
+      "Samuel - Clear communication and rambling",
+      "Hope - Communicating how she feels to others",
+      "Micah Kongkousonh’s family",
+      "Natalie and Conflict Resolution + Long Distance Relationship",
+      "Lois and asking questions in relationships",
+      "Phillip - Reconciliation with his Sisters",
+      "Eliana Gale - Dropped Class",
+      "Jirah",
+      "Moondog",
+      "Stephanie Lippi"
+    ],
+    "creative": {
+      "date": "Nov 16",
+      "title": "",
+      "summary": "",
+      "paragraphs": [
+        "In my bookHerding Tigers, I wrote about two common kinds of people you might find on your team. The first is what I call “the spark.” This is a person who has never met an idea they don’t like. They are in perpetual idea-generation mode and can toss out a hundred of them in a half-hour meeting. They see possibilities everywhere, which may not be useful when you need to choose an idea and move on.",
+        "The second profile is “the scorpion.” They dislike every idea and immediately dismiss new thinking. Their very presence brings down the vibe of the room, because everyone knows they will be the first to offer critique. In fact, people may even look right at them when sharing an idea in anticipation of their response.",
+        "Both of these qualities can be useful. It’s important to be able to spot possibility and to play with ideas. It’s also important to be able to critique ideas to improve them. However, maintaining a balance of each quality is necessary to be effective.",
+        "Both the spark and the scorpion can disrupt the flow of your team. Strive to maintain a balance between possibility seeking and critique."
+      ],
+      "question": "Question: Do you skew toward one profile or the other, the spark or the scorpion?"
+    }
   }
- }
 }
