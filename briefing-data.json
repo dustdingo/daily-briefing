@@ -512,7 +512,7 @@
     }
   },
   "fitness": {
-    "eyebrow": "Thursday · Off Day Circuit",
+    "eyebrow": "Tomorrow · Friday · Legs & Shoulders",
     "stats": [
       {
         "value": "227.4",
@@ -583,30 +583,17 @@
     ],
     "goalsNote": "Through Wednesday: one 2.2 mi walk Monday, no lift or circuit logged, best protein day 153g Monday, one 7h+ night (7.4h Wednesday). Today: circuit plus a walk. Friday legs runs into the bumper shoot, so plan an early or evening slot, or Sunday afternoon.",
     "workout": {
-      "label": "Today's workout · Thursday",
-      "title": "Off Day Circuit",
-      "date": "2026-11-19",
+      "label": "Tomorrow's workout · Friday",
+      "title": "Legs & Shoulders",
+      "date": "2026-11-20",
       "lines": [
-        "15 reps x 3 sets each, about 10-15 min at home",
-        "Bodyweight squats",
-        "Sit-ups",
-        "Kettlebell swings",
-        "Calf raises",
-        "Stretch goal: +5 reps to hit 50 total on one exercise (optional)",
-        "Workout window clear, 8-9 AM. First event is Margaret & Creative at noon. Room for a 2-mile walk after."
+        "Legs: leg extensions, leg press (rotate foot position: regular, high, low, wide or close), stiff leg deadlifts",
+        "Shoulders, pick 3: front raises, side laterals, dumbbell upright rows, shrugs, dumbbell press",
+        "About 45-60 min at the gym",
+        "Window conflict: the 2027 January bumper shoot runs 8 AM-5 PM at Meade Agency in Moncks Corner. Best slot is early, about 6:30-7:30 AM before call. If that slips, Saturday has the same shoot, so Sunday afternoon after the 3 PM Emma DR interview is the fallback."
       ]
     },
     "workoutDays": [
-      {
-        "date": "2026-11-20",
-        "title": "Legs & Shoulders",
-        "lines": [
-          "Legs: leg extensions, leg press (rotate foot position: regular, high, low, wide or close), stiff leg deadlifts",
-          "Shoulders, pick 3: front raises, side laterals, dumbbell upright rows, shrugs, dumbbell press",
-          "About 45-60 min at the gym",
-          "Bumper shoot runs 8 AM-5 PM in Moncks Corner if you're on it, so plan an early or evening slot."
-        ]
-      },
       {
         "date": "2026-11-21",
         "title": "Rest day",
@@ -638,7 +625,8 @@
           "Bodyweight squats",
           "Sit-ups",
           "Kettlebell swings",
-          "Calf raises"
+          "Calf raises",
+          "Dragonforce in Charlotte tonight, so get it done in the morning."
         ]
       },
       {
@@ -706,7 +694,7 @@
       "carbs": 215,
       "fat": 72
     },
-    "macroNote": "Off Day Circuit at home in the 8-9 AM window. The noon AI Q&A and Margaret & Creative cover lunch, the bumper studio block in Moncks Corner (3-5:30 PM, Nora DR interview at 4:30) covers Snack 2, and Lily's 4th grade show at Howe Hall (6-7:30 PM) covers dinner. Evening snack is clear after 8:30.",
+    "macroNote": "The bumper shoot in Moncks Corner (8 AM-5 PM) covers breakfast, Snack 1, lunch and Snack 2, and the Michaela DR interview at 4:30 PM is on Zoom. Dinner and the evening snack are clear at home.",
     "meals": [
       {
         "slot": "Morning Coffee",
@@ -774,22 +762,27 @@
       }
     ],
     "pack": {
-      "count": "3 meals away from home",
+      "count": "4 meals away from home",
       "items": [
         {
+          "slot": "Breakfast",
+          "when": "Bumper shoot call, 8:00 AM",
+          "text": "Eat the eggs before you leave if the early lift happens, or prep 2 hard-boiled eggs and 4 whites tonight."
+        },
+        {
+          "slot": "Snack 1",
+          "when": "Bumper shoot, 10:00 AM",
+          "text": "Cocoa Crispy's shake in a shaker bottle, add water on set."
+        },
+        {
           "slot": "Lunch",
-          "when": "AI Q&A and Margaret & Creative, 12:00 PM",
+          "when": "Bumper shoot, 12:00 PM",
           "text": "PLN meal in an insulated bag, or chicken and rice in a container. Bring the Six Star shake powder for after."
         },
         {
           "slot": "Snack 2",
-          "when": "Bumper studio block, Moncks Corner, 3:00 PM",
+          "when": "Bumper shoot, 3:00 PM",
           "text": "Clementines or an applesauce pouch, plus a banana for the carb gap."
-        },
-        {
-          "slot": "Dinner",
-          "when": "Lily's 4th grade show, Howe Hall, 6:00 PM",
-          "text": "Prepped chicken and rice in a container, or eat right after the show around 7:45. Salmon does not travel well."
         },
         {
           "slot": "Eating out",
@@ -810,7 +803,7 @@
     },
     "dinnerCall": {
       "title": "Dinner call: chicken",
-      "text": "Chicken puts protein at 198g vs 188g with fish, within 2g of target, and it packs for the show. The plan still runs about 500 kcal light: carbs 68g short and fat 27g short. Add a banana at Snack 2, a brown sugar cinnamon oatmeal pack after the circuit, and a string cheese to close most of it."
+      "text": "Chicken puts protein at 198g vs 188g with fish, 2g under target, so no protein fix needed. The plan still runs about 500 kcal light: carbs 68g short and fat 27g short. Pack a banana and a string cheese for the shoot and add a brown sugar cinnamon oatmeal pack at breakfast to close most of it."
     },
     "alert": {
       "title": "Nutrition",
