@@ -426,7 +426,7 @@
     }
   },
   "fitness": {
-    "eyebrow": "Monday · Chest & Biceps",
+    "eyebrow": "Tomorrow · Tuesday · Off Day Circuit",
     "stats": [
       {
         "value": "227.4",
@@ -497,28 +497,20 @@
     ],
     "goalsNote": "New week, 7 days left; today's Chest & Biceps starts the strength count. Last week final: strength 0 of 3, circuits 0 of 2, walks 2 of 3, protein days 0 of 5, sleep 1 of 5.",
     "workout": {
-      "label": "Today's workout · Monday",
-      "title": "Chest & Biceps",
+      "label": "Tomorrow's workout · Tuesday",
+      "title": "Off Day Circuit",
       "lines": [
-        "Chest (pick 3): Flat Barbell Bench, Incline Barbell Bench, Flat Dumbbell Bench, Incline Dumbbell Bench, Flat Dumbbell Flys, Incline Dumbbell Flys",
-        "Optional: pushups to failure before and after chest",
-        "Biceps (pick 3): Standing alternate arm curls, Incline hammer curls, Easy bar curls, Barbell curls, Concentration curls",
-        "Workout window clear, 8-9 AM. The Weekend Debrief starts at 9 on Teams, so finish on time. Backup: 11 AM-noon after Film Team Weekly."
+        "About 10-15 min at home, 15 reps x 3 sets each:",
+        "Squats (bodyweight)",
+        "Sit-ups (bodyweight)",
+        "Kettlebell swings",
+        "Calf raises (bodyweight)",
+        "Stretch goal: +5 reps on top to hit 50 total for an exercise (optional).",
+        "Workout window clear, 8-9 AM. Get it done in the morning; Dragonforce in Charlotte takes the evening."
       ],
-      "date": "2026-11-23"
+      "date": "2026-11-24"
     },
     "workoutDays": [
-      {
-        "date": "2026-11-24",
-        "title": "Off Day Circuit",
-        "lines": [
-          "About 10-15 min at home, 15 reps x 3 sets each:",
-          "Squats (bodyweight)",
-          "Sit-ups (bodyweight)",
-          "Kettlebell swings",
-          "Calf raises (bodyweight)"
-        ]
-      },
       {
         "date": "2026-11-25",
         "title": "Back & Triceps",
@@ -612,7 +604,7 @@
       "carbs": 215,
       "fat": 72
     },
-    "macroNote": "Lifting day. Today's calls are on Teams, so no meal windows are flagged and nothing needs packing.",
+    "macroNote": "Circuit day. Dragonforce (Fillmore Charlotte, 7:30-11:30 PM) covers the dinner and evening snack windows, so pack both. Charlotte is a drive, so plan Snack 2 for the road too.",
     "meals": [
       {
         "slot": "Morning Coffee",
@@ -681,9 +673,24 @@
     ],
     "dinnerCall": {
       "title": "Dinner call: chicken",
-      "text": "Chicken puts protein at 198g vs 188g with fish, 2g under target. The plan still runs about 500 kcal light: carbs 68g short and fat 27g short. On a lifting day, add a banana after the workout and a full cup of jasmine rice at dinner to close most of the carb gap."
+      "text": "Chicken puts protein at 198g vs 188g with fish, 2g under target, and it travels in a container where bang bang salmon does not. The plan runs about 500 kcal light: carbs 68g short and fat 27g short. Pack a full cup of jasmine rice with the chicken and add a banana or grapes for the drive."
     },
-    "alert": null
+    "alert": null,
+    "pack": {
+      "count": "2 meals away from home",
+      "items": [
+        {
+          "slot": "Dinner",
+          "when": "Dragonforce, 7:30 PM",
+          "text": "Prepped chicken + rice in a container. Eat before doors. If that falls through, Chick-fil-A 12 ct grilled nuggets, side salad and fruit cup (about 350 kcal, 44g protein)."
+        },
+        {
+          "slot": "Evening Snack",
+          "when": "Dragonforce, 7:30-11:30 PM",
+          "text": "Casein shake in a shaker bottle (powder dry, add water). Skip the mini cone or have it when you get home."
+        }
+      ]
+    }
   },
   "time": {
     "guidingOrder": "Faith, Family, Smartphone Storytellers, Fitness, Seacoast, Margin",
