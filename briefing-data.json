@@ -474,7 +474,7 @@
   }
  },
  "fitness": {
-  "eyebrow": "Tuesday · Off Day Circuit",
+  "eyebrow": "Tomorrow · Wednesday · Back & Triceps",
   "stats": [
    {
     "value": "227.4",
@@ -545,28 +545,17 @@
   ],
   "goalsNote": "6 days left. Monday's Chest & Biceps did not log, so strength still needs all three days (Back & Triceps Wed, Legs & Shoulders Fri, plus a make-up chest day over the weekend). Today's circuit starts the circuit count. Sleep for the last two nights is not recorded yet.",
   "workout": {
-   "label": "Today's workout · Tuesday",
-   "title": "Off Day Circuit",
-   "date": "2026-11-24",
+   "label": "Tomorrow's workout · Wednesday",
+   "title": "Back & Triceps",
+   "date": "2026-11-25",
    "lines": [
-    "About 10-15 min at home, 15 reps x 3 sets each:",
-    "Squats (bodyweight)",
-    "Sit-ups (bodyweight)",
-    "Kettlebell swings",
-    "Calf raises (bodyweight)",
-    "Stretch goal: +5 reps on top to hit 50 total for an exercise (optional).",
-    "Workout window clear, 8-9 AM. Do it in the morning; the Charlotte drive takes the afternoon and evening."
+    "Back (pick 3): Wide Grip Lat pulldowns, Reverse Close Grip Lat pulldowns, V-bar Lat pulldowns, Bent over rows, Dumbbell Pullovers, One Arm Rows",
+    "Triceps (pick 3): Behind the head dumbbell press, Close grip barbell press, Tricep dips, Tricep pressdowns, Skull crushers, Reverse grip triceps bench",
+    "Try rows at 95 lb, and drop close grip bench 5 lb to own all three sets.",
+    "Workout window clear, 8-9 AM. If the late Charlotte night pushes it back, 10-11 AM is open before Creative Lunch at noon."
    ]
   },
   "workoutDays": [
-   {
-    "date": "2026-11-25",
-    "title": "Back & Triceps",
-    "lines": [
-     "Back (pick 3): Wide Grip Lat pulldowns, Reverse Close Grip Lat pulldowns, V-bar Lat pulldowns, Bent over rows, Dumbbell Pullovers, One Arm Rows",
-     "Triceps (pick 3): Behind the head dumbbell press, Close grip barbell press, Tricep dips, Tricep pressdowns, Skull crushers, Reverse grip triceps bench"
-    ]
-   },
    {
     "date": "2026-11-26",
     "title": "Off Day Circuit",
@@ -663,7 +652,7 @@
    "carbs": 215,
    "fat": 72
   },
-  "macroNote": "Circuit day. Dragonforce (Fillmore Charlotte, 7:30-11:30 PM) covers the dinner and evening snack windows, so pack both. Snack 2 (3-4 PM) falls at the start of the drive, so bring the clementines or applesauce.",
+  "macroNote": "Lifting day. Creative Lunch (Teams, 12-1 PM) sits on the lunch window, so have the PLN meal ready to eat on the call. MDWK in Mount Pleasant (6:30-8:30 PM) covers dinner, so pack it; the evening snack can wait until you get home.",
   "meals": [
    {
     "slot": "Morning Coffee",
@@ -732,24 +721,19 @@
   ],
   "dinnerCall": {
    "title": "Dinner call: chicken",
-   "text": "Chicken puts protein at 198g vs 188g with fish, 2g under target, and it travels in a container where bang bang salmon does not. The plan runs about 500 kcal light: carbs 68g short and fat 27g short. Pack a full cup of jasmine rice with the chicken and add a banana or grapes for the drive."
+   "text": "Chicken puts protein at 198g vs 188g with fish, 2g under target, and it travels to MDWK in a container where bang bang salmon does not. The plan runs about 500 kcal light: carbs 68g short and fat 27g short. Make it a full cup of jasmine rice and add a banana or grapes in the afternoon."
   },
   "alert": {
    "title": "Nutrition",
    "text": "Nothing logged in MyFitnessPal or Apple Health for Nov 22 or 23. Log today's meals, including what you eat on the road."
   },
   "pack": {
-   "count": "2 meals away from home",
+   "count": "1 meal away from home",
    "items": [
     {
      "slot": "Dinner",
-     "when": "Dragonforce, 7:30 PM",
-     "text": "Prepped chicken + rice in a container. Eat before doors. If that falls through, Chick-fil-A 12 ct grilled nuggets, side salad and fruit cup (about 350 kcal, 44g protein)."
-    },
-    {
-     "slot": "Evening Snack",
-     "when": "Dragonforce, 7:30-11:30 PM",
-     "text": "Casein shake in a shaker bottle (powder dry, add water). Skip the mini cone or have it when you get home."
+     "when": "MDWK, 6:30 PM",
+     "text": "Prepped chicken + rice in a container; eat around 6 before you head in. If that falls through, Chick-fil-A 12 ct grilled nuggets, side salad and fruit cup (about 350 kcal, 44g protein)."
     }
    ]
   }
