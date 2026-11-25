@@ -1,133 +1,123 @@
 {
  "schemaVersion": 1,
- "title": "Briefing 11-24",
- "date": "2026-11-24",
- "dateLabel": "Tuesday, November 24",
- "generatedAt": "Tuesday, November 24, 2026 at 4:22 AM ET",
+ "title": "Briefing 11-25",
+ "date": "2026-11-25",
+ "dateLabel": "Wednesday, November 25",
+ "generatedAt": "Wednesday, November 25, 2026 at 4:21 AM ET",
  "today": {
   "weather": {
    "hi": 61,
-   "lo": 47,
-   "feelsLike": "~61°",
-   "humidity": "100% at 4 AM (fog), drying with the north wind",
-   "summary": "Foggy, cloudy and cool, high near 61 with a north wind 10-15 mph gusting to 24. Coastal Flood Advisory 5-9 AM. 20% shower chance today, 30% tonight after 1 AM; low 47. Wednesday: 70% showers, gusts to 30, and a Coastal Flood Watch in the morning."
+   "lo": 56,
+   "feelsLike": "Raw, gusts to 30 mph",
+   "humidity": "High all day with steady rain (NWS gives no figure)",
+   "summary": "Showers all day (90%), a quarter to half inch, NE wind 17-20 mph gusting to 30. Coastal Flood Warning 5-11 AM around the 7:52 AM high tide, High Surf Advisory until 10 PM, and storms possible overnight with a low near 56."
   },
   "gamePlan": [
    {
     "label": "Protect",
     "tone": "ok",
-    "text": "Faith and the SPS block this morning, then the Off Day Circuit before 9. Dragonforce tonight is the family-time fun; keep the daytime clear for it."
+    "text": "Faith and the SPS block this morning, then a slow family day over the break before MDWK at 6:30."
    },
    {
     "label": "Pressure",
     "tone": "warn",
-    "text": "Teaching: the Week 6 announcement (due yesterday) and Website Evaluation #1 (due Nov 20) are both overdue, and tonight is gone to the concert."
+    "text": "Teaching: four grading tasks are due Friday, the day after Thanksgiving, and the Discussion 6 response and Week 15 intro are due Sunday."
    },
    {
     "label": "Tonight",
     "tone": "neutral",
-    "text": "Tuesday is a Teaching night, but Dragonforce at Fillmore Charlotte (7:30-11:30 PM) takes it. Do the teaching work in daylight."
+    "text": "Wednesday is a Teaching night, but MDWK in Mount Pleasant (6:30-8:30 PM) takes it. Grade in daylight instead."
    },
    {
     "label": "Watch out",
     "tone": "warn",
-    "text": "Charlotte is about a 3.5 hour drive each way. Leave by about 3:45 PM, and decide today between a hotel and a 3 AM drive home."
+    "text": "Coastal Flood Warning until 11 AM and gusty rain all day. Skip low-lying roads near the 7:52 AM high tide and leave early for Mount Pleasant."
    }
   ],
   "priorities": [
    {
-    "title": "FILM Week 6 Announcement Video",
+    "title": "Grade the four Friday assignments",
     "role": "Teaching",
-    "due": "Overdue (Nov 23)",
-    "overdue": true,
-    "next": "Film it first thing after the gym, one take, and post it"
+    "due": "Fri Nov 27",
+    "overdue": false,
+    "next": "Discussion 5 and Blog Post #7 at 9 AM, then Assignment 5-1 and the Web Planning Exercise"
    },
    {
-    "title": "GRADE Website Evaluation #1",
-    "role": "Teaching",
-    "due": "Overdue (Nov 20)",
-    "overdue": true,
-    "next": "Grade it late morning, then send the 4 student check-ins"
+    "title": "Revisit Smartphone Storytellers schedule and goals for next year",
+    "role": "SPS",
+    "due": "Today (2027 Planning due Dec 29)",
+    "overdue": false,
+    "next": "Use the 5:30 block to draft a realistic weekly SPS schedule and 2027 goals"
    },
    {
     "title": "Mayor Rainwater Top 10 edit",
     "role": "Freelance",
     "due": "End of November",
     "overdue": false,
-    "next": "Rough cut this afternoon before you leave for Charlotte"
+    "next": "Rough cut this afternoon while the rain keeps you inside"
    }
   ],
-  "sequenceNote": "No meetings today. Monday logged 7.2h of ACEP and no Seacoast time, so if you are off this week the 9 to 3:30 window is open for teaching and the Rainwater edit; if it is a workday, start NYE Service V1 (due Dec 1).",
+  "sequenceNote": "School is out and Seacoast looks quiet this week (no Seacoast time logged Monday or Tuesday). If you got home late from Charlotte, start the SPS block and the lift later rather than skipping them.",
   "sequence": [
    {
     "time": "5:00-5:30 AM",
     "start": "05:00",
     "end": "05:30",
-    "what": "Faith: My Utmost (Direction of Focus, Psalm 123:2), then the prayer list"
+    "what": "Faith: My Utmost (The Secret of Spiritual Consistency, Galatians 6:14), then the prayer list"
    },
    {
     "time": "5:30-7:15 AM",
     "start": "05:30",
     "end": "07:15",
-    "what": "SPS block: open the Storyteller 101 b-roll list and turn it into dated Things tasks, then shoot the first few shots"
+    "what": "SPS block: revisit the SPS schedule and 2027 goals, then put the Storyteller 101 b-roll list into dated Things tasks"
    },
    {
-    "time": "7:15-7:45 AM",
-    "start": "07:15",
-    "end": "07:45",
-    "what": "School drop-off (Thanksgiving Break is on the calendar, so skip if school is out)"
-   },
-   {
-    "time": "8:00-8:30 AM",
+    "time": "8:00-9:00 AM",
     "start": "08:00",
-    "end": "08:30",
-    "what": "Off Day Circuit at home (10-15 min), then a 2 mi walk if the wind allows"
+    "end": "09:00",
+    "what": "Back & Triceps (rows at 95 lb, close grip bench down 5 lb)"
    },
    {
     "time": "9:00 AM-12:00 PM",
     "start": "09:00",
     "end": "12:00",
-    "what": "Teaching catch-up: film the Week 6 announcement, grade Website Evaluation #1, check in with the 4 students"
+    "what": "Teaching: grade Discussion 5, Blog Post #7, Assignment 5-1 and the Web Planning Exercise"
    },
    {
-    "time": "12:00-3:30 PM",
-    "start": "12:00",
-    "end": "15:30",
-    "what": "Mayor Rainwater rough cut (or NYE Service V1 if it is a Seacoast workday). Pack chicken, rice and the casein shake."
+    "time": "1:00-4:30 PM",
+    "start": "13:00",
+    "end": "16:30",
+    "what": "Mayor Rainwater rough cut, then record the Week 15 intro if there is time"
    },
    {
-    "time": "3:45-7:30 PM",
-    "start": "15:45",
-    "end": "19:30",
-    "what": "Drive to Charlotte. Snack 2 and dinner on the road or before doors. (Bumps the family block.)"
+    "time": "4:30-6:00 PM",
+    "start": "16:30",
+    "end": "18:00",
+    "what": "Family time; eat the packed dinner and leave about 5:45 for Mount Pleasant in the rain"
    },
    {
-    "time": "7:30-11:30 PM",
-    "start": "19:30",
-    "end": "23:30",
-    "what": "Dragonforce, Fillmore Charlotte (bumps the Teaching evening and wind-down)"
+    "time": "6:30-8:30 PM",
+    "start": "18:30",
+    "end": "20:30",
+    "what": "MDWK, Mount Pleasant (bumps the end of family time and the Teaching evening)"
+   },
+   {
+    "time": "10:00-10:30 PM",
+    "start": "22:00",
+    "end": "22:30",
+    "what": "Wind down"
    }
   ],
   "headsUp": [
    {
-    "kind": "Overdue",
-    "role": "Teaching",
-    "text": "FILM Week 6 Announcement Video was due Monday, Nov 23."
-   },
-   {
-    "kind": "Overdue",
-    "role": "Teaching",
-    "text": "GRADE Website Evaluation #1 was due Friday, Nov 20."
-   },
-   {
-    "kind": "Personal",
-    "role": "Personal",
-    "text": "Dragonforce in Charlotte tonight, 7:30-11:30 PM. Settle hotel or late drive home before you leave."
-   },
-   {
     "kind": "Weather",
     "role": null,
-    "text": "Coastal Flood Advisory 5-9 AM today and a Coastal Flood Watch Wednesday morning. Watch low-lying roads."
+    "text": "Coastal Flood Warning 5-11 AM (high tide 7:52 AM) and a High Surf Advisory until 10 PM. NE gusts to 30 mph."
+   },
+   {
+    "kind": "Deadline",
+    "role": "Seacoast",
+    "text": "NYE Service V1 is due Tue Dec 1 with no Things task, and the offices close Thursday."
    },
    {
     "kind": "Calendar",
@@ -142,7 +132,7 @@
    {
     "kind": "Nutrition",
     "role": null,
-    "text": "Food from MyFitnessPal export, through Nov 21 (Nov 17-21 parsed, no Wellness writes). Nothing was logged for Nov 22 or yesterday, Nov 23, in MyFitnessPal or Apple Health. Nov 17 and 18 look incomplete."
+    "text": "Food from MyFitnessPal export, through Nov 21 (today's export parsed, no Wellness writes). Neither MyFitnessPal nor Apple Health has anything for Nov 22, 23 or yesterday, Nov 24. Nov 18 has breakfast only."
    }
   ],
   "schedule": [
@@ -153,45 +143,16 @@
     "time": "All day"
    },
    {
-    "title": "Dragonforce",
-    "role": "Personal",
+    "title": "MDWK",
+    "role": null,
     "fyi": false,
-    "time": "7:30 PM",
-    "start": "19:30",
-    "end": "23:30",
-    "location": "Fillmore Charlotte, Charlotte, North Carolina"
+    "time": "6:30 PM",
+    "start": "18:30",
+    "end": "20:30",
+    "location": "750 Long Point Rd, Mount Pleasant SC 29464"
    }
   ],
   "scheduleDays": [
-   {
-    "date": "2026-11-25",
-    "events": [
-     {
-      "title": "Thanksgiving Break (through Nov 28)",
-      "role": "Personal",
-      "fyi": false,
-      "time": "All day"
-     },
-     {
-      "title": "Creative Lunch",
-      "role": "Seacoast",
-      "fyi": false,
-      "time": "12:00 PM",
-      "start": "12:00",
-      "end": "13:00",
-      "location": "Microsoft Teams Meeting"
-     },
-     {
-      "title": "MDWK",
-      "role": null,
-      "fyi": false,
-      "time": "6:30 PM",
-      "start": "18:30",
-      "end": "20:30",
-      "location": "750 Long Point Rd, Mount Pleasant SC 29464"
-     }
-    ]
-   },
    {
     "date": "2026-11-26",
     "events": [
@@ -310,134 +271,166 @@
       "location": "358 Camelot Dr., Goose Creek"
      }
     ]
+   },
+   {
+    "date": "2026-12-02",
+    "events": [
+     {
+      "title": "Book Club: Mac Lake's Leading Others",
+      "role": "Seacoast",
+      "fyi": false,
+      "time": "12:00 PM",
+      "start": "12:00",
+      "end": "13:00",
+      "location": "Microsoft Teams Meeting"
+     },
+     {
+      "title": "Creative Lunch",
+      "role": "Seacoast",
+      "fyi": false,
+      "time": "12:00 PM",
+      "start": "12:00",
+      "end": "13:00",
+      "location": "Microsoft Teams Meeting"
+     },
+     {
+      "title": "Dream Team Celebration",
+      "role": "Seacoast",
+      "fyi": false,
+      "time": "6:30 PM",
+      "start": "18:30",
+      "end": "20:30",
+      "location": "Campus specific"
+     }
+    ]
    }
   ]
  },
  "brief": {
   "morningRead": [
-   "No meetings today, but a big night: Dragonforce at Fillmore Charlotte, 7:30 to 11:30 PM, about three and a half hours away. Foggy and cool this morning, high 61, with a coastal flood advisory until 9.",
-   "Teaching is the pressure. The Week 6 announcement and Website Evaluation #1 are both overdue, four grading tasks land Friday, and Wednesday has MDWK in the evening. Clear both overdue items before lunch, then give the afternoon to the Rainwater edit."
+   "Rainy, gusty Thanksgiving Eve: showers all day, high 61, and a Coastal Flood Warning until 11 AM. School is out and Seacoast looks quiet, so the only fixed point is MDWK in Mount Pleasant at 6:30.",
+   "Teaching is the pressure. Four grading tasks are due Friday and Sunday brings the Discussion 6 response and the Week 15 intro. Grade this morning, then give the afternoon to the Rainwater rough cut."
   ],
-  "watchOut": "letting the trip eat the day before the two overdue teaching items are done.",
+  "watchOut": "a late Charlotte night and a rainy break day drifting by before the grading is done.",
   "forgetting": [
-   {
-    "role": "Personal",
-    "title": "Dragonforce plan",
-    "text": "The show ends at 11:30 PM in Charlotte. Book a hotel or plan for the late drive, and pack dinner and the casein shake."
-   },
    {
     "role": "Seacoast",
     "title": "NYE Service V1, due Dec 1",
-    "text": "It is on the calendar with no Things task, and offices close Thursday."
-   },
-   {
-    "role": "Teaching",
-    "title": "Week 15 intro and Discussion 6, due Nov 29",
-    "text": "Both land over Thanksgiving weekend. Record the Week 15 intro in the same setup as today's Week 6 video."
+    "text": "On the calendar with no Things task, and Thursday through Sunday are off. Give it a start before Monday."
    },
    {
     "role": "Personal",
     "title": "Food logging",
-    "text": "Nothing logged Sunday or Monday. Log today's meals, including the road food."
+    "text": "Nothing logged Sunday, Monday or Tuesday. Log today and Thanksgiving, even roughly."
+   },
+   {
+    "role": "Teaching",
+    "title": "Week 15 intro, due Nov 29",
+    "text": "It lands on Thanksgiving weekend. Record it today with the Week 7 announcement (Nov 30)."
+   },
+   {
+    "role": "Freelance",
+    "title": "Rainwater deadline",
+    "text": "Still just 'end of November'. Pin down the exact date so you know whether Monday is too late."
    }
   ],
   "whatsNext": [
    {
-    "title": "Film the Week 6 announcement",
-    "text": "Overdue since yesterday. One setup can also cover the Week 15 intro due Nov 29."
+    "title": "Grade the four Friday assignments",
+    "text": "Due the day after Thanksgiving. Clearing them today keeps the holiday free."
    },
    {
-    "title": "Grade Website Evaluation #1",
-    "text": "Four days late. Finish it before Friday's four grading tasks stack on top."
+    "title": "Revisit the SPS schedule and 2027 goals",
+    "text": "On Today in Things. It feeds 2027 Planning (Dec 29) and gives Storyteller 101 a finish plan before the end-of-2026 drop-dead, 36 days out."
    },
    {
     "title": "Rough-cut the Mayor Rainwater Top 10",
-    "text": "Due end of November; the shoot is fresh and Monday's 7.2h of ACEP time gives it momentum."
+    "text": "Due end of November, and no ACEP time has been logged since Monday."
    },
    {
-    "title": "Put Storyteller 101 b-roll in Things",
-    "text": "Still no SPS task in Things and the end-of-2026 drop-dead is 37 days out."
+    "title": "Record the Week 15 intro and Week 7 announcement",
+    "text": "Due Nov 29 and Nov 30. One setup today covers both."
    },
    {
     "title": "Give NYE Service V1 a Things task",
-    "text": "Due Dec 1 with Thursday off, so it needs a start date this week."
+    "text": "Due Dec 1 with four days off in between."
    }
   ],
   "opportunities": [
    {
     "role": "SPS",
-    "title": "Shoot b-roll this morning",
-    "text": "Tuesday is a creation day in the SPS plan. A few b-roll shots today turn the list into real progress."
+    "title": "Set the 2027 SPS rhythm",
+    "text": "Today's Daily Creative is about keeping realistic promises to yourself. Build the SPS schedule on that and the 5:30 block gets easier to keep."
    },
    {
     "role": "Teaching",
     "title": "Batch the videos",
-    "text": "Record the Week 6 announcement and the Week 15 intro in one setup and the weekend stays free."
+    "text": "Record the Week 15 intro and Week 7 announcement in one setup and the weekend stays free."
    },
    {
     "role": "Freelance",
     "title": "Rough-cut EDIT 20th 10 over the holiday",
-    "text": "Danielle DeGain & Donna Gonzalez is due Dec 2, and Thursday and Friday are open."
+    "text": "Danielle DeGain & Donna Gonzalez is due Dec 2, and Friday is open."
    }
   ],
   "projectCards": [
    {
     "role": "SPS",
     "level": "High",
-    "why": "Status: stalled. No SPS time in Toggl since the week of Oct 12 and no SPS task in Things. Storyteller 101 main teaching is filmed; b-roll, editing and launch setup remain before the end-of-2026 drop-dead.",
-    "best": "Today's move: turn the Storyteller 101 b-roll list into dated Things tasks and capture the first shots.",
-    "watch": "Morning block: 5:30-7:15 AM, not compressed. B-roll list first, then shoot. project_status.md still says Module 5 is next while projects.md says Modules 0-5 are complete and main teaching is filmed; update project_status.md."
+    "why": "Status: stalled. No SPS time in Toggl since the week of Oct 12. Today's Things task is to revisit the SPS schedule and goals for next year (2027 Planning, due Dec 29). Storyteller 101 still needs b-roll, editing and launch setup before the end-of-2026 drop-dead.",
+    "best": "Today's move: draft a realistic weekly SPS schedule and 2027 goals, then put dated Storyteller 101 b-roll tasks in Things.",
+    "watch": "Morning block: 5:30-7:15 AM, no drop-off today. If the drive home ran late, start at 6 and keep the planning task. project_status.md still says Module 5 is next while projects.md says Modules 0-5 are complete and main teaching is filmed; update project_status.md."
    },
    {
     "role": "Teaching",
-    "level": "Critical",
-    "why": "Week 6 announcement overdue since Nov 23 and Website Evaluation #1 overdue since Nov 20. Tonight's Teaching block is lost to the concert.",
-    "best": "Film the announcement and grade the evaluation this morning, then check in with the 4 students.",
-    "watch": "Four grading tasks due Fri Nov 27; Discussion 6 response and Week 15 intro due Nov 29; Week 7 announcement Nov 30."
+    "level": "High",
+    "why": "Four grading tasks due Fri Nov 27, then the Discussion 6 response and Week 15 intro on Nov 29 and the Week 7 announcement on Nov 30. Tonight's Teaching block goes to MDWK.",
+    "best": "Grade all four this morning; record the Week 15 intro and Week 7 announcement in one setup.",
+    "watch": "Five more grading tasks are due Fri Dec 4."
    },
    {
     "role": "Freelance",
     "level": "High",
-    "why": "Mayor Rainwater Top 10 was shot Sunday and is due end of November. Monday logged 7.2h of ACEP time.",
-    "best": "Rough cut this afternoon before the drive.",
-    "watch": "American Integrity on Today: EDIT 20th 10 Danielle DeGain & Donna Gonzalez (Dec 2), 11 Steve Biggs (Dec 9), 12 Dennis Gagnon (Dec 14), 13 Donna Ritchie (Dec 16), 14 Toni Logan (Dec 23), 15 Abby Curry (Dec 28). Nothing else on deck this week."
+    "why": "Mayor Rainwater Top 10 is due end of November, and no ACEP time has been logged since Monday's 7.2h.",
+    "best": "Rough cut this afternoon.",
+    "watch": "American Integrity: nothing on Today. On deck: EDIT 20th 10 Danielle DeGain & Donna Gonzalez (Dec 2), then 11 Steve Biggs (Dec 9), 12 Dennis Gagnon (Dec 14), 13 Donna Ritchie (Dec 16), 14 Toni Logan (Dec 23)."
    },
    {
     "role": "Seacoast",
     "level": "Medium",
-    "why": "No meetings today. Creative Lunch Wed at noon; offices closed Thu Nov 26.",
-    "best": "Give NYE Service V1 (due Dec 1) a Things task and a start date.",
-    "watch": "Monday logged no Seacoast time. If this is a work week, NYE V1 needs real hours before Thursday."
+    "why": "No meetings today, offices closed Thursday, and no Seacoast time logged Monday or Tuesday.",
+    "best": "Add a Things task for NYE Service V1 (due Dec 1) and block time Monday.",
+    "watch": "Monday has the Weekend Debrief at 9 and Film Team Weekly at 10:30."
    },
    {
     "role": "Personal",
     "level": "Medium",
-    "why": "Dragonforce in Charlotte tonight, MDWK Wed, Thanksgiving Thu, Lindsey Stirling Sat.",
-    "best": "Decide hotel or late drive and pack food before 3:45 PM.",
-    "watch": "Gusty north wind today and Wednesday showers with a coastal flood watch."
+    "why": "MDWK tonight, Thanksgiving tomorrow, Lindsey Stirling Saturday.",
+    "best": "Pack dinner for MDWK and leave early for the rain.",
+    "watch": "Ameriprise meeting Tue Dec 1 at 10:30 AM."
    },
    {
     "role": "Speaking",
     "level": "Low",
     "why": "Nothing due this week.",
     "best": "START CONVERSATION with Taylor and Chris, both due Dec 14.",
-    "watch": "SALT Advisory Team Info Meeting, Thu Dec 3 at 4:30 PM (not flagged yet)."
+    "watch": "SALT Advisory Team Info Meeting, Thu Dec 3 at 4:30 PM."
    }
   ]
  },
  "reading": {
   "devotional": {
    "series": "My Utmost for His Highest",
-   "date": "Nov 24",
-   "title": "DIRECTION OF FOCUS",
-   "reference": "Psalm 123:2",
+   "date": "Nov 25",
+   "title": "THE SECRET OF SPIRITUAL CONSISTENCY",
+   "reference": "Galatians 6:14",
    "summary": [
-    "Total reliance on God means keeping your eyes on Him. Spiritual strength drains less from outside trouble than from second-guessing a stand you took for God; when you notice the drain, correct it at once."
+    "Spiritual consistency comes from being rooted in the Cross of Christ, not from steady outward circumstances. Restate your beliefs and rebuild them on the Cross; preaching the Cross releases the power of God."
    ],
    "fullText": [
-    "“Behold, as the eyes of servants look to the hand of their masters . . . , so our eyes look to the Lord our God . . . .”",
-    "This verse is a description of total reliance on God. Just as the eyes of a servant are riveted on his master, our eyes should be directed to and focused on God. This is how knowledge of His countenance is gained and how God reveals Himself to us (see Isaiah 53:1). Our spiritual strength begins to be drained when we stop lifting our eyes to Him. Our stamina is sapped, not so much through external troubles surrounding us but through problems in our thinking. We wrongfully think, “I suppose I’ve been stretching myself a little too much, standing too tall and trying to look like God instead of being an ordinary humble person.” We have to realize that no effort can be too high.",
-    "For example, you came to a crisis in your life, took a stand for God, and even had the witness of the Spirit as a confirmation that what you did was right. But now, maybe weeks or years have gone by, and you are slowly coming to the conclusion—“Well, maybe what I did showed too much pride or was superficial. Was I taking a stand a bit too high for me?” Your “rational” friends come and say, “Don’t be silly. We knew when you first talked about this spiritual awakening that it was a passing impulse, that you couldn’t hold up under the strain. And anyway, God doesn’t expect you to endure.” You respond by saying, “Well, I suppose I was expecting too much.” That sounds humble to say, but it means that your reliance on God is gone, and you are now relying on worldly opinion. The danger comes when, no longer relying on God, you neglect to focus your eyes on Him. Only when God brings you to a sudden stop will you realize that you have been the loser. Whenever there is a spiritual drain in your life, correct it immediately. Realize that something has been coming between you and God, and change or remove it at once."
+    "“God forbid that I should boast except in the cross of our Lord Jesus Christ . . . .”",
+    "When a person is newly born again, he seems inconsistent due to his unrelated emotions and the state of the external things or circumstances in his life. The apostle Paul had a strong and steady underlying consistency in his life. Consequently, he could let his external life change without internal distress because he was rooted and grounded in God. Most of us are not consistent spiritually because we are more concerned about being consistent externally. In the external expression of things, Paul lived in the basement, while his critics lived on the upper level. And these two levels do not begin to touch each other. But Paul’s consistency was down deep in the fundamentals. The great basis of his consistency was the agony of God in the redemption of the world, namely, the Cross of Christ.",
+    "State your beliefs to yourself again. Get back to the foundation of the Cross of Christ, doing away with any belief not based on it. In secular history the Cross is an infinitesimally small thing, but from the biblical perspective it is of more importance than all the empires of the world. If we get away from dwelling on the tragedy of God on the Cross in our preaching, our preaching produces nothing. It will not transmit the energy of God to man; it may be interesting, but it will have no power. However, when we preach the Cross, the energy of God is released. “. . . it pleased God through the foolishness of the message preached to save those who believe. . . . we preach Christ crucified . . .” (1 Corinthians 1:21, 23)."
    ]
   },
   "prayer": [
@@ -449,32 +442,29 @@
    "Phillip - Reconciliation with his Sisters",
    "Eliana Gale - Dropped Class",
    "Josie - Brother’s Faith, workplace relationship",
+   "Joseph - Rejection and a busy semester",
    "Jirah",
    "Moondog",
    "Stephanie Lippi"
   ],
   "creative": {
-   "date": "Nov 24",
+   "date": "Nov 25",
    "title": "",
    "summary": "",
    "paragraphs": [
-    "I’ve always preferred the termthankfulnessovergratitude. When I express that I am thankful, it means that I’m full of thanks. I’m filled up.",
-    "It’s easy to turn your eyes to the next thing—the next project, the next meeting—without pausing to express thankfulness for the good thing that just happened.",
-    "Did an idea appear out of nowhere that solved an important problem?",
-    "Was a conflict resolved?",
-    "Did you read something that helped you understand a topic in a new way?",
-    "It’s important to pause in those moments when something good happens and allow yourself to be full of thanks. Reflect on your good fortune, not in a pandering way but in a way that recognizes how very different things could actually be. Mark the moment.",
-    "What are you thankful for?",
-    "Why?",
-    "What does it mean to you?",
-    "Making the practice of thankfulness a part of your rhythm will open your mind to new opportunities, new creative possibilities, and new relationships. (People want to be around those who are full of thanks!)",
-    "Make the practice of thankfulness a part of your rhythm. Pause to be full of thanks when something good happens in your life or work."
+    "The worddisciplineis polarizing. To some, it implies the grind. It means sweat, grit, blood, and sacrifice. To others, it sounds like obligation. It’s something I ought to do but probably don’t want to. It’s guilt inducing.",
+    "I’d like to simplify the word for all of us. Discipline simply means to make an agreement with yourself, a promise to yourself, and then keep it.",
+    "If you agree that you’re going to run for two minutes and you do it, you are disciplined. You did what you said you would. You don’t have to run a 5K; you just do what you say.",
+    "If you say you’re going to write fifty words a day, or two hundred, or a thousand and you do it, you are disciplined.",
+    "We get into problems when we make promises that we can’t or don’t intend to keep. We say, “I’m going to write twenty-five hundred words on Tuesday,” then something comes up and we only write a few hundred, and we feel terrible and undisciplined. The reality is that we set unrealistic expectations.",
+    "To be disciplined, set realistic expectations of yourself, then deliver on them. Always do what you say.",
+    "Discipline simply means to make an agreement with yourself, then keep it. Don’t make agreements you don’t intend to do everything you can to keep."
    ],
-   "question": "Take a few minutes today to pause and be full of thanks. What do you have to be thankful for?"
+   "question": "What agreements do you have with yourself right now? What does discipline look like in your life?"
   }
  },
  "fitness": {
-  "eyebrow": "Tomorrow · Wednesday · Back & Triceps",
+  "eyebrow": "Wednesday · Back & Triceps",
   "stats": [
    {
     "value": "227.4",
@@ -489,33 +479,33 @@
     "label": "avg protein g, same days"
    },
    {
-    "value": "6.7",
+    "value": "6.4",
     "label": "avg sleep h, 4 nights"
    }
   ],
   "progress": [
    {
     "label": "Weight",
-    "text": "No weigh-in since 227.4 lb on Nov 12, twelve days ago, so no weekly average. Goal 199 by Mar 28 needs about 1.6 lb/wk, inside the sustainable 1.1-2.3 lb/wk."
+    "text": "No weigh-in since 227.4 lb on Nov 12, 13 days ago, so no weekly average. Goal 199 by Mar 28 needs about 1.6 lb/wk, inside the sustainable 1.1-2.3 lb/wk."
    },
    {
     "label": "Nutrition",
-    "text": "Last 7 days: only three full days (Nov 19, 20, 21), averaging 2,164 kcal (target 2,308) and 133g protein (target 200). No day hit 180g. Nov 17 and 18 look incomplete, and nothing was logged Nov 22 or 23."
+    "text": "Last 7 days: three full days (Nov 19, 20, 21), averaging 2,164 kcal (target 2,308) and 133g protein (target 200). No day hit 180g. Nov 18 has breakfast only, and nothing was logged Nov 22, 23 or 24."
    },
    {
     "label": "Strength",
-    "text": "No strength sessions logged since Nov 13, so Monday's Chest & Biceps did not log. Chest last trained Nov 2 and legs Oct 9. Row has held at 90 lb x10 for three sessions."
+    "text": "No strength sessions logged since Nov 13 (Back & Triceps). Chest last trained Nov 2 and legs Oct 9. Row has held at 90 lb x10 for three sessions; close grip bench struggled Oct 30 and Nov 13."
    },
    {
     "label": "Recovery",
-    "text": "6.7h average over 4 recorded nights (Nov 18, 19, 21, 22); the last two nights are not recorded yet. Monday HRV 50 vs a 42 average and RHR 60, the lowest of the week: recovery is good."
+    "text": "6.4h average over 4 recorded nights (Nov 19, 21, 22, 24), three of them under 6.5h. Tuesday HRV 33 vs a 40 average (17% low) with RHR 55, the week's lowest: mixed, so take it a little easier today."
    },
    {
     "label": "Activity",
-    "text": "About 4,700 steps a day Nov 18-23. No Watch walks this week yet; the last was 1.3 mi on Nov 20."
+    "text": "About 4,900 steps a day Nov 19-24 and about 4,000 a day so far this week. No Watch walks since 1.3 mi on Nov 20."
    }
   ],
-  "closing": "Recovery is good, so get the circuit in this morning and step on the scale first. Log every meal today, road food included; protein is the gap at 133g vs 200g, so take both shakes.",
+  "closing": "Lift today but keep it moderate: HRV is down and sleep has run short. Step on the scale this morning and log every meal today and tomorrow; protein is the gap at 133g vs 200g, so take both shakes.",
   "goals": [
    {
     "name": "Strength sessions",
@@ -543,16 +533,16 @@
     "total": 5
    }
   ],
-  "goalsNote": "6 days left. Monday's Chest & Biceps did not log, so strength still needs all three days (Back & Triceps Wed, Legs & Shoulders Fri, plus a make-up chest day over the weekend). Today's circuit starts the circuit count. Sleep for the last two nights is not recorded yet.",
+  "goalsNote": "5 days left. No strength logged yet this week: Back & Triceps today, Legs & Shoulders Friday, and a make-up chest day over the weekend gets all three. Tomorrow's circuit starts that count. Protein days need logged meals to count, and last night's sleep is not recorded yet.",
   "workout": {
-   "label": "Tomorrow's workout · Wednesday",
+   "label": "Today's workout · Wednesday",
    "title": "Back & Triceps",
    "date": "2026-11-25",
    "lines": [
     "Back (pick 3): Wide Grip Lat pulldowns, Reverse Close Grip Lat pulldowns, V-bar Lat pulldowns, Bent over rows, Dumbbell Pullovers, One Arm Rows",
     "Triceps (pick 3): Behind the head dumbbell press, Close grip barbell press, Tricep dips, Tricep pressdowns, Skull crushers, Reverse grip triceps bench",
     "Try rows at 95 lb, and drop close grip bench 5 lb to own all three sets.",
-    "Workout window clear, 8-9 AM. If the late Charlotte night pushes it back, 10-11 AM is open before Creative Lunch at noon."
+    "Workout window clear, 8-9 AM. If last night ran late, 9-10 AM works just as well; nothing is on the calendar until 6:30 PM."
    ]
   },
   "workoutDays": [
@@ -608,6 +598,14 @@
      "Kettlebell swings",
      "Calf raises (bodyweight)"
     ]
+   },
+   {
+    "date": "2026-12-02",
+    "title": "Back & Triceps",
+    "lines": [
+     "Back (pick 3): Wide Grip Lat pulldowns, Reverse Close Grip Lat pulldowns, V-bar Lat pulldowns, Bent over rows, Dumbbell Pullovers, One Arm Rows",
+     "Triceps (pick 3): Behind the head dumbbell press, Close grip barbell press, Tricep dips, Tricep pressdowns, Skull crushers, Reverse grip triceps bench"
+    ]
    }
   ],
   "split": [
@@ -652,7 +650,7 @@
    "carbs": 215,
    "fat": 72
   },
-  "macroNote": "Lifting day. Creative Lunch (Teams, 12-1 PM) sits on the lunch window, so have the PLN meal ready to eat on the call. MDWK in Mount Pleasant (6:30-8:30 PM) covers dinner, so pack it; the evening snack can wait until you get home.",
+  "macroNote": "Lifting day. MDWK in Mount Pleasant (6:30-8:30 PM) covers dinner, so pack it; the evening snack can wait until you get home.",
   "meals": [
    {
     "slot": "Morning Coffee",
@@ -725,7 +723,7 @@
   },
   "alert": {
    "title": "Nutrition",
-   "text": "Nothing logged in MyFitnessPal or Apple Health for Nov 22 or 23. Log today's meals, including what you eat on the road."
+   "text": "Nothing logged in MyFitnessPal or Apple Health for Nov 22, 23 or 24. Log today and Thanksgiving, even roughly."
   },
   "pack": {
    "count": "1 meal away from home",
@@ -733,7 +731,7 @@
     {
      "slot": "Dinner",
      "when": "MDWK, 6:30 PM",
-     "text": "Prepped chicken + rice in a container; eat around 6 before you head in. If that falls through, Chick-fil-A 12 ct grilled nuggets, side salad and fruit cup (about 350 kcal, 44g protein)."
+     "text": "Prepped chicken + rice in a container; eat around 5:30 before you leave. If that falls through, Chick-fil-A 12 ct grilled nuggets, side salad and fruit cup (about 350 kcal, 44g protein)."
     }
    ]
   }
@@ -744,14 +742,19 @@
    {
     "id": "week",
     "label": "This week",
-    "total": "7.7",
+    "total": "9.2",
     "caption": "Nov 23 week · logged so far",
-    "note": "Monday logged 7.7h: ACEP 7.2h, already above the rough 2-4h weekly band (the Rainwater edit), and CSU 0.5h toward the rough 4h of Teaching. No Seacoast time Monday, so either a week off or untracked time; the offices close Thursday either way. Smartphone Storytellers is at 0h for a sixth straight week, nothing since the week of Oct 12. Last week closed at 69.5h, heavy on Seacoast (52.8h).",
+    "note": "Monday and Tuesday logged 9.2h: ACEP 7.2h, already past the rough 2-4h band (the Rainwater work), plus Moody 1.5h and CSU 0.5h, about half the rough 4h Teaching band. No Seacoast time either day, so this looks like a week off, and the offices close Thursday. Smartphone Storytellers is at 0h for a sixth straight week, nothing since the week of Oct 12; this morning's planning task is the place to restart it.",
     "rows": [
      {
       "name": "ACEP",
       "hours": 7.2,
       "role": "Freelance"
+     },
+     {
+      "name": "Moody",
+      "hours": 1.5,
+      "role": "Teaching"
      },
      {
       "name": "CSU",
@@ -766,7 +769,7 @@
      },
      {
       "day": "Tue",
-      "hours": 0.0
+      "hours": 1.5
      }
     ]
    },
@@ -876,44 +879,44 @@
   "focus": [
    {
     "role": "Teaching",
-    "title": "Week 6 announcement video",
-    "text": "Overdue since Monday. Film it this morning.",
-    "when": "Nov 23",
-    "overdue": true
+    "title": "Four grading tasks",
+    "text": "Discussion 5, Assignment 5-1, Blog Post #7 and Web Planning Exercise. Grade them today.",
+    "when": "Nov 27",
+    "overdue": false
    },
    {
-    "role": "Teaching",
-    "title": "Website Evaluation #1",
-    "text": "Overdue since Friday. Grade it this morning.",
-    "when": "Nov 20",
-    "overdue": true
-   },
-   {
-    "role": "Personal",
-    "title": "Dragonforce, Charlotte",
-    "text": "Tonight 7:30-11:30 PM. Leave by about 3:45 PM.",
-    "when": "Nov 24",
+    "role": "SPS",
+    "title": "Revisit SPS schedule and 2027 goals",
+    "text": "On Today in Things; feeds 2027 Planning.",
+    "when": "Nov 25",
     "overdue": false
    },
    {
     "role": "Freelance",
     "title": "Mayor Rainwater edit",
-    "text": "Shot Sunday; due end of November.",
+    "text": "Shot Nov 22; rough cut this afternoon.",
     "when": "End of Nov",
     "overdue": false
    },
    {
-    "role": "Teaching",
-    "title": "Four grading tasks",
-    "text": "Discussion 5, Assignment 5-1, Blog Post #7 and Web Planning Exercise.",
-    "when": "Nov 27",
+    "role": "Personal",
+    "title": "MDWK, Mount Pleasant",
+    "text": "Tonight 6:30-8:30 PM. Pack dinner.",
+    "when": "Nov 25",
     "overdue": false
    },
    {
     "role": "Teaching",
     "title": "Discussion 6 and Week 15 intro",
-    "text": "Thanksgiving weekend. Batch the intro with today's video.",
+    "text": "Thanksgiving weekend. Record the intro today.",
     "when": "Nov 29",
+    "overdue": false
+   },
+   {
+    "role": "Teaching",
+    "title": "Week 7 announcement",
+    "text": "Batch it with the Week 15 intro.",
+    "when": "Nov 30",
     "overdue": false
    },
    {
@@ -924,30 +927,26 @@
     "overdue": false
    },
    {
+    "role": "Freelance",
+    "title": "EDIT 20th 10",
+    "text": "Danielle DeGain & Donna Gonzalez.",
+    "when": "Dec 2",
+    "overdue": false
+   },
+   {
     "role": "SPS",
     "title": "Storyteller 101 b-roll",
-    "text": "No SPS task in Things, and the end-of-2026 drop-dead is 37 days out.",
+    "text": "No dated SPS task in Things, and the end-of-2026 drop-dead is 36 days out.",
     "when": "Dec 31",
     "overdue": false
    }
   ],
-  "overdue": [
-   {
-    "title": "GRADE Website Evaluation #1",
-    "role": "Teaching",
-    "due": "Nov 20"
-   },
-   {
-    "title": "FILM Week 6 Announcement Video",
-    "role": "Teaching",
-    "due": "Nov 23"
-   }
-  ],
+  "overdue": [],
   "projects": [
    {
     "role": "Seacoast",
     "area": "Seacoast",
-    "roleEvaluation": "Heavy last week (52.8h with the Sunday shoot); no Seacoast time logged Monday, and offices close Thursday.",
+    "roleEvaluation": "Quiet this week: no Seacoast time logged Monday or Tuesday after a heavy 52.8h last week, and offices close Thursday.",
     "blocks": [
      {
       "label": "Active projects",
@@ -962,7 +961,7 @@
      {
       "label": "This week",
       "lines": [
-       "Creative Lunch, Wed Nov 25",
+       "No meetings today",
        "Offices closed Thu Nov 26"
       ]
      },
@@ -979,7 +978,7 @@
      {
       "label": "Suggestions",
       "lines": [
-       "Add a Things task for NYE Service V1 (Dec 1) and start it before Thursday.",
+       "Add a Things task for NYE Service V1 (Dec 1) and block Monday for it.",
        "Run 'flag my invites' for the 10 open invites."
       ]
      }
@@ -988,7 +987,7 @@
    {
     "role": "Teaching",
     "area": "Teaching",
-    "roleEvaluation": "Catching up: Discussion 5 and the Week 14 intro are done, but two items are still overdue and tonight is lost to the concert.",
+    "roleEvaluation": "Caught up: the Week 6 announcement and Website Evaluation #1 are off the list, and four grading tasks land Friday.",
     "blocks": [
      {
       "label": "Active projects",
@@ -1002,9 +1001,6 @@
      {
       "label": "This week",
       "lines": [
-       "Overdue: GRADE Website Evaluation #1 (Nov 20)",
-       "Overdue: FILM Week 6 announcement (Nov 23)",
-       "On Today: CHECK IN with 4 students",
        "Nov 27: four grading tasks",
        "Nov 29: Discussion 6 response, Week 15 intro"
       ]
@@ -1022,8 +1018,8 @@
      {
       "label": "Suggestions",
       "lines": [
-       "Week 6 announcement and Website Evaluation #1 this morning.",
-       "Record the Week 15 intro in the same setup."
+       "Grade all four today, before Thanksgiving.",
+       "Record the Week 15 intro and Week 7 announcement in one setup."
       ]
      }
     ]
@@ -1031,7 +1027,7 @@
    {
     "role": "Freelance",
     "area": "Freelance (ACEP)",
-    "roleEvaluation": "Busy: 7.2h of ACEP logged Monday, with the Rainwater edit due end of November.",
+    "roleEvaluation": "Busy: 7.2h of ACEP logged Monday, nothing since, with the Rainwater edit due end of November.",
     "blocks": [
      {
       "label": "Active projects",
@@ -1064,7 +1060,7 @@
       "label": "Suggestions",
       "lines": [
        "Rough-cut Rainwater this afternoon.",
-       "Rough-cut EDIT 20th 10 Thursday or Friday."
+       "Rough-cut EDIT 20th 10 on Friday."
       ]
      }
     ]
@@ -1072,7 +1068,7 @@
    {
     "role": "SPS",
     "area": "Smartphone Storytellers",
-    "roleEvaluation": "Stalled: no SPS time logged since the week of Oct 12, and no SPS task in Things.",
+    "roleEvaluation": "Stalled: no SPS time logged since the week of Oct 12. Today's Things task to revisit the 2027 schedule and goals is the restart.",
     "blocks": [
      {
       "label": "Active projects",
@@ -1085,7 +1081,7 @@
      {
       "label": "This week",
       "lines": [
-       "No SPS tasks in Things"
+       "Today: Revisit Smartphone Storytellers schedule and goals for next year"
       ]
      },
      {
@@ -1098,8 +1094,8 @@
      {
       "label": "Suggestions",
       "lines": [
-       "Turn the b-roll list into dated Things tasks this morning.",
-       "Shoot the first b-roll on a creation day (Tue-Thu).",
+       "Draft the 2027 SPS weekly schedule and goals this morning.",
+       "Turn the b-roll list into dated Things tasks.",
        "Update project_status.md (still says Module 5 next)."
       ]
      }
@@ -1138,7 +1134,7 @@
    {
     "role": "Personal",
     "area": "Personal",
-    "roleEvaluation": "Thanksgiving week: concerts Tuesday and Saturday, MDWK Wednesday, the holiday Thursday.",
+    "roleEvaluation": "Thanksgiving week: MDWK tonight, the holiday Thursday, Lindsey Stirling Saturday.",
     "blocks": [
      {
       "label": "Active projects",
@@ -1151,7 +1147,6 @@
      {
       "label": "This week",
       "lines": [
-       "Dragonforce in Charlotte, Tue Nov 24, 7:30 PM",
        "MDWK, Wed Nov 25, 6:30 PM",
        "Thanksgiving, Thu Nov 26",
        "Lindsey Stirling, Sat Nov 28"
@@ -1169,43 +1164,25 @@
      {
       "label": "Suggestions",
       "lines": [
-       "Decide hotel or late drive for Dragonforce today.",
-       "Pack dinner and the casein shake for the trip."
+       "Pack dinner for MDWK and leave early for the rain.",
+       "Log meals today and tomorrow."
       ]
      }
     ]
    }
   ],
-  "calendarNote": "From weekly-data.txt refreshed on the Mac at 3:01 AM (weekly-data.sh cannot reach Things or Calendar from the cloud session, so the on-Mac refresh was used). Coworker PTO blocks are hidden. No events in the next 30 days are flagged not attending.",
+  "calendarNote": "From weekly-data.txt refreshed on the Mac at 3:02 AM (weekly-data.sh cannot reach Things or Calendar from the cloud session, so the on-Mac refresh was used). Coworker PTO blocks are hidden. No events in the next 30 days are flagged not attending; 10 invites still need a flag.",
   "calendar": [
    {
     "kicker": "This week",
     "title": "Week of Nov 23",
     "rows": [
      {
-      "date": "2026-11-24",
-      "day": "Tue 11/24",
-      "time": "All day",
-      "title": "Thanksgiving Break",
-      "fyi": false
-     },
-     {
-      "date": "2026-11-24",
-      "day": "",
-      "time": "7:30 PM",
-      "title": "Dragonforce",
-      "fyi": false,
-      "start": "19:30",
-      "end": "23:30"
-     },
-     {
       "date": "2026-11-25",
       "day": "Wed 11/25",
-      "time": "12:00 PM",
-      "title": "Creative Lunch",
-      "fyi": false,
-      "start": "12:00",
-      "end": "13:00"
+      "time": "All day",
+      "title": "Thanksgiving Break (through Nov 28)",
+      "fyi": false
      },
      {
       "date": "2026-11-25",
