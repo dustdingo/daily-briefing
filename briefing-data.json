@@ -468,7 +468,7 @@
     }
   },
   "fitness": {
-    "eyebrow": "Thursday · Off Day Circuit",
+    "eyebrow": "Tomorrow · Friday · Legs & Shoulders",
     "stats": [
       {
         "value": "227.4",
@@ -539,28 +539,17 @@
     ],
     "goalsNote": "4 days left. Today's circuit starts that count. Strength needs Legs Friday plus weekend make-ups to reach three. Walks need three 2-mile days from here, and protein days need logged meals to count. Last night's sleep is not recorded yet.",
     "workout": {
-      "label": "Today's workout · Thursday",
-      "title": "Off Day Circuit",
-      "date": "2026-11-26",
+      "label": "Tomorrow's workout · Friday",
+      "title": "Legs & Shoulders",
+      "date": "2026-11-27",
       "lines": [
-        "About 10-15 min at home, 15 reps x 3 sets each:",
-        "Squats (bodyweight)",
-        "Sit-ups (bodyweight)",
-        "Kettlebell swings",
-        "Calf raises (bodyweight)",
-        "Stretch goal (optional): +5 reps to hit 50 total on an exercise.",
-        "Workout window clear, 8-9 AM. Thanksgiving, offices closed, nothing timed on the calendar."
+        "Legs: Leg extensions, Leg press (rotate foot position: regular, high, low, wide, close), Stiff leg dead lifts",
+        "Shoulders (pick 3): Front raises, Side laterals, Dumbbell Upright rows, Shrugs, Dumbbell press",
+        "Legs last logged Oct 9 (leg press 150, stiff leg deadlift 150). Start near those weights.",
+        "Workout window clear, 8-9 AM. Thanksgiving break, nothing timed on the calendar."
       ]
     },
     "workoutDays": [
-      {
-        "date": "2026-11-27",
-        "title": "Legs & Shoulders",
-        "lines": [
-          "Legs: Leg extensions, Leg press (rotate foot position), Stiff leg dead lifts",
-          "Shoulders (pick 3): Front raises, Side laterals, Dumbbell Upright rows, Shrugs, Dumbbell press"
-        ]
-      },
       {
         "date": "2026-11-28",
         "title": "Rest day",
@@ -657,7 +646,7 @@
       "carbs": 215,
       "fat": 72
     },
-    "macroNote": "Thanksgiving at home, no meals away. The template runs about 500 kcal light, so the holiday meal has room: build the plate around turkey and keep both shakes.",
+    "macroNote": "Home all day, no meals to pack. The template with chicken lands at 198g protein (2g short) but about 68g light on carbs, 27g on fat and 500 kcal. Leg day earns the carbs: add a banana at Snack 1 and a full cup of jasmine rice at dinner.",
     "meals": [
       {
         "slot": "Morning Coffee",
@@ -725,8 +714,8 @@
       }
     ],
     "dinnerCall": {
-      "title": "Dinner call: turkey",
-      "text": "On the template, chicken beats fish (198g vs 188g protein). Today, a turkey plate does the same job: 6-7 oz of turkey matches the chicken's protein, and potatoes or a roll close the 68g carb gap. Keep the evening casein shake."
+      "title": "Dinner call: chicken",
+      "text": "Chicken gets you to 198g protein vs 188g with fish. Double the rice to a full cup (about +100 kcal, +22g carbs) to start closing the carb gap after leg day. Leftover turkey works the same as the chicken."
     },
     "alert": {
       "title": "Nutrition",
